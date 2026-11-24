@@ -1,0 +1,852 @@
+{
+ "pooled": {
+  "ok": true,
+  "n": 231572,
+  "reference": "STAB",
+  "reference_reason": "Crashes & bugs",
+  "pseudo_r2": 0.1196,
+  "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited + C(game)",
+  "rows": [
+   {
+    "code": "OFFGAME",
+    "reason": "Off-game topics",
+    "n": 2819,
+    "odds_ratio": 3.15,
+    "lo": 2.89,
+    "hi": 3.434,
+    "p": 4.5e-150
+   },
+   {
+    "code": "OTHER",
+    "reason": "No clear reason",
+    "n": 31373,
+    "odds_ratio": 2.534,
+    "lo": 2.44,
+    "hi": 2.631,
+    "p": 0.0
+   },
+   {
+    "code": "STORY",
+    "reason": "Story & writing",
+    "n": 5942,
+    "odds_ratio": 2.499,
+    "lo": 2.346,
+    "hi": 2.662,
+    "p": 7.6e-178
+   },
+   {
+    "code": "MONET",
+    "reason": "Price & monetization",
+    "n": 14743,
+    "odds_ratio": 2.326,
+    "lo": 2.223,
+    "hi": 2.434,
+    "p": 4.4e-290
+   },
+   {
+    "code": "DESIGN",
+    "reason": "Gameplay & design choices",
+    "n": 34485,
+    "odds_ratio": 2.261,
+    "lo": 2.178,
+    "hi": 2.347,
+    "p": 0.0
+   },
+   {
+    "code": "CONTENT",
+    "reason": "Not enough content",
+    "n": 31944,
+    "odds_ratio": 2.232,
+    "lo": 2.149,
+    "hi": 2.318,
+    "p": 0.0
+   },
+   {
+    "code": "SUPPORT",
+    "reason": "Post-launch support",
+    "n": 8744,
+    "odds_ratio": 2.201,
+    "lo": 2.08,
+    "hi": 2.33,
+    "p": 1.3e-162
+   },
+   {
+    "code": "UI",
+    "reason": "Interface & controls",
+    "n": 7551,
+    "odds_ratio": 1.901,
+    "lo": 1.793,
+    "hi": 2.016,
+    "p": 1.3e-101
+   },
+   {
+    "code": "PERF",
+    "reason": "Performance",
+    "n": 45558,
+    "odds_ratio": 1.558,
+    "lo": 1.502,
+    "hi": 1.615,
+    "p": 1.1e-127
+   },
+   {
+    "code": "ONLINE",
+    "reason": "Online, accounts & DRM",
+    "n": 13499,
+    "odds_ratio": 1.188,
+    "lo": 1.122,
+    "hi": 1.257,
+    "p": 2.6e-09
+   }
+  ],
+  "control_odds_ratios": {
+   "under_2h_vs_10_50h": 4.778,
+   "first_30_days_vs_after_180": 0.327,
+   "edited_review": 1.011
+  }
+ },
+ "per_game": {
+  "civilization-vii": {
+   "ok": true,
+   "n": 21424,
+   "reference": "STAB",
+   "reference_reason": "Crashes & bugs",
+   "pseudo_r2": 0.1135,
+   "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited",
+   "rows": [
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "n": 1665,
+     "odds_ratio": 2.597,
+     "lo": 2.241,
+     "hi": 3.008,
+     "p": 5.1e-37
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "n": 2456,
+     "odds_ratio": 2.585,
+     "lo": 2.264,
+     "hi": 2.953,
+     "p": 1.3e-44
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "n": 7080,
+     "odds_ratio": 2.531,
+     "lo": 2.257,
+     "hi": 2.84,
+     "p": 1.7e-56
+    },
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "n": 219,
+     "odds_ratio": 2.524,
+     "lo": 1.847,
+     "hi": 3.449,
+     "p": 6.1e-09
+    },
+    {
+     "code": "STORY",
+     "reason": "Story & writing",
+     "n": 118,
+     "odds_ratio": 2.519,
+     "lo": 1.672,
+     "hi": 3.795,
+     "p": 1e-05
+    },
+    {
+     "code": "SUPPORT",
+     "reason": "Post-launch support",
+     "n": 272,
+     "odds_ratio": 2.401,
+     "lo": 1.799,
+     "hi": 3.203,
+     "p": 2.7e-09
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "n": 3175,
+     "odds_ratio": 1.83,
+     "lo": 1.609,
+     "hi": 2.083,
+     "p": 4.5e-20
+    },
+    {
+     "code": "UI",
+     "reason": "Interface & controls",
+     "n": 2985,
+     "odds_ratio": 1.697,
+     "lo": 1.492,
+     "hi": 1.931,
+     "p": 1e-15
+    },
+    {
+     "code": "ONLINE",
+     "reason": "Online, accounts & DRM",
+     "n": 571,
+     "odds_ratio": 1.617,
+     "lo": 1.304,
+     "hi": 2.004,
+     "p": 1.2e-05
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "n": 387,
+     "odds_ratio": 1.599,
+     "lo": 1.246,
+     "hi": 2.051,
+     "p": 0.00022
+    }
+   ],
+   "control_odds_ratios": {
+    "under_2h_vs_10_50h": 7.126,
+    "first_30_days_vs_after_180": 0.352,
+    "edited_review": 1.748
+   }
+  },
+  "cities-skylines-ii": {
+   "ok": true,
+   "n": 26561,
+   "reference": "STAB",
+   "reference_reason": "Crashes & bugs",
+   "pseudo_r2": 0.1503,
+   "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited",
+   "rows": [
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "n": 546,
+     "odds_ratio": 11.171,
+     "lo": 8.852,
+     "hi": 14.1,
+     "p": 8.5e-92
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "n": 1161,
+     "odds_ratio": 2.341,
+     "lo": 2.009,
+     "hi": 2.727,
+     "p": 1.1e-27
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "n": 2380,
+     "odds_ratio": 2.249,
+     "lo": 1.999,
+     "hi": 2.529,
+     "p": 1.6e-41
+    },
+    {
+     "code": "UI",
+     "reason": "Interface & controls",
+     "n": 440,
+     "odds_ratio": 1.758,
+     "lo": 1.393,
+     "hi": 2.219,
+     "p": 2e-06
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "n": 2051,
+     "odds_ratio": 1.752,
+     "lo": 1.537,
+     "hi": 1.998,
+     "p": 5.1e-17
+    },
+    {
+     "code": "SUPPORT",
+     "reason": "Post-launch support",
+     "n": 1305,
+     "odds_ratio": 1.696,
+     "lo": 1.442,
+     "hi": 1.994,
+     "p": 1.7e-10
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "n": 7171,
+     "odds_ratio": 1.63,
+     "lo": 1.485,
+     "hi": 1.789,
+     "p": 1.1e-24
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "n": 3205,
+     "odds_ratio": 1.461,
+     "lo": 1.301,
+     "hi": 1.641,
+     "p": 1.6e-10
+    },
+    {
+     "code": "ONLINE",
+     "reason": "Online, accounts & DRM",
+     "n": 764,
+     "odds_ratio": 1.13,
+     "lo": 0.885,
+     "hi": 1.441,
+     "p": 0.33
+    }
+   ],
+   "control_odds_ratios": {
+    "under_2h_vs_10_50h": 5.597,
+    "first_30_days_vs_after_180": 0.395,
+    "edited_review": 1.08
+   }
+  },
+  "payday-3": {
+   "ok": true,
+   "n": 24542,
+   "reference": "STAB",
+   "reference_reason": "Crashes & bugs",
+   "pseudo_r2": 0.11,
+   "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited",
+   "rows": [
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "n": 3026,
+     "odds_ratio": 1.903,
+     "lo": 1.67,
+     "hi": 2.168,
+     "p": 4.5e-22
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "n": 1721,
+     "odds_ratio": 1.892,
+     "lo": 1.634,
+     "hi": 2.19,
+     "p": 1.5e-17
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "n": 2362,
+     "odds_ratio": 1.835,
+     "lo": 1.598,
+     "hi": 2.106,
+     "p": 7.1e-18
+    },
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "n": 108,
+     "odds_ratio": 1.817,
+     "lo": 1.169,
+     "hi": 2.825,
+     "p": 0.008
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "n": 4040,
+     "odds_ratio": 1.783,
+     "lo": 1.576,
+     "hi": 2.018,
+     "p": 4.9e-20
+    },
+    {
+     "code": "SUPPORT",
+     "reason": "Post-launch support",
+     "n": 1000,
+     "odds_ratio": 1.729,
+     "lo": 1.45,
+     "hi": 2.063,
+     "p": 1.1e-09
+    },
+    {
+     "code": "UI",
+     "reason": "Interface & controls",
+     "n": 298,
+     "odds_ratio": 1.483,
+     "lo": 1.124,
+     "hi": 1.957,
+     "p": 0.0054
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "n": 644,
+     "odds_ratio": 1.398,
+     "lo": 1.144,
+     "hi": 1.708,
+     "p": 0.0011
+    },
+    {
+     "code": "ONLINE",
+     "reason": "Online, accounts & DRM",
+     "n": 9252,
+     "odds_ratio": 0.907,
+     "lo": 0.809,
+     "hi": 1.018,
+     "p": 0.098
+    }
+   ],
+   "control_odds_ratios": {
+    "under_2h_vs_10_50h": 4.014,
+    "first_30_days_vs_after_180": 0.304,
+    "edited_review": 0.715
+   }
+  },
+  "dragons-dogma-2": {
+   "ok": true,
+   "n": 26266,
+   "reference": "STAB",
+   "reference_reason": "Crashes & bugs",
+   "pseudo_r2": 0.107,
+   "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited",
+   "rows": [
+    {
+     "code": "STORY",
+     "reason": "Story & writing",
+     "n": 847,
+     "odds_ratio": 3.608,
+     "lo": 3.061,
+     "hi": 4.252,
+     "p": 7.4e-53
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "n": 2725,
+     "odds_ratio": 2.758,
+     "lo": 2.462,
+     "hi": 3.089,
+     "p": 8.1e-69
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "n": 2708,
+     "odds_ratio": 2.491,
+     "lo": 2.229,
+     "hi": 2.784,
+     "p": 3.9e-58
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "n": 3924,
+     "odds_ratio": 2.339,
+     "lo": 2.11,
+     "hi": 2.593,
+     "p": 9e-59
+    },
+    {
+     "code": "UI",
+     "reason": "Interface & controls",
+     "n": 884,
+     "odds_ratio": 2.334,
+     "lo": 1.986,
+     "hi": 2.742,
+     "p": 7.2e-25
+    },
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "n": 121,
+     "odds_ratio": 1.939,
+     "lo": 1.3,
+     "hi": 2.891,
+     "p": 0.0012
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "n": 3028,
+     "odds_ratio": 1.739,
+     "lo": 1.559,
+     "hi": 1.939,
+     "p": 3.4e-23
+    },
+    {
+     "code": "SUPPORT",
+     "reason": "Post-launch support",
+     "n": 309,
+     "odds_ratio": 1.735,
+     "lo": 1.336,
+     "hi": 2.252,
+     "p": 3.5e-05
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "n": 7592,
+     "odds_ratio": 1.435,
+     "lo": 1.31,
+     "hi": 1.572,
+     "p": 7.7e-15
+    },
+    {
+     "code": "ONLINE",
+     "reason": "Online, accounts & DRM",
+     "n": 181,
+     "odds_ratio": 0.743,
+     "lo": 0.507,
+     "hi": 1.088,
+     "p": 0.13
+    }
+   ],
+   "control_odds_ratios": {
+    "under_2h_vs_10_50h": 4.089,
+    "first_30_days_vs_after_180": 0.323,
+    "edited_review": 0.546
+   }
+  },
+  "monster-hunter-wilds": {
+   "ok": true,
+   "n": 89020,
+   "reference": "STAB",
+   "reference_reason": "Crashes & bugs",
+   "pseudo_r2": 0.101,
+   "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited",
+   "rows": [
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "n": 4174,
+     "odds_ratio": 2.966,
+     "lo": 2.73,
+     "hi": 3.222,
+     "p": 1.8e-145
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "n": 13347,
+     "odds_ratio": 2.519,
+     "lo": 2.366,
+     "hi": 2.682,
+     "p": 2.4e-183
+    },
+    {
+     "code": "SUPPORT",
+     "reason": "Post-launch support",
+     "n": 4844,
+     "odds_ratio": 2.502,
+     "lo": 2.303,
+     "hi": 2.717,
+     "p": 4e-105
+    },
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "n": 984,
+     "odds_ratio": 2.401,
+     "lo": 2.057,
+     "hi": 2.803,
+     "p": 1.3e-28
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "n": 10499,
+     "odds_ratio": 2.274,
+     "lo": 2.128,
+     "hi": 2.431,
+     "p": 8.1e-129
+    },
+    {
+     "code": "UI",
+     "reason": "Interface & controls",
+     "n": 1788,
+     "odds_ratio": 1.856,
+     "lo": 1.648,
+     "hi": 2.091,
+     "p": 2e-24
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "n": 9425,
+     "odds_ratio": 1.849,
+     "lo": 1.726,
+     "hi": 1.98,
+     "p": 4.6e-69
+    },
+    {
+     "code": "STORY",
+     "reason": "Story & writing",
+     "n": 2050,
+     "odds_ratio": 1.838,
+     "lo": 1.627,
+     "hi": 2.076,
+     "p": 1.1e-22
+    },
+    {
+     "code": "ONLINE",
+     "reason": "Online, accounts & DRM",
+     "n": 2681,
+     "odds_ratio": 1.509,
+     "lo": 1.35,
+     "hi": 1.685,
+     "p": 3.7e-13
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "n": 24884,
+     "odds_ratio": 1.501,
+     "lo": 1.418,
+     "hi": 1.59,
+     "p": 6.8e-44
+    }
+   ],
+   "control_odds_ratios": {
+    "under_2h_vs_10_50h": 4.721,
+    "first_30_days_vs_after_180": 0.282,
+    "edited_review": 1.802
+   }
+  },
+  "starfield": {
+   "ok": true,
+   "n": 43759,
+   "reference": "STAB",
+   "reference_reason": "Crashes & bugs",
+   "pseudo_r2": 0.0962,
+   "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited",
+   "rows": [
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "n": 6442,
+     "odds_ratio": 3.211,
+     "lo": 2.942,
+     "hi": 3.504,
+     "p": 2.5e-151
+    },
+    {
+     "code": "STORY",
+     "reason": "Story & writing",
+     "n": 2876,
+     "odds_ratio": 2.996,
+     "lo": 2.702,
+     "hi": 3.323,
+     "p": 9e-96
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "n": 9643,
+     "odds_ratio": 2.965,
+     "lo": 2.735,
+     "hi": 3.215,
+     "p": 1.2e-152
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "n": 9314,
+     "odds_ratio": 2.624,
+     "lo": 2.419,
+     "hi": 2.847,
+     "p": 3.1e-119
+    },
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "n": 841,
+     "odds_ratio": 2.594,
+     "lo": 2.21,
+     "hi": 3.044,
+     "p": 1.9e-31
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "n": 2994,
+     "odds_ratio": 2.375,
+     "lo": 2.143,
+     "hi": 2.633,
+     "p": 8.1e-61
+    },
+    {
+     "code": "SUPPORT",
+     "reason": "Post-launch support",
+     "n": 1014,
+     "odds_ratio": 1.902,
+     "lo": 1.632,
+     "hi": 2.216,
+     "p": 1.8e-16
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "n": 4880,
+     "odds_ratio": 1.822,
+     "lo": 1.662,
+     "hi": 1.998,
+     "p": 1.9e-37
+    },
+    {
+     "code": "UI",
+     "reason": "Interface & controls",
+     "n": 1156,
+     "odds_ratio": 1.735,
+     "lo": 1.504,
+     "hi": 2.002,
+     "p": 4.2e-14
+    }
+   ],
+   "control_odds_ratios": {
+    "under_2h_vs_10_50h": 4.58,
+    "first_30_days_vs_after_180": 0.359,
+    "edited_review": 0.596
+   }
+  }
+ },
+ "sensitivity": {
+  "civilization-vii": [
+   {
+    "hours": 1,
+    "negative_walk_rate": 0.3571,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 2,
+    "negative_walk_rate": 0.3946,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 0.964
+   },
+   {
+    "hours": 5,
+    "negative_walk_rate": 0.4654,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 1.0
+   }
+  ],
+  "cities-skylines-ii": [
+   {
+    "hours": 1,
+    "negative_walk_rate": 0.2375,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 9,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 2,
+    "negative_walk_rate": 0.267,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 9,
+    "rank_correlation_with_1h": 0.983
+   },
+   {
+    "hours": 5,
+    "negative_walk_rate": 0.3199,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 8,
+    "rank_correlation_with_1h": 0.983
+   }
+  ],
+  "payday-3": [
+   {
+    "hours": 1,
+    "negative_walk_rate": 0.3165,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 9,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 2,
+    "negative_walk_rate": 0.3663,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 9,
+    "rank_correlation_with_1h": 0.967
+   },
+   {
+    "hours": 5,
+    "negative_walk_rate": 0.4601,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 9,
+    "rank_correlation_with_1h": 0.95
+   }
+  ],
+  "dragons-dogma-2": [
+   {
+    "hours": 1,
+    "negative_walk_rate": 0.3771,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 2,
+    "negative_walk_rate": 0.4143,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 5,
+    "negative_walk_rate": 0.4759,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 0.988
+   }
+  ],
+  "monster-hunter-wilds": [
+   {
+    "hours": 1,
+    "negative_walk_rate": 0.2434,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 2,
+    "negative_walk_rate": 0.2741,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 5,
+    "negative_walk_rate": 0.3337,
+    "complaint_groups": 10,
+    "same_verdict_as_1h": 10,
+    "rank_correlation_with_1h": 0.988
+   }
+  ],
+  "starfield": [
+   {
+    "hours": 1,
+    "negative_walk_rate": 0.484,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 9,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 2,
+    "negative_walk_rate": 0.5205,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 9,
+    "rank_correlation_with_1h": 1.0
+   },
+   {
+    "hours": 5,
+    "negative_walk_rate": 0.5801,
+    "complaint_groups": 9,
+    "same_verdict_as_1h": 8,
+    "rank_correlation_with_1h": 0.983
+   }
+  ]
+ }
+}

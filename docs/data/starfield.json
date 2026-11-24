@@ -5,380 +5,1026 @@
  "genre": "Single-player RPG",
  "release": "2023-09-06",
  "snapshot": "2026-11-24",
+ "snapshot_english": "2026-11-24",
  "params": {
   "mature_days": 30,
   "walk_hours": 1.0,
   "min_cell": 30
  },
  "funnel": {
-  "steam_summary_total": 86202,
-  "api_reported_english_reviews": 85461,
-  "fetched_unique": 85455,
-  "negative": 36050,
-  "negative_3plus_words": 33774,
-  "labeled": 33672,
+  "steam_summary_total": 115692,
+  "api_reported_reviews": 114561,
+  "english": 85456,
+  "other_languages": 29099,
+  "languages": 29,
+  "fetched_unique": 114555,
+  "negative": 47205,
+  "negative_enough_text": 44145,
+  "labeled": 43872,
   "first_review": "2023-09",
   "last_review": "2026-11"
  },
  "overview": {
-  "reviews": 85455,
-  "negative": 36050,
-  "negative_share": 0.4219,
-  "median_hours_at_negative_review": 46.5,
-  "median_hours_at_positive_review": 50.2
+  "reviews": 114555,
+  "negative": 47205,
+  "negative_share": 0.4121,
+  "median_hours_at_negative_review": 43.6,
+  "median_hours_at_positive_review": 47.7
  },
  "behaviour": {
   "negative": {
-   "n": 35971,
-   "walked_away": 18279,
-   "walk_rate": 0.5082,
-   "walk_lo": 0.503,
-   "walk_hi": 0.5133,
-   "kept_10h_rate": 0.3462,
-   "median_hours_after": 0.83,
-   "refunded_rate": 0.0139,
-   "active_now_rate": 0.0143,
+   "n": 47085,
+   "walked_away": 22787,
+   "walk_rate": 0.484,
+   "walk_lo": 0.4794,
+   "walk_hi": 0.4885,
+   "kept_10h_rate": 0.3652,
+   "median_hours_after": 1.37,
+   "refunded_rate": 0.0137,
+   "active_now_rate": 0.0148,
    "shown": true
   },
   "positive": {
-   "n": 49297,
-   "walked_away": 3322,
-   "walk_rate": 0.0674,
-   "walk_lo": 0.0652,
-   "walk_hi": 0.0696,
-   "kept_10h_rate": 0.8332,
-   "median_hours_after": 64.52,
+   "n": 67184,
+   "walked_away": 4894,
+   "walk_rate": 0.0728,
+   "walk_lo": 0.0709,
+   "walk_hi": 0.0748,
+   "kept_10h_rate": 0.825,
+   "median_hours_after": 61.77,
    "refunded_rate": 0.001,
-   "active_now_rate": 0.0497,
+   "active_now_rate": 0.048,
    "shown": true
   },
   "negative_unedited": {
-   "n": 27445,
-   "walked_away": 15372,
-   "walk_rate": 0.5601,
-   "walk_lo": 0.5542,
-   "walk_hi": 0.566,
-   "kept_10h_rate": 0.2909,
-   "median_hours_after": 0.15,
+   "n": 35971,
+   "walked_away": 19225,
+   "walk_rate": 0.5345,
+   "walk_lo": 0.5293,
+   "walk_hi": 0.5396,
+   "kept_10h_rate": 0.3103,
+   "median_hours_after": 0.43,
    "refunded_rate": 0.0163,
-   "active_now_rate": 0.0117,
+   "active_now_rate": 0.0123,
    "shown": true
   },
   "negative_90d": {
-   "n": 35856,
-   "walk_rate": 0.5072
+   "n": 46928,
+   "walk_rate": 0.4829
   },
   "negative_labeled": {
-   "n": 33597,
-   "walked_away": 16849,
-   "walk_rate": 0.5015,
-   "walk_lo": 0.4962,
-   "walk_hi": 0.5068,
-   "kept_10h_rate": 0.3526,
-   "median_hours_after": 0.97,
-   "refunded_rate": 0.0137,
-   "active_now_rate": 0.0149,
+   "n": 43759,
+   "walked_away": 20880,
+   "walk_rate": 0.4772,
+   "walk_lo": 0.4725,
+   "walk_hi": 0.4818,
+   "kept_10h_rate": 0.3718,
+   "median_hours_after": 1.57,
+   "refunded_rate": 0.0134,
+   "active_now_rate": 0.0154,
    "shown": true
   }
  },
  "playtime": [
   {
    "bucket": "Under 2 h",
-   "reviews": 2377,
-   "negative": 1872,
-   "negative_share_in_bucket": 0.7875,
-   "share_of_all_negative": 0.0519,
-   "neg_walk_n": 1867,
-   "neg_walk_rate": 0.7156
+   "reviews": 3681,
+   "negative": 2789,
+   "negative_share_in_bucket": 0.7577,
+   "share_of_all_negative": 0.0591,
+   "neg_walk_n": 2782,
+   "neg_walk_rate": 0.7128
   },
   {
    "bucket": "2\u201310 h",
-   "reviews": 9381,
-   "negative": 4898,
-   "negative_share_in_bucket": 0.5221,
-   "share_of_all_negative": 0.1359,
-   "neg_walk_n": 4887,
-   "neg_walk_rate": 0.5633
+   "reviews": 13587,
+   "negative": 6916,
+   "negative_share_in_bucket": 0.509,
+   "share_of_all_negative": 0.1465,
+   "neg_walk_n": 6902,
+   "neg_walk_rate": 0.5342
   },
   {
    "bucket": "10\u201350 h",
-   "reviews": 31682,
-   "negative": 12047,
-   "negative_share_in_bucket": 0.3802,
-   "share_of_all_negative": 0.3342,
-   "neg_walk_n": 12026,
-   "neg_walk_rate": 0.517
+   "reviews": 43252,
+   "negative": 15944,
+   "negative_share_in_bucket": 0.3686,
+   "share_of_all_negative": 0.3378,
+   "neg_walk_n": 15910,
+   "neg_walk_rate": 0.4756
   },
   {
    "bucket": "50\u2013200 h",
-   "reviews": 32960,
-   "negative": 13999,
-   "negative_share_in_bucket": 0.4247,
-   "share_of_all_negative": 0.3883,
-   "neg_walk_n": 13973,
-   "neg_walk_rate": 0.4935
+   "reviews": 42628,
+   "negative": 17552,
+   "negative_share_in_bucket": 0.4117,
+   "share_of_all_negative": 0.3718,
+   "neg_walk_n": 17506,
+   "neg_walk_rate": 0.4718
   },
   {
    "bucket": "200 h+",
-   "reviews": 9055,
-   "negative": 3234,
-   "negative_share_in_bucket": 0.3572,
-   "share_of_all_negative": 0.0897,
-   "neg_walk_n": 3218,
-   "neg_walk_rate": 0.3347
+   "reviews": 11407,
+   "negative": 4004,
+   "negative_share_in_bucket": 0.351,
+   "share_of_all_negative": 0.0848,
+   "neg_walk_n": 3985,
+   "neg_walk_rate": 0.3237
   }
  ],
  "reasons": [
   {
    "code": "DESIGN",
    "reason": "Gameplay & design choices",
-   "walk_rate_adjusted": 0.5513,
-   "n": 7714,
-   "share": 0.2291,
-   "any_mention_share": 0.3651,
-   "median_hours_at_review": 41.6,
-   "walk_n": 7700,
-   "walk_rate": 0.5519,
-   "walk_lo": 0.5408,
-   "walk_hi": 0.563,
+   "walk_rate_adjusted": 0.5347,
+   "n": 9669,
+   "share": 0.2204,
+   "any_mention_share": 0.3501,
+   "median_hours_at_review": 40.2,
+   "walk_n": 9643,
+   "walk_rate": 0.5323,
+   "walk_lo": 0.5223,
+   "walk_hi": 0.5422,
    "vs_game_average": "higher",
-   "says_stopped_rate": 0.1792
+   "says_stopped_rate": 0.1777
   },
   {
    "code": "CONTENT",
    "reason": "Not enough content",
-   "walk_rate_adjusted": 0.5143,
-   "n": 7634,
-   "share": 0.2267,
-   "any_mention_share": 0.3335,
-   "median_hours_at_review": 62.5,
-   "walk_n": 7621,
-   "walk_rate": 0.5024,
-   "walk_lo": 0.4912,
-   "walk_hi": 0.5136,
+   "walk_rate_adjusted": 0.5004,
+   "n": 9335,
+   "share": 0.2128,
+   "any_mention_share": 0.3137,
+   "median_hours_at_review": 60.9,
+   "walk_n": 9314,
+   "walk_rate": 0.4851,
+   "walk_lo": 0.4749,
+   "walk_hi": 0.4952,
    "vs_game_average": "similar",
-   "says_stopped_rate": 0.1403
+   "says_stopped_rate": 0.1357
   },
   {
    "code": "OTHER",
    "reason": "No clear reason",
-   "walk_rate_adjusted": 0.5874,
-   "n": 4616,
-   "share": 0.1371,
-   "any_mention_share": 0.1458,
-   "median_hours_at_review": 40.8,
-   "walk_n": 4607,
-   "walk_rate": 0.5937,
-   "walk_lo": 0.5794,
-   "walk_hi": 0.6078,
+   "walk_rate_adjusted": 0.5506,
+   "n": 6454,
+   "share": 0.1471,
+   "any_mention_share": 0.1555,
+   "median_hours_at_review": 37.1,
+   "walk_n": 6442,
+   "walk_rate": 0.5581,
+   "walk_lo": 0.5459,
+   "walk_hi": 0.5701,
    "vs_game_average": "higher",
-   "says_stopped_rate": 0.0639
-  },
-  {
-   "code": "STAB",
-   "reason": "Crashes & bugs",
-   "walk_rate_adjusted": 0.2838,
-   "n": 3475,
-   "share": 0.1032,
-   "any_mention_share": 0.1469,
-   "median_hours_at_review": 53.0,
-   "walk_n": 3458,
-   "walk_rate": 0.2964,
-   "walk_lo": 0.2814,
-   "walk_hi": 0.3119,
-   "vs_game_average": "lower",
-   "says_stopped_rate": 0.2023
+   "says_stopped_rate": 0.0646
   },
   {
    "code": "PERF",
    "reason": "Performance",
-   "walk_rate_adjusted": 0.4367,
-   "n": 3310,
-   "share": 0.0983,
-   "any_mention_share": 0.1555,
-   "median_hours_at_review": 16.1,
-   "walk_n": 3305,
-   "walk_rate": 0.4759,
-   "walk_lo": 0.459,
-   "walk_hi": 0.493,
+   "walk_rate_adjusted": 0.3913,
+   "n": 4886,
+   "share": 0.1114,
+   "any_mention_share": 0.1726,
+   "median_hours_at_review": 15.2,
+   "walk_n": 4880,
+   "walk_rate": 0.4328,
+   "walk_lo": 0.4189,
+   "walk_hi": 0.4467,
    "vs_game_average": "lower",
-   "says_stopped_rate": 0.1444
+   "says_stopped_rate": 0.1326
   },
   {
-   "code": "STORY",
-   "reason": "Story & writing",
-   "walk_rate_adjusted": 0.5471,
-   "n": 2467,
-   "share": 0.0733,
-   "any_mention_share": 0.1631,
-   "median_hours_at_review": 62.1,
-   "walk_n": 2462,
-   "walk_rate": 0.5357,
-   "walk_lo": 0.516,
-   "walk_hi": 0.5554,
-   "vs_game_average": "higher",
-   "says_stopped_rate": 0.1471
+   "code": "STAB",
+   "reason": "Crashes & bugs",
+   "walk_rate_adjusted": 0.2702,
+   "n": 4573,
+   "share": 0.1042,
+   "any_mention_share": 0.1482,
+   "median_hours_at_review": 51.8,
+   "walk_n": 4549,
+   "walk_rate": 0.2818,
+   "walk_lo": 0.2689,
+   "walk_hi": 0.2951,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1865
   },
   {
    "code": "MONET",
    "reason": "Price & monetization",
-   "walk_rate_adjusted": 0.514,
-   "n": 2350,
-   "share": 0.0698,
-   "any_mention_share": 0.1234,
-   "median_hours_at_review": 59.4,
-   "walk_n": 2348,
-   "walk_rate": 0.5,
-   "walk_lo": 0.4798,
-   "walk_hi": 0.5202,
+   "walk_rate_adjusted": 0.5055,
+   "n": 2998,
+   "share": 0.0683,
+   "any_mention_share": 0.1175,
+   "median_hours_at_review": 56.2,
+   "walk_n": 2994,
+   "walk_rate": 0.4903,
+   "walk_lo": 0.4724,
+   "walk_hi": 0.5082,
    "vs_game_average": "similar",
-   "says_stopped_rate": 0.1668
+   "says_stopped_rate": 0.1601
+  },
+  {
+   "code": "STORY",
+   "reason": "Story & writing",
+   "walk_rate_adjusted": 0.5377,
+   "n": 2884,
+   "share": 0.0657,
+   "any_mention_share": 0.1468,
+   "median_hours_at_review": 60.6,
+   "walk_n": 2876,
+   "walk_rate": 0.525,
+   "walk_lo": 0.5068,
+   "walk_hi": 0.5432,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1463
   },
   {
    "code": "UI",
    "reason": "Interface & controls",
-   "walk_rate_adjusted": 0.3846,
-   "n": 787,
-   "share": 0.0234,
-   "any_mention_share": 0.0587,
-   "median_hours_at_review": 21.7,
-   "walk_n": 785,
-   "walk_rate": 0.4242,
-   "walk_lo": 0.3901,
-   "walk_hi": 0.4591,
+   "walk_rate_adjusted": 0.3758,
+   "n": 1158,
+   "share": 0.0264,
+   "any_mention_share": 0.063,
+   "median_hours_at_review": 20.4,
+   "walk_n": 1156,
+   "walk_rate": 0.4083,
+   "walk_lo": 0.3803,
+   "walk_hi": 0.4369,
    "vs_game_average": "lower",
-   "says_stopped_rate": 0.136
-  },
-  {
-   "code": "OFFGAME",
-   "reason": "Off-game topics",
-   "walk_rate_adjusted": 0.5022,
-   "n": 659,
-   "share": 0.0196,
-   "any_mention_share": 0.0264,
-   "median_hours_at_review": 61.5,
-   "walk_n": 653,
-   "walk_rate": 0.5008,
-   "walk_lo": 0.4625,
-   "walk_hi": 0.539,
-   "vs_game_average": "similar",
-   "says_stopped_rate": 0.1791
+   "says_stopped_rate": 0.1347
   },
   {
    "code": "SUPPORT",
    "reason": "Post-launch support",
-   "walk_rate_adjusted": 0.4543,
-   "n": 622,
-   "share": 0.0185,
-   "any_mention_share": 0.0501,
-   "median_hours_at_review": 79.2,
-   "walk_n": 620,
-   "walk_rate": 0.429,
-   "walk_lo": 0.3906,
-   "walk_hi": 0.4683,
+   "walk_rate_adjusted": 0.3799,
+   "n": 1017,
+   "share": 0.0232,
+   "any_mention_share": 0.0558,
+   "median_hours_at_review": 63.8,
+   "walk_n": 1014,
+   "walk_rate": 0.3698,
+   "walk_lo": 0.3407,
+   "walk_hi": 0.4,
    "vs_game_average": "lower",
-   "says_stopped_rate": 0.1961
+   "says_stopped_rate": 0.1573
+  },
+  {
+   "code": "OFFGAME",
+   "reason": "Off-game topics",
+   "walk_rate_adjusted": 0.4668,
+   "n": 848,
+   "share": 0.0193,
+   "any_mention_share": 0.0259,
+   "median_hours_at_review": 56.1,
+   "walk_n": 841,
+   "walk_rate": 0.4661,
+   "walk_lo": 0.4326,
+   "walk_hi": 0.4999,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1616
   },
   {
    "code": "ONLINE",
    "reason": "Online, accounts & DRM",
    "walk_rate_adjusted": null,
-   "n": 38,
+   "n": 50,
    "share": 0.0011,
-   "any_mention_share": 0.0025,
-   "median_hours_at_review": 118.4,
-   "walk_n": 38,
-   "walk_rate": 0.4737,
-   "walk_lo": 0.3248,
-   "walk_hi": 0.6274,
+   "any_mention_share": 0.0023,
+   "median_hours_at_review": 90.9,
+   "walk_n": 50,
+   "walk_rate": 0.46,
+   "walk_lo": 0.3297,
+   "walk_hi": 0.596,
    "vs_game_average": "similar",
-   "says_stopped_rate": 0.1842
+   "says_stopped_rate": 0.14
   }
+ ],
+ "model": {
+  "ok": true,
+  "n": 43759,
+  "reference": "STAB",
+  "reference_reason": "Crashes & bugs",
+  "pseudo_r2": 0.0962,
+  "formula": "y ~ C(main, Treatment('STAB')) + C(bucket) + C(langg) + C(age) + edited",
+  "rows": [
+   {
+    "code": "OTHER",
+    "reason": "No clear reason",
+    "n": 6442,
+    "odds_ratio": 3.211,
+    "lo": 2.942,
+    "hi": 3.504,
+    "p": 2.5e-151
+   },
+   {
+    "code": "STORY",
+    "reason": "Story & writing",
+    "n": 2876,
+    "odds_ratio": 2.996,
+    "lo": 2.702,
+    "hi": 3.323,
+    "p": 9e-96
+   },
+   {
+    "code": "DESIGN",
+    "reason": "Gameplay & design choices",
+    "n": 9643,
+    "odds_ratio": 2.965,
+    "lo": 2.735,
+    "hi": 3.215,
+    "p": 1.2e-152
+   },
+   {
+    "code": "CONTENT",
+    "reason": "Not enough content",
+    "n": 9314,
+    "odds_ratio": 2.624,
+    "lo": 2.419,
+    "hi": 2.847,
+    "p": 3.1e-119
+   },
+   {
+    "code": "OFFGAME",
+    "reason": "Off-game topics",
+    "n": 841,
+    "odds_ratio": 2.594,
+    "lo": 2.21,
+    "hi": 3.044,
+    "p": 1.9e-31
+   },
+   {
+    "code": "MONET",
+    "reason": "Price & monetization",
+    "n": 2994,
+    "odds_ratio": 2.375,
+    "lo": 2.143,
+    "hi": 2.633,
+    "p": 8.1e-61
+   },
+   {
+    "code": "SUPPORT",
+    "reason": "Post-launch support",
+    "n": 1014,
+    "odds_ratio": 1.902,
+    "lo": 1.632,
+    "hi": 2.216,
+    "p": 1.8e-16
+   },
+   {
+    "code": "PERF",
+    "reason": "Performance",
+    "n": 4880,
+    "odds_ratio": 1.822,
+    "lo": 1.662,
+    "hi": 1.998,
+    "p": 1.9e-37
+   },
+   {
+    "code": "UI",
+    "reason": "Interface & controls",
+    "n": 1156,
+    "odds_ratio": 1.735,
+    "lo": 1.504,
+    "hi": 2.002,
+    "p": 4.2e-14
+   }
+  ],
+  "control_odds_ratios": {
+   "under_2h_vs_10_50h": 4.58,
+   "first_30_days_vs_after_180": 0.359,
+   "edited_review": 0.596
+  }
+ },
+ "sensitivity": [
+  {
+   "hours": 1,
+   "negative_walk_rate": 0.484,
+   "complaint_groups": 9,
+   "same_verdict_as_1h": 9,
+   "rank_correlation_with_1h": 1.0
+  },
+  {
+   "hours": 2,
+   "negative_walk_rate": 0.5205,
+   "complaint_groups": 9,
+   "same_verdict_as_1h": 9,
+   "rank_correlation_with_1h": 1.0
+  },
+  {
+   "hours": 5,
+   "negative_walk_rate": 0.5801,
+   "complaint_groups": 9,
+   "same_verdict_as_1h": 8,
+   "rank_correlation_with_1h": 0.983
+  }
+ ],
+ "languages": [
+  {
+   "code": "english",
+   "language": "English",
+   "reviews": 85456,
+   "share_of_reviews": 0.746,
+   "negative": 36051,
+   "negative_share": 0.4219,
+   "median_hours_at_negative_review": 46.5,
+   "neg_walk_n": 35972,
+   "neg_walk_rate": 0.5082,
+   "labeled": 33672,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.2291,
+   "reason_shares": {
+    "PERF": 0.0983,
+    "STAB": 0.1032,
+    "CONTENT": 0.2267,
+    "DESIGN": 0.2291,
+    "UI": 0.0234,
+    "MONET": 0.0698,
+    "ONLINE": 0.0011,
+    "SUPPORT": 0.0185,
+    "STORY": 0.0733,
+    "OFFGAME": 0.0196,
+    "OTHER": 0.1371
+   }
+  },
+  {
+   "code": "schinese",
+   "language": "Chinese (Simplified)",
+   "reviews": 9669,
+   "share_of_reviews": 0.0844,
+   "negative": 4050,
+   "negative_share": 0.4189,
+   "median_hours_at_negative_review": 29.0,
+   "neg_walk_n": 4036,
+   "neg_walk_rate": 0.3513,
+   "labeled": 3753,
+   "top_reason": "Performance",
+   "top_reason_share": 0.194,
+   "reason_shares": {
+    "PERF": 0.194,
+    "STAB": 0.0922,
+    "CONTENT": 0.1111,
+    "DESIGN": 0.1572,
+    "UI": 0.0384,
+    "MONET": 0.0426,
+    "ONLINE": 0.0011,
+    "SUPPORT": 0.0637,
+    "STORY": 0.0317,
+    "OFFGAME": 0.0282,
+    "OTHER": 0.2398
+   }
+  },
+  {
+   "code": "german",
+   "language": "German",
+   "reviews": 4572,
+   "share_of_reviews": 0.0399,
+   "negative": 1650,
+   "negative_share": 0.3609,
+   "median_hours_at_negative_review": 45.8,
+   "neg_walk_n": 1645,
+   "neg_walk_rate": 0.4182,
+   "labeled": 1501,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.2205,
+   "reason_shares": {
+    "PERF": 0.1219,
+    "STAB": 0.1466,
+    "CONTENT": 0.1985,
+    "DESIGN": 0.2205,
+    "UI": 0.044,
+    "MONET": 0.0926,
+    "ONLINE": 0.0007,
+    "SUPPORT": 0.0213,
+    "STORY": 0.058,
+    "OFFGAME": 0.0113,
+    "OTHER": 0.0846
+   }
+  },
+  {
+   "code": "french",
+   "language": "French",
+   "reviews": 2611,
+   "share_of_reviews": 0.0228,
+   "negative": 930,
+   "negative_share": 0.3562,
+   "median_hours_at_negative_review": 42.0,
+   "neg_walk_n": 929,
+   "neg_walk_rate": 0.4413,
+   "labeled": 852,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.223,
+   "reason_shares": {
+    "PERF": 0.1362,
+    "STAB": 0.1303,
+    "CONTENT": 0.1984,
+    "DESIGN": 0.223,
+    "UI": 0.0411,
+    "MONET": 0.1068,
+    "ONLINE": 0.0012,
+    "SUPPORT": 0.027,
+    "STORY": 0.0411,
+    "OFFGAME": 0.007,
+    "OTHER": 0.088
+   }
+  },
+  {
+   "code": "russian",
+   "language": "Russian",
+   "reviews": 1610,
+   "share_of_reviews": 0.0141,
+   "negative": 692,
+   "negative_share": 0.4298,
+   "median_hours_at_negative_review": 22.9,
+   "neg_walk_n": 687,
+   "neg_walk_rate": 0.4061,
+   "labeled": 603,
+   "top_reason": "Not enough content",
+   "top_reason_share": 0.2007,
+   "reason_shares": {
+    "PERF": 0.1592,
+    "STAB": 0.063,
+    "CONTENT": 0.2007,
+    "DESIGN": 0.1891,
+    "UI": 0.0299,
+    "MONET": 0.0365,
+    "ONLINE": 0.0033,
+    "SUPPORT": 0.0182,
+    "STORY": 0.063,
+    "OFFGAME": 0.0199,
+    "OTHER": 0.2172
+   }
+  },
+  {
+   "code": "spanish",
+   "language": "Spanish (Spain)",
+   "reviews": 1505,
+   "share_of_reviews": 0.0131,
+   "negative": 417,
+   "negative_share": 0.2771,
+   "median_hours_at_negative_review": 28.6,
+   "neg_walk_n": 410,
+   "neg_walk_rate": 0.4195,
+   "labeled": 388,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.2397,
+   "reason_shares": {
+    "PERF": 0.1933,
+    "STAB": 0.1649,
+    "CONTENT": 0.1598,
+    "DESIGN": 0.2397,
+    "UI": 0.0129,
+    "MONET": 0.0954,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0258,
+    "STORY": 0.0155,
+    "OFFGAME": 0.0103,
+    "OTHER": 0.0825
+   }
+  },
+  {
+   "code": "japanese",
+   "language": "Japanese",
+   "reviews": 1285,
+   "share_of_reviews": 0.0112,
+   "negative": 596,
+   "negative_share": 0.4638,
+   "median_hours_at_negative_review": 78.1,
+   "neg_walk_n": 595,
+   "neg_walk_rate": 0.4807,
+   "labeled": 587,
+   "top_reason": "Not enough content",
+   "top_reason_share": 0.3066,
+   "reason_shares": {
+    "PERF": 0.0528,
+    "STAB": 0.1295,
+    "CONTENT": 0.3066,
+    "DESIGN": 0.2521,
+    "UI": 0.0579,
+    "MONET": 0.0358,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0221,
+    "STORY": 0.0528,
+    "OFFGAME": 0.0051,
+    "OTHER": 0.0852
+   }
+  },
+  {
+   "code": "turkish",
+   "language": "Turkish",
+   "reviews": 1202,
+   "share_of_reviews": 0.0105,
+   "negative": 433,
+   "negative_share": 0.3602,
+   "median_hours_at_negative_review": 11.4,
+   "neg_walk_n": 433,
+   "neg_walk_rate": 0.4411,
+   "labeled": 379,
+   "top_reason": "Performance",
+   "top_reason_share": 0.2322,
+   "reason_shares": {
+    "PERF": 0.2322,
+    "STAB": 0.058,
+    "CONTENT": 0.1583,
+    "DESIGN": 0.153,
+    "UI": 0.0185,
+    "MONET": 0.0765,
+    "ONLINE": 0.0053,
+    "SUPPORT": 0.0211,
+    "STORY": 0.0396,
+    "OFFGAME": 0.0079,
+    "OTHER": 0.2296
+   }
+  },
+  {
+   "code": "brazilian",
+   "language": "Portuguese (Brazil)",
+   "reviews": 992,
+   "share_of_reviews": 0.0087,
+   "negative": 237,
+   "negative_share": 0.2389,
+   "median_hours_at_negative_review": 29.1,
+   "neg_walk_n": 236,
+   "neg_walk_rate": 0.4322,
+   "labeled": 212,
+   "top_reason": "Not enough content",
+   "top_reason_share": 0.2406,
+   "reason_shares": {
+    "PERF": 0.1887,
+    "STAB": 0.0991,
+    "CONTENT": 0.2406,
+    "DESIGN": 0.1887,
+    "UI": 0.0094,
+    "MONET": 0.0755,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0236,
+    "STORY": 0.0519,
+    "OFFGAME": 0.0047,
+    "OTHER": 0.1179
+   }
+  },
+  {
+   "code": "koreana",
+   "language": "Korean",
+   "reviews": 986,
+   "share_of_reviews": 0.0086,
+   "negative": 645,
+   "negative_share": 0.6542,
+   "median_hours_at_negative_review": 34.2,
+   "neg_walk_n": 644,
+   "neg_walk_rate": 0.4783,
+   "labeled": 584,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.1627,
+   "reason_shares": {
+    "PERF": 0.0634,
+    "STAB": 0.0257,
+    "CONTENT": 0.161,
+    "DESIGN": 0.1627,
+    "UI": 0.024,
+    "MONET": 0.0788,
+    "ONLINE": 0.0017,
+    "SUPPORT": 0.0497,
+    "STORY": 0.0308,
+    "OFFGAME": 0.024,
+    "OTHER": 0.3784
+   }
+  },
+  {
+   "code": "tchinese",
+   "language": "Chinese (Traditional)",
+   "reviews": 729,
+   "share_of_reviews": 0.0064,
+   "negative": 283,
+   "negative_share": 0.3882,
+   "median_hours_at_negative_review": 38.0,
+   "neg_walk_n": 283,
+   "neg_walk_rate": 0.4452,
+   "labeled": 263,
+   "top_reason": "Performance",
+   "top_reason_share": 0.1787,
+   "reason_shares": {
+    "PERF": 0.1787,
+    "STAB": 0.1065,
+    "CONTENT": 0.1407,
+    "DESIGN": 0.1521,
+    "UI": 0.057,
+    "MONET": 0.057,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.019,
+    "STORY": 0.0304,
+    "OFFGAME": 0.0342,
+    "OTHER": 0.2243
+   }
+  },
+  {
+   "code": "italian",
+   "language": "Italian",
+   "reviews": 660,
+   "share_of_reviews": 0.0058,
+   "negative": 186,
+   "negative_share": 0.2818,
+   "median_hours_at_negative_review": 45.1,
+   "neg_walk_n": 184,
+   "neg_walk_rate": 0.4022,
+   "labeled": 175,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.2629,
+   "reason_shares": {
+    "PERF": 0.1429,
+    "STAB": 0.0971,
+    "CONTENT": 0.2286,
+    "DESIGN": 0.2629,
+    "UI": 0.0229,
+    "MONET": 0.0343,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0229,
+    "STORY": 0.04,
+    "OFFGAME": 0.0114,
+    "OTHER": 0.1371
+   }
+  },
+  {
+   "code": "polish",
+   "language": "Polish",
+   "reviews": 586,
+   "share_of_reviews": 0.0051,
+   "negative": 250,
+   "negative_share": 0.4266,
+   "median_hours_at_negative_review": 41.8,
+   "neg_walk_n": 249,
+   "neg_walk_rate": 0.4096,
+   "labeled": 222,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.2342,
+   "reason_shares": {
+    "PERF": 0.1441,
+    "STAB": 0.1216,
+    "CONTENT": 0.1802,
+    "DESIGN": 0.2342,
+    "UI": 0.018,
+    "MONET": 0.0766,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0135,
+    "STORY": 0.0676,
+    "OFFGAME": 0.009,
+    "OTHER": 0.1351
+   }
+  },
+  {
+   "code": "ukrainian",
+   "language": "Ukrainian",
+   "reviews": 381,
+   "share_of_reviews": 0.0033,
+   "negative": 162,
+   "negative_share": 0.4252,
+   "median_hours_at_negative_review": 25.4,
+   "neg_walk_n": 162,
+   "neg_walk_rate": 0.4506,
+   "labeled": 142,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.2394,
+   "reason_shares": {
+    "PERF": 0.1268,
+    "STAB": 0.1338,
+    "CONTENT": 0.2394,
+    "DESIGN": 0.2394,
+    "UI": 0.0282,
+    "MONET": 0.0634,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0282,
+    "STORY": 0.0352,
+    "OFFGAME": 0.007,
+    "OTHER": 0.0986
+   }
+  },
+  {
+   "code": "swedish",
+   "language": "Swedish",
+   "reviews": 373,
+   "share_of_reviews": 0.0033,
+   "negative": 115,
+   "negative_share": 0.3083,
+   "median_hours_at_negative_review": 44.2,
+   "neg_walk_n": 115,
+   "neg_walk_rate": 0.4522,
+   "labeled": 96,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.2083,
+   "reason_shares": {
+    "PERF": 0.1042,
+    "STAB": 0.1667,
+    "CONTENT": 0.1979,
+    "DESIGN": 0.2083,
+    "UI": 0.0208,
+    "MONET": 0.0521,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0208,
+    "STORY": 0.0312,
+    "OFFGAME": 0.0312,
+    "OTHER": 0.1667
+   }
+  },
+  {
+   "code": "dutch",
+   "language": "Dutch",
+   "reviews": 370,
+   "share_of_reviews": 0.0032,
+   "negative": 88,
+   "negative_share": 0.2378,
+   "median_hours_at_negative_review": 28.1,
+   "neg_walk_n": 87,
+   "neg_walk_rate": 0.4483,
+   "labeled": 79,
+   "top_reason": "Crashes & bugs",
+   "top_reason_share": 0.2911,
+   "reason_shares": {
+    "PERF": 0.0759,
+    "STAB": 0.2911,
+    "CONTENT": 0.1139,
+    "DESIGN": 0.1392,
+    "UI": 0.0759,
+    "MONET": 0.0759,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0127,
+    "STORY": 0.0253,
+    "OFFGAME": 0.0127,
+    "OTHER": 0.1772
+   }
+  },
+  {
+   "code": "latam",
+   "language": "Spanish (Latin America)",
+   "reviews": 329,
+   "share_of_reviews": 0.0029,
+   "negative": 79,
+   "negative_share": 0.2401,
+   "median_hours_at_negative_review": 31.4,
+   "neg_walk_n": 78,
+   "neg_walk_rate": 0.4231,
+   "labeled": 66,
+   "top_reason": "Not enough content",
+   "top_reason_share": 0.2576,
+   "reason_shares": {
+    "PERF": 0.1515,
+    "STAB": 0.1667,
+    "CONTENT": 0.2576,
+    "DESIGN": 0.1818,
+    "UI": 0.0,
+    "MONET": 0.0909,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0152,
+    "STORY": 0.0758,
+    "OFFGAME": 0.0152,
+    "OTHER": 0.0455
+   }
+  },
+  {
+   "code": "czech",
+   "language": "Czech",
+   "reviews": 319,
+   "share_of_reviews": 0.0028,
+   "negative": 103,
+   "negative_share": 0.3229,
+   "median_hours_at_negative_review": 45.2,
+   "neg_walk_n": 102,
+   "neg_walk_rate": 0.3824,
+   "labeled": 90,
+   "top_reason": "Not enough content",
+   "top_reason_share": 0.2444,
+   "reason_shares": {
+    "PERF": 0.1111,
+    "STAB": 0.1222,
+    "CONTENT": 0.2444,
+    "DESIGN": 0.1889,
+    "UI": 0.0556,
+    "MONET": 0.0667,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0222,
+    "STORY": 0.0778,
+    "OFFGAME": 0.0111,
+    "OTHER": 0.1
+   }
+  },
+  {
+   "code": "_small",
+   "language": "All other languages (under 300 reviews each)",
+   "reviews": 920,
+   "share_of_reviews": 0.008,
+   "negative": 238,
+   "negative_share": 0.2587,
+   "median_hours_at_negative_review": 36.9,
+   "neg_walk_n": 238,
+   "neg_walk_rate": 0.4832,
+   "labeled": 208,
+   "top_reason": "Gameplay & design choices",
+   "top_reason_share": 0.3077,
+   "reason_shares": {
+    "PERF": 0.1154,
+    "STAB": 0.1587,
+    "CONTENT": 0.149,
+    "DESIGN": 0.3077,
+    "UI": 0.0288,
+    "MONET": 0.0817,
+    "ONLINE": 0.0048,
+    "SUPPORT": 0.0144,
+    "STORY": 0.024,
+    "OFFGAME": 0.0144,
+    "OTHER": 0.101
+   }
+  }
+ ],
+ "language_reason_columns": [
+  "DESIGN",
+  "CONTENT",
+  "PERF",
+  "STAB",
+  "MONET",
+  "STORY"
  ],
  "reason_by_playtime": [
   {
    "bucket": "Under 2 h",
-   "n": 1755,
+   "n": 2580,
    "shares": {
-    "PERF": 0.3225,
-    "STAB": 0.1863,
-    "CONTENT": 0.0667,
-    "DESIGN": 0.143,
-    "UI": 0.0456,
-    "MONET": 0.0519,
+    "PERF": 0.3194,
+    "STAB": 0.1686,
+    "CONTENT": 0.0643,
+    "DESIGN": 0.1407,
+    "UI": 0.0453,
+    "MONET": 0.0523,
     "ONLINE": 0.0023,
-    "SUPPORT": 0.0074,
-    "STORY": 0.0365,
-    "OFFGAME": 0.0245,
-    "OTHER": 0.1134
+    "SUPPORT": 0.0116,
+    "STORY": 0.0271,
+    "OFFGAME": 0.0221,
+    "OTHER": 0.1461
    }
   },
   {
    "bucket": "2\u201310 h",
-   "n": 4539,
+   "n": 6349,
    "shares": {
-    "PERF": 0.1804,
-    "STAB": 0.1102,
-    "CONTENT": 0.1364,
-    "DESIGN": 0.2439,
-    "UI": 0.0456,
-    "MONET": 0.0573,
-    "ONLINE": 0.0004,
-    "SUPPORT": 0.011,
-    "STORY": 0.0474,
-    "OFFGAME": 0.017,
-    "OTHER": 0.1505
+    "PERF": 0.1959,
+    "STAB": 0.101,
+    "CONTENT": 0.1299,
+    "DESIGN": 0.2282,
+    "UI": 0.0474,
+    "MONET": 0.0572,
+    "ONLINE": 0.0005,
+    "SUPPORT": 0.0165,
+    "STORY": 0.0422,
+    "OFFGAME": 0.0161,
+    "OTHER": 0.1651
    }
   },
   {
    "bucket": "10\u201350 h",
-   "n": 11127,
+   "n": 14667,
    "shares": {
-    "PERF": 0.0946,
-    "STAB": 0.0766,
-    "CONTENT": 0.2214,
-    "DESIGN": 0.2688,
-    "UI": 0.0237,
-    "MONET": 0.0629,
-    "ONLINE": 0.0003,
-    "SUPPORT": 0.0138,
-    "STORY": 0.0677,
-    "OFFGAME": 0.0149,
-    "OTHER": 0.1554
+    "PERF": 0.1093,
+    "STAB": 0.0794,
+    "CONTENT": 0.206,
+    "DESIGN": 0.2555,
+    "UI": 0.0275,
+    "MONET": 0.0607,
+    "ONLINE": 0.0005,
+    "SUPPORT": 0.0198,
+    "STORY": 0.0614,
+    "OFFGAME": 0.016,
+    "OTHER": 0.1638
    }
   },
   {
    "bucket": "50\u2013200 h",
-   "n": 13126,
+   "n": 16413,
    "shares": {
-    "PERF": 0.0559,
-    "STAB": 0.0925,
-    "CONTENT": 0.2729,
-    "DESIGN": 0.2155,
-    "UI": 0.0151,
-    "MONET": 0.0786,
+    "PERF": 0.0628,
+    "STAB": 0.0985,
+    "CONTENT": 0.2616,
+    "DESIGN": 0.2107,
+    "UI": 0.017,
+    "MONET": 0.077,
     "ONLINE": 0.0012,
-    "SUPPORT": 0.0222,
-    "STORY": 0.0915,
-    "OFFGAME": 0.0206,
-    "OTHER": 0.134
+    "SUPPORT": 0.0264,
+    "STORY": 0.0835,
+    "OFFGAME": 0.0203,
+    "OTHER": 0.1411
    }
   },
   {
    "bucket": "200 h+",
-   "n": 3125,
+   "n": 3863,
    "shares": {
-    "PERF": 0.0442,
-    "STAB": 0.1862,
-    "CONTENT": 0.273,
-    "DESIGN": 0.1718,
-    "UI": 0.0122,
-    "MONET": 0.0854,
-    "ONLINE": 0.0042,
-    "SUPPORT": 0.0365,
-    "STORY": 0.0749,
-    "OFFGAME": 0.033,
-    "OTHER": 0.0787
+    "PERF": 0.0476,
+    "STAB": 0.1853,
+    "CONTENT": 0.2666,
+    "DESIGN": 0.1685,
+    "UI": 0.015,
+    "MONET": 0.0896,
+    "ONLINE": 0.0036,
+    "SUPPORT": 0.0409,
+    "STORY": 0.0712,
+    "OFFGAME": 0.0313,
+    "OTHER": 0.0802
    }
   }
  ],
@@ -386,53 +1032,53 @@
   {
    "code": "STOPPED",
    "statement": "Said they quit, refunded or won't return",
-   "n": 5038,
-   "share": 0.1496,
-   "mature_n": 5023,
-   "walk_rate": 0.5783,
-   "kept_10h_rate": 0.297,
-   "active_now_rate": 0.0145
+   "n": 6265,
+   "share": 0.1428,
+   "mature_n": 6243,
+   "walk_rate": 0.5694,
+   "kept_10h_rate": 0.3011,
+   "active_now_rate": 0.0138
   },
   {
    "code": "WAITING",
    "statement": "Said they'd come back if it's fixed",
-   "n": 2959,
-   "share": 0.0879,
-   "mature_n": 2958,
-   "walk_rate": 0.3851,
-   "kept_10h_rate": 0.4473,
-   "active_now_rate": 0.0166
+   "n": 3590,
+   "share": 0.0818,
+   "mature_n": 3587,
+   "walk_rate": 0.3736,
+   "kept_10h_rate": 0.4608,
+   "active_now_rate": 0.0148
   },
   {
    "code": "NONE",
    "statement": "Said nothing about stopping",
-   "n": 25675,
-   "share": 0.7625,
-   "mature_n": 25616,
-   "walk_rate": 0.4999,
-   "kept_10h_rate": 0.3526,
-   "active_now_rate": 0.0148
+   "n": 34017,
+   "share": 0.7754,
+   "mature_n": 33929,
+   "walk_rate": 0.4711,
+   "kept_10h_rate": 0.3753,
+   "active_now_rate": 0.0157
   }
  ],
  "monthly": [
   {
    "month": "2023-09",
-   "reviews": 42136,
-   "negative": 12743,
-   "negative_share": 0.3024,
-   "labeled": 11989,
+   "reviews": 58641,
+   "negative": 18283,
+   "negative_share": 0.3118,
+   "labeled": 17103,
    "reason_counts": {
-    "PERF": 1763,
-    "STAB": 1534,
-    "CONTENT": 2443,
-    "DESIGN": 2624,
-    "UI": 406,
-    "MONET": 638,
-    "ONLINE": 10,
-    "SUPPORT": 177,
-    "STORY": 809,
-    "OFFGAME": 261,
-    "OTHER": 1324
+    "PERF": 2841,
+    "STAB": 2081,
+    "CONTENT": 3203,
+    "DESIGN": 3584,
+    "UI": 614,
+    "MONET": 848,
+    "ONLINE": 16,
+    "SUPPORT": 395,
+    "STORY": 968,
+    "OFFGAME": 364,
+    "OTHER": 2189
    },
    "patches": [
     "Starfield Updates and Mod Support \u2013 September 13, 2023",
@@ -441,22 +1087,22 @@
   },
   {
    "month": "2023-10",
-   "reviews": 8547,
-   "negative": 4059,
-   "negative_share": 0.4749,
-   "labeled": 3854,
+   "reviews": 10607,
+   "negative": 4994,
+   "negative_share": 0.4708,
+   "labeled": 4732,
    "reason_counts": {
-    "PERF": 352,
-    "STAB": 488,
-    "CONTENT": 932,
-    "DESIGN": 950,
-    "UI": 94,
-    "MONET": 154,
+    "PERF": 434,
+    "STAB": 603,
+    "CONTENT": 1114,
+    "DESIGN": 1153,
+    "UI": 129,
+    "MONET": 198,
     "ONLINE": 5,
-    "SUPPORT": 46,
-    "STORY": 344,
-    "OFFGAME": 46,
-    "OTHER": 443
+    "SUPPORT": 74,
+    "STORY": 397,
+    "OFFGAME": 59,
+    "OTHER": 566
    },
    "patches": [
     "Starfield Updates 1.7.36 \u2013 October 09, 2023"
@@ -464,22 +1110,22 @@
   },
   {
    "month": "2023-11",
-   "reviews": 6539,
-   "negative": 2990,
-   "negative_share": 0.4573,
-   "labeled": 2834,
+   "reviews": 8746,
+   "negative": 3719,
+   "negative_share": 0.4252,
+   "labeled": 3500,
    "reason_counts": {
-    "PERF": 219,
-    "STAB": 253,
-    "CONTENT": 815,
-    "DESIGN": 724,
-    "UI": 47,
-    "MONET": 115,
-    "ONLINE": 0,
-    "SUPPORT": 63,
-    "STORY": 219,
-    "OFFGAME": 29,
-    "OTHER": 350
+    "PERF": 282,
+    "STAB": 307,
+    "CONTENT": 967,
+    "DESIGN": 848,
+    "UI": 65,
+    "MONET": 155,
+    "ONLINE": 1,
+    "SUPPORT": 96,
+    "STORY": 258,
+    "OFFGAME": 40,
+    "OTHER": 481
    },
    "patches": [
     "[UPDATED] Starfield Beta Update 1.8.84 Notes - November 8, 2023",
@@ -488,22 +1134,22 @@
   },
   {
    "month": "2023-12",
-   "reviews": 5964,
-   "negative": 4223,
-   "negative_share": 0.7081,
-   "labeled": 3969,
+   "reviews": 7167,
+   "negative": 4958,
+   "negative_share": 0.6918,
+   "labeled": 4639,
    "reason_counts": {
-    "PERF": 256,
-    "STAB": 261,
-    "CONTENT": 1083,
-    "DESIGN": 1083,
-    "UI": 59,
-    "MONET": 222,
+    "PERF": 334,
+    "STAB": 329,
+    "CONTENT": 1220,
+    "DESIGN": 1223,
+    "UI": 78,
+    "MONET": 249,
     "ONLINE": 2,
-    "SUPPORT": 74,
-    "STORY": 324,
-    "OFFGAME": 52,
-    "OTHER": 553
+    "SUPPORT": 100,
+    "STORY": 359,
+    "OFFGAME": 61,
+    "OTHER": 684
    },
    "patches": [
     "Starfield Beta Update 1.8.87 Notes \u2013 December 1, 2023",
@@ -512,22 +1158,22 @@
   },
   {
    "month": "2024-01",
-   "reviews": 3658,
-   "negative": 2457,
-   "negative_share": 0.6717,
-   "labeled": 2305,
+   "reviews": 4530,
+   "negative": 2970,
+   "negative_share": 0.6556,
+   "labeled": 2765,
    "reason_counts": {
-    "PERF": 136,
-    "STAB": 142,
-    "CONTENT": 551,
-    "DESIGN": 595,
-    "UI": 37,
-    "MONET": 121,
-    "ONLINE": 4,
-    "SUPPORT": 30,
-    "STORY": 135,
-    "OFFGAME": 49,
-    "OTHER": 505
+    "PERF": 184,
+    "STAB": 176,
+    "CONTENT": 635,
+    "DESIGN": 679,
+    "UI": 45,
+    "MONET": 145,
+    "ONLINE": 5,
+    "SUPPORT": 45,
+    "STORY": 159,
+    "OFFGAME": 59,
+    "OTHER": 633
    },
    "patches": [
     "Starfield Update 1.9.51 Notes \u2013 January 30, 2024"
@@ -535,22 +1181,22 @@
   },
   {
    "month": "2024-02",
-   "reviews": 1197,
-   "negative": 698,
-   "negative_share": 0.5831,
-   "labeled": 636,
+   "reviews": 1521,
+   "negative": 864,
+   "negative_share": 0.568,
+   "labeled": 785,
    "reason_counts": {
-    "PERF": 38,
-    "STAB": 50,
-    "CONTENT": 168,
-    "DESIGN": 148,
-    "UI": 10,
-    "MONET": 35,
+    "PERF": 59,
+    "STAB": 60,
+    "CONTENT": 189,
+    "DESIGN": 174,
+    "UI": 14,
+    "MONET": 41,
     "ONLINE": 1,
-    "SUPPORT": 13,
-    "STORY": 53,
-    "OFFGAME": 13,
-    "OTHER": 107
+    "SUPPORT": 16,
+    "STORY": 60,
+    "OFFGAME": 15,
+    "OTHER": 156
    },
    "patches": [
     "Starfield Update 1.9.67 Notes \u2013 February 20, 2024"
@@ -558,22 +1204,22 @@
   },
   {
    "month": "2024-03",
-   "reviews": 1527,
-   "negative": 902,
-   "negative_share": 0.5907,
-   "labeled": 831,
+   "reviews": 1929,
+   "negative": 1100,
+   "negative_share": 0.5702,
+   "labeled": 1012,
    "reason_counts": {
-    "PERF": 65,
-    "STAB": 57,
-    "CONTENT": 166,
-    "DESIGN": 222,
-    "UI": 10,
-    "MONET": 50,
+    "PERF": 91,
+    "STAB": 74,
+    "CONTENT": 191,
+    "DESIGN": 248,
+    "UI": 15,
+    "MONET": 64,
     "ONLINE": 0,
-    "SUPPORT": 22,
-    "STORY": 52,
-    "OFFGAME": 28,
-    "OTHER": 159
+    "SUPPORT": 31,
+    "STORY": 64,
+    "OFFGAME": 31,
+    "OTHER": 203
    },
    "patches": [
     "Starfield Update 1.10.31 - March 19, 2024"
@@ -581,43 +1227,43 @@
   },
   {
    "month": "2024-04",
-   "reviews": 808,
-   "negative": 463,
-   "negative_share": 0.573,
-   "labeled": 424,
+   "reviews": 1046,
+   "negative": 591,
+   "negative_share": 0.565,
+   "labeled": 538,
    "reason_counts": {
-    "PERF": 34,
-    "STAB": 41,
-    "CONTENT": 80,
-    "DESIGN": 123,
-    "UI": 12,
-    "MONET": 22,
+    "PERF": 45,
+    "STAB": 56,
+    "CONTENT": 100,
+    "DESIGN": 150,
+    "UI": 14,
+    "MONET": 26,
     "ONLINE": 0,
-    "SUPPORT": 4,
-    "STORY": 29,
+    "SUPPORT": 10,
+    "STORY": 31,
     "OFFGAME": 11,
-    "OTHER": 68
+    "OTHER": 95
    },
    "patches": []
   },
   {
    "month": "2024-05",
-   "reviews": 1037,
-   "negative": 528,
-   "negative_share": 0.5092,
-   "labeled": 487,
+   "reviews": 1332,
+   "negative": 645,
+   "negative_share": 0.4842,
+   "labeled": 591,
    "reason_counts": {
-    "PERF": 29,
-    "STAB": 45,
-    "CONTENT": 113,
-    "DESIGN": 109,
-    "UI": 7,
-    "MONET": 34,
+    "PERF": 35,
+    "STAB": 55,
+    "CONTENT": 134,
+    "DESIGN": 127,
+    "UI": 11,
+    "MONET": 42,
     "ONLINE": 1,
-    "SUPPORT": 14,
-    "STORY": 40,
-    "OFFGAME": 6,
-    "OTHER": 89
+    "SUPPORT": 22,
+    "STORY": 43,
+    "OFFGAME": 10,
+    "OTHER": 111
    },
    "patches": [
     "Starfield Update 1.11.36 - May 15, 2024",
@@ -626,22 +1272,22 @@
   },
   {
    "month": "2024-06",
-   "reviews": 2262,
-   "negative": 1675,
-   "negative_share": 0.7405,
-   "labeled": 1536,
+   "reviews": 2815,
+   "negative": 2058,
+   "negative_share": 0.7311,
+   "labeled": 1871,
    "reason_counts": {
-    "PERF": 63,
-    "STAB": 70,
-    "CONTENT": 270,
-    "DESIGN": 178,
-    "UI": 15,
-    "MONET": 626,
+    "PERF": 74,
+    "STAB": 90,
+    "CONTENT": 296,
+    "DESIGN": 213,
+    "UI": 17,
+    "MONET": 793,
     "ONLINE": 0,
-    "SUPPORT": 44,
-    "STORY": 52,
-    "OFFGAME": 34,
-    "OTHER": 184
+    "SUPPORT": 53,
+    "STORY": 59,
+    "OFFGAME": 35,
+    "OTHER": 241
    },
    "patches": [
     "First Starfield Shattered Space Trailer & Highlights from the June Update",
@@ -650,43 +1296,43 @@
   },
   {
    "month": "2024-07",
-   "reviews": 775,
-   "negative": 386,
-   "negative_share": 0.4981,
-   "labeled": 360,
+   "reviews": 1039,
+   "negative": 490,
+   "negative_share": 0.4716,
+   "labeled": 458,
    "reason_counts": {
-    "PERF": 29,
-    "STAB": 39,
-    "CONTENT": 81,
-    "DESIGN": 60,
-    "UI": 5,
-    "MONET": 52,
+    "PERF": 37,
+    "STAB": 51,
+    "CONTENT": 96,
+    "DESIGN": 76,
+    "UI": 8,
+    "MONET": 70,
     "ONLINE": 0,
-    "SUPPORT": 10,
-    "STORY": 16,
+    "SUPPORT": 13,
+    "STORY": 20,
     "OFFGAME": 9,
-    "OTHER": 59
+    "OTHER": 78
    },
    "patches": []
   },
   {
    "month": "2024-08",
-   "reviews": 839,
-   "negative": 383,
-   "negative_share": 0.4565,
-   "labeled": 342,
+   "reviews": 1180,
+   "negative": 531,
+   "negative_share": 0.45,
+   "labeled": 475,
    "reason_counts": {
-    "PERF": 29,
-    "STAB": 46,
-    "CONTENT": 74,
-    "DESIGN": 61,
-    "UI": 6,
-    "MONET": 23,
-    "ONLINE": 0,
-    "SUPPORT": 9,
-    "STORY": 26,
-    "OFFGAME": 5,
-    "OTHER": 63
+    "PERF": 38,
+    "STAB": 62,
+    "CONTENT": 98,
+    "DESIGN": 91,
+    "UI": 9,
+    "MONET": 30,
+    "ONLINE": 1,
+    "SUPPORT": 11,
+    "STORY": 32,
+    "OFFGAME": 8,
+    "OTHER": 95
    },
    "patches": [
     "Starfield\u2019s REV-8 Land Vehicle Drops in Latest Update"
@@ -694,22 +1340,22 @@
   },
   {
    "month": "2024-09",
-   "reviews": 779,
-   "negative": 319,
-   "negative_share": 0.4095,
-   "labeled": 284,
+   "reviews": 1041,
+   "negative": 438,
+   "negative_share": 0.4207,
+   "labeled": 392,
    "reason_counts": {
-    "PERF": 12,
-    "STAB": 37,
-    "CONTENT": 64,
-    "DESIGN": 65,
-    "UI": 7,
-    "MONET": 20,
+    "PERF": 31,
+    "STAB": 51,
+    "CONTENT": 82,
+    "DESIGN": 87,
+    "UI": 10,
+    "MONET": 24,
     "ONLINE": 2,
-    "SUPPORT": 6,
-    "STORY": 17,
-    "OFFGAME": 2,
-    "OTHER": 52
+    "SUPPORT": 7,
+    "STORY": 23,
+    "OFFGAME": 5,
+    "OTHER": 70
    },
    "patches": [
     "Starfield Update 1.14.70 \u2013 September 30, 2024"
@@ -717,43 +1363,43 @@
   },
   {
    "month": "2024-10",
-   "reviews": 1058,
-   "negative": 613,
-   "negative_share": 0.5794,
-   "labeled": 562,
+   "reviews": 1341,
+   "negative": 745,
+   "negative_share": 0.5556,
+   "labeled": 683,
    "reason_counts": {
-    "PERF": 36,
-    "STAB": 49,
-    "CONTENT": 126,
-    "DESIGN": 114,
-    "UI": 3,
-    "MONET": 48,
+    "PERF": 44,
+    "STAB": 67,
+    "CONTENT": 151,
+    "DESIGN": 135,
+    "UI": 10,
+    "MONET": 54,
     "ONLINE": 1,
-    "SUPPORT": 17,
-    "STORY": 58,
-    "OFFGAME": 16,
-    "OTHER": 94
+    "SUPPORT": 18,
+    "STORY": 68,
+    "OFFGAME": 19,
+    "OTHER": 116
    },
    "patches": []
   },
   {
    "month": "2024-11",
-   "reviews": 469,
-   "negative": 226,
-   "negative_share": 0.4819,
-   "labeled": 209,
+   "reviews": 687,
+   "negative": 298,
+   "negative_share": 0.4338,
+   "labeled": 271,
    "reason_counts": {
-    "PERF": 20,
-    "STAB": 17,
-    "CONTENT": 36,
-    "DESIGN": 53,
-    "UI": 5,
-    "MONET": 10,
+    "PERF": 24,
+    "STAB": 23,
+    "CONTENT": 51,
+    "DESIGN": 64,
+    "UI": 8,
+    "MONET": 15,
     "ONLINE": 0,
-    "SUPPORT": 0,
-    "STORY": 21,
-    "OFFGAME": 3,
-    "OTHER": 44
+    "SUPPORT": 1,
+    "STORY": 27,
+    "OFFGAME": 6,
+    "OTHER": 52
    },
    "patches": [
     "Starfield Update 1.14.74 \u2013 November 19, 2024",
@@ -762,127 +1408,127 @@
   },
   {
    "month": "2024-12",
-   "reviews": 534,
-   "negative": 222,
-   "negative_share": 0.4157,
-   "labeled": 191,
+   "reviews": 776,
+   "negative": 311,
+   "negative_share": 0.4008,
+   "labeled": 274,
    "reason_counts": {
-    "PERF": 23,
-    "STAB": 21,
-    "CONTENT": 40,
-    "DESIGN": 42,
-    "UI": 3,
-    "MONET": 13,
+    "PERF": 36,
+    "STAB": 32,
+    "CONTENT": 58,
+    "DESIGN": 58,
+    "UI": 9,
+    "MONET": 15,
     "ONLINE": 2,
     "SUPPORT": 3,
-    "STORY": 19,
-    "OFFGAME": 4,
-    "OTHER": 21
+    "STORY": 21,
+    "OFFGAME": 7,
+    "OTHER": 33
    },
    "patches": []
   },
   {
    "month": "2025-01",
-   "reviews": 454,
-   "negative": 201,
-   "negative_share": 0.4427,
-   "labeled": 138,
+   "reviews": 622,
+   "negative": 271,
+   "negative_share": 0.4357,
+   "labeled": 204,
    "reason_counts": {
-    "PERF": 9,
-    "STAB": 15,
-    "CONTENT": 26,
-    "DESIGN": 31,
-    "UI": 4,
-    "MONET": 6,
+    "PERF": 18,
+    "STAB": 23,
+    "CONTENT": 30,
+    "DESIGN": 55,
+    "UI": 6,
+    "MONET": 7,
     "ONLINE": 0,
-    "SUPPORT": 2,
-    "STORY": 17,
-    "OFFGAME": 5,
-    "OTHER": 23
+    "SUPPORT": 3,
+    "STORY": 19,
+    "OFFGAME": 7,
+    "OTHER": 36
    },
    "patches": []
   },
   {
    "month": "2025-02",
-   "reviews": 311,
-   "negative": 145,
-   "negative_share": 0.4662,
-   "labeled": 132,
+   "reviews": 404,
+   "negative": 184,
+   "negative_share": 0.4554,
+   "labeled": 168,
    "reason_counts": {
-    "PERF": 16,
-    "STAB": 15,
-    "CONTENT": 32,
-    "DESIGN": 21,
+    "PERF": 18,
+    "STAB": 22,
+    "CONTENT": 38,
+    "DESIGN": 26,
     "UI": 1,
-    "MONET": 6,
+    "MONET": 7,
     "ONLINE": 1,
-    "SUPPORT": 3,
-    "STORY": 11,
-    "OFFGAME": 4,
-    "OTHER": 22
+    "SUPPORT": 4,
+    "STORY": 13,
+    "OFFGAME": 5,
+    "OTHER": 33
    },
    "patches": []
   },
   {
    "month": "2025-03",
-   "reviews": 354,
-   "negative": 167,
-   "negative_share": 0.4718,
-   "labeled": 149,
+   "reviews": 486,
+   "negative": 226,
+   "negative_share": 0.465,
+   "labeled": 164,
    "reason_counts": {
-    "PERF": 12,
+    "PERF": 13,
     "STAB": 14,
-    "CONTENT": 32,
-    "DESIGN": 29,
+    "CONTENT": 40,
+    "DESIGN": 31,
     "UI": 4,
     "MONET": 10,
     "ONLINE": 1,
     "SUPPORT": 1,
-    "STORY": 17,
+    "STORY": 18,
     "OFFGAME": 2,
-    "OTHER": 27
+    "OTHER": 30
    },
    "patches": []
   },
   {
    "month": "2025-04",
-   "reviews": 314,
-   "negative": 138,
-   "negative_share": 0.4395,
-   "labeled": 122,
+   "reviews": 440,
+   "negative": 197,
+   "negative_share": 0.4477,
+   "labeled": 179,
    "reason_counts": {
-    "PERF": 6,
-    "STAB": 11,
-    "CONTENT": 30,
-    "DESIGN": 25,
-    "UI": 1,
-    "MONET": 6,
-    "ONLINE": 1,
-    "SUPPORT": 1,
-    "STORY": 11,
-    "OFFGAME": 6,
-    "OTHER": 24
+    "PERF": 11,
+    "STAB": 16,
+    "CONTENT": 42,
+    "DESIGN": 33,
+    "UI": 4,
+    "MONET": 8,
+    "ONLINE": 2,
+    "SUPPORT": 4,
+    "STORY": 12,
+    "OFFGAME": 8,
+    "OTHER": 39
    },
    "patches": []
   },
   {
    "month": "2025-05",
-   "reviews": 353,
-   "negative": 147,
-   "negative_share": 0.4164,
-   "labeled": 136,
+   "reviews": 479,
+   "negative": 198,
+   "negative_share": 0.4134,
+   "labeled": 183,
    "reason_counts": {
-    "PERF": 7,
-    "STAB": 17,
-    "CONTENT": 27,
-    "DESIGN": 24,
-    "UI": 1,
-    "MONET": 11,
+    "PERF": 14,
+    "STAB": 25,
+    "CONTENT": 34,
+    "DESIGN": 34,
+    "UI": 3,
+    "MONET": 14,
     "ONLINE": 0,
-    "SUPPORT": 8,
+    "SUPPORT": 11,
     "STORY": 14,
     "OFFGAME": 1,
-    "OTHER": 26
+    "OTHER": 33
    },
    "patches": [
     "Starfield Update 1.15.216 \u2013 May 22, 2025",
@@ -891,43 +1537,43 @@
   },
   {
    "month": "2025-06",
-   "reviews": 313,
-   "negative": 147,
-   "negative_share": 0.4696,
-   "labeled": 132,
+   "reviews": 408,
+   "negative": 191,
+   "negative_share": 0.4681,
+   "labeled": 170,
    "reason_counts": {
-    "PERF": 14,
-    "STAB": 11,
-    "CONTENT": 32,
-    "DESIGN": 16,
-    "UI": 3,
-    "MONET": 18,
+    "PERF": 16,
+    "STAB": 15,
+    "CONTENT": 41,
+    "DESIGN": 25,
+    "UI": 5,
+    "MONET": 19,
     "ONLINE": 0,
-    "SUPPORT": 5,
-    "STORY": 8,
+    "SUPPORT": 6,
+    "STORY": 9,
     "OFFGAME": 0,
-    "OTHER": 25
+    "OTHER": 34
    },
    "patches": []
   },
   {
    "month": "2025-07",
-   "reviews": 390,
-   "negative": 167,
-   "negative_share": 0.4282,
-   "labeled": 156,
+   "reviews": 530,
+   "negative": 213,
+   "negative_share": 0.4019,
+   "labeled": 195,
    "reason_counts": {
-    "PERF": 5,
-    "STAB": 16,
-    "CONTENT": 37,
-    "DESIGN": 29,
+    "PERF": 9,
+    "STAB": 23,
+    "CONTENT": 46,
+    "DESIGN": 35,
     "UI": 7,
-    "MONET": 9,
-    "ONLINE": 0,
-    "SUPPORT": 8,
-    "STORY": 20,
+    "MONET": 13,
+    "ONLINE": 1,
+    "SUPPORT": 11,
+    "STORY": 22,
     "OFFGAME": 2,
-    "OTHER": 23
+    "OTHER": 26
    },
    "patches": [
     "Starfield Update 1.15.222 - August 5, 2025"
@@ -935,169 +1581,169 @@
   },
   {
    "month": "2025-08",
-   "reviews": 410,
-   "negative": 174,
-   "negative_share": 0.4244,
-   "labeled": 162,
+   "reviews": 636,
+   "negative": 258,
+   "negative_share": 0.4057,
+   "labeled": 239,
    "reason_counts": {
-    "PERF": 11,
-    "STAB": 15,
-    "CONTENT": 30,
-    "DESIGN": 39,
-    "UI": 3,
-    "MONET": 6,
+    "PERF": 18,
+    "STAB": 32,
+    "CONTENT": 44,
+    "DESIGN": 58,
+    "UI": 6,
+    "MONET": 11,
     "ONLINE": 0,
     "SUPPORT": 3,
-    "STORY": 22,
-    "OFFGAME": 0,
-    "OTHER": 33
+    "STORY": 25,
+    "OFFGAME": 2,
+    "OTHER": 40
    },
    "patches": []
   },
   {
    "month": "2025-09",
-   "reviews": 366,
-   "negative": 204,
-   "negative_share": 0.5574,
-   "labeled": 186,
+   "reviews": 480,
+   "negative": 255,
+   "negative_share": 0.5312,
+   "labeled": 233,
    "reason_counts": {
-    "PERF": 5,
-    "STAB": 15,
-    "CONTENT": 36,
-    "DESIGN": 38,
-    "UI": 2,
-    "MONET": 5,
+    "PERF": 8,
+    "STAB": 17,
+    "CONTENT": 52,
+    "DESIGN": 44,
+    "UI": 6,
+    "MONET": 8,
     "ONLINE": 0,
-    "SUPPORT": 2,
-    "STORY": 10,
-    "OFFGAME": 43,
-    "OTHER": 30
+    "SUPPORT": 4,
+    "STORY": 12,
+    "OFFGAME": 47,
+    "OTHER": 35
    },
    "patches": []
   },
   {
    "month": "2025-10",
-   "reviews": 268,
-   "negative": 125,
-   "negative_share": 0.4664,
-   "labeled": 113,
+   "reviews": 402,
+   "negative": 170,
+   "negative_share": 0.4229,
+   "labeled": 154,
    "reason_counts": {
-    "PERF": 10,
-    "STAB": 9,
-    "CONTENT": 42,
-    "DESIGN": 15,
-    "UI": 1,
-    "MONET": 5,
+    "PERF": 13,
+    "STAB": 12,
+    "CONTENT": 50,
+    "DESIGN": 26,
+    "UI": 5,
+    "MONET": 9,
     "ONLINE": 0,
-    "SUPPORT": 4,
-    "STORY": 8,
-    "OFFGAME": 1,
-    "OTHER": 18
-   },
-   "patches": []
-  },
-  {
-   "month": "2025-11",
-   "reviews": 252,
-   "negative": 120,
-   "negative_share": 0.4762,
-   "labeled": 105,
-   "reason_counts": {
-    "PERF": 10,
-    "STAB": 6,
-    "CONTENT": 27,
-    "DESIGN": 14,
-    "UI": 2,
-    "MONET": 10,
-    "ONLINE": 0,
-    "SUPPORT": 4,
-    "STORY": 9,
+    "SUPPORT": 6,
+    "STORY": 10,
     "OFFGAME": 1,
     "OTHER": 22
    },
    "patches": []
   },
   {
-   "month": "2025-12",
-   "reviews": 308,
-   "negative": 145,
-   "negative_share": 0.4708,
-   "labeled": 133,
+   "month": "2025-11",
+   "reviews": 345,
+   "negative": 155,
+   "negative_share": 0.4493,
+   "labeled": 136,
    "reason_counts": {
-    "PERF": 16,
-    "STAB": 10,
-    "CONTENT": 26,
-    "DESIGN": 29,
-    "UI": 2,
-    "MONET": 5,
+    "PERF": 13,
+    "STAB": 9,
+    "CONTENT": 33,
+    "DESIGN": 21,
+    "UI": 4,
+    "MONET": 12,
     "ONLINE": 0,
-    "SUPPORT": 2,
-    "STORY": 14,
+    "SUPPORT": 5,
+    "STORY": 10,
     "OFFGAME": 2,
     "OTHER": 27
    },
    "patches": []
   },
   {
-   "month": "2026-01",
-   "reviews": 394,
-   "negative": 187,
-   "negative_share": 0.4746,
-   "labeled": 170,
+   "month": "2025-12",
+   "reviews": 447,
+   "negative": 192,
+   "negative_share": 0.4295,
+   "labeled": 175,
    "reason_counts": {
-    "PERF": 9,
-    "STAB": 14,
-    "CONTENT": 31,
-    "DESIGN": 42,
+    "PERF": 20,
+    "STAB": 18,
+    "CONTENT": 32,
+    "DESIGN": 36,
     "UI": 4,
-    "MONET": 9,
+    "MONET": 6,
+    "ONLINE": 0,
+    "SUPPORT": 5,
+    "STORY": 15,
+    "OFFGAME": 3,
+    "OTHER": 36
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-01",
+   "reviews": 517,
+   "negative": 233,
+   "negative_share": 0.4507,
+   "labeled": 209,
+   "reason_counts": {
+    "PERF": 12,
+    "STAB": 17,
+    "CONTENT": 37,
+    "DESIGN": 52,
+    "UI": 4,
+    "MONET": 13,
     "ONLINE": 1,
-    "SUPPORT": 10,
-    "STORY": 14,
-    "OFFGAME": 1,
-    "OTHER": 35
+    "SUPPORT": 11,
+    "STORY": 17,
+    "OFFGAME": 2,
+    "OTHER": 43
    },
    "patches": []
   },
   {
    "month": "2026-02",
-   "reviews": 255,
-   "negative": 110,
-   "negative_share": 0.4314,
-   "labeled": 102,
+   "reviews": 340,
+   "negative": 140,
+   "negative_share": 0.4118,
+   "labeled": 130,
    "reason_counts": {
-    "PERF": 7,
-    "STAB": 13,
-    "CONTENT": 27,
-    "DESIGN": 19,
-    "UI": 0,
+    "PERF": 10,
+    "STAB": 18,
+    "CONTENT": 33,
+    "DESIGN": 27,
+    "UI": 1,
     "MONET": 5,
     "ONLINE": 1,
-    "SUPPORT": 3,
-    "STORY": 11,
+    "SUPPORT": 5,
+    "STORY": 12,
     "OFFGAME": 2,
-    "OTHER": 14
+    "OTHER": 16
    },
    "patches": []
   },
   {
    "month": "2026-03",
-   "reviews": 372,
-   "negative": 114,
-   "negative_share": 0.3065,
-   "labeled": 109,
+   "reviews": 533,
+   "negative": 165,
+   "negative_share": 0.3096,
+   "labeled": 158,
    "reason_counts": {
-    "PERF": 8,
-    "STAB": 13,
-    "CONTENT": 19,
-    "DESIGN": 28,
-    "UI": 3,
-    "MONET": 7,
+    "PERF": 11,
+    "STAB": 19,
+    "CONTENT": 26,
+    "DESIGN": 38,
+    "UI": 4,
+    "MONET": 12,
     "ONLINE": 0,
-    "SUPPORT": 3,
-    "STORY": 9,
-    "OFFGAME": 5,
-    "OTHER": 14
+    "SUPPORT": 5,
+    "STORY": 12,
+    "OFFGAME": 6,
+    "OTHER": 25
    },
    "patches": [
     "Everything Coming in Starfield\u2019s Free Lanes Update & Terran Armada DLC"
@@ -1105,22 +1751,22 @@
   },
   {
    "month": "2026-04",
-   "reviews": 1044,
-   "negative": 384,
-   "negative_share": 0.3678,
-   "labeled": 355,
+   "reviews": 1430,
+   "negative": 500,
+   "negative_share": 0.3497,
+   "labeled": 464,
    "reason_counts": {
-    "PERF": 27,
-    "STAB": 65,
-    "CONTENT": 54,
-    "DESIGN": 78,
-    "UI": 10,
-    "MONET": 23,
+    "PERF": 43,
+    "STAB": 82,
+    "CONTENT": 65,
+    "DESIGN": 92,
+    "UI": 19,
+    "MONET": 38,
     "ONLINE": 2,
-    "SUPPORT": 13,
-    "STORY": 17,
-    "OFFGAME": 4,
-    "OTHER": 62
+    "SUPPORT": 16,
+    "STORY": 23,
+    "OFFGAME": 5,
+    "OTHER": 79
    },
    "patches": [
     "Everything in Starfield\u2019s Free Lanes Update & Terran Armada DLC",
@@ -1129,15 +1775,15 @@
   },
   {
    "month": "2026-05",
-   "reviews": 32,
-   "negative": 14,
-   "negative_share": 0.4375,
-   "labeled": 14,
+   "reviews": 51,
+   "negative": 16,
+   "negative_share": 0.3137,
+   "labeled": 16,
    "reason_counts": {
     "PERF": 1,
-    "STAB": 5,
+    "STAB": 6,
     "CONTENT": 0,
-    "DESIGN": 4,
+    "DESIGN": 5,
     "UI": 0,
     "MONET": 1,
     "ONLINE": 0,
@@ -1152,22 +1798,22 @@
   },
   {
    "month": "2026-06",
-   "reviews": 351,
-   "negative": 158,
-   "negative_share": 0.4501,
-   "labeled": 150,
+   "reviews": 478,
+   "negative": 208,
+   "negative_share": 0.4351,
+   "labeled": 198,
    "reason_counts": {
-    "PERF": 13,
-    "STAB": 19,
-    "CONTENT": 30,
-    "DESIGN": 21,
-    "UI": 5,
-    "MONET": 14,
+    "PERF": 19,
+    "STAB": 27,
+    "CONTENT": 36,
+    "DESIGN": 32,
+    "UI": 8,
+    "MONET": 16,
     "ONLINE": 1,
-    "SUPPORT": 6,
-    "STORY": 14,
+    "SUPPORT": 7,
+    "STORY": 17,
     "OFFGAME": 2,
-    "OTHER": 25
+    "OTHER": 33
    },
    "patches": [
     "Starfield Update 1.16.244 \u2013 June 11, 2026"
@@ -1175,106 +1821,106 @@
   },
   {
    "month": "2026-07",
-   "reviews": 320,
-   "negative": 122,
-   "negative_share": 0.3812,
-   "labeled": 115,
+   "reviews": 444,
+   "negative": 160,
+   "negative_share": 0.3604,
+   "labeled": 149,
    "reason_counts": {
-    "PERF": 8,
-    "STAB": 15,
-    "CONTENT": 16,
-    "DESIGN": 30,
-    "UI": 3,
-    "MONET": 3,
-    "ONLINE": 0,
-    "SUPPORT": 3,
-    "STORY": 12,
+    "PERF": 13,
+    "STAB": 19,
+    "CONTENT": 19,
+    "DESIGN": 35,
+    "UI": 5,
+    "MONET": 6,
+    "ONLINE": 1,
+    "SUPPORT": 4,
+    "STORY": 16,
     "OFFGAME": 3,
-    "OTHER": 22
+    "OTHER": 28
    },
    "patches": []
   },
   {
    "month": "2026-08",
-   "reviews": 61,
-   "negative": 26,
-   "negative_share": 0.4262,
-   "labeled": 26,
+   "reviews": 87,
+   "negative": 36,
+   "negative_share": 0.4138,
+   "labeled": 36,
    "reason_counts": {
-    "PERF": 2,
-    "STAB": 2,
+    "PERF": 4,
+    "STAB": 4,
     "CONTENT": 6,
-    "DESIGN": 4,
+    "DESIGN": 6,
     "UI": 0,
-    "MONET": 2,
+    "MONET": 4,
     "ONLINE": 2,
     "SUPPORT": 0,
-    "STORY": 2,
+    "STORY": 3,
     "OFFGAME": 0,
-    "OTHER": 6
+    "OTHER": 7
    },
    "patches": []
   },
   {
    "month": "2026-09",
-   "reviews": 217,
-   "negative": 89,
-   "negative_share": 0.4101,
-   "labeled": 79,
+   "reviews": 309,
+   "negative": 121,
+   "negative_share": 0.3916,
+   "labeled": 109,
    "reason_counts": {
-    "PERF": 5,
-    "STAB": 8,
-    "CONTENT": 19,
-    "DESIGN": 13,
-    "UI": 3,
-    "MONET": 4,
+    "PERF": 7,
+    "STAB": 14,
+    "CONTENT": 25,
+    "DESIGN": 22,
+    "UI": 4,
+    "MONET": 6,
     "ONLINE": 0,
-    "SUPPORT": 6,
+    "SUPPORT": 7,
     "STORY": 7,
-    "OFFGAME": 1,
-    "OTHER": 13
+    "OFFGAME": 2,
+    "OTHER": 15
    },
    "patches": []
   },
   {
    "month": "2026-10",
-   "reviews": 42,
-   "negative": 17,
-   "negative_share": 0.4048,
-   "labeled": 17,
+   "reviews": 65,
+   "negative": 27,
+   "negative_share": 0.4154,
+   "labeled": 26,
    "reason_counts": {
     "PERF": 2,
-    "STAB": 4,
-    "CONTENT": 4,
-    "DESIGN": 2,
+    "STAB": 7,
+    "CONTENT": 6,
+    "DESIGN": 4,
     "UI": 2,
-    "MONET": 0,
+    "MONET": 1,
     "ONLINE": 0,
     "SUPPORT": 0,
     "STORY": 1,
     "OFFGAME": 1,
-    "OTHER": 1
+    "OTHER": 2
    },
    "patches": []
   },
   {
    "month": "2026-11",
-   "reviews": 145,
-   "negative": 62,
-   "negative_share": 0.4276,
-   "labeled": 58,
+   "reviews": 224,
+   "negative": 94,
+   "negative_share": 0.4196,
+   "labeled": 88,
    "reason_counts": {
-    "PERF": 3,
-    "STAB": 13,
-    "CONTENT": 9,
-    "DESIGN": 12,
+    "PERF": 4,
+    "STAB": 17,
+    "CONTENT": 15,
+    "DESIGN": 22,
     "UI": 0,
-    "MONET": 2,
+    "MONET": 3,
     "ONLINE": 0,
-    "SUPPORT": 2,
-    "STORY": 4,
-    "OFFGAME": 5,
-    "OTHER": 8
+    "SUPPORT": 3,
+    "STORY": 7,
+    "OFFGAME": 6,
+    "OTHER": 11
    },
    "patches": []
   }
@@ -1282,57 +1928,57 @@
  "top_reasons": [
   "DESIGN",
   "CONTENT",
-  "STAB",
   "PERF",
-  "STORY"
+  "STAB",
+  "MONET"
  ],
  "spikes": [
   {
    "week_start": "2023-12-25",
-   "negative": 1540,
-   "usual_weekly_negative": 673.0,
-   "negative_share": 0.7133,
-   "reviews": 2159,
+   "negative": 1814,
+   "usual_weekly_negative": 805.5,
+   "negative_share": 0.6977,
+   "reviews": 2600,
    "top_reasons": [
     {
      "code": "CONTENT",
      "reason": "Not enough content",
-     "share": 0.2878
+     "share": 0.2737
     },
     {
      "code": "DESIGN",
      "reason": "Gameplay & design choices",
-     "share": 0.2584
+     "share": 0.2516
     },
     {
      "code": "OTHER",
      "reason": "No clear reason",
-     "share": 0.1625
+     "share": 0.1676
     }
    ],
    "official_posts": []
   },
   {
    "week_start": "2024-06-10",
-   "negative": 966,
-   "usual_weekly_negative": 107.0,
-   "negative_share": 0.818,
-   "reviews": 1181,
+   "negative": 1168,
+   "usual_weekly_negative": 135.5,
+   "negative_share": 0.8168,
+   "reviews": 1430,
    "top_reasons": [
     {
      "code": "MONET",
      "reason": "Price & monetization",
-     "share": 0.4816
+     "share": 0.4967
     },
     {
      "code": "CONTENT",
      "reason": "Not enough content",
-     "share": 0.1475
+     "share": 0.1351
     },
     {
-     "code": "DESIGN",
-     "reason": "Gameplay & design choices",
-     "share": 0.1117
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "share": 0.1118
     }
    ],
    "official_posts": [
@@ -1348,25 +1994,25 @@
   },
   {
    "week_start": "2024-09-30",
-   "negative": 289,
-   "usual_weekly_negative": 82.0,
-   "negative_share": 0.5656,
-   "reviews": 511,
+   "negative": 346,
+   "usual_weekly_negative": 114.0,
+   "negative_share": 0.5483,
+   "reviews": 631,
    "top_reasons": [
-    {
-     "code": "DESIGN",
-     "reason": "Gameplay & design choices",
-     "share": 0.2119
-    },
     {
      "code": "CONTENT",
      "reason": "Not enough content",
-     "share": 0.1896
+     "share": 0.2019
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.1832
     },
     {
      "code": "OTHER",
      "reason": "No clear reason",
-     "share": 0.1636
+     "share": 0.1677
     }
    ],
    "official_posts": [
@@ -1386,50 +2032,50 @@
   },
   {
    "week_start": "2025-09-15",
-   "negative": 101,
-   "usual_weekly_negative": 38.0,
-   "negative_share": 0.7481,
-   "reviews": 135,
+   "negative": 119,
+   "usual_weekly_negative": 53.5,
+   "negative_share": 0.7212,
+   "reviews": 165,
    "top_reasons": [
     {
      "code": "OFFGAME",
      "reason": "Off-game topics",
-     "share": 0.4494
+     "share": 0.4
     },
     {
      "code": "OTHER",
      "reason": "No clear reason",
-     "share": 0.1798
+     "share": 0.1905
     },
     {
      "code": "CONTENT",
      "reason": "Not enough content",
-     "share": 0.1685
+     "share": 0.1714
     }
    ],
    "official_posts": []
   },
   {
    "week_start": "2026-04-06",
-   "negative": 161,
-   "usual_weekly_negative": 24.5,
-   "negative_share": 0.3347,
-   "reviews": 481,
+   "negative": 216,
+   "usual_weekly_negative": 34.0,
+   "negative_share": 0.3238,
+   "reviews": 667,
    "top_reasons": [
     {
      "code": "DESIGN",
      "reason": "Gameplay & design choices",
-     "share": 0.2657
+     "share": 0.2347
     },
     {
      "code": "CONTENT",
      "reason": "Not enough content",
-     "share": 0.2028
+     "share": 0.1888
     },
     {
-     "code": "OTHER",
-     "reason": "No clear reason",
-     "share": 0.1538
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.1327
     }
    ],
    "official_posts": [
@@ -1455,698 +2101,698 @@
  "weekly": [
   {
    "week": "2023-09-04",
-   "reviews": 23280,
-   "negative": 6827
+   "reviews": 34548,
+   "negative": 10434
   },
   {
    "week": "2023-09-11",
-   "reviews": 9712,
-   "negative": 2932
+   "reviews": 12644,
+   "negative": 4017
   },
   {
    "week": "2023-09-18",
-   "reviews": 4934,
-   "negative": 1678
+   "reviews": 6353,
+   "negative": 2224
   },
   {
    "week": "2023-09-25",
-   "reviews": 4735,
-   "negative": 1513
+   "reviews": 5760,
+   "negative": 1857
   },
   {
    "week": "2023-10-02",
-   "reviews": 2347,
-   "negative": 1031
+   "reviews": 2999,
+   "negative": 1299
   },
   {
    "week": "2023-10-09",
-   "reviews": 2297,
-   "negative": 1111
+   "reviews": 2829,
+   "negative": 1349
   },
   {
    "week": "2023-10-16",
-   "reviews": 1692,
-   "negative": 855
+   "reviews": 2062,
+   "negative": 1048
   },
   {
    "week": "2023-10-23",
-   "reviews": 1360,
-   "negative": 691
+   "reviews": 1636,
+   "negative": 839
   },
   {
    "week": "2023-10-30",
-   "reviews": 1035,
-   "negative": 525
+   "reviews": 1323,
+   "negative": 669
   },
   {
    "week": "2023-11-06",
-   "reviews": 851,
-   "negative": 441
+   "reviews": 1084,
+   "negative": 567
   },
   {
    "week": "2023-11-13",
-   "reviews": 835,
-   "negative": 462
+   "reviews": 1038,
+   "negative": 565
   },
   {
    "week": "2023-11-20",
-   "reviews": 2777,
-   "negative": 842
+   "reviews": 4082,
+   "negative": 1133
   },
   {
    "week": "2023-11-27",
-   "reviews": 2087,
-   "negative": 1379
+   "reviews": 2496,
+   "negative": 1583
   },
   {
    "week": "2023-12-04",
-   "reviews": 1142,
-   "negative": 813
+   "reviews": 1363,
+   "negative": 942
   },
   {
    "week": "2023-12-11",
-   "reviews": 1162,
-   "negative": 842
+   "reviews": 1392,
+   "negative": 978
   },
   {
    "week": "2023-12-18",
-   "reviews": 781,
-   "negative": 533
+   "reviews": 952,
+   "negative": 636
   },
   {
    "week": "2023-12-25",
-   "reviews": 2159,
-   "negative": 1540
+   "reviews": 2600,
+   "negative": 1814
   },
   {
    "week": "2024-01-01",
-   "reviews": 1858,
-   "negative": 1397
+   "reviews": 2234,
+   "negative": 1638
   },
   {
    "week": "2024-01-08",
-   "reviews": 637,
-   "negative": 398
+   "reviews": 805,
+   "negative": 494
   },
   {
    "week": "2024-01-15",
-   "reviews": 550,
-   "negative": 310
+   "reviews": 711,
+   "negative": 393
   },
   {
    "week": "2024-01-22",
-   "reviews": 400,
-   "negative": 245
+   "reviews": 516,
+   "negative": 311
   },
   {
    "week": "2024-01-29",
-   "reviews": 463,
-   "negative": 258
+   "reviews": 572,
+   "negative": 310
   },
   {
    "week": "2024-02-05",
-   "reviews": 305,
-   "negative": 162
+   "reviews": 382,
+   "negative": 200
   },
   {
    "week": "2024-02-12",
-   "reviews": 272,
-   "negative": 164
+   "reviews": 352,
+   "negative": 203
   },
   {
    "week": "2024-02-19",
-   "reviews": 270,
-   "negative": 160
+   "reviews": 342,
+   "negative": 203
   },
   {
    "week": "2024-02-26",
-   "reviews": 221,
-   "negative": 136
+   "reviews": 278,
+   "negative": 165
   },
   {
    "week": "2024-03-04",
-   "reviews": 315,
-   "negative": 195
+   "reviews": 375,
+   "negative": 220
   },
   {
    "week": "2024-03-11",
-   "reviews": 394,
-   "negative": 260
+   "reviews": 535,
+   "negative": 342
   },
   {
    "week": "2024-03-18",
-   "reviews": 400,
-   "negative": 219
+   "reviews": 502,
+   "negative": 266
   },
   {
    "week": "2024-03-25",
-   "reviews": 297,
-   "negative": 153
+   "reviews": 376,
+   "negative": 189
   },
   {
    "week": "2024-04-01",
-   "reviews": 208,
-   "negative": 116
+   "reviews": 275,
+   "negative": 149
   },
   {
    "week": "2024-04-08",
-   "reviews": 192,
-   "negative": 110
+   "reviews": 249,
+   "negative": 142
   },
   {
    "week": "2024-04-15",
-   "reviews": 189,
-   "negative": 113
+   "reviews": 234,
+   "negative": 141
   },
   {
    "week": "2024-04-22",
-   "reviews": 171,
-   "negative": 101
+   "reviews": 225,
+   "negative": 126
   },
   {
    "week": "2024-04-29",
-   "reviews": 278,
-   "negative": 147
+   "reviews": 343,
+   "negative": 184
   },
   {
    "week": "2024-05-06",
-   "reviews": 223,
-   "negative": 114
-  },
-  {
-   "week": "2024-05-13",
-   "reviews": 297,
+   "reviews": 288,
    "negative": 138
   },
   {
+   "week": "2024-05-13",
+   "reviews": 375,
+   "negative": 165
+  },
+  {
    "week": "2024-05-20",
-   "reviews": 187,
-   "negative": 101
+   "reviews": 258,
+   "negative": 133
   },
   {
    "week": "2024-05-27",
-   "reviews": 139,
-   "negative": 71
-  },
-  {
-   "week": "2024-06-03",
-   "reviews": 192,
-   "negative": 84
-  },
-  {
-   "week": "2024-06-10",
-   "reviews": 1181,
-   "negative": 966
-  },
-  {
-   "week": "2024-06-17",
-   "reviews": 579,
-   "negative": 435
-  },
-  {
-   "week": "2024-06-24",
-   "reviews": 271,
-   "negative": 170
-  },
-  {
-   "week": "2024-07-01",
-   "reviews": 256,
-   "negative": 124
-  },
-  {
-   "week": "2024-07-08",
-   "reviews": 189,
-   "negative": 108
-  },
-  {
-   "week": "2024-07-15",
-   "reviews": 159,
-   "negative": 74
-  },
-  {
-   "week": "2024-07-22",
-   "reviews": 120,
-   "negative": 58
-  },
-  {
-   "week": "2024-07-29",
-   "reviews": 117,
-   "negative": 54
-  },
-  {
-   "week": "2024-08-05",
-   "reviews": 150,
-   "negative": 87
-  },
-  {
-   "week": "2024-08-12",
-   "reviews": 178,
-   "negative": 82
-  },
-  {
-   "week": "2024-08-19",
-   "reviews": 264,
-   "negative": 102
-  },
-  {
-   "week": "2024-08-26",
-   "reviews": 216,
-   "negative": 92
-  },
-  {
-   "week": "2024-09-02",
-   "reviews": 176,
-   "negative": 82
-  },
-  {
-   "week": "2024-09-09",
-   "reviews": 155,
-   "negative": 63
-  },
-  {
-   "week": "2024-09-16",
-   "reviews": 164,
-   "negative": 65
-  },
-  {
-   "week": "2024-09-23",
-   "reviews": 165,
-   "negative": 68
-  },
-  {
-   "week": "2024-09-30",
-   "reviews": 511,
-   "negative": 289
-  },
-  {
-   "week": "2024-10-07",
-   "reviews": 252,
-   "negative": 157
-  },
-  {
-   "week": "2024-10-14",
-   "reviews": 162,
-   "negative": 74
-  },
-  {
-   "week": "2024-10-21",
-   "reviews": 153,
+   "reviews": 190,
    "negative": 88
   },
   {
+   "week": "2024-06-03",
+   "reviews": 251,
+   "negative": 100
+  },
+  {
+   "week": "2024-06-10",
+   "reviews": 1430,
+   "negative": 1168
+  },
+  {
+   "week": "2024-06-17",
+   "reviews": 727,
+   "negative": 552
+  },
+  {
+   "week": "2024-06-24",
+   "reviews": 348,
+   "negative": 208
+  },
+  {
+   "week": "2024-07-01",
+   "reviews": 337,
+   "negative": 152
+  },
+  {
+   "week": "2024-07-08",
+   "reviews": 251,
+   "negative": 136
+  },
+  {
+   "week": "2024-07-15",
+   "reviews": 224,
+   "negative": 99
+  },
+  {
+   "week": "2024-07-22",
+   "reviews": 163,
+   "negative": 76
+  },
+  {
+   "week": "2024-07-29",
+   "reviews": 156,
+   "negative": 67
+  },
+  {
+   "week": "2024-08-05",
+   "reviews": 211,
+   "negative": 118
+  },
+  {
+   "week": "2024-08-12",
+   "reviews": 244,
+   "negative": 114
+  },
+  {
+   "week": "2024-08-19",
+   "reviews": 384,
+   "negative": 151
+  },
+  {
+   "week": "2024-08-26",
+   "reviews": 291,
+   "negative": 123
+  },
+  {
+   "week": "2024-09-02",
+   "reviews": 247,
+   "negative": 114
+  },
+  {
+   "week": "2024-09-09",
+   "reviews": 210,
+   "negative": 87
+  },
+  {
+   "week": "2024-09-16",
+   "reviews": 225,
+   "negative": 96
+  },
+  {
+   "week": "2024-09-23",
+   "reviews": 214,
+   "negative": 91
+  },
+  {
+   "week": "2024-09-30",
+   "reviews": 631,
+   "negative": 346
+  },
+  {
+   "week": "2024-10-07",
+   "reviews": 343,
+   "negative": 200
+  },
+  {
+   "week": "2024-10-14",
+   "reviews": 197,
+   "negative": 87
+  },
+  {
+   "week": "2024-10-21",
+   "reviews": 194,
+   "negative": 109
+  },
+  {
    "week": "2024-10-28",
-   "reviews": 109,
-   "negative": 56
+   "reviews": 144,
+   "negative": 67
   },
   {
    "week": "2024-11-04",
-   "reviews": 93,
-   "negative": 50
+   "reviews": 134,
+   "negative": 67
   },
   {
    "week": "2024-11-11",
-   "reviews": 71,
-   "negative": 29
+   "reviews": 106,
+   "negative": 46
   },
   {
    "week": "2024-11-18",
-   "reviews": 109,
-   "negative": 56
+   "reviews": 150,
+   "negative": 72
   },
   {
    "week": "2024-11-25",
-   "reviews": 185,
-   "negative": 81
+   "reviews": 281,
+   "negative": 98
   },
   {
    "week": "2024-12-02",
-   "reviews": 141,
-   "negative": 49
+   "reviews": 205,
+   "negative": 70
   },
   {
    "week": "2024-12-09",
-   "reviews": 90,
-   "negative": 36
+   "reviews": 126,
+   "negative": 52
   },
   {
    "week": "2024-12-16",
-   "reviews": 102,
-   "negative": 46
+   "reviews": 146,
+   "negative": 67
   },
   {
    "week": "2024-12-23",
-   "reviews": 121,
-   "negative": 57
+   "reviews": 186,
+   "negative": 82
   },
   {
    "week": "2024-12-30",
-   "reviews": 139,
-   "negative": 59
+   "reviews": 191,
+   "negative": 74
   },
   {
    "week": "2025-01-06",
-   "reviews": 127,
-   "negative": 52
+   "reviews": 168,
+   "negative": 73
   },
   {
    "week": "2025-01-13",
-   "reviews": 98,
-   "negative": 47
+   "reviews": 135,
+   "negative": 60
   },
   {
    "week": "2025-01-20",
-   "reviews": 88,
-   "negative": 43
+   "reviews": 130,
+   "negative": 63
   },
   {
    "week": "2025-01-27",
-   "reviews": 82,
-   "negative": 39
+   "reviews": 104,
+   "negative": 50
   },
   {
    "week": "2025-02-03",
-   "reviews": 72,
-   "negative": 41
+   "reviews": 98,
+   "negative": 48
   },
   {
    "week": "2025-02-10",
-   "reviews": 71,
-   "negative": 35
-  },
-  {
-   "week": "2025-02-17",
-   "reviews": 81,
-   "negative": 33
-  },
-  {
-   "week": "2025-02-24",
-   "reviews": 81,
-   "negative": 36
-  },
-  {
-   "week": "2025-03-03",
-   "reviews": 69,
-   "negative": 32
-  },
-  {
-   "week": "2025-03-10",
-   "reviews": 64,
-   "negative": 39
-  },
-  {
-   "week": "2025-03-17",
-   "reviews": 97,
-   "negative": 34
-  },
-  {
-   "week": "2025-03-24",
-   "reviews": 83,
-   "negative": 38
-  },
-  {
-   "week": "2025-03-31",
-   "reviews": 74,
-   "negative": 27
-  },
-  {
-   "week": "2025-04-07",
-   "reviews": 72,
-   "negative": 33
-  },
-  {
-   "week": "2025-04-14",
-   "reviews": 70,
-   "negative": 31
-  },
-  {
-   "week": "2025-04-21",
-   "reviews": 79,
-   "negative": 39
-  },
-  {
-   "week": "2025-04-28",
-   "reviews": 69,
-   "negative": 26
-  },
-  {
-   "week": "2025-05-05",
-   "reviews": 89,
+   "reviews": 94,
    "negative": 46
   },
   {
-   "week": "2025-05-12",
-   "reviews": 56,
-   "negative": 22
-  },
-  {
-   "week": "2025-05-19",
-   "reviews": 104,
+   "week": "2025-02-17",
+   "reviews": 97,
    "negative": 40
   },
   {
-   "week": "2025-05-26",
-   "reviews": 75,
-   "negative": 32
+   "week": "2025-02-24",
+   "reviews": 112,
+   "negative": 50
   },
   {
-   "week": "2025-06-02",
-   "reviews": 84,
-   "negative": 43
-  },
-  {
-   "week": "2025-06-09",
-   "reviews": 68,
-   "negative": 34
-  },
-  {
-   "week": "2025-06-16",
-   "reviews": 73,
-   "negative": 32
-  },
-  {
-   "week": "2025-06-23",
-   "reviews": 69,
-   "negative": 29
-  },
-  {
-   "week": "2025-06-30",
-   "reviews": 80,
-   "negative": 30
-  },
-  {
-   "week": "2025-07-07",
-   "reviews": 90,
-   "negative": 35
-  },
-  {
-   "week": "2025-07-14",
-   "reviews": 87,
-   "negative": 34
-  },
-  {
-   "week": "2025-07-21",
-   "reviews": 81,
-   "negative": 43
-  },
-  {
-   "week": "2025-07-28",
-   "reviews": 113,
-   "negative": 52
-  },
-  {
-   "week": "2025-08-04",
+   "week": "2025-03-03",
    "reviews": 94,
-   "negative": 37
+   "negative": 45
   },
   {
-   "week": "2025-08-11",
+   "week": "2025-03-10",
+   "reviews": 93,
+   "negative": 53
+  },
+  {
+   "week": "2025-03-17",
+   "reviews": 135,
+   "negative": 50
+  },
+  {
+   "week": "2025-03-24",
+   "reviews": 109,
+   "negative": 45
+  },
+  {
+   "week": "2025-03-31",
+   "reviews": 100,
+   "negative": 38
+  },
+  {
+   "week": "2025-04-07",
+   "reviews": 93,
+   "negative": 42
+  },
+  {
+   "week": "2025-04-14",
    "reviews": 101,
    "negative": 45
   },
   {
-   "week": "2025-08-18",
-   "reviews": 92,
-   "negative": 37
+   "week": "2025-04-21",
+   "reviews": 123,
+   "negative": 63
   },
   {
-   "week": "2025-08-25",
-   "reviews": 73,
-   "negative": 33
-  },
-  {
-   "week": "2025-09-01",
-   "reviews": 73,
+   "week": "2025-04-28",
+   "reviews": 96,
    "negative": 39
   },
   {
-   "week": "2025-09-08",
-   "reviews": 77,
+   "week": "2025-05-05",
+   "reviews": 118,
+   "negative": 55
+  },
+  {
+   "week": "2025-05-12",
+   "reviews": 83,
    "negative": 35
   },
   {
-   "week": "2025-09-15",
-   "reviews": 135,
-   "negative": 101
-  },
-  {
-   "week": "2025-09-22",
-   "reviews": 64,
-   "negative": 23
-  },
-  {
-   "week": "2025-09-29",
-   "reviews": 65,
-   "negative": 21
-  },
-  {
-   "week": "2025-10-06",
-   "reviews": 59,
-   "negative": 30
-  },
-  {
-   "week": "2025-10-13",
-   "reviews": 49,
-   "negative": 25
-  },
-  {
-   "week": "2025-10-20",
-   "reviews": 79,
-   "negative": 39
-  },
-  {
-   "week": "2025-10-27",
-   "reviews": 50,
-   "negative": 26
-  },
-  {
-   "week": "2025-11-03",
-   "reviews": 56,
-   "negative": 28
-  },
-  {
-   "week": "2025-11-10",
-   "reviews": 71,
-   "negative": 33
-  },
-  {
-   "week": "2025-11-17",
-   "reviews": 46,
-   "negative": 18
-  },
-  {
-   "week": "2025-11-24",
-   "reviews": 62,
-   "negative": 31
-  },
-  {
-   "week": "2025-12-01",
-   "reviews": 68,
-   "negative": 27
-  },
-  {
-   "week": "2025-12-08",
-   "reviews": 65,
-   "negative": 42
-  },
-  {
-   "week": "2025-12-15",
-   "reviews": 63,
-   "negative": 30
-  },
-  {
-   "week": "2025-12-22",
-   "reviews": 74,
-   "negative": 32
-  },
-  {
-   "week": "2025-12-29",
-   "reviews": 103,
-   "negative": 40
-  },
-  {
-   "week": "2026-01-05",
-   "reviews": 87,
-   "negative": 38
-  },
-  {
-   "week": "2026-01-12",
-   "reviews": 89,
-   "negative": 46
-  },
-  {
-   "week": "2026-01-19",
-   "reviews": 91,
-   "negative": 46
-  },
-  {
-   "week": "2026-01-26",
-   "reviews": 75,
-   "negative": 37
-  },
-  {
-   "week": "2026-02-02",
-   "reviews": 49,
-   "negative": 16
-  },
-  {
-   "week": "2026-02-09",
-   "reviews": 54,
-   "negative": 22
-  },
-  {
-   "week": "2026-02-16",
-   "reviews": 81,
-   "negative": 43
-  },
-  {
-   "week": "2026-02-23",
-   "reviews": 78,
-   "negative": 27
-  },
-  {
-   "week": "2026-03-02",
-   "reviews": 37,
-   "negative": 12
-  },
-  {
-   "week": "2026-03-09",
-   "reviews": 54,
-   "negative": 19
-  },
-  {
-   "week": "2026-03-16",
+   "week": "2025-05-19",
    "reviews": 129,
+   "negative": 48
+  },
+  {
+   "week": "2025-05-26",
+   "reviews": 107,
+   "negative": 46
+  },
+  {
+   "week": "2025-06-02",
+   "reviews": 103,
    "negative": 49
   },
   {
-   "week": "2026-03-23",
-   "reviews": 110,
-   "negative": 22
+   "week": "2025-06-09",
+   "reviews": 91,
+   "negative": 47
   },
   {
-   "week": "2026-03-30",
-   "reviews": 119,
+   "week": "2025-06-16",
+   "reviews": 93,
+   "negative": 43
+  },
+  {
+   "week": "2025-06-23",
+   "reviews": 89,
+   "negative": 39
+  },
+  {
+   "week": "2025-06-30",
+   "reviews": 113,
+   "negative": 39
+  },
+  {
+   "week": "2025-07-07",
+   "reviews": 128,
+   "negative": 46
+  },
+  {
+   "week": "2025-07-14",
+   "reviews": 115,
+   "negative": 46
+  },
+  {
+   "week": "2025-07-21",
+   "reviews": 109,
+   "negative": 52
+  },
+  {
+   "week": "2025-07-28",
+   "reviews": 157,
+   "negative": 67
+  },
+  {
+   "week": "2025-08-04",
+   "reviews": 149,
+   "negative": 55
+  },
+  {
+   "week": "2025-08-11",
+   "reviews": 151,
+   "negative": 64
+  },
+  {
+   "week": "2025-08-18",
+   "reviews": 148,
+   "negative": 60
+  },
+  {
+   "week": "2025-08-25",
+   "reviews": 113,
+   "negative": 49
+  },
+  {
+   "week": "2025-09-01",
+   "reviews": 107,
+   "negative": 52
+  },
+  {
+   "week": "2025-09-08",
+   "reviews": 107,
+   "negative": 42
+  },
+  {
+   "week": "2025-09-15",
+   "reviews": 165,
+   "negative": 119
+  },
+  {
+   "week": "2025-09-22",
+   "reviews": 77,
+   "negative": 33
+  },
+  {
+   "week": "2025-09-29",
+   "reviews": 105,
+   "negative": 35
+  },
+  {
+   "week": "2025-10-06",
+   "reviews": 86,
+   "negative": 38
+  },
+  {
+   "week": "2025-10-13",
+   "reviews": 76,
+   "negative": 34
+  },
+  {
+   "week": "2025-10-20",
+   "reviews": 112,
    "negative": 51
   },
   {
+   "week": "2025-10-27",
+   "reviews": 76,
+   "negative": 37
+  },
+  {
+   "week": "2025-11-03",
+   "reviews": 72,
+   "negative": 35
+  },
+  {
+   "week": "2025-11-10",
+   "reviews": 84,
+   "negative": 37
+  },
+  {
+   "week": "2025-11-17",
+   "reviews": 53,
+   "negative": 19
+  },
+  {
+   "week": "2025-11-24",
+   "reviews": 107,
+   "negative": 48
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 97,
+   "negative": 35
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 94,
+   "negative": 52
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 81,
+   "negative": 36
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 118,
+   "negative": 49
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 145,
+   "negative": 51
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 126,
+   "negative": 55
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 113,
+   "negative": 57
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 107,
+   "negative": 51
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 96,
+   "negative": 45
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 61,
+   "negative": 20
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 69,
+   "negative": 24
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 117,
+   "negative": 59
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 105,
+   "negative": 38
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 58,
+   "negative": 18
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 79,
+   "negative": 30
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 182,
+   "negative": 72
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 156,
+   "negative": 30
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 162,
+   "negative": 57
+  },
+  {
    "week": "2026-04-06",
-   "reviews": 481,
-   "negative": 161
+   "reviews": 667,
+   "negative": 216
   },
   {
    "week": "2026-04-13",
-   "reviews": 237,
-   "negative": 89
+   "reviews": 319,
+   "negative": 117
   },
   {
    "week": "2026-04-20",
-   "reviews": 164,
-   "negative": 69
+   "reviews": 231,
+   "negative": 90
   },
   {
    "week": "2026-04-27",
-   "reviews": 65,
-   "negative": 22
+   "reviews": 84,
+   "negative": 28
   },
   {
    "week": "2026-05-04",
@@ -2165,53 +2811,53 @@
   },
   {
    "week": "2026-05-25",
-   "reviews": 32,
-   "negative": 14
+   "reviews": 51,
+   "negative": 16
   },
   {
    "week": "2026-06-01",
-   "reviews": 76,
-   "negative": 38
+   "reviews": 94,
+   "negative": 43
   },
   {
    "week": "2026-06-08",
-   "reviews": 78,
-   "negative": 38
+   "reviews": 106,
+   "negative": 49
   },
   {
    "week": "2026-06-15",
-   "reviews": 73,
-   "negative": 29
+   "reviews": 94,
+   "negative": 38
   },
   {
    "week": "2026-06-22",
-   "reviews": 108,
-   "negative": 47
+   "reviews": 159,
+   "negative": 70
   },
   {
    "week": "2026-06-29",
-   "reviews": 83,
-   "negative": 31
+   "reviews": 113,
+   "negative": 41
   },
   {
    "week": "2026-07-06",
-   "reviews": 74,
-   "negative": 23
+   "reviews": 112,
+   "negative": 37
   },
   {
    "week": "2026-07-13",
-   "reviews": 74,
-   "negative": 33
+   "reviews": 98,
+   "negative": 42
   },
   {
    "week": "2026-07-20",
-   "reviews": 67,
-   "negative": 25
+   "reviews": 97,
+   "negative": 29
   },
   {
    "week": "2026-07-27",
-   "reviews": 38,
-   "negative": 16
+   "reviews": 49,
+   "negative": 19
   },
   {
    "week": "2026-08-03",
@@ -2230,33 +2876,33 @@
   },
   {
    "week": "2026-08-24",
-   "reviews": 55,
-   "negative": 23
+   "reviews": 79,
+   "negative": 33
   },
   {
    "week": "2026-08-31",
-   "reviews": 53,
-   "negative": 19
+   "reviews": 80,
+   "negative": 29
   },
   {
    "week": "2026-09-07",
-   "reviews": 56,
-   "negative": 27
+   "reviews": 77,
+   "negative": 35
   },
   {
    "week": "2026-09-14",
-   "reviews": 42,
-   "negative": 20
+   "reviews": 63,
+   "negative": 27
   },
   {
    "week": "2026-09-21",
-   "reviews": 53,
-   "negative": 19
+   "reviews": 70,
+   "negative": 24
   },
   {
    "week": "2026-09-28",
-   "reviews": 19,
-   "negative": 7
+   "reviews": 27,
+   "negative": 9
   },
   {
    "week": "2026-10-05",
@@ -2270,33 +2916,33 @@
   },
   {
    "week": "2026-10-19",
-   "reviews": 7,
-   "negative": 6
+   "reviews": 10,
+   "negative": 7
   },
   {
    "week": "2026-10-26",
-   "reviews": 38,
-   "negative": 12
+   "reviews": 59,
+   "negative": 22
   },
   {
    "week": "2026-11-02",
-   "reviews": 41,
-   "negative": 15
+   "reviews": 67,
+   "negative": 28
   },
   {
    "week": "2026-11-09",
-   "reviews": 46,
-   "negative": 24
+   "reviews": 70,
+   "negative": 36
   },
   {
    "week": "2026-11-16",
-   "reviews": 35,
-   "negative": 16
+   "reviews": 48,
+   "negative": 21
   },
   {
    "week": "2026-11-23",
-   "reviews": 20,
-   "negative": 6
+   "reviews": 35,
+   "negative": 7
   }
  ],
  "patch_dates": [
@@ -2407,24 +3053,24 @@
  ],
  "paraphrases": {
   "DESIGN": [
-   "A player says the game feels soulless, with weak combat, dull dialogue, forgettable characters, and no joy in exploring.",
-   "A player finished the game but found it tedious, saying only the ship builder was enjoyable and they won't replay."
+   "A player enjoyed it but felt let down, and resents that it won an innovation award.",
+   "A player forced themselves to keep playing hoping it improves, finding it a chore with no reason to continue."
   ],
   "CONTENT": [
-   "A player says the game feels unfinished and advises waiting a year before buying, given Bethesda's release history.",
-   "A player regrets preordering, finding only about one in ten quests good and the game disappointingly mediocre."
-  ],
-  "STAB": [
-   "A player says the game crashes constantly on a high-end prebuilt PC, making play nearly impossible.",
-   "A player says the game stopped working after patches, with saves and new campaigns failing to load despite reinstalling."
+   "A player says it would have scored well in 2010 but is far behind now, selling empty planets.",
+   "A player says many planets lack events, and carrying over only levels in New Game Plus is frustrating."
   ],
   "PERF": [
-   "A player says the game is poorly optimized, stutters every 30 seconds on an RTX 3070, and they uninstalled it.",
-   "A player says the many loading screens, graphics engine, and weak immersion keep them from enjoying it."
+   "A player says the game is rough, poorly optimized and buggy, with tedious quests and a weak skill tree.",
+   "A player doesn't enjoy it as an RPG in space, citing loading screens, graphics, and weak immersion."
   ],
-  "STORY": [
-   "A player was disappointed after preordering, says Bethesda can no longer make good games, and couldn't finish the story.",
-   "A player hated the ending, which pushes an unwanted path, and uninstalled, strongly advising against the game."
+  "STAB": [
+   "A player reports dozens of crashes in early access with no response or patch from the developer.",
+   "A player says the game crashes on every load, support didn't help, and suggests waiting for a cheap price."
+  ],
+  "MONET": [
+   "A player says Bethesda is squeezing money from the game before abandoning it, mocking the company's motives.",
+   "A player finished the story and New Game Plus, says it wasn't worth $70 and suggests spending elsewhere."
   ]
  }
 }

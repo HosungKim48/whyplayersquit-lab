@@ -1,14 +1,42 @@
 {
- "n": 60,
- "main_ok": 53,
- "quit_ok": 57,
- "main_agree": 0.8833,
- "quit_agree": 0.95,
- "checker": "Claude (the AI analyst that built this project) reading each sampled review; not a human panel",
+ "n": 170,
+ "main_ok": 157,
+ "quit_ok": 158,
+ "main_agree": 0.9235,
+ "quit_agree": 0.9294,
+ "sets": [
+  {
+   "name": "English reviews",
+   "n": 60,
+   "main_ok": 53,
+   "quit_ok": 57,
+   "main_agree": 0.8833,
+   "quit_agree": 0.95
+  },
+  {
+   "name": "Reviews in other languages",
+   "n": 60,
+   "main_ok": 56,
+   "quit_ok": 57,
+   "main_agree": 0.9333,
+   "quit_agree": 0.95
+  },
+  {
+   "name": "Mixed sample, all languages",
+   "n": 50,
+   "main_ok": 48,
+   "quit_ok": 44,
+   "main_agree": 0.96,
+   "quit_agree": 0.88
+  }
+ ],
+ "checker": "Claude Fable 5.2 reading each sampled review (a larger model than the labeler); a second-model check, not a human panel",
  "items": [
   {
+   "sample": "English reviews",
    "i": 0,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": true,
@@ -16,8 +44,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 1,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
@@ -25,8 +55,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 2,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": true,
@@ -34,8 +66,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 3,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -43,8 +77,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 4,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
@@ -52,8 +88,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 5,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": true,
@@ -61,8 +99,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 6,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "MONET",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -70,8 +110,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 7,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -79,8 +121,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 8,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "SUPPORT",
    "model_quit": "NONE",
    "main_ok": false,
@@ -88,8 +132,10 @@
    "checker_main": "CONTENT"
   },
   {
+   "sample": "English reviews",
    "i": 9,
    "game": "Cities: Skylines II",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "WAITING",
    "main_ok": true,
@@ -97,8 +143,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 10,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -106,8 +154,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 11,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": false,
@@ -115,8 +165,10 @@
    "checker_main": "OTHER"
   },
   {
+   "sample": "English reviews",
    "i": 12,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": true,
@@ -124,8 +176,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 13,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": true,
@@ -133,8 +187,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 14,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -142,8 +198,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 15,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -151,8 +209,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 16,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
@@ -160,8 +220,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 17,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -169,8 +231,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 18,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -178,8 +242,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 19,
    "game": "Dragon's Dogma 2",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -187,8 +253,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 20,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "WAITING",
    "main_ok": true,
@@ -196,8 +264,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 21,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "SUPPORT",
    "model_quit": "NONE",
    "main_ok": true,
@@ -205,8 +275,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 22,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "ONLINE",
    "model_quit": "NONE",
    "main_ok": true,
@@ -214,8 +286,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 23,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -223,8 +297,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 24,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -232,8 +308,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 25,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": false,
@@ -241,8 +319,10 @@
    "checker_main": "STAB"
   },
   {
+   "sample": "English reviews",
    "i": 26,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -250,8 +330,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 27,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
@@ -259,8 +341,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 28,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "NONE",
    "main_ok": true,
@@ -268,8 +352,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 29,
    "game": "Monster Hunter Wilds",
+   "language": "english",
    "model_main": "PERF",
    "model_quit": "WAITING",
    "main_ok": true,
@@ -277,8 +363,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 30,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "ONLINE",
    "model_quit": "NONE",
    "main_ok": true,
@@ -286,8 +374,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 31,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "SUPPORT",
    "model_quit": "WAITING",
    "main_ok": false,
@@ -295,8 +385,10 @@
    "checker_main": "CONTENT"
   },
   {
+   "sample": "English reviews",
    "i": 32,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
@@ -304,8 +396,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 33,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "ONLINE",
    "model_quit": "NONE",
    "main_ok": true,
@@ -313,8 +407,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 34,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": true,
@@ -322,8 +418,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 35,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "CONTENT",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -331,8 +429,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 36,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": true,
@@ -340,8 +440,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 37,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": true,
@@ -349,8 +451,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 38,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "UI",
    "model_quit": "NONE",
    "main_ok": false,
@@ -358,8 +462,10 @@
    "checker_main": "ONLINE"
   },
   {
+   "sample": "English reviews",
    "i": 39,
    "game": "PAYDAY 3",
+   "language": "english",
    "model_main": "ONLINE",
    "model_quit": "NONE",
    "main_ok": true,
@@ -367,8 +473,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 40,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
@@ -376,8 +484,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 41,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "MONET",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -385,8 +495,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 42,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -394,8 +506,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 43,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": true,
@@ -403,8 +517,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 44,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "STORY",
    "model_quit": "NONE",
    "main_ok": false,
@@ -412,8 +528,10 @@
    "checker_main": "OTHER"
   },
   {
+   "sample": "English reviews",
    "i": 45,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "STOPPED",
    "main_ok": true,
@@ -421,8 +539,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 46,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": true,
@@ -430,8 +550,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 47,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "SUPPORT",
    "model_quit": "NONE",
    "main_ok": false,
@@ -439,8 +561,10 @@
    "checker_main": "CONTENT"
   },
   {
+   "sample": "English reviews",
    "i": 48,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "CONTENT",
    "model_quit": "WAITING",
    "main_ok": true,
@@ -448,8 +572,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 49,
    "game": "Sid Meier's Civilization VII",
+   "language": "english",
    "model_main": "ONLINE",
    "model_quit": "NONE",
    "main_ok": true,
@@ -457,8 +583,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 50,
    "game": "Starfield",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "WAITING",
    "main_ok": true,
@@ -466,8 +594,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 51,
    "game": "Starfield",
+   "language": "english",
    "model_main": "STORY",
    "model_quit": "NONE",
    "main_ok": true,
@@ -475,8 +605,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 52,
    "game": "Starfield",
+   "language": "english",
    "model_main": "CONTENT",
    "model_quit": "NONE",
    "main_ok": true,
@@ -484,8 +616,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 53,
    "game": "Starfield",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": true,
@@ -493,8 +627,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 54,
    "game": "Starfield",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": true,
@@ -502,8 +638,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 55,
    "game": "Starfield",
+   "language": "english",
    "model_main": "STORY",
    "model_quit": "NONE",
    "main_ok": true,
@@ -511,8 +649,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 56,
    "game": "Starfield",
+   "language": "english",
    "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
@@ -520,8 +660,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 57,
    "game": "Starfield",
+   "language": "english",
    "model_main": "DESIGN",
    "model_quit": "NONE",
    "main_ok": true,
@@ -529,8 +671,10 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 58,
    "game": "Starfield",
+   "language": "english",
    "model_main": "OTHER",
    "model_quit": "NONE",
    "main_ok": true,
@@ -538,9 +682,1221 @@
    "checker_main": null
   },
   {
+   "sample": "English reviews",
    "i": 59,
    "game": "Starfield",
+   "language": "english",
    "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 0,
+   "game": "Cities: Skylines II",
+   "language": "german",
+   "model_main": "OFFGAME",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "MONET"
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 1,
+   "game": "Cities: Skylines II",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 2,
+   "game": "Cities: Skylines II",
+   "language": "schinese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 3,
+   "game": "Cities: Skylines II",
+   "language": "turkish",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "OTHER"
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 4,
+   "game": "Cities: Skylines II",
+   "language": "german",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "PERF"
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 5,
+   "game": "Cities: Skylines II",
+   "language": "schinese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 6,
+   "game": "Cities: Skylines II",
+   "language": "brazilian",
+   "model_main": "PERF",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 7,
+   "game": "Cities: Skylines II",
+   "language": "schinese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 8,
+   "game": "Cities: Skylines II",
+   "language": "schinese",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 9,
+   "game": "Cities: Skylines II",
+   "language": "japanese",
+   "model_main": "PERF",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 10,
+   "game": "Dragon's Dogma 2",
+   "language": "german",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 11,
+   "game": "Dragon's Dogma 2",
+   "language": "brazilian",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 12,
+   "game": "Dragon's Dogma 2",
+   "language": "german",
+   "model_main": "STORY",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 13,
+   "game": "Dragon's Dogma 2",
+   "language": "koreana",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 14,
+   "game": "Dragon's Dogma 2",
+   "language": "schinese",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 15,
+   "game": "Dragon's Dogma 2",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 16,
+   "game": "Dragon's Dogma 2",
+   "language": "tchinese",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 17,
+   "game": "Dragon's Dogma 2",
+   "language": "schinese",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 18,
+   "game": "Dragon's Dogma 2",
+   "language": "japanese",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 19,
+   "game": "Dragon's Dogma 2",
+   "language": "tchinese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 20,
+   "game": "Monster Hunter Wilds",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 21,
+   "game": "Monster Hunter Wilds",
+   "language": "schinese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 22,
+   "game": "Monster Hunter Wilds",
+   "language": "koreana",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 23,
+   "game": "Monster Hunter Wilds",
+   "language": "schinese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 24,
+   "game": "Monster Hunter Wilds",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 25,
+   "game": "Monster Hunter Wilds",
+   "language": "german",
+   "model_main": "PERF",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 26,
+   "game": "Monster Hunter Wilds",
+   "language": "japanese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 27,
+   "game": "Monster Hunter Wilds",
+   "language": "koreana",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 28,
+   "game": "Monster Hunter Wilds",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 29,
+   "game": "Monster Hunter Wilds",
+   "language": "japanese",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 30,
+   "game": "PAYDAY 3",
+   "language": "tchinese",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 31,
+   "game": "PAYDAY 3",
+   "language": "german",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 32,
+   "game": "PAYDAY 3",
+   "language": "koreana",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 33,
+   "game": "PAYDAY 3",
+   "language": "koreana",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 34,
+   "game": "PAYDAY 3",
+   "language": "german",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 35,
+   "game": "PAYDAY 3",
+   "language": "polish",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 36,
+   "game": "PAYDAY 3",
+   "language": "schinese",
+   "model_main": "CONTENT",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 37,
+   "game": "PAYDAY 3",
+   "language": "schinese",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 38,
+   "game": "PAYDAY 3",
+   "language": "schinese",
+   "model_main": "MONET",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 39,
+   "game": "PAYDAY 3",
+   "language": "german",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 40,
+   "game": "Sid Meier's Civilization VII",
+   "language": "schinese",
+   "model_main": "UI",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 41,
+   "game": "Sid Meier's Civilization VII",
+   "language": "brazilian",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 42,
+   "game": "Sid Meier's Civilization VII",
+   "language": "french",
+   "model_main": "DESIGN",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 43,
+   "game": "Sid Meier's Civilization VII",
+   "language": "turkish",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 44,
+   "game": "Sid Meier's Civilization VII",
+   "language": "schinese",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 45,
+   "game": "Sid Meier's Civilization VII",
+   "language": "italian",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 46,
+   "game": "Sid Meier's Civilization VII",
+   "language": "koreana",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 47,
+   "game": "Sid Meier's Civilization VII",
+   "language": "schinese",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 48,
+   "game": "Sid Meier's Civilization VII",
+   "language": "french",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 49,
+   "game": "Sid Meier's Civilization VII",
+   "language": "russian",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 50,
+   "game": "Starfield",
+   "language": "ukrainian",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 51,
+   "game": "Starfield",
+   "language": "schinese",
+   "model_main": "OFFGAME",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 52,
+   "game": "Starfield",
+   "language": "french",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "DESIGN"
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 53,
+   "game": "Starfield",
+   "language": "schinese",
+   "model_main": "STORY",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 54,
+   "game": "Starfield",
+   "language": "french",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 55,
+   "game": "Starfield",
+   "language": "french",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 56,
+   "game": "Starfield",
+   "language": "koreana",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 57,
+   "game": "Starfield",
+   "language": "japanese",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 58,
+   "game": "Starfield",
+   "language": "german",
+   "model_main": "SUPPORT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Reviews in other languages",
+   "i": 59,
+   "game": "Starfield",
+   "language": "schinese",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 0,
+   "game": "PAYDAY 3",
+   "language": "polish",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 1,
+   "game": "Dragon's Dogma 2",
+   "language": "english",
+   "model_main": "PERF",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 2,
+   "game": "Monster Hunter Wilds",
+   "language": "japanese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 3,
+   "game": "Dragon's Dogma 2",
+   "language": "schinese",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 4,
+   "game": "Sid Meier's Civilization VII",
+   "language": "schinese",
+   "model_main": "STAB",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 5,
+   "game": "Sid Meier's Civilization VII",
+   "language": "french",
+   "model_main": "DESIGN",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 6,
+   "game": "Monster Hunter Wilds",
+   "language": "english",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 7,
+   "game": "Monster Hunter Wilds",
+   "language": "english",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 8,
+   "game": "Sid Meier's Civilization VII",
+   "language": "english",
+   "model_main": "OTHER",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 9,
+   "game": "Cities: Skylines II",
+   "language": "english",
+   "model_main": "CONTENT",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 10,
+   "game": "Monster Hunter Wilds",
+   "language": "english",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 11,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 12,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 13,
+   "game": "PAYDAY 3",
+   "language": "schinese",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "DESIGN"
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 14,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 15,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 16,
+   "game": "Monster Hunter Wilds",
+   "language": "english",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 17,
+   "game": "Cities: Skylines II",
+   "language": "english",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 18,
+   "game": "PAYDAY 3",
+   "language": "french",
+   "model_main": "ONLINE",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 19,
+   "game": "PAYDAY 3",
+   "language": "japanese",
+   "model_main": "MONET",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 20,
+   "game": "Monster Hunter Wilds",
+   "language": "tchinese",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 21,
+   "game": "Monster Hunter Wilds",
+   "language": "japanese",
+   "model_main": "MONET",
+   "model_quit": "STOPPED",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "SUPPORT"
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 22,
+   "game": "Monster Hunter Wilds",
+   "language": "japanese",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 23,
+   "game": "Cities: Skylines II",
+   "language": "turkish",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 24,
+   "game": "Monster Hunter Wilds",
+   "language": "schinese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 25,
+   "game": "Dragon's Dogma 2",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 26,
+   "game": "Monster Hunter Wilds",
+   "language": "japanese",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 27,
+   "game": "Dragon's Dogma 2",
+   "language": "english",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 28,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "DESIGN",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 29,
+   "game": "Starfield",
+   "language": "polish",
+   "model_main": "UI",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 30,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 31,
+   "game": "PAYDAY 3",
+   "language": "japanese",
+   "model_main": "UI",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 32,
+   "game": "Sid Meier's Civilization VII",
+   "language": "english",
+   "model_main": "MONET",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 33,
+   "game": "Monster Hunter Wilds",
+   "language": "schinese",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 34,
+   "game": "Monster Hunter Wilds",
+   "language": "japanese",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 35,
+   "game": "Sid Meier's Civilization VII",
+   "language": "english",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 36,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 37,
+   "game": "PAYDAY 3",
+   "language": "english",
+   "model_main": "OTHER",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 38,
+   "game": "Cities: Skylines II",
+   "language": "schinese",
+   "model_main": "STAB",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 39,
+   "game": "Monster Hunter Wilds",
+   "language": "english",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 40,
+   "game": "Sid Meier's Civilization VII",
+   "language": "english",
+   "model_main": "OFFGAME",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 41,
+   "game": "Monster Hunter Wilds",
+   "language": "tchinese",
+   "model_main": "SUPPORT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 42,
+   "game": "Starfield",
+   "language": "german",
+   "model_main": "DESIGN",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 43,
+   "game": "Cities: Skylines II",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 44,
+   "game": "Monster Hunter Wilds",
+   "language": "german",
+   "model_main": "ONLINE",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 45,
+   "game": "Starfield",
+   "language": "english",
+   "model_main": "MONET",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 46,
+   "game": "PAYDAY 3",
+   "language": "english",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 47,
+   "game": "Sid Meier's Civilization VII",
+   "language": "schinese",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 48,
+   "game": "Monster Hunter Wilds",
+   "language": "tchinese",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "sample": "Mixed sample, all languages",
+   "i": 49,
+   "game": "Monster Hunter Wilds",
+   "language": "koreana",
+   "model_main": "STAB",
    "model_quit": "NONE",
    "main_ok": true,
    "quit_ok": true,

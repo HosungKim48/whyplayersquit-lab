@@ -1,4 +1,4 @@
-"""Fetch the full English review history for each game from Steam's documented
+"""Fetch the full review history (English, then all other languages) for each game from Steam's documented
 public endpoint (IUserReviewsService/GetAppReviews) and cache every raw page.
 
 Polite by design: one request at a time, a pause between requests, backoff on
@@ -28,17 +28,24 @@ def month_windows(release, now):
     return out
 
 
-def fetch_game(g):
+# Steam's language codes other than English. The API takes languages as an array (languages[0]=..., languages[1]=...).
+OTHER_LANGS = ("schinese tchinese japanese koreana thai bulgarian czech danish german spanish latam greek french italian indonesian "
+               "hungarian dutch norwegian polish portuguese brazilian romanian russian finnish swedish turkish vietnamese ukrainian arabic").split()
+LANG_SETS = {"english": (["english"], ""), "other": (OTHER_LANGS, "_other")}
+
+
+def fetch_game(g, lang_set="english"):
     """The API only returns a short recent window unless a past date range is given,
     so the full history is walked one calendar month at a time."""
     appid = g["appid"]
-    d = os.path.join(RAW, str(appid)); os.makedirs(d, exist_ok=True)
+    langs, suffix = LANG_SETS[lang_set]
+    d = os.path.join(RAW, str(appid) + suffix); os.makedirs(d, exist_ok=True)
     state_f = os.path.join(d, "state.json")
     state = json.load(open(state_f)) if os.path.exists(state_f) else dict(snapshot=int(time.time()) - 3600, windows={}, n=0)
     for label, start, end in month_windows(g["release"], state["snapshot"]):
         w = state["windows"].setdefault(label, dict(cursor="*", page=0, n=0, done=False))
         while not w["done"]:
-            params = dict(appid=appid, languages="english", filter="recent", review_type="all",
+            params = dict(appid=appid, **{f"languages[{i}]": l for i, l in enumerate(langs)}, filter="recent", review_type="all",
                           purchase_type="all", num_per_page=100, filter_offtopic_activity=0,
                           date_range_start=start, date_range_end=end, cursor=w["cursor"])
             for attempt in range(8):
@@ -68,11 +75,14 @@ def fetch_game(g):
                 w["cursor"] = resp["cursor"]
             json.dump(state, open(state_f, "w"))
             time.sleep(PAUSE)
-        print(appid, label, "window done", w["n"], "of", w.get("total_matching"), "| game total", state["n"], flush=True)
-    print(appid, "DONE", state["n"], flush=True)
+        print(appid, lang_set, label, "window done", w["n"], "of", w.get("total_matching"), "| game total", state["n"], flush=True)
+    print(appid, lang_set, "DONE", state["n"], flush=True)
 
 
 if __name__ == "__main__":
-    only = [int(x) for x in sys.argv[1:]]
+    # usage: fetch_reviews.py [english|other] [appid ...]
+    args = sys.argv[1:]
+    lang_set = args.pop(0) if args and args[0] in LANG_SETS else "english"
+    only = [int(x) for x in args]
     for g in GAMES:
-        if not only or g["appid"] in only: fetch_game(g)
+        if not only or g["appid"] in only: fetch_game(g, lang_set)

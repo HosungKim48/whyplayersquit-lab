@@ -24,6 +24,17 @@ REASONS = {
     "UI": "Interface & controls", "MONET": "Price & monetization", "ONLINE": "Online, accounts & DRM",
     "SUPPORT": "Post-launch support", "STORY": "Story & writing", "OFFGAME": "Off-game topics", "OTHER": "No clear reason",
 }
+LANG_NAMES = {"english": "English", "schinese": "Chinese (Simplified)", "tchinese": "Chinese (Traditional)", "japanese": "Japanese", "koreana": "Korean",
+              "russian": "Russian", "german": "German", "french": "French", "spanish": "Spanish (Spain)", "latam": "Spanish (Latin America)",
+              "brazilian": "Portuguese (Brazil)", "portuguese": "Portuguese (Portugal)", "polish": "Polish", "turkish": "Turkish", "italian": "Italian",
+              "thai": "Thai", "ukrainian": "Ukrainian", "czech": "Czech", "dutch": "Dutch", "swedish": "Swedish", "hungarian": "Hungarian",
+              "danish": "Danish", "finnish": "Finnish", "norwegian": "Norwegian", "romanian": "Romanian", "bulgarian": "Bulgarian", "greek": "Greek",
+              "vietnamese": "Vietnamese", "indonesian": "Indonesian", "arabic": "Arabic"}
+SUBREASONS = {"AGES": "The Ages system (era splits, resets at transitions)", "CIVSWITCH": "Switching civilizations; leaders not tied to a civilization",
+              "LEGACY": "Legacy paths and victory goals feel like a checklist", "SIMPLE": "Oversimplified, less depth",
+              "AI": "AI, diplomacy, combat and balance", "CITY": "City, town and settlement management", "PACING": "Game length and pacing",
+              "MAPS": "Maps and exploration", "NOTCIV": "\"Doesn't feel like Civilization\" (no mechanic named)", "OTHERD": "Other or unspecified design complaint"}
+MIN_LANG = 300          # a language gets its own row in a game's report at this many reviews
 PATCH_RE = re.compile(r"\b(patch|hotfix|hot fix|update|title update|ver\.|version|v\d+\.\d+|\d+\.\d+\.\d+|changelog|release notes)\b", re.I)
 
 
@@ -55,9 +66,10 @@ def behaviour(df):
 
 def load_labels(appid):
     rows = []
-    for f in glob.glob(os.path.join(ROOT, "data", "work", "labels", str(appid), "batch_*.json")):
-        rows += json.load(open(f))["labels"]
-    return pd.DataFrame(rows) if rows else pd.DataFrame(columns=["rid", "main", "second", "quit"])
+    for sub in (str(appid), str(appid) + "_other"):
+        for f in glob.glob(os.path.join(ROOT, "data", "work", "labels", sub, "batch_*.json")):
+            rows += json.load(open(f))["labels"]
+    return pd.DataFrame(rows).drop_duplicates("rid") if rows else pd.DataFrame(columns=["rid", "main", "second", "quit"])
 
 
 def announcements(appid):
@@ -67,10 +79,71 @@ def announcements(appid):
     return sorted(out, key=lambda x: x["ts"])
 
 
+POOL = []   # labeled negative reviews of every game, kept for the pooled model
+
+
+def model_frame(df, L, mature, g):
+    """Rows and columns for the walk-away model: labeled negative reviews at least MATURE_DAYS old."""
+    d = df[L & mature].copy()
+    d["y"] = (d.hours_after_review < WALK_HOURS).astype(int)
+    lc = d.language.value_counts()
+    d["langg"] = d.language.where(d.language.map(lc) >= MIN_LANG, "other_small")
+    days = (d.created - pd.Timestamp(g["release"], tz="UTC").timestamp()) / 86400
+    d["age"] = pd.cut(days, [-1e9, 30, 180, 1e9], labels=["first_30_days", "days_31_180", "after_180_days"]).astype(str)
+    d["bucket"] = d.bucket.astype(str); d["edited"] = d.edited.astype(int); d["game"] = g["slug"]
+    return d[["y", "main", "bucket", "langg", "age", "edited", "game"]]
+
+
+def walk_model(d, pooled=False):
+    """Logistic regression: walked away ~ main complaint + hours band + review language + review timing + edited (+ game).
+    Returns odds ratios for each complaint against the reference complaint (crashes & bugs)."""
+    import statsmodels.formula.api as smf
+    d = d.copy(); n = d.main.value_counts()
+    d["main"] = d.main.where(d.main.map(n) >= 100, "RARE")
+    ref = "STAB" if n.get("STAB", 0) >= 100 else n.index[0]
+    f = f"y ~ C(main, Treatment('{ref}')) + C(bucket) + C(langg) + C(age) + edited" + (" + C(game)" if pooled else "")
+    try:
+        m = smf.logit(f, d).fit(disp=0, maxiter=200)
+    except Exception as e:
+        return dict(ok=False, error=str(e)[:120])
+    ci = m.conf_int(); rows = []
+    for code in n.index:
+        key = f"C(main, Treatment('{ref}'))[T.{code}]"
+        if key in m.params.index:
+            rows.append(dict(code=code, reason=REASONS[code], n=int(n[code]), odds_ratio=round(float(np.exp(m.params[key])), 3),
+                             lo=round(float(np.exp(ci.loc[key, 0])), 3), hi=round(float(np.exp(ci.loc[key, 1])), 3), p=float(f"{m.pvalues[key]:.2g}")))
+    ctrl = {}
+    for key, lab in [("C(bucket)[T.Under 2 h]", "under_2h_vs_10_50h"), ("C(age)[T.first_30_days]", "first_30_days_vs_after_180"), ("edited", "edited_review")]:
+        if key in m.params.index: ctrl[lab] = round(float(np.exp(m.params[key])), 3)
+    return dict(ok=True, n=int(len(d)), reference=ref, reference_reason=REASONS[ref], pseudo_r2=round(float(m.prsquared), 4),
+                formula=f, rows=sorted(rows, key=lambda r: -r["odds_ratio"]), control_odds_ratios=ctrl)
+
+
+def sensitivity(df, L, mature, base_rows):
+    """Does the picture change if 'walked away' means under 2 or under 5 more hours instead of under 1?"""
+    from scipy.stats import spearmanr
+    neg = ~df.voted_up; out = []
+    big = [r["code"] for r in base_rows if r["walk_n"] >= 100 and r["code"] != "OTHER"]
+    base = {r["code"]: r["vs_game_average"] for r in base_rows}
+    ref_rates = None
+    for h in (1, 2, 5):
+        w = df.hours_after_review < h; avg = float(w[neg & mature].mean()); rates, same = {}, 0
+        for c in big:
+            msk = L & mature & (df.main == c); k, n = int(w[msk].sum()), int(msk.sum()); lo, hi = wilson(k, n)
+            rates[c] = k / n
+            flag = "higher" if lo > avg else "lower" if hi < avg else "similar"
+            same += flag == base[c]
+        if ref_rates is None: ref_rates = rates
+        rho = float(spearmanr([ref_rates[c] for c in big], [rates[c] for c in big])[0]) if len(big) > 2 else None
+        out.append(dict(hours=h, negative_walk_rate=round(avg, 4), complaint_groups=len(big), same_verdict_as_1h=same,
+                        rank_correlation_with_1h=round(rho, 3) if rho is not None else None))
+    return out
+
+
 def analyze(g):
     appid = g["appid"]
     df = pd.read_parquet(os.path.join(ROOT, "data", "work", f"reviews_{appid}.parquet"))
-    state = json.load(open(os.path.join(ROOT, "data", "raw", str(appid), "state.json")))
+    states = [json.load(open(os.path.join(ROOT, "data", "raw", str(appid) + sfx, "state.json"))) for sfx in ("", "_other") if os.path.exists(os.path.join(ROOT, "data", "raw", str(appid) + sfx, "state.json"))]
     lab = load_labels(appid)
     df = df.merge(lab, on="rid", how="left")
     df["bucket"] = pd.cut(df.hours_at_review, [b[0] for b in BUCKETS] + [1e9], labels=[b[2] for b in BUCKETS], right=False)
@@ -81,14 +154,15 @@ def analyze(g):
     ann = announcements(appid)
 
     out = dict(appid=appid, slug=g["slug"], name=g["name"], genre=g["genre"], release=g["release"],
-               snapshot=dt.datetime.fromtimestamp(state["snapshot"], dt.timezone.utc).strftime("%Y-%m-%d"),
+               snapshot=dt.datetime.fromtimestamp(max(st["snapshot"] for st in states), dt.timezone.utc).strftime("%Y-%m-%d"),
+               snapshot_english=dt.datetime.fromtimestamp(states[0]["snapshot"], dt.timezone.utc).strftime("%Y-%m-%d"),
                params=dict(mature_days=MATURE_DAYS, walk_hours=WALK_HOURS, min_cell=MIN_CELL))
 
     # --- funnel / coverage
-    api_total = sum((w.get("total_matching") or 0) for w in state["windows"].values())
+    api_total = sum((w.get("total_matching") or 0) for st in states for w in st["windows"].values())
     life = pd.read_csv(os.path.join(PUB, "steam_lifetime_summary.csv")).set_index("appid").loc[appid]
-    out["funnel"] = dict(steam_summary_total=int(life.steam_summary_total), api_reported_english_reviews=api_total, fetched_unique=len(df), negative=len(neg),
-                         negative_3plus_words=int((neg.words >= 3).sum()), labeled=len(labeled),
+    out["funnel"] = dict(steam_summary_total=int(life.steam_summary_total), api_reported_reviews=api_total, english=int((df.language == "english").sum()), other_languages=int((df.language != "english").sum()), languages=int(df.language.nunique()), fetched_unique=len(df), negative=len(neg),
+                         negative_enough_text=int(neg.substantive.sum()), labeled=len(labeled),
                          first_review=df.month.min(), last_review=df.month.max())
     out["overview"] = dict(reviews=len(df), negative=len(neg), negative_share=round(len(neg) / len(df), 4),
                            median_hours_at_negative_review=round(float(neg.hours_at_review.median()), 1),
@@ -137,6 +211,50 @@ def analyze(g):
                          walk_hi=r["hi"] if r["shown"] else None, vs_game_average=flag,
                          says_stopped_rate=st["rate"] if st["shown"] else None))
     out["reasons"] = sorted(rows, key=lambda x: -x["n"])
+
+    # --- regression with controls, and sensitivity of the walk-away definition
+    mf = model_frame(df, L, mature, g); POOL.append(mf)
+    out["model"] = walk_model(mf)
+    out["sensitivity"] = sensitivity(df, L, mature, out["reasons"])
+
+    # --- second-level breakdown (only where a sub-reason pass was run)
+    sub_files = glob.glob(os.path.join(ROOT, "data", "work", "sublabels", str(appid), "batch_*.json"))
+    if sub_files:
+        sub = pd.DataFrame([l for f in sub_files for l in json.load(open(f))["labels"]])
+        ds = df.merge(sub, on="rid"); dsm = ds[ds.days_since_review >= MATURE_DAYS]
+        design_walk = float((dsm.hours_after_review < WALK_HOURS).mean())
+        srows = []
+        for code, name in SUBREASONS.items():
+            a = ds[ds["sub"] == code]; am = dsm[dsm["sub"] == code]; k = int((am.hours_after_review < WALK_HOURS).sum()); lo, hi = wilson(k, len(am))
+            en = a[a.language == "english"]; ot = a[a.language != "english"]
+            srows.append(dict(code=code, sub_reason=name, n=len(a), share=round(len(a) / len(ds), 4),
+                              share_english=round(len(en) / max((ds.language == "english").sum(), 1), 4), share_other_languages=round(len(ot) / max((ds.language != "english").sum(), 1), 4),
+                              median_hours_at_review=round(float(a.hours_at_review.median()), 1) if len(a) else None,
+                              walk_n=len(am), walk_rate=round(k / len(am), 4) if len(am) >= MIN_CELL else None, walk_lo=lo if len(am) >= MIN_CELL else None, walk_hi=hi if len(am) >= MIN_CELL else None,
+                              vs_design_average=("n/a" if len(am) < MIN_CELL else "higher" if lo > design_walk else "lower" if hi < design_walk else "similar")))
+        out["sub_reasons"] = dict(parent="DESIGN", parent_reason=REASONS["DESIGN"], labeled=len(ds), eligible=int((L & (df.main == "DESIGN")).sum()),
+                                  parent_walk_rate=round(design_walk, 4), rows=sorted(srows, key=lambda r: -r["n"]))
+
+    # --- by review language (a rough stand-in for market; many players review in English wherever they live)
+    counts = df.language.value_counts()
+    groups = [(l, df.language == l) for l in counts.index if counts[l] >= MIN_LANG]
+    small = ~df.language.isin([l for l, _ in groups])
+    if small.sum(): groups.append(("_small", small))
+    named_codes = [r["code"] for r in out["reasons"] if r["code"] not in ("OTHER",)][:6]
+    lrows = []
+    for l, msk in groups:
+        ln = msk & ~df.voted_up; ll = ln & df.main.notna(); r = rate(walked, ln & mature); nl = int(ll.sum())
+        mix = df.main[ll].value_counts()
+        mix_named = mix.drop(labels=["OTHER"], errors="ignore")
+        lrows.append(dict(code=l, language=LANG_NAMES.get(l, l) if l != "_small" else f"All other languages (under {MIN_LANG} reviews each)",
+                          reviews=int(msk.sum()), share_of_reviews=round(float(msk.mean()), 4), negative=int(ln.sum()),
+                          negative_share=round(float(ln.sum() / msk.sum()), 4),
+                          median_hours_at_negative_review=round(float(df.hours_at_review[ln].median()), 1) if ln.sum() else None,
+                          neg_walk_n=r["n"], neg_walk_rate=r["rate"] if r["shown"] else None, labeled=nl,
+                          top_reason=REASONS[mix_named.index[0]] if nl >= MIN_CELL and len(mix_named) else None,
+                          top_reason_share=round(float(mix_named.iloc[0] / nl), 4) if nl >= MIN_CELL and len(mix_named) else None,
+                          reason_shares={c: (round(float(mix.get(c, 0) / nl), 4) if nl >= MIN_CELL else None) for c in REASONS}))
+    out["languages"] = lrows; out["language_reason_columns"] = named_codes
 
     # --- reason x playtime bucket (share of that bucket's labeled negative reviews)
     grid = []
@@ -223,17 +341,28 @@ if __name__ == "__main__":
                        reason_shares={r["code"]: r["share"] for r in o["reasons"]},
                        reason_walk={r["code"]: r["walk_rate"] for r in o["reasons"]},
                        reason_flags={r["code"]: r["vs_game_average"] for r in o["reasons"]},
+                       english=o["funnel"]["english"], other_languages=o["funnel"]["other_languages"],
+                       languages=[dict(code=l["code"], language=l["language"], reviews=l["reviews"], negative_share=l["negative_share"], neg_walk_rate=l["neg_walk_rate"], top_reason=l["top_reason"]) for l in o["languages"]],
+                       kept_10h_rate=b["negative"].get("kept_10h_rate"),
                        under2h_negative_share=o["playtime"][0]["negative_share_in_bucket"], under2h_neg_walk_rate=o["playtime"][0]["neg_walk_rate"],
                        said_stopped_share=o["said_vs_did"][0]["share"], said_stopped_walk_rate=o["said_vs_did"][0]["walk_rate"],
                        said_waiting_share=o["said_vs_did"][1]["share"], said_waiting_kept_10h_rate=o["said_vs_did"][1]["kept_10h_rate"]))
     json.dump(ov, open(os.path.join(DOCS, "overview.json"), "w"), indent=1)
+    pooled = walk_model(pd.concat(POOL), pooled=True)
+    json.dump(dict(pooled=pooled, per_game={o["slug"]: o["model"] for o in res}, sensitivity={o["slug"]: o["sensitivity"] for o in res}),
+              open(os.path.join(DOCS, "models.json"), "w"), indent=1)
+    pd.DataFrame([dict(game=o["name"], reference=o["model"].get("reference_reason"), **r) for o in res if o["model"].get("ok") for r in o["model"]["rows"]]
+                 + [dict(game="All six games (pooled, game fixed effects)", reference=pooled.get("reference_reason"), **r) for r in pooled.get("rows", [])]).to_csv(os.path.join(PUB, "walk_away_model_odds_ratios.csv"), index=False)
+    pd.DataFrame([dict(game=o["name"], **r) for o in res for r in o["sensitivity"]]).to_csv(os.path.join(PUB, "walk_away_sensitivity.csv"), index=False)
     # flat tables
-    pd.DataFrame([{k: v for k, v in r.items() if not isinstance(v, dict)} for r in ov]).to_csv(os.path.join(PUB, "games_overview.csv"), index=False)
+    pd.DataFrame([{k: v for k, v in r.items() if not isinstance(v, (dict, list))} for r in ov]).to_csv(os.path.join(PUB, "games_overview.csv"), index=False)
     pd.DataFrame([dict(game=o["name"], **r) for o in res for r in o["reasons"]]).to_csv(os.path.join(PUB, "reasons_by_game.csv"), index=False)
     pd.DataFrame([dict(game=o["name"], **r) for o in res for r in o["playtime"]]).to_csv(os.path.join(PUB, "playtime_buckets_by_game.csv"), index=False)
     pd.DataFrame([dict(game=o["name"], **r) for o in res for r in o["said_vs_did"]]).to_csv(os.path.join(PUB, "said_vs_did_by_game.csv"), index=False)
     pd.DataFrame([dict(game=o["name"], group=k, **v) for o in res for k, v in o["behaviour"].items()]).to_csv(os.path.join(PUB, "behaviour_after_review.csv"), index=False)
     pd.DataFrame([dict(game=o["name"], month=r["month"], reviews=r["reviews"], negative=r["negative"], negative_share=r["negative_share"], labeled=r["labeled"], **r["reason_counts"]) for o in res for r in o["monthly"]]).to_csv(os.path.join(PUB, "monthly_by_game.csv"), index=False)
+    pd.DataFrame([dict(game=o["name"], **{k: v for k, v in l.items() if k != "reason_shares"}, **{"share_" + c: v for c, v in l["reason_shares"].items()}) for o in res for l in o["languages"]]).to_csv(os.path.join(PUB, "languages_by_game.csv"), index=False)
+    pd.DataFrame([dict(game=o["name"], parent=o["sub_reasons"]["parent_reason"], **r) for o in res if o.get("sub_reasons") for r in o["sub_reasons"]["rows"]]).to_csv(os.path.join(PUB, "sub_reasons.csv"), index=False)
     pd.DataFrame([dict(game=o["name"], **o["funnel"]) for o in res]).to_csv(os.path.join(PUB, "pipeline_row_counts.csv"), index=False)
     pd.DataFrame([dict(game=o["name"], week_start=s["week_start"], negative=s["negative"], usual_weekly_negative=s["usual_weekly_negative"], negative_share=s["negative_share"],
                        top_reasons="; ".join(f"{t['reason']} {t['share']:.0%}" for t in s["top_reasons"]), official_posts=" | ".join(f"{p['date']} {p['title']}" for p in s["official_posts"])) for o in res for s in o["spikes"]]).to_csv(os.path.join(PUB, "spike_weeks.csv"), index=False)

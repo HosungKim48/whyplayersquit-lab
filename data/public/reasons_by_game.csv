@@ -1,67 +1,67 @@
 game,code,reason,walk_rate_adjusted,n,share,any_mention_share,median_hours_at_review,walk_n,walk_rate,walk_lo,walk_hi,vs_game_average,says_stopped_rate
-Sid Meier's Civilization VII,DESIGN,Gameplay & design choices,0.4255,4941,0.3603,0.4755,19.6,4893,0.3942,0.3806,0.408,higher,0.2321
-Sid Meier's Civilization VII,CONTENT,Not enough content,0.326,2101,0.1532,0.2608,16.6,2089,0.3265,0.3067,0.3469,lower,0.1337
-Sid Meier's Civilization VII,UI,Interface & controls,0.3153,1931,0.1408,0.2646,7.3,1923,0.3666,0.3454,0.3884,similar,0.1781
-Sid Meier's Civilization VII,STAB,Crashes & bugs,0.2297,1483,0.1082,0.1485,11.9,1478,0.247,0.2256,0.2696,lower,0.1868
-Sid Meier's Civilization VII,OTHER,No clear reason,0.4495,1388,0.1012,0.1066,12.2,1366,0.4685,0.4422,0.495,higher,0.1333
-Sid Meier's Civilization VII,MONET,Price & monetization,0.4188,1033,0.0753,0.1631,23.9,1020,0.399,0.3694,0.4294,similar,0.2265
-Sid Meier's Civilization VII,ONLINE,"Online, accounts & DRM",,300,0.0219,0.0314,6.3,298,0.4128,0.3583,0.4694,similar,0.2367
-Sid Meier's Civilization VII,SUPPORT,Post-launch support,0.3678,169,0.0123,0.036,43.0,165,0.3212,0.2547,0.3958,similar,0.2189
-Sid Meier's Civilization VII,PERF,Performance,0.3221,164,0.012,0.0227,10.6,164,0.3598,0.2903,0.4356,similar,0.2195
-Sid Meier's Civilization VII,OFFGAME,Off-game topics,0.5231,121,0.0088,0.0135,13.2,118,0.5339,0.4442,0.6214,higher,0.1405
-Sid Meier's Civilization VII,STORY,Story & writing,,81,0.0059,0.0161,14.3,79,0.4304,0.3269,0.5403,similar,0.2099
-Cities: Skylines II,STAB,Crashes & bugs,0.2126,4034,0.2864,0.3908,39.0,4010,0.1748,0.1634,0.1869,lower,0.1978
-Cities: Skylines II,PERF,Performance,0.2489,3610,0.2563,0.3446,3.6,3598,0.3252,0.3101,0.3407,higher,0.1795
-Cities: Skylines II,CONTENT,Not enough content,0.2303,1900,0.1349,0.219,27.4,1896,0.2073,0.1896,0.2261,lower,0.1274
-Cities: Skylines II,DESIGN,Gameplay & design choices,0.2656,1257,0.0892,0.1539,26.5,1249,0.2354,0.2127,0.2597,similar,0.1718
-Cities: Skylines II,OTHER,No clear reason,0.3137,1161,0.0824,0.0913,19.9,1155,0.3186,0.2924,0.346,higher,0.0767
-Cities: Skylines II,SUPPORT,Post-launch support,0.2517,780,0.0554,0.1283,48.8,777,0.2227,0.1948,0.2532,lower,0.2026
-Cities: Skylines II,MONET,Price & monetization,0.3217,728,0.0517,0.1209,33.8,720,0.3014,0.269,0.3359,higher,0.1827
-Cities: Skylines II,UI,Interface & controls,0.2716,247,0.0175,0.0439,6.4,247,0.336,0.28,0.3971,higher,0.2065
-Cities: Skylines II,ONLINE,"Online, accounts & DRM",0.2889,184,0.0131,0.0267,42.1,182,0.2363,0.1804,0.303,similar,0.1957
-Cities: Skylines II,OFFGAME,Off-game topics,0.6883,179,0.0127,0.0151,35.3,178,0.6742,0.6023,0.7387,higher,0.2291
-Cities: Skylines II,STORY,Story & writing,,5,0.0004,0.0013,100.0,5,,,,n/a,
-PAYDAY 3,ONLINE,"Online, accounts & DRM",0.2265,5848,0.3594,0.4278,4.2,5836,0.2485,0.2375,0.2597,lower,0.1192
-PAYDAY 3,OTHER,No clear reason,0.4132,2696,0.1657,0.1764,8.6,2677,0.4087,0.3902,0.4274,higher,0.0586
-PAYDAY 3,CONTENT,Not enough content,0.4294,2100,0.1291,0.2058,12.7,2078,0.3994,0.3786,0.4206,higher,0.11
-PAYDAY 3,DESIGN,Gameplay & design choices,0.4306,1567,0.0963,0.1732,13.3,1542,0.3969,0.3728,0.4215,higher,0.1315
-PAYDAY 3,STAB,Crashes & bugs,0.258,1380,0.0848,0.1315,5.3,1361,0.2777,0.2546,0.3021,lower,0.1565
-PAYDAY 3,MONET,Price & monetization,0.4326,1205,0.0741,0.1404,11.6,1196,0.4273,0.3995,0.4555,higher,0.1876
-PAYDAY 3,SUPPORT,Post-launch support,0.3773,725,0.0446,0.0836,26.3,724,0.3467,0.3129,0.3821,similar,0.1779
-PAYDAY 3,PERF,Performance,0.3292,408,0.0251,0.0433,3.5,406,0.3793,0.3335,0.4274,similar,0.1275
-PAYDAY 3,UI,Interface & controls,0.3384,219,0.0135,0.0458,6.3,218,0.3486,0.2885,0.414,similar,0.105
-PAYDAY 3,OFFGAME,Off-game topics,0.4443,92,0.0057,0.0081,16.5,91,0.3626,0.2713,0.4651,similar,0.0978
-PAYDAY 3,STORY,Story & writing,,32,0.002,0.0053,11.0,32,0.5312,0.3645,0.6913,higher,0.0312
-Dragon's Dogma 2,PERF,Performance,0.3402,3762,0.2891,0.3901,4.0,3761,0.3552,0.3401,0.3707,lower,0.1446
-Dragon's Dogma 2,MONET,Price & monetization,0.3567,1914,0.1471,0.2731,2.9,1913,0.3858,0.3642,0.4078,similar,0.1594
-Dragon's Dogma 2,STAB,Crashes & bugs,0.3111,1862,0.1431,0.1981,7.0,1844,0.3113,0.2906,0.3328,lower,0.2159
-Dragon's Dogma 2,DESIGN,Gameplay & design choices,0.4831,1781,0.1369,0.2301,18.8,1757,0.4559,0.4327,0.4793,higher,0.1662
-Dragon's Dogma 2,CONTENT,Not enough content,0.4646,1421,0.1092,0.1763,33.1,1413,0.4735,0.4475,0.4995,higher,0.1147
-Dragon's Dogma 2,OTHER,No clear reason,0.4931,958,0.0736,0.0859,7.4,949,0.4932,0.4614,0.5249,higher,0.0877
-Dragon's Dogma 2,STORY,Story & writing,0.5563,501,0.0385,0.0855,33.2,500,0.552,0.5082,0.595,higher,0.1178
-Dragon's Dogma 2,UI,Interface & controls,0.4873,486,0.0374,0.0729,3.7,483,0.5114,0.4669,0.5557,higher,0.1749
-Dragon's Dogma 2,SUPPORT,Post-launch support,0.4585,141,0.0108,0.0348,26.5,141,0.4397,0.3605,0.5222,similar,0.1206
-Dragon's Dogma 2,ONLINE,"Online, accounts & DRM",,129,0.0099,0.023,3.6,129,0.2248,0.1613,0.3042,lower,0.1938
-Dragon's Dogma 2,OFFGAME,Off-game topics,,57,0.0044,0.0067,3.2,56,0.4464,0.3239,0.5759,similar,0.1404
-Monster Hunter Wilds,PERF,Performance,0.2277,10260,0.44,0.5493,25.5,10247,0.2312,0.2231,0.2395,lower,0.0784
-Monster Hunter Wilds,STAB,Crashes & bugs,0.1732,4327,0.1856,0.2597,25.9,4316,0.187,0.1756,0.1989,lower,0.1255
-Monster Hunter Wilds,DESIGN,Gameplay & design choices,0.3631,2508,0.1076,0.1755,51.1,2484,0.3345,0.3163,0.3533,higher,0.112
-Monster Hunter Wilds,OTHER,No clear reason,0.3331,1533,0.0657,0.0712,49.0,1524,0.3241,0.3011,0.3481,higher,0.0502
-Monster Hunter Wilds,CONTENT,Not enough content,0.2853,1484,0.0636,0.1174,69.1,1481,0.2701,0.2481,0.2933,similar,0.0903
-Monster Hunter Wilds,ONLINE,"Online, accounts & DRM",0.2588,847,0.0363,0.0678,19.0,843,0.2622,0.2336,0.2929,similar,0.1039
-Monster Hunter Wilds,MONET,Price & monetization,0.3754,719,0.0308,0.082,57.1,718,0.3621,0.3278,0.3979,higher,0.1196
-Monster Hunter Wilds,STORY,Story & writing,0.3332,523,0.0224,0.0534,20.4,518,0.3127,0.2743,0.3539,higher,0.0937
-Monster Hunter Wilds,UI,Interface & controls,0.2855,502,0.0215,0.0458,9.1,499,0.3467,0.3063,0.3895,higher,0.1116
-Monster Hunter Wilds,SUPPORT,Post-launch support,0.3722,493,0.0211,0.0866,80.4,492,0.3171,0.2775,0.3595,higher,0.142
-Monster Hunter Wilds,OFFGAME,Off-game topics,,120,0.0051,0.0075,48.7,119,0.3782,0.2961,0.4678,higher,0.1333
-Starfield,DESIGN,Gameplay & design choices,0.5513,7714,0.2291,0.3651,41.6,7700,0.5519,0.5408,0.563,higher,0.1792
-Starfield,CONTENT,Not enough content,0.5143,7634,0.2267,0.3335,62.5,7621,0.5024,0.4912,0.5136,similar,0.1403
-Starfield,OTHER,No clear reason,0.5874,4616,0.1371,0.1458,40.8,4607,0.5937,0.5794,0.6078,higher,0.0639
-Starfield,STAB,Crashes & bugs,0.2838,3475,0.1032,0.1469,53.0,3458,0.2964,0.2814,0.3119,lower,0.2023
-Starfield,PERF,Performance,0.4367,3310,0.0983,0.1555,16.1,3305,0.4759,0.459,0.493,lower,0.1444
-Starfield,STORY,Story & writing,0.5471,2467,0.0733,0.1631,62.1,2462,0.5357,0.516,0.5554,higher,0.1471
-Starfield,MONET,Price & monetization,0.514,2350,0.0698,0.1234,59.4,2348,0.5,0.4798,0.5202,similar,0.1668
-Starfield,UI,Interface & controls,0.3846,787,0.0234,0.0587,21.7,785,0.4242,0.3901,0.4591,lower,0.136
-Starfield,OFFGAME,Off-game topics,0.5022,659,0.0196,0.0264,61.5,653,0.5008,0.4625,0.539,similar,0.1791
-Starfield,SUPPORT,Post-launch support,0.4543,622,0.0185,0.0501,79.2,620,0.429,0.3906,0.4683,lower,0.1961
-Starfield,ONLINE,"Online, accounts & DRM",,38,0.0011,0.0025,118.4,38,0.4737,0.3248,0.6274,similar,0.1842
+Sid Meier's Civilization VII,DESIGN,Gameplay & design choices,0.4121,7155,0.331,0.4416,19.7,7080,0.3739,0.3627,0.3852,higher,0.2219
+Sid Meier's Civilization VII,CONTENT,Not enough content,0.3171,3194,0.1477,0.2464,16.1,3175,0.314,0.2981,0.3304,lower,0.1224
+Sid Meier's Civilization VII,UI,Interface & controls,0.3026,2994,0.1385,0.2496,7.1,2985,0.3518,0.3348,0.3691,similar,0.1617
+Sid Meier's Civilization VII,STAB,Crashes & bugs,0.211,2512,0.1162,0.1602,10.9,2496,0.2404,0.224,0.2575,lower,0.162
+Sid Meier's Civilization VII,OTHER,No clear reason,0.4169,2491,0.1152,0.121,11.1,2456,0.4361,0.4166,0.4558,higher,0.1168
+Sid Meier's Civilization VII,MONET,Price & monetization,0.4152,1689,0.0781,0.1602,23.1,1665,0.3952,0.372,0.4189,higher,0.1972
+Sid Meier's Civilization VII,ONLINE,"Online, accounts & DRM",0.3098,574,0.0266,0.0365,12.5,571,0.338,0.3004,0.3778,similar,0.1951
+Sid Meier's Civilization VII,PERF,Performance,0.2946,389,0.018,0.0315,8.8,387,0.3514,0.3055,0.4002,similar,0.1568
+Sid Meier's Civilization VII,SUPPORT,Post-launch support,0.3675,278,0.0129,0.037,43.5,272,0.3309,0.2777,0.3888,similar,0.1871
+Sid Meier's Civilization VII,OFFGAME,Off-game topics,0.4189,222,0.0103,0.0148,14.1,219,0.4292,0.3654,0.4954,higher,0.1396
+Sid Meier's Civilization VII,STORY,Story & writing,,120,0.0056,0.0145,14.1,118,0.4237,0.3384,0.5139,similar,0.1833
+Cities: Skylines II,STAB,Crashes & bugs,0.1794,7584,0.2839,0.3827,38.9,7529,0.144,0.1362,0.1521,lower,0.1585
+Cities: Skylines II,PERF,Performance,0.2205,7195,0.2694,0.3519,4.0,7171,0.285,0.2747,0.2956,higher,0.1522
+Cities: Skylines II,CONTENT,Not enough content,0.2159,3218,0.1205,0.1933,26.5,3205,0.195,0.1817,0.2091,lower,0.1162
+Cities: Skylines II,OTHER,No clear reason,0.3042,2391,0.0895,0.0971,19.5,2380,0.3092,0.291,0.3281,higher,0.064
+Cities: Skylines II,DESIGN,Gameplay & design choices,0.2501,2066,0.0773,0.1349,28.8,2051,0.2165,0.1992,0.2348,lower,0.1491
+Cities: Skylines II,SUPPORT,Post-launch support,0.2307,1311,0.0491,0.1151,57.4,1305,0.1916,0.1711,0.2138,lower,0.1693
+Cities: Skylines II,MONET,Price & monetization,0.3147,1172,0.0439,0.106,32.0,1161,0.2937,0.2682,0.3206,higher,0.1604
+Cities: Skylines II,ONLINE,"Online, accounts & DRM",0.1575,767,0.0287,0.0452,50.7,764,0.1191,0.098,0.144,lower,0.1043
+Cities: Skylines II,OFFGAME,Off-game topics,0.7648,551,0.0206,0.0233,31.7,546,0.7582,0.7206,0.7923,higher,0.196
+Cities: Skylines II,UI,Interface & controls,0.2479,447,0.0167,0.0412,6.8,440,0.3023,0.2612,0.3467,higher,0.1611
+Cities: Skylines II,STORY,Story & writing,,9,0.0003,0.0011,26.8,9,,,,n/a,
+PAYDAY 3,ONLINE,"Online, accounts & DRM",0.2022,9287,0.3744,0.4387,4.9,9252,0.222,0.2137,0.2306,lower,0.1085
+PAYDAY 3,OTHER,No clear reason,0.3946,4089,0.1648,0.177,8.7,4040,0.3896,0.3747,0.4047,higher,0.055
+PAYDAY 3,CONTENT,Not enough content,0.417,3079,0.1241,0.1958,12.3,3026,0.3893,0.3721,0.4068,higher,0.1052
+PAYDAY 3,DESIGN,Gameplay & design choices,0.3968,2410,0.0971,0.1714,13.5,2362,0.3594,0.3403,0.379,higher,0.1203
+PAYDAY 3,STAB,Crashes & bugs,0.2534,2092,0.0843,0.1296,6.0,2049,0.2723,0.2535,0.292,lower,0.1429
+PAYDAY 3,MONET,Price & monetization,0.4184,1743,0.0703,0.1358,11.9,1721,0.4067,0.3838,0.4301,higher,0.179
+PAYDAY 3,SUPPORT,Post-launch support,0.3658,1004,0.0405,0.0769,27.4,1000,0.33,0.3016,0.3597,similar,0.1663
+PAYDAY 3,PERF,Performance,0.3109,652,0.0263,0.0459,3.6,644,0.3602,0.3241,0.3981,higher,0.1181
+PAYDAY 3,UI,Interface & controls,,300,0.0121,0.0413,6.3,298,0.3423,0.2907,0.3979,similar,0.09
+PAYDAY 3,OFFGAME,Off-game topics,,109,0.0044,0.0064,16.0,108,0.3519,0.2683,0.4456,similar,0.1009
+PAYDAY 3,STORY,Story & writing,,42,0.0017,0.0047,8.3,42,0.4286,0.2912,0.5779,similar,0.0238
+Dragon's Dogma 2,PERF,Performance,0.3155,7595,0.2874,0.3771,4.0,7592,0.3359,0.3253,0.3466,lower,0.124
+Dragon's Dogma 2,STAB,Crashes & bugs,0.2657,3982,0.1507,0.2036,6.9,3947,0.2739,0.2602,0.288,lower,0.1878
+Dragon's Dogma 2,DESIGN,Gameplay & design choices,0.433,3977,0.1505,0.247,19.6,3924,0.3968,0.3816,0.4122,higher,0.1639
+Dragon's Dogma 2,MONET,Price & monetization,0.3715,3034,0.1148,0.2077,3.9,3028,0.389,0.3718,0.4065,similar,0.1526
+Dragon's Dogma 2,CONTENT,Not enough content,0.4347,2745,0.1039,0.1661,33.5,2725,0.4338,0.4153,0.4524,higher,0.11
+Dragon's Dogma 2,OTHER,No clear reason,0.4439,2729,0.1033,0.1158,9.6,2708,0.4402,0.4216,0.4589,higher,0.0704
+Dragon's Dogma 2,UI,Interface & controls,0.4683,896,0.0339,0.0705,5.3,884,0.4887,0.4559,0.5216,higher,0.1819
+Dragon's Dogma 2,STORY,Story & writing,0.5544,854,0.0323,0.0712,33.9,847,0.536,0.5023,0.5694,higher,0.1148
+Dragon's Dogma 2,SUPPORT,Post-launch support,0.372,309,0.0117,0.0365,24.9,309,0.3592,0.3078,0.4141,similar,0.1327
+Dragon's Dogma 2,ONLINE,"Online, accounts & DRM",0.1769,182,0.0069,0.015,3.9,181,0.2155,0.1618,0.2809,lower,0.1703
+Dragon's Dogma 2,OFFGAME,Off-game topics,0.3969,122,0.0046,0.0067,11.1,121,0.4132,0.3295,0.5023,similar,0.1393
+Monster Hunter Wilds,PERF,Performance,0.2032,24922,0.2791,0.3638,31.0,24884,0.2051,0.2001,0.2101,lower,0.0727
+Monster Hunter Wilds,STAB,Crashes & bugs,0.1599,14373,0.161,0.2159,32.0,14344,0.1636,0.1576,0.1697,lower,0.1184
+Monster Hunter Wilds,OTHER,No clear reason,0.2934,13394,0.15,0.1581,73.8,13347,0.2968,0.2892,0.3047,higher,0.0428
+Monster Hunter Wilds,CONTENT,Not enough content,0.2757,10518,0.1178,0.1939,86.8,10499,0.2835,0.2749,0.2922,higher,0.1125
+Monster Hunter Wilds,DESIGN,Gameplay & design choices,0.2852,9491,0.1063,0.1628,93.8,9425,0.2562,0.2475,0.2651,higher,0.1167
+Monster Hunter Wilds,SUPPORT,Post-launch support,0.2952,4850,0.0543,0.1216,99.3,4844,0.289,0.2764,0.3019,higher,0.0973
+Monster Hunter Wilds,MONET,Price & monetization,0.3604,4182,0.0468,0.0893,84.5,4174,0.3563,0.3419,0.3709,higher,0.121
+Monster Hunter Wilds,ONLINE,"Online, accounts & DRM",0.1934,2694,0.0302,0.0509,45.2,2681,0.1936,0.1791,0.209,lower,0.0909
+Monster Hunter Wilds,STORY,Story & writing,0.2579,2065,0.0231,0.0477,24.8,2050,0.2141,0.1969,0.2324,lower,0.0809
+Monster Hunter Wilds,UI,Interface & controls,0.2965,1803,0.0202,0.0427,50.0,1788,0.2908,0.2702,0.3123,higher,0.1165
+Monster Hunter Wilds,OFFGAME,Off-game topics,0.2904,987,0.0111,0.0154,83.8,984,0.2795,0.2523,0.3083,higher,0.0648
+Starfield,DESIGN,Gameplay & design choices,0.5347,9669,0.2204,0.3501,40.2,9643,0.5323,0.5223,0.5422,higher,0.1777
+Starfield,CONTENT,Not enough content,0.5004,9335,0.2128,0.3137,60.9,9314,0.4851,0.4749,0.4952,similar,0.1357
+Starfield,OTHER,No clear reason,0.5506,6454,0.1471,0.1555,37.1,6442,0.5581,0.5459,0.5701,higher,0.0646
+Starfield,PERF,Performance,0.3913,4886,0.1114,0.1726,15.2,4880,0.4328,0.4189,0.4467,lower,0.1326
+Starfield,STAB,Crashes & bugs,0.2702,4573,0.1042,0.1482,51.8,4549,0.2818,0.2689,0.2951,lower,0.1865
+Starfield,MONET,Price & monetization,0.5055,2998,0.0683,0.1175,56.2,2994,0.4903,0.4724,0.5082,similar,0.1601
+Starfield,STORY,Story & writing,0.5377,2884,0.0657,0.1468,60.6,2876,0.525,0.5068,0.5432,higher,0.1463
+Starfield,UI,Interface & controls,0.3758,1158,0.0264,0.063,20.4,1156,0.4083,0.3803,0.4369,lower,0.1347
+Starfield,SUPPORT,Post-launch support,0.3799,1017,0.0232,0.0558,63.8,1014,0.3698,0.3407,0.4,lower,0.1573
+Starfield,OFFGAME,Off-game topics,0.4668,848,0.0193,0.0259,56.1,841,0.4661,0.4326,0.4999,similar,0.1616
+Starfield,ONLINE,"Online, accounts & DRM",,50,0.0011,0.0023,90.9,50,0.46,0.3297,0.596,similar,0.14

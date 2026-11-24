@@ -1,0 +1,19 @@
+game,hours,negative_walk_rate,complaint_groups,same_verdict_as_1h,rank_correlation_with_1h
+Sid Meier's Civilization VII,1,0.3571,10,10,1.0
+Sid Meier's Civilization VII,2,0.3946,10,10,0.964
+Sid Meier's Civilization VII,5,0.4654,10,10,1.0
+Cities: Skylines II,1,0.2375,9,9,1.0
+Cities: Skylines II,2,0.267,9,9,0.983
+Cities: Skylines II,5,0.3199,9,8,0.983
+PAYDAY 3,1,0.3165,9,9,1.0
+PAYDAY 3,2,0.3663,9,9,0.967
+PAYDAY 3,5,0.4601,9,9,0.95
+Dragon's Dogma 2,1,0.3771,10,10,1.0
+Dragon's Dogma 2,2,0.4143,10,10,1.0
+Dragon's Dogma 2,5,0.4759,10,10,0.988
+Monster Hunter Wilds,1,0.2434,10,10,1.0
+Monster Hunter Wilds,2,0.2741,10,10,1.0
+Monster Hunter Wilds,5,0.3337,10,10,0.988
+Starfield,1,0.484,9,9,1.0
+Starfield,2,0.5205,9,9,1.0
+Starfield,5,0.5801,9,8,0.983

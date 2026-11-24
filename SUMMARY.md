@@ -6,110 +6,117 @@
 
 ## Bottom line
 
-I built quit-signal reports for six games from 311,104 public English Steam reviews. The core idea: Steam shows how long each reviewer had played when they wrote the review and how long they have played in total. The gap tells us what they did *after* complaining. A negative review turns out to be a warning more often than a goodbye: depending on the game, only 26%–51% of negative reviewers logged less than one more hour afterwards.
+Quit-signal reports for six games, built from 551,228 public Steam reviews in every language (311,106 English, 240,122 in 28 other languages). Steam shows how long each reviewer had played when they wrote the review and how long they have played in total. The gap shows what they did *after* complaining. Depending on the game, only 24%–48% of negative reviewers logged less than one more hour afterwards, so a negative review is more often a warning than a goodbye.
 
-Joining that behaviour with the reason each negative review gives (114,069 reviews labeled by a small model) splits complaints into two kinds:
+Joining that behaviour with the reason each negative review gives (232,712 reviews labeled by a small model) splits complaints into two kinds:
 
 - **Complaints from players who mostly stay.** Crashes and bugs: these reviewers walked away clearly less often than other negative reviewers in 6 of 6 games.
-- **Complaints that go with leaving.** Gameplay and design choices (clearly more often in 5 of 6 games) and story and writing (4 of 6).
+- **Complaints that go with leaving.** Gameplay and design choices (clearly more often in 5 of 6 games). In a regression that holds playtime, language, review age and game constant, every other complaint type has higher odds of walking away than crash complaints (design: 2.3 times).
+- **English is not the whole picture.** Monster Hunter Wilds is 29% negative in English, 78% in Simplified Chinese and 69% in Japanese; across all languages it is 47%.
 
-Total paid model spend: **$7.39** of the $30 cap.
+Total paid model spend: **$14.96** of the $30 cap.
 
 ## What I built and why
 
 | Piece | What it does |
 |---|---|
-| Overview page | Cross-game comparison and the patterns that held across games |
-| Six game reports | When reviewers give up, why, which complaints go with leaving, said-versus-did, timeline with official patches, paraphrased examples, suggested checks for a studio |
-| Method & limits page | Data source, row counts per stage, definitions, accuracy check, limits, cost |
+| Overview page | Cross-game comparison, the pooled regression, and a "who did what" note |
+| Six game reports | Laid out for a studio: headline numbers, three calls (prioritize / protect / win back), a priority map of complaints, markets by language, said-versus-did, timeline with official posts, paraphrased examples, checks grouped by owning team |
+| Case study | One written walk-through (Monster Hunter Wilds): how the English-only reading pointed at the wrong priority |
+| Method & limits page | Row counts per stage, definitions, second-model label check, limits, cost |
 | Code (`src/`) | Fetch → clean → label → analyze → build site → verify. Every page is rendered from JSON written by code. |
 
-**Why this approach.** Most review analysis stops at "what do people complain about". Studios already know that. The harder question is which complaints cost players. Review text alone cannot answer it, but public playtime can get part of the way: it shows which complainers actually stopped. That is the one thing in public Steam data that is behaviour, not opinion, so I made it the centre of every report.
+**Why this approach.** Most review analysis stops at "what do people complain about". Studios already know that. The harder question is which complaints cost players. Public playtime gets part of the way: it shows which complainers actually stopped. That is the one thing in public Steam data that is behaviour, not opinion, so every report is built around it.
 
-**What "useful to a studio" means here.** A report is useful if it changes what a team looks at next. Each report is built around four decisions: which complaint to prioritize, which hours of the game to protect, how many players are waiting for fixes, and which past patches to re-examine.
+**Changes since the first version.** (1) All languages instead of English only. (2) Pages redesigned for a studio reader. (3) Portfolio fixes: byline and AI-role note, a label check by a larger model, a case study, a regression with controls, design sub-reasons for one game, a sensitivity check on the walk-away definition, a shorter README with a walkthrough GIF, and a trimmed method page.
 
 ## Which games and why
 
-| Game | Genre | English reviews | Negative | Negative reviewers who walked away | Top complaint |
-|---|---|---:|---:|---:|---|
-| Sid Meier's Civilization VII | 4X strategy | 29,077 | 49% | 38% | Gameplay & design choices (36%) |
-| Cities: Skylines II | City builder | 34,666 | 43% | 26% | Crashes & bugs (29%) |
-| PAYDAY 3 | Co-op shooter | 32,298 | 54% | 34% | Online, accounts & DRM (36%) |
-| Dragon's Dogma 2 | Action RPG | 44,682 | 31% | 41% | Performance (29%) |
-| Monster Hunter Wilds | Co-op hunting | 84,926 | 29% | 26% | Performance (44%) |
-| Starfield | Single-player RPG | 85,455 | 42% | 51% | Gameplay & design choices (23%) |
+| Game | Reviews | Share not English | Negative | Negative reviewers who walked away | Top complaint |
+|---|---:|---:|---:|---:|---|
+| Sid Meier's Civilization VII | 44,063 | 34% | 51% | 36% | Gameplay & design choices (33%) |
+| Cities: Skylines II | 64,710 | 46% | 44% | 24% | Crashes & bugs (28%) |
+| PAYDAY 3 | 50,359 | 36% | 53% | 32% | Online, accounts & DRM (37%) |
+| Dragon's Dogma 2 | 77,177 | 42% | 36% | 38% | Performance (29%) |
+| Monster Hunter Wilds | 200,364 | 58% | 47% | 24% | Performance (28%) |
+| Starfield | 114,555 | 25% | 41% | 48% | Gameplay & design choices (22%) |
 
-Reasons for the choice:
+- **Plenty of negative reviews** (22,000+ each), so tables by reason, playtime and language are not thin.
+- **Different kinds of trouble:** technical launches (Cities II, Wilds, Dragon's Dogma 2), design disputes (Civ VII, Starfield), online-service failure (PAYDAY 3).
+- **Small enough to fetch in full politely.** Complete review histories, not a "most recent N" sample.
+- **Paid games only.** The review endpoint returned implausibly small totals for free-to-play games.
 
-- **Plenty of negative reviews** (13,700+ each), so reason-by-playtime tables are not thin.
-- **Different kinds of trouble**: technical launches (Cities II, Wilds, Dragon's Dogma 2), design disputes (Civ VII, Starfield), online-service failure (PAYDAY 3). This lets the reports show contrast.
-- **Small enough to fetch in full politely.** I wanted complete review histories, not a "most recent N" sample that would bias the timeline.
-- **Paid games only.** The review endpoint returned implausibly small totals for free-to-play games, so I left them out.
-
-Left out on purpose: Helldivers 2 (647,000 English reviews; too many requests to fetch in full), Palworld and Lethal Company (same), free-to-play titles (data problem above).
+Left out on purpose: Helldivers 2, Palworld, Lethal Company (too many requests to fetch in full), and free-to-play titles.
 
 ## What a studio could do with each report
 
-- **Civilization VII.** Design complaints are the largest group (36%) and go with leaving more than average; crash complaints go with staying. The report also flags three post-launch spike weeks that sit next to update and DLC posts. Use: test optional rules for the most-named mechanics before spending more on stability.
-- **Cities: Skylines II.** Lowest walk-away rate (26%) even with 43% negative reviews: these are players who stayed and are frustrated. Crashes and performance are over half of complaints. Use: the audience is still there, so fix cadence and communication matter more than win-back.
-- **PAYDAY 3.** Online and account complaints are 36% of negative reviews but those reviewers left *less* often than others; content and design reviewers left more. Use: the server story was loud, the content gap was costly.
-- **Dragon's Dogma 2.** 76% of reviews under 2 hours are negative and 58% of those reviewers never logged another hour; 8% of negative reviews are refunds. Use: the refund window is where this game lost people; performance on first launch is the thing to instrument.
-- **Monster Hunter Wilds.** Performance is 44% of complaints, yet performance reviewers walked away less than average and 65% of "waiting" reviewers played 10+ more hours. Use: a large, still-engaged group is waiting on performance; title-update weeks line up with the biggest spikes.
-- **Starfield.** Highest walk-away rate (51%). Design and content complaints dominate (23% each), and design reviewers left clearly more often than other negative reviewers, while crash reviewers left far less often (30%). Use: this looks like a design-and-content retention question more than a stability one; the June 2024 spike week is 48% price complaints.
+- **Civilization VII.** Design is the top complaint in every language. The sub-reason pass (7,151 design reviews) shows the Ages system is named most (27%), but those reviewers left *less* often than other design critics (33%); reviewers who say it "doesn't feel like Civilization" without naming a mechanic left most (46%). Use: the Ages critics are engaged and specific, so optional rules could keep them; the "not Civ" group is the harder loss.
+- **Cities: Skylines II.** Lowest walk-away rate (24%) with 44% negative: frustrated players who stayed. Crashes and performance are over half of complaints. Use: fix cadence and communication matter more than win-back. Turkish reviews are an outlier (67% negative, mostly off-game topics); the report counts that and does not characterize it.
+- **PAYDAY 3.** Online and account complaints are 37% of negative reviews, but those reviewers left *less* often (22%) than content, design and price critics (36%–41%). Use: the server story was loud; the content gap went with leaving.
+- **Dragon's Dogma 2.** 78% of reviews written under 2 hours are negative and 56% of those reviewers never logged another hour; 6% of negative reviews are refunds. Simplified Chinese reviews are 55% negative against 31% in English. Use: instrument first-launch performance, and read it by region.
+- **Monster Hunter Wilds.** 58% of reviews are not in English, and the verdict differs sharply by language. Critics are invested (median 61 hours at review) and 60% played 10+ more hours. Japanese critics name content first, not performance. Use: a win-back situation with different asks per market.
+- **Starfield.** Highest walk-away rate (48%). Design and content dominate; design and story critics left more often, crash critics far less (28%). Use: a design-and-content retention question more than a stability one.
 
 These are leads to check against internal telemetry, not conclusions.
 
 ## Verification I ran
 
-- `src/verify.py` (all checks pass): review counts and walk-away rates recomputed independently from the local tables; reason shares sum to 100%; fetched reviews ≥ 99.5% of what the API listed; no reviewer IDs or review IDs in any published file; no 8-word run on any page matches any raw review; all 60 paraphrases ≤ 20 words; spend under budget.
-- **Label accuracy:** I read a random sample of 60 labeled reviews (10 per game). Main reason judged correct in 53 of 60 (88%); quit-statement tag in 57 of 60 (95%). This check was done by me (an AI), not by a human.
-- **For your own spot check:** `data/work/spotcheck_50.csv` holds 50 random labeled reviews with text and a blank `your_verdict` column. It is local only and not published.
+- `src/verify.py`: 75 checks, all pass. Review counts and walk-away rates recomputed from the local tables; reason shares sum to 100%; language rows add up to all reviews; at least 97% of eligible reviews labeled; fetched reviews ≥ 99.5% of what the API listed; no reviewer or review IDs in any published file; no 8-word run on any page matches a raw review; all 29 paraphrases ≤ 20 words and in English; spend under budget.
+- The check caught one real bug before publishing: one review had been labeled twice, which added a phantom row to Monster Hunter Wilds. Fixed in `analyze.py`.
+- **Label check (second model, not human).** Claude Fable 5.2 read three random samples, 170 labeled reviews in all: main reason judged correct in 157 (92%), quit-statement tag in 158 (93%). By sample: English 53/60 and 57/60; other languages 56/60 and 57/60; mixed 48/50 and 44/50. For long reviews in the last two samples the checker read the first 420 characters. The weakest spot is the "waiting" tag, which the labeler sometimes gives to buying advice ("don't buy until patched") instead of a statement about the reviewer's own play.
+- **For your own spot check:** `data/work/spotcheck_50.csv` holds the 50 mixed-sample reviews with text and a blank `your_verdict` column. Local only, not published.
+- **Sensitivity.** Redefining "walked away" as under 2 or under 5 more hours keeps the ranking of complaints almost unchanged (rank correlation 0.95 or higher in every game).
 - Pages opened and checked in a browser, locally and on the live site.
 
 ## Cost
 
 | Step | Calls | Cost |
 |---|---:|---:|
-| Reason labeling, 114,069 reviews (Claude Haiku) | 3,033 | $6.69 |
+| Reason labeling, English reviews (Claude Haiku) | 3,033 | $6.69 |
+| Reason labeling, all other languages (Claude Haiku) | 3,145 | $7.20 |
+| Design sub-reasons, Civilization VII (Claude Haiku) | 179 | $0.35 |
 | Pilot and debugging | 6 | $0.69 |
-| Paraphrases | 6 | $0.02 |
-| **Total** | | **$7.39** |
+| Paraphrases, two rounds | 12 | $0.03 |
+| **Total** | | **$14.96** |
 
 Source: `data/public/cost_ledger.csv`, summed from the token counts and list-price cost returned with every call.
 
-Two things to know:
-
-- **$0.64 was wasted in the first pilot.** The command-line tool loaded about 200,000 tokens of unrelated connector definitions into each call. I caught it after 3 calls, fixed the flags, and cost per batch fell from about $0.21 to about $0.002.
-- **How the calls were made.** No Anthropic API key was available in the environment, so labeling ran through the Claude Code command line with the Haiku model on your account. The dollar figures are the list-price amounts the tool reports; what you are actually billed depends on your plan. A Groq key was present; I made one test call (132 tokens) and did not use it further because its rate limit (8,000 tokens per minute) was too low.
+- **$0.64 was wasted in the first pilot** (each call loaded about 200,000 tokens of unrelated connector definitions). Caught after 3 calls and fixed.
+- **How the calls were made.** No Anthropic API key was available, so labeling ran through the Claude Code command line with the Haiku model on your account. Dollar figures are the list-price amounts the tool reports; what you are billed depends on your plan.
+- **Not in the ledger:** the work of the agent itself (planning, coding, the Fable label check) ran inside the Claude Code sessions and is not a metered API call I can count.
 
 ## What I would do differently with a bigger budget
 
-- **Label positive reviews too.** Many "recommended" reviews contain a reason for stopping ("great for 40 hours, then nothing to do"). That would give a view of quiet churn, not just angry churn.
-- **Sub-reasons per game.** "Gameplay & design" is broad. A second pass could name the specific mechanic (for example, a particular progression system) so the report points at a feature, not a category.
-- **Human-checked labels.** A few hundred reviews labeled by two people would give a real error rate instead of an AI-on-AI check.
-- **More games, including well-received ones**, to see whether the stay/leave split of complaints holds outside troubled launches.
-- **Other languages.** Chinese is a large share of Steam reviews and may tell a different story.
-- **Repeat snapshots.** Playtime is only known at the snapshot. Monthly snapshots would turn "played since the review" into a real return curve.
+- **Label positive reviews too.** Many "recommended" reviews contain a reason for stopping. That would show quiet churn, not just angry churn.
+- **Sub-reasons for every game**, not only Civilization VII.
+- **Human-checked labels in each language.** A few hundred reviews judged by native speakers would give a real error rate instead of a model-on-model check.
+- **More games, including well-received ones**, to test whether the stay/leave split holds outside troubled launches.
+- **Repeat snapshots.** Monthly snapshots would turn "played since the review" into a real return curve.
+- **Same-community baselines.** Compare each language against its own reviews of other games, to separate "this market is unhappy" from "this community reviews harshly".
 
 ## Judgment calls
 
-1. **English reviews only.** Keeps labeling consistent and cheap. Stated on every page.
-2. **Full history instead of a sample.** This limited the game list to titles under about 90,000 English reviews.
-3. **"Walked away" = under 1 more hour of play after the review, for reviews at least 30 days old.** Simple and easy to explain. A 90-day cut is also computed in each game's JSON (for Civilization VII it gives 37% instead of 38%).
-4. **Edited reviews kept in.** It is not documented whether editing refreshes "playtime at review". Each report shows the rate with and without edited reviews; excluding them moves it by 0 to 5 points.
-5. **Only negative reviews labeled, and only those with 3+ words.** Shorter ones cannot carry a reason. 6,410 negative reviews were dropped by this filter.
-6. **One main reason per review**, plus an optional second. Simpler charts; multi-issue reviews are flattened. Tables also show "main or second".
-7. **Eleven fixed reason categories across all games**, so games can be compared. The cost is less game-specific detail.
-8. **Labeled everything instead of sampling.** After the cost fix it was cheap enough, and it keeps small cells (late months, long-playtime bands) usable.
-9. **"Clearly higher / lower" needs the whole 95% interval above or below the game average.** Many differences are therefore reported as "similar".
-10. **Added a playtime-adjusted walk-away rate.** New players leave more whatever they complain about, so the raw comparison alone could mislead.
-11. **Off-game reviews** (politics, social topics, specific people or companies) are counted as a share and not characterized, quoted, or paraphrased. Two spike weeks are dominated by them; the reports say so and stop there.
-12. **Paraphrases, not quotes.** Written by the model, then screened by code: 20 words or fewer and no 4-word run shared with the source. 75 of 240 candidates were rejected by the screen.
-13. **Patch matching is by date only.** Official posts near a spike are listed as context. I did not classify patch contents.
-14. **Steam endpoint.** The old review address now redirects. I tried one request to an undocumented store address, stopped, read Steam's documentation, and used the documented replacement for everything.
-15. **Request rate.** Four game streams, each waiting 0.7 seconds between requests, about one request per second overall. No errors or rate-limit responses occurred.
-16. **Coverage gap.** Steam's lifetime summary count is 0.9%–3.7% higher than what the listing returned. I could not find the cause and report it as a limit.
-17. **Did not ask before the paid run.** Your standing rule is to estimate and ask first; this task said to work without asking, so I ran a pilot, estimated about $8, set a hard stop at $22, and proceeded.
-18. **Created the GitHub repo** `HosungKim48/whyplayersquit-lab` as public, because it did not exist and GitHub Pages needs it. Nothing else on your account was touched.
-19. **Studio suggestions are generic per complaint type** and worded as checks to run, because reviews alone cannot justify telling a studio what to build.
-20. **The "what a studio could do" notes in this file** are my reading of the numbers and go beyond what the site states.
+1. **All languages, labeled in the original language.** The small model read each review in its own language; nothing was machine-translated first. Paraphrases are written in English.
+2. **Language is used as a stand-in for market.** It is not country. Stated on the pages.
+3. **Languages under 300 reviews in a game are grouped** into one row, so no rate rests on a handful of reviews.
+4. **"Enough text" rule changed for other languages:** 3+ words, or 4+ characters for Chinese, Japanese, Korean and Thai (which do not use spaces). 13,032 negative reviews were dropped by this filter.
+5. **Full history instead of a sample.** This limited the game list.
+6. **"Walked away" = under 1 more hour after the review, for reviews at least 30 days old.** The 2-hour and 5-hour versions are shown next to it.
+7. **Edited reviews kept in**, with the rate shown with and without them, and "edited" used as a control in the regression.
+8. **Only negative reviews labeled.** One main reason per review plus an optional second; eleven fixed categories across all games so they can be compared.
+9. **"Clearly higher / lower" needs the whole 95% interval above or below the game average.** Many differences are reported as "similar".
+10. **Regression reference group is crash complaints**, because they are the clearest "stay" group. Odds ratios describe association only; the page says so.
+11. **Sub-reasons done for one game** (Civilization VII, the game where "design" is the broadest bucket), to show the method without spending on all six.
+12. **Off-game reviews** (politics, social topics, specific people or companies) are counted as a share and not characterized, quoted or paraphrased. Where they dominate a language or a spike week, the report says so and stops there.
+13. **Paraphrases, not quotes.** Written by the model, screened by code: 20 words or fewer, English, no 4-word run shared with the source. 99 candidates were rejected by the screen; 29 are published.
+14. **Patch matching is by date only.** Official posts near a spike are listed as context.
+15. **Steam endpoint and politeness.** One early request went to an undocumented address; I stopped and used the documented one for everything. About one request per second overall; no rate-limit responses.
+16. **Coverage gap.** Steam's lifetime summary is 1.0%–3.8% higher than what the listing returned. Cause unknown; reported as a limit.
+17. **Did not ask before the paid runs.** Your standing rule is to estimate and ask first; the task said to work without asking. I piloted, estimated, and set a hard stop at $26.
+18. **Label check by Fable 5.2 is described as a second-model check everywhere**, never as human validation, as you asked.
+19. **Byline.** The site names "Hosung Kim · USC Marshall School of Business" and says it was built with an AI agent. I added no email, LinkedIn or other link, and no services, pricing or contact-for-hire content.
+20. **AI-role note.** The "Who did what" section says you set the goal and rules, and the agent chose the method, wrote the code and drafted the text, including the case study, which is written in the first person under your name. Edit or drop that page if the voice is not yours.
+21. **Your sound hook.** Each labeling call was triggering your "play a sound when Claude stops" hook. Labeling calls now skip user hooks; your settings were not changed.
+22. **Two sessions.** This work was finished in a fork of the original session; the original was told not to touch the branch.
+23. **Created the GitHub repo** `HosungKim48/whyplayersquit-lab` as public in the first round. Nothing else on your account was touched.
+24. **The "what a studio could do" notes in this file** are my reading of the numbers and go beyond what the site states.

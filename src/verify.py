@@ -27,7 +27,10 @@ for g in GAMES:
     check(abs(o["behaviour"]["negative"]["walk_rate"] - (m.hours_after_review < 1).mean()) < 1e-4, f"{g['slug']}: negative walk-away rate recomputed independently")
     check(abs(sum(r["share"] for r in o["reasons"]) - 1) < 0.002, f"{g['slug']}: reason shares sum to 100%")
     check(sum(r["n"] for r in o["reasons"]) == o["funnel"]["labeled"], f"{g['slug']}: reason counts sum to labeled total")
-    check(o["funnel"]["fetched_unique"] >= 0.995 * o["funnel"]["api_reported_english_reviews"], f"{g['slug']}: fetched >= 99.5% of API-reported reviews")
+    check(sum(l["reviews"] for l in o["languages"]) == len(df) and o["funnel"]["english"] == int((df.language == "english").sum()), f"{g['slug']}: language rows add up to all reviews")
+    check(o["funnel"]["labeled"] >= 0.97 * o["funnel"]["negative_enough_text"], f"{g['slug']}: at least 97% of eligible negative reviews labeled")
+    check(all(p.isascii() or all(ord(ch) < 0x250 or 0x2010 <= ord(ch) <= 0x2027 for ch in p) for ps in o["paraphrases"].values() for p in ps), f"{g['slug']}: paraphrases are in Latin script")
+    check(o["funnel"]["fetched_unique"] >= 0.995 * o["funnel"]["api_reported_reviews"], f"{g['slug']}: fetched >= 99.5% of API-reported reviews")
     page = open(os.path.join(ROOT, "docs", "games", g["slug"] + ".html")).read()
     check(f"{o['overview']['reviews']:,}" in page and f"{o['behaviour']['negative']['walk_rate']*100:.0f}%" in page, f"{g['slug']}: page shows the JSON figures")
     # raw text leak test: no 8-word run from any review of this game appears in published text
@@ -36,9 +39,9 @@ for g in GAMES:
     check(all(len(p.split()) <= 20 for p in pars), f"{g['slug']}: {len(pars)} paraphrases all <= 20 words")
     grams = set()
     for t in df.text[df.words >= 8]:
-        w = re.findall(r"[a-z0-9']+", t.lower())
+        w = re.findall(r"[^\W_]+(?:'[^\W_]+)?", t.lower())
         grams.update(" ".join(w[i:i+8]) for i in range(len(w) - 7))
-    pw = re.findall(r"[a-z0-9']+", re.sub(r"<[^>]+>", " ", page).lower())
+    pw = re.findall(r"[^\W_]+(?:'[^\W_]+)?", re.sub(r"<[^>]+>", " ", re.sub(r"<style>.*?</style>", " ", page, flags=re.S)).lower())
     hits = [x for x in (" ".join(pw[i:i+8]) for i in range(len(pw) - 7)) if x in grams]
     check(len(hits) == 0, f"{g['slug']}: no 8-word run of the page matches any raw review ({len(hits)} hits) {hits[:2]}")
 cost = json.load(open(os.path.join(ROOT, "docs", "data", "cost.json")))

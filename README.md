@@ -1,44 +1,43 @@
 # Why Players Quit · Lab
 
-Quit-signal reports for six PC games, built only from public Steam review data.
+- **What:** reports on why players stop playing six PC games, built from 551,228 public Steam reviews in every language.
+- **Finding:** crash complaints come from players who stay; design complaints come from players who leave. English reviews alone can hide a whole market (Monster Hunter Wilds: 29% negative in English, 78% in Simplified Chinese).
+- **How:** Steam shows playtime at review and playtime now. The gap shows what each reviewer did *after* complaining.
 
-**Site:** https://hosungkim48.github.io/whyplayersquit-lab/
+**Site:** https://hosungkim48.github.io/whyplayersquit-lab/ · **Case study:** [the review score that hid a market](https://hosungkim48.github.io/whyplayersquit-lab/case-study.html)
 
-The idea: next to every review, Steam publishes how long the reviewer had played when they wrote it and how long they have played in total. The gap shows what the reviewer did *after* complaining. Combining that with the reason each negative review gives separates complaints that go with leaving from complaints players voice while they keep playing.
+![Walkthrough of the site](docs/media/walkthrough.gif)
 
-This is a free, public student research project. It is not affiliated with Valve or with any studio or publisher.
+By Hosung Kim, USC Marshall School of Business. Built with an AI agent (Claude); the site's "Who did what" section says which parts. A free, public student research project, not affiliated with Valve or any studio or publisher.
 
-## What is in this repository
+## What is here
 
 | Path | What it is |
 |---|---|
-| `docs/` | The published site (GitHub Pages). `docs/data/*.json` holds every number shown on the pages. |
-| `data/public/` | The same numbers as flat CSV tables, plus the cost ledger and row counts per pipeline stage. |
-| `src/` | All code. Run order below. |
+| `docs/` | The published site. `docs/data/*.json` holds every number shown. |
+| `data/public/` | The same numbers as CSV tables, plus the cost ledger and row counts per stage. |
+| `src/` | All code: fetch → clean → label → analyze → build site → verify. |
 | `DATA.md` | Files, columns, quirks. |
-| `SUMMARY.md` | What was built, why, judgment calls, cost. |
+| `SUMMARY.md` | What was built, why, cost, judgment calls. |
 
-Raw reviews (text and reviewer IDs) are **not** in this repository. They are fetched to a local cache (`data/raw/`, git-ignored) and never published.
+Raw reviews (text and reviewer IDs) are not in this repository and are never published.
 
 ## Run order
 
 ```
 cd src
-python3 fetch_reviews.py     # polite, cached, resumable; full English review history per game
-python3 fetch_news.py        # official announcements / patch notes
-python3 build_dataset.py     # raw pages -> one local table per game
-python3 label.py <appid>     # negative reviews -> reason labels (small model; cost recorded per call)
-python3 quotes.py            # short paraphrases, screened by code
-python3 audit_sample.py      # random samples for accuracy checks (local only)
-python3 audit.py             # accuracy results -> docs/data/label_audit.json
-python3 analyze.py           # every number -> docs/data/*.json and data/public/*.csv
-python3 cost.py              # spend from real token counts -> docs/data/cost.json
-python3 build_site.py        # docs/*.html from the JSON
-python3 verify.py            # checks: site numbers match data, no raw text or IDs published
+python3 fetch_reviews.py english && python3 fetch_reviews.py other
+python3 fetch_news.py && python3 fetch_lifetime_summary.py
+python3 build_dataset.py
+python3 label.py <appid>          # English; run_labeling_other.sh for other languages
+python3 sublabel.py               # design sub-reasons, Civilization VII
+python3 quotes.py && python3 audit_sample.py && python3 audit.py
+python3 analyze.py && python3 cost.py && python3 build_site.py
+python3 make_media.py && python3 verify.py
 ```
 
-## Limits (short version)
+## Limits
 
-- Reviews represent only the players who wrote them, in English.
+- Reviews represent only the players who wrote them.
 - All patterns are associations. Nothing here shows that a complaint caused a player to leave.
-- Reason labels come from a language model and contain errors; see the accuracy check on the site's method page.
+- Reason labels come from a language model and were checked by a second model, not by people.

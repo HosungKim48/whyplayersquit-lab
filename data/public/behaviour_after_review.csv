@@ -1,31 +1,31 @@
 game,group,n,walked_away,walk_rate,walk_lo,walk_hi,kept_10h_rate,median_hours_after,refunded_rate,active_now_rate,shown
-Sid Meier's Civilization VII,negative,14056,5290.0,0.3764,0.3684,0.3844,0.4446,5.82,0.0493,0.0839,True
-Sid Meier's Civilization VII,positive,14742,528.0,0.0358,0.0329,0.0389,0.8625,72.22,0.0022,0.2052,True
-Sid Meier's Civilization VII,negative_unedited,11427,4375.0,0.3829,0.374,0.3918,0.4381,5.42,0.0569,0.0726,True
-Sid Meier's Civilization VII,negative_90d,13812,,0.3732,,,,,,,
-Sid Meier's Civilization VII,negative_labeled,13593,5060.0,0.3723,0.3642,0.3804,0.4486,6.05,0.048,0.0849,True
-Cities: Skylines II,negative,14703,3782.0,0.2572,0.2502,0.2644,0.5905,20.23,0.0404,0.1145,True
-Cities: Skylines II,positive,19628,768.0,0.0391,0.0365,0.0419,0.8611,75.42,0.0041,0.2201,True
-Cities: Skylines II,negative_unedited,10821,2995.0,0.2768,0.2684,0.2853,0.5675,17.08,0.0485,0.1026,True
-Cities: Skylines II,negative_90d,14286,,0.2429,,,,,,,
-Cities: Skylines II,negative_labeled,14017,3562.0,0.2541,0.247,0.2614,0.5931,20.52,0.0395,0.1156,True
-PAYDAY 3,negative,17269,5863.0,0.3395,0.3325,0.3466,0.4088,5.58,0.028,0.0478,True
-PAYDAY 3,positive,14286,1131.0,0.0792,0.0749,0.0837,0.6932,22.97,0.0028,0.1287,True
-PAYDAY 3,negative_unedited,12617,4690.0,0.3717,0.3633,0.3802,0.3688,4.12,0.0338,0.0365,True
-PAYDAY 3,negative_90d,17179,,0.338,,,,,,,
-PAYDAY 3,negative_labeled,16161,5406.0,0.3345,0.3273,0.3418,0.4124,5.8,0.0271,0.0477,True
-Dragon's Dogma 2,negative,13656,5541.0,0.4058,0.3975,0.414,0.4375,4.72,0.0802,0.0376,True
-Dragon's Dogma 2,positive,30501,2444.0,0.0801,0.0771,0.0832,0.7969,41.1,0.004,0.1031,True
-Dragon's Dogma 2,negative_unedited,10969,4821.0,0.4395,0.4302,0.4488,0.4005,2.73,0.0914,0.0326,True
-Dragon's Dogma 2,negative_90d,13563,,0.4044,,,,,,,
-Dragon's Dogma 2,negative_labeled,12946,5225.0,0.4036,0.3952,0.4121,0.4404,4.92,0.0777,0.0382,True
-Monster Hunter Wilds,negative,24532,6330.0,0.258,0.2526,0.2635,0.5656,16.4,0.0227,0.0556,True
-Monster Hunter Wilds,positive,59758,2300.0,0.0385,0.037,0.0401,0.8669,61.83,0.0015,0.1122,True
-Monster Hunter Wilds,negative_unedited,18023,4663.0,0.2587,0.2524,0.2652,0.569,17.13,0.0284,0.0446,True
-Monster Hunter Wilds,negative_90d,24315,,0.2555,,,,,,,
-Monster Hunter Wilds,negative_labeled,23241,5918.0,0.2546,0.2491,0.2603,0.569,16.85,0.0221,0.0561,True
-Starfield,negative,35971,18279.0,0.5082,0.503,0.5133,0.3462,0.83,0.0139,0.0143,True
-Starfield,positive,49297,3322.0,0.0674,0.0652,0.0696,0.8332,64.52,0.001,0.0497,True
-Starfield,negative_unedited,27445,15372.0,0.5601,0.5542,0.566,0.2909,0.15,0.0163,0.0117,True
-Starfield,negative_90d,35856,,0.5072,,,,,,,
-Starfield,negative_labeled,33597,16849.0,0.5015,0.4962,0.5068,0.3526,0.97,0.0137,0.0149,True
+Sid Meier's Civilization VII,negative,22405,8001.0,0.3571,0.3509,0.3634,0.4628,7.07,0.0476,0.0856,True
+Sid Meier's Civilization VII,positive,21208,893.0,0.0421,0.0395,0.0449,0.8527,67.17,0.0033,0.2007,True
+Sid Meier's Civilization VII,negative_unedited,18292,6658.0,0.364,0.357,0.371,0.456,6.66,0.0542,0.0743,True
+Sid Meier's Civilization VII,negative_90d,21984,,0.3534,,,,,,,
+Sid Meier's Civilization VII,negative_labeled,21424,7586.0,0.3541,0.3477,0.3605,0.4662,7.25,0.0464,0.0864,True
+Cities: Skylines II,negative,28129,6682.0,0.2375,0.2326,0.2426,0.6206,24.73,0.0358,0.1288,True
+Cities: Skylines II,positive,35835,1516.0,0.0423,0.0403,0.0444,0.8572,74.53,0.0045,0.2183,True
+Cities: Skylines II,negative_unedited,21109,5368.0,0.2543,0.2485,0.2602,0.6012,22.05,0.0426,0.1168,True
+Cities: Skylines II,negative_90d,26910,,0.2126,,,,,,,
+Cities: Skylines II,negative_labeled,26561,6163.0,0.232,0.227,0.2371,0.6258,25.47,0.0349,0.1296,True
+PAYDAY 3,negative,26363,8343.0,0.3165,0.3109,0.3221,0.4354,6.65,0.0265,0.0501,True
+PAYDAY 3,positive,22426,1943.0,0.0866,0.083,0.0904,0.6817,21.83,0.0035,0.1311,True
+PAYDAY 3,negative_unedited,19773,6810.0,0.3444,0.3378,0.3511,0.3998,5.23,0.0318,0.038,True
+PAYDAY 3,negative_90d,26199,,0.3149,,,,,,,
+PAYDAY 3,negative_labeled,24542,7633.0,0.311,0.3053,0.3168,0.4389,6.83,0.0253,0.0502,True
+Dragon's Dogma 2,negative,27680,10438.0,0.3771,0.3714,0.3828,0.4644,6.85,0.064,0.041,True
+Dragon's Dogma 2,positive,48493,4701.0,0.0969,0.0943,0.0996,0.7764,39.75,0.0049,0.1062,True
+Dragon's Dogma 2,negative_unedited,22425,9102.0,0.4059,0.3995,0.4123,0.4314,4.52,0.0725,0.0355,True
+Dragon's Dogma 2,negative_90d,27392,,0.3747,,,,,,,
+Dragon's Dogma 2,negative_labeled,26266,9826.0,0.3741,0.3683,0.38,0.4679,7.15,0.0617,0.0413,True
+Monster Hunter Wilds,negative,93718,22809.0,0.2434,0.2406,0.2461,0.6015,21.44,0.011,0.0623,True
+Monster Hunter Wilds,positive,105200,4443.0,0.0422,0.041,0.0435,0.8645,62.37,0.0017,0.1132,True
+Monster Hunter Wilds,negative_unedited,70344,17137.0,0.2436,0.2405,0.2468,0.6065,22.48,0.013,0.0518,True
+Monster Hunter Wilds,negative_90d,92989,,0.2423,,,,,,,
+Monster Hunter Wilds,negative_labeled,89020,21442.0,0.2409,0.2381,0.2437,0.6046,21.81,0.0107,0.0623,True
+Starfield,negative,47085,22787.0,0.484,0.4794,0.4885,0.3652,1.37,0.0137,0.0148,True
+Starfield,positive,67184,4894.0,0.0728,0.0709,0.0748,0.825,61.77,0.001,0.048,True
+Starfield,negative_unedited,35971,19225.0,0.5345,0.5293,0.5396,0.3103,0.43,0.0163,0.0123,True
+Starfield,negative_90d,46928,,0.4829,,,,,,,
+Starfield,negative_labeled,43759,20880.0,0.4772,0.4725,0.4818,0.3718,1.57,0.0134,0.0154,True

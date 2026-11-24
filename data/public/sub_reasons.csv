@@ -1,0 +1,11 @@
+game,parent,code,sub_reason,n,share,share_english,share_other_languages,median_hours_at_review,walk_n,walk_rate,walk_lo,walk_hi,vs_design_average
+Sid Meier's Civilization VII,Gameplay & design choices,AGES,"The Ages system (era splits, resets at transitions)",1926,0.2693,0.2781,0.2498,24.1,1917,0.3297,0.309,0.351,lower
+Sid Meier's Civilization VII,Gameplay & design choices,NOTCIV,"""Doesn't feel like Civilization"" (no mechanic named)",1321,0.1847,0.1845,0.1852,12.5,1303,0.4589,0.432,0.4861,higher
+Sid Meier's Civilization VII,Gameplay & design choices,OTHERD,Other or unspecified design complaint,1006,0.1407,0.1347,0.154,17.2,993,0.422,0.3916,0.4529,higher
+Sid Meier's Civilization VII,Gameplay & design choices,CIVSWITCH,Switching civilizations; leaders not tied to a civilization,807,0.1129,0.1169,0.1039,15.5,800,0.3875,0.3544,0.4217,similar
+Sid Meier's Civilization VII,Gameplay & design choices,SIMPLE,"Oversimplified, less depth",594,0.0831,0.0849,0.079,16.4,584,0.4144,0.3751,0.4548,higher
+Sid Meier's Civilization VII,Gameplay & design choices,AI,"AI, diplomacy, combat and balance",483,0.0675,0.0529,0.1003,33.1,474,0.2595,0.2221,0.3008,lower
+Sid Meier's Civilization VII,Gameplay & design choices,LEGACY,Legacy paths and victory goals feel like a checklist,438,0.0613,0.0681,0.0461,33.6,435,0.3057,0.2643,0.3506,lower
+Sid Meier's Civilization VII,Gameplay & design choices,PACING,Game length and pacing,243,0.034,0.0338,0.0343,19.1,242,0.3678,0.3095,0.4301,similar
+Sid Meier's Civilization VII,Gameplay & design choices,CITY,"City, town and settlement management",235,0.0329,0.0312,0.0366,24.4,230,0.3174,0.2607,0.3801,similar
+Sid Meier's Civilization VII,Gameplay & design choices,MAPS,Maps and exploration,98,0.0137,0.015,0.0108,21.4,98,0.2551,0.1792,0.3495,lower

@@ -1,13 +1,27 @@
 {
- "total_usd": 7.39,
+ "total_usd": 14.96,
  "budget_usd": 30,
  "rows": [
   {
-   "step": "Reason labeling, all six games (Claude Haiku)",
+   "step": "Reason labeling, English reviews (Claude Haiku)",
    "calls": 3033,
    "input_tokens": 21779925,
    "output_tokens": 6206219,
    "cost_usd": 6.6855
+  },
+  {
+   "step": "Reason labeling, reviews in all other languages (Claude Haiku)",
+   "calls": 3145,
+   "input_tokens": 21480413,
+   "output_tokens": 6742112,
+   "cost_usd": 7.1981
+  },
+  {
+   "step": "Design sub-reasons for Civilization VII (Claude Haiku)",
+   "calls": 179,
+   "input_tokens": 1723388,
+   "output_tokens": 66755,
+   "cost_usd": 0.3544
   },
   {
    "step": "Pilot and debugging calls (first pilot loaded unneeded tool definitions; fixed)",
@@ -17,11 +31,11 @@
    "cost_usd": 0.6904
   },
   {
-   "step": "Paraphrases for report examples (Claude Haiku)",
-   "calls": 6,
-   "input_tokens": 28895,
-   "output_tokens": 18535,
-   "cost_usd": 0.015
+   "step": "Paraphrases for report examples, two rounds (Claude Haiku)",
+   "calls": 12,
+   "input_tokens": 65326,
+   "output_tokens": 27952,
+   "cost_usd": 0.027
   }
  ]
 }
