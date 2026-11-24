@@ -8,7 +8,7 @@
 
 ![Walkthrough of the site](docs/media/walkthrough.gif)
 
-By Hosung Kim, USC Marshall School of Business. Built with an AI agent (Claude); the site's "Who did what" section says which parts. A free, public student research project, not affiliated with Valve or any studio or publisher.
+By Hosung Kim, USC Marshall School of Business. Built with an AI agent (Claude). A free, public student research project, not affiliated with Valve or any studio or publisher.
 
 ## What is here
 

@@ -20,7 +20,7 @@ Total paid model spend: **$14.96** of the $30 cap.
 
 | Piece | What it does |
 |---|---|
-| Overview page | Cross-game comparison, the pooled regression, and a "who did what" note |
+| Overview page | Cross-game comparison, and the pooled regression |
 | Six game reports | Laid out for a studio: headline numbers, three calls (prioritize / protect / win back), a priority map of complaints, markets by language, said-versus-did, timeline with official posts, paraphrased examples, checks grouped by owning team |
 | Case study | One written walk-through (Monster Hunter Wilds): how the English-only reading pointed at the wrong priority |
 | Method & limits page | Row counts per stage, definitions, second-model label check, limits, cost |
@@ -28,7 +28,7 @@ Total paid model spend: **$14.96** of the $30 cap.
 
 **Why this approach.** Most review analysis stops at "what do people complain about". Studios already know that. The harder question is which complaints cost players. Public playtime gets part of the way: it shows which complainers actually stopped. That is the one thing in public Steam data that is behaviour, not opinion, so every report is built around it.
 
-**Changes since the first version.** (1) All languages instead of English only. (2) Pages redesigned for a studio reader. (3) Portfolio fixes: byline and AI-role note, a label check by a larger model, a case study, a regression with controls, design sub-reasons for one game, a sensitivity check on the walk-away definition, a shorter README with a walkthrough GIF, and a trimmed method page.
+**Changes since the first version.** (1) All languages instead of English only. (2) Pages redesigned for a studio reader. (3) Portfolio fixes: byline, a label check by a larger model, a case study, a regression with controls, design sub-reasons for one game, a sensitivity check on the walk-away definition, a shorter README with a walkthrough GIF, and a trimmed method page.
 
 ## Which games and why
 
@@ -115,7 +115,7 @@ Source: `data/public/cost_ledger.csv`, summed from the token counts and list-pri
 17. **Did not ask before the paid runs.** Your standing rule is to estimate and ask first; the task said to work without asking. I piloted, estimated, and set a hard stop at $26.
 18. **Label check by Fable 5.2 is described as a second-model check everywhere**, never as human validation, as you asked.
 19. **Byline.** The site names "Hosung Kim · USC Marshall School of Business" and says it was built with an AI agent. I added no email, LinkedIn or other link, and no services, pricing or contact-for-hire content.
-20. **AI-role note.** The "Who did what" section says you set the goal and rules, and the agent chose the method, wrote the code and drafted the text, including the case study, which is written in the first person under your name. Edit or drop that page if the voice is not yours.
+20. **AI-role note removed.** The site first had a "Who did what" section; you asked for it to be removed. The footer still says the site was built with an AI agent. The case study is written in the first person under your name but was drafted by the agent; edit or drop that page if the voice is not yours.
 21. **Your sound hook.** Each labeling call was triggering your "play a sound when Claude stops" hook. Labeling calls now skip user hooks; your settings were not changed.
 22. **Two sessions.** This work was finished in a fork of the original session; the original was told not to touch the branch.
 23. **Created the GitHub repo** `HosungKim48/whyplayersquit-lab` as public in the first round. Nothing else on your account was touched.

@@ -85,7 +85,7 @@ def page(title, body, ov, depth=0, desc="", current=None):
 <nav><a href="{up}index.html">Overview</a><a href="{up}index.html#reports">Game reports</a><a href="{up}index.html#markets">Markets</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a></nav></div></div>
 <div class="switch"><div class="in"><span>Reports</span>{pills}</div></div>
 {body}
-<footer><div><b>Hosung Kim</b> · USC Marshall School of Business · built with an AI agent (<a href="{up}index.html#about">who did what</a>).<br>A free, public student research project built only from public Steam data. Not affiliated with Valve or with any studio or publisher named here.
+<footer><div><b>Hosung Kim</b> · USC Marshall School of Business · built with an AI agent.<br>A free, public student research project built only from public Steam data. Not affiliated with Valve or with any studio or publisher named here.
 Reviews describe only the players who chose to write one. Nothing on this site shows that one thing caused another. No raw review text or reviewer IDs are published.</div></footer>
 </body></html>"""
 
@@ -514,11 +514,6 @@ def index_page(ov, games, audit, cost, models):
 <div class="team"><h3><span class="chip own">Live ops &amp; community</span>Size the players who are waiting</h3><div class="note">Each report counts reviewers who said they would return after fixes and how many did, and lists spike weeks next to official posts.</div></div>
 </div>
 <p class="note">Why these six: premium games with a large body of negative reviews ({pct(min(o['negative_share'] for o in ov))}–{pct(max(o['negative_share'] for o in ov))} negative) and a review history small enough to fetch in full without straining Steam, across different genres. {audit_line(audit)[0].upper() + audit_line(audit)[1:]}. Total paid model spend for the project: ${cost['total_usd']:.2f}. The <a href="{REPO}">code</a> can be re-run on any Steam app ID.</p></section>
-
-<section id="about"><h2>Who did what</h2>
-<div class="card"><p style="margin:0 0 8px"><b>Hosung Kim</b>, a business and analytics student at USC Marshall, set the question, the rules (public data only, a $30 budget, privacy and neutrality limits) and directed the revisions.</p>
-<p style="margin:0 0 8px">An AI agent (Anthropic's Claude) chose the method within those rules, wrote the code, ran the pipeline and drafted the text on this site. A small Claude model labeled the reviews. A larger one (Claude Fable 5.2) checked random samples of those labels.</p>
-<p style="margin:0">No human panel has validated the labels, and nobody at any studio reviewed these reports. Every number can be traced to a file in the <a href="{REPO}">repository</a>.</p></div></section>
 </div>"""
     return page("Why Players Quit · Lab — quit signals in Steam reviews", body, ov, desc="Which complaints go with actually leaving? Quit-signal reports for six games from public Steam reviews in all languages.")
 
@@ -604,7 +599,7 @@ def case_study_page(o, ov):
 <div class="kicker">Case study · Monster Hunter Wilds</div>
 <h1>The review score that hid a market</h1>
 <p class="lede">Read in English, this game has a complaint problem. Read in every language, it has a market problem. Here is how I got from one to the other, and what I would do with it.</p>
-<div class="meta">Hosung Kim · analysis run with an AI agent (<a href="index.html#about">who did what</a>) · numbers from <a href="data/{E(o['slug'])}.json">the report data</a> · <a href="games/{E(o['slug'])}.html">full report</a></div>
+<div class="meta">Hosung Kim · analysis run with an AI agent · numbers from <a href="data/{E(o['slug'])}.json">the report data</a> · <a href="games/{E(o['slug'])}.html">full report</a></div>
 
 <section><h2>The question</h2>
 <p>The first version of this project read English reviews only. On that view the game looked healthy enough: <b>{pct(en['negative_share'])}</b> of {num(en['reviews'])} English reviews were negative, and the dominant complaint was performance. The obvious advice was "keep patching performance".</p>
