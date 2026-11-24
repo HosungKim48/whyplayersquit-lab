@@ -1,0 +1,1793 @@
+{
+ "appid": 2246340,
+ "slug": "monster-hunter-wilds",
+ "name": "Monster Hunter Wilds",
+ "genre": "Action / co-op hunting",
+ "release": "2025-02-28",
+ "snapshot": "2026-11-24",
+ "params": {
+  "mature_days": 30,
+  "walk_hours": 1.0,
+  "min_cell": 30
+ },
+ "funnel": {
+  "steam_summary_total": 86761,
+  "api_reported_english_reviews": 84932,
+  "fetched_unique": 84926,
+  "negative": 24614,
+  "negative_3plus_words": 23326,
+  "labeled": 23316,
+  "first_review": "2025-02",
+  "last_review": "2026-11"
+ },
+ "overview": {
+  "reviews": 84926,
+  "negative": 24614,
+  "negative_share": 0.2898,
+  "median_hours_at_negative_review": 34.7,
+  "median_hours_at_positive_review": 36.1
+ },
+ "behaviour": {
+  "negative": {
+   "n": 24532,
+   "walked_away": 6330,
+   "walk_rate": 0.258,
+   "walk_lo": 0.2526,
+   "walk_hi": 0.2635,
+   "kept_10h_rate": 0.5656,
+   "median_hours_after": 16.4,
+   "refunded_rate": 0.0227,
+   "active_now_rate": 0.0556,
+   "shown": true
+  },
+  "positive": {
+   "n": 59758,
+   "walked_away": 2300,
+   "walk_rate": 0.0385,
+   "walk_lo": 0.037,
+   "walk_hi": 0.0401,
+   "kept_10h_rate": 0.8669,
+   "median_hours_after": 61.83,
+   "refunded_rate": 0.0015,
+   "active_now_rate": 0.1122,
+   "shown": true
+  },
+  "negative_unedited": {
+   "n": 18023,
+   "walked_away": 4663,
+   "walk_rate": 0.2587,
+   "walk_lo": 0.2524,
+   "walk_hi": 0.2652,
+   "kept_10h_rate": 0.569,
+   "median_hours_after": 17.13,
+   "refunded_rate": 0.0284,
+   "active_now_rate": 0.0446,
+   "shown": true
+  },
+  "negative_90d": {
+   "n": 24315,
+   "walk_rate": 0.2555
+  },
+  "negative_labeled": {
+   "n": 23241,
+   "walked_away": 5918,
+   "walk_rate": 0.2546,
+   "walk_lo": 0.2491,
+   "walk_hi": 0.2603,
+   "kept_10h_rate": 0.569,
+   "median_hours_after": 16.85,
+   "refunded_rate": 0.0221,
+   "active_now_rate": 0.0561,
+   "shown": true
+  }
+ },
+ "playtime": [
+  {
+   "bucket": "Under 2 h",
+   "reviews": 3116,
+   "negative": 2139,
+   "negative_share_in_bucket": 0.6865,
+   "share_of_all_negative": 0.0869,
+   "neg_walk_n": 2131,
+   "neg_walk_rate": 0.4951
+  },
+  {
+   "bucket": "2\u201310 h",
+   "reviews": 14916,
+   "negative": 4900,
+   "negative_share_in_bucket": 0.3285,
+   "share_of_all_negative": 0.1991,
+   "neg_walk_n": 4890,
+   "neg_walk_rate": 0.2382
+  },
+  {
+   "bucket": "10\u201350 h",
+   "reviews": 31970,
+   "negative": 7230,
+   "negative_share_in_bucket": 0.2261,
+   "share_of_all_negative": 0.2937,
+   "neg_walk_n": 7200,
+   "neg_walk_rate": 0.2536
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "reviews": 27477,
+   "negative": 8396,
+   "negative_share_in_bucket": 0.3056,
+   "share_of_all_negative": 0.3411,
+   "neg_walk_n": 8365,
+   "neg_walk_rate": 0.2416
+  },
+  {
+   "bucket": "200 h+",
+   "reviews": 7447,
+   "negative": 1949,
+   "negative_share_in_bucket": 0.2617,
+   "share_of_all_negative": 0.0792,
+   "neg_walk_n": 1946,
+   "neg_walk_rate": 0.1351
+  }
+ ],
+ "reasons": [
+  {
+   "code": "PERF",
+   "reason": "Performance",
+   "walk_rate_adjusted": 0.2277,
+   "n": 10260,
+   "share": 0.44,
+   "any_mention_share": 0.5493,
+   "median_hours_at_review": 25.5,
+   "walk_n": 10247,
+   "walk_rate": 0.2312,
+   "walk_lo": 0.2231,
+   "walk_hi": 0.2395,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.0784
+  },
+  {
+   "code": "STAB",
+   "reason": "Crashes & bugs",
+   "walk_rate_adjusted": 0.1732,
+   "n": 4327,
+   "share": 0.1856,
+   "any_mention_share": 0.2597,
+   "median_hours_at_review": 25.9,
+   "walk_n": 4316,
+   "walk_rate": 0.187,
+   "walk_lo": 0.1756,
+   "walk_hi": 0.1989,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1255
+  },
+  {
+   "code": "DESIGN",
+   "reason": "Gameplay & design choices",
+   "walk_rate_adjusted": 0.3631,
+   "n": 2508,
+   "share": 0.1076,
+   "any_mention_share": 0.1755,
+   "median_hours_at_review": 51.1,
+   "walk_n": 2484,
+   "walk_rate": 0.3345,
+   "walk_lo": 0.3163,
+   "walk_hi": 0.3533,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.112
+  },
+  {
+   "code": "OTHER",
+   "reason": "No clear reason",
+   "walk_rate_adjusted": 0.3331,
+   "n": 1533,
+   "share": 0.0657,
+   "any_mention_share": 0.0712,
+   "median_hours_at_review": 49.0,
+   "walk_n": 1524,
+   "walk_rate": 0.3241,
+   "walk_lo": 0.3011,
+   "walk_hi": 0.3481,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.0502
+  },
+  {
+   "code": "CONTENT",
+   "reason": "Not enough content",
+   "walk_rate_adjusted": 0.2853,
+   "n": 1484,
+   "share": 0.0636,
+   "any_mention_share": 0.1174,
+   "median_hours_at_review": 69.1,
+   "walk_n": 1481,
+   "walk_rate": 0.2701,
+   "walk_lo": 0.2481,
+   "walk_hi": 0.2933,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.0903
+  },
+  {
+   "code": "ONLINE",
+   "reason": "Online, accounts & DRM",
+   "walk_rate_adjusted": 0.2588,
+   "n": 847,
+   "share": 0.0363,
+   "any_mention_share": 0.0678,
+   "median_hours_at_review": 19.0,
+   "walk_n": 843,
+   "walk_rate": 0.2622,
+   "walk_lo": 0.2336,
+   "walk_hi": 0.2929,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1039
+  },
+  {
+   "code": "MONET",
+   "reason": "Price & monetization",
+   "walk_rate_adjusted": 0.3754,
+   "n": 719,
+   "share": 0.0308,
+   "any_mention_share": 0.082,
+   "median_hours_at_review": 57.1,
+   "walk_n": 718,
+   "walk_rate": 0.3621,
+   "walk_lo": 0.3278,
+   "walk_hi": 0.3979,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1196
+  },
+  {
+   "code": "STORY",
+   "reason": "Story & writing",
+   "walk_rate_adjusted": 0.3332,
+   "n": 523,
+   "share": 0.0224,
+   "any_mention_share": 0.0534,
+   "median_hours_at_review": 20.4,
+   "walk_n": 518,
+   "walk_rate": 0.3127,
+   "walk_lo": 0.2743,
+   "walk_hi": 0.3539,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.0937
+  },
+  {
+   "code": "UI",
+   "reason": "Interface & controls",
+   "walk_rate_adjusted": 0.2855,
+   "n": 502,
+   "share": 0.0215,
+   "any_mention_share": 0.0458,
+   "median_hours_at_review": 9.1,
+   "walk_n": 499,
+   "walk_rate": 0.3467,
+   "walk_lo": 0.3063,
+   "walk_hi": 0.3895,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1116
+  },
+  {
+   "code": "SUPPORT",
+   "reason": "Post-launch support",
+   "walk_rate_adjusted": 0.3722,
+   "n": 493,
+   "share": 0.0211,
+   "any_mention_share": 0.0866,
+   "median_hours_at_review": 80.4,
+   "walk_n": 492,
+   "walk_rate": 0.3171,
+   "walk_lo": 0.2775,
+   "walk_hi": 0.3595,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.142
+  },
+  {
+   "code": "OFFGAME",
+   "reason": "Off-game topics",
+   "walk_rate_adjusted": null,
+   "n": 120,
+   "share": 0.0051,
+   "any_mention_share": 0.0075,
+   "median_hours_at_review": 48.7,
+   "walk_n": 119,
+   "walk_rate": 0.3782,
+   "walk_lo": 0.2961,
+   "walk_hi": 0.4678,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1333
+  }
+ ],
+ "reason_by_playtime": [
+  {
+   "bucket": "Under 2 h",
+   "n": 2011,
+   "shares": {
+    "PERF": 0.5017,
+    "STAB": 0.2854,
+    "CONTENT": 0.0124,
+    "DESIGN": 0.0393,
+    "UI": 0.0378,
+    "MONET": 0.0273,
+    "ONLINE": 0.0229,
+    "SUPPORT": 0.005,
+    "STORY": 0.0075,
+    "OFFGAME": 0.0025,
+    "OTHER": 0.0582
+   }
+  },
+  {
+   "bucket": "2\u201310 h",
+   "n": 4659,
+   "shares": {
+    "PERF": 0.5218,
+    "STAB": 0.1797,
+    "CONTENT": 0.0142,
+    "DESIGN": 0.0766,
+    "UI": 0.0399,
+    "MONET": 0.0212,
+    "ONLINE": 0.0564,
+    "SUPPORT": 0.0067,
+    "STORY": 0.026,
+    "OFFGAME": 0.0052,
+    "OTHER": 0.0524
+   }
+  },
+  {
+   "bucket": "10\u201350 h",
+   "n": 6863,
+   "shares": {
+    "PERF": 0.4304,
+    "STAB": 0.1904,
+    "CONTENT": 0.0586,
+    "DESIGN": 0.1164,
+    "UI": 0.0219,
+    "MONET": 0.0258,
+    "ONLINE": 0.0393,
+    "SUPPORT": 0.0149,
+    "STORY": 0.0376,
+    "OFFGAME": 0.0047,
+    "OTHER": 0.06
+   }
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "n": 7937,
+   "shares": {
+    "PERF": 0.4036,
+    "STAB": 0.1567,
+    "CONTENT": 0.1065,
+    "DESIGN": 0.128,
+    "UI": 0.0086,
+    "MONET": 0.038,
+    "ONLINE": 0.0283,
+    "SUPPORT": 0.0345,
+    "STORY": 0.0141,
+    "OFFGAME": 0.0055,
+    "OTHER": 0.0761
+   }
+  },
+  {
+   "bucket": "200 h+",
+   "n": 1846,
+   "shares": {
+    "PERF": 0.3592,
+    "STAB": 0.1977,
+    "CONTENT": 0.0791,
+    "DESIGN": 0.1392,
+    "UI": 0.0119,
+    "MONET": 0.0466,
+    "ONLINE": 0.0233,
+    "SUPPORT": 0.0412,
+    "STORY": 0.0092,
+    "OFFGAME": 0.0081,
+    "OTHER": 0.0845
+   }
+  }
+ ],
+ "said_vs_did": [
+  {
+   "code": "STOPPED",
+   "statement": "Said they quit, refunded or won't return",
+   "n": 2204,
+   "share": 0.0945,
+   "mature_n": 2189,
+   "walk_rate": 0.4116,
+   "kept_10h_rate": 0.4011,
+   "active_now_rate": 0.0448
+  },
+  {
+   "code": "WAITING",
+   "statement": "Said they'd come back if it's fixed",
+   "n": 3385,
+   "share": 0.1452,
+   "mature_n": 3381,
+   "walk_rate": 0.186,
+   "kept_10h_rate": 0.646,
+   "active_now_rate": 0.0586
+  },
+  {
+   "code": "NONE",
+   "statement": "Said nothing about stopping",
+   "n": 17727,
+   "share": 0.7603,
+   "mature_n": 17671,
+   "walk_rate": 0.2483,
+   "kept_10h_rate": 0.5751,
+   "active_now_rate": 0.057
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2025-02",
+   "reviews": 8340,
+   "negative": 2802,
+   "negative_share": 0.336,
+   "labeled": 2677,
+   "reason_counts": {
+    "PERF": 1488,
+    "STAB": 453,
+    "CONTENT": 106,
+    "DESIGN": 173,
+    "UI": 53,
+    "MONET": 79,
+    "ONLINE": 72,
+    "SUPPORT": 41,
+    "STORY": 47,
+    "OFFGAME": 14,
+    "OTHER": 151
+   },
+   "patches": [
+    "New Title Update 1 Information!"
+   ]
+  },
+  {
+   "month": "2025-03",
+   "reviews": 45932,
+   "negative": 11356,
+   "negative_share": 0.2472,
+   "labeled": 10830,
+   "reason_counts": {
+    "PERF": 4862,
+    "STAB": 2125,
+    "CONTENT": 655,
+    "DESIGN": 1053,
+    "UI": 296,
+    "MONET": 286,
+    "ONLINE": 487,
+    "SUPPORT": 154,
+    "STORY": 279,
+    "OFFGAME": 46,
+    "OTHER": 587
+   },
+   "patches": [
+    "Free Title Update 1 - Available April 4, 2025",
+    "Title Update 1 \u2014 Maintenance Notice"
+   ]
+  },
+  {
+   "month": "2025-04",
+   "reviews": 5363,
+   "negative": 1182,
+   "negative_share": 0.2204,
+   "labeled": 1120,
+   "reason_counts": {
+    "PERF": 371,
+    "STAB": 298,
+    "CONTENT": 66,
+    "DESIGN": 134,
+    "UI": 26,
+    "MONET": 30,
+    "ONLINE": 67,
+    "SUPPORT": 27,
+    "STORY": 29,
+    "OFFGAME": 5,
+    "OTHER": 67
+   },
+   "patches": [
+    "Update Summary (Ver. 1.010.00.00)",
+    "Update Summary (Ver. 1.010.01.00)"
+   ]
+  },
+  {
+   "month": "2025-05",
+   "reviews": 1815,
+   "negative": 620,
+   "negative_share": 0.3416,
+   "labeled": 589,
+   "reason_counts": {
+    "PERF": 215,
+    "STAB": 123,
+    "CONTENT": 45,
+    "DESIGN": 87,
+    "UI": 11,
+    "MONET": 22,
+    "ONLINE": 17,
+    "SUPPORT": 12,
+    "STORY": 14,
+    "OFFGAME": 2,
+    "OTHER": 41
+   },
+   "patches": [
+    "Update Ver. 1.011 \u2014 Maintenance Notice",
+    "Update Summary (Ver.1.011)"
+   ]
+  },
+  {
+   "month": "2025-06",
+   "reviews": 3593,
+   "negative": 2198,
+   "negative_share": 0.6117,
+   "labeled": 2067,
+   "reason_counts": {
+    "PERF": 999,
+    "STAB": 187,
+    "CONTENT": 258,
+    "DESIGN": 229,
+    "UI": 13,
+    "MONET": 81,
+    "ONLINE": 36,
+    "SUPPORT": 64,
+    "STORY": 27,
+    "OFFGAME": 8,
+    "OTHER": 165
+   },
+   "patches": [
+    "Free Title Update 2 - Releasing End of June!",
+    "Free Title Update 2 - Available June 30, 2025",
+    "Update Summary (Ver.1.020)",
+    "Title Update 2 \u2014 Maintenance Notice"
+   ]
+  },
+  {
+   "month": "2025-07",
+   "reviews": 3273,
+   "negative": 1750,
+   "negative_share": 0.5347,
+   "labeled": 1634,
+   "reason_counts": {
+    "PERF": 769,
+    "STAB": 237,
+    "CONTENT": 124,
+    "DESIGN": 156,
+    "UI": 13,
+    "MONET": 58,
+    "ONLINE": 26,
+    "SUPPORT": 54,
+    "STORY": 21,
+    "OFFGAME": 11,
+    "OTHER": 165
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-08",
+   "reviews": 1590,
+   "negative": 757,
+   "negative_share": 0.4761,
+   "labeled": 708,
+   "reason_counts": {
+    "PERF": 324,
+    "STAB": 94,
+    "CONTENT": 55,
+    "DESIGN": 72,
+    "UI": 4,
+    "MONET": 30,
+    "ONLINE": 17,
+    "SUPPORT": 29,
+    "STORY": 7,
+    "OFFGAME": 7,
+    "OTHER": 69
+   },
+   "patches": [
+    "Update Ver. 1.021 \u2014 Maintenance Notice",
+    "Update Summary (Ver.1.021)",
+    "Update Summary (Ver.1.021.01.00)",
+    "Update Summary (Ver.1.021.02.00)",
+    "Update Summary (Ver.1.021.03.00)"
+   ]
+  },
+  {
+   "month": "2025-09",
+   "reviews": 1109,
+   "negative": 538,
+   "negative_share": 0.4851,
+   "labeled": 500,
+   "reason_counts": {
+    "PERF": 223,
+    "STAB": 70,
+    "CONTENT": 35,
+    "DESIGN": 53,
+    "UI": 5,
+    "MONET": 18,
+    "ONLINE": 7,
+    "SUPPORT": 34,
+    "STORY": 7,
+    "OFFGAME": 5,
+    "OTHER": 43
+   },
+   "patches": [
+    "The Showcase for the Free Title Update 3 (Ver. 1.030) is here!",
+    "Title Update 3 \u2014 Maintenance Notice"
+   ]
+  },
+  {
+   "month": "2025-10",
+   "reviews": 1625,
+   "negative": 736,
+   "negative_share": 0.4529,
+   "labeled": 692,
+   "reason_counts": {
+    "PERF": 271,
+    "STAB": 157,
+    "CONTENT": 33,
+    "DESIGN": 83,
+    "UI": 6,
+    "MONET": 15,
+    "ONLINE": 26,
+    "SUPPORT": 28,
+    "STORY": 11,
+    "OFFGAME": 6,
+    "OTHER": 56
+   },
+   "patches": [
+    "Update Summary (Ver.1.030)",
+    "Update Summary (Ver.1.030.01.00)",
+    "Update Summary (Ver.1.030.02.00)",
+    "Update Summary (Ver.1.030.02.01)"
+   ]
+  },
+  {
+   "month": "2025-11",
+   "reviews": 1773,
+   "negative": 360,
+   "negative_share": 0.203,
+   "labeled": 344,
+   "reason_counts": {
+    "PERF": 153,
+    "STAB": 54,
+    "CONTENT": 21,
+    "DESIGN": 44,
+    "UI": 4,
+    "MONET": 14,
+    "ONLINE": 9,
+    "SUPPORT": 8,
+    "STORY": 4,
+    "OFFGAME": 2,
+    "OTHER": 31
+   },
+   "patches": [
+    "Monster Hunter Wilds \u2014 Free Title Update 4 Notice",
+    "New Free Title Update 4 Content Information!",
+    "Update Summary (Ver.1.030.02.02)"
+   ]
+  },
+  {
+   "month": "2025-12",
+   "reviews": 1625,
+   "negative": 552,
+   "negative_share": 0.3397,
+   "labeled": 515,
+   "reason_counts": {
+    "PERF": 203,
+    "STAB": 102,
+    "CONTENT": 21,
+    "DESIGN": 84,
+    "UI": 10,
+    "MONET": 23,
+    "ONLINE": 10,
+    "SUPPORT": 15,
+    "STORY": 9,
+    "OFFGAME": 2,
+    "OTHER": 36
+   },
+   "patches": [
+    "UPDATE - Postponed: Monster Hunter Showcase coming Dec. 8 at 10 p.m. UTC!",
+    "Get ready to take on the Elder Dragon, Gogmazios! Free Title Update 4 out now!",
+    "Update Summary (Ver.1.040)",
+    "Preparation for Update & A Message on Mods",
+    "Update Summary (Ver.1.040.01.00)",
+    "Update Summary (Ver.1.040.02.00)"
+   ]
+  },
+  {
+   "month": "2026-01",
+   "reviews": 1428,
+   "negative": 345,
+   "negative_share": 0.2416,
+   "labeled": 325,
+   "reason_counts": {
+    "PERF": 126,
+    "STAB": 66,
+    "CONTENT": 14,
+    "DESIGN": 44,
+    "UI": 5,
+    "MONET": 16,
+    "ONLINE": 7,
+    "SUPPORT": 14,
+    "STORY": 7,
+    "OFFGAME": 2,
+    "OTHER": 24
+   },
+   "patches": [
+    "Update Summary (Ver.1.040.03.00)",
+    "Update Summary (Ver.1.040.03.01)"
+   ]
+  },
+  {
+   "month": "2026-02",
+   "reviews": 1669,
+   "negative": 296,
+   "negative_share": 0.1774,
+   "labeled": 280,
+   "reason_counts": {
+    "PERF": 58,
+    "STAB": 88,
+    "CONTENT": 14,
+    "DESIGN": 60,
+    "UI": 9,
+    "MONET": 10,
+    "ONLINE": 6,
+    "SUPPORT": 5,
+    "STORY": 10,
+    "OFFGAME": 2,
+    "OTHER": 18
+   },
+   "patches": [
+    "Update Summary (Ver.1.040.03.02)",
+    "Introducing Update Ver. 1.041 \u2014 Available Wednesday, February 18",
+    "Update Summary (Ver.1.041.00.00)",
+    "Update Summary (Ver.1.041.01.00)",
+    "Update Summary (Ver.1.041.03.00 / Ver.1.041.02.00)"
+   ]
+  },
+  {
+   "month": "2026-03",
+   "reviews": 995,
+   "negative": 190,
+   "negative_share": 0.191,
+   "labeled": 176,
+   "reason_counts": {
+    "PERF": 31,
+    "STAB": 49,
+    "CONTENT": 6,
+    "DESIGN": 38,
+    "UI": 8,
+    "MONET": 8,
+    "ONLINE": 11,
+    "SUPPORT": 1,
+    "STORY": 6,
+    "OFFGAME": 2,
+    "OTHER": 16
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-04",
+   "reviews": 745,
+   "negative": 177,
+   "negative_share": 0.2376,
+   "labeled": 163,
+   "reason_counts": {
+    "PERF": 32,
+    "STAB": 40,
+    "CONTENT": 7,
+    "DESIGN": 30,
+    "UI": 7,
+    "MONET": 5,
+    "ONLINE": 12,
+    "SUPPORT": 3,
+    "STORY": 6,
+    "OFFGAME": 5,
+    "OTHER": 16
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-05",
+   "reviews": 42,
+   "negative": 14,
+   "negative_share": 0.3333,
+   "labeled": 12,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 4,
+    "CONTENT": 0,
+    "DESIGN": 4,
+    "UI": 0,
+    "MONET": 1,
+    "ONLINE": 1,
+    "SUPPORT": 0,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 1
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-06",
+   "reviews": 1205,
+   "negative": 264,
+   "negative_share": 0.2191,
+   "labeled": 241,
+   "reason_counts": {
+    "PERF": 47,
+    "STAB": 81,
+    "CONTENT": 11,
+    "DESIGN": 47,
+    "UI": 8,
+    "MONET": 6,
+    "ONLINE": 18,
+    "SUPPORT": 1,
+    "STORY": 8,
+    "OFFGAME": 0,
+    "OTHER": 14
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-07",
+   "reviews": 1011,
+   "negative": 178,
+   "negative_share": 0.1761,
+   "labeled": 165,
+   "reason_counts": {
+    "PERF": 25,
+    "STAB": 45,
+    "CONTENT": 4,
+    "DESIGN": 42,
+    "UI": 13,
+    "MONET": 6,
+    "ONLINE": 7,
+    "SUPPORT": 1,
+    "STORY": 13,
+    "OFFGAME": 0,
+    "OTHER": 9
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-08",
+   "reviews": 125,
+   "negative": 35,
+   "negative_share": 0.28,
+   "labeled": 33,
+   "reason_counts": {
+    "PERF": 9,
+    "STAB": 8,
+    "CONTENT": 1,
+    "DESIGN": 5,
+    "UI": 0,
+    "MONET": 2,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 2,
+    "OFFGAME": 0,
+    "OTHER": 6
+   },
+   "patches": [
+    "Update Ver. 1.042 \u2014 Maintenance Notice",
+    "Update Summary (Ver.1.042.00.00)",
+    "Update Summary (Ver.1.042.00.01 / Demo Version 1.0.1)",
+    "Update Summary (Ver.1.042.00.02)"
+   ]
+  },
+  {
+   "month": "2026-09",
+   "reviews": 1029,
+   "negative": 181,
+   "negative_share": 0.1759,
+   "labeled": 169,
+   "reason_counts": {
+    "PERF": 39,
+    "STAB": 35,
+    "CONTENT": 5,
+    "DESIGN": 46,
+    "UI": 8,
+    "MONET": 8,
+    "ONLINE": 7,
+    "SUPPORT": 1,
+    "STORY": 11,
+    "OFFGAME": 0,
+    "OTHER": 9
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-10",
+   "reviews": 171,
+   "negative": 26,
+   "negative_share": 0.152,
+   "labeled": 25,
+   "reason_counts": {
+    "PERF": 4,
+    "STAB": 4,
+    "CONTENT": 0,
+    "DESIGN": 9,
+    "UI": 0,
+    "MONET": 1,
+    "ONLINE": 1,
+    "SUPPORT": 0,
+    "STORY": 3,
+    "OFFGAME": 0,
+    "OTHER": 3
+   },
+   "patches": [
+    "Update Summary (Ver.1.042.00.03)"
+   ]
+  },
+  {
+   "month": "2026-11",
+   "reviews": 468,
+   "negative": 57,
+   "negative_share": 0.1218,
+   "labeled": 51,
+   "reason_counts": {
+    "PERF": 10,
+    "STAB": 7,
+    "CONTENT": 3,
+    "DESIGN": 15,
+    "UI": 3,
+    "MONET": 0,
+    "ONLINE": 3,
+    "SUPPORT": 1,
+    "STORY": 2,
+    "OFFGAME": 1,
+    "OTHER": 6
+   },
+   "patches": []
+  }
+ ],
+ "top_reasons": [
+  "PERF",
+  "STAB",
+  "DESIGN",
+  "CONTENT",
+  "ONLINE"
+ ],
+ "spikes": [
+  {
+   "week_start": "2025-06-30",
+   "negative": 955,
+   "usual_weekly_negative": 166.5,
+   "negative_share": 0.5743,
+   "reviews": 1663,
+   "top_reasons": [
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.4653
+    },
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.1723
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.1029
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2025-06-10",
+     "title": "Free Title Update 2 - Releasing End of June!"
+    },
+    {
+     "date": "2025-06-19",
+     "title": "A digital event bringing you the latest news from Capcom!"
+    },
+    {
+     "date": "2025-06-27",
+     "title": "Free Title Update 2 - Available June 30, 2025"
+    },
+    {
+     "date": "2025-06-27",
+     "title": "Mini Director's Letter - July 2025 & Introducing Guild Reports!"
+    },
+    {
+     "date": "2025-06-27",
+     "title": "Update Summary (Ver.1.020)"
+    },
+    {
+     "date": "2025-06-28",
+     "title": "Title Update 2 \u2014 Maintenance Notice"
+    }
+   ]
+  },
+  {
+   "week_start": "2025-09-29",
+   "negative": 444,
+   "usual_weekly_negative": 104.0,
+   "negative_share": 0.5193,
+   "reviews": 855,
+   "top_reasons": [
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.3865
+    },
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.2053
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.1111
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2025-09-22",
+     "title": "Guild Reports - Community Information Hub & Recent Posts!"
+    },
+    {
+     "date": "2025-09-25",
+     "title": "The Showcase for the Free Title Update 3 (Ver. 1.030) is here!"
+    },
+    {
+     "date": "2025-09-25",
+     "title": "Title Update 3 \u2014 Maintenance Notice"
+    },
+    {
+     "date": "2025-09-28",
+     "title": "High-difficulty Event Quest \"Planetes Protocol (Savage)\" Starts September 29!"
+    },
+    {
+     "date": "2025-09-28",
+     "title": "[Important] End of Support Notice for Windows 10"
+    },
+    {
+     "date": "2025-09-29",
+     "title": "Regarding your Video/Graphics Drivers"
+    }
+   ]
+  },
+  {
+   "week_start": "2025-12-15",
+   "negative": 249,
+   "usual_weekly_negative": 81.5,
+   "negative_share": 0.3952,
+   "reviews": 630,
+   "top_reasons": [
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.4068
+    },
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.1822
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.161
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2025-12-08",
+     "title": "UPDATE - Postponed: Monster Hunter Showcase coming Dec. 8 at 10 p.m. UTC!"
+    },
+    {
+     "date": "2025-12-11",
+     "title": "Get ready to take on the Elder Dragon, Gogmazios! Free Title Update 4 out now!"
+    },
+    {
+     "date": "2025-12-12",
+     "title": "Our Commitment to Improving Stability and Performance"
+    },
+    {
+     "date": "2025-12-15",
+     "title": "Update Summary (Ver.1.040)"
+    },
+    {
+     "date": "2025-12-16",
+     "title": "Preparation for Update & A Message on Mods"
+    },
+    {
+     "date": "2025-12-17",
+     "title": "Update Summary (Ver.1.040.01.00)"
+    }
+   ]
+  },
+  {
+   "week_start": "2026-06-08",
+   "negative": 79,
+   "usual_weekly_negative": 16.5,
+   "negative_share": 0.1995,
+   "reviews": 396,
+   "top_reasons": [
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.3188
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.1739
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.1449
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2026-06-06",
+     "title": "The massive expansion Monster Hunter Wilds: Ascendance is coming in 2027!"
+    }
+   ]
+  }
+ ],
+ "weekly": [
+  {
+   "week": "2025-02-24",
+   "reviews": 22990,
+   "negative": 7015
+  },
+  {
+   "week": "2025-03-03",
+   "reviews": 17733,
+   "negative": 4222
+  },
+  {
+   "week": "2025-03-10",
+   "reviews": 7017,
+   "negative": 1522
+  },
+  {
+   "week": "2025-03-17",
+   "reviews": 3770,
+   "negative": 838
+  },
+  {
+   "week": "2025-03-24",
+   "reviews": 2495,
+   "negative": 509
+  },
+  {
+   "week": "2025-03-31",
+   "reviews": 2365,
+   "negative": 466
+  },
+  {
+   "week": "2025-04-07",
+   "reviews": 1329,
+   "negative": 302
+  },
+  {
+   "week": "2025-04-14",
+   "reviews": 954,
+   "negative": 233
+  },
+  {
+   "week": "2025-04-21",
+   "reviews": 711,
+   "negative": 170
+  },
+  {
+   "week": "2025-04-28",
+   "reviews": 610,
+   "negative": 163
+  },
+  {
+   "week": "2025-05-05",
+   "reviews": 382,
+   "negative": 105
+  },
+  {
+   "week": "2025-05-12",
+   "reviews": 317,
+   "negative": 95
+  },
+  {
+   "week": "2025-05-19",
+   "reviews": 322,
+   "negative": 117
+  },
+  {
+   "week": "2025-05-26",
+   "reviews": 517,
+   "negative": 230
+  },
+  {
+   "week": "2025-06-02",
+   "reviews": 516,
+   "negative": 287
+  },
+  {
+   "week": "2025-06-09",
+   "reviews": 504,
+   "negative": 290
+  },
+  {
+   "week": "2025-06-16",
+   "reviews": 977,
+   "negative": 636
+  },
+  {
+   "week": "2025-06-23",
+   "reviews": 1132,
+   "negative": 726
+  },
+  {
+   "week": "2025-06-30",
+   "reviews": 1663,
+   "negative": 955
+  },
+  {
+   "week": "2025-07-07",
+   "reviews": 757,
+   "negative": 422
+  },
+  {
+   "week": "2025-07-14",
+   "reviews": 451,
+   "negative": 226
+  },
+  {
+   "week": "2025-07-21",
+   "reviews": 524,
+   "negative": 234
+  },
+  {
+   "week": "2025-07-28",
+   "reviews": 454,
+   "negative": 231
+  },
+  {
+   "week": "2025-08-04",
+   "reviews": 294,
+   "negative": 136
+  },
+  {
+   "week": "2025-08-11",
+   "reviews": 467,
+   "negative": 216
+  },
+  {
+   "week": "2025-08-18",
+   "reviews": 428,
+   "negative": 225
+  },
+  {
+   "week": "2025-08-25",
+   "reviews": 227,
+   "negative": 94
+  },
+  {
+   "week": "2025-09-01",
+   "reviews": 225,
+   "negative": 81
+  },
+  {
+   "week": "2025-09-08",
+   "reviews": 131,
+   "negative": 64
+  },
+  {
+   "week": "2025-09-15",
+   "reviews": 150,
+   "negative": 73
+  },
+  {
+   "week": "2025-09-22",
+   "reviews": 245,
+   "negative": 114
+  },
+  {
+   "week": "2025-09-29",
+   "reviews": 855,
+   "negative": 444
+  },
+  {
+   "week": "2025-10-06",
+   "reviews": 462,
+   "negative": 204
+  },
+  {
+   "week": "2025-10-13",
+   "reviews": 202,
+   "negative": 80
+  },
+  {
+   "week": "2025-10-20",
+   "reviews": 276,
+   "negative": 137
+  },
+  {
+   "week": "2025-10-27",
+   "reviews": 267,
+   "negative": 107
+  },
+  {
+   "week": "2025-11-03",
+   "reviews": 206,
+   "negative": 78
+  },
+  {
+   "week": "2025-11-10",
+   "reviews": 204,
+   "negative": 85
+  },
+  {
+   "week": "2025-11-17",
+   "reviews": 190,
+   "negative": 57
+  },
+  {
+   "week": "2025-11-24",
+   "reviews": 1094,
+   "negative": 110
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 168,
+   "negative": 46
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 158,
+   "negative": 60
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 630,
+   "negative": 249
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 467,
+   "negative": 140
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 447,
+   "negative": 128
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 364,
+   "negative": 90
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 234,
+   "negative": 88
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 161,
+   "negative": 48
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 475,
+   "negative": 57
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 213,
+   "negative": 37
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 272,
+   "negative": 52
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 706,
+   "negative": 122
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 484,
+   "negative": 82
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 324,
+   "negative": 52
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 250,
+   "negative": 42
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 185,
+   "negative": 50
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 135,
+   "negative": 29
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 198,
+   "negative": 39
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 240,
+   "negative": 52
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 180,
+   "negative": 45
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 115,
+   "negative": 33
+  },
+  {
+   "week": "2026-04-27",
+   "reviews": 56,
+   "negative": 19
+  },
+  {
+   "week": "2026-05-04",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-11",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-18",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 42,
+   "negative": 14
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 186,
+   "negative": 50
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 396,
+   "negative": 79
+  },
+  {
+   "week": "2026-06-15",
+   "reviews": 304,
+   "negative": 66
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 243,
+   "negative": 52
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 301,
+   "negative": 58
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 280,
+   "negative": 41
+  },
+  {
+   "week": "2026-07-13",
+   "reviews": 175,
+   "negative": 32
+  },
+  {
+   "week": "2026-07-20",
+   "reviews": 191,
+   "negative": 34
+  },
+  {
+   "week": "2026-07-27",
+   "reviews": 140,
+   "negative": 30
+  },
+  {
+   "week": "2026-08-03",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-10",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-17",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-24",
+   "reviews": 99,
+   "negative": 33
+  },
+  {
+   "week": "2026-08-31",
+   "reviews": 155,
+   "negative": 36
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 265,
+   "negative": 47
+  },
+  {
+   "week": "2026-09-14",
+   "reviews": 302,
+   "negative": 52
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 242,
+   "negative": 39
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 91,
+   "negative": 9
+  },
+  {
+   "week": "2026-10-05",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-12",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-19",
+   "reviews": 28,
+   "negative": 3
+  },
+  {
+   "week": "2026-10-26",
+   "reviews": 162,
+   "negative": 27
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 135,
+   "negative": 14
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 110,
+   "negative": 16
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 117,
+   "negative": 18
+  },
+  {
+   "week": "2026-11-23",
+   "reviews": 87,
+   "negative": 5
+  }
+ ],
+ "patch_dates": [
+  {
+   "date": "2024-12-19",
+   "title": "Monster Hunter Wilds \u2013 Pre-launch Community Update Broadcast Announcement!"
+  },
+  {
+   "date": "2024-12-19",
+   "title": "Monster Hunter Wilds \u2013 Pre-Launch Community Update!"
+  },
+  {
+   "date": "2025-02-27",
+   "title": "New Title Update 1 Information!"
+  },
+  {
+   "date": "2025-03-26",
+   "title": "Free Title Update 1 - Available April 4, 2025"
+  },
+  {
+   "date": "2025-03-31",
+   "title": "Title Update 1 \u2014 Maintenance Notice"
+  },
+  {
+   "date": "2025-04-04",
+   "title": "Update Summary (Ver. 1.010.00.00)"
+  },
+  {
+   "date": "2025-04-16",
+   "title": "Update Summary (Ver. 1.010.01.00)"
+  },
+  {
+   "date": "2025-05-27",
+   "title": "Update Ver. 1.011 \u2014 Maintenance Notice"
+  },
+  {
+   "date": "2025-05-28",
+   "title": "Update Summary (Ver.1.011)"
+  },
+  {
+   "date": "2025-06-10",
+   "title": "Free Title Update 2 - Releasing End of June!"
+  },
+  {
+   "date": "2025-06-27",
+   "title": "Free Title Update 2 - Available June 30, 2025"
+  },
+  {
+   "date": "2025-06-27",
+   "title": "Update Summary (Ver.1.020)"
+  },
+  {
+   "date": "2025-06-28",
+   "title": "Title Update 2 \u2014 Maintenance Notice"
+  },
+  {
+   "date": "2025-08-08",
+   "title": "Update Ver. 1.021 \u2014 Maintenance Notice"
+  },
+  {
+   "date": "2025-08-14",
+   "title": "Update Summary (Ver.1.021)"
+  },
+  {
+   "date": "2025-08-14",
+   "title": "Update Summary (Ver.1.021.01.00)"
+  },
+  {
+   "date": "2025-08-19",
+   "title": "Update Summary (Ver.1.021.02.00)"
+  },
+  {
+   "date": "2025-08-22",
+   "title": "Update Summary (Ver.1.021.03.00)"
+  },
+  {
+   "date": "2025-09-25",
+   "title": "The Showcase for the Free Title Update 3 (Ver. 1.030) is here!"
+  },
+  {
+   "date": "2025-09-25",
+   "title": "Title Update 3 \u2014 Maintenance Notice"
+  },
+  {
+   "date": "2025-10-01",
+   "title": "Update Summary (Ver.1.030)"
+  },
+  {
+   "date": "2025-10-01",
+   "title": "Update Summary (Ver.1.030.01.00)"
+  },
+  {
+   "date": "2025-10-23",
+   "title": "Update Summary (Ver.1.030.02.00)"
+  },
+  {
+   "date": "2025-10-30",
+   "title": "Update Summary (Ver.1.030.02.01)"
+  },
+  {
+   "date": "2025-11-12",
+   "title": "Monster Hunter Wilds \u2014 Free Title Update 4 Notice"
+  },
+  {
+   "date": "2025-11-12",
+   "title": "New Free Title Update 4 Content Information!"
+  },
+  {
+   "date": "2025-11-20",
+   "title": "Update Summary (Ver.1.030.02.02)"
+  },
+  {
+   "date": "2025-12-08",
+   "title": "UPDATE - Postponed: Monster Hunter Showcase coming Dec. 8 at 10 p.m. UTC!"
+  },
+  {
+   "date": "2025-12-11",
+   "title": "Get ready to take on the Elder Dragon, Gogmazios! Free Title Update 4 out now!"
+  },
+  {
+   "date": "2025-12-15",
+   "title": "Update Summary (Ver.1.040)"
+  },
+  {
+   "date": "2025-12-16",
+   "title": "Preparation for Update & A Message on Mods"
+  },
+  {
+   "date": "2025-12-17",
+   "title": "Update Summary (Ver.1.040.01.00)"
+  },
+  {
+   "date": "2025-12-19",
+   "title": "Update Summary (Ver.1.040.02.00)"
+  },
+  {
+   "date": "2026-01-28",
+   "title": "Update Summary (Ver.1.040.03.00)"
+  },
+  {
+   "date": "2026-01-28",
+   "title": "Update Summary (Ver.1.040.03.01)"
+  },
+  {
+   "date": "2026-02-01",
+   "title": "Update Summary (Ver.1.040.03.02)"
+  },
+  {
+   "date": "2026-02-10",
+   "title": "Introducing Update Ver. 1.041 \u2014 Available Wednesday, February 18"
+  },
+  {
+   "date": "2026-02-18",
+   "title": "Update Summary (Ver.1.041.00.00)"
+  },
+  {
+   "date": "2026-02-27",
+   "title": "Update Summary (Ver.1.041.01.00)"
+  },
+  {
+   "date": "2026-02-27",
+   "title": "Update Summary (Ver.1.041.03.00 / Ver.1.041.02.00)"
+  },
+  {
+   "date": "2026-08-03",
+   "title": "Update Ver. 1.042 \u2014 Maintenance Notice"
+  },
+  {
+   "date": "2026-08-03",
+   "title": "Update Summary (Ver.1.042.00.00)"
+  },
+  {
+   "date": "2026-08-08",
+   "title": "Update Summary (Ver.1.042.00.01 / Demo Version 1.0.1)"
+  },
+  {
+   "date": "2026-08-14",
+   "title": "Update Summary (Ver.1.042.00.02)"
+  },
+  {
+   "date": "2026-10-28",
+   "title": "Update Summary (Ver.1.042.00.03)"
+  }
+ ],
+ "paraphrases": {
+  "PERF": [
+   "A player says the PC performance is far too low despite strong hardware, so they won't buy until it's fixed.",
+   "A player reports constant flickering, random sound glitches, and monsters teleporting during multiplayer, calling it a rough launch."
+  ],
+  "STAB": [
+   "A player finds the game hard to launch, with frequent crashes and glitchy backgrounds that make it stressful.",
+   "A player finds the early game is mostly cutscenes and walking with NPCs, though it improves after the low rank."
+  ],
+  "DESIGN": [
+   "A player says the game looks worse than decade-old titles and plays worse than its competitors.",
+   "A player changed their positive review after finishing the story still in beginner gear, finding the game far too easy."
+  ],
+  "CONTENT": [
+   "A player believes the DLC may end up with fewer monsters than Rise's base game, calling it a joke.",
+   "A player recommends World over Wilds, saying Wilds lacks content, has a weak story, and worse environments."
+  ],
+  "ONLINE": [
+   "A player finds joining friends difficult, disconnections frequent, and forced railroaded quests frustrating, though they like hunting.",
+   "A player found the game very hard to start, with weak multiplayer and convoluted systems, and gave it zero stars."
+  ]
+ }
+}

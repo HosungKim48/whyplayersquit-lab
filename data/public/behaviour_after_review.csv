@@ -1,0 +1,31 @@
+game,group,n,walked_away,walk_rate,walk_lo,walk_hi,kept_10h_rate,median_hours_after,refunded_rate,active_now_rate,shown
+Sid Meier's Civilization VII,negative,14056,5290.0,0.3764,0.3684,0.3844,0.4446,5.82,0.0493,0.0839,True
+Sid Meier's Civilization VII,positive,14742,528.0,0.0358,0.0329,0.0389,0.8625,72.22,0.0022,0.2052,True
+Sid Meier's Civilization VII,negative_unedited,11427,4375.0,0.3829,0.374,0.3918,0.4381,5.42,0.0569,0.0726,True
+Sid Meier's Civilization VII,negative_90d,13812,,0.3732,,,,,,,
+Sid Meier's Civilization VII,negative_labeled,13593,5060.0,0.3723,0.3642,0.3804,0.4486,6.05,0.048,0.0849,True
+Cities: Skylines II,negative,14703,3782.0,0.2572,0.2502,0.2644,0.5905,20.23,0.0404,0.1145,True
+Cities: Skylines II,positive,19628,768.0,0.0391,0.0365,0.0419,0.8611,75.42,0.0041,0.2201,True
+Cities: Skylines II,negative_unedited,10821,2995.0,0.2768,0.2684,0.2853,0.5675,17.08,0.0485,0.1026,True
+Cities: Skylines II,negative_90d,14286,,0.2429,,,,,,,
+Cities: Skylines II,negative_labeled,14017,3562.0,0.2541,0.247,0.2614,0.5931,20.52,0.0395,0.1156,True
+PAYDAY 3,negative,17269,5863.0,0.3395,0.3325,0.3466,0.4088,5.58,0.028,0.0478,True
+PAYDAY 3,positive,14286,1131.0,0.0792,0.0749,0.0837,0.6932,22.97,0.0028,0.1287,True
+PAYDAY 3,negative_unedited,12617,4690.0,0.3717,0.3633,0.3802,0.3688,4.12,0.0338,0.0365,True
+PAYDAY 3,negative_90d,17179,,0.338,,,,,,,
+PAYDAY 3,negative_labeled,16161,5406.0,0.3345,0.3273,0.3418,0.4124,5.8,0.0271,0.0477,True
+Dragon's Dogma 2,negative,13656,5541.0,0.4058,0.3975,0.414,0.4375,4.72,0.0802,0.0376,True
+Dragon's Dogma 2,positive,30501,2444.0,0.0801,0.0771,0.0832,0.7969,41.1,0.004,0.1031,True
+Dragon's Dogma 2,negative_unedited,10969,4821.0,0.4395,0.4302,0.4488,0.4005,2.73,0.0914,0.0326,True
+Dragon's Dogma 2,negative_90d,13563,,0.4044,,,,,,,
+Dragon's Dogma 2,negative_labeled,12946,5225.0,0.4036,0.3952,0.4121,0.4404,4.92,0.0777,0.0382,True
+Monster Hunter Wilds,negative,24532,6330.0,0.258,0.2526,0.2635,0.5656,16.4,0.0227,0.0556,True
+Monster Hunter Wilds,positive,59758,2300.0,0.0385,0.037,0.0401,0.8669,61.83,0.0015,0.1122,True
+Monster Hunter Wilds,negative_unedited,18023,4663.0,0.2587,0.2524,0.2652,0.569,17.13,0.0284,0.0446,True
+Monster Hunter Wilds,negative_90d,24315,,0.2555,,,,,,,
+Monster Hunter Wilds,negative_labeled,23241,5918.0,0.2546,0.2491,0.2603,0.569,16.85,0.0221,0.0561,True
+Starfield,negative,35971,18279.0,0.5082,0.503,0.5133,0.3462,0.83,0.0139,0.0143,True
+Starfield,positive,49297,3322.0,0.0674,0.0652,0.0696,0.8332,64.52,0.001,0.0497,True
+Starfield,negative_unedited,27445,15372.0,0.5601,0.5542,0.566,0.2909,0.15,0.0163,0.0117,True
+Starfield,negative_90d,35856,,0.5072,,,,,,,
+Starfield,negative_labeled,33597,16849.0,0.5015,0.4962,0.5068,0.3526,0.97,0.0137,0.0149,True

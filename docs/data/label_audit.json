@@ -1,0 +1,550 @@
+{
+ "n": 60,
+ "main_ok": 53,
+ "quit_ok": 57,
+ "main_agree": 0.8833,
+ "quit_agree": 0.95,
+ "checker": "Claude (the AI analyst that built this project) reading each sampled review; not a human panel",
+ "items": [
+  {
+   "i": 0,
+   "game": "Cities: Skylines II",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 1,
+   "game": "Cities: Skylines II",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 2,
+   "game": "Cities: Skylines II",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 3,
+   "game": "Cities: Skylines II",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 4,
+   "game": "Cities: Skylines II",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 5,
+   "game": "Cities: Skylines II",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 6,
+   "game": "Cities: Skylines II",
+   "model_main": "MONET",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "i": 7,
+   "game": "Cities: Skylines II",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "i": 8,
+   "game": "Cities: Skylines II",
+   "model_main": "SUPPORT",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "CONTENT"
+  },
+  {
+   "i": 9,
+   "game": "Cities: Skylines II",
+   "model_main": "DESIGN",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 10,
+   "game": "Dragon's Dogma 2",
+   "model_main": "STAB",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 11,
+   "game": "Dragon's Dogma 2",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "OTHER"
+  },
+  {
+   "i": 12,
+   "game": "Dragon's Dogma 2",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 13,
+   "game": "Dragon's Dogma 2",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 14,
+   "game": "Dragon's Dogma 2",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 15,
+   "game": "Dragon's Dogma 2",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 16,
+   "game": "Dragon's Dogma 2",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 17,
+   "game": "Dragon's Dogma 2",
+   "model_main": "PERF",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 18,
+   "game": "Dragon's Dogma 2",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 19,
+   "game": "Dragon's Dogma 2",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 20,
+   "game": "Monster Hunter Wilds",
+   "model_main": "PERF",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 21,
+   "game": "Monster Hunter Wilds",
+   "model_main": "SUPPORT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 22,
+   "game": "Monster Hunter Wilds",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 23,
+   "game": "Monster Hunter Wilds",
+   "model_main": "STAB",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 24,
+   "game": "Monster Hunter Wilds",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 25,
+   "game": "Monster Hunter Wilds",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "STAB"
+  },
+  {
+   "i": 26,
+   "game": "Monster Hunter Wilds",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 27,
+   "game": "Monster Hunter Wilds",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 28,
+   "game": "Monster Hunter Wilds",
+   "model_main": "PERF",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 29,
+   "game": "Monster Hunter Wilds",
+   "model_main": "PERF",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 30,
+   "game": "PAYDAY 3",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 31,
+   "game": "PAYDAY 3",
+   "model_main": "SUPPORT",
+   "model_quit": "WAITING",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "CONTENT"
+  },
+  {
+   "i": 32,
+   "game": "PAYDAY 3",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 33,
+   "game": "PAYDAY 3",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 34,
+   "game": "PAYDAY 3",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 35,
+   "game": "PAYDAY 3",
+   "model_main": "CONTENT",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 36,
+   "game": "PAYDAY 3",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 37,
+   "game": "PAYDAY 3",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 38,
+   "game": "PAYDAY 3",
+   "model_main": "UI",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "ONLINE"
+  },
+  {
+   "i": 39,
+   "game": "PAYDAY 3",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 40,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 41,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "MONET",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": false,
+   "checker_main": null
+  },
+  {
+   "i": 42,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "DESIGN",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 43,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 44,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "STORY",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "OTHER"
+  },
+  {
+   "i": 45,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "DESIGN",
+   "model_quit": "STOPPED",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 46,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 47,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "SUPPORT",
+   "model_quit": "NONE",
+   "main_ok": false,
+   "quit_ok": true,
+   "checker_main": "CONTENT"
+  },
+  {
+   "i": 48,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "CONTENT",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 49,
+   "game": "Sid Meier's Civilization VII",
+   "model_main": "ONLINE",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 50,
+   "game": "Starfield",
+   "model_main": "STAB",
+   "model_quit": "WAITING",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 51,
+   "game": "Starfield",
+   "model_main": "STORY",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 52,
+   "game": "Starfield",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 53,
+   "game": "Starfield",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 54,
+   "game": "Starfield",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 55,
+   "game": "Starfield",
+   "model_main": "STORY",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 56,
+   "game": "Starfield",
+   "model_main": "STAB",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 57,
+   "game": "Starfield",
+   "model_main": "DESIGN",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 58,
+   "game": "Starfield",
+   "model_main": "OTHER",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  },
+  {
+   "i": 59,
+   "game": "Starfield",
+   "model_main": "CONTENT",
+   "model_quit": "NONE",
+   "main_ok": true,
+   "quit_ok": true,
+   "checker_main": null
+  }
+ ]
+}

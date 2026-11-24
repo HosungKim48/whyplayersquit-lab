@@ -1,0 +1,2551 @@
+{
+ "appid": 949230,
+ "slug": "cities-skylines-ii",
+ "name": "Cities: Skylines II",
+ "genre": "City builder",
+ "release": "2023-10-24",
+ "snapshot": "2026-11-24",
+ "params": {
+  "mature_days": 30,
+  "walk_hours": 1.0,
+  "min_cell": 30
+ },
+ "funnel": {
+  "steam_summary_total": 35719,
+  "api_reported_english_reviews": 34671,
+  "fetched_unique": 34666,
+  "negative": 14776,
+  "negative_3plus_words": 14097,
+  "labeled": 14085,
+  "first_review": "2023-10",
+  "last_review": "2026-11"
+ },
+ "overview": {
+  "reviews": 34666,
+  "negative": 14776,
+  "negative_share": 0.4262,
+  "median_hours_at_negative_review": 22.7,
+  "median_hours_at_positive_review": 23.6
+ },
+ "behaviour": {
+  "negative": {
+   "n": 14703,
+   "walked_away": 3782,
+   "walk_rate": 0.2572,
+   "walk_lo": 0.2502,
+   "walk_hi": 0.2644,
+   "kept_10h_rate": 0.5905,
+   "median_hours_after": 20.23,
+   "refunded_rate": 0.0404,
+   "active_now_rate": 0.1145,
+   "shown": true
+  },
+  "positive": {
+   "n": 19628,
+   "walked_away": 768,
+   "walk_rate": 0.0391,
+   "walk_lo": 0.0365,
+   "walk_hi": 0.0419,
+   "kept_10h_rate": 0.8611,
+   "median_hours_after": 75.42,
+   "refunded_rate": 0.0041,
+   "active_now_rate": 0.2201,
+   "shown": true
+  },
+  "negative_unedited": {
+   "n": 10821,
+   "walked_away": 2995,
+   "walk_rate": 0.2768,
+   "walk_lo": 0.2684,
+   "walk_hi": 0.2853,
+   "kept_10h_rate": 0.5675,
+   "median_hours_after": 17.08,
+   "refunded_rate": 0.0485,
+   "active_now_rate": 0.1026,
+   "shown": true
+  },
+  "negative_90d": {
+   "n": 14286,
+   "walk_rate": 0.2429
+  },
+  "negative_labeled": {
+   "n": 14017,
+   "walked_away": 3562,
+   "walk_rate": 0.2541,
+   "walk_lo": 0.247,
+   "walk_hi": 0.2614,
+   "kept_10h_rate": 0.5931,
+   "median_hours_after": 20.52,
+   "refunded_rate": 0.0395,
+   "active_now_rate": 0.1156,
+   "shown": true
+  }
+ },
+ "playtime": [
+  {
+   "bucket": "Under 2 h",
+   "reviews": 4296,
+   "negative": 3005,
+   "negative_share_in_bucket": 0.6995,
+   "share_of_all_negative": 0.2034,
+   "neg_walk_n": 2993,
+   "neg_walk_rate": 0.5012
+  },
+  {
+   "bucket": "2\u201310 h",
+   "reviews": 7518,
+   "negative": 2504,
+   "negative_share_in_bucket": 0.3331,
+   "share_of_all_negative": 0.1695,
+   "neg_walk_n": 2496,
+   "neg_walk_rate": 0.2648
+  },
+  {
+   "bucket": "10\u201350 h",
+   "reviews": 11133,
+   "negative": 4172,
+   "negative_share_in_bucket": 0.3747,
+   "share_of_all_negative": 0.2823,
+   "neg_walk_n": 4155,
+   "neg_walk_rate": 0.214
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "reviews": 7934,
+   "negative": 3603,
+   "negative_share_in_bucket": 0.4541,
+   "share_of_all_negative": 0.2438,
+   "neg_walk_n": 3585,
+   "neg_walk_rate": 0.159
+  },
+  {
+   "bucket": "200 h+",
+   "reviews": 3785,
+   "negative": 1492,
+   "negative_share_in_bucket": 0.3942,
+   "share_of_all_negative": 0.101,
+   "neg_walk_n": 1474,
+   "neg_walk_rate": 0.1099
+  }
+ ],
+ "reasons": [
+  {
+   "code": "STAB",
+   "reason": "Crashes & bugs",
+   "walk_rate_adjusted": 0.2126,
+   "n": 4034,
+   "share": 0.2864,
+   "any_mention_share": 0.3908,
+   "median_hours_at_review": 39.0,
+   "walk_n": 4010,
+   "walk_rate": 0.1748,
+   "walk_lo": 0.1634,
+   "walk_hi": 0.1869,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1978
+  },
+  {
+   "code": "PERF",
+   "reason": "Performance",
+   "walk_rate_adjusted": 0.2489,
+   "n": 3610,
+   "share": 0.2563,
+   "any_mention_share": 0.3446,
+   "median_hours_at_review": 3.6,
+   "walk_n": 3598,
+   "walk_rate": 0.3252,
+   "walk_lo": 0.3101,
+   "walk_hi": 0.3407,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1795
+  },
+  {
+   "code": "CONTENT",
+   "reason": "Not enough content",
+   "walk_rate_adjusted": 0.2303,
+   "n": 1900,
+   "share": 0.1349,
+   "any_mention_share": 0.219,
+   "median_hours_at_review": 27.4,
+   "walk_n": 1896,
+   "walk_rate": 0.2073,
+   "walk_lo": 0.1896,
+   "walk_hi": 0.2261,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1274
+  },
+  {
+   "code": "DESIGN",
+   "reason": "Gameplay & design choices",
+   "walk_rate_adjusted": 0.2656,
+   "n": 1257,
+   "share": 0.0892,
+   "any_mention_share": 0.1539,
+   "median_hours_at_review": 26.5,
+   "walk_n": 1249,
+   "walk_rate": 0.2354,
+   "walk_lo": 0.2127,
+   "walk_hi": 0.2597,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1718
+  },
+  {
+   "code": "OTHER",
+   "reason": "No clear reason",
+   "walk_rate_adjusted": 0.3137,
+   "n": 1161,
+   "share": 0.0824,
+   "any_mention_share": 0.0913,
+   "median_hours_at_review": 19.9,
+   "walk_n": 1155,
+   "walk_rate": 0.3186,
+   "walk_lo": 0.2924,
+   "walk_hi": 0.346,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.0767
+  },
+  {
+   "code": "SUPPORT",
+   "reason": "Post-launch support",
+   "walk_rate_adjusted": 0.2517,
+   "n": 780,
+   "share": 0.0554,
+   "any_mention_share": 0.1283,
+   "median_hours_at_review": 48.8,
+   "walk_n": 777,
+   "walk_rate": 0.2227,
+   "walk_lo": 0.1948,
+   "walk_hi": 0.2532,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.2026
+  },
+  {
+   "code": "MONET",
+   "reason": "Price & monetization",
+   "walk_rate_adjusted": 0.3217,
+   "n": 728,
+   "share": 0.0517,
+   "any_mention_share": 0.1209,
+   "median_hours_at_review": 33.8,
+   "walk_n": 720,
+   "walk_rate": 0.3014,
+   "walk_lo": 0.269,
+   "walk_hi": 0.3359,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1827
+  },
+  {
+   "code": "UI",
+   "reason": "Interface & controls",
+   "walk_rate_adjusted": 0.2716,
+   "n": 247,
+   "share": 0.0175,
+   "any_mention_share": 0.0439,
+   "median_hours_at_review": 6.4,
+   "walk_n": 247,
+   "walk_rate": 0.336,
+   "walk_lo": 0.28,
+   "walk_hi": 0.3971,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.2065
+  },
+  {
+   "code": "ONLINE",
+   "reason": "Online, accounts & DRM",
+   "walk_rate_adjusted": 0.2889,
+   "n": 184,
+   "share": 0.0131,
+   "any_mention_share": 0.0267,
+   "median_hours_at_review": 42.1,
+   "walk_n": 182,
+   "walk_rate": 0.2363,
+   "walk_lo": 0.1804,
+   "walk_hi": 0.303,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1957
+  },
+  {
+   "code": "OFFGAME",
+   "reason": "Off-game topics",
+   "walk_rate_adjusted": 0.6883,
+   "n": 179,
+   "share": 0.0127,
+   "any_mention_share": 0.0151,
+   "median_hours_at_review": 35.3,
+   "walk_n": 178,
+   "walk_rate": 0.6742,
+   "walk_lo": 0.6023,
+   "walk_hi": 0.7387,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.2291
+  },
+  {
+   "code": "STORY",
+   "reason": "Story & writing",
+   "walk_rate_adjusted": null,
+   "n": 5,
+   "share": 0.0004,
+   "any_mention_share": 0.0013,
+   "median_hours_at_review": 100.0,
+   "walk_n": 5,
+   "walk_rate": null,
+   "walk_lo": null,
+   "walk_hi": null,
+   "vs_game_average": "n/a",
+   "says_stopped_rate": null
+  }
+ ],
+ "reason_by_playtime": [
+  {
+   "bucket": "Under 2 h",
+   "n": 2872,
+   "shares": {
+    "PERF": 0.5411,
+    "STAB": 0.1647,
+    "CONTENT": 0.0804,
+    "DESIGN": 0.0376,
+    "UI": 0.0261,
+    "MONET": 0.0303,
+    "ONLINE": 0.0073,
+    "SUPPORT": 0.0258,
+    "STORY": 0.0,
+    "OFFGAME": 0.0073,
+    "OTHER": 0.0794
+   }
+  },
+  {
+   "bucket": "2\u201310 h",
+   "n": 2361,
+   "shares": {
+    "PERF": 0.2825,
+    "STAB": 0.2308,
+    "CONTENT": 0.1406,
+    "DESIGN": 0.1152,
+    "UI": 0.0301,
+    "MONET": 0.0449,
+    "ONLINE": 0.011,
+    "SUPPORT": 0.0352,
+    "STORY": 0.0004,
+    "OFFGAME": 0.0123,
+    "OTHER": 0.097
+   }
+  },
+  {
+   "bucket": "10\u201350 h",
+   "n": 3963,
+   "shares": {
+    "PERF": 0.1635,
+    "STAB": 0.3066,
+    "CONTENT": 0.1673,
+    "DESIGN": 0.1158,
+    "UI": 0.0141,
+    "MONET": 0.059,
+    "ONLINE": 0.0131,
+    "SUPPORT": 0.0606,
+    "STORY": 0.0003,
+    "OFFGAME": 0.0144,
+    "OTHER": 0.0853
+   }
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "n": 3452,
+   "shares": {
+    "PERF": 0.1561,
+    "STAB": 0.3407,
+    "CONTENT": 0.1512,
+    "DESIGN": 0.0956,
+    "UI": 0.0081,
+    "MONET": 0.0632,
+    "ONLINE": 0.0203,
+    "SUPPORT": 0.071,
+    "STORY": 0.0006,
+    "OFFGAME": 0.0145,
+    "OTHER": 0.0788
+   }
+  },
+  {
+   "bucket": "200 h+",
+   "n": 1437,
+   "shares": {
+    "PERF": 0.1406,
+    "STAB": 0.4349,
+    "CONTENT": 0.1058,
+    "DESIGN": 0.0612,
+    "UI": 0.0118,
+    "MONET": 0.0578,
+    "ONLINE": 0.0104,
+    "SUPPORT": 0.096,
+    "STORY": 0.0007,
+    "OFFGAME": 0.0153,
+    "OTHER": 0.0654
+   }
+  }
+ ],
+ "said_vs_did": [
+  {
+   "code": "STOPPED",
+   "statement": "Said they quit, refunded or won't return",
+   "n": 2412,
+   "share": 0.1712,
+   "mature_n": 2404,
+   "walk_rate": 0.3523,
+   "kept_10h_rate": 0.5133,
+   "active_now_rate": 0.1177
+  },
+  {
+   "code": "WAITING",
+   "statement": "Said they'd come back if it's fixed",
+   "n": 2030,
+   "share": 0.1441,
+   "mature_n": 2027,
+   "walk_rate": 0.2259,
+   "kept_10h_rate": 0.627,
+   "active_now_rate": 0.0844
+  },
+  {
+   "code": "NONE",
+   "statement": "Said nothing about stopping",
+   "n": 9643,
+   "share": 0.6846,
+   "mature_n": 9586,
+   "walk_rate": 0.2354,
+   "kept_10h_rate": 0.606,
+   "active_now_rate": 0.1216
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2023-10",
+   "reviews": 10172,
+   "negative": 4275,
+   "negative_share": 0.4203,
+   "labeled": 4125,
+   "reason_counts": {
+    "PERF": 1911,
+    "STAB": 723,
+    "CONTENT": 486,
+    "DESIGN": 299,
+    "UI": 71,
+    "MONET": 133,
+    "ONLINE": 29,
+    "SUPPORT": 177,
+    "STORY": 0,
+    "OFFGAME": 19,
+    "OTHER": 277
+   },
+   "patches": [
+    "Patch Notes for 1.0.11f1"
+   ]
+  },
+  {
+   "month": "2023-11",
+   "reviews": 4618,
+   "negative": 1664,
+   "negative_share": 0.3603,
+   "labeled": 1582,
+   "reason_counts": {
+    "PERF": 345,
+    "STAB": 426,
+    "CONTENT": 278,
+    "DESIGN": 205,
+    "UI": 31,
+    "MONET": 63,
+    "ONLINE": 26,
+    "SUPPORT": 90,
+    "STORY": 1,
+    "OFFGAME": 7,
+    "OTHER": 110
+   },
+   "patches": [
+    "Patch Notes for 1.0.12f1 hotfix",
+    "Patch Notes for 1.0.13f1 hotfix",
+    "Patch Notes for 1.0.14f1 hotfix"
+   ]
+  },
+  {
+   "month": "2023-12",
+   "reviews": 1443,
+   "negative": 596,
+   "negative_share": 0.413,
+   "labeled": 571,
+   "reason_counts": {
+    "PERF": 140,
+    "STAB": 157,
+    "CONTENT": 102,
+    "DESIGN": 61,
+    "UI": 13,
+    "MONET": 25,
+    "ONLINE": 6,
+    "SUPPORT": 18,
+    "STORY": 1,
+    "OFFGAME": 1,
+    "OTHER": 47
+   },
+   "patches": [
+    "Patch Notes for 1.0.15f1 hotfix",
+    "Winter Treat and Patch Notes"
+   ]
+  },
+  {
+   "month": "2024-01",
+   "reviews": 1135,
+   "negative": 537,
+   "negative_share": 0.4731,
+   "labeled": 521,
+   "reason_counts": {
+    "PERF": 105,
+    "STAB": 148,
+    "CONTENT": 110,
+    "DESIGN": 45,
+    "UI": 10,
+    "MONET": 13,
+    "ONLINE": 2,
+    "SUPPORT": 41,
+    "STORY": 0,
+    "OFFGAME": 4,
+    "OTHER": 43
+   },
+   "patches": [
+    "Patch Notes for 1.0.19f1 hotfix"
+   ]
+  },
+  {
+   "month": "2024-02",
+   "reviews": 1055,
+   "negative": 680,
+   "negative_share": 0.6445,
+   "labeled": 642,
+   "reason_counts": {
+    "PERF": 78,
+    "STAB": 184,
+    "CONTENT": 119,
+    "DESIGN": 87,
+    "UI": 2,
+    "MONET": 31,
+    "ONLINE": 11,
+    "SUPPORT": 62,
+    "STORY": 0,
+    "OFFGAME": 2,
+    "OTHER": 66
+   },
+   "patches": []
+  },
+  {
+   "month": "2024-03",
+   "reviews": 1404,
+   "negative": 930,
+   "negative_share": 0.6624,
+   "labeled": 882,
+   "reason_counts": {
+    "PERF": 129,
+    "STAB": 185,
+    "CONTENT": 162,
+    "DESIGN": 71,
+    "UI": 11,
+    "MONET": 106,
+    "ONLINE": 19,
+    "SUPPORT": 95,
+    "STORY": 0,
+    "OFFGAME": 6,
+    "OTHER": 98
+   },
+   "patches": [
+    "BEACH PROPERTIES ASSET PACK & MODDING WAVELET PATCH ANNOUNCEMENT",
+    "Modding Wavelet - Patch 1.1.0f1"
+   ]
+  },
+  {
+   "month": "2024-04",
+   "reviews": 935,
+   "negative": 588,
+   "negative_share": 0.6289,
+   "labeled": 542,
+   "reason_counts": {
+    "PERF": 74,
+    "STAB": 123,
+    "CONTENT": 97,
+    "DESIGN": 42,
+    "UI": 4,
+    "MONET": 54,
+    "ONLINE": 12,
+    "SUPPORT": 46,
+    "STORY": 1,
+    "OFFGAME": 6,
+    "OTHER": 83
+   },
+   "patches": [
+    "Patch Notes for patch 1.1.1f1 - hotfix",
+    "The Way Forward, an update from the team behind Cities: Skylines",
+    "Patch Notes 1.1.2f1"
+   ]
+  },
+  {
+   "month": "2024-05",
+   "reviews": 580,
+   "negative": 318,
+   "negative_share": 0.5483,
+   "labeled": 293,
+   "reason_counts": {
+    "PERF": 42,
+    "STAB": 89,
+    "CONTENT": 44,
+    "DESIGN": 26,
+    "UI": 3,
+    "MONET": 24,
+    "ONLINE": 5,
+    "SUPPORT": 12,
+    "STORY": 0,
+    "OFFGAME": 2,
+    "OTHER": 46
+   },
+   "patches": [
+    "Upcoming Patch & Content"
+   ]
+  },
+  {
+   "month": "2024-06",
+   "reviews": 530,
+   "negative": 233,
+   "negative_share": 0.4396,
+   "labeled": 222,
+   "reason_counts": {
+    "PERF": 31,
+    "STAB": 83,
+    "CONTENT": 32,
+    "DESIGN": 27,
+    "UI": 6,
+    "MONET": 9,
+    "ONLINE": 1,
+    "SUPPORT": 15,
+    "STORY": 0,
+    "OFFGAME": 3,
+    "OTHER": 15
+   },
+   "patches": [
+    "An update regarding the Econonomy 2.0 Patch;",
+    "Patch Notes 1.1.5f1"
+   ]
+  },
+  {
+   "month": "2024-07",
+   "reviews": 678,
+   "negative": 218,
+   "negative_share": 0.3215,
+   "labeled": 206,
+   "reason_counts": {
+    "PERF": 30,
+    "STAB": 82,
+    "CONTENT": 28,
+    "DESIGN": 28,
+    "UI": 10,
+    "MONET": 6,
+    "ONLINE": 0,
+    "SUPPORT": 4,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 18
+   },
+   "patches": [
+    "Detailer's Patch #1 - Patch 1.1.6f1",
+    "Patch Notes 1.1.7f1 - Hotfix"
+   ]
+  },
+  {
+   "month": "2024-08",
+   "reviews": 446,
+   "negative": 154,
+   "negative_share": 0.3453,
+   "labeled": 149,
+   "reason_counts": {
+    "PERF": 25,
+    "STAB": 54,
+    "CONTENT": 14,
+    "DESIGN": 29,
+    "UI": 4,
+    "MONET": 3,
+    "ONLINE": 1,
+    "SUPPORT": 6,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 12
+   },
+   "patches": []
+  },
+  {
+   "month": "2024-09",
+   "reviews": 409,
+   "negative": 169,
+   "negative_share": 0.4132,
+   "labeled": 163,
+   "reason_counts": {
+    "PERF": 20,
+    "STAB": 68,
+    "CONTENT": 22,
+    "DESIGN": 20,
+    "UI": 1,
+    "MONET": 5,
+    "ONLINE": 5,
+    "SUPPORT": 10,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 12
+   },
+   "patches": [
+    "Dev Diary: Decorations Patch",
+    "Patch Notes 1.1.8f1 - Decorations Patch",
+    "An update to the Release Schedule"
+   ]
+  },
+  {
+   "month": "2024-10",
+   "reviews": 408,
+   "negative": 183,
+   "negative_share": 0.4485,
+   "labeled": 177,
+   "reason_counts": {
+    "PERF": 26,
+    "STAB": 70,
+    "CONTENT": 26,
+    "DESIGN": 9,
+    "UI": 6,
+    "MONET": 10,
+    "ONLINE": 4,
+    "SUPPORT": 12,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 13
+   },
+   "patches": [
+    "Patch Notes 1.1.10f1",
+    "Patch Notes 1.1.11f1",
+    "Important update for all Cities: Skylines II Players:"
+   ]
+  },
+  {
+   "month": "2024-11",
+   "reviews": 481,
+   "negative": 216,
+   "negative_share": 0.4491,
+   "labeled": 211,
+   "reason_counts": {
+    "PERF": 26,
+    "STAB": 94,
+    "CONTENT": 33,
+    "DESIGN": 12,
+    "UI": 4,
+    "MONET": 11,
+    "ONLINE": 5,
+    "SUPPORT": 7,
+    "STORY": 0,
+    "OFFGAME": 2,
+    "OTHER": 17
+   },
+   "patches": [
+    "Patch Notes 1.1.12f1"
+   ]
+  },
+  {
+   "month": "2024-12",
+   "reviews": 854,
+   "negative": 370,
+   "negative_share": 0.4333,
+   "labeled": 359,
+   "reason_counts": {
+    "PERF": 57,
+    "STAB": 179,
+    "CONTENT": 31,
+    "DESIGN": 26,
+    "UI": 3,
+    "MONET": 19,
+    "ONLINE": 3,
+    "SUPPORT": 16,
+    "STORY": 0,
+    "OFFGAME": 2,
+    "OTHER": 23
+   },
+   "patches": [
+    "Detailer's Patch #2 - 1.2.0f1 Patch Notes",
+    "Detailer\u2019s Patch #2 - Developer Diary"
+   ]
+  },
+  {
+   "month": "2025-01",
+   "reviews": 550,
+   "negative": 234,
+   "negative_share": 0.4255,
+   "labeled": 223,
+   "reason_counts": {
+    "PERF": 27,
+    "STAB": 119,
+    "CONTENT": 16,
+    "DESIGN": 14,
+    "UI": 10,
+    "MONET": 8,
+    "ONLINE": 2,
+    "SUPPORT": 7,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 19
+   },
+   "patches": [
+    "Hotfix 1.2.3f1"
+   ]
+  },
+  {
+   "month": "2025-02",
+   "reviews": 419,
+   "negative": 214,
+   "negative_share": 0.5107,
+   "labeled": 207,
+   "reason_counts": {
+    "PERF": 29,
+    "STAB": 102,
+    "CONTENT": 26,
+    "DESIGN": 17,
+    "UI": 1,
+    "MONET": 6,
+    "ONLINE": 1,
+    "SUPPORT": 7,
+    "STORY": 0,
+    "OFFGAME": 3,
+    "OTHER": 15
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-03",
+   "reviews": 672,
+   "negative": 310,
+   "negative_share": 0.4613,
+   "labeled": 291,
+   "reason_counts": {
+    "PERF": 42,
+    "STAB": 142,
+    "CONTENT": 23,
+    "DESIGN": 19,
+    "UI": 7,
+    "MONET": 19,
+    "ONLINE": 2,
+    "SUPPORT": 18,
+    "STORY": 0,
+    "OFFGAME": 3,
+    "OTHER": 16
+   },
+   "patches": [
+    "Anniversary Patch 1.2.5f1"
+   ]
+  },
+  {
+   "month": "2025-04",
+   "reviews": 383,
+   "negative": 155,
+   "negative_share": 0.4047,
+   "labeled": 147,
+   "reason_counts": {
+    "PERF": 24,
+    "STAB": 68,
+    "CONTENT": 15,
+    "DESIGN": 15,
+    "UI": 3,
+    "MONET": 7,
+    "ONLINE": 4,
+    "SUPPORT": 3,
+    "STORY": 1,
+    "OFFGAME": 0,
+    "OTHER": 7
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-05",
+   "reviews": 456,
+   "negative": 198,
+   "negative_share": 0.4342,
+   "labeled": 185,
+   "reason_counts": {
+    "PERF": 28,
+    "STAB": 82,
+    "CONTENT": 19,
+    "DESIGN": 17,
+    "UI": 2,
+    "MONET": 9,
+    "ONLINE": 5,
+    "SUPPORT": 13,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 10
+   },
+   "patches": [
+    "Free Patch and Updated Plans"
+   ]
+  },
+  {
+   "month": "2025-06",
+   "reviews": 480,
+   "negative": 207,
+   "negative_share": 0.4313,
+   "labeled": 192,
+   "reason_counts": {
+    "PERF": 26,
+    "STAB": 99,
+    "CONTENT": 17,
+    "DESIGN": 13,
+    "UI": 0,
+    "MONET": 10,
+    "ONLINE": 1,
+    "SUPPORT": 12,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 14
+   },
+   "patches": [
+    "1.3.3f1 Patch Notes"
+   ]
+  },
+  {
+   "month": "2025-07",
+   "reviews": 411,
+   "negative": 165,
+   "negative_share": 0.4015,
+   "labeled": 156,
+   "reason_counts": {
+    "PERF": 26,
+    "STAB": 75,
+    "CONTENT": 16,
+    "DESIGN": 8,
+    "UI": 6,
+    "MONET": 5,
+    "ONLINE": 2,
+    "SUPPORT": 9,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 9
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-08",
+   "reviews": 345,
+   "negative": 135,
+   "negative_share": 0.3913,
+   "labeled": 128,
+   "reason_counts": {
+    "PERF": 15,
+    "STAB": 64,
+    "CONTENT": 14,
+    "DESIGN": 6,
+    "UI": 3,
+    "MONET": 4,
+    "ONLINE": 1,
+    "SUPPORT": 10,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 11
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-09",
+   "reviews": 352,
+   "negative": 165,
+   "negative_share": 0.4688,
+   "labeled": 159,
+   "reason_counts": {
+    "PERF": 25,
+    "STAB": 62,
+    "CONTENT": 18,
+    "DESIGN": 16,
+    "UI": 4,
+    "MONET": 5,
+    "ONLINE": 5,
+    "SUPPORT": 10,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 14
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-10",
+   "reviews": 480,
+   "negative": 225,
+   "negative_share": 0.4688,
+   "labeled": 212,
+   "reason_counts": {
+    "PERF": 28,
+    "STAB": 97,
+    "CONTENT": 27,
+    "DESIGN": 15,
+    "UI": 5,
+    "MONET": 12,
+    "ONLINE": 1,
+    "SUPPORT": 11,
+    "STORY": 0,
+    "OFFGAME": 4,
+    "OTHER": 12
+   },
+   "patches": [
+    "Unity Hotfix",
+    "Bridges and Ports - 1.3.6f1 Patch Notes"
+   ]
+  },
+  {
+   "month": "2025-11",
+   "reviews": 586,
+   "negative": 260,
+   "negative_share": 0.4437,
+   "labeled": 250,
+   "reason_counts": {
+    "PERF": 38,
+    "STAB": 89,
+    "CONTENT": 24,
+    "DESIGN": 22,
+    "UI": 5,
+    "MONET": 20,
+    "ONLINE": 5,
+    "SUPPORT": 27,
+    "STORY": 0,
+    "OFFGAME": 2,
+    "OTHER": 18
+   },
+   "patches": [
+    "An Update on Cities: Skylines",
+    "Bike Patch - Announcement Post",
+    "Bike Patch 1.4.2f1"
+   ]
+  },
+  {
+   "month": "2025-12",
+   "reviews": 487,
+   "negative": 172,
+   "negative_share": 0.3532,
+   "labeled": 166,
+   "reason_counts": {
+    "PERF": 31,
+    "STAB": 67,
+    "CONTENT": 16,
+    "DESIGN": 8,
+    "UI": 2,
+    "MONET": 16,
+    "ONLINE": 2,
+    "SUPPORT": 7,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 16
+   },
+   "patches": [
+    "Asset Mods Patch",
+    "Hotfix - Patch Notes 1.5.3f1"
+   ]
+  },
+  {
+   "month": "2026-01",
+   "reviews": 394,
+   "negative": 132,
+   "negative_share": 0.335,
+   "labeled": 125,
+   "reason_counts": {
+    "PERF": 26,
+    "STAB": 54,
+    "CONTENT": 10,
+    "DESIGN": 8,
+    "UI": 1,
+    "MONET": 9,
+    "ONLINE": 3,
+    "SUPPORT": 6,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 8
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-02",
+   "reviews": 446,
+   "negative": 124,
+   "negative_share": 0.278,
+   "labeled": 123,
+   "reason_counts": {
+    "PERF": 33,
+    "STAB": 40,
+    "CONTENT": 9,
+    "DESIGN": 10,
+    "UI": 2,
+    "MONET": 3,
+    "ONLINE": 1,
+    "SUPPORT": 5,
+    "STORY": 1,
+    "OFFGAME": 1,
+    "OTHER": 18
+   },
+   "patches": [
+    "Hotfix - Patch 1.5.5f1"
+   ]
+  },
+  {
+   "month": "2026-03",
+   "reviews": 517,
+   "negative": 125,
+   "negative_share": 0.2418,
+   "labeled": 118,
+   "reason_counts": {
+    "PERF": 27,
+    "STAB": 30,
+    "CONTENT": 13,
+    "DESIGN": 12,
+    "UI": 4,
+    "MONET": 13,
+    "ONLINE": 3,
+    "SUPPORT": 6,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 10
+   },
+   "patches": [
+    "City Corner #3 - Anniversary Free Update"
+   ]
+  },
+  {
+   "month": "2026-04",
+   "reviews": 413,
+   "negative": 117,
+   "negative_share": 0.2833,
+   "labeled": 112,
+   "reason_counts": {
+    "PERF": 30,
+    "STAB": 35,
+    "CONTENT": 9,
+    "DESIGN": 10,
+    "UI": 1,
+    "MONET": 9,
+    "ONLINE": 7,
+    "SUPPORT": 4,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 7
+   },
+   "patches": [
+    "Spring Cleaning - Patch 1.5.7f1"
+   ]
+  },
+  {
+   "month": "2026-05",
+   "reviews": 51,
+   "negative": 9,
+   "negative_share": 0.1765,
+   "labeled": 8,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 4,
+    "CONTENT": 0,
+    "DESIGN": 1,
+    "UI": 1,
+    "MONET": 0,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 1
+   },
+   "patches": [
+    "Update for Loading Bug",
+    "Hotfix - Patch 1.5.8f1",
+    "Patch 1.5.9f1 - Morning Dew",
+    "Update to Saving Bug"
+   ]
+  },
+  {
+   "month": "2026-06",
+   "reviews": 471,
+   "negative": 110,
+   "negative_share": 0.2335,
+   "labeled": 103,
+   "reason_counts": {
+    "PERF": 27,
+    "STAB": 29,
+    "CONTENT": 8,
+    "DESIGN": 15,
+    "UI": 4,
+    "MONET": 6,
+    "ONLINE": 1,
+    "SUPPORT": 0,
+    "STORY": 0,
+    "OFFGAME": 2,
+    "OTHER": 11
+   },
+   "patches": [
+    "Hotfix - Patch 1.5.10f1",
+    "Patch 1.6.0f1 - Summer Solstice"
+   ]
+  },
+  {
+   "month": "2026-07",
+   "reviews": 447,
+   "negative": 98,
+   "negative_share": 0.2192,
+   "labeled": 94,
+   "reason_counts": {
+    "PERF": 22,
+    "STAB": 34,
+    "CONTENT": 2,
+    "DESIGN": 12,
+    "UI": 2,
+    "MONET": 9,
+    "ONLINE": 3,
+    "SUPPORT": 2,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 7
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-08",
+   "reviews": 78,
+   "negative": 21,
+   "negative_share": 0.2692,
+   "labeled": 20,
+   "reason_counts": {
+    "PERF": 4,
+    "STAB": 6,
+    "CONTENT": 3,
+    "DESIGN": 2,
+    "UI": 2,
+    "MONET": 2,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 1
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-09",
+   "reviews": 743,
+   "negative": 396,
+   "negative_share": 0.533,
+   "labeled": 353,
+   "reason_counts": {
+    "PERF": 50,
+    "STAB": 47,
+    "CONTENT": 27,
+    "DESIGN": 22,
+    "UI": 3,
+    "MONET": 36,
+    "ONLINE": 4,
+    "SUPPORT": 9,
+    "STORY": 0,
+    "OFFGAME": 104,
+    "OTHER": 51
+   },
+   "patches": [
+    "Patch 1.6.2f1 - Autumn Breeze"
+   ]
+  },
+  {
+   "month": "2026-10",
+   "reviews": 68,
+   "negative": 11,
+   "negative_share": 0.1618,
+   "labeled": 9,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 3,
+    "CONTENT": 1,
+    "DESIGN": 0,
+    "UI": 0,
+    "MONET": 2,
+    "ONLINE": 1,
+    "SUPPORT": 0,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 1
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-11",
+   "reviews": 269,
+   "negative": 62,
+   "negative_share": 0.2305,
+   "labeled": 59,
+   "reason_counts": {
+    "PERF": 11,
+    "STAB": 21,
+    "CONTENT": 3,
+    "DESIGN": 8,
+    "UI": 0,
+    "MONET": 6,
+    "ONLINE": 1,
+    "SUPPORT": 3,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 5
+   },
+   "patches": [
+    "Patch 1.6.4f1 - Seasonal Shift"
+   ]
+  }
+ ],
+ "top_reasons": [
+  "STAB",
+  "PERF",
+  "CONTENT",
+  "DESIGN",
+  "SUPPORT"
+ ],
+ "spikes": [
+  {
+   "week_start": "2024-03-25",
+   "negative": 438,
+   "usual_weekly_negative": 154.5,
+   "negative_share": 0.6738,
+   "reviews": 650,
+   "top_reasons": [
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.2392
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "share": 0.1699
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.1699
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2024-03-18",
+     "title": "BEACH PROPERTIES ASSET PACK & MODDING WAVELET PATCH ANNOUNCEMENT"
+    },
+    {
+     "date": "2024-03-19",
+     "title": "Modding Dev Diary #1: Guest entry - Paradox Mods in Cities: Skylines II"
+    },
+    {
+     "date": "2024-03-20",
+     "title": "Modding Dev Diary #2"
+    },
+    {
+     "date": "2024-03-21",
+     "title": "Modding Dev Diary #3"
+    },
+    {
+     "date": "2024-03-25",
+     "title": "Modding Wavelet - Patch 1.1.0f1"
+    },
+    {
+     "date": "2024-03-25",
+     "title": "Beach Properties Official Release Trailer"
+    }
+   ]
+  },
+  {
+   "week_start": "2024-12-02",
+   "negative": 93,
+   "usual_weekly_negative": 45.0,
+   "negative_share": 0.4819,
+   "reviews": 193,
+   "top_reasons": [
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.4157
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.1685
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "share": 0.1011
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2024-11-25",
+     "title": "General Updates"
+    },
+    {
+     "date": "2024-11-25",
+     "title": "UK Region Pack - Developer Diary"
+    },
+    {
+     "date": "2024-11-25",
+     "title": "UK Region Pack - Official Release Trailer"
+    },
+    {
+     "date": "2024-11-26",
+     "title": "Patch Notes 1.1.12f1"
+    },
+    {
+     "date": "2024-11-26",
+     "title": "Modern Architecture and Urban Promenades"
+    },
+    {
+     "date": "2024-12-02",
+     "title": "Now Available - Urban Promenades & Modern Architecture Creator Packs"
+    }
+   ]
+  },
+  {
+   "week_start": "2025-09-29",
+   "negative": 77,
+   "usual_weekly_negative": 31.5,
+   "negative_share": 0.5066,
+   "reviews": 152,
+   "top_reasons": [
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.5
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.1622
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.1216
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2025-09-29",
+     "title": "Bridges, Bikes, and Bugfixes"
+    },
+    {
+     "date": "2025-09-30",
+     "title": "Netherlands Region Pack"
+    },
+    {
+     "date": "2025-10-03",
+     "title": "Unity Hotfix"
+    }
+   ]
+  },
+  {
+   "week_start": "2025-10-27",
+   "negative": 78,
+   "usual_weekly_negative": 38.0,
+   "negative_share": 0.4875,
+   "reviews": 160,
+   "top_reasons": [
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.3684
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.1579
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "share": 0.1447
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2025-10-21",
+     "title": "Ports - Bridges & Ports Dev Diary #2"
+    },
+    {
+     "date": "2025-10-21",
+     "title": "Ports and Beyond - Feature Highlight #2"
+    },
+    {
+     "date": "2025-10-28",
+     "title": "Bridges & Ports - Status of Mods"
+    },
+    {
+     "date": "2025-10-29",
+     "title": "Bridges & Ports is Available Now!"
+    },
+    {
+     "date": "2025-10-29",
+     "title": "Bridges and Ports - 1.3.6f1 Patch Notes"
+    },
+    {
+     "date": "2025-10-29",
+     "title": "Get your very own Captain Chirper!"
+    }
+   ]
+  },
+  {
+   "week_start": "2026-09-21",
+   "negative": 303,
+   "usual_weekly_negative": 14.0,
+   "negative_share": 0.7809,
+   "reviews": 388,
+   "top_reasons": [
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "share": 0.3925
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "share": 0.1774
+    },
+    {
+     "code": "PERF",
+     "reason": "Performance",
+     "share": 0.1321
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2026-09-15",
+     "title": "Patch 1.6.2f1 - Autumn Breeze"
+    },
+    {
+     "date": "2026-09-15",
+     "title": "Expansion Pass 2 Out NOW!"
+    }
+   ]
+  }
+ ],
+ "weekly": [
+  {
+   "week": "2023-10-23",
+   "reviews": 9413,
+   "negative": 3986
+  },
+  {
+   "week": "2023-10-30",
+   "reviews": 2018,
+   "negative": 775
+  },
+  {
+   "week": "2023-11-06",
+   "reviews": 978,
+   "negative": 404
+  },
+  {
+   "week": "2023-11-13",
+   "reviews": 662,
+   "negative": 315
+  },
+  {
+   "week": "2023-11-20",
+   "reviews": 1417,
+   "negative": 354
+  },
+  {
+   "week": "2023-11-27",
+   "reviews": 533,
+   "negative": 210
+  },
+  {
+   "week": "2023-12-04",
+   "reviews": 274,
+   "negative": 137
+  },
+  {
+   "week": "2023-12-11",
+   "reviews": 307,
+   "negative": 103
+  },
+  {
+   "week": "2023-12-18",
+   "reviews": 296,
+   "negative": 113
+  },
+  {
+   "week": "2023-12-25",
+   "reviews": 335,
+   "negative": 138
+  },
+  {
+   "week": "2024-01-01",
+   "reviews": 304,
+   "negative": 121
+  },
+  {
+   "week": "2024-01-08",
+   "reviews": 266,
+   "negative": 132
+  },
+  {
+   "week": "2024-01-15",
+   "reviews": 267,
+   "negative": 118
+  },
+  {
+   "week": "2024-01-22",
+   "reviews": 210,
+   "negative": 117
+  },
+  {
+   "week": "2024-01-29",
+   "reviews": 226,
+   "negative": 113
+  },
+  {
+   "week": "2024-02-05",
+   "reviews": 300,
+   "negative": 198
+  },
+  {
+   "week": "2024-02-12",
+   "reviews": 199,
+   "negative": 125
+  },
+  {
+   "week": "2024-02-19",
+   "reviews": 284,
+   "negative": 194
+  },
+  {
+   "week": "2024-02-26",
+   "reviews": 242,
+   "negative": 170
+  },
+  {
+   "week": "2024-03-04",
+   "reviews": 188,
+   "negative": 112
+  },
+  {
+   "week": "2024-03-11",
+   "reviews": 239,
+   "negative": 165
+  },
+  {
+   "week": "2024-03-18",
+   "reviews": 219,
+   "negative": 144
+  },
+  {
+   "week": "2024-03-25",
+   "reviews": 650,
+   "negative": 438
+  },
+  {
+   "week": "2024-04-01",
+   "reviews": 258,
+   "negative": 155
+  },
+  {
+   "week": "2024-04-08",
+   "reviews": 185,
+   "negative": 112
+  },
+  {
+   "week": "2024-04-15",
+   "reviews": 245,
+   "negative": 161
+  },
+  {
+   "week": "2024-04-22",
+   "reviews": 206,
+   "negative": 137
+  },
+  {
+   "week": "2024-04-29",
+   "reviews": 136,
+   "negative": 71
+  },
+  {
+   "week": "2024-05-06",
+   "reviews": 157,
+   "negative": 92
+  },
+  {
+   "week": "2024-05-13",
+   "reviews": 142,
+   "negative": 83
+  },
+  {
+   "week": "2024-05-20",
+   "reviews": 133,
+   "negative": 69
+  },
+  {
+   "week": "2024-05-27",
+   "reviews": 83,
+   "negative": 41
+  },
+  {
+   "week": "2024-06-03",
+   "reviews": 95,
+   "negative": 47
+  },
+  {
+   "week": "2024-06-10",
+   "reviews": 88,
+   "negative": 32
+  },
+  {
+   "week": "2024-06-17",
+   "reviews": 104,
+   "negative": 49
+  },
+  {
+   "week": "2024-06-24",
+   "reviews": 213,
+   "negative": 90
+  },
+  {
+   "week": "2024-07-01",
+   "reviews": 245,
+   "negative": 71
+  },
+  {
+   "week": "2024-07-08",
+   "reviews": 170,
+   "negative": 52
+  },
+  {
+   "week": "2024-07-15",
+   "reviews": 121,
+   "negative": 40
+  },
+  {
+   "week": "2024-07-22",
+   "reviews": 94,
+   "negative": 45
+  },
+  {
+   "week": "2024-07-29",
+   "reviews": 111,
+   "negative": 28
+  },
+  {
+   "week": "2024-08-05",
+   "reviews": 125,
+   "negative": 52
+  },
+  {
+   "week": "2024-08-12",
+   "reviews": 97,
+   "negative": 31
+  },
+  {
+   "week": "2024-08-19",
+   "reviews": 96,
+   "negative": 27
+  },
+  {
+   "week": "2024-08-26",
+   "reviews": 80,
+   "negative": 31
+  },
+  {
+   "week": "2024-09-02",
+   "reviews": 108,
+   "negative": 45
+  },
+  {
+   "week": "2024-09-09",
+   "reviews": 75,
+   "negative": 30
+  },
+  {
+   "week": "2024-09-16",
+   "reviews": 121,
+   "negative": 53
+  },
+  {
+   "week": "2024-09-23",
+   "reviews": 85,
+   "negative": 35
+  },
+  {
+   "week": "2024-09-30",
+   "reviews": 77,
+   "negative": 35
+  },
+  {
+   "week": "2024-10-07",
+   "reviews": 97,
+   "negative": 43
+  },
+  {
+   "week": "2024-10-14",
+   "reviews": 77,
+   "negative": 33
+  },
+  {
+   "week": "2024-10-21",
+   "reviews": 103,
+   "negative": 47
+  },
+  {
+   "week": "2024-10-28",
+   "reviews": 119,
+   "negative": 65
+  },
+  {
+   "week": "2024-11-04",
+   "reviews": 102,
+   "negative": 54
+  },
+  {
+   "week": "2024-11-11",
+   "reviews": 90,
+   "negative": 42
+  },
+  {
+   "week": "2024-11-18",
+   "reviews": 89,
+   "negative": 32
+  },
+  {
+   "week": "2024-11-25",
+   "reviews": 169,
+   "negative": 60
+  },
+  {
+   "week": "2024-12-02",
+   "reviews": 193,
+   "negative": 93
+  },
+  {
+   "week": "2024-12-09",
+   "reviews": 242,
+   "negative": 90
+  },
+  {
+   "week": "2024-12-16",
+   "reviews": 163,
+   "negative": 72
+  },
+  {
+   "week": "2024-12-23",
+   "reviews": 185,
+   "negative": 90
+  },
+  {
+   "week": "2024-12-30",
+   "reviews": 147,
+   "negative": 56
+  },
+  {
+   "week": "2025-01-06",
+   "reviews": 122,
+   "negative": 62
+  },
+  {
+   "week": "2025-01-13",
+   "reviews": 132,
+   "negative": 54
+  },
+  {
+   "week": "2025-01-20",
+   "reviews": 125,
+   "negative": 48
+  },
+  {
+   "week": "2025-01-27",
+   "reviews": 101,
+   "negative": 45
+  },
+  {
+   "week": "2025-02-03",
+   "reviews": 100,
+   "negative": 49
+  },
+  {
+   "week": "2025-02-10",
+   "reviews": 96,
+   "negative": 54
+  },
+  {
+   "week": "2025-02-17",
+   "reviews": 104,
+   "negative": 53
+  },
+  {
+   "week": "2025-02-24",
+   "reviews": 127,
+   "negative": 60
+  },
+  {
+   "week": "2025-03-03",
+   "reviews": 120,
+   "negative": 53
+  },
+  {
+   "week": "2025-03-10",
+   "reviews": 118,
+   "negative": 59
+  },
+  {
+   "week": "2025-03-17",
+   "reviews": 187,
+   "negative": 83
+  },
+  {
+   "week": "2025-03-24",
+   "reviews": 176,
+   "negative": 82
+  },
+  {
+   "week": "2025-03-31",
+   "reviews": 124,
+   "negative": 51
+  },
+  {
+   "week": "2025-04-07",
+   "reviews": 102,
+   "negative": 45
+  },
+  {
+   "week": "2025-04-14",
+   "reviews": 80,
+   "negative": 34
+  },
+  {
+   "week": "2025-04-21",
+   "reviews": 83,
+   "negative": 32
+  },
+  {
+   "week": "2025-04-28",
+   "reviews": 93,
+   "negative": 34
+  },
+  {
+   "week": "2025-05-05",
+   "reviews": 100,
+   "negative": 42
+  },
+  {
+   "week": "2025-05-12",
+   "reviews": 101,
+   "negative": 45
+  },
+  {
+   "week": "2025-05-19",
+   "reviews": 99,
+   "negative": 43
+  },
+  {
+   "week": "2025-05-26",
+   "reviews": 104,
+   "negative": 51
+  },
+  {
+   "week": "2025-06-02",
+   "reviews": 91,
+   "negative": 32
+  },
+  {
+   "week": "2025-06-09",
+   "reviews": 146,
+   "negative": 69
+  },
+  {
+   "week": "2025-06-16",
+   "reviews": 108,
+   "negative": 46
+  },
+  {
+   "week": "2025-06-23",
+   "reviews": 100,
+   "negative": 43
+  },
+  {
+   "week": "2025-06-30",
+   "reviews": 114,
+   "negative": 47
+  },
+  {
+   "week": "2025-07-07",
+   "reviews": 96,
+   "negative": 42
+  },
+  {
+   "week": "2025-07-14",
+   "reviews": 95,
+   "negative": 31
+  },
+  {
+   "week": "2025-07-21",
+   "reviews": 72,
+   "negative": 30
+  },
+  {
+   "week": "2025-07-28",
+   "reviews": 88,
+   "negative": 38
+  },
+  {
+   "week": "2025-08-04",
+   "reviews": 74,
+   "negative": 29
+  },
+  {
+   "week": "2025-08-11",
+   "reviews": 83,
+   "negative": 29
+  },
+  {
+   "week": "2025-08-18",
+   "reviews": 75,
+   "negative": 34
+  },
+  {
+   "week": "2025-08-25",
+   "reviews": 75,
+   "negative": 27
+  },
+  {
+   "week": "2025-09-01",
+   "reviews": 78,
+   "negative": 31
+  },
+  {
+   "week": "2025-09-08",
+   "reviews": 63,
+   "negative": 32
+  },
+  {
+   "week": "2025-09-15",
+   "reviews": 87,
+   "negative": 36
+  },
+  {
+   "week": "2025-09-22",
+   "reviews": 84,
+   "negative": 42
+  },
+  {
+   "week": "2025-09-29",
+   "reviews": 152,
+   "negative": 77
+  },
+  {
+   "week": "2025-10-06",
+   "reviews": 88,
+   "negative": 40
+  },
+  {
+   "week": "2025-10-13",
+   "reviews": 82,
+   "negative": 33
+  },
+  {
+   "week": "2025-10-20",
+   "reviews": 87,
+   "negative": 41
+  },
+  {
+   "week": "2025-10-27",
+   "reviews": 160,
+   "negative": 78
+  },
+  {
+   "week": "2025-11-03",
+   "reviews": 115,
+   "negative": 52
+  },
+  {
+   "week": "2025-11-10",
+   "reviews": 126,
+   "negative": 61
+  },
+  {
+   "week": "2025-11-17",
+   "reviews": 171,
+   "negative": 75
+  },
+  {
+   "week": "2025-11-24",
+   "reviews": 125,
+   "negative": 52
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 155,
+   "negative": 64
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 86,
+   "negative": 32
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 74,
+   "negative": 28
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 124,
+   "negative": 40
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 113,
+   "negative": 32
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 94,
+   "negative": 39
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 89,
+   "negative": 26
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 78,
+   "negative": 19
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 80,
+   "negative": 30
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 87,
+   "negative": 23
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 67,
+   "negative": 21
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 151,
+   "negative": 41
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 154,
+   "negative": 40
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 106,
+   "negative": 34
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 86,
+   "negative": 27
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 139,
+   "negative": 22
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 132,
+   "negative": 29
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 109,
+   "negative": 33
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 92,
+   "negative": 19
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 89,
+   "negative": 21
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 85,
+   "negative": 29
+  },
+  {
+   "week": "2026-04-27",
+   "reviews": 67,
+   "negative": 21
+  },
+  {
+   "week": "2026-05-04",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-11",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-18",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 51,
+   "negative": 9
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 87,
+   "negative": 20
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 86,
+   "negative": 17
+  },
+  {
+   "week": "2026-06-15",
+   "reviews": 118,
+   "negative": 26
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 153,
+   "negative": 40
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 115,
+   "negative": 25
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 116,
+   "negative": 27
+  },
+  {
+   "week": "2026-07-13",
+   "reviews": 88,
+   "negative": 18
+  },
+  {
+   "week": "2026-07-20",
+   "reviews": 94,
+   "negative": 24
+  },
+  {
+   "week": "2026-07-27",
+   "reviews": 61,
+   "negative": 11
+  },
+  {
+   "week": "2026-08-03",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-10",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-17",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-24",
+   "reviews": 66,
+   "negative": 17
+  },
+  {
+   "week": "2026-08-31",
+   "reviews": 78,
+   "negative": 21
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 93,
+   "negative": 24
+  },
+  {
+   "week": "2026-09-14",
+   "reviews": 141,
+   "negative": 36
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 388,
+   "negative": 303
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 55,
+   "negative": 16
+  },
+  {
+   "week": "2026-10-05",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-12",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-19",
+   "reviews": 16,
+   "negative": 4
+  },
+  {
+   "week": "2026-10-26",
+   "reviews": 70,
+   "negative": 11
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 60,
+   "negative": 11
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 91,
+   "negative": 26
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 86,
+   "negative": 19
+  },
+  {
+   "week": "2026-11-23",
+   "reviews": 14,
+   "negative": 2
+  }
+ ],
+ "patch_dates": [
+  {
+   "date": "2023-10-26",
+   "title": "Patch Notes for 1.0.11f1"
+  },
+  {
+   "date": "2023-11-02",
+   "title": "Patch Notes for 1.0.12f1 hotfix"
+  },
+  {
+   "date": "2023-11-09",
+   "title": "Patch Notes for 1.0.13f1 hotfix"
+  },
+  {
+   "date": "2023-11-16",
+   "title": "Patch Notes for 1.0.14f1 hotfix"
+  },
+  {
+   "date": "2023-12-01",
+   "title": "Patch Notes for 1.0.15f1 hotfix"
+  },
+  {
+   "date": "2023-12-14",
+   "title": "Winter Treat and Patch Notes"
+  },
+  {
+   "date": "2024-01-31",
+   "title": "Patch Notes for 1.0.19f1 hotfix"
+  },
+  {
+   "date": "2024-03-18",
+   "title": "BEACH PROPERTIES ASSET PACK & MODDING WAVELET PATCH ANNOUNCEMENT"
+  },
+  {
+   "date": "2024-03-25",
+   "title": "Modding Wavelet - Patch 1.1.0f1"
+  },
+  {
+   "date": "2024-04-02",
+   "title": "Patch Notes for patch 1.1.1f1 - hotfix"
+  },
+  {
+   "date": "2024-04-18",
+   "title": "The Way Forward, an update from the team behind Cities: Skylines"
+  },
+  {
+   "date": "2024-04-25",
+   "title": "Patch Notes 1.1.2f1"
+  },
+  {
+   "date": "2024-05-23",
+   "title": "Upcoming Patch & Content"
+  },
+  {
+   "date": "2024-06-20",
+   "title": "An update regarding the Econonomy 2.0 Patch;"
+  },
+  {
+   "date": "2024-06-24",
+   "title": "Patch Notes 1.1.5f1"
+  },
+  {
+   "date": "2024-07-03",
+   "title": "Detailer's Patch #1 - Patch 1.1.6f1"
+  },
+  {
+   "date": "2024-07-04",
+   "title": "Patch Notes 1.1.7f1 - Hotfix"
+  },
+  {
+   "date": "2024-09-03",
+   "title": "Dev Diary: Decorations Patch"
+  },
+  {
+   "date": "2024-09-04",
+   "title": "Patch Notes 1.1.8f1 - Decorations Patch"
+  },
+  {
+   "date": "2024-09-16",
+   "title": "An update to the Release Schedule"
+  },
+  {
+   "date": "2024-10-23",
+   "title": "Patch Notes 1.1.10f1"
+  },
+  {
+   "date": "2024-10-24",
+   "title": "Patch Notes 1.1.11f1"
+  },
+  {
+   "date": "2024-10-31",
+   "title": "Important update for all Cities: Skylines II Players:"
+  },
+  {
+   "date": "2024-11-26",
+   "title": "Patch Notes 1.1.12f1"
+  },
+  {
+   "date": "2024-12-11",
+   "title": "Detailer's Patch #2 - 1.2.0f1 Patch Notes"
+  },
+  {
+   "date": "2024-12-11",
+   "title": "Detailer\u2019s Patch #2 - Developer Diary"
+  },
+  {
+   "date": "2025-01-22",
+   "title": "Hotfix 1.2.3f1"
+  },
+  {
+   "date": "2025-03-18",
+   "title": "Anniversary Patch 1.2.5f1"
+  },
+  {
+   "date": "2025-05-27",
+   "title": "Free Patch and Updated Plans"
+  },
+  {
+   "date": "2025-06-11",
+   "title": "1.3.3f1 Patch Notes"
+  },
+  {
+   "date": "2025-10-03",
+   "title": "Unity Hotfix"
+  },
+  {
+   "date": "2025-10-29",
+   "title": "Bridges and Ports - 1.3.6f1 Patch Notes"
+  },
+  {
+   "date": "2025-11-17",
+   "title": "An Update on Cities: Skylines"
+  },
+  {
+   "date": "2025-11-18",
+   "title": "Bike Patch - Announcement Post"
+  },
+  {
+   "date": "2025-11-19",
+   "title": "Bike Patch 1.4.2f1"
+  },
+  {
+   "date": "2025-12-04",
+   "title": "Asset Mods Patch"
+  },
+  {
+   "date": "2025-12-10",
+   "title": "Hotfix - Patch Notes 1.5.3f1"
+  },
+  {
+   "date": "2026-02-26",
+   "title": "Hotfix - Patch 1.5.5f1"
+  },
+  {
+   "date": "2026-03-12",
+   "title": "City Corner #3 - Anniversary Free Update"
+  },
+  {
+   "date": "2026-04-29",
+   "title": "Spring Cleaning - Patch 1.5.7f1"
+  },
+  {
+   "date": "2026-05-04",
+   "title": "Update for Loading Bug"
+  },
+  {
+   "date": "2026-05-05",
+   "title": "Hotfix - Patch 1.5.8f1"
+  },
+  {
+   "date": "2026-05-27",
+   "title": "Patch 1.5.9f1 - Morning Dew"
+  },
+  {
+   "date": "2026-05-29",
+   "title": "Update to Saving Bug"
+  },
+  {
+   "date": "2026-06-01",
+   "title": "Hotfix - Patch 1.5.10f1"
+  },
+  {
+   "date": "2026-06-22",
+   "title": "Patch 1.6.0f1 - Summer Solstice"
+  },
+  {
+   "date": "2026-09-15",
+   "title": "Patch 1.6.2f1 - Autumn Breeze"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Patch 1.6.4f1 - Seasonal Shift"
+  }
+ ],
+ "paraphrases": {
+  "STAB": [
+   "A $70 price with autosaves off led to lost hours after a GPU crash, and many achievements are broken.",
+   "The player wants to play smoothly, but random crashes make that impossible and they hope fixes come."
+  ],
+  "PERF": [
+   "Good potential, but updates are slow, and the game needs many bug fixes and optimization.",
+   "The screen turns yellow when placing objects, making the game unplayable for this player."
+  ],
+  "CONTENT": [
+   "Feels too similar to the original, with low frame rates, few tools, no mod support, and few props and buildings.",
+   "The player refunded it, finding it unfinished, laggy, missing features, including mods, with no developer communication."
+  ],
+  "DESIGN": [
+   "Compared to the first game, it feels unbalanced, with odd speed differences that left the player disappointed.",
+   "Not recommended: the first game earns money far better, and this one leaves cities in debt even with resources."
+  ],
+  "SUPPORT": [
+   "Mods are delayed in favor of console work, despite promises, and the Steam Workshop was removed for the console version.",
+   "Two years on, crashes persist, the lack of Steam Workshop hurts, and the developers ignore feedback while making assets."
+  ]
+ }
+}

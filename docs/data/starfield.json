@@ -1,0 +1,2430 @@
+{
+ "appid": 1716740,
+ "slug": "starfield",
+ "name": "Starfield",
+ "genre": "Single-player RPG",
+ "release": "2023-09-06",
+ "snapshot": "2026-11-24",
+ "params": {
+  "mature_days": 30,
+  "walk_hours": 1.0,
+  "min_cell": 30
+ },
+ "funnel": {
+  "steam_summary_total": 86202,
+  "api_reported_english_reviews": 85461,
+  "fetched_unique": 85455,
+  "negative": 36050,
+  "negative_3plus_words": 33774,
+  "labeled": 33672,
+  "first_review": "2023-09",
+  "last_review": "2026-11"
+ },
+ "overview": {
+  "reviews": 85455,
+  "negative": 36050,
+  "negative_share": 0.4219,
+  "median_hours_at_negative_review": 46.5,
+  "median_hours_at_positive_review": 50.2
+ },
+ "behaviour": {
+  "negative": {
+   "n": 35971,
+   "walked_away": 18279,
+   "walk_rate": 0.5082,
+   "walk_lo": 0.503,
+   "walk_hi": 0.5133,
+   "kept_10h_rate": 0.3462,
+   "median_hours_after": 0.83,
+   "refunded_rate": 0.0139,
+   "active_now_rate": 0.0143,
+   "shown": true
+  },
+  "positive": {
+   "n": 49297,
+   "walked_away": 3322,
+   "walk_rate": 0.0674,
+   "walk_lo": 0.0652,
+   "walk_hi": 0.0696,
+   "kept_10h_rate": 0.8332,
+   "median_hours_after": 64.52,
+   "refunded_rate": 0.001,
+   "active_now_rate": 0.0497,
+   "shown": true
+  },
+  "negative_unedited": {
+   "n": 27445,
+   "walked_away": 15372,
+   "walk_rate": 0.5601,
+   "walk_lo": 0.5542,
+   "walk_hi": 0.566,
+   "kept_10h_rate": 0.2909,
+   "median_hours_after": 0.15,
+   "refunded_rate": 0.0163,
+   "active_now_rate": 0.0117,
+   "shown": true
+  },
+  "negative_90d": {
+   "n": 35856,
+   "walk_rate": 0.5072
+  },
+  "negative_labeled": {
+   "n": 33597,
+   "walked_away": 16849,
+   "walk_rate": 0.5015,
+   "walk_lo": 0.4962,
+   "walk_hi": 0.5068,
+   "kept_10h_rate": 0.3526,
+   "median_hours_after": 0.97,
+   "refunded_rate": 0.0137,
+   "active_now_rate": 0.0149,
+   "shown": true
+  }
+ },
+ "playtime": [
+  {
+   "bucket": "Under 2 h",
+   "reviews": 2377,
+   "negative": 1872,
+   "negative_share_in_bucket": 0.7875,
+   "share_of_all_negative": 0.0519,
+   "neg_walk_n": 1867,
+   "neg_walk_rate": 0.7156
+  },
+  {
+   "bucket": "2\u201310 h",
+   "reviews": 9381,
+   "negative": 4898,
+   "negative_share_in_bucket": 0.5221,
+   "share_of_all_negative": 0.1359,
+   "neg_walk_n": 4887,
+   "neg_walk_rate": 0.5633
+  },
+  {
+   "bucket": "10\u201350 h",
+   "reviews": 31682,
+   "negative": 12047,
+   "negative_share_in_bucket": 0.3802,
+   "share_of_all_negative": 0.3342,
+   "neg_walk_n": 12026,
+   "neg_walk_rate": 0.517
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "reviews": 32960,
+   "negative": 13999,
+   "negative_share_in_bucket": 0.4247,
+   "share_of_all_negative": 0.3883,
+   "neg_walk_n": 13973,
+   "neg_walk_rate": 0.4935
+  },
+  {
+   "bucket": "200 h+",
+   "reviews": 9055,
+   "negative": 3234,
+   "negative_share_in_bucket": 0.3572,
+   "share_of_all_negative": 0.0897,
+   "neg_walk_n": 3218,
+   "neg_walk_rate": 0.3347
+  }
+ ],
+ "reasons": [
+  {
+   "code": "DESIGN",
+   "reason": "Gameplay & design choices",
+   "walk_rate_adjusted": 0.5513,
+   "n": 7714,
+   "share": 0.2291,
+   "any_mention_share": 0.3651,
+   "median_hours_at_review": 41.6,
+   "walk_n": 7700,
+   "walk_rate": 0.5519,
+   "walk_lo": 0.5408,
+   "walk_hi": 0.563,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1792
+  },
+  {
+   "code": "CONTENT",
+   "reason": "Not enough content",
+   "walk_rate_adjusted": 0.5143,
+   "n": 7634,
+   "share": 0.2267,
+   "any_mention_share": 0.3335,
+   "median_hours_at_review": 62.5,
+   "walk_n": 7621,
+   "walk_rate": 0.5024,
+   "walk_lo": 0.4912,
+   "walk_hi": 0.5136,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1403
+  },
+  {
+   "code": "OTHER",
+   "reason": "No clear reason",
+   "walk_rate_adjusted": 0.5874,
+   "n": 4616,
+   "share": 0.1371,
+   "any_mention_share": 0.1458,
+   "median_hours_at_review": 40.8,
+   "walk_n": 4607,
+   "walk_rate": 0.5937,
+   "walk_lo": 0.5794,
+   "walk_hi": 0.6078,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.0639
+  },
+  {
+   "code": "STAB",
+   "reason": "Crashes & bugs",
+   "walk_rate_adjusted": 0.2838,
+   "n": 3475,
+   "share": 0.1032,
+   "any_mention_share": 0.1469,
+   "median_hours_at_review": 53.0,
+   "walk_n": 3458,
+   "walk_rate": 0.2964,
+   "walk_lo": 0.2814,
+   "walk_hi": 0.3119,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.2023
+  },
+  {
+   "code": "PERF",
+   "reason": "Performance",
+   "walk_rate_adjusted": 0.4367,
+   "n": 3310,
+   "share": 0.0983,
+   "any_mention_share": 0.1555,
+   "median_hours_at_review": 16.1,
+   "walk_n": 3305,
+   "walk_rate": 0.4759,
+   "walk_lo": 0.459,
+   "walk_hi": 0.493,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1444
+  },
+  {
+   "code": "STORY",
+   "reason": "Story & writing",
+   "walk_rate_adjusted": 0.5471,
+   "n": 2467,
+   "share": 0.0733,
+   "any_mention_share": 0.1631,
+   "median_hours_at_review": 62.1,
+   "walk_n": 2462,
+   "walk_rate": 0.5357,
+   "walk_lo": 0.516,
+   "walk_hi": 0.5554,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1471
+  },
+  {
+   "code": "MONET",
+   "reason": "Price & monetization",
+   "walk_rate_adjusted": 0.514,
+   "n": 2350,
+   "share": 0.0698,
+   "any_mention_share": 0.1234,
+   "median_hours_at_review": 59.4,
+   "walk_n": 2348,
+   "walk_rate": 0.5,
+   "walk_lo": 0.4798,
+   "walk_hi": 0.5202,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1668
+  },
+  {
+   "code": "UI",
+   "reason": "Interface & controls",
+   "walk_rate_adjusted": 0.3846,
+   "n": 787,
+   "share": 0.0234,
+   "any_mention_share": 0.0587,
+   "median_hours_at_review": 21.7,
+   "walk_n": 785,
+   "walk_rate": 0.4242,
+   "walk_lo": 0.3901,
+   "walk_hi": 0.4591,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.136
+  },
+  {
+   "code": "OFFGAME",
+   "reason": "Off-game topics",
+   "walk_rate_adjusted": 0.5022,
+   "n": 659,
+   "share": 0.0196,
+   "any_mention_share": 0.0264,
+   "median_hours_at_review": 61.5,
+   "walk_n": 653,
+   "walk_rate": 0.5008,
+   "walk_lo": 0.4625,
+   "walk_hi": 0.539,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1791
+  },
+  {
+   "code": "SUPPORT",
+   "reason": "Post-launch support",
+   "walk_rate_adjusted": 0.4543,
+   "n": 622,
+   "share": 0.0185,
+   "any_mention_share": 0.0501,
+   "median_hours_at_review": 79.2,
+   "walk_n": 620,
+   "walk_rate": 0.429,
+   "walk_lo": 0.3906,
+   "walk_hi": 0.4683,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1961
+  },
+  {
+   "code": "ONLINE",
+   "reason": "Online, accounts & DRM",
+   "walk_rate_adjusted": null,
+   "n": 38,
+   "share": 0.0011,
+   "any_mention_share": 0.0025,
+   "median_hours_at_review": 118.4,
+   "walk_n": 38,
+   "walk_rate": 0.4737,
+   "walk_lo": 0.3248,
+   "walk_hi": 0.6274,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1842
+  }
+ ],
+ "reason_by_playtime": [
+  {
+   "bucket": "Under 2 h",
+   "n": 1755,
+   "shares": {
+    "PERF": 0.3225,
+    "STAB": 0.1863,
+    "CONTENT": 0.0667,
+    "DESIGN": 0.143,
+    "UI": 0.0456,
+    "MONET": 0.0519,
+    "ONLINE": 0.0023,
+    "SUPPORT": 0.0074,
+    "STORY": 0.0365,
+    "OFFGAME": 0.0245,
+    "OTHER": 0.1134
+   }
+  },
+  {
+   "bucket": "2\u201310 h",
+   "n": 4539,
+   "shares": {
+    "PERF": 0.1804,
+    "STAB": 0.1102,
+    "CONTENT": 0.1364,
+    "DESIGN": 0.2439,
+    "UI": 0.0456,
+    "MONET": 0.0573,
+    "ONLINE": 0.0004,
+    "SUPPORT": 0.011,
+    "STORY": 0.0474,
+    "OFFGAME": 0.017,
+    "OTHER": 0.1505
+   }
+  },
+  {
+   "bucket": "10\u201350 h",
+   "n": 11127,
+   "shares": {
+    "PERF": 0.0946,
+    "STAB": 0.0766,
+    "CONTENT": 0.2214,
+    "DESIGN": 0.2688,
+    "UI": 0.0237,
+    "MONET": 0.0629,
+    "ONLINE": 0.0003,
+    "SUPPORT": 0.0138,
+    "STORY": 0.0677,
+    "OFFGAME": 0.0149,
+    "OTHER": 0.1554
+   }
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "n": 13126,
+   "shares": {
+    "PERF": 0.0559,
+    "STAB": 0.0925,
+    "CONTENT": 0.2729,
+    "DESIGN": 0.2155,
+    "UI": 0.0151,
+    "MONET": 0.0786,
+    "ONLINE": 0.0012,
+    "SUPPORT": 0.0222,
+    "STORY": 0.0915,
+    "OFFGAME": 0.0206,
+    "OTHER": 0.134
+   }
+  },
+  {
+   "bucket": "200 h+",
+   "n": 3125,
+   "shares": {
+    "PERF": 0.0442,
+    "STAB": 0.1862,
+    "CONTENT": 0.273,
+    "DESIGN": 0.1718,
+    "UI": 0.0122,
+    "MONET": 0.0854,
+    "ONLINE": 0.0042,
+    "SUPPORT": 0.0365,
+    "STORY": 0.0749,
+    "OFFGAME": 0.033,
+    "OTHER": 0.0787
+   }
+  }
+ ],
+ "said_vs_did": [
+  {
+   "code": "STOPPED",
+   "statement": "Said they quit, refunded or won't return",
+   "n": 5038,
+   "share": 0.1496,
+   "mature_n": 5023,
+   "walk_rate": 0.5783,
+   "kept_10h_rate": 0.297,
+   "active_now_rate": 0.0145
+  },
+  {
+   "code": "WAITING",
+   "statement": "Said they'd come back if it's fixed",
+   "n": 2959,
+   "share": 0.0879,
+   "mature_n": 2958,
+   "walk_rate": 0.3851,
+   "kept_10h_rate": 0.4473,
+   "active_now_rate": 0.0166
+  },
+  {
+   "code": "NONE",
+   "statement": "Said nothing about stopping",
+   "n": 25675,
+   "share": 0.7625,
+   "mature_n": 25616,
+   "walk_rate": 0.4999,
+   "kept_10h_rate": 0.3526,
+   "active_now_rate": 0.0148
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2023-09",
+   "reviews": 42136,
+   "negative": 12743,
+   "negative_share": 0.3024,
+   "labeled": 11989,
+   "reason_counts": {
+    "PERF": 1763,
+    "STAB": 1534,
+    "CONTENT": 2443,
+    "DESIGN": 2624,
+    "UI": 406,
+    "MONET": 638,
+    "ONLINE": 10,
+    "SUPPORT": 177,
+    "STORY": 809,
+    "OFFGAME": 261,
+    "OTHER": 1324
+   },
+   "patches": [
+    "Starfield Updates and Mod Support \u2013 September 13, 2023",
+    "Starfield Updates 1.7.33 \u2013 September 25, 2023"
+   ]
+  },
+  {
+   "month": "2023-10",
+   "reviews": 8547,
+   "negative": 4059,
+   "negative_share": 0.4749,
+   "labeled": 3854,
+   "reason_counts": {
+    "PERF": 352,
+    "STAB": 488,
+    "CONTENT": 932,
+    "DESIGN": 950,
+    "UI": 94,
+    "MONET": 154,
+    "ONLINE": 5,
+    "SUPPORT": 46,
+    "STORY": 344,
+    "OFFGAME": 46,
+    "OTHER": 443
+   },
+   "patches": [
+    "Starfield Updates 1.7.36 \u2013 October 09, 2023"
+   ]
+  },
+  {
+   "month": "2023-11",
+   "reviews": 6539,
+   "negative": 2990,
+   "negative_share": 0.4573,
+   "labeled": 2834,
+   "reason_counts": {
+    "PERF": 219,
+    "STAB": 253,
+    "CONTENT": 815,
+    "DESIGN": 724,
+    "UI": 47,
+    "MONET": 115,
+    "ONLINE": 0,
+    "SUPPORT": 63,
+    "STORY": 219,
+    "OFFGAME": 29,
+    "OTHER": 350
+   },
+   "patches": [
+    "[UPDATED] Starfield Beta Update 1.8.84 Notes - November 8, 2023",
+    "Starfield Update 1.8.86 Notes - November 20, 2023"
+   ]
+  },
+  {
+   "month": "2023-12",
+   "reviews": 5964,
+   "negative": 4223,
+   "negative_share": 0.7081,
+   "labeled": 3969,
+   "reason_counts": {
+    "PERF": 256,
+    "STAB": 261,
+    "CONTENT": 1083,
+    "DESIGN": 1083,
+    "UI": 59,
+    "MONET": 222,
+    "ONLINE": 2,
+    "SUPPORT": 74,
+    "STORY": 324,
+    "OFFGAME": 52,
+    "OTHER": 553
+   },
+   "patches": [
+    "Starfield Beta Update 1.8.87 Notes \u2013 December 1, 2023",
+    "Starfield Update 1.8.88 Notes \u2013 December 11, 2023"
+   ]
+  },
+  {
+   "month": "2024-01",
+   "reviews": 3658,
+   "negative": 2457,
+   "negative_share": 0.6717,
+   "labeled": 2305,
+   "reason_counts": {
+    "PERF": 136,
+    "STAB": 142,
+    "CONTENT": 551,
+    "DESIGN": 595,
+    "UI": 37,
+    "MONET": 121,
+    "ONLINE": 4,
+    "SUPPORT": 30,
+    "STORY": 135,
+    "OFFGAME": 49,
+    "OTHER": 505
+   },
+   "patches": [
+    "Starfield Update 1.9.51 Notes \u2013 January 30, 2024"
+   ]
+  },
+  {
+   "month": "2024-02",
+   "reviews": 1197,
+   "negative": 698,
+   "negative_share": 0.5831,
+   "labeled": 636,
+   "reason_counts": {
+    "PERF": 38,
+    "STAB": 50,
+    "CONTENT": 168,
+    "DESIGN": 148,
+    "UI": 10,
+    "MONET": 35,
+    "ONLINE": 1,
+    "SUPPORT": 13,
+    "STORY": 53,
+    "OFFGAME": 13,
+    "OTHER": 107
+   },
+   "patches": [
+    "Starfield Update 1.9.67 Notes \u2013 February 20, 2024"
+   ]
+  },
+  {
+   "month": "2024-03",
+   "reviews": 1527,
+   "negative": 902,
+   "negative_share": 0.5907,
+   "labeled": 831,
+   "reason_counts": {
+    "PERF": 65,
+    "STAB": 57,
+    "CONTENT": 166,
+    "DESIGN": 222,
+    "UI": 10,
+    "MONET": 50,
+    "ONLINE": 0,
+    "SUPPORT": 22,
+    "STORY": 52,
+    "OFFGAME": 28,
+    "OTHER": 159
+   },
+   "patches": [
+    "Starfield Update 1.10.31 - March 19, 2024"
+   ]
+  },
+  {
+   "month": "2024-04",
+   "reviews": 808,
+   "negative": 463,
+   "negative_share": 0.573,
+   "labeled": 424,
+   "reason_counts": {
+    "PERF": 34,
+    "STAB": 41,
+    "CONTENT": 80,
+    "DESIGN": 123,
+    "UI": 12,
+    "MONET": 22,
+    "ONLINE": 0,
+    "SUPPORT": 4,
+    "STORY": 29,
+    "OFFGAME": 11,
+    "OTHER": 68
+   },
+   "patches": []
+  },
+  {
+   "month": "2024-05",
+   "reviews": 1037,
+   "negative": 528,
+   "negative_share": 0.5092,
+   "labeled": 487,
+   "reason_counts": {
+    "PERF": 29,
+    "STAB": 45,
+    "CONTENT": 113,
+    "DESIGN": 109,
+    "UI": 7,
+    "MONET": 34,
+    "ONLINE": 1,
+    "SUPPORT": 14,
+    "STORY": 40,
+    "OFFGAME": 6,
+    "OTHER": 89
+   },
+   "patches": [
+    "Starfield Update 1.11.36 - May 15, 2024",
+    "New Features & Improvements in Starfield\u2019s Latest Major Update"
+   ]
+  },
+  {
+   "month": "2024-06",
+   "reviews": 2262,
+   "negative": 1675,
+   "negative_share": 0.7405,
+   "labeled": 1536,
+   "reason_counts": {
+    "PERF": 63,
+    "STAB": 70,
+    "CONTENT": 270,
+    "DESIGN": 178,
+    "UI": 15,
+    "MONET": 626,
+    "ONLINE": 0,
+    "SUPPORT": 44,
+    "STORY": 52,
+    "OFFGAME": 34,
+    "OTHER": 184
+   },
+   "patches": [
+    "First Starfield Shattered Space Trailer & Highlights from the June Update",
+    "Starfield Update 1.12.30 - June 9, 2024"
+   ]
+  },
+  {
+   "month": "2024-07",
+   "reviews": 775,
+   "negative": 386,
+   "negative_share": 0.4981,
+   "labeled": 360,
+   "reason_counts": {
+    "PERF": 29,
+    "STAB": 39,
+    "CONTENT": 81,
+    "DESIGN": 60,
+    "UI": 5,
+    "MONET": 52,
+    "ONLINE": 0,
+    "SUPPORT": 10,
+    "STORY": 16,
+    "OFFGAME": 9,
+    "OTHER": 59
+   },
+   "patches": []
+  },
+  {
+   "month": "2024-08",
+   "reviews": 839,
+   "negative": 383,
+   "negative_share": 0.4565,
+   "labeled": 342,
+   "reason_counts": {
+    "PERF": 29,
+    "STAB": 46,
+    "CONTENT": 74,
+    "DESIGN": 61,
+    "UI": 6,
+    "MONET": 23,
+    "ONLINE": 0,
+    "SUPPORT": 9,
+    "STORY": 26,
+    "OFFGAME": 5,
+    "OTHER": 63
+   },
+   "patches": [
+    "Starfield\u2019s REV-8 Land Vehicle Drops in Latest Update"
+   ]
+  },
+  {
+   "month": "2024-09",
+   "reviews": 779,
+   "negative": 319,
+   "negative_share": 0.4095,
+   "labeled": 284,
+   "reason_counts": {
+    "PERF": 12,
+    "STAB": 37,
+    "CONTENT": 64,
+    "DESIGN": 65,
+    "UI": 7,
+    "MONET": 20,
+    "ONLINE": 2,
+    "SUPPORT": 6,
+    "STORY": 17,
+    "OFFGAME": 2,
+    "OTHER": 52
+   },
+   "patches": [
+    "Starfield Update 1.14.70 \u2013 September 30, 2024"
+   ]
+  },
+  {
+   "month": "2024-10",
+   "reviews": 1058,
+   "negative": 613,
+   "negative_share": 0.5794,
+   "labeled": 562,
+   "reason_counts": {
+    "PERF": 36,
+    "STAB": 49,
+    "CONTENT": 126,
+    "DESIGN": 114,
+    "UI": 3,
+    "MONET": 48,
+    "ONLINE": 1,
+    "SUPPORT": 17,
+    "STORY": 58,
+    "OFFGAME": 16,
+    "OTHER": 94
+   },
+   "patches": []
+  },
+  {
+   "month": "2024-11",
+   "reviews": 469,
+   "negative": 226,
+   "negative_share": 0.4819,
+   "labeled": 209,
+   "reason_counts": {
+    "PERF": 20,
+    "STAB": 17,
+    "CONTENT": 36,
+    "DESIGN": 53,
+    "UI": 5,
+    "MONET": 10,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 21,
+    "OFFGAME": 3,
+    "OTHER": 44
+   },
+   "patches": [
+    "Starfield Update 1.14.74 \u2013 November 19, 2024",
+    "Starfield\u2019s November Update is now live"
+   ]
+  },
+  {
+   "month": "2024-12",
+   "reviews": 534,
+   "negative": 222,
+   "negative_share": 0.4157,
+   "labeled": 191,
+   "reason_counts": {
+    "PERF": 23,
+    "STAB": 21,
+    "CONTENT": 40,
+    "DESIGN": 42,
+    "UI": 3,
+    "MONET": 13,
+    "ONLINE": 2,
+    "SUPPORT": 3,
+    "STORY": 19,
+    "OFFGAME": 4,
+    "OTHER": 21
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-01",
+   "reviews": 454,
+   "negative": 201,
+   "negative_share": 0.4427,
+   "labeled": 138,
+   "reason_counts": {
+    "PERF": 9,
+    "STAB": 15,
+    "CONTENT": 26,
+    "DESIGN": 31,
+    "UI": 4,
+    "MONET": 6,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 17,
+    "OFFGAME": 5,
+    "OTHER": 23
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-02",
+   "reviews": 311,
+   "negative": 145,
+   "negative_share": 0.4662,
+   "labeled": 132,
+   "reason_counts": {
+    "PERF": 16,
+    "STAB": 15,
+    "CONTENT": 32,
+    "DESIGN": 21,
+    "UI": 1,
+    "MONET": 6,
+    "ONLINE": 1,
+    "SUPPORT": 3,
+    "STORY": 11,
+    "OFFGAME": 4,
+    "OTHER": 22
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-03",
+   "reviews": 354,
+   "negative": 167,
+   "negative_share": 0.4718,
+   "labeled": 149,
+   "reason_counts": {
+    "PERF": 12,
+    "STAB": 14,
+    "CONTENT": 32,
+    "DESIGN": 29,
+    "UI": 4,
+    "MONET": 10,
+    "ONLINE": 1,
+    "SUPPORT": 1,
+    "STORY": 17,
+    "OFFGAME": 2,
+    "OTHER": 27
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-04",
+   "reviews": 314,
+   "negative": 138,
+   "negative_share": 0.4395,
+   "labeled": 122,
+   "reason_counts": {
+    "PERF": 6,
+    "STAB": 11,
+    "CONTENT": 30,
+    "DESIGN": 25,
+    "UI": 1,
+    "MONET": 6,
+    "ONLINE": 1,
+    "SUPPORT": 1,
+    "STORY": 11,
+    "OFFGAME": 6,
+    "OTHER": 24
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-05",
+   "reviews": 353,
+   "negative": 147,
+   "negative_share": 0.4164,
+   "labeled": 136,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 17,
+    "CONTENT": 27,
+    "DESIGN": 24,
+    "UI": 1,
+    "MONET": 11,
+    "ONLINE": 0,
+    "SUPPORT": 8,
+    "STORY": 14,
+    "OFFGAME": 1,
+    "OTHER": 26
+   },
+   "patches": [
+    "Starfield Update 1.15.216 \u2013 May 22, 2025",
+    "Starfield\u2019s May Update is Now Live"
+   ]
+  },
+  {
+   "month": "2025-06",
+   "reviews": 313,
+   "negative": 147,
+   "negative_share": 0.4696,
+   "labeled": 132,
+   "reason_counts": {
+    "PERF": 14,
+    "STAB": 11,
+    "CONTENT": 32,
+    "DESIGN": 16,
+    "UI": 3,
+    "MONET": 18,
+    "ONLINE": 0,
+    "SUPPORT": 5,
+    "STORY": 8,
+    "OFFGAME": 0,
+    "OTHER": 25
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-07",
+   "reviews": 390,
+   "negative": 167,
+   "negative_share": 0.4282,
+   "labeled": 156,
+   "reason_counts": {
+    "PERF": 5,
+    "STAB": 16,
+    "CONTENT": 37,
+    "DESIGN": 29,
+    "UI": 7,
+    "MONET": 9,
+    "ONLINE": 0,
+    "SUPPORT": 8,
+    "STORY": 20,
+    "OFFGAME": 2,
+    "OTHER": 23
+   },
+   "patches": [
+    "Starfield Update 1.15.222 - August 5, 2025"
+   ]
+  },
+  {
+   "month": "2025-08",
+   "reviews": 410,
+   "negative": 174,
+   "negative_share": 0.4244,
+   "labeled": 162,
+   "reason_counts": {
+    "PERF": 11,
+    "STAB": 15,
+    "CONTENT": 30,
+    "DESIGN": 39,
+    "UI": 3,
+    "MONET": 6,
+    "ONLINE": 0,
+    "SUPPORT": 3,
+    "STORY": 22,
+    "OFFGAME": 0,
+    "OTHER": 33
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-09",
+   "reviews": 366,
+   "negative": 204,
+   "negative_share": 0.5574,
+   "labeled": 186,
+   "reason_counts": {
+    "PERF": 5,
+    "STAB": 15,
+    "CONTENT": 36,
+    "DESIGN": 38,
+    "UI": 2,
+    "MONET": 5,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 10,
+    "OFFGAME": 43,
+    "OTHER": 30
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-10",
+   "reviews": 268,
+   "negative": 125,
+   "negative_share": 0.4664,
+   "labeled": 113,
+   "reason_counts": {
+    "PERF": 10,
+    "STAB": 9,
+    "CONTENT": 42,
+    "DESIGN": 15,
+    "UI": 1,
+    "MONET": 5,
+    "ONLINE": 0,
+    "SUPPORT": 4,
+    "STORY": 8,
+    "OFFGAME": 1,
+    "OTHER": 18
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-11",
+   "reviews": 252,
+   "negative": 120,
+   "negative_share": 0.4762,
+   "labeled": 105,
+   "reason_counts": {
+    "PERF": 10,
+    "STAB": 6,
+    "CONTENT": 27,
+    "DESIGN": 14,
+    "UI": 2,
+    "MONET": 10,
+    "ONLINE": 0,
+    "SUPPORT": 4,
+    "STORY": 9,
+    "OFFGAME": 1,
+    "OTHER": 22
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-12",
+   "reviews": 308,
+   "negative": 145,
+   "negative_share": 0.4708,
+   "labeled": 133,
+   "reason_counts": {
+    "PERF": 16,
+    "STAB": 10,
+    "CONTENT": 26,
+    "DESIGN": 29,
+    "UI": 2,
+    "MONET": 5,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 14,
+    "OFFGAME": 2,
+    "OTHER": 27
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-01",
+   "reviews": 394,
+   "negative": 187,
+   "negative_share": 0.4746,
+   "labeled": 170,
+   "reason_counts": {
+    "PERF": 9,
+    "STAB": 14,
+    "CONTENT": 31,
+    "DESIGN": 42,
+    "UI": 4,
+    "MONET": 9,
+    "ONLINE": 1,
+    "SUPPORT": 10,
+    "STORY": 14,
+    "OFFGAME": 1,
+    "OTHER": 35
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-02",
+   "reviews": 255,
+   "negative": 110,
+   "negative_share": 0.4314,
+   "labeled": 102,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 13,
+    "CONTENT": 27,
+    "DESIGN": 19,
+    "UI": 0,
+    "MONET": 5,
+    "ONLINE": 1,
+    "SUPPORT": 3,
+    "STORY": 11,
+    "OFFGAME": 2,
+    "OTHER": 14
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-03",
+   "reviews": 372,
+   "negative": 114,
+   "negative_share": 0.3065,
+   "labeled": 109,
+   "reason_counts": {
+    "PERF": 8,
+    "STAB": 13,
+    "CONTENT": 19,
+    "DESIGN": 28,
+    "UI": 3,
+    "MONET": 7,
+    "ONLINE": 0,
+    "SUPPORT": 3,
+    "STORY": 9,
+    "OFFGAME": 5,
+    "OTHER": 14
+   },
+   "patches": [
+    "Everything Coming in Starfield\u2019s Free Lanes Update & Terran Armada DLC"
+   ]
+  },
+  {
+   "month": "2026-04",
+   "reviews": 1044,
+   "negative": 384,
+   "negative_share": 0.3678,
+   "labeled": 355,
+   "reason_counts": {
+    "PERF": 27,
+    "STAB": 65,
+    "CONTENT": 54,
+    "DESIGN": 78,
+    "UI": 10,
+    "MONET": 23,
+    "ONLINE": 2,
+    "SUPPORT": 13,
+    "STORY": 17,
+    "OFFGAME": 4,
+    "OTHER": 62
+   },
+   "patches": [
+    "Everything in Starfield\u2019s Free Lanes Update & Terran Armada DLC",
+    "Starfield Update 1.16.236 \u2013 April 7, 2026"
+   ]
+  },
+  {
+   "month": "2026-05",
+   "reviews": 32,
+   "negative": 14,
+   "negative_share": 0.4375,
+   "labeled": 14,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 5,
+    "CONTENT": 0,
+    "DESIGN": 4,
+    "UI": 0,
+    "MONET": 1,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 1,
+    "OFFGAME": 0,
+    "OTHER": 1
+   },
+   "patches": [
+    "Starfield Update 1.16.242 \u2013 May 14, 2026"
+   ]
+  },
+  {
+   "month": "2026-06",
+   "reviews": 351,
+   "negative": 158,
+   "negative_share": 0.4501,
+   "labeled": 150,
+   "reason_counts": {
+    "PERF": 13,
+    "STAB": 19,
+    "CONTENT": 30,
+    "DESIGN": 21,
+    "UI": 5,
+    "MONET": 14,
+    "ONLINE": 1,
+    "SUPPORT": 6,
+    "STORY": 14,
+    "OFFGAME": 2,
+    "OTHER": 25
+   },
+   "patches": [
+    "Starfield Update 1.16.244 \u2013 June 11, 2026"
+   ]
+  },
+  {
+   "month": "2026-07",
+   "reviews": 320,
+   "negative": 122,
+   "negative_share": 0.3812,
+   "labeled": 115,
+   "reason_counts": {
+    "PERF": 8,
+    "STAB": 15,
+    "CONTENT": 16,
+    "DESIGN": 30,
+    "UI": 3,
+    "MONET": 3,
+    "ONLINE": 0,
+    "SUPPORT": 3,
+    "STORY": 12,
+    "OFFGAME": 3,
+    "OTHER": 22
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-08",
+   "reviews": 61,
+   "negative": 26,
+   "negative_share": 0.4262,
+   "labeled": 26,
+   "reason_counts": {
+    "PERF": 2,
+    "STAB": 2,
+    "CONTENT": 6,
+    "DESIGN": 4,
+    "UI": 0,
+    "MONET": 2,
+    "ONLINE": 2,
+    "SUPPORT": 0,
+    "STORY": 2,
+    "OFFGAME": 0,
+    "OTHER": 6
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-09",
+   "reviews": 217,
+   "negative": 89,
+   "negative_share": 0.4101,
+   "labeled": 79,
+   "reason_counts": {
+    "PERF": 5,
+    "STAB": 8,
+    "CONTENT": 19,
+    "DESIGN": 13,
+    "UI": 3,
+    "MONET": 4,
+    "ONLINE": 0,
+    "SUPPORT": 6,
+    "STORY": 7,
+    "OFFGAME": 1,
+    "OTHER": 13
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-10",
+   "reviews": 42,
+   "negative": 17,
+   "negative_share": 0.4048,
+   "labeled": 17,
+   "reason_counts": {
+    "PERF": 2,
+    "STAB": 4,
+    "CONTENT": 4,
+    "DESIGN": 2,
+    "UI": 2,
+    "MONET": 0,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 1,
+    "OFFGAME": 1,
+    "OTHER": 1
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-11",
+   "reviews": 145,
+   "negative": 62,
+   "negative_share": 0.4276,
+   "labeled": 58,
+   "reason_counts": {
+    "PERF": 3,
+    "STAB": 13,
+    "CONTENT": 9,
+    "DESIGN": 12,
+    "UI": 0,
+    "MONET": 2,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 4,
+    "OFFGAME": 5,
+    "OTHER": 8
+   },
+   "patches": []
+  }
+ ],
+ "top_reasons": [
+  "DESIGN",
+  "CONTENT",
+  "STAB",
+  "PERF",
+  "STORY"
+ ],
+ "spikes": [
+  {
+   "week_start": "2023-12-25",
+   "negative": 1540,
+   "usual_weekly_negative": 673.0,
+   "negative_share": 0.7133,
+   "reviews": 2159,
+   "top_reasons": [
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.2878
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.2584
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "share": 0.1625
+    }
+   ],
+   "official_posts": []
+  },
+  {
+   "week_start": "2024-06-10",
+   "negative": 966,
+   "usual_weekly_negative": 107.0,
+   "negative_share": 0.818,
+   "reviews": 1181,
+   "top_reasons": [
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "share": 0.4816
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.1475
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.1117
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2024-06-09",
+     "title": "First Starfield Shattered Space Trailer & Highlights from the June Update"
+    },
+    {
+     "date": "2024-06-09",
+     "title": "Starfield Update 1.12.30 - June 9, 2024"
+    }
+   ]
+  },
+  {
+   "week_start": "2024-09-30",
+   "negative": 289,
+   "usual_weekly_negative": 82.0,
+   "negative_share": 0.5656,
+   "reviews": 511,
+   "top_reasons": [
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.2119
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.1896
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "share": 0.1636
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2024-09-23",
+     "title": "Starfield: The Settled Systems - All Must Serve"
+    },
+    {
+     "date": "2024-09-27",
+     "title": "Prepare for the Launch of Shattered Space"
+    },
+    {
+     "date": "2024-09-30",
+     "title": "Starfield\u2019s Shattered Space Expansion Is Available Now"
+    }
+   ]
+  },
+  {
+   "week_start": "2025-09-15",
+   "negative": 101,
+   "usual_weekly_negative": 38.0,
+   "negative_share": 0.7481,
+   "reviews": 135,
+   "top_reasons": [
+    {
+     "code": "OFFGAME",
+     "reason": "Off-game topics",
+     "share": 0.4494
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "share": 0.1798
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.1685
+    }
+   ],
+   "official_posts": []
+  },
+  {
+   "week_start": "2026-04-06",
+   "negative": 161,
+   "usual_weekly_negative": 24.5,
+   "negative_share": 0.3347,
+   "reviews": 481,
+   "top_reasons": [
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.2657
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.2028
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "share": 0.1538
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2026-04-02",
+     "title": "Starfield Colony War Action Figures Coming Soon!"
+    },
+    {
+     "date": "2026-04-06",
+     "title": "Starfield\u2019s Terran Armada DLC Animated Anthology Episode"
+    },
+    {
+     "date": "2026-04-07",
+     "title": "Everything in Starfield\u2019s Free Lanes Update & Terran Armada DLC"
+    },
+    {
+     "date": "2026-04-07",
+     "title": "Starfield Update 1.16.236 \u2013 April 7, 2026"
+    }
+   ]
+  }
+ ],
+ "weekly": [
+  {
+   "week": "2023-09-04",
+   "reviews": 23280,
+   "negative": 6827
+  },
+  {
+   "week": "2023-09-11",
+   "reviews": 9712,
+   "negative": 2932
+  },
+  {
+   "week": "2023-09-18",
+   "reviews": 4934,
+   "negative": 1678
+  },
+  {
+   "week": "2023-09-25",
+   "reviews": 4735,
+   "negative": 1513
+  },
+  {
+   "week": "2023-10-02",
+   "reviews": 2347,
+   "negative": 1031
+  },
+  {
+   "week": "2023-10-09",
+   "reviews": 2297,
+   "negative": 1111
+  },
+  {
+   "week": "2023-10-16",
+   "reviews": 1692,
+   "negative": 855
+  },
+  {
+   "week": "2023-10-23",
+   "reviews": 1360,
+   "negative": 691
+  },
+  {
+   "week": "2023-10-30",
+   "reviews": 1035,
+   "negative": 525
+  },
+  {
+   "week": "2023-11-06",
+   "reviews": 851,
+   "negative": 441
+  },
+  {
+   "week": "2023-11-13",
+   "reviews": 835,
+   "negative": 462
+  },
+  {
+   "week": "2023-11-20",
+   "reviews": 2777,
+   "negative": 842
+  },
+  {
+   "week": "2023-11-27",
+   "reviews": 2087,
+   "negative": 1379
+  },
+  {
+   "week": "2023-12-04",
+   "reviews": 1142,
+   "negative": 813
+  },
+  {
+   "week": "2023-12-11",
+   "reviews": 1162,
+   "negative": 842
+  },
+  {
+   "week": "2023-12-18",
+   "reviews": 781,
+   "negative": 533
+  },
+  {
+   "week": "2023-12-25",
+   "reviews": 2159,
+   "negative": 1540
+  },
+  {
+   "week": "2024-01-01",
+   "reviews": 1858,
+   "negative": 1397
+  },
+  {
+   "week": "2024-01-08",
+   "reviews": 637,
+   "negative": 398
+  },
+  {
+   "week": "2024-01-15",
+   "reviews": 550,
+   "negative": 310
+  },
+  {
+   "week": "2024-01-22",
+   "reviews": 400,
+   "negative": 245
+  },
+  {
+   "week": "2024-01-29",
+   "reviews": 463,
+   "negative": 258
+  },
+  {
+   "week": "2024-02-05",
+   "reviews": 305,
+   "negative": 162
+  },
+  {
+   "week": "2024-02-12",
+   "reviews": 272,
+   "negative": 164
+  },
+  {
+   "week": "2024-02-19",
+   "reviews": 270,
+   "negative": 160
+  },
+  {
+   "week": "2024-02-26",
+   "reviews": 221,
+   "negative": 136
+  },
+  {
+   "week": "2024-03-04",
+   "reviews": 315,
+   "negative": 195
+  },
+  {
+   "week": "2024-03-11",
+   "reviews": 394,
+   "negative": 260
+  },
+  {
+   "week": "2024-03-18",
+   "reviews": 400,
+   "negative": 219
+  },
+  {
+   "week": "2024-03-25",
+   "reviews": 297,
+   "negative": 153
+  },
+  {
+   "week": "2024-04-01",
+   "reviews": 208,
+   "negative": 116
+  },
+  {
+   "week": "2024-04-08",
+   "reviews": 192,
+   "negative": 110
+  },
+  {
+   "week": "2024-04-15",
+   "reviews": 189,
+   "negative": 113
+  },
+  {
+   "week": "2024-04-22",
+   "reviews": 171,
+   "negative": 101
+  },
+  {
+   "week": "2024-04-29",
+   "reviews": 278,
+   "negative": 147
+  },
+  {
+   "week": "2024-05-06",
+   "reviews": 223,
+   "negative": 114
+  },
+  {
+   "week": "2024-05-13",
+   "reviews": 297,
+   "negative": 138
+  },
+  {
+   "week": "2024-05-20",
+   "reviews": 187,
+   "negative": 101
+  },
+  {
+   "week": "2024-05-27",
+   "reviews": 139,
+   "negative": 71
+  },
+  {
+   "week": "2024-06-03",
+   "reviews": 192,
+   "negative": 84
+  },
+  {
+   "week": "2024-06-10",
+   "reviews": 1181,
+   "negative": 966
+  },
+  {
+   "week": "2024-06-17",
+   "reviews": 579,
+   "negative": 435
+  },
+  {
+   "week": "2024-06-24",
+   "reviews": 271,
+   "negative": 170
+  },
+  {
+   "week": "2024-07-01",
+   "reviews": 256,
+   "negative": 124
+  },
+  {
+   "week": "2024-07-08",
+   "reviews": 189,
+   "negative": 108
+  },
+  {
+   "week": "2024-07-15",
+   "reviews": 159,
+   "negative": 74
+  },
+  {
+   "week": "2024-07-22",
+   "reviews": 120,
+   "negative": 58
+  },
+  {
+   "week": "2024-07-29",
+   "reviews": 117,
+   "negative": 54
+  },
+  {
+   "week": "2024-08-05",
+   "reviews": 150,
+   "negative": 87
+  },
+  {
+   "week": "2024-08-12",
+   "reviews": 178,
+   "negative": 82
+  },
+  {
+   "week": "2024-08-19",
+   "reviews": 264,
+   "negative": 102
+  },
+  {
+   "week": "2024-08-26",
+   "reviews": 216,
+   "negative": 92
+  },
+  {
+   "week": "2024-09-02",
+   "reviews": 176,
+   "negative": 82
+  },
+  {
+   "week": "2024-09-09",
+   "reviews": 155,
+   "negative": 63
+  },
+  {
+   "week": "2024-09-16",
+   "reviews": 164,
+   "negative": 65
+  },
+  {
+   "week": "2024-09-23",
+   "reviews": 165,
+   "negative": 68
+  },
+  {
+   "week": "2024-09-30",
+   "reviews": 511,
+   "negative": 289
+  },
+  {
+   "week": "2024-10-07",
+   "reviews": 252,
+   "negative": 157
+  },
+  {
+   "week": "2024-10-14",
+   "reviews": 162,
+   "negative": 74
+  },
+  {
+   "week": "2024-10-21",
+   "reviews": 153,
+   "negative": 88
+  },
+  {
+   "week": "2024-10-28",
+   "reviews": 109,
+   "negative": 56
+  },
+  {
+   "week": "2024-11-04",
+   "reviews": 93,
+   "negative": 50
+  },
+  {
+   "week": "2024-11-11",
+   "reviews": 71,
+   "negative": 29
+  },
+  {
+   "week": "2024-11-18",
+   "reviews": 109,
+   "negative": 56
+  },
+  {
+   "week": "2024-11-25",
+   "reviews": 185,
+   "negative": 81
+  },
+  {
+   "week": "2024-12-02",
+   "reviews": 141,
+   "negative": 49
+  },
+  {
+   "week": "2024-12-09",
+   "reviews": 90,
+   "negative": 36
+  },
+  {
+   "week": "2024-12-16",
+   "reviews": 102,
+   "negative": 46
+  },
+  {
+   "week": "2024-12-23",
+   "reviews": 121,
+   "negative": 57
+  },
+  {
+   "week": "2024-12-30",
+   "reviews": 139,
+   "negative": 59
+  },
+  {
+   "week": "2025-01-06",
+   "reviews": 127,
+   "negative": 52
+  },
+  {
+   "week": "2025-01-13",
+   "reviews": 98,
+   "negative": 47
+  },
+  {
+   "week": "2025-01-20",
+   "reviews": 88,
+   "negative": 43
+  },
+  {
+   "week": "2025-01-27",
+   "reviews": 82,
+   "negative": 39
+  },
+  {
+   "week": "2025-02-03",
+   "reviews": 72,
+   "negative": 41
+  },
+  {
+   "week": "2025-02-10",
+   "reviews": 71,
+   "negative": 35
+  },
+  {
+   "week": "2025-02-17",
+   "reviews": 81,
+   "negative": 33
+  },
+  {
+   "week": "2025-02-24",
+   "reviews": 81,
+   "negative": 36
+  },
+  {
+   "week": "2025-03-03",
+   "reviews": 69,
+   "negative": 32
+  },
+  {
+   "week": "2025-03-10",
+   "reviews": 64,
+   "negative": 39
+  },
+  {
+   "week": "2025-03-17",
+   "reviews": 97,
+   "negative": 34
+  },
+  {
+   "week": "2025-03-24",
+   "reviews": 83,
+   "negative": 38
+  },
+  {
+   "week": "2025-03-31",
+   "reviews": 74,
+   "negative": 27
+  },
+  {
+   "week": "2025-04-07",
+   "reviews": 72,
+   "negative": 33
+  },
+  {
+   "week": "2025-04-14",
+   "reviews": 70,
+   "negative": 31
+  },
+  {
+   "week": "2025-04-21",
+   "reviews": 79,
+   "negative": 39
+  },
+  {
+   "week": "2025-04-28",
+   "reviews": 69,
+   "negative": 26
+  },
+  {
+   "week": "2025-05-05",
+   "reviews": 89,
+   "negative": 46
+  },
+  {
+   "week": "2025-05-12",
+   "reviews": 56,
+   "negative": 22
+  },
+  {
+   "week": "2025-05-19",
+   "reviews": 104,
+   "negative": 40
+  },
+  {
+   "week": "2025-05-26",
+   "reviews": 75,
+   "negative": 32
+  },
+  {
+   "week": "2025-06-02",
+   "reviews": 84,
+   "negative": 43
+  },
+  {
+   "week": "2025-06-09",
+   "reviews": 68,
+   "negative": 34
+  },
+  {
+   "week": "2025-06-16",
+   "reviews": 73,
+   "negative": 32
+  },
+  {
+   "week": "2025-06-23",
+   "reviews": 69,
+   "negative": 29
+  },
+  {
+   "week": "2025-06-30",
+   "reviews": 80,
+   "negative": 30
+  },
+  {
+   "week": "2025-07-07",
+   "reviews": 90,
+   "negative": 35
+  },
+  {
+   "week": "2025-07-14",
+   "reviews": 87,
+   "negative": 34
+  },
+  {
+   "week": "2025-07-21",
+   "reviews": 81,
+   "negative": 43
+  },
+  {
+   "week": "2025-07-28",
+   "reviews": 113,
+   "negative": 52
+  },
+  {
+   "week": "2025-08-04",
+   "reviews": 94,
+   "negative": 37
+  },
+  {
+   "week": "2025-08-11",
+   "reviews": 101,
+   "negative": 45
+  },
+  {
+   "week": "2025-08-18",
+   "reviews": 92,
+   "negative": 37
+  },
+  {
+   "week": "2025-08-25",
+   "reviews": 73,
+   "negative": 33
+  },
+  {
+   "week": "2025-09-01",
+   "reviews": 73,
+   "negative": 39
+  },
+  {
+   "week": "2025-09-08",
+   "reviews": 77,
+   "negative": 35
+  },
+  {
+   "week": "2025-09-15",
+   "reviews": 135,
+   "negative": 101
+  },
+  {
+   "week": "2025-09-22",
+   "reviews": 64,
+   "negative": 23
+  },
+  {
+   "week": "2025-09-29",
+   "reviews": 65,
+   "negative": 21
+  },
+  {
+   "week": "2025-10-06",
+   "reviews": 59,
+   "negative": 30
+  },
+  {
+   "week": "2025-10-13",
+   "reviews": 49,
+   "negative": 25
+  },
+  {
+   "week": "2025-10-20",
+   "reviews": 79,
+   "negative": 39
+  },
+  {
+   "week": "2025-10-27",
+   "reviews": 50,
+   "negative": 26
+  },
+  {
+   "week": "2025-11-03",
+   "reviews": 56,
+   "negative": 28
+  },
+  {
+   "week": "2025-11-10",
+   "reviews": 71,
+   "negative": 33
+  },
+  {
+   "week": "2025-11-17",
+   "reviews": 46,
+   "negative": 18
+  },
+  {
+   "week": "2025-11-24",
+   "reviews": 62,
+   "negative": 31
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 68,
+   "negative": 27
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 65,
+   "negative": 42
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 63,
+   "negative": 30
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 74,
+   "negative": 32
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 103,
+   "negative": 40
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 87,
+   "negative": 38
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 89,
+   "negative": 46
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 91,
+   "negative": 46
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 75,
+   "negative": 37
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 49,
+   "negative": 16
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 54,
+   "negative": 22
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 81,
+   "negative": 43
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 78,
+   "negative": 27
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 37,
+   "negative": 12
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 54,
+   "negative": 19
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 129,
+   "negative": 49
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 110,
+   "negative": 22
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 119,
+   "negative": 51
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 481,
+   "negative": 161
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 237,
+   "negative": 89
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 164,
+   "negative": 69
+  },
+  {
+   "week": "2026-04-27",
+   "reviews": 65,
+   "negative": 22
+  },
+  {
+   "week": "2026-05-04",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-11",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-18",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 32,
+   "negative": 14
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 76,
+   "negative": 38
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 78,
+   "negative": 38
+  },
+  {
+   "week": "2026-06-15",
+   "reviews": 73,
+   "negative": 29
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 108,
+   "negative": 47
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 83,
+   "negative": 31
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 74,
+   "negative": 23
+  },
+  {
+   "week": "2026-07-13",
+   "reviews": 74,
+   "negative": 33
+  },
+  {
+   "week": "2026-07-20",
+   "reviews": 67,
+   "negative": 25
+  },
+  {
+   "week": "2026-07-27",
+   "reviews": 38,
+   "negative": 16
+  },
+  {
+   "week": "2026-08-03",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-10",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-17",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-24",
+   "reviews": 55,
+   "negative": 23
+  },
+  {
+   "week": "2026-08-31",
+   "reviews": 53,
+   "negative": 19
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 56,
+   "negative": 27
+  },
+  {
+   "week": "2026-09-14",
+   "reviews": 42,
+   "negative": 20
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 53,
+   "negative": 19
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 19,
+   "negative": 7
+  },
+  {
+   "week": "2026-10-05",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-12",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-19",
+   "reviews": 7,
+   "negative": 6
+  },
+  {
+   "week": "2026-10-26",
+   "reviews": 38,
+   "negative": 12
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 41,
+   "negative": 15
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 46,
+   "negative": 24
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 35,
+   "negative": 16
+  },
+  {
+   "week": "2026-11-23",
+   "reviews": 20,
+   "negative": 6
+  }
+ ],
+ "patch_dates": [
+  {
+   "date": "2023-09-13",
+   "title": "Starfield Updates and Mod Support \u2013 September 13, 2023"
+  },
+  {
+   "date": "2023-09-25",
+   "title": "Starfield Updates 1.7.33 \u2013 September 25, 2023"
+  },
+  {
+   "date": "2023-10-09",
+   "title": "Starfield Updates 1.7.36 \u2013 October 09, 2023"
+  },
+  {
+   "date": "2023-11-08",
+   "title": "[UPDATED] Starfield Beta Update 1.8.84 Notes - November 8, 2023"
+  },
+  {
+   "date": "2023-11-20",
+   "title": "Starfield Update 1.8.86 Notes - November 20, 2023"
+  },
+  {
+   "date": "2023-12-01",
+   "title": "Starfield Beta Update 1.8.87 Notes \u2013 December 1, 2023"
+  },
+  {
+   "date": "2023-12-11",
+   "title": "Starfield Update 1.8.88 Notes \u2013 December 11, 2023"
+  },
+  {
+   "date": "2024-01-18",
+   "title": "Starfield Update 1.9.51 Notes \u2013 January 30, 2024"
+  },
+  {
+   "date": "2024-02-07",
+   "title": "Starfield Update 1.9.67 Notes \u2013 February 20, 2024"
+  },
+  {
+   "date": "2024-03-06",
+   "title": "Starfield Update 1.10.31 - March 19, 2024"
+  },
+  {
+   "date": "2024-05-01",
+   "title": "Starfield Update 1.11.36 - May 15, 2024"
+  },
+  {
+   "date": "2024-05-01",
+   "title": "New Features & Improvements in Starfield\u2019s Latest Major Update"
+  },
+  {
+   "date": "2024-06-09",
+   "title": "First Starfield Shattered Space Trailer & Highlights from the June Update"
+  },
+  {
+   "date": "2024-06-09",
+   "title": "Starfield Update 1.12.30 - June 9, 2024"
+  },
+  {
+   "date": "2024-08-20",
+   "title": "Starfield\u2019s REV-8 Land Vehicle Drops in Latest Update"
+  },
+  {
+   "date": "2024-09-18",
+   "title": "Starfield Update 1.14.70 \u2013 September 30, 2024"
+  },
+  {
+   "date": "2024-11-05",
+   "title": "Starfield Update 1.14.74 \u2013 November 19, 2024"
+  },
+  {
+   "date": "2024-11-20",
+   "title": "Starfield\u2019s November Update is now live"
+  },
+  {
+   "date": "2025-05-06",
+   "title": "Starfield Update 1.15.216 \u2013 May 22, 2025"
+  },
+  {
+   "date": "2025-05-07",
+   "title": "Starfield\u2019s May Update is Now Live"
+  },
+  {
+   "date": "2025-07-22",
+   "title": "Starfield Update 1.15.222 - August 5, 2025"
+  },
+  {
+   "date": "2026-03-17",
+   "title": "Everything Coming in Starfield\u2019s Free Lanes Update & Terran Armada DLC"
+  },
+  {
+   "date": "2026-04-07",
+   "title": "Everything in Starfield\u2019s Free Lanes Update & Terran Armada DLC"
+  },
+  {
+   "date": "2026-04-07",
+   "title": "Starfield Update 1.16.236 \u2013 April 7, 2026"
+  },
+  {
+   "date": "2026-05-22",
+   "title": "Starfield Update 1.16.242 \u2013 May 14, 2026"
+  },
+  {
+   "date": "2026-06-11",
+   "title": "Starfield Update 1.16.244 \u2013 June 11, 2026"
+  }
+ ],
+ "paraphrases": {
+  "DESIGN": [
+   "A player says the game feels soulless, with weak combat, dull dialogue, forgettable characters, and no joy in exploring.",
+   "A player finished the game but found it tedious, saying only the ship builder was enjoyable and they won't replay."
+  ],
+  "CONTENT": [
+   "A player says the game feels unfinished and advises waiting a year before buying, given Bethesda's release history.",
+   "A player regrets preordering, finding only about one in ten quests good and the game disappointingly mediocre."
+  ],
+  "STAB": [
+   "A player says the game crashes constantly on a high-end prebuilt PC, making play nearly impossible.",
+   "A player says the game stopped working after patches, with saves and new campaigns failing to load despite reinstalling."
+  ],
+  "PERF": [
+   "A player says the game is poorly optimized, stutters every 30 seconds on an RTX 3070, and they uninstalled it.",
+   "A player says the many loading screens, graphics engine, and weak immersion keep them from enjoying it."
+  ],
+  "STORY": [
+   "A player was disappointed after preordering, says Bethesda can no longer make good games, and couldn't finish the story.",
+   "A player hated the ending, which pushes an unwanted path, and uninstalled, strongly advising against the game."
+  ]
+ }
+}

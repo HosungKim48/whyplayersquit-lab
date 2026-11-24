@@ -1,0 +1,8 @@
+# Raw Steam data and anything containing review text or reviewer IDs stays local only
+data/raw/
+data/work/
+__pycache__/
+.env
+*.pyc
+.DS_Store
+.claude/

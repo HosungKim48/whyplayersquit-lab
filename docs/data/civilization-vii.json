@@ -1,0 +1,1987 @@
+{
+ "appid": 1295660,
+ "slug": "civilization-vii",
+ "name": "Sid Meier's Civilization VII",
+ "genre": "4X strategy",
+ "release": "2025-02-11",
+ "snapshot": "2026-11-24",
+ "params": {
+  "mature_days": 30,
+  "walk_hours": 1.0,
+  "min_cell": 30
+ },
+ "funnel": {
+  "steam_summary_total": 30182,
+  "api_reported_english_reviews": 29078,
+  "fetched_unique": 29077,
+  "negative": 14179,
+  "negative_3plus_words": 13726,
+  "labeled": 13712,
+  "first_review": "2025-02",
+  "last_review": "2026-11"
+ },
+ "overview": {
+  "reviews": 29077,
+  "negative": 14179,
+  "negative_share": 0.4876,
+  "median_hours_at_negative_review": 15.1,
+  "median_hours_at_positive_review": 25.2
+ },
+ "behaviour": {
+  "negative": {
+   "n": 14056,
+   "walked_away": 5290,
+   "walk_rate": 0.3764,
+   "walk_lo": 0.3684,
+   "walk_hi": 0.3844,
+   "kept_10h_rate": 0.4446,
+   "median_hours_after": 5.82,
+   "refunded_rate": 0.0493,
+   "active_now_rate": 0.0839,
+   "shown": true
+  },
+  "positive": {
+   "n": 14742,
+   "walked_away": 528,
+   "walk_rate": 0.0358,
+   "walk_lo": 0.0329,
+   "walk_hi": 0.0389,
+   "kept_10h_rate": 0.8625,
+   "median_hours_after": 72.22,
+   "refunded_rate": 0.0022,
+   "active_now_rate": 0.2052,
+   "shown": true
+  },
+  "negative_unedited": {
+   "n": 11427,
+   "walked_away": 4375,
+   "walk_rate": 0.3829,
+   "walk_lo": 0.374,
+   "walk_hi": 0.3918,
+   "kept_10h_rate": 0.4381,
+   "median_hours_after": 5.42,
+   "refunded_rate": 0.0569,
+   "active_now_rate": 0.0726,
+   "shown": true
+  },
+  "negative_90d": {
+   "n": 13812,
+   "walk_rate": 0.3732
+  },
+  "negative_labeled": {
+   "n": 13593,
+   "walked_away": 5060,
+   "walk_rate": 0.3723,
+   "walk_lo": 0.3642,
+   "walk_hi": 0.3804,
+   "kept_10h_rate": 0.4486,
+   "median_hours_after": 6.05,
+   "refunded_rate": 0.048,
+   "active_now_rate": 0.0849,
+   "shown": true
+  }
+ },
+ "playtime": [
+  {
+   "bucket": "Under 2 h",
+   "reviews": 2624,
+   "negative": 2305,
+   "negative_share_in_bucket": 0.8784,
+   "share_of_all_negative": 0.1626,
+   "neg_walk_n": 2294,
+   "neg_walk_rate": 0.6787
+  },
+  {
+   "bucket": "2\u201310 h",
+   "reviews": 6828,
+   "negative": 3442,
+   "negative_share_in_bucket": 0.5041,
+   "share_of_all_negative": 0.2428,
+   "neg_walk_n": 3426,
+   "neg_walk_rate": 0.4002
+  },
+  {
+   "bucket": "10\u201350 h",
+   "reviews": 11701,
+   "negative": 5248,
+   "negative_share_in_bucket": 0.4485,
+   "share_of_all_negative": 0.3701,
+   "neg_walk_n": 5210,
+   "neg_walk_rate": 0.3159
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "reviews": 5662,
+   "negative": 2419,
+   "negative_share_in_bucket": 0.4272,
+   "share_of_all_negative": 0.1706,
+   "neg_walk_n": 2378,
+   "neg_walk_rate": 0.2485
+  },
+  {
+   "bucket": "200 h+",
+   "reviews": 2262,
+   "negative": 765,
+   "negative_share_in_bucket": 0.3382,
+   "share_of_all_negative": 0.054,
+   "neg_walk_n": 748,
+   "neg_walk_rate": 0.1671
+  }
+ ],
+ "reasons": [
+  {
+   "code": "DESIGN",
+   "reason": "Gameplay & design choices",
+   "walk_rate_adjusted": 0.4255,
+   "n": 4941,
+   "share": 0.3603,
+   "any_mention_share": 0.4755,
+   "median_hours_at_review": 19.6,
+   "walk_n": 4893,
+   "walk_rate": 0.3942,
+   "walk_lo": 0.3806,
+   "walk_hi": 0.408,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.2321
+  },
+  {
+   "code": "CONTENT",
+   "reason": "Not enough content",
+   "walk_rate_adjusted": 0.326,
+   "n": 2101,
+   "share": 0.1532,
+   "any_mention_share": 0.2608,
+   "median_hours_at_review": 16.6,
+   "walk_n": 2089,
+   "walk_rate": 0.3265,
+   "walk_lo": 0.3067,
+   "walk_hi": 0.3469,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1337
+  },
+  {
+   "code": "UI",
+   "reason": "Interface & controls",
+   "walk_rate_adjusted": 0.3153,
+   "n": 1931,
+   "share": 0.1408,
+   "any_mention_share": 0.2646,
+   "median_hours_at_review": 7.3,
+   "walk_n": 1923,
+   "walk_rate": 0.3666,
+   "walk_lo": 0.3454,
+   "walk_hi": 0.3884,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1781
+  },
+  {
+   "code": "STAB",
+   "reason": "Crashes & bugs",
+   "walk_rate_adjusted": 0.2297,
+   "n": 1483,
+   "share": 0.1082,
+   "any_mention_share": 0.1485,
+   "median_hours_at_review": 11.9,
+   "walk_n": 1478,
+   "walk_rate": 0.247,
+   "walk_lo": 0.2256,
+   "walk_hi": 0.2696,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1868
+  },
+  {
+   "code": "OTHER",
+   "reason": "No clear reason",
+   "walk_rate_adjusted": 0.4495,
+   "n": 1388,
+   "share": 0.1012,
+   "any_mention_share": 0.1066,
+   "median_hours_at_review": 12.2,
+   "walk_n": 1366,
+   "walk_rate": 0.4685,
+   "walk_lo": 0.4422,
+   "walk_hi": 0.495,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1333
+  },
+  {
+   "code": "MONET",
+   "reason": "Price & monetization",
+   "walk_rate_adjusted": 0.4188,
+   "n": 1033,
+   "share": 0.0753,
+   "any_mention_share": 0.1631,
+   "median_hours_at_review": 23.9,
+   "walk_n": 1020,
+   "walk_rate": 0.399,
+   "walk_lo": 0.3694,
+   "walk_hi": 0.4294,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.2265
+  },
+  {
+   "code": "ONLINE",
+   "reason": "Online, accounts & DRM",
+   "walk_rate_adjusted": null,
+   "n": 300,
+   "share": 0.0219,
+   "any_mention_share": 0.0314,
+   "median_hours_at_review": 6.3,
+   "walk_n": 298,
+   "walk_rate": 0.4128,
+   "walk_lo": 0.3583,
+   "walk_hi": 0.4694,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.2367
+  },
+  {
+   "code": "SUPPORT",
+   "reason": "Post-launch support",
+   "walk_rate_adjusted": 0.3678,
+   "n": 169,
+   "share": 0.0123,
+   "any_mention_share": 0.036,
+   "median_hours_at_review": 43.0,
+   "walk_n": 165,
+   "walk_rate": 0.3212,
+   "walk_lo": 0.2547,
+   "walk_hi": 0.3958,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.2189
+  },
+  {
+   "code": "PERF",
+   "reason": "Performance",
+   "walk_rate_adjusted": 0.3221,
+   "n": 164,
+   "share": 0.012,
+   "any_mention_share": 0.0227,
+   "median_hours_at_review": 10.6,
+   "walk_n": 164,
+   "walk_rate": 0.3598,
+   "walk_lo": 0.2903,
+   "walk_hi": 0.4356,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.2195
+  },
+  {
+   "code": "OFFGAME",
+   "reason": "Off-game topics",
+   "walk_rate_adjusted": 0.5231,
+   "n": 121,
+   "share": 0.0088,
+   "any_mention_share": 0.0135,
+   "median_hours_at_review": 13.2,
+   "walk_n": 118,
+   "walk_rate": 0.5339,
+   "walk_lo": 0.4442,
+   "walk_hi": 0.6214,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1405
+  },
+  {
+   "code": "STORY",
+   "reason": "Story & writing",
+   "walk_rate_adjusted": null,
+   "n": 81,
+   "share": 0.0059,
+   "any_mention_share": 0.0161,
+   "median_hours_at_review": 14.3,
+   "walk_n": 79,
+   "walk_rate": 0.4304,
+   "walk_lo": 0.3269,
+   "walk_hi": 0.5403,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.2099
+  }
+ ],
+ "reason_by_playtime": [
+  {
+   "bucket": "Under 2 h",
+   "n": 2224,
+   "shares": {
+    "PERF": 0.0184,
+    "STAB": 0.1317,
+    "CONTENT": 0.1556,
+    "DESIGN": 0.1983,
+    "UI": 0.2343,
+    "MONET": 0.0706,
+    "ONLINE": 0.0432,
+    "SUPPORT": 0.0076,
+    "STORY": 0.0072,
+    "OFFGAME": 0.0139,
+    "OTHER": 0.1192
+   }
+  },
+  {
+   "bucket": "2\u201310 h",
+   "n": 3319,
+   "shares": {
+    "PERF": 0.0118,
+    "STAB": 0.1196,
+    "CONTENT": 0.138,
+    "DESIGN": 0.3555,
+    "UI": 0.1681,
+    "MONET": 0.0536,
+    "ONLINE": 0.0214,
+    "SUPPORT": 0.006,
+    "STORY": 0.0057,
+    "OFFGAME": 0.0072,
+    "OTHER": 0.113
+   }
+  },
+  {
+   "bucket": "10\u201350 h",
+   "n": 5067,
+   "shares": {
+    "PERF": 0.0083,
+    "STAB": 0.0975,
+    "CONTENT": 0.1652,
+    "DESIGN": 0.4028,
+    "UI": 0.1192,
+    "MONET": 0.0679,
+    "ONLINE": 0.0166,
+    "SUPPORT": 0.0101,
+    "STORY": 0.0061,
+    "OFFGAME": 0.0071,
+    "OTHER": 0.0993
+   }
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "n": 2354,
+   "shares": {
+    "PERF": 0.0119,
+    "STAB": 0.0892,
+    "CONTENT": 0.1517,
+    "DESIGN": 0.4269,
+    "UI": 0.0892,
+    "MONET": 0.0994,
+    "ONLINE": 0.0174,
+    "SUPPORT": 0.02,
+    "STORY": 0.0051,
+    "OFFGAME": 0.0081,
+    "OTHER": 0.0811
+   }
+  },
+  {
+   "bucket": "200 h+",
+   "n": 748,
+   "shares": {
+    "PERF": 0.0187,
+    "STAB": 0.119,
+    "CONTENT": 0.1377,
+    "DESIGN": 0.3663,
+    "UI": 0.0508,
+    "MONET": 0.1604,
+    "ONLINE": 0.0107,
+    "SUPPORT": 0.0455,
+    "STORY": 0.004,
+    "OFFGAME": 0.0147,
+    "OTHER": 0.0722
+   }
+  }
+ ],
+ "said_vs_did": [
+  {
+   "code": "STOPPED",
+   "statement": "Said they quit, refunded or won't return",
+   "n": 2646,
+   "share": 0.193,
+   "mature_n": 2626,
+   "walk_rate": 0.5069,
+   "kept_10h_rate": 0.3378,
+   "active_now_rate": 0.0762
+  },
+  {
+   "code": "WAITING",
+   "statement": "Said they'd come back if it's fixed",
+   "n": 1777,
+   "share": 0.1296,
+   "mature_n": 1768,
+   "walk_rate": 0.2947,
+   "kept_10h_rate": 0.5175,
+   "active_now_rate": 0.0871
+  },
+  {
+   "code": "NONE",
+   "statement": "Said nothing about stopping",
+   "n": 9289,
+   "share": 0.6774,
+   "mature_n": 9199,
+   "walk_rate": 0.3487,
+   "kept_10h_rate": 0.467,
+   "active_now_rate": 0.087
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2025-02",
+   "reviews": 16661,
+   "negative": 7792,
+   "negative_share": 0.4677,
+   "labeled": 7578,
+   "reason_counts": {
+    "PERF": 76,
+    "STAB": 873,
+    "CONTENT": 1344,
+    "DESIGN": 2372,
+    "UI": 1513,
+    "MONET": 471,
+    "ONLINE": 170,
+    "SUPPORT": 87,
+    "STORY": 34,
+    "OFFGAME": 59,
+    "OTHER": 579
+   },
+   "patches": [
+    "Patch 1.0.1 Notes",
+    "1.0.1 Patch 1 Notes",
+    "1.0.1 Patch 2 - February 10, 2025",
+    "1.0.1 Patch 3 - February 12, 2025",
+    "This Week in Civ: Update Check-In, Shawnee Partnership, and More",
+    "Civ VII Update Check-In: February 27, 2025",
+    "This Week in Civ: Update 1.1.0 Check-In and more!"
+   ]
+  },
+  {
+   "month": "2025-03",
+   "reviews": 2855,
+   "negative": 1560,
+   "negative_share": 0.5464,
+   "labeled": 1515,
+   "reason_counts": {
+    "PERF": 17,
+    "STAB": 240,
+    "CONTENT": 267,
+    "DESIGN": 570,
+    "UI": 124,
+    "MONET": 117,
+    "ONLINE": 27,
+    "SUPPORT": 17,
+    "STORY": 6,
+    "OFFGAME": 9,
+    "OTHER": 121
+   },
+   "patches": [
+    "Update 1.1.0 - March 4, 2025",
+    "This Week in Civ: Update 1.1.0 Live, Ada Lovelace, and More",
+    "Civ Streams: March 2025 Update | Civ VII",
+    "Update 1.1.1 \u2013 Mar 25, 2025",
+    "1.1.1 Patch 1 \u2013 March 27, 2025",
+    "This Week in Civ: Update 1.1.1 is live!"
+   ]
+  },
+  {
+   "month": "2025-04",
+   "reviews": 925,
+   "negative": 508,
+   "negative_share": 0.5492,
+   "labeled": 497,
+   "reason_counts": {
+    "PERF": 8,
+    "STAB": 45,
+    "CONTENT": 78,
+    "DESIGN": 194,
+    "UI": 35,
+    "MONET": 45,
+    "ONLINE": 13,
+    "SUPPORT": 4,
+    "STORY": 9,
+    "OFFGAME": 2,
+    "OTHER": 64
+   },
+   "patches": [
+    "Update Check-In: April 8, 2025",
+    "This Week in Civ: Update Check-in",
+    "Civ VII Developer Update - April 2025 | Highlights for tomorrow's 1.2.0 update!",
+    "Update 1.2.0 - April 22, 2025",
+    "This Week in Civ: Update 1.2.0 is live and more!",
+    "Update 1.2.0 - Patch 1 - April 29, 2025"
+   ]
+  },
+  {
+   "month": "2025-05",
+   "reviews": 859,
+   "negative": 517,
+   "negative_share": 0.6019,
+   "labeled": 486,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 37,
+    "CONTENT": 56,
+    "DESIGN": 232,
+    "UI": 33,
+    "MONET": 31,
+    "ONLINE": 7,
+    "SUPPORT": 8,
+    "STORY": 4,
+    "OFFGAME": 6,
+    "OTHER": 65
+   },
+   "patches": [
+    "This Week in Civ: Update 1.2.0 - Patch 1",
+    "Update 1.2.1 - May 27, 2025",
+    "This Week in Civ: Update 1.2.1"
+   ]
+  },
+  {
+   "month": "2025-06",
+   "reviews": 858,
+   "negative": 487,
+   "negative_share": 0.5676,
+   "labeled": 461,
+   "reason_counts": {
+    "PERF": 5,
+    "STAB": 32,
+    "CONTENT": 49,
+    "DESIGN": 226,
+    "UI": 20,
+    "MONET": 38,
+    "ONLINE": 13,
+    "SUPPORT": 7,
+    "STORY": 0,
+    "OFFGAME": 9,
+    "OTHER": 62
+   },
+   "patches": [
+    "Update 1.2.1 - Patch 1 - June 2, 2025",
+    "Update Check-In: June 10, 2025",
+    "Update 1.2.2 \u2013 Jun 23, 2025",
+    "This Month in Civ: June Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2025-07",
+   "reviews": 648,
+   "negative": 364,
+   "negative_share": 0.5617,
+   "labeled": 348,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 31,
+    "CONTENT": 36,
+    "DESIGN": 146,
+    "UI": 18,
+    "MONET": 31,
+    "ONLINE": 20,
+    "SUPPORT": 8,
+    "STORY": 2,
+    "OFFGAME": 4,
+    "OTHER": 51
+   },
+   "patches": [
+    "Civ VII Developer Update - July 2025 | Highlights for tomorrow's 1.2.3 update!",
+    "Update 1.2.3 \u2013 Jul 22, 2025",
+    "This Month in Civ: July Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2025-08",
+   "reviews": 648,
+   "negative": 388,
+   "negative_share": 0.5988,
+   "labeled": 370,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 39,
+    "CONTENT": 38,
+    "DESIGN": 138,
+    "UI": 27,
+    "MONET": 33,
+    "ONLINE": 8,
+    "SUPPORT": 4,
+    "STORY": 1,
+    "OFFGAME": 5,
+    "OTHER": 70
+   },
+   "patches": [
+    "Civ VII Developer Update - August 2025 | What's coming in tomorrow's update!",
+    "Update 1.2.4 \u2013 Aug 19, 2025",
+    "Update 1.2.4 - Patch 1 - Aug 27, 2025",
+    "This Month in Civ: August Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2025-09",
+   "reviews": 415,
+   "negative": 220,
+   "negative_share": 0.5301,
+   "labeled": 209,
+   "reason_counts": {
+    "PERF": 3,
+    "STAB": 13,
+    "CONTENT": 23,
+    "DESIGN": 101,
+    "UI": 10,
+    "MONET": 16,
+    "ONLINE": 3,
+    "SUPPORT": 3,
+    "STORY": 4,
+    "OFFGAME": 3,
+    "OTHER": 30
+   },
+   "patches": [
+    "Civ VII Developer Update - September 2025 | Highlights for tomorrow's update!",
+    "Update 1.2.5 - Sep 30, 2025"
+   ]
+  },
+  {
+   "month": "2025-10",
+   "reviews": 461,
+   "negative": 222,
+   "negative_share": 0.4816,
+   "labeled": 209,
+   "reason_counts": {
+    "PERF": 5,
+    "STAB": 14,
+    "CONTENT": 30,
+    "DESIGN": 90,
+    "UI": 15,
+    "MONET": 13,
+    "ONLINE": 5,
+    "SUPPORT": 3,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 33
+   },
+   "patches": [
+    "Update Check-In: October 27, 2025",
+    "This Month in Civ: October Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2025-11",
+   "reviews": 752,
+   "negative": 293,
+   "negative_share": 0.3896,
+   "labeled": 274,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 33,
+    "CONTENT": 27,
+    "DESIGN": 114,
+    "UI": 14,
+    "MONET": 21,
+    "ONLINE": 5,
+    "SUPPORT": 3,
+    "STORY": 0,
+    "OFFGAME": 2,
+    "OTHER": 48
+   },
+   "patches": [
+    "Civ VII Developer Video - November 2025 | Highlights for tomorrow's update!",
+    "Update 1.3.0 - Nov 4, 2025",
+    "Update 1.3.0 - Patch 1 - Nov 12, 2025",
+    "This Month in Civ: November Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2025-12",
+   "reviews": 470,
+   "negative": 200,
+   "negative_share": 0.4255,
+   "labeled": 191,
+   "reason_counts": {
+    "PERF": 6,
+    "STAB": 19,
+    "CONTENT": 15,
+    "DESIGN": 89,
+    "UI": 13,
+    "MONET": 10,
+    "ONLINE": 5,
+    "SUPPORT": 1,
+    "STORY": 2,
+    "OFFGAME": 3,
+    "OTHER": 28
+   },
+   "patches": [
+    "Civ VII Developer Video - December 2025 | Highlights for tomorrow's update!",
+    "Update 1.3.1 \u2013 Dec 9, 2025",
+    "This Month in Civ: December Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2026-01",
+   "reviews": 444,
+   "negative": 202,
+   "negative_share": 0.455,
+   "labeled": 191,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 17,
+    "CONTENT": 18,
+    "DESIGN": 84,
+    "UI": 9,
+    "MONET": 17,
+    "ONLINE": 2,
+    "SUPPORT": 1,
+    "STORY": 1,
+    "OFFGAME": 3,
+    "OTHER": 32
+   },
+   "patches": [
+    "This Month in Civ: January Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2026-02",
+   "reviews": 383,
+   "negative": 191,
+   "negative_share": 0.4987,
+   "labeled": 184,
+   "reason_counts": {
+    "PERF": 5,
+    "STAB": 10,
+    "CONTENT": 11,
+    "DESIGN": 96,
+    "UI": 8,
+    "MONET": 15,
+    "ONLINE": 2,
+    "SUPPORT": 3,
+    "STORY": 4,
+    "OFFGAME": 2,
+    "OTHER": 28
+   },
+   "patches": [
+    "Update 1.3.2 Notes \u2013 Feb 3",
+    "A Week with Update 1.3.2: Share Your Feedback!",
+    "ICYMI: Gilgamesh, Update 1.3.2, & Anniversary Updates",
+    "This Month in Civ: February Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2026-03",
+   "reviews": 307,
+   "negative": 132,
+   "negative_share": 0.43,
+   "labeled": 124,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 7,
+    "CONTENT": 10,
+    "DESIGN": 58,
+    "UI": 12,
+    "MONET": 14,
+    "ONLINE": 3,
+    "SUPPORT": 1,
+    "STORY": 2,
+    "OFFGAME": 2,
+    "OTHER": 14
+   },
+   "patches": [
+    "Update 1.3.2 Patch 1 - Mar 3, 2026",
+    "This Month in Civ: March Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2026-04",
+   "reviews": 299,
+   "negative": 149,
+   "negative_share": 0.4983,
+   "labeled": 146,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 12,
+    "CONTENT": 11,
+    "DESIGN": 59,
+    "UI": 12,
+    "MONET": 10,
+    "ONLINE": 1,
+    "SUPPORT": 1,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 38
+   },
+   "patches": [
+    "Update 1.3.2 \u2013 Patch 2 \u2013 Apr 16, 2026",
+    "Update 1.3.2 - Steam macOS Hotfix - April 21, 2026",
+    "This Month in Civ: April Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2026-05",
+   "reviews": 106,
+   "negative": 46,
+   "negative_share": 0.434,
+   "labeled": 44,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 3,
+    "CONTENT": 8,
+    "DESIGN": 17,
+    "UI": 8,
+    "MONET": 2,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 4
+   },
+   "patches": [
+    "Civilization VII's Test of Time Update Coming May 19!",
+    "Civ Streams: Civ VII's Test of Time Update",
+    "Watch Firaxis Devs Play Civ VII's Test of Time Update",
+    "Modding Impact with 1.4.0 + Current State of UI Modding and What\u2019s Changing",
+    "Update 1.4.0 - Test of Time - Patch Notes",
+    "Civilization VII's FREE Test of Time Update Out Now!",
+    "A reminder for Test of Time (Update 1.4.0): Disable Mods & Update Drivers",
+    "Share your thoughts on the Test of Time Update with us!",
+    "This Month in Civ: May Update, News Recap, and More"
+   ]
+  },
+  {
+   "month": "2026-06",
+   "reviews": 629,
+   "negative": 284,
+   "negative_share": 0.4515,
+   "labeled": 278,
+   "reason_counts": {
+    "PERF": 2,
+    "STAB": 17,
+    "CONTENT": 27,
+    "DESIGN": 105,
+    "UI": 20,
+    "MONET": 63,
+    "ONLINE": 1,
+    "SUPPORT": 5,
+    "STORY": 8,
+    "OFFGAME": 3,
+    "OTHER": 27
+   },
+   "patches": [
+    "Update 1.4.1 Drops Week of June 22!",
+    "Civ VII Developer Video - June 2026 | Update 1.4.1 Overview",
+    "Update 1.4.1 \u2013 June 23, 2026",
+    "This Month in Civ: Update 1.4.1, Brush & Blade, and Steam Summer Sale",
+    "Update 1.4.1 Hotfix - June 30, 2026 (Linux/Steam Deck)"
+   ]
+  },
+  {
+   "month": "2026-07",
+   "reviews": 500,
+   "negative": 256,
+   "negative_share": 0.512,
+   "labeled": 250,
+   "reason_counts": {
+    "PERF": 3,
+    "STAB": 21,
+    "CONTENT": 21,
+    "DESIGN": 106,
+    "UI": 22,
+    "MONET": 33,
+    "ONLINE": 7,
+    "SUPPORT": 3,
+    "STORY": 2,
+    "OFFGAME": 2,
+    "OTHER": 30
+   },
+   "patches": [
+    "Update 1.4.1 \u2013 Hotfix 2 \u2013 July 9, 2026",
+    "Update 1.4.2 is Coming Week of July 27",
+    "Civ VII Developer Video - July 2026 | Update 1.4.2 Drops Tomorrow",
+    "Update 1.4.2 \u2013 July 28, 2026",
+    "This Month in Civ: July Update and News Recap"
+   ]
+  },
+  {
+   "month": "2026-08",
+   "reviews": 65,
+   "negative": 42,
+   "negative_share": 0.6462,
+   "labeled": 41,
+   "reason_counts": {
+    "PERF": 0,
+    "STAB": 1,
+    "CONTENT": 5,
+    "DESIGN": 18,
+    "UI": 3,
+    "MONET": 3,
+    "ONLINE": 1,
+    "SUPPORT": 1,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 9
+   },
+   "patches": [
+    "Update 1.4.2 Hotfix - August 13, 2026",
+    "This Month in Civ: August Update and News Recap"
+   ]
+  },
+  {
+   "month": "2026-09",
+   "reviews": 512,
+   "negative": 202,
+   "negative_share": 0.3945,
+   "labeled": 196,
+   "reason_counts": {
+    "PERF": 2,
+    "STAB": 14,
+    "CONTENT": 15,
+    "DESIGN": 78,
+    "UI": 7,
+    "MONET": 36,
+    "ONLINE": 5,
+    "SUPPORT": 5,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 33
+   },
+   "patches": [
+    "A Look at Civ VII's Next Major Update and First Paid Expansion",
+    "Civ VII Developer Video - September 2026 | Update 1.5.0",
+    "Update 1.5.0 Notes - September 15, 2026",
+    "Update 1.5.0 Hotfix - September 30, 2026",
+    "This Month in Civ: PAX Recap, Update 1.5.0, and the future of Civ VII"
+   ]
+  },
+  {
+   "month": "2026-10",
+   "reviews": 70,
+   "negative": 39,
+   "negative_share": 0.5571,
+   "labeled": 38,
+   "reason_counts": {
+    "PERF": 0,
+    "STAB": 0,
+    "CONTENT": 4,
+    "DESIGN": 13,
+    "UI": 4,
+    "MONET": 7,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 2,
+    "OFFGAME": 2,
+    "OTHER": 5
+   },
+   "patches": [
+    "This Month in Civ: October Update and News Recap"
+   ]
+  },
+  {
+   "month": "2026-11",
+   "reviews": 210,
+   "negative": 85,
+   "negative_share": 0.4048,
+   "labeled": 82,
+   "reason_counts": {
+    "PERF": 0,
+    "STAB": 5,
+    "CONTENT": 8,
+    "DESIGN": 35,
+    "UI": 4,
+    "MONET": 7,
+    "ONLINE": 2,
+    "SUPPORT": 3,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 17
+   },
+   "patches": [
+    "Update 1.5.1 Arrives the Week of November 9!",
+    "Civ VII Developer Video - November 2026 | Update 1.5.1",
+    "Update 1.5.1 Notes - November 10, 2026",
+    "Update 1.5.1 Hotfix \u2013 November 19, 2026"
+   ]
+  }
+ ],
+ "top_reasons": [
+  "DESIGN",
+  "CONTENT",
+  "UI",
+  "STAB",
+  "MONET"
+ ],
+ "spikes": [
+  {
+   "week_start": "2025-11-03",
+   "negative": 96,
+   "usual_weekly_negative": 48.0,
+   "negative_share": 0.4344,
+   "reviews": 221,
+   "top_reasons": [
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.3034
+    },
+    {
+     "code": "OTHER",
+     "reason": "No clear reason",
+     "share": 0.191
+    },
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.191
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2025-10-27",
+     "title": "Update Check-In: October 27, 2025"
+    },
+    {
+     "date": "2025-10-30",
+     "title": "From the Devs: Improved Naval Combat"
+    },
+    {
+     "date": "2025-10-30",
+     "title": "This Month in Civ: October Update, News Recap, and More"
+    },
+    {
+     "date": "2025-11-03",
+     "title": "Civ VII Developer Video - November 2025 | Highlights for tomorrow's update!"
+    },
+    {
+     "date": "2025-11-03",
+     "title": "The Firaxis Games Developer Sale is Here!"
+    },
+    {
+     "date": "2025-11-04",
+     "title": "Update 1.3.0 - Nov 4, 2025"
+    }
+   ]
+  },
+  {
+   "week_start": "2026-06-01",
+   "negative": 64,
+   "usual_weekly_negative": 20.5,
+   "negative_share": 0.4051,
+   "reviews": 158,
+   "top_reasons": [
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.4355
+    },
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "share": 0.1613
+    },
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.0968
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2026-05-18",
+     "title": "Civ VII Developer Video - May 2026 | Test of Time Goes Live Tomorrow!"
+    },
+    {
+     "date": "2026-05-19",
+     "title": "Update 1.4.0 - Test of Time - Patch Notes"
+    },
+    {
+     "date": "2026-05-19",
+     "title": "Civilization VII's FREE Test of Time Update Out Now!"
+    },
+    {
+     "date": "2026-05-19",
+     "title": "Save 40% on Civ VII during the Test of Time Sale!"
+    },
+    {
+     "date": "2026-05-20",
+     "title": "Get the leader Alexander the Great for FREE in Civilization VII!"
+    },
+    {
+     "date": "2026-05-20",
+     "title": "A reminder for Test of Time (Update 1.4.0): Disable Mods & Update Drivers"
+    }
+   ]
+  },
+  {
+   "week_start": "2026-06-22",
+   "negative": 117,
+   "usual_weekly_negative": 24.5,
+   "negative_share": 0.5177,
+   "reviews": 226,
+   "top_reasons": [
+    {
+     "code": "MONET",
+     "reason": "Price & monetization",
+     "share": 0.3932
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.265
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.1111
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2026-06-15",
+     "title": "Update 1.4.1 Drops Week of June 22!"
+    },
+    {
+     "date": "2026-06-18",
+     "title": "Brush and Blade Collection - Part 1 leader and civs"
+    },
+    {
+     "date": "2026-06-22",
+     "title": "Civ VII Developer Video - June 2026 | Update 1.4.1 Overview"
+    },
+    {
+     "date": "2026-06-23",
+     "title": "Update 1.4.1 \u2013 June 23, 2026"
+    },
+    {
+     "date": "2026-06-23",
+     "title": "Brush and Blade Collection - Part 1 now available!"
+    },
+    {
+     "date": "2026-06-24",
+     "title": "Ask Our Historians! We're Answering Your Civ VII History Questions"
+    }
+   ]
+  }
+ ],
+ "weekly": [
+  {
+   "week": "2025-02-03",
+   "reviews": 6664,
+   "negative": 2910
+  },
+  {
+   "week": "2025-02-10",
+   "reviews": 6378,
+   "negative": 3057
+  },
+  {
+   "week": "2025-02-17",
+   "reviews": 2657,
+   "negative": 1323
+  },
+  {
+   "week": "2025-02-24",
+   "reviews": 1305,
+   "negative": 699
+  },
+  {
+   "week": "2025-03-03",
+   "reviews": 997,
+   "negative": 540
+  },
+  {
+   "week": "2025-03-10",
+   "reviews": 568,
+   "negative": 317
+  },
+  {
+   "week": "2025-03-17",
+   "reviews": 424,
+   "negative": 238
+  },
+  {
+   "week": "2025-03-24",
+   "reviews": 478,
+   "negative": 244
+  },
+  {
+   "week": "2025-03-31",
+   "reviews": 264,
+   "negative": 149
+  },
+  {
+   "week": "2025-04-07",
+   "reviews": 221,
+   "negative": 129
+  },
+  {
+   "week": "2025-04-14",
+   "reviews": 206,
+   "negative": 119
+  },
+  {
+   "week": "2025-04-21",
+   "reviews": 216,
+   "negative": 104
+  },
+  {
+   "week": "2025-04-28",
+   "reviews": 164,
+   "negative": 89
+  },
+  {
+   "week": "2025-05-05",
+   "reviews": 141,
+   "negative": 87
+  },
+  {
+   "week": "2025-05-12",
+   "reviews": 167,
+   "negative": 98
+  },
+  {
+   "week": "2025-05-19",
+   "reviews": 210,
+   "negative": 134
+  },
+  {
+   "week": "2025-05-26",
+   "reviews": 280,
+   "negative": 161
+  },
+  {
+   "week": "2025-06-02",
+   "reviews": 270,
+   "negative": 164
+  },
+  {
+   "week": "2025-06-09",
+   "reviews": 152,
+   "negative": 92
+  },
+  {
+   "week": "2025-06-16",
+   "reviews": 152,
+   "negative": 76
+  },
+  {
+   "week": "2025-06-23",
+   "reviews": 220,
+   "negative": 124
+  },
+  {
+   "week": "2025-06-30",
+   "reviews": 161,
+   "negative": 102
+  },
+  {
+   "week": "2025-07-07",
+   "reviews": 145,
+   "negative": 74
+  },
+  {
+   "week": "2025-07-14",
+   "reviews": 124,
+   "negative": 74
+  },
+  {
+   "week": "2025-07-21",
+   "reviews": 183,
+   "negative": 99
+  },
+  {
+   "week": "2025-07-28",
+   "reviews": 100,
+   "negative": 44
+  },
+  {
+   "week": "2025-08-04",
+   "reviews": 103,
+   "negative": 53
+  },
+  {
+   "week": "2025-08-11",
+   "reviews": 192,
+   "negative": 132
+  },
+  {
+   "week": "2025-08-18",
+   "reviews": 169,
+   "negative": 97
+  },
+  {
+   "week": "2025-08-25",
+   "reviews": 143,
+   "negative": 87
+  },
+  {
+   "week": "2025-09-01",
+   "reviews": 126,
+   "negative": 62
+  },
+  {
+   "week": "2025-09-08",
+   "reviews": 91,
+   "negative": 50
+  },
+  {
+   "week": "2025-09-15",
+   "reviews": 63,
+   "negative": 37
+  },
+  {
+   "week": "2025-09-22",
+   "reviews": 91,
+   "negative": 50
+  },
+  {
+   "week": "2025-09-29",
+   "reviews": 157,
+   "negative": 83
+  },
+  {
+   "week": "2025-10-06",
+   "reviews": 118,
+   "negative": 59
+  },
+  {
+   "week": "2025-10-13",
+   "reviews": 89,
+   "negative": 46
+  },
+  {
+   "week": "2025-10-20",
+   "reviews": 80,
+   "negative": 38
+  },
+  {
+   "week": "2025-10-27",
+   "reviews": 94,
+   "negative": 29
+  },
+  {
+   "week": "2025-11-03",
+   "reviews": 221,
+   "negative": 96
+  },
+  {
+   "week": "2025-11-10",
+   "reviews": 141,
+   "negative": 63
+  },
+  {
+   "week": "2025-11-17",
+   "reviews": 108,
+   "negative": 49
+  },
+  {
+   "week": "2025-11-24",
+   "reviews": 249,
+   "negative": 73
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 102,
+   "negative": 41
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 99,
+   "negative": 39
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 87,
+   "negative": 42
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 113,
+   "negative": 53
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 154,
+   "negative": 63
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 120,
+   "negative": 58
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 98,
+   "negative": 40
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 72,
+   "negative": 38
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 75,
+   "negative": 33
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 116,
+   "negative": 60
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 106,
+   "negative": 48
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 93,
+   "negative": 47
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 74,
+   "negative": 34
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 76,
+   "negative": 32
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 64,
+   "negative": 29
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 76,
+   "negative": 35
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 61,
+   "negative": 27
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 72,
+   "negative": 32
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 86,
+   "negative": 39
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 79,
+   "negative": 43
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 55,
+   "negative": 28
+  },
+  {
+   "week": "2026-04-27",
+   "reviews": 25,
+   "negative": 13
+  },
+  {
+   "week": "2026-05-04",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-11",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-18",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 106,
+   "negative": 46
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 158,
+   "negative": 64
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 126,
+   "negative": 48
+  },
+  {
+   "week": "2026-06-15",
+   "reviews": 72,
+   "negative": 36
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 226,
+   "negative": 117
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 150,
+   "negative": 81
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 123,
+   "negative": 58
+  },
+  {
+   "week": "2026-07-13",
+   "reviews": 90,
+   "negative": 44
+  },
+  {
+   "week": "2026-07-20",
+   "reviews": 97,
+   "negative": 55
+  },
+  {
+   "week": "2026-07-27",
+   "reviews": 87,
+   "negative": 37
+  },
+  {
+   "week": "2026-08-03",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-10",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-17",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-24",
+   "reviews": 50,
+   "negative": 30
+  },
+  {
+   "week": "2026-08-31",
+   "reviews": 103,
+   "negative": 52
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 144,
+   "negative": 49
+  },
+  {
+   "week": "2026-09-14",
+   "reviews": 142,
+   "negative": 55
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 105,
+   "negative": 45
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 33,
+   "negative": 13
+  },
+  {
+   "week": "2026-10-05",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-12",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-19",
+   "reviews": 11,
+   "negative": 7
+  },
+  {
+   "week": "2026-10-26",
+   "reviews": 69,
+   "negative": 39
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 51,
+   "negative": 25
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 70,
+   "negative": 25
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 62,
+   "negative": 25
+  },
+  {
+   "week": "2026-11-23",
+   "reviews": 17,
+   "negative": 3
+  }
+ ],
+ "patch_dates": [
+  {
+   "date": "2025-02-05",
+   "title": "Patch 1.0.1 Notes"
+  },
+  {
+   "date": "2025-02-07",
+   "title": "1.0.1 Patch 1 Notes"
+  },
+  {
+   "date": "2025-02-10",
+   "title": "1.0.1 Patch 2 - February 10, 2025"
+  },
+  {
+   "date": "2025-02-12",
+   "title": "1.0.1 Patch 3 - February 12, 2025"
+  },
+  {
+   "date": "2025-02-21",
+   "title": "This Week in Civ: Update Check-In, Shawnee Partnership, and More"
+  },
+  {
+   "date": "2025-02-27",
+   "title": "Civ VII Update Check-In: February 27, 2025"
+  },
+  {
+   "date": "2025-02-28",
+   "title": "This Week in Civ: Update 1.1.0 Check-In and more!"
+  },
+  {
+   "date": "2025-03-04",
+   "title": "Update 1.1.0 - March 4, 2025"
+  },
+  {
+   "date": "2025-03-07",
+   "title": "This Week in Civ: Update 1.1.0 Live, Ada Lovelace, and More"
+  },
+  {
+   "date": "2025-03-19",
+   "title": "Civ Streams: March 2025 Update | Civ VII"
+  },
+  {
+   "date": "2025-03-25",
+   "title": "Update 1.1.1 \u2013 Mar 25, 2025"
+  },
+  {
+   "date": "2025-03-27",
+   "title": "1.1.1 Patch 1 \u2013 March 27, 2025"
+  },
+  {
+   "date": "2025-03-28",
+   "title": "This Week in Civ: Update 1.1.1 is live!"
+  },
+  {
+   "date": "2025-04-08",
+   "title": "Update Check-In: April 8, 2025"
+  },
+  {
+   "date": "2025-04-11",
+   "title": "This Week in Civ: Update Check-in"
+  },
+  {
+   "date": "2025-04-21",
+   "title": "Civ VII Developer Update - April 2025 | Highlights for tomorrow's 1.2.0 update!"
+  },
+  {
+   "date": "2025-04-22",
+   "title": "Update 1.2.0 - April 22, 2025"
+  },
+  {
+   "date": "2025-04-25",
+   "title": "This Week in Civ: Update 1.2.0 is live and more!"
+  },
+  {
+   "date": "2025-04-29",
+   "title": "Update 1.2.0 - Patch 1 - April 29, 2025"
+  },
+  {
+   "date": "2025-05-02",
+   "title": "This Week in Civ: Update 1.2.0 - Patch 1"
+  },
+  {
+   "date": "2025-05-27",
+   "title": "Update 1.2.1 - May 27, 2025"
+  },
+  {
+   "date": "2025-05-30",
+   "title": "This Week in Civ: Update 1.2.1"
+  },
+  {
+   "date": "2025-06-02",
+   "title": "Update 1.2.1 - Patch 1 - June 2, 2025"
+  },
+  {
+   "date": "2025-06-10",
+   "title": "Update Check-In: June 10, 2025"
+  },
+  {
+   "date": "2025-06-23",
+   "title": "Update 1.2.2 \u2013 Jun 23, 2025"
+  },
+  {
+   "date": "2025-06-27",
+   "title": "This Month in Civ: June Update, News Recap, and More"
+  },
+  {
+   "date": "2025-07-21",
+   "title": "Civ VII Developer Update - July 2025 | Highlights for tomorrow's 1.2.3 update!"
+  },
+  {
+   "date": "2025-07-22",
+   "title": "Update 1.2.3 \u2013 Jul 22, 2025"
+  },
+  {
+   "date": "2025-07-25",
+   "title": "This Month in Civ: July Update, News Recap, and More"
+  },
+  {
+   "date": "2025-08-18",
+   "title": "Civ VII Developer Update - August 2025 | What's coming in tomorrow's update!"
+  },
+  {
+   "date": "2025-08-19",
+   "title": "Update 1.2.4 \u2013 Aug 19, 2025"
+  },
+  {
+   "date": "2025-08-27",
+   "title": "Update 1.2.4 - Patch 1 - Aug 27, 2025"
+  },
+  {
+   "date": "2025-08-29",
+   "title": "This Month in Civ: August Update, News Recap, and More"
+  },
+  {
+   "date": "2025-09-29",
+   "title": "Civ VII Developer Update - September 2025 | Highlights for tomorrow's update!"
+  },
+  {
+   "date": "2025-09-30",
+   "title": "Update 1.2.5 - Sep 30, 2025"
+  },
+  {
+   "date": "2025-10-27",
+   "title": "Update Check-In: October 27, 2025"
+  },
+  {
+   "date": "2025-10-30",
+   "title": "This Month in Civ: October Update, News Recap, and More"
+  },
+  {
+   "date": "2025-11-03",
+   "title": "Civ VII Developer Video - November 2025 | Highlights for tomorrow's update!"
+  },
+  {
+   "date": "2025-11-04",
+   "title": "Update 1.3.0 - Nov 4, 2025"
+  },
+  {
+   "date": "2025-11-12",
+   "title": "Update 1.3.0 - Patch 1 - Nov 12, 2025"
+  },
+  {
+   "date": "2025-11-26",
+   "title": "This Month in Civ: November Update, News Recap, and More"
+  },
+  {
+   "date": "2025-12-08",
+   "title": "Civ VII Developer Video - December 2025 | Highlights for tomorrow's update!"
+  },
+  {
+   "date": "2025-12-09",
+   "title": "Update 1.3.1 \u2013 Dec 9, 2025"
+  },
+  {
+   "date": "2025-12-19",
+   "title": "This Month in Civ: December Update, News Recap, and More"
+  },
+  {
+   "date": "2026-01-30",
+   "title": "This Month in Civ: January Update, News Recap, and More"
+  },
+  {
+   "date": "2026-02-03",
+   "title": "Update 1.3.2 Notes \u2013 Feb 3"
+  },
+  {
+   "date": "2026-02-10",
+   "title": "A Week with Update 1.3.2: Share Your Feedback!"
+  },
+  {
+   "date": "2026-02-17",
+   "title": "ICYMI: Gilgamesh, Update 1.3.2, & Anniversary Updates"
+  },
+  {
+   "date": "2026-02-27",
+   "title": "This Month in Civ: February Update, News Recap, and More"
+  },
+  {
+   "date": "2026-03-03",
+   "title": "Update 1.3.2 Patch 1 - Mar 3, 2026"
+  },
+  {
+   "date": "2026-03-31",
+   "title": "This Month in Civ: March Update, News Recap, and More"
+  },
+  {
+   "date": "2026-04-16",
+   "title": "Update 1.3.2 \u2013 Patch 2 \u2013 Apr 16, 2026"
+  },
+  {
+   "date": "2026-04-21",
+   "title": "Update 1.3.2 - Steam macOS Hotfix - April 21, 2026"
+  },
+  {
+   "date": "2026-04-30",
+   "title": "This Month in Civ: April Update, News Recap, and More"
+  },
+  {
+   "date": "2026-05-06",
+   "title": "Civilization VII's Test of Time Update Coming May 19!"
+  },
+  {
+   "date": "2026-05-06",
+   "title": "Civ Streams: Civ VII's Test of Time Update"
+  },
+  {
+   "date": "2026-05-14",
+   "title": "Watch Firaxis Devs Play Civ VII's Test of Time Update"
+  },
+  {
+   "date": "2026-05-15",
+   "title": "Modding Impact with 1.4.0 + Current State of UI Modding and What\u2019s Changing"
+  },
+  {
+   "date": "2026-05-19",
+   "title": "Update 1.4.0 - Test of Time - Patch Notes"
+  },
+  {
+   "date": "2026-05-19",
+   "title": "Civilization VII's FREE Test of Time Update Out Now!"
+  },
+  {
+   "date": "2026-05-20",
+   "title": "A reminder for Test of Time (Update 1.4.0): Disable Mods & Update Drivers"
+  },
+  {
+   "date": "2026-05-29",
+   "title": "Share your thoughts on the Test of Time Update with us!"
+  },
+  {
+   "date": "2026-05-29",
+   "title": "This Month in Civ: May Update, News Recap, and More"
+  },
+  {
+   "date": "2026-06-15",
+   "title": "Update 1.4.1 Drops Week of June 22!"
+  },
+  {
+   "date": "2026-06-22",
+   "title": "Civ VII Developer Video - June 2026 | Update 1.4.1 Overview"
+  },
+  {
+   "date": "2026-06-23",
+   "title": "Update 1.4.1 \u2013 June 23, 2026"
+  },
+  {
+   "date": "2026-06-30",
+   "title": "This Month in Civ: Update 1.4.1, Brush & Blade, and Steam Summer Sale"
+  },
+  {
+   "date": "2026-06-30",
+   "title": "Update 1.4.1 Hotfix - June 30, 2026 (Linux/Steam Deck)"
+  },
+  {
+   "date": "2026-07-09",
+   "title": "Update 1.4.1 \u2013 Hotfix 2 \u2013 July 9, 2026"
+  },
+  {
+   "date": "2026-07-21",
+   "title": "Update 1.4.2 is Coming Week of July 27"
+  },
+  {
+   "date": "2026-07-27",
+   "title": "Civ VII Developer Video - July 2026 | Update 1.4.2 Drops Tomorrow"
+  },
+  {
+   "date": "2026-07-28",
+   "title": "Update 1.4.2 \u2013 July 28, 2026"
+  },
+  {
+   "date": "2026-07-31",
+   "title": "This Month in Civ: July Update and News Recap"
+  },
+  {
+   "date": "2026-08-13",
+   "title": "Update 1.4.2 Hotfix - August 13, 2026"
+  },
+  {
+   "date": "2026-08-28",
+   "title": "This Month in Civ: August Update and News Recap"
+  },
+  {
+   "date": "2026-09-05",
+   "title": "A Look at Civ VII's Next Major Update and First Paid Expansion"
+  },
+  {
+   "date": "2026-09-14",
+   "title": "Civ VII Developer Video - September 2026 | Update 1.5.0"
+  },
+  {
+   "date": "2026-09-15",
+   "title": "Update 1.5.0 Notes - September 15, 2026"
+  },
+  {
+   "date": "2026-09-30",
+   "title": "Update 1.5.0 Hotfix - September 30, 2026"
+  },
+  {
+   "date": "2026-09-30",
+   "title": "This Month in Civ: PAX Recap, Update 1.5.0, and the future of Civ VII"
+  },
+  {
+   "date": "2026-10-30",
+   "title": "This Month in Civ: October Update and News Recap"
+  },
+  {
+   "date": "2026-11-03",
+   "title": "Update 1.5.1 Arrives the Week of November 9!"
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Civ VII Developer Video - November 2026 | Update 1.5.1"
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Update 1.5.1 Notes - November 10, 2026"
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Update 1.5.1 Hotfix \u2013 November 19, 2026"
+  }
+ ],
+ "paraphrases": {
+  "DESIGN": [
+   "A player says the game feels shallow and rushed, with good ideas buried under weak design and console-style simplification.",
+   "A player quit after three weeks, saying the game is dull and nothing like the fun of the prior version."
+  ],
+  "CONTENT": [
+   "A player finds the game unpolished, lacking charm, and got bored after about eleven hours.",
+   "A player calls the game incomplete, with poor interface design, repetitive maps, and an underdeveloped core loop."
+  ],
+  "UI": [
+   "A player says the game is hard to understand, obscures how features work, and regrets buying it.",
+   "A player says the UI is messy and finds it odd that some chosen historical figures never led their civilization."
+  ],
+  "STAB": [
+   "A player says the game won't launch despite meeting the requirements that run other demanding titles without trouble.",
+   "A player says the game fails in DirectX 12 mode while the previous version works, calling the game bad."
+  ],
+  "MONET": [
+   "A player says it's early-access quality at full price, with unclear UI, hard-to-read tiles, samey AI, and unfamiliar leaders."
+  ]
+ }
+}

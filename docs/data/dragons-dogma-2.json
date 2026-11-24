@@ -1,0 +1,1996 @@
+{
+ "appid": 2054970,
+ "slug": "dragons-dogma-2",
+ "name": "Dragon's Dogma 2",
+ "genre": "Action RPG",
+ "release": "2024-03-22",
+ "snapshot": "2026-11-24",
+ "params": {
+  "mature_days": 30,
+  "walk_hours": 1.0,
+  "min_cell": 30
+ },
+ "funnel": {
+  "steam_summary_total": 45837,
+  "api_reported_english_reviews": 44686,
+  "fetched_unique": 44682,
+  "negative": 13725,
+  "negative_3plus_words": 13105,
+  "labeled": 13012,
+  "first_review": "2024-03",
+  "last_review": "2026-11"
+ },
+ "overview": {
+  "reviews": 44682,
+  "negative": 13725,
+  "negative_share": 0.3072,
+  "median_hours_at_negative_review": 6.9,
+  "median_hours_at_positive_review": 22.7
+ },
+ "behaviour": {
+  "negative": {
+   "n": 13656,
+   "walked_away": 5541,
+   "walk_rate": 0.4058,
+   "walk_lo": 0.3975,
+   "walk_hi": 0.414,
+   "kept_10h_rate": 0.4375,
+   "median_hours_after": 4.72,
+   "refunded_rate": 0.0802,
+   "active_now_rate": 0.0376,
+   "shown": true
+  },
+  "positive": {
+   "n": 30501,
+   "walked_away": 2444,
+   "walk_rate": 0.0801,
+   "walk_lo": 0.0771,
+   "walk_hi": 0.0832,
+   "kept_10h_rate": 0.7969,
+   "median_hours_after": 41.1,
+   "refunded_rate": 0.004,
+   "active_now_rate": 0.1031,
+   "shown": true
+  },
+  "negative_unedited": {
+   "n": 10969,
+   "walked_away": 4821,
+   "walk_rate": 0.4395,
+   "walk_lo": 0.4302,
+   "walk_hi": 0.4488,
+   "kept_10h_rate": 0.4005,
+   "median_hours_after": 2.73,
+   "refunded_rate": 0.0914,
+   "active_now_rate": 0.0326,
+   "shown": true
+  },
+  "negative_90d": {
+   "n": 13563,
+   "walk_rate": 0.4044
+  },
+  "negative_labeled": {
+   "n": 12946,
+   "walked_away": 5225,
+   "walk_rate": 0.4036,
+   "walk_lo": 0.3952,
+   "walk_hi": 0.4121,
+   "kept_10h_rate": 0.4404,
+   "median_hours_after": 4.92,
+   "refunded_rate": 0.0777,
+   "active_now_rate": 0.0382,
+   "shown": true
+  }
+ },
+ "playtime": [
+  {
+   "bucket": "Under 2 h",
+   "reviews": 4727,
+   "negative": 3579,
+   "negative_share_in_bucket": 0.7571,
+   "share_of_all_negative": 0.2608,
+   "neg_walk_n": 3576,
+   "neg_walk_rate": 0.5833
+  },
+  {
+   "bucket": "2\u201310 h",
+   "reviews": 12349,
+   "negative": 4233,
+   "negative_share_in_bucket": 0.3428,
+   "share_of_all_negative": 0.3084,
+   "neg_walk_n": 4222,
+   "neg_walk_rate": 0.2771
+  },
+  {
+   "bucket": "10\u201350 h",
+   "reviews": 16807,
+   "negative": 4062,
+   "negative_share_in_bucket": 0.2417,
+   "share_of_all_negative": 0.296,
+   "neg_walk_n": 4038,
+   "neg_walk_rate": 0.3836
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "reviews": 9730,
+   "negative": 1730,
+   "negative_share_in_bucket": 0.1778,
+   "share_of_all_negative": 0.126,
+   "neg_walk_n": 1705,
+   "neg_walk_rate": 0.4176
+  },
+  {
+   "bucket": "200 h+",
+   "reviews": 1069,
+   "negative": 121,
+   "negative_share_in_bucket": 0.1132,
+   "share_of_all_negative": 0.0088,
+   "neg_walk_n": 115,
+   "neg_walk_rate": 0.2087
+  }
+ ],
+ "reasons": [
+  {
+   "code": "PERF",
+   "reason": "Performance",
+   "walk_rate_adjusted": 0.3402,
+   "n": 3762,
+   "share": 0.2891,
+   "any_mention_share": 0.3901,
+   "median_hours_at_review": 4.0,
+   "walk_n": 3761,
+   "walk_rate": 0.3552,
+   "walk_lo": 0.3401,
+   "walk_hi": 0.3707,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1446
+  },
+  {
+   "code": "MONET",
+   "reason": "Price & monetization",
+   "walk_rate_adjusted": 0.3567,
+   "n": 1914,
+   "share": 0.1471,
+   "any_mention_share": 0.2731,
+   "median_hours_at_review": 2.9,
+   "walk_n": 1913,
+   "walk_rate": 0.3858,
+   "walk_lo": 0.3642,
+   "walk_hi": 0.4078,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1594
+  },
+  {
+   "code": "STAB",
+   "reason": "Crashes & bugs",
+   "walk_rate_adjusted": 0.3111,
+   "n": 1862,
+   "share": 0.1431,
+   "any_mention_share": 0.1981,
+   "median_hours_at_review": 7.0,
+   "walk_n": 1844,
+   "walk_rate": 0.3113,
+   "walk_lo": 0.2906,
+   "walk_hi": 0.3328,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.2159
+  },
+  {
+   "code": "DESIGN",
+   "reason": "Gameplay & design choices",
+   "walk_rate_adjusted": 0.4831,
+   "n": 1781,
+   "share": 0.1369,
+   "any_mention_share": 0.2301,
+   "median_hours_at_review": 18.8,
+   "walk_n": 1757,
+   "walk_rate": 0.4559,
+   "walk_lo": 0.4327,
+   "walk_hi": 0.4793,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1662
+  },
+  {
+   "code": "CONTENT",
+   "reason": "Not enough content",
+   "walk_rate_adjusted": 0.4646,
+   "n": 1421,
+   "share": 0.1092,
+   "any_mention_share": 0.1763,
+   "median_hours_at_review": 33.1,
+   "walk_n": 1413,
+   "walk_rate": 0.4735,
+   "walk_lo": 0.4475,
+   "walk_hi": 0.4995,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1147
+  },
+  {
+   "code": "OTHER",
+   "reason": "No clear reason",
+   "walk_rate_adjusted": 0.4931,
+   "n": 958,
+   "share": 0.0736,
+   "any_mention_share": 0.0859,
+   "median_hours_at_review": 7.4,
+   "walk_n": 949,
+   "walk_rate": 0.4932,
+   "walk_lo": 0.4614,
+   "walk_hi": 0.5249,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.0877
+  },
+  {
+   "code": "STORY",
+   "reason": "Story & writing",
+   "walk_rate_adjusted": 0.5563,
+   "n": 501,
+   "share": 0.0385,
+   "any_mention_share": 0.0855,
+   "median_hours_at_review": 33.2,
+   "walk_n": 500,
+   "walk_rate": 0.552,
+   "walk_lo": 0.5082,
+   "walk_hi": 0.595,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1178
+  },
+  {
+   "code": "UI",
+   "reason": "Interface & controls",
+   "walk_rate_adjusted": 0.4873,
+   "n": 486,
+   "share": 0.0374,
+   "any_mention_share": 0.0729,
+   "median_hours_at_review": 3.7,
+   "walk_n": 483,
+   "walk_rate": 0.5114,
+   "walk_lo": 0.4669,
+   "walk_hi": 0.5557,
+   "vs_game_average": "higher",
+   "says_stopped_rate": 0.1749
+  },
+  {
+   "code": "SUPPORT",
+   "reason": "Post-launch support",
+   "walk_rate_adjusted": 0.4585,
+   "n": 141,
+   "share": 0.0108,
+   "any_mention_share": 0.0348,
+   "median_hours_at_review": 26.5,
+   "walk_n": 141,
+   "walk_rate": 0.4397,
+   "walk_lo": 0.3605,
+   "walk_hi": 0.5222,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1206
+  },
+  {
+   "code": "ONLINE",
+   "reason": "Online, accounts & DRM",
+   "walk_rate_adjusted": null,
+   "n": 129,
+   "share": 0.0099,
+   "any_mention_share": 0.023,
+   "median_hours_at_review": 3.6,
+   "walk_n": 129,
+   "walk_rate": 0.2248,
+   "walk_lo": 0.1613,
+   "walk_hi": 0.3042,
+   "vs_game_average": "lower",
+   "says_stopped_rate": 0.1938
+  },
+  {
+   "code": "OFFGAME",
+   "reason": "Off-game topics",
+   "walk_rate_adjusted": null,
+   "n": 57,
+   "share": 0.0044,
+   "any_mention_share": 0.0067,
+   "median_hours_at_review": 3.2,
+   "walk_n": 56,
+   "walk_rate": 0.4464,
+   "walk_lo": 0.3239,
+   "walk_hi": 0.5759,
+   "vs_game_average": "similar",
+   "says_stopped_rate": 0.1404
+  }
+ ],
+ "reason_by_playtime": [
+  {
+   "bucket": "Under 2 h",
+   "n": 3358,
+   "shares": {
+    "PERF": 0.3728,
+    "STAB": 0.1459,
+    "CONTENT": 0.0301,
+    "DESIGN": 0.053,
+    "UI": 0.0542,
+    "MONET": 0.2296,
+    "ONLINE": 0.0131,
+    "SUPPORT": 0.0054,
+    "STORY": 0.0125,
+    "OFFGAME": 0.0071,
+    "OTHER": 0.0762
+   }
+  },
+  {
+   "bucket": "2\u201310 h",
+   "n": 4010,
+   "shares": {
+    "PERF": 0.3708,
+    "STAB": 0.1469,
+    "CONTENT": 0.0501,
+    "DESIGN": 0.1175,
+    "UI": 0.0367,
+    "MONET": 0.1711,
+    "ONLINE": 0.0142,
+    "SUPPORT": 0.007,
+    "STORY": 0.014,
+    "OFFGAME": 0.003,
+    "OTHER": 0.0688
+   }
+  },
+  {
+   "bucket": "10\u201350 h",
+   "n": 3867,
+   "shares": {
+    "PERF": 0.2097,
+    "STAB": 0.1469,
+    "CONTENT": 0.1689,
+    "DESIGN": 0.1994,
+    "UI": 0.0323,
+    "MONET": 0.0853,
+    "ONLINE": 0.0057,
+    "SUPPORT": 0.014,
+    "STORY": 0.0603,
+    "OFFGAME": 0.0044,
+    "OTHER": 0.0732
+   }
+  },
+  {
+   "bucket": "50\u2013200 h",
+   "n": 1662,
+   "shares": {
+    "PERF": 0.1185,
+    "STAB": 0.1149,
+    "CONTENT": 0.2653,
+    "DESIGN": 0.2076,
+    "UI": 0.0187,
+    "MONET": 0.0728,
+    "ONLINE": 0.0036,
+    "SUPPORT": 0.0229,
+    "STORY": 0.0993,
+    "OFFGAME": 0.0018,
+    "OTHER": 0.0746
+   }
+  },
+  {
+   "bucket": "200 h+",
+   "n": 115,
+   "shares": {
+    "PERF": 0.1304,
+    "STAB": 0.2087,
+    "CONTENT": 0.2174,
+    "DESIGN": 0.1391,
+    "UI": 0.0087,
+    "MONET": 0.0522,
+    "ONLINE": 0.0,
+    "SUPPORT": 0.0261,
+    "STORY": 0.0435,
+    "OFFGAME": 0.0087,
+    "OTHER": 0.1652
+   }
+  }
+ ],
+ "said_vs_did": [
+  {
+   "code": "STOPPED",
+   "statement": "Said they quit, refunded or won't return",
+   "n": 1988,
+   "share": 0.1528,
+   "mature_n": 1977,
+   "walk_rate": 0.564,
+   "kept_10h_rate": 0.3085,
+   "active_now_rate": 0.0218
+  },
+  {
+   "code": "WAITING",
+   "statement": "Said they'd come back if it's fixed",
+   "n": 1730,
+   "share": 0.133,
+   "mature_n": 1726,
+   "walk_rate": 0.3019,
+   "kept_10h_rate": 0.529,
+   "active_now_rate": 0.0388
+  },
+  {
+   "code": "NONE",
+   "statement": "Said nothing about stopping",
+   "n": 9294,
+   "share": 0.7143,
+   "mature_n": 9243,
+   "walk_rate": 0.3883,
+   "kept_10h_rate": 0.452,
+   "active_now_rate": 0.0415
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2024-03",
+   "reviews": 28337,
+   "negative": 9082,
+   "negative_share": 0.3205,
+   "labeled": 8596,
+   "reason_counts": {
+    "PERF": 2993,
+    "STAB": 1168,
+    "CONTENT": 650,
+    "DESIGN": 862,
+    "UI": 298,
+    "MONET": 1669,
+    "ONLINE": 109,
+    "SUPPORT": 59,
+    "STORY": 186,
+    "OFFGAME": 37,
+    "OTHER": 565
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2024-04",
+   "reviews": 6327,
+   "negative": 1621,
+   "negative_share": 0.2562,
+   "labeled": 1556,
+   "reason_counts": {
+    "PERF": 302,
+    "STAB": 242,
+    "CONTENT": 291,
+    "DESIGN": 302,
+    "UI": 46,
+    "MONET": 109,
+    "ONLINE": 10,
+    "SUPPORT": 14,
+    "STORY": 105,
+    "OFFGAME": 5,
+    "OTHER": 130
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update",
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2024-05",
+   "reviews": 994,
+   "negative": 342,
+   "negative_share": 0.3441,
+   "labeled": 324,
+   "reason_counts": {
+    "PERF": 71,
+    "STAB": 36,
+    "CONTENT": 74,
+    "DESIGN": 64,
+    "UI": 11,
+    "MONET": 21,
+    "ONLINE": 1,
+    "SUPPORT": 6,
+    "STORY": 22,
+    "OFFGAME": 0,
+    "OTHER": 18
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update",
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2024-06",
+   "reviews": 539,
+   "negative": 223,
+   "negative_share": 0.4137,
+   "labeled": 210,
+   "reason_counts": {
+    "PERF": 44,
+    "STAB": 22,
+    "CONTENT": 36,
+    "DESIGN": 38,
+    "UI": 7,
+    "MONET": 15,
+    "ONLINE": 0,
+    "SUPPORT": 4,
+    "STORY": 23,
+    "OFFGAME": 2,
+    "OTHER": 19
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2024-07",
+   "reviews": 629,
+   "negative": 257,
+   "negative_share": 0.4086,
+   "labeled": 249,
+   "reason_counts": {
+    "PERF": 63,
+    "STAB": 33,
+    "CONTENT": 46,
+    "DESIGN": 46,
+    "UI": 8,
+    "MONET": 13,
+    "ONLINE": 1,
+    "SUPPORT": 4,
+    "STORY": 12,
+    "OFFGAME": 1,
+    "OTHER": 22
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2024-08",
+   "reviews": 297,
+   "negative": 121,
+   "negative_share": 0.4074,
+   "labeled": 119,
+   "reason_counts": {
+    "PERF": 17,
+    "STAB": 8,
+    "CONTENT": 26,
+    "DESIGN": 24,
+    "UI": 6,
+    "MONET": 6,
+    "ONLINE": 0,
+    "SUPPORT": 3,
+    "STORY": 19,
+    "OFFGAME": 0,
+    "OTHER": 10
+   },
+   "patches": []
+  },
+  {
+   "month": "2024-09",
+   "reviews": 504,
+   "negative": 182,
+   "negative_share": 0.3611,
+   "labeled": 171,
+   "reason_counts": {
+    "PERF": 28,
+    "STAB": 36,
+    "CONTENT": 29,
+    "DESIGN": 33,
+    "UI": 5,
+    "MONET": 6,
+    "ONLINE": 1,
+    "SUPPORT": 4,
+    "STORY": 11,
+    "OFFGAME": 1,
+    "OTHER": 17
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update",
+    "New update for Dragon's Dogma 2 and on sale now!"
+   ]
+  },
+  {
+   "month": "2024-10",
+   "reviews": 405,
+   "negative": 121,
+   "negative_share": 0.2988,
+   "labeled": 110,
+   "reason_counts": {
+    "PERF": 13,
+    "STAB": 19,
+    "CONTENT": 19,
+    "DESIGN": 33,
+    "UI": 2,
+    "MONET": 2,
+    "ONLINE": 1,
+    "SUPPORT": 2,
+    "STORY": 5,
+    "OFFGAME": 0,
+    "OTHER": 14
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update",
+    "To all Dragon's Dogma 2 players on Steam - Title Update",
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2024-11",
+   "reviews": 723,
+   "negative": 164,
+   "negative_share": 0.2268,
+   "labeled": 154,
+   "reason_counts": {
+    "PERF": 29,
+    "STAB": 33,
+    "CONTENT": 27,
+    "DESIGN": 26,
+    "UI": 9,
+    "MONET": 8,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 3,
+    "OFFGAME": 1,
+    "OTHER": 17
+   },
+   "patches": []
+  },
+  {
+   "month": "2024-12",
+   "reviews": 563,
+   "negative": 141,
+   "negative_share": 0.2504,
+   "labeled": 136,
+   "reason_counts": {
+    "PERF": 17,
+    "STAB": 25,
+    "CONTENT": 23,
+    "DESIGN": 28,
+    "UI": 14,
+    "MONET": 2,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 10,
+    "OFFGAME": 1,
+    "OTHER": 16
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-01",
+   "reviews": 346,
+   "negative": 107,
+   "negative_share": 0.3092,
+   "labeled": 105,
+   "reason_counts": {
+    "PERF": 11,
+    "STAB": 19,
+    "CONTENT": 22,
+    "DESIGN": 16,
+    "UI": 5,
+    "MONET": 5,
+    "ONLINE": 0,
+    "SUPPORT": 3,
+    "STORY": 13,
+    "OFFGAME": 1,
+    "OTHER": 10
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2025-02",
+   "reviews": 303,
+   "negative": 109,
+   "negative_share": 0.3597,
+   "labeled": 102,
+   "reason_counts": {
+    "PERF": 18,
+    "STAB": 11,
+    "CONTENT": 21,
+    "DESIGN": 22,
+    "UI": 3,
+    "MONET": 3,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 9,
+    "OFFGAME": 0,
+    "OTHER": 15
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-03",
+   "reviews": 311,
+   "negative": 71,
+   "negative_share": 0.2283,
+   "labeled": 64,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 7,
+    "CONTENT": 10,
+    "DESIGN": 17,
+    "UI": 4,
+    "MONET": 3,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 4,
+    "OFFGAME": 1,
+    "OTHER": 9
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-04",
+   "reviews": 188,
+   "negative": 64,
+   "negative_share": 0.3404,
+   "labeled": 57,
+   "reason_counts": {
+    "PERF": 3,
+    "STAB": 12,
+    "CONTENT": 11,
+    "DESIGN": 11,
+    "UI": 2,
+    "MONET": 2,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 7,
+    "OFFGAME": 0,
+    "OTHER": 7
+   },
+   "patches": [
+    "To all Dragon's Dogma 2 players on Steam - Title Update"
+   ]
+  },
+  {
+   "month": "2025-05",
+   "reviews": 190,
+   "negative": 60,
+   "negative_share": 0.3158,
+   "labeled": 56,
+   "reason_counts": {
+    "PERF": 7,
+    "STAB": 13,
+    "CONTENT": 5,
+    "DESIGN": 14,
+    "UI": 2,
+    "MONET": 5,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 4,
+    "OFFGAME": 1,
+    "OTHER": 4
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-06",
+   "reviews": 342,
+   "negative": 133,
+   "negative_share": 0.3889,
+   "labeled": 126,
+   "reason_counts": {
+    "PERF": 11,
+    "STAB": 24,
+    "CONTENT": 14,
+    "DESIGN": 43,
+    "UI": 8,
+    "MONET": 4,
+    "ONLINE": 1,
+    "SUPPORT": 5,
+    "STORY": 7,
+    "OFFGAME": 0,
+    "OTHER": 9
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-07",
+   "reviews": 229,
+   "negative": 65,
+   "negative_share": 0.2838,
+   "labeled": 63,
+   "reason_counts": {
+    "PERF": 14,
+    "STAB": 8,
+    "CONTENT": 9,
+    "DESIGN": 9,
+    "UI": 7,
+    "MONET": 3,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 6,
+    "OFFGAME": 1,
+    "OTHER": 6
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-08",
+   "reviews": 213,
+   "negative": 77,
+   "negative_share": 0.3615,
+   "labeled": 72,
+   "reason_counts": {
+    "PERF": 11,
+    "STAB": 11,
+    "CONTENT": 5,
+    "DESIGN": 16,
+    "UI": 4,
+    "MONET": 4,
+    "ONLINE": 0,
+    "SUPPORT": 3,
+    "STORY": 9,
+    "OFFGAME": 1,
+    "OTHER": 8
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-09",
+   "reviews": 131,
+   "negative": 51,
+   "negative_share": 0.3893,
+   "labeled": 48,
+   "reason_counts": {
+    "PERF": 4,
+    "STAB": 11,
+    "CONTENT": 6,
+    "DESIGN": 8,
+    "UI": 3,
+    "MONET": 0,
+    "ONLINE": 2,
+    "SUPPORT": 5,
+    "STORY": 5,
+    "OFFGAME": 0,
+    "OTHER": 4
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-10",
+   "reviews": 177,
+   "negative": 50,
+   "negative_share": 0.2825,
+   "labeled": 46,
+   "reason_counts": {
+    "PERF": 12,
+    "STAB": 6,
+    "CONTENT": 5,
+    "DESIGN": 9,
+    "UI": 4,
+    "MONET": 1,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 6
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-11",
+   "reviews": 191,
+   "negative": 68,
+   "negative_share": 0.356,
+   "labeled": 62,
+   "reason_counts": {
+    "PERF": 9,
+    "STAB": 7,
+    "CONTENT": 9,
+    "DESIGN": 15,
+    "UI": 3,
+    "MONET": 3,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 5,
+    "OFFGAME": 0,
+    "OTHER": 9
+   },
+   "patches": []
+  },
+  {
+   "month": "2025-12",
+   "reviews": 194,
+   "negative": 78,
+   "negative_share": 0.4021,
+   "labeled": 74,
+   "reason_counts": {
+    "PERF": 13,
+    "STAB": 13,
+    "CONTENT": 7,
+    "DESIGN": 13,
+    "UI": 2,
+    "MONET": 7,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 12,
+    "OFFGAME": 0,
+    "OTHER": 6
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-01",
+   "reviews": 235,
+   "negative": 77,
+   "negative_share": 0.3277,
+   "labeled": 72,
+   "reason_counts": {
+    "PERF": 11,
+    "STAB": 17,
+    "CONTENT": 10,
+    "DESIGN": 17,
+    "UI": 6,
+    "MONET": 1,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 5,
+    "OFFGAME": 0,
+    "OTHER": 4
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-02",
+   "reviews": 222,
+   "negative": 58,
+   "negative_share": 0.2613,
+   "labeled": 56,
+   "reason_counts": {
+    "PERF": 6,
+    "STAB": 8,
+    "CONTENT": 8,
+    "DESIGN": 20,
+    "UI": 2,
+    "MONET": 3,
+    "ONLINE": 1,
+    "SUPPORT": 2,
+    "STORY": 3,
+    "OFFGAME": 1,
+    "OTHER": 2
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-03",
+   "reviews": 215,
+   "negative": 71,
+   "negative_share": 0.3302,
+   "labeled": 66,
+   "reason_counts": {
+    "PERF": 8,
+    "STAB": 11,
+    "CONTENT": 12,
+    "DESIGN": 21,
+    "UI": 3,
+    "MONET": 1,
+    "ONLINE": 0,
+    "SUPPORT": 2,
+    "STORY": 4,
+    "OFFGAME": 1,
+    "OTHER": 3
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-04",
+   "reviews": 198,
+   "negative": 57,
+   "negative_share": 0.2879,
+   "labeled": 56,
+   "reason_counts": {
+    "PERF": 8,
+    "STAB": 14,
+    "CONTENT": 5,
+    "DESIGN": 11,
+    "UI": 7,
+    "MONET": 3,
+    "ONLINE": 1,
+    "SUPPORT": 1,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 6
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-05",
+   "reviews": 14,
+   "negative": 3,
+   "negative_share": 0.2143,
+   "labeled": 3,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 0,
+    "CONTENT": 1,
+    "DESIGN": 0,
+    "UI": 0,
+    "MONET": 0,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 0,
+    "OFFGAME": 0,
+    "OTHER": 0
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-06",
+   "reviews": 332,
+   "negative": 68,
+   "negative_share": 0.2048,
+   "labeled": 63,
+   "reason_counts": {
+    "PERF": 12,
+    "STAB": 10,
+    "CONTENT": 11,
+    "DESIGN": 5,
+    "UI": 1,
+    "MONET": 7,
+    "ONLINE": 0,
+    "SUPPORT": 6,
+    "STORY": 5,
+    "OFFGAME": 0,
+    "OTHER": 6
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-07",
+   "reviews": 213,
+   "negative": 41,
+   "negative_share": 0.1925,
+   "labeled": 40,
+   "reason_counts": {
+    "PERF": 3,
+    "STAB": 5,
+    "CONTENT": 7,
+    "DESIGN": 13,
+    "UI": 3,
+    "MONET": 4,
+    "ONLINE": 1,
+    "SUPPORT": 0,
+    "STORY": 1,
+    "OFFGAME": 0,
+    "OTHER": 3
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-08",
+   "reviews": 51,
+   "negative": 15,
+   "negative_share": 0.2941,
+   "labeled": 15,
+   "reason_counts": {
+    "PERF": 0,
+    "STAB": 4,
+    "CONTENT": 0,
+    "DESIGN": 6,
+    "UI": 1,
+    "MONET": 0,
+    "ONLINE": 0,
+    "SUPPORT": 1,
+    "STORY": 3,
+    "OFFGAME": 0,
+    "OTHER": 0
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-09",
+   "reviews": 540,
+   "negative": 78,
+   "negative_share": 0.1444,
+   "labeled": 74,
+   "reason_counts": {
+    "PERF": 15,
+    "STAB": 10,
+    "CONTENT": 14,
+    "DESIGN": 15,
+    "UI": 7,
+    "MONET": 3,
+    "ONLINE": 0,
+    "SUPPORT": 4,
+    "STORY": 2,
+    "OFFGAME": 0,
+    "OTHER": 4
+   },
+   "patches": [
+    "Arise Again \u2013 Title Update 3.2 Live & New Relic Expedition Video!"
+   ]
+  },
+  {
+   "month": "2026-10",
+   "reviews": 174,
+   "negative": 20,
+   "negative_share": 0.1149,
+   "labeled": 19,
+   "reason_counts": {
+    "PERF": 0,
+    "STAB": 6,
+    "CONTENT": 1,
+    "DESIGN": 7,
+    "UI": 0,
+    "MONET": 1,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 0,
+    "OFFGAME": 1,
+    "OTHER": 3
+   },
+   "patches": []
+  },
+  {
+   "month": "2026-11",
+   "reviews": 355,
+   "negative": 50,
+   "negative_share": 0.1408,
+   "labeled": 48,
+   "reason_counts": {
+    "PERF": 1,
+    "STAB": 13,
+    "CONTENT": 7,
+    "DESIGN": 17,
+    "UI": 3,
+    "MONET": 0,
+    "ONLINE": 0,
+    "SUPPORT": 0,
+    "STORY": 1,
+    "OFFGAME": 0,
+    "OTHER": 6
+   },
+   "patches": []
+  }
+ ],
+ "top_reasons": [
+  "PERF",
+  "MONET",
+  "STAB",
+  "DESIGN",
+  "CONTENT"
+ ],
+ "spikes": [
+  {
+   "week_start": "2024-09-16",
+   "negative": 64,
+   "usual_weekly_negative": 26.5,
+   "negative_share": 0.4076,
+   "reviews": 157,
+   "top_reasons": [
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.2542
+    },
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.1695
+    },
+    {
+     "code": "CONTENT",
+     "reason": "Not enough content",
+     "share": 0.1525
+    }
+   ],
+   "official_posts": [
+    {
+     "date": "2024-09-17",
+     "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+    },
+    {
+     "date": "2024-09-18",
+     "title": "New update for Dragon's Dogma 2 and on sale now!"
+    }
+   ]
+  },
+  {
+   "week_start": "2025-06-02",
+   "negative": 40,
+   "usual_weekly_negative": 14.0,
+   "negative_share": 0.5,
+   "reviews": 80,
+   "top_reasons": [
+    {
+     "code": "DESIGN",
+     "reason": "Gameplay & design choices",
+     "share": 0.3514
+    },
+    {
+     "code": "STAB",
+     "reason": "Crashes & bugs",
+     "share": 0.2432
+    },
+    {
+     "code": "UI",
+     "reason": "Interface & controls",
+     "share": 0.1081
+    }
+   ],
+   "official_posts": []
+  }
+ ],
+ "weekly": [
+  {
+   "week": "2024-03-18",
+   "reviews": 18757,
+   "negative": 6674
+  },
+  {
+   "week": "2024-03-25",
+   "reviews": 9580,
+   "negative": 2408
+  },
+  {
+   "week": "2024-04-01",
+   "reviews": 3270,
+   "negative": 767
+  },
+  {
+   "week": "2024-04-08",
+   "reviews": 1561,
+   "negative": 399
+  },
+  {
+   "week": "2024-04-15",
+   "reviews": 822,
+   "negative": 244
+  },
+  {
+   "week": "2024-04-22",
+   "reviews": 582,
+   "negative": 180
+  },
+  {
+   "week": "2024-04-29",
+   "reviews": 315,
+   "negative": 97
+  },
+  {
+   "week": "2024-05-06",
+   "reviews": 268,
+   "negative": 88
+  },
+  {
+   "week": "2024-05-13",
+   "reviews": 238,
+   "negative": 95
+  },
+  {
+   "week": "2024-05-20",
+   "reviews": 157,
+   "negative": 49
+  },
+  {
+   "week": "2024-05-27",
+   "reviews": 147,
+   "negative": 62
+  },
+  {
+   "week": "2024-06-03",
+   "reviews": 123,
+   "negative": 49
+  },
+  {
+   "week": "2024-06-10",
+   "reviews": 95,
+   "negative": 42
+  },
+  {
+   "week": "2024-06-17",
+   "reviews": 111,
+   "negative": 51
+  },
+  {
+   "week": "2024-06-24",
+   "reviews": 171,
+   "negative": 63
+  },
+  {
+   "week": "2024-07-01",
+   "reviews": 183,
+   "negative": 83
+  },
+  {
+   "week": "2024-07-08",
+   "reviews": 183,
+   "negative": 77
+  },
+  {
+   "week": "2024-07-15",
+   "reviews": 151,
+   "negative": 58
+  },
+  {
+   "week": "2024-07-22",
+   "reviews": 79,
+   "negative": 30
+  },
+  {
+   "week": "2024-07-29",
+   "reviews": 70,
+   "negative": 21
+  },
+  {
+   "week": "2024-08-05",
+   "reviews": 73,
+   "negative": 35
+  },
+  {
+   "week": "2024-08-12",
+   "reviews": 71,
+   "negative": 30
+  },
+  {
+   "week": "2024-08-19",
+   "reviews": 49,
+   "negative": 15
+  },
+  {
+   "week": "2024-08-26",
+   "reviews": 81,
+   "negative": 39
+  },
+  {
+   "week": "2024-09-02",
+   "reviews": 63,
+   "negative": 23
+  },
+  {
+   "week": "2024-09-09",
+   "reviews": 60,
+   "negative": 20
+  },
+  {
+   "week": "2024-09-16",
+   "reviews": 157,
+   "negative": 64
+  },
+  {
+   "week": "2024-09-23",
+   "reviews": 188,
+   "negative": 58
+  },
+  {
+   "week": "2024-09-30",
+   "reviews": 151,
+   "negative": 48
+  },
+  {
+   "week": "2024-10-07",
+   "reviews": 84,
+   "negative": 25
+  },
+  {
+   "week": "2024-10-14",
+   "reviews": 74,
+   "negative": 21
+  },
+  {
+   "week": "2024-10-21",
+   "reviews": 67,
+   "negative": 17
+  },
+  {
+   "week": "2024-10-28",
+   "reviews": 115,
+   "negative": 35
+  },
+  {
+   "week": "2024-11-04",
+   "reviews": 140,
+   "negative": 51
+  },
+  {
+   "week": "2024-11-11",
+   "reviews": 109,
+   "negative": 34
+  },
+  {
+   "week": "2024-11-18",
+   "reviews": 93,
+   "negative": 26
+  },
+  {
+   "week": "2024-11-25",
+   "reviews": 383,
+   "negative": 42
+  },
+  {
+   "week": "2024-12-02",
+   "reviews": 196,
+   "negative": 43
+  },
+  {
+   "week": "2024-12-09",
+   "reviews": 78,
+   "negative": 16
+  },
+  {
+   "week": "2024-12-16",
+   "reviews": 88,
+   "negative": 27
+  },
+  {
+   "week": "2024-12-23",
+   "reviews": 109,
+   "negative": 41
+  },
+  {
+   "week": "2024-12-30",
+   "reviews": 99,
+   "negative": 24
+  },
+  {
+   "week": "2025-01-06",
+   "reviews": 91,
+   "negative": 34
+  },
+  {
+   "week": "2025-01-13",
+   "reviews": 79,
+   "negative": 25
+  },
+  {
+   "week": "2025-01-20",
+   "reviews": 50,
+   "negative": 17
+  },
+  {
+   "week": "2025-01-27",
+   "reviews": 88,
+   "negative": 29
+  },
+  {
+   "week": "2025-02-03",
+   "reviews": 92,
+   "negative": 41
+  },
+  {
+   "week": "2025-02-10",
+   "reviews": 83,
+   "negative": 27
+  },
+  {
+   "week": "2025-02-17",
+   "reviews": 61,
+   "negative": 18
+  },
+  {
+   "week": "2025-02-24",
+   "reviews": 46,
+   "negative": 12
+  },
+  {
+   "week": "2025-03-03",
+   "reviews": 62,
+   "negative": 17
+  },
+  {
+   "week": "2025-03-10",
+   "reviews": 61,
+   "negative": 11
+  },
+  {
+   "week": "2025-03-17",
+   "reviews": 92,
+   "negative": 26
+  },
+  {
+   "week": "2025-03-24",
+   "reviews": 73,
+   "negative": 13
+  },
+  {
+   "week": "2025-03-31",
+   "reviews": 50,
+   "negative": 9
+  },
+  {
+   "week": "2025-04-07",
+   "reviews": 40,
+   "negative": 14
+  },
+  {
+   "week": "2025-04-14",
+   "reviews": 38,
+   "negative": 16
+  },
+  {
+   "week": "2025-04-21",
+   "reviews": 42,
+   "negative": 17
+  },
+  {
+   "week": "2025-04-28",
+   "reviews": 63,
+   "negative": 20
+  },
+  {
+   "week": "2025-05-05",
+   "reviews": 56,
+   "negative": 14
+  },
+  {
+   "week": "2025-05-12",
+   "reviews": 38,
+   "negative": 12
+  },
+  {
+   "week": "2025-05-19",
+   "reviews": 36,
+   "negative": 13
+  },
+  {
+   "week": "2025-05-26",
+   "reviews": 33,
+   "negative": 10
+  },
+  {
+   "week": "2025-06-02",
+   "reviews": 80,
+   "negative": 40
+  },
+  {
+   "week": "2025-06-09",
+   "reviews": 94,
+   "negative": 34
+  },
+  {
+   "week": "2025-06-16",
+   "reviews": 85,
+   "negative": 27
+  },
+  {
+   "week": "2025-06-23",
+   "reviews": 65,
+   "negative": 27
+  },
+  {
+   "week": "2025-06-30",
+   "reviews": 78,
+   "negative": 26
+  },
+  {
+   "week": "2025-07-07",
+   "reviews": 60,
+   "negative": 15
+  },
+  {
+   "week": "2025-07-14",
+   "reviews": 47,
+   "negative": 12
+  },
+  {
+   "week": "2025-07-21",
+   "reviews": 37,
+   "negative": 13
+  },
+  {
+   "week": "2025-07-28",
+   "reviews": 32,
+   "negative": 8
+  },
+  {
+   "week": "2025-08-04",
+   "reviews": 28,
+   "negative": 10
+  },
+  {
+   "week": "2025-08-11",
+   "reviews": 59,
+   "negative": 25
+  },
+  {
+   "week": "2025-08-18",
+   "reviews": 67,
+   "negative": 27
+  },
+  {
+   "week": "2025-08-25",
+   "reviews": 43,
+   "negative": 10
+  },
+  {
+   "week": "2025-09-01",
+   "reviews": 34,
+   "negative": 13
+  },
+  {
+   "week": "2025-09-08",
+   "reviews": 30,
+   "negative": 9
+  },
+  {
+   "week": "2025-09-15",
+   "reviews": 26,
+   "negative": 13
+  },
+  {
+   "week": "2025-09-22",
+   "reviews": 31,
+   "negative": 13
+  },
+  {
+   "week": "2025-09-29",
+   "reviews": 55,
+   "negative": 21
+  },
+  {
+   "week": "2025-10-06",
+   "reviews": 44,
+   "negative": 11
+  },
+  {
+   "week": "2025-10-13",
+   "reviews": 38,
+   "negative": 10
+  },
+  {
+   "week": "2025-10-20",
+   "reviews": 26,
+   "negative": 7
+  },
+  {
+   "week": "2025-10-27",
+   "reviews": 35,
+   "negative": 7
+  },
+  {
+   "week": "2025-11-03",
+   "reviews": 35,
+   "negative": 9
+  },
+  {
+   "week": "2025-11-10",
+   "reviews": 29,
+   "negative": 10
+  },
+  {
+   "week": "2025-11-17",
+   "reviews": 50,
+   "negative": 25
+  },
+  {
+   "week": "2025-11-24",
+   "reviews": 66,
+   "negative": 21
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 57,
+   "negative": 20
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 34,
+   "negative": 13
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 28,
+   "negative": 11
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 51,
+   "negative": 23
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 58,
+   "negative": 26
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 61,
+   "negative": 19
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 54,
+   "negative": 17
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 48,
+   "negative": 14
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 47,
+   "negative": 12
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 46,
+   "negative": 12
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 41,
+   "negative": 8
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 64,
+   "negative": 19
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 70,
+   "negative": 22
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 39,
+   "negative": 14
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 40,
+   "negative": 16
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 61,
+   "negative": 20
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 50,
+   "negative": 15
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 39,
+   "negative": 11
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 42,
+   "negative": 11
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 28,
+   "negative": 10
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 72,
+   "negative": 20
+  },
+  {
+   "week": "2026-04-27",
+   "reviews": 34,
+   "negative": 8
+  },
+  {
+   "week": "2026-05-04",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-11",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-18",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 14,
+   "negative": 3
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 34,
+   "negative": 14
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 142,
+   "negative": 22
+  },
+  {
+   "week": "2026-06-15",
+   "reviews": 49,
+   "negative": 9
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 76,
+   "negative": 18
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 65,
+   "negative": 10
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 63,
+   "negative": 12
+  },
+  {
+   "week": "2026-07-13",
+   "reviews": 54,
+   "negative": 12
+  },
+  {
+   "week": "2026-07-20",
+   "reviews": 38,
+   "negative": 9
+  },
+  {
+   "week": "2026-07-27",
+   "reviews": 24,
+   "negative": 3
+  },
+  {
+   "week": "2026-08-03",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-10",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-17",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-08-24",
+   "reviews": 46,
+   "negative": 12
+  },
+  {
+   "week": "2026-08-31",
+   "reviews": 194,
+   "negative": 36
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 138,
+   "negative": 20
+  },
+  {
+   "week": "2026-09-14",
+   "reviews": 99,
+   "negative": 12
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 80,
+   "negative": 9
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 34,
+   "negative": 4
+  },
+  {
+   "week": "2026-10-05",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-12",
+   "reviews": 0,
+   "negative": 0
+  },
+  {
+   "week": "2026-10-19",
+   "reviews": 38,
+   "negative": 2
+  },
+  {
+   "week": "2026-10-26",
+   "reviews": 156,
+   "negative": 22
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 139,
+   "negative": 20
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 99,
+   "negative": 14
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 83,
+   "negative": 11
+  },
+  {
+   "week": "2026-11-23",
+   "reviews": 14,
+   "negative": 1
+  }
+ ],
+ "patch_dates": [
+  {
+   "date": "2024-03-29",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-04-09",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-04-25",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-05-15",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-05-31",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-06-27",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-07-12",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-09-17",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-09-18",
+   "title": "New update for Dragon's Dogma 2 and on sale now!"
+  },
+  {
+   "date": "2024-10-04",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-10-17",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2024-10-31",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2025-01-29",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2025-04-09",
+   "title": "To all Dragon's Dogma 2 players on Steam - Title Update"
+  },
+  {
+   "date": "2026-09-02",
+   "title": "Arise Again \u2013 Title Update 3.2 Live & New Relic Expedition Video!"
+  }
+ ],
+ "paraphrases": {
+  "PERF": [
+   "A player calls the game a rip-off due to bad performance, a locked save file, paid character editing, and microtransactions.",
+   "A player praises the game but says poor performance on common hardware led them to refund it."
+  ],
+  "MONET": [
+   "A player preordered the game but couldn't afford to keep it, so they refunded it.",
+   "A player felt charging for character changes and fast travel was unreasonable, and would rather grind for gear."
+  ],
+  "STAB": [
+   "A player regrets not refunding the game, which barely works and undercuts good moments with glitches.",
+   "A player's screen went black when moving the camera despite meeting specs, so they refunded the game."
+  ],
+  "DESIGN": [
+   "A player found the tutorial painful and the combat clunky, saying older games play far better.",
+   "A player finds the game boring after six hours and has no interest in continuing."
+  ],
+  "CONTENT": [
+   "A player says the game feels like a remake of the first and has not improved in over a decade.",
+   "A player says the game has barely improved since release and remains not worth playing in 2026."
+  ]
+ }
+}

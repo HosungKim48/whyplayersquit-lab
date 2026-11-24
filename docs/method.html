@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Method &amp; limits — Why Players Quit · Lab</title><meta name="description" content="Data, definitions, accuracy check, limits and cost."><style>
+:root{color-scheme:light;--bg:#f7f6f3;--surface:#fcfcfb;--line:#e4e2dc;--text:#0b0b0b;--text2:#52514e;--muted:#8a887f;
+--blue:#2a78d6;--blue-soft:#cde2fb;--orange:#eb6834;--grid:#e9e7e1;--heat:42,120,214}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#121211;--surface:#1a1a19;--line:#33332f;--text:#f0efec;--text2:#c3c2b7;--muted:#8f8e85;
+--blue:#3987e5;--blue-soft:#184f95;--orange:#d95926;--grid:#2a2a27;--heat:57,135,229}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--blue)}header.site{border-bottom:1px solid var(--line);background:var(--surface)}
+header.site div{max-width:980px;margin:0 auto;padding:14px 20px;display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
+header.site .brand{font-weight:700;color:var(--text);text-decoration:none}header.site nav a{margin-right:14px;font-size:14px}
+main{max-width:980px;margin:0 auto;padding:28px 20px 60px}h1{font-size:32px;line-height:1.2;margin:8px 0 6px}h2{font-size:22px;margin:44px 0 8px}
+h3{font-size:16px;margin:22px 0 6px}.lede{font-size:18px;color:var(--text2);max-width:760px}.kicker{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.tile b{display:block;font-size:28px;line-height:1.15}
+.tile span{font-size:13px;color:var(--text2)}.note{font-size:14px;color:var(--text2)}.caveat{border-left:3px solid var(--orange);padding:6px 14px;margin:14px 0;font-size:14px;color:var(--text2);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+th:first-child,td:first-child{text-align:left}th{font-weight:600;color:var(--text2);font-size:13px}.scroll{overflow-x:auto}
+td.l,th.l{text-align:left}.bottom li{margin:6px 0}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:14px}
+svg{display:block;width:100%;height:auto}svg text{font:12px system-ui,-apple-system,sans-serif;fill:var(--text2)}svg .v{fill:var(--text);font-weight:600}
+svg .t{fill:var(--muted);font-size:11px}.legend{font-size:13px;color:var(--text2);display:flex;gap:16px;flex-wrap:wrap;margin:4px 0 8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px}.sw-b{background:var(--blue)}.sw-o{background:var(--orange)}.sw-g{background:var(--muted)}
+details{margin:8px 0}summary{cursor:pointer;font-size:14px;color:var(--text2)}blockquote{margin:6px 0;padding:4px 14px;border-left:3px solid var(--line);color:var(--text2);font-size:15px}
+.tag{display:inline-block;font-size:12px;border:1px solid var(--line);border-radius:20px;padding:1px 9px;color:var(--text2);margin-left:6px}
+footer{border-top:1px solid var(--line);font-size:13px;color:var(--muted)}footer div{max-width:980px;margin:0 auto;padding:18px 20px}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}.games a.card{text-decoration:none;color:var(--text);display:block;margin:0}
+.games a.card:hover{border-color:var(--blue)}.games b{font-size:17px}
+@media (max-width:520px){.grid2{grid-template-columns:1fr}h1{font-size:26px}}
+</style></head><body>
+<header class="site"><div><a class="brand" href="index.html">Why Players Quit · Lab</a>
+<nav><a href="index.html">Overview</a><a href="index.html#reports">Game reports</a><a href="method.html">Method &amp; limits</a><a href="https://github.com/HosungKim48/whyplayersquit-lab">Code &amp; data</a></nav></div></header>
+<main>
+<div class="kicker">Method &amp; limits</div><h1>How the numbers were made</h1>
+<p class="lede">Everything is computed by code in the public repository from public Steam data. This page lists each step, each definition, and what the results cannot tell you.</p>
+<h2>Data</h2>
+<ul><li><b>Source:</b> Steam's documented public review endpoint (<code>IUserReviewsService/GetAppReviews</code>), English reviews, all purchase types, full history, walked one calendar month at a time. Official announcements and patch notes come from Steam's public news endpoint (<code>ISteamNews/GetNewsForApp</code>).</li>
+<li><b>Politeness:</b> one request at a time per game with a pause between requests (about one request per second overall), back-off on errors, every raw page cached locally so nothing is fetched twice.</li>
+<li><b>Privacy:</b> raw review text and reviewer IDs never leave the local cache. The repository and this site contain only aggregated counts and short paraphrases written by a model and screened by code (20 words or fewer; no 4-word run shared with the source review).</li>
+<li><b>Snapshot:</b> 2026-11-24 (UTC). Playtime totals are as of that date.</li></ul>
+<h2>Row counts at each stage</h2>
+<div class="scroll"><table><tr><th>Game</th><th>Steam's lifetime English total (summary field)</th><th>English reviews reported by the API (sum of months)</th><th>Fetched, unique</th><th>Negative</th><th>Negative with 3+ words (code filter)</th><th>Labeled by model</th></tr><tr><td>Sid Meier&#x27;s Civilization VII</td><td>30,182</td><td>29,078</td><td>29,077</td><td>14,179</td><td>13,726</td><td>13,712</td></tr><tr><td>Cities: Skylines II</td><td>35,719</td><td>34,671</td><td>34,666</td><td>14,776</td><td>14,097</td><td>14,085</td></tr><tr><td>PAYDAY 3</td><td>32,718</td><td>32,302</td><td>32,298</td><td>17,386</td><td>16,292</td><td>16,272</td></tr><tr><td>Dragon&#x27;s Dogma 2</td><td>45,837</td><td>44,686</td><td>44,682</td><td>13,725</td><td>13,105</td><td>13,012</td></tr><tr><td>Monster Hunter Wilds</td><td>86,761</td><td>84,932</td><td>84,926</td><td>24,614</td><td>23,326</td><td>23,316</td></tr><tr><td>Starfield</td><td>86,202</td><td>85,461</td><td>85,455</td><td>36,050</td><td>33,774</td><td>33,672</td></tr></table></div>
+<p class="note">Coverage gap: Steam's lifetime summary count is 2.0% higher than the reviews the month-by-month listing returned (0.9%–3.7% by game). The listing itself was fetched almost completely. The reason for the gap is not documented by Steam and is not known here; the missing reviews could differ from the fetched ones.</p>
+<p class="note">The cheap filter runs in code first: positive reviews and negative reviews under 3 words are not sent to the model. Reviews the model failed to return a valid line for are left unlabeled.</p>
+<h2>Definitions</h2>
+<ul><li><b>Walked away:</b> the reviewer's public total playtime at the snapshot is less than 1 hour above their playtime when they wrote the review. Computed only for reviews at least 30 days old.</li>
+<li><b>Played 10+ more hours:</b> same gap, 10 hours or more.</li><li><b>Played in last 2 weeks:</b> Steam's two-week playtime figure is above zero at the snapshot.</li>
+<li><b>Refunded:</b> Steam's own flag on the review.</li>
+<li><b>95% interval:</b> Wilson interval for a share. Rates on fewer than 30 reviews are not shown.</li>
+<li><b>Adjusted for hours played:</b> the walk-away rate a complaint group would have if its reviewers had the same spread of hours-at-review as all labeled negative reviewers of that game (direct standardization over five playtime bands). Not shown when a band is too thin.</li>
+<li><b>"Higher / lower / similar":</b> a reason is called higher (or lower) only when its whole 95% interval sits above (or below) the game's overall negative-reviewer rate.</li>
+<li><b>Spike week:</b> after the first six weeks, a week with at least 40 negative reviews, at least double the median of the previous eight weeks, and not below any of them.</li></ul>
+<h2>Reason labels</h2>
+<p>A small language model (Claude Haiku) read each negative review (first 1,200 characters) and returned one main reason, an optional second reason, and whether the reviewer wrote that they had quit or would wait for fixes. Review text was treated as untrusted data.</p>
+<div class="scroll"><table><tr><th>Label</th><th class="l">Covers</th></tr><tr><td>Performance</td><td class='l'>low or unstable frame rate, stutter, long loading, hardware demands</td></tr><tr><td>Crashes &amp; bugs</td><td class='l'>crashes, game-breaking bugs, lost or corrupted saves, will not start</td></tr><tr><td>Not enough content</td><td class='l'>feels unfinished, missing features, repetitive, nothing left to do</td></tr><tr><td>Gameplay &amp; design choices</td><td class='l'>mechanics, balance, difficulty, pacing, progression, &#x27;boring&#x27;</td></tr><tr><td>Interface &amp; controls</td><td class='l'>UI, controls, readability, missing quality-of-life</td></tr><tr><td>Price &amp; monetization</td><td class='l'>price or value, DLC, microtransactions, editions</td></tr><tr><td>Online, accounts &amp; DRM</td><td class='l'>servers, matchmaking, forced online, third-party accounts, DRM, anti-cheat, cheaters</td></tr><tr><td>Post-launch support</td><td class='l'>a patch made things worse, slow fixes, broken promises, communication</td></tr><tr><td>Story &amp; writing</td><td class='l'>writing, characters, quests, world building</td></tr><tr><td>Off-game topics</td><td class='l'>mainly politics, social topics, or specific people or companies rather than how the game plays; reported as a share only, without names and without taking sides</td></tr><tr><td>No clear reason</td><td class='l'>jokes, one-liners, unclear</td></tr></table></div>
+<h3>Accuracy check</h3><p>A random sample of 60 labeled reviews (drawn by code across all six games, seed fixed) was read and judged by the project's AI analyst (Claude), not by a human panel. Main reason judged correct: <b>88%</b> (53 of 60). Quit-statement tag judged correct: <b>95%</b> (57 of 60). The per-item verdicts (without text or IDs) are in <a href="data/label_audit.json">data/label_audit.json</a>. A second 50-review sample with text is kept locally for the author's own spot check and is not published.</p>
+<h2>Limits</h2>
+<ul><li><b>Reviewers are not players.</b> Only a small share of buyers write a review, and they are not a random sample. Nothing here estimates churn for the whole player base.</li>
+<li><b>Correlation, not cause.</b> A complaint group with a high walk-away rate was not shown to quit <i>because</i> of that complaint. Groups also differ in hours played, purchase timing and expectations.</li>
+<li><b>English only.</b> Other language communities may complain about different things.</li>
+<li><b>Playtime is imperfect.</b> Offline play, other platforms and idle time are not separated. Editing a review may refresh its "playtime at review" value; each report shows the walk-away rate with and without edited reviews.</li>
+<li><b>Six games, chosen by hand.</b> All drew heavy criticism; patterns may not hold for well-received or free-to-play games.</li>
+<li><b>Model labels contain errors</b> at about the rate shown in the accuracy check, and one main reason per review hides multi-issue reviews (the tables also show "main or second reason").</li>
+<li><b>Patch matching is by date only.</b> Official posts near a spike are listed for context; sales, free weekends and outside news also move review counts.</li></ul>
+<h2>Cost</h2>
+<div class="scroll"><table><tr><th>Step</th><th>Model calls</th><th>Input tokens (incl. cached)</th><th>Output tokens</th><th>Cost</th></tr><tr><td>Reason labeling, all six games (Claude Haiku)</td><td>3,033</td><td>21,779,925</td><td>6,206,219</td><td>$6.69</td></tr><tr><td>Pilot and debugging calls (first pilot loaded unneeded tool definitions; fixed)</td><td>6</td><td>582,493</td><td>24,455</td><td>$0.69</td></tr><tr><td>Paraphrases for report examples (Claude Haiku)</td><td>6</td><td>28,895</td><td>18,535</td><td>$0.01</td></tr><tr><td><b>Total</b></td><td></td><td></td><td></td><td><b>$7.39</b></td></tr></table></div>
+<p class="note">Costs are the list-price figures reported with each call's actual token counts, summed by <a href="https://github.com/HosungKim48/whyplayersquit-lab/blob/main/src/cost.py">src/cost.py</a>. Budget cap for the project: $30.</p>
+<h2>Files</h2>
+<p>Per-game numbers: <a href="data/civilization-vii.json">civilization-vii.json</a> · <a href="data/cities-skylines-ii.json">cities-skylines-ii.json</a> · <a href="data/payday-3.json">payday-3.json</a> · <a href="data/dragons-dogma-2.json">dragons-dogma-2.json</a> · <a href="data/monster-hunter-wilds.json">monster-hunter-wilds.json</a> · <a href="data/starfield.json">starfield.json</a>. Cross-game: <a href="data/overview.json">overview.json</a>. Flat CSV tables and all code are in the <a href="https://github.com/HosungKim48/whyplayersquit-lab">repository</a>.</p></main>
+<footer><div>A free, public student research project built only from public Steam data. Not affiliated with Valve or with any studio or publisher named here.
+Reviews describe only the players who chose to write one. Nothing on this site shows that one thing caused another. No raw review text or reviewer IDs are published.</div></footer>
+</body></html>

@@ -1,0 +1,27 @@
+{
+ "total_usd": 7.39,
+ "budget_usd": 30,
+ "rows": [
+  {
+   "step": "Reason labeling, all six games (Claude Haiku)",
+   "calls": 3033,
+   "input_tokens": 21779925,
+   "output_tokens": 6206219,
+   "cost_usd": 6.6855
+  },
+  {
+   "step": "Pilot and debugging calls (first pilot loaded unneeded tool definitions; fixed)",
+   "calls": 6,
+   "input_tokens": 582493,
+   "output_tokens": 24455,
+   "cost_usd": 0.6904
+  },
+  {
+   "step": "Paraphrases for report examples (Claude Haiku)",
+   "calls": 6,
+   "input_tokens": 28895,
+   "output_tokens": 18535,
+   "cost_usd": 0.015
+  }
+ ]
+}

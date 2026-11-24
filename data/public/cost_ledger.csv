@@ -1,0 +1,4 @@
+step,calls,input_tokens,output_tokens,cost_usd
+"Reason labeling, all six games (Claude Haiku)",3033,21779925,6206219,6.6855
+Pilot and debugging calls (first pilot loaded unneeded tool definitions; fixed),6,582493,24455,0.6904
+Paraphrases for report examples (Claude Haiku),6,28895,18535,0.015

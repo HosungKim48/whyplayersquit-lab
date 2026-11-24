@@ -1,0 +1,7 @@
+slug,name,genre,release,snapshot,reviews,negative,negative_share,labeled,neg_walk_rate,pos_walk_rate,neg_refunded_rate,neg_active_now_rate,neg_median_hours_at_review,top_reason,top_reason_share,under2h_negative_share,under2h_neg_walk_rate,said_stopped_share,said_stopped_walk_rate,said_waiting_share,said_waiting_kept_10h_rate
+civilization-vii,Sid Meier's Civilization VII,4X strategy,2025-02-11,2026-11-24,29077,14179,0.4876,13712,0.3764,0.0358,0.0493,0.0839,15.1,Gameplay & design choices,0.3603,0.8784,0.6787,0.193,0.5069,0.1296,0.5175
+cities-skylines-ii,Cities: Skylines II,City builder,2023-10-24,2026-11-24,34666,14776,0.4262,14085,0.2572,0.0391,0.0404,0.1145,22.7,Crashes & bugs,0.2864,0.6995,0.5012,0.1712,0.3523,0.1441,0.627
+payday-3,PAYDAY 3,Co-op shooter (live service),2023-09-21,2026-11-24,32298,17386,0.5383,16272,0.3395,0.0792,0.028,0.0478,7.5,"Online, accounts & DRM",0.3594,0.8298,0.4636,0.1197,0.4649,0.1188,0.4842
+dragons-dogma-2,Dragon's Dogma 2,Action RPG,2024-03-22,2026-11-24,44682,13725,0.3072,13012,0.4058,0.0801,0.0802,0.0376,6.9,Performance,0.2891,0.7571,0.5833,0.1528,0.564,0.133,0.529
+monster-hunter-wilds,Monster Hunter Wilds,Action / co-op hunting,2025-02-28,2026-11-24,84926,24614,0.2898,23316,0.258,0.0385,0.0227,0.0556,34.7,Performance,0.44,0.6865,0.4951,0.0945,0.4116,0.1452,0.646
+starfield,Starfield,Single-player RPG,2023-09-06,2026-11-24,85455,36050,0.4219,33672,0.5082,0.0674,0.0139,0.0143,46.5,Gameplay & design choices,0.2291,0.7875,0.7156,0.1496,0.5783,0.0879,0.4473
