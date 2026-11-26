@@ -9,7 +9,8 @@ No review text and no IDs are read or written.
 import csv, json, math, os
 import numpy as np
 import pandas as pd
-from games import GAMES
+import sys
+from games import GAMES, all_games
 from analyze import MATURE_DAYS, MIN_CELL, ROOT
 
 COLS = ["voted_up", "hours_at_review", "hours_after_review", "days_since_review"]
@@ -45,15 +46,16 @@ def summarize(df):
 
 
 if __name__ == "__main__":
+    ALL = "--all" in sys.argv; SFX = "_all" if ALL else ""   # --all: the six studied games plus the expansion games, written to separate files
     frames = []; games = []
-    for g in GAMES:
+    for g in (all_games() if ALL else GAMES):
         df = pd.read_parquet(os.path.join(ROOT, "data", "work", f"reviews_{g['appid']}.parquet"), columns=COLS)
         frames.append(df); games.append(dict(slug=g["slug"], name=g["name"], genre=g["genre"], **summarize(df)))
     out = dict(params=dict(mature_days=MATURE_DAYS, min_cell=MIN_CELL, hour_edges=EDGES[:-1], position_edges=POS, groups=[x[2] for x in GROUPS]), pooled=summarize(pd.concat(frames)), games=games)
-    json.dump(out, open(os.path.join(ROOT, "docs", "data", "fans.json"), "w"), indent=1)
-    with open(os.path.join(ROOT, "data", "public", "fans_review_timing.csv"), "w", newline="") as f:
+    json.dump(out, open(os.path.join(ROOT, "docs", "data", "fans" + SFX + ".json"), "w"), indent=1)
+    with open(os.path.join(ROOT, "data", "public", "fans_review_timing" + SFX + ".csv"), "w", newline="") as f:
         w = csv.writer(f); w.writerow(["game", "total_hours_group", "recommended_reviews", "share", "median_hours_at_review", "median_total_hours", "position_p25", "position_median", "position_p75", "reviewed_in_last_tenth"])
-        for g in games + [dict(name="All six games", **out["pooled"])]:
+        for g in games + [dict(name=f"All {len(games)} games" if ALL else "All six games", **out["pooled"])]:
             for r in g["by_total_hours"]:
                 w.writerow([g["name"], r["group"], r["n"]] + [r.get(k) for k in ("share", "median_hours_at_review", "median_total_hours", "position_p25", "position_median", "position_p75", "reviewed_in_last_tenth")])
     for g in games + [dict(name="POOLED", **out["pooled"])]:

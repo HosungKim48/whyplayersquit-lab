@@ -36,6 +36,18 @@ python3 analyze.py && python3 after_review.py && python3 fans.py && python3 cost
 python3 make_media.py && python3 verify.py
 ```
 
+## Adding more games
+
+`src/games.py` lists candidate games that get the free numbers only (behaviour after the review, no model labels). On a computer that can reach Steam:
+
+```
+cd src
+python3 expand.py --check     # checks each candidate against Steam, fetches nothing
+python3 expand.py             # fetches, builds local tables, writes docs/data/*_all.json
+```
+
+It is safe to stop and run again; fetched pages are cached.
+
 ## Limits
 
 - Reviews represent only the players who wrote them.

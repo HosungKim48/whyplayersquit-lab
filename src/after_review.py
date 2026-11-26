@@ -8,7 +8,8 @@ without having complained. No review text and no IDs are read or written.
 """
 import csv, json, os
 import pandas as pd
-from games import GAMES
+import sys
+from games import GAMES, all_games
 from analyze import BUCKETS, MATURE_DAYS, WALK_HOURS, MIN_CELL, ROOT, wilson
 
 COLS = ["voted_up", "hours_at_review", "hours_after_review", "days_since_review", "pt_2w"]
@@ -43,15 +44,16 @@ def summarize(df):
 
 
 if __name__ == "__main__":
+    ALL = "--all" in sys.argv; SFX = "_all" if ALL else ""   # --all: the six studied games plus the expansion games, written to separate files
     frames = []; games = []
-    for g in GAMES:
+    for g in (all_games() if ALL else GAMES):
         df = pd.read_parquet(os.path.join(ROOT, "data", "work", f"reviews_{g['appid']}.parquet"), columns=COLS)
         frames.append(df); games.append(dict(slug=g["slug"], name=g["name"], genre=g["genre"], **summarize(df)))
     out = dict(params=dict(mature_days=MATURE_DAYS, walk_hours=WALK_HOURS, min_cell=MIN_CELL), pooled=summarize(pd.concat(frames)), games=games)
-    json.dump(out, open(os.path.join(ROOT, "docs", "data", "after_review.json"), "w"), indent=1)
-    with open(os.path.join(ROOT, "data", "public", "after_review_by_hours.csv"), "w", newline="") as f:
+    json.dump(out, open(os.path.join(ROOT, "docs", "data", "after_review" + SFX + ".json"), "w"), indent=1)
+    with open(os.path.join(ROOT, "data", "public", "after_review_by_hours" + SFX + ".csv"), "w", newline="") as f:
         w = csv.writer(f); w.writerow(["game", "hours_at_review", "verdict", "reviews", "walked_away", "walk_rate", "walk_lo", "walk_hi", "kept_10h_rate", "median_hours_after", "active_now_rate"])
-        for g in games + [dict(name="All six games", **out["pooled"])]:
+        for g in games + [dict(name=f"All {len(games)} games" if ALL else "All six games", **out["pooled"])]:
             for r in g["by_hours"]:
                 for v in ("positive", "negative"):
                     c = r[v]; w.writerow([g["name"], r["bucket"], "recommended" if v == "positive" else "not recommended", c["n"]] + [c.get(k) for k in ("walked_away", "walk_rate", "walk_lo", "walk_hi", "kept_10h_rate", "median_hours_after", "active_now_rate")])
