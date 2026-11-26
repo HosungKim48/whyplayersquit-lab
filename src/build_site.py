@@ -351,7 +351,7 @@ def game_page(o, audit, ov):
     c2h = f"{pct(early['neg_walk_rate'])} of under-2-hour critics stop there, inside Steam's refund window" if early["neg_walk_rate"] is not None else "Early hours"
     c2p = f"{pct(early['negative_share_in_bucket'])} of under-2-hour reviews are negative. Steam refunds are available up to 2 hours of play."
     w = svd["WAITING"]
-    c3h = f"{pct(w['share'])} of critics said they would come back"
+    c3h = f"{pct(w['share'])} of critics said they'd come back"
     c3p = f"{num(w['n'])} said they were waiting for fixes; {pct(w['kept_10h_rate'])} of them played 10+ more hours."
     calls = "".join(f'<div class="call"><div class="t">{t}</div><h3>{h}</h3><p>{p}</p></div>' for t, h, p in [("Prioritize", c1h, c1p), ("Protect", c2h, c2p), ("Win back", c3h, c3p)])
 
@@ -429,11 +429,11 @@ def game_page(o, audit, ov):
     body = f"""<div class="wrap">
 <div class="kicker">Quit-signal report · {E(o['genre'])} · released {E(o['release'])}</div>
 <h1>{E(o['name'])}</h1>
-<p class="lede">Which complaints go with players actually leaving, when they give up, and how it differs by market.</p>
+<p class="lede">Which complaints actually go with leaving, when players give up, and how it changes by market.</p>
 <div class="meta">{num(ovw['reviews'])} public Steam reviews in {f['languages']} languages, {f['first_review']} to {f['last_review']} · playtime snapshot {E(o['snapshot'])} · {num(f['labeled'])} negative reviews labeled by reason</div>
 <div class="kpis">{kpis}</div>
 <div class="calls">{calls}</div>
-<div class="caveat">Shares of reviewers, not all players. Associations to check against your own telemetry. The median critic had played {ovw['median_hours_at_negative_review']} hours, so stopping late can mean finishing. <a href="../method.html">Method &amp; limits</a></div>
+<div class="caveat">A few cautions: these are reviewers, not all players, so check the patterns against your own telemetry. The typical critic had already played {ovw['median_hours_at_negative_review']} hours, so stopping late can just mean finishing. <a href="../method.html">Method &amp; limits</a></div>
 <div class="layout"><aside class="toc"><b>In this report</b><a href="#priority">1 · Priority map</a>{'<a href="#inside">&nbsp;&nbsp;&nbsp;Inside design complaints</a>' if o.get('sub_reasons') else ''}<a href="#when">2 · When they give up</a><a href="#markets">3 · Markets</a><a href="#said">4 · Said versus did</a><a href="#timeline">5 · Patches &amp; spikes</a><a href="#voices">6 · Player voice</a><a href="#teams">7 · Checks by team</a><a href="#limits">8 · Limits &amp; data</a></aside>
 <div>
 <section id="priority" style="margin-top:8px"><h2>1 · Priority map</h2>
@@ -521,12 +521,12 @@ def overview_page_body(ov, games, ar, c1h, lab, fans_line):
     P, N = ar["pooled"]["positive"], ar["pooled"]["negative"]; base = ar["pooled"]["baseline_at_critics_hours"]; rows = ar["pooled"]["by_hours"]
     every = all(r["gap"] is not None and r["gap"] > 0 for g in ar["games"] + [ar["pooled"]] for r in g["by_hours"])
     late = max(((g, r) for g in ar["games"] for r in g["by_hours"][1:] if r["positive"]["walk_rate"] is not None), key=lambda t: t[1]["positive"]["walk_rate"])
-    notes = [f"Across all hours, {pct(P['walk_rate'])} of players who recommended a game logged under one more hour after reviewing, against {pct(N['walk_rate'])} of those who did not."
-             + (" The gap holds at every stage of play." if every else "") + f" At the critics' hours, recommenders would stop {pct(base)} of the time."]
+    notes = [f"After a thumbs-up, {pct(P['walk_rate'])} of players stopped within the hour. After a thumbs-down, {pct(N['walk_rate'])} did."
+             + (" It holds at every stage of play." if every else "") + f" And it isn't about hours played: at the critics' hours, fans would still stop only {pct(base)} of the time."]
     for i, r in enumerate(rows):
-        t = f"{r['bucket']}: critics stopped {r['negative']['walk_rate'] / r['positive']['walk_rate']:.1f} times as often as recommenders."
-        if i == 0: t += " This is inside Steam's refund window, so both groups stop more often here."
-        if r["bucket"] == late[1]["bucket"]: t += f" Some recommenders stop here too: in {late[0]['name']} it is {pct(late[1]['positive']['walk_rate'])}, which fits finishing a game more than quitting it."
+        t = f"At {r['bucket'].lower()}, critics were {r['negative']['walk_rate'] / r['positive']['walk_rate']:.1f} times as likely to stop as fans."
+        if i == 0: t += " That's inside Steam's refund window, so everyone stops more here."
+        if r["bucket"] == late[1]["bucket"]: t += f" Some fans stop here too: {pct(late[1]['positive']['walk_rate'])} in {late[0]['name']}, which looks more like finishing than quitting."
         notes.append(t)
     H = 3.3
     pills = "".join(f'<button class="pill" type="button" aria-pressed="{"true" if i == 0 else "false"}">{E(l)}</button>' for i, l in enumerate(["All hours"] + [r["bucket"] for r in rows]))
@@ -543,14 +543,14 @@ def overview_page_body(ov, games, ar, c1h, lab, fans_line):
     mh = next((o for o in ov if o["slug"] == "monster-hunter-wilds"), None); cs = "What an English-only read of Steam reviews misses."
     if mh:
         en = next((l for l in mh["languages"] if l["code"] == "english"), None); zh = next((l for l in mh["languages"] if l["code"] == "schinese"), None)
-        if en and zh: cs = f"{mh['name']} is {pct(en['negative_share'])} negative in English and {pct(zh['negative_share'])} in Simplified Chinese."
+        if en and zh: cs = f"{mh['name']} looks fine in English: {pct(en['negative_share'])} negative. In Simplified Chinese it's {pct(zh['negative_share'])}."
     notes_json = json.dumps(notes).replace("<", "\\u003c")
     legend = lambda a, b: f'<div class="tlegend"><span>{thumb(True)}{a}</span><span>{thumb(False)}{b}</span></div>'
     return f"""<div class="hero-bg"><div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
 <svg class="pulseline" aria-hidden="true" viewBox="0 0 1280 160" preserveAspectRatio="none"><polyline points="0,90 180,90 230,90 262,30 300,140 338,60 372,90 620,90 660,90 690,48 724,120 752,90 1280,90" fill="none" stroke="#5a9cec" stroke-width="2" stroke-linejoin="round"/></svg>
 <div class="wrap hero"><div class="htext rise">
 <h1 class="big">A review is not the end of the story. This study measures what players did next.</h1>
-<p class="lede">{num(tot)} public Steam reviews of six games, in {nlang} languages. For each one, Steam shows hours played at the review and hours played since.</p>
+<p class="lede">Every Steam review comes with a clue: how long the reviewer kept playing afterwards. Here's what {num(tot)} reviews of six games, in {nlang} languages, show.</p>
 <a class="btn" href="#games">Find a game like yours</a></div>
 <div class="tiltwrap" id="tilt"><div class="stack"><div class="layer l2" aria-hidden="true"></div><div class="layer l1" aria-hidden="true"></div>
 <div class="panel"><div class="kick">Stopped within an hour of reviewing</div>
@@ -564,7 +564,7 @@ def overview_page_body(ov, games, ar, c1h, lab, fans_line):
 <div class="wrap" style="padding-top:20px">
 <section id="games" style="margin-top:0"><div class="shead"><h2>Find a game like yours</h2>{legend("Recommended, stopped", "Not recommended, stopped")}</div>
 <div class="gcards">{cards}</div></section>
-<section id="request"><div class="req"><div class="rt"><h2>Is your game missing?</h2><p>The same report can be built for any paid Steam game with public reviews. Tell me which game and I will reply by email.</p></div>
+<section id="request"><div class="req"><div class="rt"><h2>Don't see your game?</h2><p>Any paid Steam game with public reviews works. Tell me which one and I'll email you back.</p></div>
 <form id="reqform" data-to="{CONTACT}">
 <div class="f"><label for="rq-name">Name</label><input id="rq-name" name="name" type="text" autocomplete="name" required></div>
 <div class="f"><label for="rq-studio">Studio</label><input id="rq-studio" name="studio" type="text" autocomplete="organization" required></div>
@@ -575,11 +575,11 @@ def overview_page_body(ov, games, ar, c1h, lab, fans_line):
 <div class="fb" id="reqfb" role="status" hidden>If your email app did not open, write to {CONTACT}.</div>
 </form></div></section>
 <section class="more">
-<a class="mcard lift" href="quit.html"><b>Why players quit</b><span>{E(c1h)}. Which complaints go with stopping, from {num(lab)} labeled negative reviews.</span></a>
+<a class="mcard lift" href="quit.html"><b>Why players quit</b><span>{E(c1h)}. See which complaints actually go with leaving.</span></a>
 <a class="mcard lift" href="fans.html"><b>When fans review</b><span>{E(fans_line)}</span></a>
-<a class="mcard lift" href="data.html"><b>The numbers</b><span>Every table behind this page: by game, by hours played and by review language.</span></a>
+<a class="mcard lift" href="data.html"><b>The numbers</b><span>Want the full tables? Every game, every stage of play, every language.</span></a>
 <a class="mcard lift" href="case-study.html"><b>Case study: the score that hid a market</b><span>{E(cs)}</span></a>
-<a class="mcard lift" href="method.html"><b>Method and limits</b><span>Claude Haiku 5.5 labels, Claude Fable 5.2 audits, code checks every number.</span></a>
+<a class="mcard lift" href="method.html"><b>Method and limits</b><span>How it's made: Claude Haiku 5.5 labels, Claude Fable 5.2 audits, and code checks every number.</span></a>
 </section>
 </div>
 {OVERVIEW_JS}"""
@@ -602,10 +602,10 @@ def index_page(ov, games, audit, cost, models, ar, fans_line):
     pm = (models or {}).get("pooled") or {}
     odds_chart = hbar(sorted([dict(label=r["reason"], value=r["odds_ratio"], lo=r["lo"], hi=r["hi"], tip=f"{r['reason']}: {r['n']:,} reviews") for r in pm["rows"]], key=lambda r: -r["value"]),
                       color="var(--orange)", width=720, label_w=200, fmt=lambda v: f"{v:.2f}×", ref=1, ref_label="crash reporters", whisk=True) if pm.get("ok") else ""
-    c2h = "Under two hours, many critics stop, inside the refund window"
-    c2p = f"{rng('under2h_neg_walk_rate')} of under-2-hour critics never logged another hour. Steam refunds are available up to 2 hours of play."
-    c3h = "Most critics are still reachable"
-    c3p = f"{rng('neg_walk_rate', True)} of critics kept playing. Of those who said they would wait for fixes, {rng('said_waiting_kept_10h_rate')} played 10+ more hours."
+    c2h = "Early critics often leave, but that's refund territory"
+    c2p = f"{rng('under2h_neg_walk_rate')} of critics with under 2 hours never came back. Steam refunds run up to 2 hours of play, so some may have left for a refund."
+    c3h = "Most critics haven't gone anywhere"
+    c3p = f"{rng('neg_walk_rate', True)} kept playing. Of the ones who said they'd wait for fixes, {rng('said_waiting_kept_10h_rate')} played 10+ more hours."
     calls = "".join(f'<div class="call"><div class="t">{t}</div><h3>{h}</h3><p>{p}</p></div>' for t, h, p in [("Prioritize", c1h, c1p), ("Protect", c2h, c2p), ("Win back", c3h, c3p)])
 
     rows = "".join(f"<tr><td><a href='games/{E(o['slug'])}.html'>{E(o['name'])}</a><div class='small'>{E(o['genre'])}</div></td><td>{num(o['reviews'])}</td><td>{pct(o['english']/o['reviews'])}</td>{barcell(o['negative_share'])}"
@@ -649,14 +649,14 @@ def index_page(ov, games, audit, cost, models, ar, fans_line):
     gone = "".join(f"<tr><td>{E(g['name'])} <span class='small'>{num(g['positive']['walked_away'])} reviewers</span></td>" + "".join(heat(r["positive"]["walk_rate"], f"{r['positive']['n']:,} recommended reviews") for r in g["by_hours"]) + "</tr>" for g in ar["games"])
     body = f"""<div class="wrap">
 <h1>The numbers</h1>
-<p class="lede">Every table behind the overview.</p>
+<p class="lede">All the tables behind the overview, in one place.</p>
 <div class="kpis">
 <div class="kpi"><div class="l">Reviews analysed</div><b>{num(tot)}</b><div class="s">full history of 6 games, {nl} languages with 300+ reviews in a game</div></div>
 <div class="kpi"><div class="l">Recommenders who stopped</div><b>{pct(P['walk_rate'])}</b><div class="s">logged under 1 more hour after a positive review</div></div>
 <div class="kpi"><div class="l">Critics who stopped</div><b>{pct(N['walk_rate'])}</b><div class="s">after a negative review ({pct(wmin['neg_walk_rate'])}–{pct(wmax['neg_walk_rate'])} by game)</div></div>
 <div class="kpi"><div class="l">Played 10+ more hours</div><b>{pct(P['kept_10h_rate'])} / {pct(N['kept_10h_rate'])}</b><div class="s">recommenders / critics</div></div></div>
 <div class="calls">{acalls}</div>
-<div class="caveat">Shares of reviewers, not all players. Associations, not causes. Stopping late can mean finishing a game. <a href="method.html">Method &amp; limits</a></div>
+<div class="caveat">A few cautions: these are reviewers, not all players. A pattern here isn't proof of cause. And stopping late can just mean finishing the game. <a href="method.html">Method &amp; limits</a></div>
 
 <section id="after"><h2>After the review, by hours played</h2>
 <p class="q">How often did a reviewer log under one more hour after reviewing? All six games together, reviews at least {ar['params']['mature_days']} days old.</p>
@@ -695,12 +695,12 @@ def index_page(ov, games, audit, cost, models, ar, fans_line):
 </div>"""
     quit_body = f"""<div class="wrap">
 <h1>Why players quit</h1>
-<p class="lede">Which complaints go with stopping. {num(lab)} negative reviews, labeled by reason.</p>
+<p class="lede">Not every complaint means goodbye. Here's which ones do, from {num(lab)} negative reviews.</p>
 <div class="calls">{calls}</div>
-<div class="caveat">Shares of reviewers, not all players. Associations, not causes. Stopping late can mean finishing a game. <a href="method.html">Method &amp; limits</a></div>
+<div class="caveat">A few cautions: these are reviewers, not all players. A pattern here isn't proof of cause. And stopping late can just mean finishing the game. <a href="method.html">Method &amp; limits</a></div>
 
 <section><h2>Which complaints go with leaving</h2>
-<p class="q">Odds of stopping after the review, compared with players whose main complaint was crashes and bugs.</p>
+<p class="q">How much more likely is each group to stop, compared with players who complained about crashes and bugs?</p>
 <div class="card">{odds_chart}</div>
 <details><summary>Tables: by game, the regression, and what reviews are about</summary>
 <h3>Across games</h3>
@@ -752,7 +752,7 @@ def line_chart(series, xticks, xmax, ylab, xlab, band=None, marks=None, width=76
 
 
 def fans_headline(fans):
-    r = fans["pooled"]["recommended"]; return f"Half of all recommendations are written between {r['p25']:.0f} and {r['p75']:.0f} hours of play."
+    r = fans["pooled"]["recommended"]; return f"When do happy players speak up? Half of all thumbs-ups land between {r['p25']:.0f} and {r['p75']:.0f} hours in."
 
 
 def fans_page(fans, ov):
@@ -770,9 +770,9 @@ def fans_page(fans, ov):
                     [(k, f"{k * 10}%") for k in range(0, 11, 2)], 10, "Share of that group's recommended reviews", "Point in the player's whole playtime when the review was written (0% = start, 100% = never played again)",
                     marks=[g["position_median"] * 10 for g in G])
     lo, hi = G[0], G[-1]
-    calls = [("When", f"Half of all recommendations come between {R['p25']:.0f} and {R['p75']:.0f} hours", f"Median: {R['median']:.0f} hours. Critics: {P['not_recommended']['median']:.0f} hours."),
-             ("Where in their playtime", "Heavier players recommend earlier in their playtime", f"{lo['group']} in total: {pct(lo['position_median'])} of the way through. {hi['group']}: {pct(hi['position_median'])}."),
-             ("Review and leave", f"{pct(lo['reviewed_in_last_tenth'])} of the lightest players recommend as they stop", f"Among players who total {hi['group'].lower()}: {pct(hi['reviewed_in_last_tenth'])}.")]
+    calls = [("When", f"Half of all recommendations come between {R['p25']:.0f} and {R['p75']:.0f} hours", f"The typical thumbs-up comes at {R['median']:.0f} hours. The typical thumbs-down comes at {P['not_recommended']['median']:.0f}."),
+             ("Where in their playtime", "Big players speak up early", f"Players who total {lo['group'].lower()} review {pct(lo['position_median'])} of the way through their time with the game. Players who total {hi['group'].lower()}: {pct(hi['position_median'])}."),
+             ("Review and leave", f"{pct(lo['reviewed_in_last_tenth'])} of light players recommend on their way out", f"Among players who total {hi['group'].lower()}: {pct(hi['reviewed_in_last_tenth'])}.")]
     callh = "".join(f'<div class="call"><div class="t">{t}</div><h3>{h}</h3><p>{p_}</p></div>' for t, h, p_ in calls)
     grows = "".join(f"<tr><td><a href='games/{E(g['slug'])}.html'>{E(g['name'])}</a><div class='small'>{E(g['genre'])}</div></td><td>{num(g['recommended']['n'])}</td><td>{g['recommended']['p25']}</td><td><b>{g['recommended']['median']}</b></td><td>{g['recommended']['p75']}</td><td>{g['not_recommended']['median']}</td></tr>" for g in fans["games"])
     grows += f"<tr><td><b>All six games</b></td><td>{num(R['n'])}</td><td>{R['p25']}</td><td><b>{R['median']}</b></td><td>{R['p75']}</td><td>{P['not_recommended']['median']}</td></tr>"
@@ -783,9 +783,9 @@ def fans_page(fans, ov):
     legend = "".join(f'<span><i style="background:{RAMP[i]}"></i>{E(g["group"])}</span>' for i, g in enumerate(G))
     body = f"""<div class="wrap">
 <h1>When fans review</h1>
-<p class="lede">When players who recommend a game write their review. {num(R['n'])} recommended reviews, six games.</p>
+<p class="lede">When do players who like a game say so? Here's the timing of {num(R['n'])} thumbs-up reviews across six games.</p>
 <div class="calls">{callh}</div>
-<div class="caveat">Shows when a review was written, not when the player decided. Players who are still playing will shift earlier. <a href="method.html">Method &amp; limits</a></div>
+<div class="caveat">Keep in mind: this is when players wrote the review, not when they made up their mind. Anyone still playing will drift earlier over time. <a href="method.html">Method &amp; limits</a></div>
 
 <section id="when"><h2>Hours played when fans write the review</h2>
 <p class="q">Shaded: the middle half of reviews. Dot: the median.</p>
