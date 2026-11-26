@@ -82,8 +82,8 @@ def page(title, body, ov, depth=0, desc="", current=None):
     pills = "".join(f'<a class="{"on" if o["slug"] == current else ""}" href="{up}games/{E(o["slug"])}.html">{E(o["name"])}</a>' for o in ov)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><style>{CSS}</style></head><body>
-<div class="top"><div class="in"><a class="brand" href="{up}index.html">Why Players Quit <span>· Lab</span></a>
-<nav><a href="{up}index.html">Overview</a><a href="{up}index.html#reports">Game reports</a><a href="{up}index.html#markets">Markets</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a></nav></div></div>
+<div class="top"><div class="in"><a class="brand" href="{up}index.html">Player Signals</a>
+<nav><a href="{up}index.html">Overview</a><a href="{up}quit.html">Why players quit</a><a href="{up}index.html#reports">Game reports</a><a href="{up}index.html#markets">Markets</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a></nav></div></div>
 <div class="switch"><div class="in"><span>Reports</span>{pills}</div></div>
 {body}
 <footer><div><b>Hosung Kim</b> · USC Marshall School of Business · built with an AI agent.<br>A free, public student research project built only from public Steam data. Not affiliated with Valve or with any studio or publisher named here.
@@ -201,6 +201,21 @@ def timeline(monthly):
             s.append(f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{y0+h2+2}" y2="{y0+h2+9}" stroke="var(--text2)" stroke-width="2"><title>{E(m["month"] + ": " + "; ".join(m["patches"][:4]))}</title></line>')
         if m["month"].endswith("-01") or i == 0:
             s.append(f'<text class="t" x="{x:.1f}" y="{H-6}" text-anchor="middle">{E(m["month"])}</text>')
+    return "".join(s) + "</svg>"
+
+
+def pair_columns(rows, width=720, height=250):
+    """Two bars per group: recommended (blue) and not recommended (orange). rows: label, a, b, tip."""
+    top, bot = 24, 32; ph = height - top - bot; vmax = max(max(r["a"] or 0, r["b"] or 0) for r in rows) * 1.08 or 1
+    slot = width / len(rows); bw = min((slot - 28) / 2, 46)
+    s = [f'<svg viewBox="0 0 {width} {height}" role="img" aria-label="Share of reviewers who logged under one more hour after reviewing, by hours played at review, recommended against not recommended">', f'<line x1="0" x2="{width}" y1="{top+ph}" y2="{top+ph}" stroke="var(--grid)"/>']
+    for i, r in enumerate(rows):
+        cx = i * slot + slot / 2
+        for v, x, col in [(r["a"], cx - bw - 2, "var(--blue)"), (r["b"], cx + 2, "var(--orange)")]:
+            if v is None: continue
+            bh = max(v / vmax * ph, 1); y = top + ph - bh
+            s.append(f'<g><title>{E(r["tip"])}</title><rect x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{bh:.1f}" rx="4" fill="{col}"/><text class="v" x="{x+bw/2:.1f}" y="{y-6:.1f}" text-anchor="middle">{pct(v)}</text></g>')
+        s.append(f'<text x="{cx:.1f}" y="{height-10}" text-anchor="middle">{E(r["label"])}</text>')
     return "".join(s) + "</svg>"
 
 
@@ -438,7 +453,7 @@ def game_page(o, audit, ov):
     return page(f"{o['name']} — quit signals in Steam reviews", body, ov, depth=1, desc=f"Quit-signal report for {o['name']} from public Steam reviews in all languages.", current=o["slug"])
 
 
-def index_page(ov, games, audit, cost, models):
+def index_page(ov, games, audit, cost, models, ar):
     tot = sum(o["reviews"] for o in ov); neg = sum(o["negative"] for o in ov); lab = sum(o["labeled"] for o in ov); eng = sum(o["english"] for o in ov)
     nl = len({l["code"] for o in ov for l in o["languages"] if l["code"] != "_small"})
     wmin = min(ov, key=lambda o: o["neg_walk_rate"]); wmax = max(ov, key=lambda o: o["neg_walk_rate"])
@@ -483,35 +498,58 @@ def index_page(ov, games, audit, cost, models):
     cards = "".join(f"<a class='game' href='games/{E(o['slug'])}.html'><b>{E(o['name'])}</b><div class='small'>{E(o['genre'])} · released {E(o['release'])}</div>"
                     f"<div class='row'><div><strong>{num(o['reviews'])}</strong>reviews</div><div><strong>{pct(o['negative_share'])}</strong>negative</div><div><strong>{pct(o['neg_walk_rate'])}</strong>of critics walked away</div></div>"
                     f"<div class='note' style='margin-top:10px'>Top complaint: {E((o['top_reason'] or '').lower())} ({pct(o['top_reason_share'])})</div></a>" for o in ov)
+    P, N = ar["pooled"]["positive"], ar["pooled"]["negative"]; base = ar["pooled"]["baseline_at_critics_hours"]
+    every = all(r["gap"] is not None and r["gap"] > 0 for g in ar["games"] + [ar["pooled"]] for r in g["by_hours"])
+    pts = lambda v: "–" if v is None else f"{v * 100:.0f} pts"
+    a1h = f"{pct(1 - P['walk_rate'])} of recommenders keep playing"
+    a1p = f"{pct(P['kept_10h_rate'])} played 10 or more further hours, and {pct(P['active_now_rate'])} were active in the two weeks before the snapshot. Median play after a positive review: {P['median_hours_after']} hours."
+    a2h = f"Critics stop about {N['walk_rate'] / P['walk_rate']:.0f} times as often" + (", at every stage of play" if every else "")
+    a2p = (f"{pct(N['walk_rate'])} of critics logged under 1 more hour, against {pct(P['walk_rate'])} of recommenders. Hours played does not explain the gap: recommenders with the critics' mix of hours would stop {pct(base)} of the time. "
+           f"Still, {pct(1 - N['walk_rate'])} of critics played on and {pct(N['kept_10h_rate'])} played 10+ more hours.")
+    late = max(((g, r) for g in ar["games"] for r in g["by_hours"][1:] if r["positive"]["walk_rate"] is not None), key=lambda t: t[1]["positive"]["walk_rate"])
+    late_pool = next(r for r in ar["pooled"]["by_hours"] if r["bucket"] == late[1]["bucket"])
+    a3h = f"{num(P['walked_away'])} reviewers recommended a game and stopped there"
+    a3p = (f"A small group that a review score never shows. It is largest in {E(late[0]['name'])}: {pct(late[1]['positive']['walk_rate'])} of recommenders who reviewed at {E(late[1]['bucket'].lower())} logged under 1 more hour, "
+           f"against {pct(late_pool['positive']['walk_rate'])} at that stage across all six games. That pattern fits finishing a game more than quitting it.")
+    acalls = "".join(f'<div class="call"><div class="t">{t}</div><h3>{h}</h3><p>{p}</p></div>' for t, h, p in [("Recommended", a1h, a1p), ("Not recommended", a2h, a2p), ("Recommended, then gone", a3h, a3p)])
+    chart = pair_columns([dict(label=r["bucket"], a=r["positive"]["walk_rate"], b=r["negative"]["walk_rate"], tip=f"{r['bucket']}: {r['positive']['n']:,} recommended, {r['negative']['n']:,} not recommended") for r in ar["pooled"]["by_hours"]])
+    arow = lambda g, name: (f"<tr><td>{name}</td>{barcell(g['positive']['walk_rate'])}{barcell(g['negative']['walk_rate'], 'o')}<td>{pct(g['baseline_at_critics_hours'])}</td><td><b>{pts(g['excess_over_baseline'])}</b></td>"
+                            f"<td>{pct(g['positive']['kept_10h_rate'])}</td><td>{pct(g['negative']['kept_10h_rate'])}</td></tr>")
+    arows = "".join(arow(g, f"<a href='games/{E(g['slug'])}.html'>{E(g['name'])}</a><div class='small'>{E(g['genre'])}</div>") for g in ar["games"]) + arow(ar["pooled"], "<b>All six games</b>")
+    bhead = "".join(f"<th>{E(r['bucket'])}</th>" for r in ar["pooled"]["by_hours"])
+    gone = "".join(f"<tr><td>{E(g['name'])} <span class='small'>{num(g['positive']['walked_away'])} reviewers</span></td>" + "".join(heat(r["positive"]["walk_rate"], f"{r['positive']['n']:,} recommended reviews") for r in g["by_hours"]) + "</tr>" for g in ar["games"])
     body = f"""<div class="wrap">
-<h1>A negative review is a warning, not a goodbye</h1>
-<p class="lede">For Steam games, this lab measures who actually stopped playing after a negative review, when they gave up, and which complaints go with leaving — so a team can tell the complaints players voice while they stay from the ones that go with stopping.</p>
+<h1>What players do after they review</h1>
+<p class="lede">Steam shows how long a reviewer had played when they wrote a review and how long they have played since. This lab uses that gap to measure what reviewers of Steam games did next: who kept playing, who stopped, and how that differs between players who recommend a game and players who do not.</p>
 <div class="kpis">
 <div class="kpi"><div class="l">Reviews analysed</div><b>{num(tot)}</b><div class="s">full history of 6 games, {nl} languages with 300+ reviews in a game</div></div>
-<div class="kpi"><div class="l">Outside English</div><b>{pct(1-eng/tot)}</b><div class="s">of all reviews</div></div>
-<div class="kpi"><div class="l">Negative reviews</div><b>{num(neg)}</b><div class="s">{num(lab)} labeled by reason</div></div>
-<div class="kpi"><div class="l">Critics who walked away</div><b>{pct(wmin['neg_walk_rate'])}–{pct(wmax['neg_walk_rate'])}</b><div class="s">logged under 1 more hour (range across games)</div></div></div>
-<div class="calls">{calls}</div>
+<div class="kpi"><div class="l">Recommenders who stopped</div><b>{pct(P['walk_rate'])}</b><div class="s">logged under 1 more hour after a positive review</div></div>
+<div class="kpi"><div class="l">Critics who stopped</div><b>{pct(N['walk_rate'])}</b><div class="s">after a negative review ({pct(wmin['neg_walk_rate'])}–{pct(wmax['neg_walk_rate'])} by game)</div></div>
+<div class="kpi"><div class="l">Played 10+ more hours</div><b>{pct(P['kept_10h_rate'])} / {pct(N['kept_10h_rate'])}</b><div class="s">recommenders / critics</div></div></div>
+<div class="calls">{acalls}</div>
 <div class="caveat"><b>How far this goes.</b> Reviews represent only the players who wrote them. All figures are shares of reviewers, and every pattern is an association, not a cause. Stopping is not the same as a lost customer: these are paid games, and a reviewer who stops after 80 hours may simply have finished, while one who stops after 2 never got started. Read each walk-away rate next to hours played at review. See <a href="method.html">Method &amp; limits</a>.</div>
+
+<section id="after"><h2>After the review, by hours played</h2>
+<p class="q">How often did a reviewer log under one more hour after reviewing? All six games together, reviews at least {ar['params']['mature_days']} days old.</p>
+<div class="card"><div class="legend"><span><i class="sw-b"></i>Recommended</span><span><i class="sw-o"></i>Not recommended</span></div>{chart}</div>
+<div class="scroll" style="margin-top:14px"><table><thead><tr><th>Game</th><th class="l">Recommenders who stopped</th><th class="l">Critics who stopped</th><th>Recommenders at the critics' hours</th><th>Gap</th><th>Recommenders who played 10+ more hours</th><th>Critics who played 10+ more hours</th></tr></thead><tbody>{arows}</tbody></table></div>
+<p class="note">"Recommenders at the critics' hours" re-weights the recommenders' rates to the critics' mix of hours played, so the gap is not a side effect of critics reviewing earlier or later. It is still an association: a review is often written at the moment a player stops, and that is more common for a negative one. Table by game and stage: <a href="data/after_review.json">data/after_review.json</a>.</p></section>
+
+<section id="gone"><h2>Recommended, then gone</h2>
+<p class="q">Share of recommenders who logged under one more hour, by hours played at review. Darker = larger share.</p>
+<div class="scroll"><table><thead><tr><th>Game</th>{bhead}</tr></thead><tbody>{gone}</tbody></table></div>
+<p class="note">Under 2 hours is inside Steam's refund window, so read that column with care. Later columns show where players who liked a game tend to put it down.</p></section>
+
+<section><h2>Why players quit</h2>
+<div class="card"><p style="margin:0">Critics who stop are not spread evenly across complaints. {E(c1h)}. {c1p} <a href="quit.html">See which complaints go with stopping</a>.</p></div></section>
 
 <section id="reports"><h2>Game reports</h2><p class="q">Each report has the same eight sections, so teams can compare titles.</p><div class="games">{cards}</div></section>
 
 <section><h2>How it works</h2>
-<div class="card"><p style="margin:0">Steam publishes, next to every review, how long the reviewer had played when they wrote it and how long they have played in total. The gap shows what the reviewer did <i>after</i> complaining. A language model sorts each negative review into one main complaint, in its original language. Joining the two separates complaints that travel with quitting from complaints players voice while they stay.</p></div></section>
+<div class="card"><p style="margin:0">Steam publishes, next to every review, how long the reviewer had played when they wrote it and how long they have played in total. The gap shows what the reviewer did <i>after</i> reviewing. For negative reviews, a language model also sorts each one into one main complaint, in its original language, which separates complaints that travel with quitting from complaints players voice while they stay.</p></div></section>
 
 <section><h2>Side by side</h2>
-<div class="scroll"><table><thead><tr><th>Game</th><th>Reviews</th><th>English</th><th class="l">Negative</th><th class="l">Critics who walked away</th><th>Positive reviewers who walked away</th><th>Critics who played 10+ more hours</th><th>Negative reviews refunded</th><th>Median hours at negative review</th><th class="l">Top named complaint</th></tr></thead><tbody>{rows}</tbody></table></div>
-<h3 style="margin-top:22px">Which complaints go with leaving, across games</h3>
-<div class="scroll"><table><thead><tr><th>Main complaint</th><th class="l">Likely owner</th><th>Games where these reviewers left clearly more often</th><th>Clearly less often</th><th>No clear difference or too few reviews</th></tr></thead><tbody>{flagrows}</tbody></table></div>
-<p class="note">"Clearly" means the complaint group's whole 95% interval is above or below that game's rate for all negative reviewers.</p>
-{model_block(models['pooled'], "all six games'") if models else ''}
-<p class="note">The pooled model also holds the game constant. Full output: <a href="data/models.json">data/models.json</a>.</p>
-<h3 style="margin-top:22px">What negative reviews are about</h3>
-<p class="note">Share of each game's labeled negative reviews. The rest of each row is "no clear reason". "Off-game" counts reviews mainly about politics, social topics, or specific people or companies; it is reported as a share only.</p>
-<div class="scroll"><table><thead><tr><th>Game</th>{head}</tr></thead><tbody>{heat1}</tbody></table></div>
-<h3 style="margin-top:22px">Walk-away rate by main complaint</h3>
-<p class="note">▲ / ▼ mark groups clearly above / below the game's own rate. "–" = fewer than 30 reviews.</p>
-<div class="scroll"><table><thead><tr><th>Game</th>{head}</tr></thead><tbody>{heat2}</tbody></table></div></section>
+<div class="scroll"><table><thead><tr><th>Game</th><th>Reviews</th><th>English</th><th class="l">Negative</th><th class="l">Critics who walked away</th><th>Positive reviewers who walked away</th><th>Critics who played 10+ more hours</th><th>Negative reviews refunded</th><th>Median hours at negative review</th><th class="l">Top named complaint</th></tr></thead><tbody>{rows}</tbody></table></div></section>
 
 <section id="markets"><h2>Markets (review language)</h2>
 <p class="q">The same game can look very different by language community. Ten largest languages across the six games; a cell needs 300+ reviews.</p>
@@ -528,7 +566,27 @@ def index_page(ov, games, audit, cost, models):
 </div>
 <p class="note">Why these six: premium games with a large body of negative reviews ({pct(min(o['negative_share'] for o in ov))}–{pct(max(o['negative_share'] for o in ov))} negative) and a review history small enough to fetch in full without straining Steam, across different genres. {audit_line(audit)[0].upper() + audit_line(audit)[1:]}. Total paid model spend for the project: ${cost['total_usd']:.2f}. The <a href="{REPO}">code</a> can be re-run on any Steam app ID.</p></section>
 </div>"""
-    return page("Why Players Quit · Lab — quit signals in Steam reviews", body, ov, desc="Which complaints go with actually leaving? Quit-signal reports for six games from public Steam reviews in all languages.")
+    quit_body = f"""<div class="wrap">
+<h1>Why players quit</h1>
+<p class="lede">Among reviewers who did not recommend a game, which complaints go with stopping, how early they give up, and how often "I quit" turns out to be true. Built from {num(lab)} negative reviews labeled by reason.</p>
+<div class="calls">{calls}</div>
+<div class="caveat"><b>How far this goes.</b> Reviews represent only the players who wrote them. All figures are shares of reviewers, and every pattern is an association, not a cause. Stopping is not the same as a lost customer: these are paid games, and a reviewer who stops after 80 hours may simply have finished, while one who stops after 2 never got started. Read each walk-away rate next to hours played at review. See <a href="method.html">Method &amp; limits</a>.</div>
+
+<section><h2>Which complaints go with leaving</h2>
+<h3>Across games</h3>
+<div class="scroll"><table><thead><tr><th>Main complaint</th><th class="l">Likely owner</th><th>Games where these reviewers left clearly more often</th><th>Clearly less often</th><th>No clear difference or too few reviews</th></tr></thead><tbody>{flagrows}</tbody></table></div>
+<p class="note">"Clearly" means the complaint group's whole 95% interval is above or below that game's rate for all negative reviewers.</p>
+{model_block(models['pooled'], "all six games'") if models else ''}
+<p class="note">The pooled model also holds the game constant. Full output: <a href="data/models.json">data/models.json</a>.</p>
+<h3 style="margin-top:22px">What negative reviews are about</h3>
+<p class="note">Share of each game's labeled negative reviews. The rest of each row is "no clear reason". "Off-game" counts reviews mainly about politics, social topics, or specific people or companies; it is reported as a share only.</p>
+<div class="scroll"><table><thead><tr><th>Game</th>{head}</tr></thead><tbody>{heat1}</tbody></table></div>
+<h3 style="margin-top:22px">Walk-away rate by main complaint</h3>
+<p class="note">▲ / ▼ mark groups clearly above / below the game's own rate. "–" = fewer than 30 reviews.</p>
+<div class="scroll"><table><thead><tr><th>Game</th>{head}</tr></thead><tbody>{heat2}</tbody></table></div></section>
+</div>"""
+    return (page("Player Signals — what players do after they review", body, ov, desc="What reviewers of Steam games did after reviewing: who kept playing, who stopped, and which complaints go with stopping. Built from public Steam reviews in all languages."),
+            page("Why players quit — Player Signals", quit_body, ov, desc="Which complaints go with actually leaving? Complaint analysis of negative Steam reviews in all languages."))
 
 
 def check_loop(games, audit):
@@ -618,7 +676,7 @@ def method_page(ov, games, audit, cost):
 <section><h2>Files</h2>
 <div class="dl">{''.join(f'<a href="data/{E(o["slug"])}.json">{E(o["slug"])}.json</a>' for o in games)}<a href="data/overview.json">overview.json</a><a href="{REPO}/tree/main/data/public">CSV tables</a><a href="{REPO}">Repository</a></div></section>
 </div>"""
-    return page("Method & limits — Why Players Quit · Lab", body, ov, desc="Data, definitions, accuracy check, limits and cost.")
+    return page("Method & limits — Player Signals", body, ov, desc="Data, definitions, accuracy check, limits and cost.")
 
 
 def case_study_page(o, ov):
@@ -680,7 +738,7 @@ def case_study_page(o, ov):
 <section><h2>What I took from it</h2>
 <p>The method did not change between the two versions of this project. The sample did. The English-only version was internally consistent, carefully caveated, and pointed at the wrong priority. Since then I check who is missing from the data before I look at what the data says.</p></section>
 </div>"""
-    return page("Case study: the review score that hid a market — Why Players Quit · Lab", body, ov, desc="Monster Hunter Wilds: what an English-only read of Steam reviews misses.")
+    return page("Case study: the review score that hid a market — Player Signals", body, ov, desc="Monster Hunter Wilds: what an English-only read of Steam reviews misses.")
 
 
 if __name__ == "__main__":
@@ -689,8 +747,9 @@ if __name__ == "__main__":
     os.makedirs(os.path.join(DOCS, "games"), exist_ok=True)
     open(os.path.join(DOCS, ".nojekyll"), "w").write("")
     models = load("models.json")
-    open(os.path.join(DOCS, "index.html"), "w").write(index_page(ov, games, audit, cost, models))
+    idx, quit_html = index_page(ov, games, audit, cost, models, load("after_review.json"))
+    open(os.path.join(DOCS, "index.html"), "w").write(idx); open(os.path.join(DOCS, "quit.html"), "w").write(quit_html)
     open(os.path.join(DOCS, "method.html"), "w").write(method_page(ov, games, audit, cost))
     for o in games: open(os.path.join(DOCS, "games", o["slug"] + ".html"), "w").write(game_page(o, audit, ov))
     open(os.path.join(DOCS, "case-study.html"), "w").write(case_study_page(next(o for o in games if o["slug"] == "monster-hunter-wilds"), ov))
-    print("built", 3 + len(games), "pages")
+    print("built", 4 + len(games), "pages")

@@ -1,7 +1,7 @@
-# Why Players Quit · Lab
+# Player Signals
 
-- **What:** reports on why players stop playing six PC games, built from 551,228 public Steam reviews in every language.
-- **Finding:** players who report crashes mostly keep playing; every other complaint type goes with stopping more often. English reviews alone can hide a whole market (Monster Hunter Wilds: 29% negative in English, 78% in Simplified Chinese).
+- **What:** a study of what players do after they review a Steam game, recommended or not, built from 551,228 public Steam reviews of six games in every language. One page covers why players quit.
+- **Finding:** 6% of players who recommend a game log under one more hour after reviewing; 32% of critics do, at every stage of play. Among critics, players who report crashes mostly keep playing; every other complaint type goes with stopping more often. English reviews alone can hide a whole market (Monster Hunter Wilds: 29% negative in English, 78% in Simplified Chinese).
 - **How:** Steam shows playtime at review and playtime now. The gap shows what each reviewer did *after* complaining.
 
 **Site:** https://hosungkim48.github.io/whyplayersquit-lab/ · **Case study:** [the review score that hid a market](https://hosungkim48.github.io/whyplayersquit-lab/case-study.html)
@@ -32,7 +32,7 @@ python3 build_dataset.py
 python3 label.py <appid>          # English; run_labeling_other.sh for other languages
 python3 sublabel.py               # design sub-reasons, Civilization VII
 python3 quotes.py && python3 audit_sample.py && python3 audit.py
-python3 analyze.py && python3 cost.py && python3 build_site.py
+python3 analyze.py && python3 after_review.py && python3 cost.py && python3 build_site.py
 python3 make_media.py && python3 verify.py
 ```
 

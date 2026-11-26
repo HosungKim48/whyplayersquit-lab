@@ -17,6 +17,7 @@ Snapshot: 2026-11-24 (UTC). All data is public Steam data.
 | `data/work/audit_sample*.json`, `audit_verdicts*.json`, `spotcheck_50.csv` | No | Random samples with text, and the second-model verdicts on them. |
 | `docs/data/<slug>.json` | Yes | Every number on that game's report page. |
 | `docs/data/overview.json`, `models.json`, `cost.json`, `label_audit.json` | Yes | Cross-game table, regression and sensitivity results, spend, accuracy check (no text, no IDs). |
+| `docs/data/after_review.json`, `data/public/after_review_by_hours.csv` | Yes | Behaviour after the review for all reviews, recommended and not recommended, by game and by hours played at review (written by `src/after_review.py`; no text, no IDs). |
 | `data/public/*.csv` | Yes | Same numbers as flat tables. |
 
 ## Row counts by stage
@@ -65,6 +66,12 @@ Source: `data/public/pipeline_row_counts.csv`.
 | 1724863809 | True | 46498 | 76387 | 0 | False | 2024-08 | 775.0 | 498.2 | 817.5 | 5 | False |
 | 1707164769 | True | 718 | 2844 | 0 | False | 2024-02 | 12.0 | 35.4 | 1022.3 | 5 | False |
 | 1698249308 | True | 291 | 14086 | 710 | False | 2023-10 | 4.9 | 229.9 | 1125.5 | 47 | False |
+
+## Fields of `after_review.json`
+
+Per game and pooled (`games[]`, `pooled`), for reviews at least 30 days old: `positive` / `negative` hold `n`, `walked_away`, `walk_rate` with its 95% interval, `kept_10h_rate`, `median_hours_after`, `active_now_rate`. `by_hours[]` repeats those per hours-at-review bucket with `gap` = negative minus positive walk rate. `baseline_at_critics_hours` is the positive walk rate re-weighted to the negative reviewers' mix of hours buckets; `excess_over_baseline` is the negative walk rate minus that.
+
+Sample row (pooled, 50–200 h): positive n 87,963, walk rate 0.0887; negative walk rate 0.3159.
 
 ## Quirks
 

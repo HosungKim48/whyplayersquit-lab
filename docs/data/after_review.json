@@ -1,0 +1,1056 @@
+{
+ "params": {
+  "mature_days": 30,
+  "walk_hours": 1.0,
+  "min_cell": 30
+ },
+ "pooled": {
+  "reviews": 545726,
+  "positive": {
+   "n": 300346,
+   "walked_away": 18390,
+   "walk_rate": 0.0612,
+   "walk_lo": 0.0604,
+   "walk_hi": 0.0621,
+   "kept_10h_rate": 0.8261,
+   "median_hours_after": 54.7,
+   "active_now_rate": 0.1176
+  },
+  "negative": {
+   "n": 245380,
+   "walked_away": 79060,
+   "walk_rate": 0.3222,
+   "walk_lo": 0.3203,
+   "walk_hi": 0.324,
+   "kept_10h_rate": 0.5124,
+   "median_hours_after": 11.1,
+   "active_now_rate": 0.0592
+  },
+  "by_hours": [
+   {
+    "bucket": "Under 2 h",
+    "positive": {
+     "n": 8705,
+     "walked_away": 1206,
+     "walk_rate": 0.1385,
+     "walk_lo": 0.1314,
+     "walk_hi": 0.146,
+     "kept_10h_rate": 0.712,
+     "median_hours_after": 34.9,
+     "active_now_rate": 0.0713
+    },
+    "negative": {
+     "n": 30540,
+     "walked_away": 15927,
+     "walk_rate": 0.5215,
+     "walk_lo": 0.5159,
+     "walk_hi": 0.5271,
+     "kept_10h_rate": 0.3324,
+     "median_hours_after": 0.7,
+     "active_now_rate": 0.0284
+    },
+    "gap": 0.383
+   },
+   {
+    "bucket": "2\u201310 h",
+    "positive": {
+     "n": 55652,
+     "walked_away": 2415,
+     "walk_rate": 0.0434,
+     "walk_lo": 0.0417,
+     "walk_hi": 0.0451,
+     "kept_10h_rate": 0.8218,
+     "median_hours_after": 47.8,
+     "active_now_rate": 0.0837
+    },
+    "negative": {
+     "n": 46618,
+     "walked_away": 13604,
+     "walk_rate": 0.2918,
+     "walk_lo": 0.2877,
+     "walk_hi": 0.296,
+     "kept_10h_rate": 0.5203,
+     "median_hours_after": 11.5,
+     "active_now_rate": 0.034
+    },
+    "gap": 0.2484
+   },
+   {
+    "bucket": "10\u201350 h",
+    "positive": {
+     "n": 122120,
+     "walked_away": 5564,
+     "walk_rate": 0.0456,
+     "walk_lo": 0.0444,
+     "walk_hi": 0.0467,
+     "kept_10h_rate": 0.8445,
+     "median_hours_after": 51.8,
+     "active_now_rate": 0.0857
+    },
+    "negative": {
+     "n": 73088,
+     "walked_away": 22281,
+     "walk_rate": 0.3049,
+     "walk_lo": 0.3015,
+     "walk_hi": 0.3082,
+     "kept_10h_rate": 0.5209,
+     "median_hours_after": 11.7,
+     "active_now_rate": 0.0432
+    },
+    "gap": 0.2593
+   },
+   {
+    "bucket": "50\u2013200 h",
+    "positive": {
+     "n": 87963,
+     "walked_away": 7801,
+     "walk_rate": 0.0887,
+     "walk_lo": 0.0868,
+     "walk_hi": 0.0906,
+     "kept_10h_rate": 0.7982,
+     "median_hours_after": 55.4,
+     "active_now_rate": 0.1292
+    },
+    "negative": {
+     "n": 74184,
+     "walked_away": 23433,
+     "walk_rate": 0.3159,
+     "walk_lo": 0.3125,
+     "walk_hi": 0.3192,
+     "kept_10h_rate": 0.517,
+     "median_hours_after": 11.7,
+     "active_now_rate": 0.0658
+    },
+    "gap": 0.2272
+   },
+   {
+    "bucket": "200 h+",
+    "positive": {
+     "n": 25906,
+     "walked_away": 1404,
+     "walk_rate": 0.0542,
+     "walk_lo": 0.0515,
+     "walk_hi": 0.057,
+     "kept_10h_rate": 0.8815,
+     "median_hours_after": 127.4,
+     "active_now_rate": 0.3165
+    },
+    "negative": {
+     "n": 20950,
+     "walked_away": 3815,
+     "walk_rate": 0.1821,
+     "walk_lo": 0.1769,
+     "walk_hi": 0.1874,
+     "kept_10h_rate": 0.7108,
+     "median_hours_after": 57.3,
+     "active_now_rate": 0.1931
+    },
+    "gap": 0.1279
+   }
+  ],
+  "baseline_at_critics_hours": 0.0705,
+  "excess_over_baseline": 0.2517
+ },
+ "games": [
+  {
+   "slug": "civilization-vii",
+   "name": "Sid Meier's Civilization VII",
+   "genre": "4X strategy",
+   "reviews": 43613,
+   "positive": {
+    "n": 21208,
+    "walked_away": 893,
+    "walk_rate": 0.0421,
+    "walk_lo": 0.0395,
+    "walk_hi": 0.0449,
+    "kept_10h_rate": 0.8527,
+    "median_hours_after": 67.2,
+    "active_now_rate": 0.2007
+   },
+   "negative": {
+    "n": 22405,
+    "walked_away": 8001,
+    "walk_rate": 0.3571,
+    "walk_lo": 0.3509,
+    "walk_hi": 0.3634,
+    "kept_10h_rate": 0.4628,
+    "median_hours_after": 7.1,
+    "active_now_rate": 0.0856
+   },
+   "by_hours": [
+    {
+     "bucket": "Under 2 h",
+     "positive": {
+      "n": 567,
+      "walked_away": 125,
+      "walk_rate": 0.2205,
+      "walk_lo": 0.1883,
+      "walk_hi": 0.2564,
+      "kept_10h_rate": 0.582,
+      "median_hours_after": 15.6,
+      "active_now_rate": 0.0741
+     },
+     "negative": {
+      "n": 3861,
+      "walked_away": 2501,
+      "walk_rate": 0.6478,
+      "walk_lo": 0.6326,
+      "walk_hi": 0.6627,
+      "kept_10h_rate": 0.208,
+      "median_hours_after": 0.0,
+      "active_now_rate": 0.0264
+     },
+     "gap": 0.4273
+    },
+    {
+     "bucket": "2\u201310 h",
+     "positive": {
+      "n": 4890,
+      "walked_away": 199,
+      "walk_rate": 0.0407,
+      "walk_lo": 0.0355,
+      "walk_hi": 0.0466,
+      "kept_10h_rate": 0.799,
+      "median_hours_after": 39.9,
+      "active_now_rate": 0.1292
+     },
+     "negative": {
+      "n": 5382,
+      "walked_away": 1987,
+      "walk_rate": 0.3692,
+      "walk_lo": 0.3564,
+      "walk_hi": 0.3822,
+      "kept_10h_rate": 0.4084,
+      "median_hours_after": 4.8,
+      "active_now_rate": 0.0472
+     },
+     "gap": 0.3285
+    },
+    {
+     "bucket": "10\u201350 h",
+     "positive": {
+      "n": 9216,
+      "walked_away": 358,
+      "walk_rate": 0.0388,
+      "walk_lo": 0.0351,
+      "walk_hi": 0.043,
+      "kept_10h_rate": 0.856,
+      "median_hours_after": 59.3,
+      "active_now_rate": 0.1566
+     },
+     "negative": {
+      "n": 8219,
+      "walked_away": 2423,
+      "walk_rate": 0.2948,
+      "walk_lo": 0.285,
+      "walk_hi": 0.3048,
+      "kept_10h_rate": 0.5021,
+      "median_hours_after": 10.1,
+      "active_now_rate": 0.0718
+     },
+     "gap": 0.256
+    },
+    {
+     "bucket": "50\u2013200 h",
+     "positive": {
+      "n": 4588,
+      "walked_away": 183,
+      "walk_rate": 0.0399,
+      "walk_lo": 0.0346,
+      "walk_hi": 0.0459,
+      "kept_10h_rate": 0.893,
+      "median_hours_after": 102.4,
+      "active_now_rate": 0.2493
+     },
+     "negative": {
+      "n": 3696,
+      "walked_away": 876,
+      "walk_rate": 0.237,
+      "walk_lo": 0.2236,
+      "walk_hi": 0.251,
+      "kept_10h_rate": 0.6255,
+      "median_hours_after": 26.5,
+      "active_now_rate": 0.148
+     },
+     "gap": 0.1971
+    },
+    {
+     "bucket": "200 h+",
+     "positive": {
+      "n": 1947,
+      "walked_away": 28,
+      "walk_rate": 0.0144,
+      "walk_lo": 0.01,
+      "walk_hi": 0.0207,
+      "kept_10h_rate": 0.9558,
+      "median_hours_after": 256.2,
+      "active_now_rate": 0.5116
+     },
+     "negative": {
+      "n": 1247,
+      "walked_away": 214,
+      "walk_rate": 0.1716,
+      "walk_lo": 0.1517,
+      "walk_hi": 0.1935,
+      "kept_10h_rate": 0.745,
+      "median_hours_after": 80.3,
+      "active_now_rate": 0.3408
+     },
+     "gap": 0.1572
+    }
+   ],
+   "baseline_at_critics_hours": 0.0694,
+   "excess_over_baseline": 0.2877
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "name": "Cities: Skylines II",
+   "genre": "City builder",
+   "reviews": 63964,
+   "positive": {
+    "n": 35835,
+    "walked_away": 1516,
+    "walk_rate": 0.0423,
+    "walk_lo": 0.0403,
+    "walk_hi": 0.0444,
+    "kept_10h_rate": 0.8572,
+    "median_hours_after": 74.5,
+    "active_now_rate": 0.2183
+   },
+   "negative": {
+    "n": 28129,
+    "walked_away": 6682,
+    "walk_rate": 0.2375,
+    "walk_lo": 0.2326,
+    "walk_hi": 0.2426,
+    "kept_10h_rate": 0.6206,
+    "median_hours_after": 24.7,
+    "active_now_rate": 0.1288
+   },
+   "by_hours": [
+    {
+     "bucket": "Under 2 h",
+     "positive": {
+      "n": 2348,
+      "walked_away": 265,
+      "walk_rate": 0.1129,
+      "walk_lo": 0.1007,
+      "walk_hi": 0.1263,
+      "kept_10h_rate": 0.7606,
+      "median_hours_after": 46.9,
+      "active_now_rate": 0.1065
+     },
+     "negative": {
+      "n": 5670,
+      "walked_away": 2608,
+      "walk_rate": 0.46,
+      "walk_lo": 0.447,
+      "walk_hi": 0.473,
+      "kept_10h_rate": 0.3968,
+      "median_hours_after": 2.1,
+      "active_now_rate": 0.0578
+     },
+     "gap": 0.3471
+    },
+    {
+     "bucket": "2\u201310 h",
+     "positive": {
+      "n": 8705,
+      "walked_away": 353,
+      "walk_rate": 0.0406,
+      "walk_lo": 0.0366,
+      "walk_hi": 0.0449,
+      "kept_10h_rate": 0.8353,
+      "median_hours_after": 57.5,
+      "active_now_rate": 0.1454
+     },
+     "negative": {
+      "n": 4869,
+      "walked_away": 1171,
+      "walk_rate": 0.2405,
+      "walk_lo": 0.2287,
+      "walk_hi": 0.2527,
+      "kept_10h_rate": 0.5802,
+      "median_hours_after": 17.2,
+      "active_now_rate": 0.0791
+     },
+     "gap": 0.1999
+    },
+    {
+     "bucket": "10\u201350 h",
+     "positive": {
+      "n": 12892,
+      "walked_away": 524,
+      "walk_rate": 0.0406,
+      "walk_lo": 0.0374,
+      "walk_hi": 0.0442,
+      "kept_10h_rate": 0.8483,
+      "median_hours_after": 63.1,
+      "active_now_rate": 0.1824
+     },
+     "negative": {
+      "n": 7836,
+      "walked_away": 1572,
+      "walk_rate": 0.2006,
+      "walk_lo": 0.1919,
+      "walk_hi": 0.2096,
+      "kept_10h_rate": 0.6349,
+      "median_hours_after": 23.5,
+      "active_now_rate": 0.0962
+     },
+     "gap": 0.16
+    },
+    {
+     "bucket": "50\u2013200 h",
+     "positive": {
+      "n": 7969,
+      "walked_away": 285,
+      "walk_rate": 0.0358,
+      "walk_lo": 0.0319,
+      "walk_hi": 0.0401,
+      "kept_10h_rate": 0.8858,
+      "median_hours_after": 91.8,
+      "active_now_rate": 0.2598
+     },
+     "negative": {
+      "n": 6809,
+      "walked_away": 1029,
+      "walk_rate": 0.1511,
+      "walk_lo": 0.1428,
+      "walk_hi": 0.1598,
+      "kept_10h_rate": 0.7323,
+      "median_hours_after": 45.9,
+      "active_now_rate": 0.1689
+     },
+     "gap": 0.1153
+    },
+    {
+     "bucket": "200 h+",
+     "positive": {
+      "n": 3921,
+      "walked_away": 89,
+      "walk_rate": 0.0227,
+      "walk_lo": 0.0185,
+      "walk_hi": 0.0278,
+      "kept_10h_rate": 0.9345,
+      "median_hours_after": 188.5,
+      "active_now_rate": 0.4807
+     },
+     "negative": {
+      "n": 2945,
+      "walked_away": 302,
+      "walk_rate": 0.1025,
+      "walk_lo": 0.0921,
+      "walk_hi": 0.114,
+      "kept_10h_rate": 0.8224,
+      "median_hours_after": 117.3,
+      "active_now_rate": 0.3419
+     },
+     "gap": 0.0798
+    }
+   ],
+   "baseline_at_critics_hours": 0.0521,
+   "excess_over_baseline": 0.1854
+  },
+  {
+   "slug": "payday-3",
+   "name": "PAYDAY 3",
+   "genre": "Co-op shooter (live service)",
+   "reviews": 48789,
+   "positive": {
+    "n": 22426,
+    "walked_away": 1943,
+    "walk_rate": 0.0866,
+    "walk_lo": 0.083,
+    "walk_hi": 0.0904,
+    "kept_10h_rate": 0.6817,
+    "median_hours_after": 21.8,
+    "active_now_rate": 0.1311
+   },
+   "negative": {
+    "n": 26363,
+    "walked_away": 8343,
+    "walk_rate": 0.3165,
+    "walk_lo": 0.3109,
+    "walk_hi": 0.3221,
+    "kept_10h_rate": 0.4354,
+    "median_hours_after": 6.7,
+    "active_now_rate": 0.0501
+   },
+   "by_hours": [
+    {
+     "bucket": "Under 2 h",
+     "positive": {
+      "n": 1385,
+      "walked_away": 232,
+      "walk_rate": 0.1675,
+      "walk_lo": 0.1488,
+      "walk_hi": 0.1881,
+      "kept_10h_rate": 0.5986,
+      "median_hours_after": 14.6,
+      "active_now_rate": 0.0513
+     },
+     "negative": {
+      "n": 6101,
+      "walked_away": 2846,
+      "walk_rate": 0.4665,
+      "walk_lo": 0.454,
+      "walk_hi": 0.479,
+      "kept_10h_rate": 0.2945,
+      "median_hours_after": 1.5,
+      "active_now_rate": 0.0241
+     },
+     "gap": 0.299
+    },
+    {
+     "bucket": "2\u201310 h",
+     "positive": {
+      "n": 6519,
+      "walked_away": 611,
+      "walk_rate": 0.0937,
+      "walk_lo": 0.0869,
+      "walk_hi": 0.101,
+      "kept_10h_rate": 0.6164,
+      "median_hours_after": 15.7,
+      "active_now_rate": 0.0729
+     },
+     "negative": {
+      "n": 8611,
+      "walked_away": 2439,
+      "walk_rate": 0.2832,
+      "walk_lo": 0.2738,
+      "walk_hi": 0.2929,
+      "kept_10h_rate": 0.4444,
+      "median_hours_after": 7.3,
+      "active_now_rate": 0.0281
+     },
+     "gap": 0.1895
+    },
+    {
+     "bucket": "10\u201350 h",
+     "positive": {
+      "n": 10005,
+      "walked_away": 818,
+      "walk_rate": 0.0818,
+      "walk_lo": 0.0765,
+      "walk_hi": 0.0873,
+      "kept_10h_rate": 0.6957,
+      "median_hours_after": 22.9,
+      "active_now_rate": 0.1079
+     },
+     "negative": {
+      "n": 8773,
+      "walked_away": 2308,
+      "walk_rate": 0.2631,
+      "walk_lo": 0.254,
+      "walk_hi": 0.2724,
+      "kept_10h_rate": 0.5004,
+      "median_hours_after": 10.1,
+      "active_now_rate": 0.0522
+     },
+     "gap": 0.1813
+    },
+    {
+     "bucket": "50\u2013200 h",
+     "positive": {
+      "n": 3687,
+      "walked_away": 229,
+      "walk_rate": 0.0621,
+      "walk_lo": 0.0548,
+      "walk_hi": 0.0704,
+      "kept_10h_rate": 0.757,
+      "median_hours_after": 33.0,
+      "active_now_rate": 0.2468
+     },
+     "negative": {
+      "n": 2351,
+      "walked_away": 649,
+      "walk_rate": 0.2761,
+      "walk_lo": 0.2584,
+      "walk_hi": 0.2945,
+      "kept_10h_rate": 0.4823,
+      "median_hours_after": 9.1,
+      "active_now_rate": 0.1331
+     },
+     "gap": 0.214
+    },
+    {
+     "bucket": "200 h+",
+     "positive": {
+      "n": 830,
+      "walked_away": 53,
+      "walk_rate": 0.0639,
+      "walk_lo": 0.0491,
+      "walk_hi": 0.0826,
+      "kept_10h_rate": 0.8313,
+      "median_hours_after": 70.4,
+      "active_now_rate": 0.488
+     },
+     "negative": {
+      "n": 527,
+      "walked_away": 101,
+      "walk_rate": 0.1917,
+      "walk_lo": 0.1603,
+      "walk_hi": 0.2274,
+      "kept_10h_rate": 0.6281,
+      "median_hours_after": 22.4,
+      "active_now_rate": 0.3036
+     },
+     "gap": 0.1278
+    }
+   ],
+   "baseline_at_critics_hours": 0.1034,
+   "excess_over_baseline": 0.2131
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "name": "Dragon's Dogma 2",
+   "genre": "Action RPG",
+   "reviews": 76173,
+   "positive": {
+    "n": 48493,
+    "walked_away": 4701,
+    "walk_rate": 0.0969,
+    "walk_lo": 0.0943,
+    "walk_hi": 0.0996,
+    "kept_10h_rate": 0.7764,
+    "median_hours_after": 39.8,
+    "active_now_rate": 0.1062
+   },
+   "negative": {
+    "n": 27680,
+    "walked_away": 10438,
+    "walk_rate": 0.3771,
+    "walk_lo": 0.3714,
+    "walk_hi": 0.3828,
+    "kept_10h_rate": 0.4644,
+    "median_hours_after": 6.8,
+    "active_now_rate": 0.041
+   },
+   "by_hours": [
+    {
+     "bucket": "Under 2 h",
+     "positive": {
+      "n": 1867,
+      "walked_away": 218,
+      "walk_rate": 0.1168,
+      "walk_lo": 0.103,
+      "walk_hi": 0.1321,
+      "kept_10h_rate": 0.7686,
+      "median_hours_after": 45.3,
+      "active_now_rate": 0.0637
+     },
+     "negative": {
+      "n": 6725,
+      "walked_away": 3788,
+      "walk_rate": 0.5633,
+      "walk_lo": 0.5514,
+      "walk_hi": 0.5751,
+      "kept_10h_rate": 0.3182,
+      "median_hours_after": 0.2,
+      "active_now_rate": 0.0223
+     },
+     "gap": 0.4465
+    },
+    {
+     "bucket": "2\u201310 h",
+     "positive": {
+      "n": 11775,
+      "walked_away": 324,
+      "walk_rate": 0.0275,
+      "walk_lo": 0.0247,
+      "walk_hi": 0.0306,
+      "kept_10h_rate": 0.8704,
+      "median_hours_after": 47.2,
+      "active_now_rate": 0.0695
+     },
+     "negative": {
+      "n": 8297,
+      "walked_away": 2164,
+      "walk_rate": 0.2608,
+      "walk_lo": 0.2515,
+      "walk_hi": 0.2704,
+      "kept_10h_rate": 0.5748,
+      "median_hours_after": 17.6,
+      "active_now_rate": 0.0325
+     },
+     "gap": 0.2333
+    },
+    {
+     "bucket": "10\u201350 h",
+     "positive": {
+      "n": 19797,
+      "walked_away": 1391,
+      "walk_rate": 0.0703,
+      "walk_lo": 0.0668,
+      "walk_hi": 0.0739,
+      "kept_10h_rate": 0.8023,
+      "median_hours_after": 38.5,
+      "active_now_rate": 0.0778
+     },
+     "negative": {
+      "n": 8679,
+      "walked_away": 2958,
+      "walk_rate": 0.3408,
+      "walk_lo": 0.3309,
+      "walk_hi": 0.3509,
+      "kept_10h_rate": 0.4797,
+      "median_hours_after": 8.4,
+      "active_now_rate": 0.0363
+     },
+     "gap": 0.2705
+    },
+    {
+     "bucket": "50\u2013200 h",
+     "positive": {
+      "n": 13567,
+      "walked_away": 2606,
+      "walk_rate": 0.1921,
+      "walk_lo": 0.1855,
+      "walk_hi": 0.1988,
+      "kept_10h_rate": 0.6561,
+      "median_hours_after": 28.6,
+      "active_now_rate": 0.1509
+     },
+     "negative": {
+      "n": 3728,
+      "walked_away": 1473,
+      "walk_rate": 0.3951,
+      "walk_lo": 0.3795,
+      "walk_hi": 0.4109,
+      "kept_10h_rate": 0.4343,
+      "median_hours_after": 4.8,
+      "active_now_rate": 0.0856
+     },
+     "gap": 0.203
+    },
+    {
+     "bucket": "200 h+",
+     "positive": {
+      "n": 1487,
+      "walked_away": 162,
+      "walk_rate": 0.1089,
+      "walk_lo": 0.0941,
+      "walk_hi": 0.1258,
+      "kept_10h_rate": 0.7962,
+      "median_hours_after": 89.2,
+      "active_now_rate": 0.4223
+     },
+     "negative": {
+      "n": 251,
+      "walked_away": 55,
+      "walk_rate": 0.2191,
+      "walk_lo": 0.1724,
+      "walk_hi": 0.2743,
+      "kept_10h_rate": 0.6494,
+      "median_hours_after": 42.1,
+      "active_now_rate": 0.3267
+     },
+     "gap": 0.1102
+    }
+   ],
+   "baseline_at_critics_hours": 0.0855,
+   "excess_over_baseline": 0.2916
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "name": "Monster Hunter Wilds",
+   "genre": "Action / co-op hunting",
+   "reviews": 198918,
+   "positive": {
+    "n": 105200,
+    "walked_away": 4443,
+    "walk_rate": 0.0422,
+    "walk_lo": 0.041,
+    "walk_hi": 0.0435,
+    "kept_10h_rate": 0.8645,
+    "median_hours_after": 62.4,
+    "active_now_rate": 0.1132
+   },
+   "negative": {
+    "n": 93718,
+    "walked_away": 22809,
+    "walk_rate": 0.2434,
+    "walk_lo": 0.2406,
+    "walk_hi": 0.2461,
+    "kept_10h_rate": 0.6015,
+    "median_hours_after": 21.4,
+    "active_now_rate": 0.0623
+   },
+   "by_hours": [
+    {
+     "bucket": "Under 2 h",
+     "positive": {
+      "n": 1647,
+      "walked_away": 147,
+      "walk_rate": 0.0893,
+      "walk_lo": 0.0764,
+      "walk_hi": 0.104,
+      "kept_10h_rate": 0.813,
+      "median_hours_after": 60.8,
+      "active_now_rate": 0.0729
+     },
+     "negative": {
+      "n": 5401,
+      "walked_away": 2201,
+      "walk_rate": 0.4075,
+      "walk_lo": 0.3945,
+      "walk_hi": 0.4207,
+      "kept_10h_rate": 0.4958,
+      "median_hours_after": 9.2,
+      "active_now_rate": 0.0241
+     },
+     "gap": 0.3182
+    },
+    {
+     "bucket": "2\u201310 h",
+     "positive": {
+      "n": 17106,
+      "walked_away": 408,
+      "walk_rate": 0.0239,
+      "walk_lo": 0.0217,
+      "walk_hi": 0.0262,
+      "kept_10h_rate": 0.8893,
+      "median_hours_after": 66.9,
+      "active_now_rate": 0.0714
+     },
+     "negative": {
+      "n": 12557,
+      "walked_away": 2156,
+      "walk_rate": 0.1717,
+      "walk_lo": 0.1652,
+      "walk_hi": 0.1784,
+      "kept_10h_rate": 0.686,
+      "median_hours_after": 34.5,
+      "active_now_rate": 0.0312
+     },
+     "gap": 0.1478
+    },
+    {
+     "bucket": "10\u201350 h",
+     "positive": {
+      "n": 42938,
+      "walked_away": 1257,
+      "walk_rate": 0.0293,
+      "walk_lo": 0.0277,
+      "walk_hi": 0.0309,
+      "kept_10h_rate": 0.8881,
+      "median_hours_after": 61.4,
+      "active_now_rate": 0.0761
+     },
+     "negative": {
+      "n": 23671,
+      "walked_away": 5453,
+      "walk_rate": 0.2304,
+      "walk_lo": 0.225,
+      "walk_hi": 0.2358,
+      "kept_10h_rate": 0.6187,
+      "median_hours_after": 22.1,
+      "active_now_rate": 0.0369
+     },
+     "gap": 0.2011
+    },
+    {
+     "bucket": "50\u2013200 h",
+     "positive": {
+      "n": 33141,
+      "walked_away": 2113,
+      "walk_rate": 0.0638,
+      "walk_lo": 0.0612,
+      "walk_hi": 0.0664,
+      "kept_10h_rate": 0.8199,
+      "median_hours_after": 54.4,
+      "active_now_rate": 0.124
+     },
+     "negative": {
+      "n": 40094,
+      "walked_away": 11146,
+      "walk_rate": 0.278,
+      "walk_lo": 0.2736,
+      "walk_hi": 0.2824,
+      "kept_10h_rate": 0.5397,
+      "median_hours_after": 13.7,
+      "active_now_rate": 0.0573
+     },
+     "gap": 0.2142
+    },
+    {
+     "bucket": "200 h+",
+     "positive": {
+      "n": 10368,
+      "walked_away": 518,
+      "walk_rate": 0.05,
+      "walk_lo": 0.0459,
+      "walk_hi": 0.0543,
+      "kept_10h_rate": 0.8768,
+      "median_hours_after": 94.8,
+      "active_now_rate": 0.3076
+     },
+     "negative": {
+      "n": 11995,
+      "walked_away": 1853,
+      "walk_rate": 0.1545,
+      "walk_lo": 0.1481,
+      "walk_hi": 0.1611,
+      "kept_10h_rate": 0.7333,
+      "median_hours_after": 58.3,
+      "active_now_rate": 0.1787
+     },
+     "gap": 0.1045
+    }
+   ],
+   "baseline_at_critics_hours": 0.0494,
+   "excess_over_baseline": 0.194
+  },
+  {
+   "slug": "starfield",
+   "name": "Starfield",
+   "genre": "Single-player RPG",
+   "reviews": 114269,
+   "positive": {
+    "n": 67184,
+    "walked_away": 4894,
+    "walk_rate": 0.0728,
+    "walk_lo": 0.0709,
+    "walk_hi": 0.0748,
+    "kept_10h_rate": 0.825,
+    "median_hours_after": 61.8,
+    "active_now_rate": 0.048
+   },
+   "negative": {
+    "n": 47085,
+    "walked_away": 22787,
+    "walk_rate": 0.484,
+    "walk_lo": 0.4794,
+    "walk_hi": 0.4885,
+    "kept_10h_rate": 0.3652,
+    "median_hours_after": 1.4,
+    "active_now_rate": 0.0148
+   },
+   "by_hours": [
+    {
+     "bucket": "Under 2 h",
+     "positive": {
+      "n": 891,
+      "walked_away": 219,
+      "walk_rate": 0.2458,
+      "walk_lo": 0.2187,
+      "walk_hi": 0.2751,
+      "kept_10h_rate": 0.5376,
+      "median_hours_after": 13.7,
+      "active_now_rate": 0.0213
+     },
+     "negative": {
+      "n": 2782,
+      "walked_away": 1983,
+      "walk_rate": 0.7128,
+      "walk_lo": 0.6957,
+      "walk_hi": 0.7293,
+      "kept_10h_rate": 0.1733,
+      "median_hours_after": 0.0,
+      "active_now_rate": 0.0032
+     },
+     "gap": 0.467
+    },
+    {
+     "bucket": "2\u201310 h",
+     "positive": {
+      "n": 6657,
+      "walked_away": 520,
+      "walk_rate": 0.0781,
+      "walk_lo": 0.0719,
+      "walk_hi": 0.0848,
+      "kept_10h_rate": 0.763,
+      "median_hours_after": 44.0,
+      "active_now_rate": 0.037
+     },
+     "negative": {
+      "n": 6902,
+      "walked_away": 3687,
+      "walk_rate": 0.5342,
+      "walk_lo": 0.5224,
+      "walk_hi": 0.5459,
+      "kept_10h_rate": 0.293,
+      "median_hours_after": 0.5,
+      "active_now_rate": 0.0059
+     },
+     "gap": 0.4561
+    },
+    {
+     "bucket": "10\u201350 h",
+     "positive": {
+      "n": 27272,
+      "walked_away": 1216,
+      "walk_rate": 0.0446,
+      "walk_lo": 0.0422,
+      "walk_hi": 0.0471,
+      "kept_10h_rate": 0.8556,
+      "median_hours_after": 55.3,
+      "active_now_rate": 0.0286
+     },
+     "negative": {
+      "n": 15910,
+      "walked_away": 7567,
+      "walk_rate": 0.4756,
+      "walk_lo": 0.4679,
+      "walk_hi": 0.4834,
+      "kept_10h_rate": 0.3629,
+      "median_hours_after": 1.6,
+      "active_now_rate": 0.0106
+     },
+     "gap": 0.431
+    },
+    {
+     "bucket": "50\u2013200 h",
+     "positive": {
+      "n": 25011,
+      "walked_away": 2385,
+      "walk_rate": 0.0954,
+      "walk_lo": 0.0918,
+      "walk_hi": 0.0991,
+      "kept_10h_rate": 0.8072,
+      "median_hours_after": 65.2,
+      "active_now_rate": 0.0433
+     },
+     "negative": {
+      "n": 17506,
+      "walked_away": 8260,
+      "walk_rate": 0.4718,
+      "walk_lo": 0.4645,
+      "walk_hi": 0.4792,
+      "kept_10h_rate": 0.3808,
+      "median_hours_after": 1.7,
+      "active_now_rate": 0.0143
+     },
+     "gap": 0.3764
+    },
+    {
+     "bucket": "200 h+",
+     "positive": {
+      "n": 7353,
+      "walked_away": 554,
+      "walk_rate": 0.0753,
+      "walk_lo": 0.0695,
+      "walk_hi": 0.0816,
+      "kept_10h_rate": 0.863,
+      "median_hours_after": 159.5,
+      "active_now_rate": 0.1489
+     },
+     "negative": {
+      "n": 3985,
+      "walked_away": 1290,
+      "walk_rate": 0.3237,
+      "walk_lo": 0.3094,
+      "walk_hi": 0.3384,
+      "kept_10h_rate": 0.5646,
+      "median_hours_after": 22.0,
+      "active_now_rate": 0.0572
+     },
+     "gap": 0.2484
+    }
+   ],
+   "baseline_at_critics_hours": 0.0829,
+   "excess_over_baseline": 0.4011
+  }
+ ]
+}
