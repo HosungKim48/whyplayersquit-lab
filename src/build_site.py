@@ -96,6 +96,12 @@ h1.big{font-size:50px;line-height:1.08;letter-spacing:-.02em;margin:0}.hero .led
 .chartg .b.p{background:linear-gradient(180deg,#7db4f5,#3b7fd6);box-shadow:0 0 16px rgba(90,156,236,.45)}.chartg .b.n{background:linear-gradient(180deg,#f6a07a,#d9622f);box-shadow:0 0 16px rgba(240,129,82,.4)}
 .chartlab{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;font-size:12px;color:var(--muted);text-align:center}.chartlab div{transition:opacity .35s ease}
 .dim{opacity:.28}.pnote{font-size:14px;line-height:1.5;color:var(--text2);border-top:1px solid #2b3b5c;padding-top:14px;min-height:3em}
+.sigs{display:flex;flex-direction:column;gap:18px;padding:6px 0 2px}.sig{display:flex;flex-direction:column;gap:9px}.sigl{display:flex;align-items:center;gap:8px;font-size:14px;color:#d7deea;font-weight:600}.sigl svg{width:16px;height:16px;flex:none}
+.sigt{display:grid;grid-template-columns:40% 14px 1fr;align-items:center;gap:0;height:14px}.sigt i{height:12px;border-radius:6px}.sigt .pre{background:#3a4a6b}.sigt .rv{width:14px;height:14px;border-radius:50%;background:#e8edf5;box-shadow:0 0 0 3px #1c2a47}
+.sigt .post{margin-left:4px;transform-origin:left;animation:grow 1.2s .3s cubic-bezier(.2,.8,.2,1) both}.sigt .post.p{background:linear-gradient(90deg,#3b7fd6,#7db4f5);box-shadow:0 0 16px rgba(90,156,236,.45)}
+.sigt .none{margin-left:4px;height:0;border-top:2px dashed #f08152;border-radius:0;opacity:.7;width:22%}
+.sigax{display:grid;grid-template-columns:calc(40% + 7px) 1fr;font-size:12px;color:var(--muted);border-top:1px solid #2b3b5c;padding-top:8px}.sigax span:last-child{padding-left:11px}
+@media (prefers-reduced-motion:reduce){.sigt .post{animation:none}}
 .shead{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:16px}.shead h2{font-size:26px;margin:0}
 .gcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .gcard{text-decoration:none;color:var(--text);background:linear-gradient(165deg,#18233b,#111a2c);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:14px;box-shadow:0 18px 36px -22px rgba(0,0,0,.8)}
@@ -499,10 +505,6 @@ def thumb(up):
 CONTACT = "hosun9k@gmail.com"
 OVERVIEW_JS = """<script>
 (function(){
-var notes=JSON.parse(document.getElementById('pnotes').textContent),pills=[].slice.call(document.querySelectorAll('.pill')),note=document.getElementById('pnote');
-function pick(i){pills.forEach(function(p,k){p.setAttribute('aria-pressed',k===i?'true':'false')});
-[].forEach.call(document.querySelectorAll('[data-st]'),function(e){var k=+e.getAttribute('data-st');e.classList.toggle('dim',i!==0&&k!==i)});note.textContent=notes[i]}
-pills.forEach(function(p,i){p.addEventListener('click',function(){pick(i)})});
 var w=document.getElementById('tilt'),st=w&&w.querySelector('.stack');
 if(st&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&matchMedia('(hover: hover)').matches){
 w.addEventListener('mousemove',function(e){var r=w.getBoundingClientRect();st.style.transform='rotateX('+((.5-(e.clientY-r.top)/r.height)*10)+'deg) rotateY('+(((e.clientX-r.left)/r.width-.5)*14)+'deg)'});
@@ -515,51 +517,30 @@ window.location.href='mailto:'+f.getAttribute('data-to')+'?subject='+encodeURICo
 </script>"""
 
 
-def overview_page_body(ov, games, ar, c1h, lab, fans_line):
-    """Overview: one chart of what reviewers did next, then the game cards, then the request form."""
-    tot = sum(o["reviews"] for o in ov); nlang = max(o["funnel"]["languages"] for o in games)
-    P, N = ar["pooled"]["positive"], ar["pooled"]["negative"]; base = ar["pooled"]["baseline_at_critics_hours"]; rows = ar["pooled"]["by_hours"]
-    every = all(r["gap"] is not None and r["gap"] > 0 for g in ar["games"] + [ar["pooled"]] for r in g["by_hours"])
-    late = max(((g, r) for g in ar["games"] for r in g["by_hours"][1:] if r["positive"]["walk_rate"] is not None), key=lambda t: t[1]["positive"]["walk_rate"])
-    notes = [f"After a thumbs-up, {pct(P['walk_rate'])} of players stopped within the hour. After a thumbs-down, {pct(N['walk_rate'])} did."
-             + (" It holds at every stage of play." if every else "") + f" And it isn't about hours played: at the critics' hours, fans would still stop only {pct(base)} of the time."]
-    for i, r in enumerate(rows):
-        t = f"At {r['bucket'].lower()}, critics were {r['negative']['walk_rate'] / r['positive']['walk_rate']:.1f} times as likely to stop as fans."
-        if i == 0: t += " That's inside Steam's refund window, so everyone stops more here."
-        if r["bucket"] == late[1]["bucket"]: t += f" Some fans stop here too: {pct(late[1]['positive']['walk_rate'])} in {late[0]['name']}, which looks more like finishing than quitting."
-        notes.append(t)
-    H = 3.3
-    pills = "".join(f'<button class="pill" type="button" aria-pressed="{"true" if i == 0 else "false"}">{E(l)}</button>' for i, l in enumerate(["All hours"] + [r["bucket"] for r in rows]))
-    cols = "".join(f'<div class="col" data-st="{i+1}"><div class="vb"><span style="color:#8fbdf5">{pct(r["positive"]["walk_rate"])}</span><div class="b p" style="height:{r["positive"]["walk_rate"]*100*H:.0f}px"></div></div>'
-                   f'<div class="vb"><span style="color:#f6a07a">{pct(r["negative"]["walk_rate"])}</span><div class="b n" style="height:{r["negative"]["walk_rate"]*100*H:.0f}px"></div></div></div>' for i, r in enumerate(rows))
-    labs = "".join(f'<div data-st="{i+1}">{E(r["bucket"])}</div>' for i, r in enumerate(rows))
-    aria = "Share who logged under one more hour after reviewing, by hours played at review. " + "; ".join(f"{r['bucket']}: recommended {pct(r['positive']['walk_rate'])}, not recommended {pct(r['negative']['walk_rate'])}" for r in rows)
+def overview_page_body(ov, ar):
+    """Overview: what the quit signal is (no study-wide figures), then the game cards, then the request form."""
     byslug = {g["slug"]: g for g in ar["games"]}
     cards = "".join(
         f'<a class="gcard lift rise" style="animation-delay:{0.15 + i * 0.09:.2f}s" href="games/{E(o["slug"])}.html"><div class="gh"><div><div class="gn">{E(o["name"])}</div><div class="gs">{E(o["genre"])}</div></div><div class="gr">{num(o["reviews"])} reviews</div></div>'
         f'<div><div class="grow">{thumb(True)}<b style="color:#5a9cec">{pct(byslug[o["slug"]]["positive"]["walk_rate"])}</b><div class="tr"><i style="width:{byslug[o["slug"]]["positive"]["walk_rate"]*200:.0f}%;background:#5a9cec"></i></div></div>'
         f'<div class="grow">{thumb(False)}<b style="color:#f08152">{pct(byslug[o["slug"]]["negative"]["walk_rate"])}</b><div class="tr"><i style="width:{byslug[o["slug"]]["negative"]["walk_rate"]*200:.0f}%;background:#f08152"></i></div></div></div>'
         f'<div class="gfacts"><div><small>Negative reviews</small><b>{pct(o["negative_share"])}</b></div><div><small>Top complaint</small><b>{E(o["top_reason"] or "–")}</b></div></div><div class="gopen">Open report →</div></a>' for i, o in enumerate(ov))
-    mh = next((o for o in ov if o["slug"] == "monster-hunter-wilds"), None); cs = "What an English-only read of Steam reviews misses."
-    if mh:
-        en = next((l for l in mh["languages"] if l["code"] == "english"), None); zh = next((l for l in mh["languages"] if l["code"] == "schinese"), None)
-        if en and zh: cs = f"{mh['name']} looks fine in English: {pct(en['negative_share'])} negative. In Simplified Chinese it's {pct(zh['negative_share'])}."
-    notes_json = json.dumps(notes).replace("<", "\\u003c")
     legend = lambda a, b: f'<div class="tlegend"><span>{thumb(True)}{a}</span><span>{thumb(False)}{b}</span></div>'
+    # a schematic of the signal, no data: playtime before the review, the review, playtime since
+    sig = lambda up, after, label: (f'<div class="sig"><div class="sigl">{thumb(up)}{label}</div><div class="sigt"><i class="pre"></i><b class="rv" title="Review written"></b>'
+                                    + (f'<i class="post {"p" if up else "n"}"></i>' if after else '<i class="none"></i>') + '</div></div>')
     return f"""<div class="hero-bg"><div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
 <svg class="pulseline" aria-hidden="true" viewBox="0 0 1280 160" preserveAspectRatio="none"><polyline points="0,90 180,90 230,90 262,30 300,140 338,60 372,90 620,90 660,90 690,48 724,120 752,90 1280,90" fill="none" stroke="#5a9cec" stroke-width="2" stroke-linejoin="round"/></svg>
 <div class="wrap hero"><div class="htext rise">
 <h1 class="big">A review is not the end of the story. This study measures what players did next.</h1>
-<p class="lede">Every Steam review comes with a clue: how long the reviewer kept playing afterwards. Here's what {num(tot)} reviews of six games, in {nlang} languages, show.</p>
+<p class="lede">Every Steam review comes with a clue: how long the reviewer kept playing afterwards. Each report reads that clue across every review of one game, in every language.</p>
 <a class="btn" href="#games">Find a game like yours</a></div>
 <div class="tiltwrap" id="tilt"><div class="stack"><div class="layer l2" aria-hidden="true"></div><div class="layer l1" aria-hidden="true"></div>
-<div class="panel"><div class="kick">Stopped within an hour of reviewing</div>
-<div class="pills" role="group" aria-label="Hours played at review">{pills}</div>
-{legend("Recommended", "Not recommended")}
-<div class="chartg" role="img" aria-label="{E(aria)}">{cols}</div>
-<div class="chartlab" aria-hidden="true">{labs}</div>
-<div class="pnote" id="pnote" aria-live="polite">{E(notes[0])}</div>
-<script type="application/json" id="pnotes">{notes_json}</script>
+<div class="panel"><div class="kick">The quit signal</div>
+<div class="sigs" role="img" aria-label="Two reviewers. Both played for a while and wrote a review. One kept playing afterwards; the other never played again.">
+{sig(True, True, "Reviewed, then kept playing")}{sig(False, False, "Reviewed, then stopped")}
+<div class="sigax" aria-hidden="true"><span>Playtime at review</span><span>Playtime since</span></div></div>
+<div class="pnote">Steam shows both numbers on every public review. The gap between them is what the reviewer did next. A report counts who kept playing and who stopped, at every stage of play, and which complaints go with leaving.</div>
 </div></div></div></div></div>
 <div class="wrap" style="padding-top:20px">
 <section id="games" style="margin-top:0"><div class="shead"><h2>Find a game like yours</h2>{legend("Recommended, stopped", "Not recommended, stopped")}</div>
@@ -575,17 +556,17 @@ def overview_page_body(ov, games, ar, c1h, lab, fans_line):
 <div class="fb" id="reqfb" role="status" hidden>If your email app did not open, write to {CONTACT}.</div>
 </form></div></section>
 <section class="more">
-<a class="mcard lift" href="quit.html"><b>Why players quit</b><span>{E(c1h)}. See which complaints actually go with leaving.</span></a>
-<a class="mcard lift" href="fans.html"><b>When fans review</b><span>{E(fans_line)}</span></a>
+<a class="mcard lift" href="quit.html"><b>Why players quit</b><span>Which complaints go with players actually leaving, and which come from players who stay.</span></a>
+<a class="mcard lift" href="fans.html"><b>When fans review</b><span>When happy players speak up: in hours played, and as a point in their whole time with the game.</span></a>
 <a class="mcard lift" href="data.html"><b>The numbers</b><span>Want the full tables? Every game, every stage of play, every language.</span></a>
-<a class="mcard lift" href="case-study.html"><b>Case study: the score that hid a market</b><span>{E(cs)}</span></a>
+<a class="mcard lift" href="case-study.html"><b>Case study: the score that hid a market</b><span>What an English-only read of Steam reviews misses.</span></a>
 <a class="mcard lift" href="method.html"><b>Method and limits</b><span>How it's made: Claude Haiku 5.5 labels, Claude Fable 5.2 audits, and code checks every number.</span></a>
 </section>
 </div>
 {OVERVIEW_JS}"""
 
 
-def index_page(ov, games, audit, cost, models, ar, fans_line):
+def index_page(ov, games, audit, cost, models, ar):
     tot = sum(o["reviews"] for o in ov); neg = sum(o["negative"] for o in ov); lab = sum(o["labeled"] for o in ov); eng = sum(o["english"] for o in ov)
     nl = len({l["code"] for o in ov for l in o["languages"] if l["code"] != "_small"})
     wmin = min(ov, key=lambda o: o["neg_walk_rate"]); wmax = max(ov, key=lambda o: o["neg_walk_rate"])
@@ -715,7 +696,7 @@ def index_page(ov, games, audit, cost, models, ar, fans_line):
 <p class="note">▲ / ▼ mark groups clearly above / below the game's own rate. "–" = fewer than 30 reviews.</p>
 <div class="scroll"><table><thead><tr><th>Game</th>{head}</tr></thead><tbody>{heat2}</tbody></table></div></details></section>
 </div>"""
-    return (page("Player Signals — what players do after they review", overview_page_body(ov, games, ar, c1h, lab, fans_line), ov, desc="What reviewers of Steam games did after reviewing: who kept playing, who stopped, and which complaints go with stopping. Built from public Steam reviews in all languages."),
+    return (page("Player Signals — what players do after they review", overview_page_body(ov, ar), ov, desc="What reviewers of Steam games did after reviewing: who kept playing, who stopped, and which complaints go with stopping. Built from public Steam reviews in all languages."),
             page("Why players quit — Player Signals", quit_body, ov, desc="Which complaints go with actually leaving? Complaint analysis of negative Steam reviews in all languages."),
             page("The numbers — Player Signals", body, ov, desc="Tables behind Player Signals: behaviour after the review by game, hours played and review language."))
 
@@ -749,10 +730,6 @@ def line_chart(series, xticks, xmax, ylab, xlab, band=None, marks=None, width=76
         for i in range(1, len(ends)): ends[i][0] = max(ends[i][0], ends[i - 1][0] + 14)
         for y, sr in ends: o.append(f'<line x1="{L + pw + 4}" x2="{L + pw + 14}" y1="{y:.1f}" y2="{y:.1f}" stroke="{sr["color"]}" stroke-width="2"/><text x="{L + pw + 18}" y="{y + 4:.1f}">{E(sr["name"])}</text>')
     return "".join(o) + "</svg>"
-
-
-def fans_headline(fans):
-    r = fans["pooled"]["recommended"]; return f"When do happy players speak up? Half of all thumbs-ups land between {r['p25']:.0f} and {r['p75']:.0f} hours in."
 
 
 def fans_page(fans, ov):
@@ -966,7 +943,7 @@ if __name__ == "__main__":
     open(os.path.join(DOCS, ".nojekyll"), "w").write("")
     models = load("models.json"); fans = load("fans.json")
     open(os.path.join(DOCS, "fans.html"), "w").write(fans_page(fans, ov))
-    idx, quit_html, data_html = index_page(ov, games, audit, cost, models, load("after_review.json"), fans_headline(fans))
+    idx, quit_html, data_html = index_page(ov, games, audit, cost, models, load("after_review.json"))
     open(os.path.join(DOCS, "index.html"), "w").write(idx); open(os.path.join(DOCS, "quit.html"), "w").write(quit_html); open(os.path.join(DOCS, "data.html"), "w").write(data_html)
     open(os.path.join(DOCS, "method.html"), "w").write(method_page(ov, games, audit, cost))
     for o in games: open(os.path.join(DOCS, "games", o["slug"] + ".html"), "w").write(game_page(o, audit, ov))
