@@ -1,7 +1,7 @@
 # Why Players Quit · Lab
 
 - **What:** reports on why players stop playing six PC games, built from 551,228 public Steam reviews in every language.
-- **Finding:** crash complaints come from players who stay; design complaints come from players who leave. English reviews alone can hide a whole market (Monster Hunter Wilds: 29% negative in English, 78% in Simplified Chinese).
+- **Finding:** players who report crashes mostly keep playing; every other complaint type goes with stopping more often. English reviews alone can hide a whole market (Monster Hunter Wilds: 29% negative in English, 78% in Simplified Chinese).
 - **How:** Steam shows playtime at review and playtime now. The gap shows what each reviewer did *after* complaining.
 
 **Site:** https://hosungkim48.github.io/whyplayersquit-lab/ · **Case study:** [the review score that hid a market](https://hosungkim48.github.io/whyplayersquit-lab/case-study.html)

@@ -62,6 +62,7 @@ tbody tr:hover td{background:var(--surface2)}.scroll{overflow-x:auto;border:1px 
 .barcell{white-space:nowrap;text-align:left}.barcell span.v{display:inline-block;min-width:38px;text-align:right;margin-right:8px}
 svg{display:block;width:100%;height:auto}svg text{font:12px Inter,system-ui,-apple-system,sans-serif;fill:var(--text2)}svg .v{fill:var(--text);font-weight:600}svg .t{fill:var(--muted);font-size:11px}
 .legend{font-size:12.5px;color:var(--text2);display:flex;gap:16px;flex-wrap:wrap;margin:2px 0 10px}.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px}
+.nd{stroke:var(--line);fill:var(--surface2)}.nd.m{stroke:var(--blue);fill:rgba(var(--heat),.12)}.nd.k{stroke:var(--orange);fill:rgba(235,104,52,.13)}.fl{stroke:var(--muted);stroke-width:1.4;fill:none}.fl.k{stroke:var(--orange)}.lanebg{fill:none;stroke:var(--line)}
 .sw-b{background:var(--blue)}.sw-o{background:var(--orange)}.sw-g{background:var(--muted)}
 details{margin:10px 0}summary{cursor:pointer;font-size:13px;color:var(--text2)}blockquote{margin:6px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--text2);font-size:14px;background:var(--surface);border-radius:0 8px 8px 0}
 .team{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:10px 0}.team h3{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -71,7 +72,7 @@ details{margin:10px 0}summary{cursor:pointer;font-size:13px;color:var(--text2)}b
 .game .row strong{display:block;font-size:19px;color:var(--text);font-variant-numeric:tabular-nums}
 .dl a{display:inline-block;margin:0 8px 8px 0;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:5px 12px;text-decoration:none;background:var(--surface)}
 footer{border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);background:var(--surface)}footer div{max-width:1220px;margin:0 auto;padding:18px 24px}
-@media (max-width:900px){.layout{grid-template-columns:1fr}.toc{display:none}h1{font-size:27px}.grid2{grid-template-columns:1fr}}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.toc{display:none}h1{font-size:27px}.grid2{grid-template-columns:minmax(0,1fr)}}
 @media print{.top nav,.switch,.toc{display:none}.layout{grid-template-columns:1fr}body{background:#fff}section{break-inside:avoid}}
 """
 
@@ -213,11 +214,16 @@ def barcell(v, cls="", scale=120):
 
 def model_block(m, scope="this game's"):
     if not m or not m.get("ok"): return ""
+    named = [r for r in m["rows"] if r["code"] not in ("OTHER", "OFFGAME")]; oth = next((r for r in m["rows"] if r["code"] == "OTHER"), None)
+    extra = f" Reviewers whose main complaint was {E(m['reference_reason'].lower())} are the comparison group because they stay most often, so each row reads as how much more often that group walked away than they did."
+    if oth and named:
+        k = sum(r["odds_ratio"] < oth["odds_ratio"] for r in named)
+        extra += f" Reviews with no clear reason sit at {oth['odds_ratio']:.2f}×, higher than {k} of the {len(named)} named complaint types, so the complaint label explains only part of who leaves."
     rows = "".join(f"<tr><td>{E(r['reason'])}</td><td>{num(r['n'])}</td><td><b>{r['odds_ratio']:.2f}×</b></td><td>{r['lo']:.2f}–{r['hi']:.2f}</td><td>{'under 0.001' if r['p'] < 0.001 else f'{r[chr(112)]:.3f}'}</td>"
                    f"<td class='l'><span class='chip'>{'▲ more likely to leave' if r['lo'] > 1 else '▼ less likely to leave' if r['hi'] < 1 else '● no clear difference'}</span></td></tr>" for r in m["rows"])
     return (f"<h3 style='margin-top:22px'>Does it hold after controls?</h3><p class='note'>A logistic regression on {num(m['n'])} of {scope} labeled negative reviews predicts walking away from the main complaint "
             f"while holding constant hours played at review, review language, how long after launch the review was written, and whether it was edited. Each row compares a complaint with <b>{E(m['reference_reason'].lower())}</b>: "
-            f"2.00× means twice the odds of having walked away. This narrows the comparison; it still does not show cause.</p>"
+            f"2.00× means twice the odds of having walked away. This narrows the comparison; it still does not show cause.{extra}</p>"
             f"<div class='scroll'><table><thead><tr><th>Main complaint</th><th>Reviews</th><th>Odds of walking away vs. {E(m['reference_reason'].lower())}</th><th>95% interval</th><th>p-value</th><th class='l'>Reading</th></tr></thead><tbody>{rows}</tbody></table></div>")
 
 
@@ -281,14 +287,18 @@ def game_page(o, audit, ov):
 
     # ---- three calls (all text built from the data)
     if his:
-        c1h = f"{E(his[0]['reason'])} is the complaint that goes with leaving"
-        c1p = f"{pct(his[0]['share'])} of negative reviews; {pct(his[0]['walk_rate'])} of these reviewers logged under 1 more hour, against {pct(bn['walk_rate'])} for all negative reviewers." + (
-            f" Also above average: {', '.join(E(r['reason'].lower()) for r in his[1:3])}." if len(his) > 1 else "")
+        gap = lambda r: round(r["walk_rate"] * 100) - round(bn["walk_rate"] * 100)
+        top = max(his, key=lambda r: r["walk_rate"]); rest = [r for r in his if r is not top]
+        c1h = f"{E(top['reason'])} critics leave most often"
+        c1p = f"{pct(top['walk_rate'])} of these reviewers logged under 1 more hour, against {pct(bn['walk_rate'])} for all negative reviewers ({gap(top)} point{'' if gap(top) == 1 else 's'} higher), on {pct(top['share'])} of negative reviews."
+        if rest and rest[0]["share"] > top["share"]:
+            c1p += f" The largest group above average is {E(rest[0]['reason'].lower())} ({pct(rest[0]['share'])} of reviews), where the gap is {gap(rest[0])} point{'' if gap(rest[0]) == 1 else 's'} ({pct(rest[0]['walk_rate'])})."; rest = rest[1:]
+        if rest: c1p += f" Also above average: {', '.join(E(r['reason'].lower()) for r in rest[:2])}."
     else:
         c1h = "No complaint group stands out for leaving"; c1p = f"Every large complaint group sits within its margin of the overall {pct(bn['walk_rate'])} walk-away rate."
     if los: c1p += f" The loudest group that mostly stays: {E(los[0]['reason'].lower())} ({pct(los[0]['share'])} of reviews, {pct(los[0]['walk_rate'])} walked away)."
-    c2h = f"The first 2 hours lose {pct(early['neg_walk_rate'])} of early critics" if early["neg_walk_rate"] is not None else "Early hours"
-    c2p = f"{pct(early['negative_share_in_bucket'])} of reviews written with under 2 hours played are negative ({num(early['negative'])} reviews), and {pct(early['neg_walk_rate'])} of those reviewers never logged another hour. Median playtime at a negative review: {ovw['median_hours_at_negative_review']} h."
+    c2h = f"{pct(early['neg_walk_rate'])} of under-2-hour critics stop there, inside Steam's refund window" if early["neg_walk_rate"] is not None else "Early hours"
+    c2p = f"{pct(early['negative_share_in_bucket'])} of reviews written with under 2 hours played are negative ({num(early['negative'])} reviews), and {pct(early['neg_walk_rate'])} of those reviewers never logged another hour. Steam refunds are available up to 2 hours of play, so some of them stopped to stay eligible, whatever they complained about ({pct(bn['refunded_rate'])} of all negative reviews carry the refund flag). Median playtime at a negative review: {ovw['median_hours_at_negative_review']} h."
     w = svd["WAITING"]
     c3h = f"{pct(w['share'])} of critics said they would come back"
     c3p = f"{num(w['n'])} reviewers wrote that they are waiting for fixes; {pct(w['kept_10h_rate'])} of them went on to play 10+ more hours. Overall, {pct(bn['kept_10h_rate'])} of negative reviewers played 10+ more hours and {pct(bn['active_now_rate'])} played in the two weeks before the snapshot."
@@ -372,7 +382,7 @@ def game_page(o, audit, ov):
 <div class="meta">{num(ovw['reviews'])} public Steam reviews in {f['languages']} languages, {f['first_review']} to {f['last_review']} · playtime snapshot {E(o['snapshot'])} · {num(f['labeled'])} negative reviews labeled by reason</div>
 <div class="kpis">{kpis}</div>
 <div class="calls">{calls}</div>
-<div class="caveat"><b>How far this goes.</b> Reviews come only from players who chose to write one, so every share is a share of <i>reviewers</i>, not of all players. "Walked away" is read from public playtime ({num(bn['walked_away'])} of {num(bn['n'])} negative reviews at least {o['params']['mature_days']} days old). Everything below is an association to check against your own telemetry, not proof of cause.</div>
+<div class="caveat"><b>How far this goes.</b> Reviews come only from players who chose to write one, so every share is a share of <i>reviewers</i>, not of all players. "Walked away" is read from public playtime ({num(bn['walked_away'])} of {num(bn['n'])} negative reviews at least {o['params']['mature_days']} days old). Stopping is not the same as a lost customer: this is a paid game and the median critic had already played {ovw['median_hours_at_negative_review']} hours, so a reviewer who stops late may simply have finished. Read each walk-away rate next to hours played at review. Everything below is an association to check against your own telemetry, not proof of cause.</div>
 <div class="layout"><aside class="toc"><b>In this report</b><a href="#priority">1 · Priority map</a>{'<a href="#inside">&nbsp;&nbsp;&nbsp;Inside design complaints</a>' if o.get('sub_reasons') else ''}<a href="#when">2 · When they give up</a><a href="#markets">3 · Markets</a><a href="#said">4 · Said versus did</a><a href="#timeline">5 · Patches &amp; spikes</a><a href="#voices">6 · Player voice</a><a href="#teams">7 · Checks by team</a><a href="#limits">8 · Limits &amp; data</a></aside>
 <div>
 <section id="priority" style="margin-top:8px"><h2>1 · Priority map</h2>
@@ -438,12 +448,16 @@ def index_page(ov, games, audit, cost, models):
     flagrows = "".join(f"<tr><td>{E(REASONS[c])}</td><td class='l'><span class='chip own'>{E(OWNER[c])}</span></td><td>{flags[c].count('higher')} of {N}</td><td>{flags[c].count('lower')} of {N}</td><td>{N-flags[c].count('higher')-flags[c].count('lower')} of {N}</td></tr>" for c in order)
     stay = [c for c in order if flags[c].count("lower") >= 4]; leave = [c for c in order if flags[c].count("higher") >= 4]
     rng = lambda k, inv=False: (lambda v: f"{pct(min(v))}–{pct(max(v))}")([(1 - o[k]) if inv else o[k] for o in ov if o[k] is not None])
-    c1h = ("Design-type complaints go with leaving; technical ones mostly don't" if leave and stay else "Complaints differ in how often their authors leave")
+    c1h = ("Players who report crashes are the ones who stay" if "STAB" in stay else "Complaints differ in how often their authors leave")
     c1p = ""
-    if leave: c1p += "Reviewers left clearly more often than other critics after complaints about " + ", ".join(f"{E(REASONS[c].lower())} ({flags[c].count('higher')} of {N} games)" for c in leave) + ". "
-    if stay: c1p += "They left clearly less often after complaints about " + ", ".join(f"{E(REASONS[c].lower())} ({flags[c].count('lower')} of {N} games)" for c in stay) + "."
-    c2h = "The first two hours decide a lot"
-    c2p = f"{rng('under2h_negative_share')} of reviews written with under 2 hours played are negative, and {rng('under2h_neg_walk_rate')} of those reviewers did not log another hour."
+    if stay: c1p += "Reviewers left clearly less often than other critics after complaints about " + ", ".join(f"{E(REASONS[c].lower())} ({flags[c].count('lower')} of {N} games)" for c in reversed(stay)) + ". "
+    if leave: c1p += "They left clearly more often after complaints about " + ", ".join(f"{E(REASONS[c].lower())} ({flags[c].count('higher')} of {N} games)" for c in leave) + ". "
+    pm = (models or {}).get("pooled") or {}
+    if pm.get("ok") and pm.get("reference") == "STAB" and all(r["lo"] > 1 for r in pm["rows"]):
+        ors = [r["odds_ratio"] for r in pm["rows"]]
+        c1p += f"After controls, every other complaint type has higher odds of walking away than crash complaints ({min(ors):.2f}×–{max(ors):.2f}×)."
+    c2h = "Under two hours, critics often stop, but that is also the refund window"
+    c2p = f"{rng('under2h_negative_share')} of reviews written with under 2 hours played are negative, and {rng('under2h_neg_walk_rate')} of those reviewers did not log another hour. Steam refunds are available up to 2 hours of play, so part of this is players stopping to stay eligible for a refund, not the complaint itself."
     c3h = "Most critics are still reachable"
     c3p = f"{rng('neg_walk_rate', True)} of negative reviewers kept playing for at least another hour. Of those who wrote they would wait for fixes, {rng('said_waiting_kept_10h_rate')} played 10+ more hours. Of those who wrote they had quit, {rng('said_stopped_walk_rate', True)} still logged another hour or more."
     calls = "".join(f'<div class="call"><div class="t">{t}</div><h3>{h}</h3><p>{p}</p></div>' for t, h, p in [("Prioritize", c1h, c1p), ("Protect", c2h, c2p), ("Win back", c3h, c3p)])
@@ -472,14 +486,14 @@ def index_page(ov, games, audit, cost, models):
     body = f"""<div class="wrap">
 <div class="kicker">Public Steam review study · all languages · snapshot {E(max(o['snapshot'] for o in ov))}</div>
 <h1>A negative review is a warning, not a goodbye</h1>
-<p class="lede">For six big-budget PC games, this lab measures who actually stopped playing after a negative review, when they gave up, and which complaints go with leaving — so a team can tell loud problems from costly ones.</p>
+<p class="lede">For six big-budget PC games, this lab measures who actually stopped playing after a negative review, when they gave up, and which complaints go with leaving — so a team can tell the complaints players voice while they stay from the ones that go with stopping.</p>
 <div class="kpis">
 <div class="kpi"><div class="l">Reviews analysed</div><b>{num(tot)}</b><div class="s">full history of 6 games, {nl} languages with 300+ reviews in a game</div></div>
 <div class="kpi"><div class="l">Outside English</div><b>{pct(1-eng/tot)}</b><div class="s">of all reviews</div></div>
 <div class="kpi"><div class="l">Negative reviews</div><b>{num(neg)}</b><div class="s">{num(lab)} labeled by reason</div></div>
 <div class="kpi"><div class="l">Critics who walked away</div><b>{pct(wmin['neg_walk_rate'])}–{pct(wmax['neg_walk_rate'])}</b><div class="s">logged under 1 more hour (range across games)</div></div></div>
 <div class="calls">{calls}</div>
-<div class="caveat"><b>How far this goes.</b> Reviews represent only the players who wrote them. All figures are shares of reviewers, and every pattern is an association, not a cause. See <a href="method.html">Method &amp; limits</a>.</div>
+<div class="caveat"><b>How far this goes.</b> Reviews represent only the players who wrote them. All figures are shares of reviewers, and every pattern is an association, not a cause. Stopping is not the same as a lost customer: these are paid games, and a reviewer who stops after 80 hours may simply have finished, while one who stops after 2 never got started. Read each walk-away rate next to hours played at review. See <a href="method.html">Method &amp; limits</a>.</div>
 
 <section id="reports"><h2>Game reports</h2><p class="q">Each report has the same eight sections, so teams can compare titles.</p><div class="games">{cards}</div></section>
 
@@ -518,12 +532,38 @@ def index_page(ov, games, audit, cost, models):
     return page("Why Players Quit · Lab — quit signals in Steam reviews", body, ov, desc="Which complaints go with actually leaving? Quit-signal reports for six games from public Steam reviews in all languages.")
 
 
+def check_loop(games, audit):
+    """Lanes diagram: who does each step. Every model step is followed by a check in a different lane. Numbers come from the JSON."""
+    enough = sum(o["funnel"]["negative_enough_text"] for o in games); lab = sum(o["funnel"]["labeled"] for o in games)
+    X = [140, 246, 352, 458, 564, 670, 776]; BW, BH = 98, 48; LY = {"m": 36, "c": 126, "k": 216}
+    steps = [("c", "", "Fetch &amp; filter", f"{num(enough)} reviews"), ("m", "m", "Label", f"{num(lab)} labeled"), ("c", "", "Draw sample", f"{audit['n']}, fixed seeds"),
+             ("k", "k", "Audit labels", f"{pct(audit['main_agree'])} correct"), ("c", "", "Analyze", "rates, regression"), ("m", "m", "Paraphrase", "short examples"), ("c", "k", "Screen &amp; verify", "code checks")]
+    hops = ["reviews", "all labels", f"{audit['n']} sampled", "verdicts, published", "numbers", "drafts"]
+    s = ['<svg viewBox="0 0 900 300" style="min-width:680px" role="img" aria-label="Three lanes: Claude Haiku 5.5, code and Claude Fable 5.2. Each step a model does is followed by a check in a different lane.">',
+         '<defs><marker id="lp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker></defs>']
+    for y, a, b in [(20, "Claude Haiku 5.5", "small model"), (110, "Code", "no model"), (200, "Claude Fable 5.2", "larger model")]:
+        s.append(f'<rect class="lanebg" x="10" y="{y}" width="880" height="80" rx="8"/><text class="v" x="22" y="{y + 37}">{a}</text><text class="t" x="22" y="{y + 53}">{b}</text>')
+    for i, (lane, cls, t, sub) in enumerate(steps):
+        x, y = X[i], LY[lane]
+        s.append(f'<rect class="nd {cls}" x="{x}" y="{y}" width="{BW}" height="{BH}" rx="8"/><text class="v" x="{x + BW / 2:.0f}" y="{y + 20}" text-anchor="middle">{t}</text><text class="t" x="{x + BW / 2:.0f}" y="{y + 36}" text-anchor="middle">{sub}</text>')
+    for i, lab_ in enumerate(hops):
+        (l0, _, _, _), (l1, _, _, _) = steps[i], steps[i + 1]; y0, y1 = LY[l0], LY[l1]; up = y1 < y0
+        x0, x1 = X[i] + BW * .75, X[i + 1] + BW * .25
+        ya, yb = (y0 - 2, y1 + BH + 3) if up else (y0 + BH + 2, y1 - 3)
+        mid = (ya + yb) / 2 + 4
+        s.append(f'<line class="fl{" k" if l0 == "k" else ""}" x1="{x0:.0f}" y1="{ya}" x2="{x1:.0f}" y2="{yb}" marker-end="url(#lp)"/>'
+                 + (f'<text class="t" x="{(x0 if up else x1 - 34) - 4:.0f}" y="{mid:.0f}" text-anchor="end">{lab_}</text>' if up != ("k" in (l0, l1)) else f'<text class="t" x="{(x1 if not up else x0 + 34) + 4:.0f}" y="{mid:.0f}">{lab_}</text>'))
+    return "".join(s) + "</svg>"
+
+
 def method_page(ov, games, audit, cost):
     funnel = "".join(f"<tr><td>{E(o['name'])}</td><td>{num(o['funnel']['steam_summary_total'])}</td><td>{num(o['funnel']['api_reported_reviews'])}</td><td>{num(o['funnel']['fetched_unique'])}</td><td>{num(o['funnel']['english'])}</td><td>{num(o['funnel']['other_languages'])}</td><td>{num(o['funnel']['negative'])}</td><td>{num(o['funnel']['negative_enough_text'])}</td><td>{num(o['funnel']['labeled'])}</td></tr>" for o in games)
     aud = ""
     if audit:
         sets = "".join(f"<tr><td>{E(s['name'])}</td><td>{s['n']}</td><td>{s['main_ok']} ({pct(s['main_agree'])})</td><td>{s['quit_ok']} ({pct(s['quit_agree'])})</td></tr>" for s in audit["sets"])
-        aud = f"""<p>Random samples of labeled reviews (drawn by code, fixed seeds: 10 per game in English, 10 per game in other languages, plus 50 across everything) were read and judged by Claude Fable 5.2, a larger model than the one that wrote the labels. For long reviews in the last two samples the checker read the first 420 characters. This is a second-model check, not human validation. Overall, main reason judged correct: <b>{pct(audit['main_agree'])}</b> ({audit['main_ok']} of {audit['n']}); quit-statement tag: <b>{pct(audit['quit_agree'])}</b> ({audit['quit_ok']} of {audit['n']}).</p>
+        aud = f"""<div class="scroll" style="padding:10px">{check_loop(games, audit)}</div>
+<p class="note" style="margin:8px 0 14px">Blue = work by Claude Haiku 5.5. Orange = a check by something other than the author: Claude Fable 5.2 on the labels, code on the paraphrases and the published numbers.</p>
+<p>Samples are drawn by code with fixed seeds: 10 per game in English, 10 per game in other languages, plus 50 across everything. For long reviews in the last two samples the checker read the first 420 characters. Overall, main reason judged correct: <b>{pct(audit['main_agree'])}</b> ({audit['main_ok']} of {audit['n']}); quit-statement tag: <b>{pct(audit['quit_agree'])}</b> ({audit['quit_ok']} of {audit['n']}).</p>
 <div class="scroll"><table><thead><tr><th>Sample</th><th>Reviews checked</th><th>Main reason correct</th><th>Quit tag correct</th></tr></thead><tbody>{sets}</tbody></table></div>
 <p class="note">Per-item verdicts (without text or IDs) are in <a href="data/label_audit.json">data/label_audit.json</a>. The checker reads the non-English reviews directly but is not a native-speaker panel; treat the non-English figure with extra caution. A 50-review sample with text is kept locally for the author's own spot check and is not published.</p>"""
     crow = "".join(f"<tr><td>{E(r['step'])}</td><td>{num(r['calls'])}</td><td>{num(r['input_tokens'])}</td><td>{num(r['output_tokens'])}</td><td>${r['cost_usd']:.2f}</td></tr>" for r in cost["rows"])
@@ -561,7 +601,7 @@ def method_page(ov, games, audit, cost):
 <li><b>Sensitivity:</b> every verdict is recomputed with "walked away" set at under 2 and under 5 further hours; each report's limits section gives the result.</li>
 <li><b>Sub-reasons:</b> for Civilization VII only, reviews whose main complaint is gameplay &amp; design were sorted in a second pass into ten design choices.</li></ul></details></section>
 <section><h2>Reason labels</h2>
-<p>A small language model (Claude Haiku) read each negative review (first 1,200 characters, in its original language) and returned one main reason, an optional second reason, and whether the reviewer wrote that they had quit or would wait for fixes. Review text was treated as untrusted data.</p>
+<p>A small language model (Claude Haiku 5.5) read each negative review (first 1,200 characters, in its original language) and returned one main reason, an optional second reason, and whether the reviewer wrote that they had quit or would wait for fixes. Review text was treated as untrusted data.</p>
 <details><summary>Show the eleven labels and what each covers</summary><div class="scroll"><table><thead><tr><th>Label</th><th class="l">Covers</th></tr></thead><tbody>{reasons}</tbody></table></div></details>
 <h3 style="margin-top:18px">Accuracy check</h3>{aud or "<p class='note'>Pending.</p>"}</section>
 <section><h2>Limits</h2>
