@@ -1,18 +1,18 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Why players quit — Player Signals</title><meta name="description" content="Which complaints go with actually leaving? Complaint analysis of negative Steam reviews in all languages."><style>
-:root{color-scheme:light;--bg:#f4f5f7;--surface:#ffffff;--surface2:#f9fafb;--line:#e1e4ea;--text:#0f1722;--text2:#475264;--muted:#7a8496;
---ink:#10233f;--blue:#2a78d6;--orange:#eb6834;--grid:#e8ebf0;--heat:42,120,214;--chip:#eef2f7;--focus:#2a78d6}
-@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#0e1116;--surface:#161a21;--surface2:#1b2029;--line:#2a313c;--text:#eef1f5;--text2:#b6bfcc;--muted:#8791a1;
---ink:#0b0f15;--blue:#3987e5;--orange:#d95926;--grid:#252b35;--heat:57,135,229;--chip:#222934}}
+<title>Why players quit — Player Signals</title><meta name="description" content="Which complaints go with actually leaving? Complaint analysis of negative Steam reviews in all languages."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet"><style>
+:root{color-scheme:dark;--bg:#090e19;--surface:#131c30;--surface2:#18233b;--line:#27324a;--text:#eef2f8;--text2:#b9c3d3;--muted:#a9b4c6;
+--ink:#090e19;--blue:#5a9cec;--orange:#f08152;--grid:#27324a;--heat:90,156,236;--chip:#1d2a45;--focus:#8fbdf5;--display:Sora,Inter,system-ui,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--blue);text-underline-offset:2px}a:focus-visible,summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-.top{background:var(--ink);color:#fff}.top .in{max-width:1220px;margin:0 auto;padding:12px 24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-.top .brand{font-weight:700;color:#fff;text-decoration:none;letter-spacing:.01em}.top .brand span{opacity:.6;font-weight:500}
-.top nav{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}.top nav a{color:#d7deea;text-decoration:none;font-size:14px}.top nav a:hover{color:#fff;text-decoration:underline}
+.top{background:var(--ink);color:#fff;position:relative;z-index:2}.top .in{max-width:1220px;margin:0 auto;padding:16px 24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.top .brand{display:flex;gap:10px;align-items:center;font:700 19px var(--display);color:#fff;text-decoration:none}.top .brand svg{width:28px;height:20px}
+.top nav{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap;align-items:center}.top nav a{color:#d7deea;text-decoration:none;font-size:14.5px}.top nav a:hover{color:#fff;text-decoration:underline}
+.top nav a.cta{border:1.5px solid var(--blue);padding:8px 14px;border-radius:8px;font-weight:600;color:#fff}.top nav a.cta:hover{background:var(--blue);color:#090e19;text-decoration:none}
+h1,h2{font-family:var(--display)}
 .switch{background:var(--surface);border-bottom:1px solid var(--line)}.switch .in{max-width:1220px;margin:0 auto;padding:8px 24px;display:flex;gap:8px;overflow-x:auto;align-items:center}
 .switch span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;margin-right:4px}
 .switch a{white-space:nowrap;font-size:13px;text-decoration:none;color:var(--text2);border:1px solid var(--line);border-radius:999px;padding:3px 12px}
-.switch a:hover{border-color:var(--blue);color:var(--text)}.switch a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.switch a:hover{border-color:var(--blue);color:var(--text)}.switch a.on{background:var(--blue);color:#090e19;border-color:var(--blue);font-weight:600}
 .wrap{max-width:1220px;margin:0 auto;padding:28px 24px 64px}.layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:36px}
 .toc{position:sticky;top:16px;align-self:start;font-size:13px}.toc b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .toc a{display:block;color:var(--text2);text-decoration:none;padding:5px 10px;border-left:2px solid var(--line)}.toc a:hover{color:var(--text);border-left-color:var(--blue)}
@@ -41,15 +41,56 @@ details{margin:10px 0}summary{cursor:pointer;font-size:13px;color:var(--text2)}b
 .team{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:10px 0}.team h3{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .team ul{margin:6px 0 0;padding-left:20px}.team li{margin:4px 0}
 .games{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}.game{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--text);display:block}
-.game:hover{border-color:var(--blue);box-shadow:0 2px 10px rgba(16,35,63,.08)}.game b{font-size:17px}.game .row{display:flex;gap:18px;margin-top:10px}.game .row div{font-size:12px;color:var(--muted)}
+.game:hover{border-color:var(--blue)}.game b{font-size:17px}.game .row{display:flex;gap:18px;margin-top:10px}.game .row div{font-size:12px;color:var(--muted)}
 .game .row strong{display:block;font-size:19px;color:var(--text);font-variant-numeric:tabular-nums}
 .dl a{display:inline-block;margin:0 8px 8px 0;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:5px 12px;text-decoration:none;background:var(--surface)}
 footer{border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);background:var(--surface)}footer div{max-width:1220px;margin:0 auto;padding:18px 24px}
 @media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.toc{display:none}h1{font-size:27px}.grid2{grid-template-columns:minmax(0,1fr)}}
-@media print{.top nav,.switch,.toc{display:none}.layout{grid-template-columns:1fr}body{background:#fff}section{break-inside:avoid}}
+@media print{.top nav,.switch,.toc{display:none}.layout{grid-template-columns:1fr}section{break-inside:avoid}}
+.hero-bg{position:relative;overflow:hidden}.glow{position:absolute;border-radius:50%;pointer-events:none;animation:drift 14s ease-in-out infinite}
+.glow.g1{top:-180px;right:-120px;width:620px;height:620px;background:radial-gradient(circle,rgba(90,156,236,.34),rgba(90,156,236,0) 68%)}
+.glow.g2{top:260px;left:-220px;width:560px;height:560px;background:radial-gradient(circle,rgba(240,129,82,.2),rgba(240,129,82,0) 68%);animation-delay:-6s}
+.pulseline{position:absolute;top:-56px;left:0;width:100%;height:160px;pointer-events:none;opacity:.5}.pulseline polyline{stroke-dasharray:1400;stroke-dashoffset:1400;animation:trace 3.2s ease-out .2s forwards}
+.hero{position:relative;display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:48px;padding-bottom:28px}
+.hero .htext{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+h1.big{font-size:50px;line-height:1.08;letter-spacing:-.02em;margin:0}.hero .lede{margin:0;max-width:560px}
+.btn{display:inline-block;text-decoration:none;background:var(--blue);color:#090e19;padding:13px 20px;border-radius:10px;font:600 15.5px Inter,system-ui,sans-serif;border:0;cursor:pointer;box-shadow:0 14px 30px -10px rgba(90,156,236,.7)}
+.btn:hover{background:#7db4f5}.btn:focus-visible,.pill:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.tiltwrap{flex:1 1 400px;min-width:0;perspective:1100px}.stack{position:relative;transform-style:preserve-3d;transition:transform .18s ease-out}
+.layer{position:absolute;inset:0;border-radius:22px}.layer.l2{transform:translate3d(26px,26px,-60px);background:#111a2c;border:1px solid #1f2b44}.layer.l1{transform:translate3d(13px,13px,-30px);background:#142037;border:1px solid #263654}
+.panel{position:relative;background:linear-gradient(160deg,#1c2a47,#131c30);border:1px solid #34486f;border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:16px;box-shadow:0 40px 70px -30px rgba(0,0,0,.85)}
+.kick{font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:8px}.pill{cursor:pointer;font:600 13px Inter,system-ui,sans-serif;border:1px solid #3a4a6b;background:transparent;color:#d7deea;padding:8px 12px;border-radius:999px;min-height:36px;transition:background .2s,color .2s}
+.pill[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#090e19}
+.tlegend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#d7deea}.tlegend span{display:inline-flex;align-items:center;gap:6px}.tlegend svg,.grow svg{width:15px;height:15px;flex:none}
+.chartg{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;align-items:end;height:216px;border-bottom:1px solid #2b3b5c}
+.chartg .col{display:flex;gap:5px;align-items:flex-end;justify-content:center;transition:opacity .35s ease}.chartg .vb{display:flex;flex-direction:column;align-items:center;gap:5px}
+.chartg .vb span{font-size:12.5px;font-weight:600}.chartg .b{width:26px;border-radius:5px 5px 0 0;transform-origin:bottom;animation:growy 1.1s cubic-bezier(.2,.8,.2,1) both}
+.chartg .b.p{background:linear-gradient(180deg,#7db4f5,#3b7fd6);box-shadow:0 0 16px rgba(90,156,236,.45)}.chartg .b.n{background:linear-gradient(180deg,#f6a07a,#d9622f);box-shadow:0 0 16px rgba(240,129,82,.4)}
+.chartlab{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;font-size:12px;color:var(--muted);text-align:center}.chartlab div{transition:opacity .35s ease}
+.dim{opacity:.28}.pnote{font-size:14px;line-height:1.5;color:var(--text2);border-top:1px solid #2b3b5c;padding-top:14px;min-height:3em}
+.shead{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:16px}.shead h2{font-size:26px;margin:0}
+.gcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.gcard{text-decoration:none;color:var(--text);background:linear-gradient(165deg,#18233b,#111a2c);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:14px;box-shadow:0 18px 36px -22px rgba(0,0,0,.8)}
+.gcard .gh{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.gcard .gn{font:600 18px var(--display)}.gcard .gs{font-size:13px;color:var(--muted)}.gcard .gr{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.grow{display:flex;align-items:center;gap:10px;font-size:13.5px;margin-top:7px}.grow b{width:36px}.grow .tr{flex:1;height:10px;background:#0b1120;border-radius:5px}.grow .tr i{display:block;height:10px;border-radius:5px;transform-origin:left;animation:grow 1.1s cubic-bezier(.2,.8,.2,1) both}
+.gfacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;border-top:1px solid var(--line);padding-top:12px}.gfacts small{display:block;font-size:12px;color:var(--muted)}.gfacts b{font-size:15px}
+.gopen{font-size:14px;color:#8fbdf5;font-weight:600}
+.lift{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.lift:hover{transform:translateY(-8px);box-shadow:0 28px 50px -18px rgba(0,0,0,.75),0 0 0 1px #3d5a94;border-color:#3d5a94}
+.rise{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+.req{background:linear-gradient(120deg,#1d2d4f,#16223a);border:1px solid #34486f;border-radius:18px;padding:28px;display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;box-shadow:0 24px 48px -28px rgba(0,0,0,.85)}
+.req .rt{flex:1 1 300px;min-width:0}.req h2{font-size:23px;margin:0 0 8px}.req p{margin:0;font-size:15.5px;color:#d7deea}
+.req form{flex:2 1 480px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.req .f{display:flex;flex-direction:column;gap:6px;justify-content:flex-end}.req label{font-size:13px;color:#d7deea}
+.req input{font:inherit;color:var(--text);background:#0b1120;border:1px solid #3a4a6b;border-radius:8px;padding:11px 12px;min-height:44px;width:100%}.req .fb{grid-column:1/-1;font-size:14px;color:#d7deea}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.mcard{text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:6px}
+.mcard b{font:600 18px var(--display)}.mcard span{font-size:14.5px;color:var(--text2)}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes growy{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes rise{from{opacity:.01;transform:translateY(22px)}to{opacity:1;transform:none}}@keyframes trace{to{stroke-dashoffset:0}}@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-24px)}}
+@media (max-width:900px){h1.big{font-size:34px}.hero{gap:28px;padding-top:28px}.layer{display:none}.chartg .b{width:18px}.chartg .col{gap:3px}.panel{padding:20px}}
+@media (prefers-reduced-motion:reduce){.glow,.rise,.chartg .b,.grow .tr i{animation:none}.pulseline polyline{animation:none;stroke-dashoffset:0}.lift,.stack{transition:none}}
 </style></head><body>
-<div class="top"><div class="in"><a class="brand" href="index.html">Player Signals</a>
-<nav><a href="index.html">Overview</a><a href="quit.html">Why players quit</a><a href="index.html#reports">Game reports</a><a href="index.html#markets">Markets</a><a href="case-study.html">Case study</a><a href="method.html">Method &amp; limits</a><a href="https://github.com/HosungKim48/whyplayersquit-lab">Code &amp; data</a></nav></div></div>
+<div class="top"><div class="in"><a class="brand" href="index.html"><svg viewBox="0 0 28 20" aria-hidden="true"><polyline points="1,14 7,14 10,4 14,18 18,8 21,14 27,14" fill="none" stroke="#5a9cec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Player Signals</a>
+<nav><a href="index.html#games">Reports</a><a href="quit.html">Why players quit</a><a href="data.html">The numbers</a><a href="case-study.html">Case study</a><a href="method.html">Method &amp; limits</a><a href="https://github.com/HosungKim48/whyplayersquit-lab">Code &amp; data</a><a class="cta" href="index.html#request">Request a report</a></nav></div></div>
 <div class="switch"><div class="in"><span>Reports</span><a class="" href="games/civilization-vii.html">Sid Meier&#x27;s Civilization VII</a><a class="" href="games/cities-skylines-ii.html">Cities: Skylines II</a><a class="" href="games/payday-3.html">PAYDAY 3</a><a class="" href="games/dragons-dogma-2.html">Dragon&#x27;s Dogma 2</a><a class="" href="games/monster-hunter-wilds.html">Monster Hunter Wilds</a><a class="" href="games/starfield.html">Starfield</a></div></div>
 <div class="wrap">
 <h1>Why players quit</h1>

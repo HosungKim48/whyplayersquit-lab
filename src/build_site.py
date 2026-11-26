@@ -27,19 +27,19 @@ def load(name):
 
 
 CSS = """
-:root{color-scheme:light;--bg:#f4f5f7;--surface:#ffffff;--surface2:#f9fafb;--line:#e1e4ea;--text:#0f1722;--text2:#475264;--muted:#7a8496;
---ink:#10233f;--blue:#2a78d6;--orange:#eb6834;--grid:#e8ebf0;--heat:42,120,214;--chip:#eef2f7;--focus:#2a78d6}
-@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#0e1116;--surface:#161a21;--surface2:#1b2029;--line:#2a313c;--text:#eef1f5;--text2:#b6bfcc;--muted:#8791a1;
---ink:#0b0f15;--blue:#3987e5;--orange:#d95926;--grid:#252b35;--heat:57,135,229;--chip:#222934}}
+:root{color-scheme:dark;--bg:#090e19;--surface:#131c30;--surface2:#18233b;--line:#27324a;--text:#eef2f8;--text2:#b9c3d3;--muted:#a9b4c6;
+--ink:#090e19;--blue:#5a9cec;--orange:#f08152;--grid:#27324a;--heat:90,156,236;--chip:#1d2a45;--focus:#8fbdf5;--display:Sora,Inter,system-ui,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--blue);text-underline-offset:2px}a:focus-visible,summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-.top{background:var(--ink);color:#fff}.top .in{max-width:1220px;margin:0 auto;padding:12px 24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-.top .brand{font-weight:700;color:#fff;text-decoration:none;letter-spacing:.01em}.top .brand span{opacity:.6;font-weight:500}
-.top nav{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}.top nav a{color:#d7deea;text-decoration:none;font-size:14px}.top nav a:hover{color:#fff;text-decoration:underline}
+.top{background:var(--ink);color:#fff;position:relative;z-index:2}.top .in{max-width:1220px;margin:0 auto;padding:16px 24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.top .brand{display:flex;gap:10px;align-items:center;font:700 19px var(--display);color:#fff;text-decoration:none}.top .brand svg{width:28px;height:20px}
+.top nav{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap;align-items:center}.top nav a{color:#d7deea;text-decoration:none;font-size:14.5px}.top nav a:hover{color:#fff;text-decoration:underline}
+.top nav a.cta{border:1.5px solid var(--blue);padding:8px 14px;border-radius:8px;font-weight:600;color:#fff}.top nav a.cta:hover{background:var(--blue);color:#090e19;text-decoration:none}
+h1,h2{font-family:var(--display)}
 .switch{background:var(--surface);border-bottom:1px solid var(--line)}.switch .in{max-width:1220px;margin:0 auto;padding:8px 24px;display:flex;gap:8px;overflow-x:auto;align-items:center}
 .switch span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;margin-right:4px}
 .switch a{white-space:nowrap;font-size:13px;text-decoration:none;color:var(--text2);border:1px solid var(--line);border-radius:999px;padding:3px 12px}
-.switch a:hover{border-color:var(--blue);color:var(--text)}.switch a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.switch a:hover{border-color:var(--blue);color:var(--text)}.switch a.on{background:var(--blue);color:#090e19;border-color:var(--blue);font-weight:600}
 .wrap{max-width:1220px;margin:0 auto;padding:28px 24px 64px}.layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:36px}
 .toc{position:sticky;top:16px;align-self:start;font-size:13px}.toc b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .toc a{display:block;color:var(--text2);text-decoration:none;padding:5px 10px;border-left:2px solid var(--line)}.toc a:hover{color:var(--text);border-left-color:var(--blue)}
@@ -68,12 +68,53 @@ details{margin:10px 0}summary{cursor:pointer;font-size:13px;color:var(--text2)}b
 .team{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:10px 0}.team h3{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .team ul{margin:6px 0 0;padding-left:20px}.team li{margin:4px 0}
 .games{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}.game{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--text);display:block}
-.game:hover{border-color:var(--blue);box-shadow:0 2px 10px rgba(16,35,63,.08)}.game b{font-size:17px}.game .row{display:flex;gap:18px;margin-top:10px}.game .row div{font-size:12px;color:var(--muted)}
+.game:hover{border-color:var(--blue)}.game b{font-size:17px}.game .row{display:flex;gap:18px;margin-top:10px}.game .row div{font-size:12px;color:var(--muted)}
 .game .row strong{display:block;font-size:19px;color:var(--text);font-variant-numeric:tabular-nums}
 .dl a{display:inline-block;margin:0 8px 8px 0;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:5px 12px;text-decoration:none;background:var(--surface)}
 footer{border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);background:var(--surface)}footer div{max-width:1220px;margin:0 auto;padding:18px 24px}
 @media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.toc{display:none}h1{font-size:27px}.grid2{grid-template-columns:minmax(0,1fr)}}
-@media print{.top nav,.switch,.toc{display:none}.layout{grid-template-columns:1fr}body{background:#fff}section{break-inside:avoid}}
+@media print{.top nav,.switch,.toc{display:none}.layout{grid-template-columns:1fr}section{break-inside:avoid}}
+.hero-bg{position:relative;overflow:hidden}.glow{position:absolute;border-radius:50%;pointer-events:none;animation:drift 14s ease-in-out infinite}
+.glow.g1{top:-180px;right:-120px;width:620px;height:620px;background:radial-gradient(circle,rgba(90,156,236,.34),rgba(90,156,236,0) 68%)}
+.glow.g2{top:260px;left:-220px;width:560px;height:560px;background:radial-gradient(circle,rgba(240,129,82,.2),rgba(240,129,82,0) 68%);animation-delay:-6s}
+.pulseline{position:absolute;top:-56px;left:0;width:100%;height:160px;pointer-events:none;opacity:.5}.pulseline polyline{stroke-dasharray:1400;stroke-dashoffset:1400;animation:trace 3.2s ease-out .2s forwards}
+.hero{position:relative;display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:48px;padding-bottom:28px}
+.hero .htext{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+h1.big{font-size:50px;line-height:1.08;letter-spacing:-.02em;margin:0}.hero .lede{margin:0;max-width:560px}
+.btn{display:inline-block;text-decoration:none;background:var(--blue);color:#090e19;padding:13px 20px;border-radius:10px;font:600 15.5px Inter,system-ui,sans-serif;border:0;cursor:pointer;box-shadow:0 14px 30px -10px rgba(90,156,236,.7)}
+.btn:hover{background:#7db4f5}.btn:focus-visible,.pill:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.tiltwrap{flex:1 1 400px;min-width:0;perspective:1100px}.stack{position:relative;transform-style:preserve-3d;transition:transform .18s ease-out}
+.layer{position:absolute;inset:0;border-radius:22px}.layer.l2{transform:translate3d(26px,26px,-60px);background:#111a2c;border:1px solid #1f2b44}.layer.l1{transform:translate3d(13px,13px,-30px);background:#142037;border:1px solid #263654}
+.panel{position:relative;background:linear-gradient(160deg,#1c2a47,#131c30);border:1px solid #34486f;border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:16px;box-shadow:0 40px 70px -30px rgba(0,0,0,.85)}
+.kick{font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:8px}.pill{cursor:pointer;font:600 13px Inter,system-ui,sans-serif;border:1px solid #3a4a6b;background:transparent;color:#d7deea;padding:8px 12px;border-radius:999px;min-height:36px;transition:background .2s,color .2s}
+.pill[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#090e19}
+.tlegend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#d7deea}.tlegend span{display:inline-flex;align-items:center;gap:6px}.tlegend svg,.grow svg{width:15px;height:15px;flex:none}
+.chartg{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;align-items:end;height:216px;border-bottom:1px solid #2b3b5c}
+.chartg .col{display:flex;gap:5px;align-items:flex-end;justify-content:center;transition:opacity .35s ease}.chartg .vb{display:flex;flex-direction:column;align-items:center;gap:5px}
+.chartg .vb span{font-size:12.5px;font-weight:600}.chartg .b{width:26px;border-radius:5px 5px 0 0;transform-origin:bottom;animation:growy 1.1s cubic-bezier(.2,.8,.2,1) both}
+.chartg .b.p{background:linear-gradient(180deg,#7db4f5,#3b7fd6);box-shadow:0 0 16px rgba(90,156,236,.45)}.chartg .b.n{background:linear-gradient(180deg,#f6a07a,#d9622f);box-shadow:0 0 16px rgba(240,129,82,.4)}
+.chartlab{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;font-size:12px;color:var(--muted);text-align:center}.chartlab div{transition:opacity .35s ease}
+.dim{opacity:.28}.pnote{font-size:14px;line-height:1.5;color:var(--text2);border-top:1px solid #2b3b5c;padding-top:14px;min-height:3em}
+.shead{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:16px}.shead h2{font-size:26px;margin:0}
+.gcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.gcard{text-decoration:none;color:var(--text);background:linear-gradient(165deg,#18233b,#111a2c);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:14px;box-shadow:0 18px 36px -22px rgba(0,0,0,.8)}
+.gcard .gh{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.gcard .gn{font:600 18px var(--display)}.gcard .gs{font-size:13px;color:var(--muted)}.gcard .gr{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.grow{display:flex;align-items:center;gap:10px;font-size:13.5px;margin-top:7px}.grow b{width:36px}.grow .tr{flex:1;height:10px;background:#0b1120;border-radius:5px}.grow .tr i{display:block;height:10px;border-radius:5px;transform-origin:left;animation:grow 1.1s cubic-bezier(.2,.8,.2,1) both}
+.gfacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;border-top:1px solid var(--line);padding-top:12px}.gfacts small{display:block;font-size:12px;color:var(--muted)}.gfacts b{font-size:15px}
+.gopen{font-size:14px;color:#8fbdf5;font-weight:600}
+.lift{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.lift:hover{transform:translateY(-8px);box-shadow:0 28px 50px -18px rgba(0,0,0,.75),0 0 0 1px #3d5a94;border-color:#3d5a94}
+.rise{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+.req{background:linear-gradient(120deg,#1d2d4f,#16223a);border:1px solid #34486f;border-radius:18px;padding:28px;display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;box-shadow:0 24px 48px -28px rgba(0,0,0,.85)}
+.req .rt{flex:1 1 300px;min-width:0}.req h2{font-size:23px;margin:0 0 8px}.req p{margin:0;font-size:15.5px;color:#d7deea}
+.req form{flex:2 1 480px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.req .f{display:flex;flex-direction:column;gap:6px;justify-content:flex-end}.req label{font-size:13px;color:#d7deea}
+.req input{font:inherit;color:var(--text);background:#0b1120;border:1px solid #3a4a6b;border-radius:8px;padding:11px 12px;min-height:44px;width:100%}.req .fb{grid-column:1/-1;font-size:14px;color:#d7deea}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.mcard{text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:6px}
+.mcard b{font:600 18px var(--display)}.mcard span{font-size:14.5px;color:var(--text2)}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes growy{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes rise{from{opacity:.01;transform:translateY(22px)}to{opacity:1;transform:none}}@keyframes trace{to{stroke-dashoffset:0}}@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-24px)}}
+@media (max-width:900px){h1.big{font-size:34px}.hero{gap:28px;padding-top:28px}.layer{display:none}.chartg .b{width:18px}.chartg .col{gap:3px}.panel{padding:20px}}
+@media (prefers-reduced-motion:reduce){.glow,.rise,.chartg .b,.grow .tr i{animation:none}.pulseline polyline{animation:none;stroke-dashoffset:0}.lift,.stack{transition:none}}
 """
 
 
@@ -81,9 +122,9 @@ def page(title, body, ov, depth=0, desc="", current=None):
     up = "../" * depth
     pills = "".join(f'<a class="{"on" if o["slug"] == current else ""}" href="{up}games/{E(o["slug"])}.html">{E(o["name"])}</a>' for o in ov)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{E(title)}</title><meta name="description" content="{E(desc)}"><style>{CSS}</style></head><body>
-<div class="top"><div class="in"><a class="brand" href="{up}index.html">Player Signals</a>
-<nav><a href="{up}index.html">Overview</a><a href="{up}quit.html">Why players quit</a><a href="{up}index.html#reports">Game reports</a><a href="{up}index.html#markets">Markets</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a></nav></div></div>
+<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
+<div class="top"><div class="in"><a class="brand" href="{up}index.html"><svg viewBox="0 0 28 20" aria-hidden="true"><polyline points="1,14 7,14 10,4 14,18 18,8 21,14 27,14" fill="none" stroke="#5a9cec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Player Signals</a>
+<nav><a href="{up}index.html#games">Reports</a><a href="{up}quit.html">Why players quit</a><a href="{up}data.html">The numbers</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a><a class="cta" href="{up}index.html#request">Request a report</a></nav></div></div>
 <div class="switch"><div class="in"><span>Reports</span>{pills}</div></div>
 {body}
 <footer><div>A free, public student research project built only from public Steam data, with an AI agent. Not affiliated with Valve or with any studio or publisher named here.
@@ -453,6 +494,99 @@ def game_page(o, audit, ov):
     return page(f"{o['name']} — quit signals in Steam reviews", body, ov, depth=1, desc=f"Quit-signal report for {o['name']} from public Steam reviews in all languages.", current=o["slug"])
 
 
+THUMB = {True: "M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3",
+         False: "M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"}
+def thumb(up):
+    return f'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{THUMB[up]}" fill="none" stroke="{"#5a9cec" if up else "#f08152"}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+
+CONTACT = "hosun9k@gmail.com"
+OVERVIEW_JS = """<script>
+(function(){
+var notes=JSON.parse(document.getElementById('pnotes').textContent),pills=[].slice.call(document.querySelectorAll('.pill')),note=document.getElementById('pnote');
+function pick(i){pills.forEach(function(p,k){p.setAttribute('aria-pressed',k===i?'true':'false')});
+[].forEach.call(document.querySelectorAll('[data-st]'),function(e){var k=+e.getAttribute('data-st');e.classList.toggle('dim',i!==0&&k!==i)});note.textContent=notes[i]}
+pills.forEach(function(p,i){p.addEventListener('click',function(){pick(i)})});
+var w=document.getElementById('tilt'),st=w&&w.querySelector('.stack');
+if(st&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&matchMedia('(hover: hover)').matches){
+w.addEventListener('mousemove',function(e){var r=w.getBoundingClientRect();st.style.transform='rotateX('+((.5-(e.clientY-r.top)/r.height)*10)+'deg) rotateY('+(((e.clientX-r.left)/r.width-.5)*14)+'deg)'});
+w.addEventListener('mouseleave',function(){st.style.transform=''})}
+var f=document.getElementById('reqform');if(f){f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f),v=function(k){return String(d.get(k)||'')};
+var body='Name: '+v('name')+'\\nStudio: '+v('studio')+'\\nGame: '+v('game')+'\\nLinkedIn: '+v('linkedin')+'\\nEmail: '+v('email');
+document.getElementById('reqfb').hidden=false;
+window.location.href='mailto:'+f.getAttribute('data-to')+'?subject='+encodeURIComponent('Player Signals report request: '+v('game'))+'&body='+encodeURIComponent(body)})}
+})();
+</script>"""
+
+
+def overview_page_body(ov, games, ar, c1h, lab):
+    """Overview: one chart of what reviewers did next, then the game cards, then the request form."""
+    tot = sum(o["reviews"] for o in ov); nlang = max(o["funnel"]["languages"] for o in games)
+    P, N = ar["pooled"]["positive"], ar["pooled"]["negative"]; base = ar["pooled"]["baseline_at_critics_hours"]; rows = ar["pooled"]["by_hours"]
+    every = all(r["gap"] is not None and r["gap"] > 0 for g in ar["games"] + [ar["pooled"]] for r in g["by_hours"])
+    late = max(((g, r) for g in ar["games"] for r in g["by_hours"][1:] if r["positive"]["walk_rate"] is not None), key=lambda t: t[1]["positive"]["walk_rate"])
+    notes = [f"Across all hours, {pct(P['walk_rate'])} of players who recommended a game logged under one more hour after reviewing, against {pct(N['walk_rate'])} of those who did not."
+             + (" The gap holds at every stage of play." if every else "") + f" At the critics' hours, recommenders would stop {pct(base)} of the time."]
+    for i, r in enumerate(rows):
+        t = f"{r['bucket']}: critics stopped {r['negative']['walk_rate'] / r['positive']['walk_rate']:.1f} times as often as recommenders."
+        if i == 0: t += " This is inside Steam's refund window, so both groups stop more often here."
+        if r["bucket"] == late[1]["bucket"]: t += f" Some recommenders stop here too: in {late[0]['name']} it is {pct(late[1]['positive']['walk_rate'])}, which fits finishing a game more than quitting it."
+        notes.append(t)
+    H = 3.3
+    pills = "".join(f'<button class="pill" type="button" aria-pressed="{"true" if i == 0 else "false"}">{E(l)}</button>' for i, l in enumerate(["All hours"] + [r["bucket"] for r in rows]))
+    cols = "".join(f'<div class="col" data-st="{i+1}"><div class="vb"><span style="color:#8fbdf5">{pct(r["positive"]["walk_rate"])}</span><div class="b p" style="height:{r["positive"]["walk_rate"]*100*H:.0f}px"></div></div>'
+                   f'<div class="vb"><span style="color:#f6a07a">{pct(r["negative"]["walk_rate"])}</span><div class="b n" style="height:{r["negative"]["walk_rate"]*100*H:.0f}px"></div></div></div>' for i, r in enumerate(rows))
+    labs = "".join(f'<div data-st="{i+1}">{E(r["bucket"])}</div>' for i, r in enumerate(rows))
+    aria = "Share who logged under one more hour after reviewing, by hours played at review. " + "; ".join(f"{r['bucket']}: recommended {pct(r['positive']['walk_rate'])}, not recommended {pct(r['negative']['walk_rate'])}" for r in rows)
+    byslug = {g["slug"]: g for g in ar["games"]}
+    cards = "".join(
+        f'<a class="gcard lift rise" style="animation-delay:{0.15 + i * 0.09:.2f}s" href="games/{E(o["slug"])}.html"><div class="gh"><div><div class="gn">{E(o["name"])}</div><div class="gs">{E(o["genre"])}</div></div><div class="gr">{num(o["reviews"])} reviews</div></div>'
+        f'<div><div class="grow">{thumb(True)}<b style="color:#5a9cec">{pct(byslug[o["slug"]]["positive"]["walk_rate"])}</b><div class="tr"><i style="width:{byslug[o["slug"]]["positive"]["walk_rate"]*200:.0f}%;background:#5a9cec"></i></div></div>'
+        f'<div class="grow">{thumb(False)}<b style="color:#f08152">{pct(byslug[o["slug"]]["negative"]["walk_rate"])}</b><div class="tr"><i style="width:{byslug[o["slug"]]["negative"]["walk_rate"]*200:.0f}%;background:#f08152"></i></div></div></div>'
+        f'<div class="gfacts"><div><small>Negative reviews</small><b>{pct(o["negative_share"])}</b></div><div><small>Top complaint</small><b>{E(o["top_reason"] or "–")}</b></div></div><div class="gopen">Open report →</div></a>' for i, o in enumerate(ov))
+    mh = next((o for o in ov if o["slug"] == "monster-hunter-wilds"), None); cs = "What an English-only read of Steam reviews misses."
+    if mh:
+        en = next((l for l in mh["languages"] if l["code"] == "english"), None); zh = next((l for l in mh["languages"] if l["code"] == "schinese"), None)
+        if en and zh: cs = f"{mh['name']} is {pct(en['negative_share'])} negative in English and {pct(zh['negative_share'])} in Simplified Chinese."
+    notes_json = json.dumps(notes).replace("<", "\\u003c")
+    legend = lambda a, b: f'<div class="tlegend"><span>{thumb(True)}{a}</span><span>{thumb(False)}{b}</span></div>'
+    return f"""<div class="hero-bg"><div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
+<svg class="pulseline" aria-hidden="true" viewBox="0 0 1280 160" preserveAspectRatio="none"><polyline points="0,90 180,90 230,90 262,30 300,140 338,60 372,90 620,90 660,90 690,48 724,120 752,90 1280,90" fill="none" stroke="#5a9cec" stroke-width="2" stroke-linejoin="round"/></svg>
+<div class="wrap hero"><div class="htext rise">
+<h1 class="big">A review is not the end of the story. This study measures what players did next.</h1>
+<p class="lede">{num(tot)} public Steam reviews of six games, in {nlang} languages. For each one, Steam shows hours played at the review and hours played since.</p>
+<a class="btn" href="#games">Find a game like yours</a></div>
+<div class="tiltwrap" id="tilt"><div class="stack"><div class="layer l2" aria-hidden="true"></div><div class="layer l1" aria-hidden="true"></div>
+<div class="panel"><div class="kick">Stopped within an hour of reviewing</div>
+<div class="pills" role="group" aria-label="Hours played at review">{pills}</div>
+{legend("Recommended", "Not recommended")}
+<div class="chartg" role="img" aria-label="{E(aria)}">{cols}</div>
+<div class="chartlab" aria-hidden="true">{labs}</div>
+<div class="pnote" id="pnote" aria-live="polite">{E(notes[0])}</div>
+<script type="application/json" id="pnotes">{notes_json}</script>
+</div></div></div></div></div>
+<div class="wrap" style="padding-top:20px">
+<section id="games" style="margin-top:0"><div class="shead"><h2>Find a game like yours</h2>{legend("Recommended, stopped", "Not recommended, stopped")}</div>
+<div class="gcards">{cards}</div></section>
+<section id="request"><div class="req"><div class="rt"><h2>Is your game missing?</h2><p>The same report can be built for any paid Steam game with public reviews. Tell me which game and I will reply by email.</p></div>
+<form id="reqform" data-to="{CONTACT}">
+<div class="f"><label for="rq-name">Name</label><input id="rq-name" name="name" type="text" autocomplete="name" required></div>
+<div class="f"><label for="rq-studio">Studio</label><input id="rq-studio" name="studio" type="text" autocomplete="organization" required></div>
+<div class="f"><label for="rq-game">Game</label><input id="rq-game" name="game" type="text" required></div>
+<div class="f"><label for="rq-linkedin">LinkedIn profile</label><input id="rq-linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/…"></div>
+<div class="f"><label for="rq-email">Email address</label><input id="rq-email" name="email" type="email" autocomplete="email" required></div>
+<div class="f"><button class="btn" type="submit">Request a report</button></div>
+<div class="fb" id="reqfb" role="status" hidden>If your email app did not open, write to {CONTACT}.</div>
+</form></div></section>
+<section class="more">
+<a class="mcard lift" href="quit.html"><b>Why players quit</b><span>{E(c1h)}. Which complaints go with stopping, from {num(lab)} labeled negative reviews.</span></a>
+<a class="mcard lift" href="data.html"><b>The numbers</b><span>Every table behind this page: by game, by hours played and by review language.</span></a>
+<a class="mcard lift" href="case-study.html"><b>Case study: the score that hid a market</b><span>{E(cs)}</span></a>
+<a class="mcard lift" href="method.html"><b>Method and limits</b><span>Claude Haiku 5.5 labels, Claude Fable 5.2 audits, code checks every number.</span></a>
+</section>
+</div>
+{OVERVIEW_JS}"""
+
+
 def index_page(ov, games, audit, cost, models, ar):
     tot = sum(o["reviews"] for o in ov); neg = sum(o["negative"] for o in ov); lab = sum(o["labeled"] for o in ov); eng = sum(o["english"] for o in ov)
     nl = len({l["code"] for o in ov for l in o["languages"] if l["code"] != "_small"})
@@ -519,8 +653,8 @@ def index_page(ov, games, audit, cost, models, ar):
     bhead = "".join(f"<th>{E(r['bucket'])}</th>" for r in ar["pooled"]["by_hours"])
     gone = "".join(f"<tr><td>{E(g['name'])} <span class='small'>{num(g['positive']['walked_away'])} reviewers</span></td>" + "".join(heat(r["positive"]["walk_rate"], f"{r['positive']['n']:,} recommended reviews") for r in g["by_hours"]) + "</tr>" for g in ar["games"])
     body = f"""<div class="wrap">
-<h1>What players do after they review</h1>
-<p class="lede">Steam shows how long a reviewer had played when they wrote a review and how long they have played since. This lab uses that gap to measure what reviewers of Steam games did next: who kept playing, who stopped, and how that differs between players who recommend a game and players who do not.</p>
+<h1>The numbers</h1>
+<p class="lede">Every table behind the overview: what reviewers did after reviewing, by verdict, game, hours played and review language.</p>
 <div class="kpis">
 <div class="kpi"><div class="l">Reviews analysed</div><b>{num(tot)}</b><div class="s">full history of 6 games, {nl} languages with 300+ reviews in a game</div></div>
 <div class="kpi"><div class="l">Recommenders who stopped</div><b>{pct(P['walk_rate'])}</b><div class="s">logged under 1 more hour after a positive review</div></div>
@@ -542,8 +676,6 @@ def index_page(ov, games, audit, cost, models, ar):
 
 <section><h2>Why players quit</h2>
 <div class="card"><p style="margin:0">Critics who stop are not spread evenly across complaints. {E(c1h)}. {c1p} <a href="quit.html">See which complaints go with stopping</a>.</p></div></section>
-
-<section id="reports"><h2>Game reports</h2><p class="q">Each report has the same eight sections, so teams can compare titles.</p><div class="games">{cards}</div></section>
 
 <section><h2>How it works</h2>
 <div class="card"><p style="margin:0">Steam publishes, next to every review, how long the reviewer had played when they wrote it and how long they have played in total. The gap shows what the reviewer did <i>after</i> reviewing. For negative reviews, a language model also sorts each one into one main complaint, in its original language, which separates complaints that travel with quitting from complaints players voice while they stay.</p></div></section>
@@ -585,8 +717,9 @@ def index_page(ov, games, audit, cost, models, ar):
 <p class="note">▲ / ▼ mark groups clearly above / below the game's own rate. "–" = fewer than 30 reviews.</p>
 <div class="scroll"><table><thead><tr><th>Game</th>{head}</tr></thead><tbody>{heat2}</tbody></table></div></section>
 </div>"""
-    return (page("Player Signals — what players do after they review", body, ov, desc="What reviewers of Steam games did after reviewing: who kept playing, who stopped, and which complaints go with stopping. Built from public Steam reviews in all languages."),
-            page("Why players quit — Player Signals", quit_body, ov, desc="Which complaints go with actually leaving? Complaint analysis of negative Steam reviews in all languages."))
+    return (page("Player Signals — what players do after they review", overview_page_body(ov, games, ar, c1h, lab), ov, desc="What reviewers of Steam games did after reviewing: who kept playing, who stopped, and which complaints go with stopping. Built from public Steam reviews in all languages."),
+            page("Why players quit — Player Signals", quit_body, ov, desc="Which complaints go with actually leaving? Complaint analysis of negative Steam reviews in all languages."),
+            page("The numbers — Player Signals", body, ov, desc="Tables behind Player Signals: behaviour after the review by game, hours played and review language."))
 
 
 def check_loop(games, audit):
@@ -747,9 +880,9 @@ if __name__ == "__main__":
     os.makedirs(os.path.join(DOCS, "games"), exist_ok=True)
     open(os.path.join(DOCS, ".nojekyll"), "w").write("")
     models = load("models.json")
-    idx, quit_html = index_page(ov, games, audit, cost, models, load("after_review.json"))
-    open(os.path.join(DOCS, "index.html"), "w").write(idx); open(os.path.join(DOCS, "quit.html"), "w").write(quit_html)
+    idx, quit_html, data_html = index_page(ov, games, audit, cost, models, load("after_review.json"))
+    open(os.path.join(DOCS, "index.html"), "w").write(idx); open(os.path.join(DOCS, "quit.html"), "w").write(quit_html); open(os.path.join(DOCS, "data.html"), "w").write(data_html)
     open(os.path.join(DOCS, "method.html"), "w").write(method_page(ov, games, audit, cost))
     for o in games: open(os.path.join(DOCS, "games", o["slug"] + ".html"), "w").write(game_page(o, audit, ov))
     open(os.path.join(DOCS, "case-study.html"), "w").write(case_study_page(next(o for o in games if o["slug"] == "monster-hunter-wilds"), ov))
-    print("built", 4 + len(games), "pages")
+    print("built", 5 + len(games), "pages")
