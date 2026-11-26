@@ -124,7 +124,7 @@ def page(title, body, ov, depth=0, desc="", current=None):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
 <div class="top"><div class="in"><a class="brand" href="{up}index.html"><svg viewBox="0 0 28 20" aria-hidden="true"><polyline points="1,14 7,14 10,4 14,18 18,8 21,14 27,14" fill="none" stroke="#5a9cec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Player Signals</a>
-<nav><a href="{up}index.html#games">Reports</a><a href="{up}quit.html">Why players quit</a><a href="{up}data.html">The numbers</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a><a class="cta" href="{up}index.html#request">Request a report</a></nav></div></div>
+<nav><a href="{up}index.html#games">Reports</a><a href="{up}quit.html">Why players quit</a><a href="{up}fans.html">When fans review</a><a href="{up}data.html">The numbers</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a><a class="cta" href="{up}index.html#request">Request a report</a></nav></div></div>
 <div class="switch"><div class="in"><span>Reports</span>{pills}</div></div>
 {body}
 <footer><div>A free, public student research project built only from public Steam data, with an AI agent. Not affiliated with Valve or with any studio or publisher named here.
@@ -518,7 +518,7 @@ window.location.href='mailto:'+f.getAttribute('data-to')+'?subject='+encodeURICo
 </script>"""
 
 
-def overview_page_body(ov, games, ar, c1h, lab):
+def overview_page_body(ov, games, ar, c1h, lab, fans_line):
     """Overview: one chart of what reviewers did next, then the game cards, then the request form."""
     tot = sum(o["reviews"] for o in ov); nlang = max(o["funnel"]["languages"] for o in games)
     P, N = ar["pooled"]["positive"], ar["pooled"]["negative"]; base = ar["pooled"]["baseline_at_critics_hours"]; rows = ar["pooled"]["by_hours"]
@@ -579,6 +579,7 @@ def overview_page_body(ov, games, ar, c1h, lab):
 </form></div></section>
 <section class="more">
 <a class="mcard lift" href="quit.html"><b>Why players quit</b><span>{E(c1h)}. Which complaints go with stopping, from {num(lab)} labeled negative reviews.</span></a>
+<a class="mcard lift" href="fans.html"><b>When fans review</b><span>{E(fans_line)}</span></a>
 <a class="mcard lift" href="data.html"><b>The numbers</b><span>Every table behind this page: by game, by hours played and by review language.</span></a>
 <a class="mcard lift" href="case-study.html"><b>Case study: the score that hid a market</b><span>{E(cs)}</span></a>
 <a class="mcard lift" href="method.html"><b>Method and limits</b><span>Claude Haiku 5.5 labels, Claude Fable 5.2 audits, code checks every number.</span></a>
@@ -587,7 +588,7 @@ def overview_page_body(ov, games, ar, c1h, lab):
 {OVERVIEW_JS}"""
 
 
-def index_page(ov, games, audit, cost, models, ar):
+def index_page(ov, games, audit, cost, models, ar, fans_line):
     tot = sum(o["reviews"] for o in ov); neg = sum(o["negative"] for o in ov); lab = sum(o["labeled"] for o in ov); eng = sum(o["english"] for o in ov)
     nl = len({l["code"] for o in ov for l in o["languages"] if l["code"] != "_small"})
     wmin = min(ov, key=lambda o: o["neg_walk_rate"]); wmax = max(ov, key=lambda o: o["neg_walk_rate"])
@@ -717,9 +718,96 @@ def index_page(ov, games, audit, cost, models, ar):
 <p class="note">▲ / ▼ mark groups clearly above / below the game's own rate. "–" = fewer than 30 reviews.</p>
 <div class="scroll"><table><thead><tr><th>Game</th>{head}</tr></thead><tbody>{heat2}</tbody></table></div></section>
 </div>"""
-    return (page("Player Signals — what players do after they review", overview_page_body(ov, games, ar, c1h, lab), ov, desc="What reviewers of Steam games did after reviewing: who kept playing, who stopped, and which complaints go with stopping. Built from public Steam reviews in all languages."),
+    return (page("Player Signals — what players do after they review", overview_page_body(ov, games, ar, c1h, lab, fans_line), ov, desc="What reviewers of Steam games did after reviewing: who kept playing, who stopped, and which complaints go with stopping. Built from public Steam reviews in all languages."),
             page("Why players quit — Player Signals", quit_body, ov, desc="Which complaints go with actually leaving? Complaint analysis of negative Steam reviews in all languages."),
             page("The numbers — Player Signals", body, ov, desc="Tables behind Player Signals: behaviour after the review by game, hours played and review language."))
+
+
+RAMP = ["#2f6fd0", "#4f8fe0", "#77aaec", "#a3c6f4", "#d3e5fb"]   # one hue, ordered: more total hours = lighter
+
+
+def line_chart(series, xticks, xmax, ylab, xlab, band=None, marks=None, width=760, height=320, label_ends=True):
+    """series: [{name,color,pts:[(x,y)]}] on a shared numeric x (0..xmax) and one y axis. band: (x0,x1,label). marks: per-series x of a marker."""
+    L, R, T, B = 48, 96 if label_ends else 20, 22, 46; pw, ph = width - L - R, height - T - B
+    ymax = max(y for sr in series for _, y in sr["pts"]) * 1.12 or 1
+    X = lambda v: L + v / xmax * pw; Y = lambda v: T + (1 - v / ymax) * ph
+    o = [f'<svg viewBox="0 0 {width} {height}" role="img" aria-label="{E(ylab)} by {E(xlab)}">']
+    if band: o.append(f'<rect x="{X(band[0]):.1f}" y="{T}" width="{X(band[1]) - X(band[0]):.1f}" height="{ph}" fill="var(--text)" opacity=".07"/><text class="t" x="{(X(band[0]) + X(band[1])) / 2:.1f}" y="{T + 13}" text-anchor="middle">{E(band[2])}</text>')
+    step = 0.05 if ymax > 0.16 else 0.02 if ymax > 0.06 else 0.01; v = 0
+    while v <= ymax:
+        o.append(f'<line x1="{L}" x2="{L + pw}" y1="{Y(v):.1f}" y2="{Y(v):.1f}" stroke="var(--grid)"/><text class="t" x="{L - 8}" y="{Y(v) + 4:.1f}" text-anchor="end">{pct(v)}</text>'); v += step
+    for xv, lab_ in xticks: o.append(f'<text class="t" x="{X(xv):.1f}" y="{T + ph + 16}" text-anchor="middle">{E(lab_)}</text>')
+    o.append(f'<text class="t" x="{L + pw / 2:.1f}" y="{height - 6}" text-anchor="middle">{E(xlab)}</text>')
+    ends = []
+    for k, sr in enumerate(series):
+        d = " ".join(f"{X(x):.1f},{Y(y):.1f}" for x, y in sr["pts"])
+        o.append(f'<polyline points="{d}" fill="none" stroke="{sr["color"]}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
+        for x, y in sr["pts"]: o.append(f'<circle cx="{X(x):.1f}" cy="{Y(y):.1f}" r="7" fill="transparent"><title>{E(sr["name"])}: {pct(y, 1)}</title></circle>')
+        if marks and marks[k] is not None:
+            mx = marks[k]; pts = sr["pts"]; my = next((y0 + (y1 - y0) * (mx - x0) / (x1 - x0) for (x0, y0), (x1, y1) in zip(pts, pts[1:]) if x0 <= mx <= x1), pts[-1][1])
+            o.append(f'<circle cx="{X(mx):.1f}" cy="{Y(my):.1f}" r="5" fill="{sr["color"]}" stroke="var(--surface)" stroke-width="2"><title>{E(sr["name"])}: half reviewed by this point</title></circle>')
+        ends.append([Y(sr["pts"][-1][1]), sr])
+    if label_ends:
+        ends.sort(key=lambda e: e[0])
+        for i in range(1, len(ends)): ends[i][0] = max(ends[i][0], ends[i - 1][0] + 14)
+        for y, sr in ends: o.append(f'<line x1="{L + pw + 4}" x2="{L + pw + 14}" y1="{y:.1f}" y2="{y:.1f}" stroke="{sr["color"]}" stroke-width="2"/><text x="{L + pw + 18}" y="{y + 4:.1f}">{E(sr["name"])}</text>')
+    return "".join(o) + "</svg>"
+
+
+def fans_headline(fans):
+    r = fans["pooled"]["recommended"]; return f"Half of all recommendations are written between {r['p25']:.0f} and {r['p75']:.0f} hours of play."
+
+
+def fans_page(fans, ov):
+    """When players who recommend a game write their review, and where that sits in their whole playtime."""
+    P = fans["pooled"]; R = P["recommended"]; edges = fans["params"]["hour_edges"]; G = [g for g in P["by_total_hours"] if "curve" in g]
+    nb = len(edges)
+    def xof(h):   # position of an hours value on the band axis (bands are uneven, so interpolate inside the band)
+        for i in range(nb):
+            hi = edges[i + 1] if i + 1 < nb else edges[i] * 2
+            if h < hi or i == nb - 1: return i + min((h - edges[i]) / (hi - edges[i]), 1)
+    hticks = [(i, f"{edges[i]:g} h") for i in range(nb) if edges[i] in (1, 4, 16, 64, 256, 1024)]
+    c1 = line_chart([dict(name="Recommended", color="var(--blue)", pts=[(i + .5, y) for i, y in enumerate(R["curve"])])], hticks, nb, "Share of recommended reviews", "Hours played when the review was written (each mark is 4 times the one before)",
+                    band=(xof(R["p25"]), xof(R["p75"]), f"middle half: {R['p25']:.0f}–{R['p75']:.0f} h"), marks=[xof(R["median"])], label_ends=False)
+    c2 = line_chart([dict(name=g["group"], color=RAMP[i], pts=[(k + .5, y) for k, y in enumerate(g["curve"])]) for i, g in enumerate(G)],
+                    [(k, f"{k * 10}%") for k in range(0, 11, 2)], 10, "Share of that group's recommended reviews", "Point in the player's whole playtime when the review was written (0% = start, 100% = never played again)",
+                    marks=[g["position_median"] * 10 for g in G])
+    lo, hi = G[0], G[-1]
+    calls = [("When", f"Half of all recommendations come between {R['p25']:.0f} and {R['p75']:.0f} hours",
+              f"The median recommended review is written at {R['median']:.0f} hours of play; one in ten comes before {R['p10']:.0f} hours and one in ten after {R['p90']:.0f}. Critics review at a median of {P['not_recommended']['median']:.0f} hours."),
+             ("Where in their playtime", "The more someone ends up playing, the earlier in their time they recommend",
+              f"Players who total {lo['group'].lower()} wrote their review {pct(lo['position_median'])} of the way through their playtime. Players who total {hi['group'].lower()} wrote theirs {pct(hi['position_median'])} of the way through, with most of their play still ahead."),
+             ("Review and leave", f"{pct(lo['reviewed_in_last_tenth'])} of the lightest players recommend the game as they stop",
+              f"They wrote the review in the last tenth of their playtime. Among players who total {hi['group'].lower()} it is {pct(hi['reviewed_in_last_tenth'])}.")]
+    callh = "".join(f'<div class="call"><div class="t">{t}</div><h3>{h}</h3><p>{p_}</p></div>' for t, h, p_ in calls)
+    grows = "".join(f"<tr><td><a href='games/{E(g['slug'])}.html'>{E(g['name'])}</a><div class='small'>{E(g['genre'])}</div></td><td>{num(g['recommended']['n'])}</td><td>{g['recommended']['p25']}</td><td><b>{g['recommended']['median']}</b></td><td>{g['recommended']['p75']}</td><td>{g['not_recommended']['median']}</td></tr>" for g in fans["games"])
+    grows += f"<tr><td><b>All six games</b></td><td>{num(R['n'])}</td><td>{R['p25']}</td><td><b>{R['median']}</b></td><td>{R['p75']}</td><td>{P['not_recommended']['median']}</td></tr>"
+    trows = "".join(f"<tr><td>{E(g['group'])}</td><td>{num(g['n'])}</td><td>{pct(g['share'])}</td><td>{g['median_hours_at_review']}</td><td>{g['median_total_hours']}</td>{barcell(g['position_median'])}<td>{pct(g['position_p25'])}–{pct(g['position_p75'])}</td><td>{pct(g['reviewed_in_last_tenth'])}</td></tr>" for g in G)
+    names = fans["params"]["groups"]
+    prow = lambda g, nm: f"<tr><td>{nm}</td>" + "".join(heat(x.get("position_median"), f"{x['n']:,} recommended reviews") for x in g["by_total_hours"]) + "</tr>"
+    prows = "".join(prow(g, E(g["name"])) for g in fans["games"]) + prow(P, "<b>All six games</b>")
+    legend = "".join(f'<span><i style="background:{RAMP[i]}"></i>{E(g["group"])}</span>' for i, g in enumerate(G))
+    body = f"""<div class="wrap">
+<h1>When fans review</h1>
+<p class="lede">For players who recommended a game: how many hours they had played when they wrote the review, and where that moment sits in all the time they have spent with the game. {num(R['n'])} recommended reviews of six games.</p>
+<div class="calls">{callh}</div>
+<div class="caveat"><b>How far this goes.</b> A review shows when a player wrote, not when they made up their mind. Total playtime is as of the snapshot, so players who are still playing will end up with their review earlier in their playtime than shown here. Only reviews at least {fans['params']['mature_days']} days old are counted. Reviews represent only the players who wrote them.</div>
+
+<section id="when"><h2>Hours played when fans write the review</h2>
+<p class="q">Share of recommended reviews written in each band of hours played, all six games. The shaded area holds the middle half of reviews; the dot marks the median.</p>
+<div class="card">{c1}</div>
+<div class="scroll" style="margin-top:14px"><table><thead><tr><th>Game</th><th>Recommended reviews</th><th>A quarter written by (hours)</th><th>Median (hours)</th><th>Three quarters written by (hours)</th><th>Not recommended, median (hours)</th></tr></thead><tbody>{grows}</tbody></table></div></section>
+
+<section id="where"><h2>Where the review sits in a player's whole playtime</h2>
+<p class="q">Players grouped by the total hours they have played. Each line shows at what point in that playtime the group wrote their review. The dot on each line marks the point by which half of the group had reviewed.</p>
+<div class="card"><div class="legend">{legend}</div>{c2}</div>
+<div class="scroll" style="margin-top:14px"><table><thead><tr><th>Total hours played</th><th>Recommended reviews</th><th>Share</th><th>Median hours at review</th><th>Median total hours</th><th class="l">Median point in playtime</th><th>Middle half</th><th>Reviewed in the last tenth</th></tr></thead><tbody>{trows}</tbody></table></div>
+<h3 style="margin-top:22px">Median point in playtime, by game</h3>
+<p class="note">How far through their playtime the median player in each group was when they recommended the game. Darker = later.</p>
+<div class="scroll"><table><thead><tr><th>Game</th>{"".join(f"<th>{E(n)}</th>" for n in names)}</tr></thead><tbody>{prows}</tbody></table></div>
+<p class="note">Numbers for every game and group: <a href="data/fans.json">data/fans.json</a>.</p></section>
+</div>"""
+    return page("When fans review — Player Signals", body, ov, desc="When players who recommend a Steam game write their review, in hours played and as a point in their whole playtime.")
 
 
 def check_loop(games, audit):
@@ -879,10 +967,11 @@ if __name__ == "__main__":
     games = [load(o["slug"] + ".json") for o in ov]
     os.makedirs(os.path.join(DOCS, "games"), exist_ok=True)
     open(os.path.join(DOCS, ".nojekyll"), "w").write("")
-    models = load("models.json")
-    idx, quit_html, data_html = index_page(ov, games, audit, cost, models, load("after_review.json"))
+    models = load("models.json"); fans = load("fans.json")
+    open(os.path.join(DOCS, "fans.html"), "w").write(fans_page(fans, ov))
+    idx, quit_html, data_html = index_page(ov, games, audit, cost, models, load("after_review.json"), fans_headline(fans))
     open(os.path.join(DOCS, "index.html"), "w").write(idx); open(os.path.join(DOCS, "quit.html"), "w").write(quit_html); open(os.path.join(DOCS, "data.html"), "w").write(data_html)
     open(os.path.join(DOCS, "method.html"), "w").write(method_page(ov, games, audit, cost))
     for o in games: open(os.path.join(DOCS, "games", o["slug"] + ".html"), "w").write(game_page(o, audit, ov))
     open(os.path.join(DOCS, "case-study.html"), "w").write(case_study_page(next(o for o in games if o["slug"] == "monster-hunter-wilds"), ov))
-    print("built", 5 + len(games), "pages")
+    print("built", 6 + len(games), "pages")

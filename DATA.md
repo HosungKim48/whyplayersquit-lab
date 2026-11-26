@@ -18,6 +18,7 @@ Snapshot: 2026-11-24 (UTC). All data is public Steam data.
 | `docs/data/<slug>.json` | Yes | Every number on that game's report page. |
 | `docs/data/overview.json`, `models.json`, `cost.json`, `label_audit.json` | Yes | Cross-game table, regression and sensitivity results, spend, accuracy check (no text, no IDs). |
 | `docs/data/after_review.json`, `data/public/after_review_by_hours.csv` | Yes | Behaviour after the review for all reviews, recommended and not recommended, by game and by hours played at review (written by `src/after_review.py`; no text, no IDs). |
+| `docs/data/fans.json`, `data/public/fans_review_timing.csv` | Yes | When recommended reviews are written: hours played at review, and the point in the reviewer's whole playtime, by game and by total hours played (written by `src/fans.py`; no text, no IDs). |
 | `data/public/*.csv` | Yes | Same numbers as flat tables. |
 
 ## Row counts by stage
@@ -72,6 +73,14 @@ Source: `data/public/pipeline_row_counts.csv`.
 Per game and pooled (`games[]`, `pooled`), for reviews at least 30 days old: `positive` / `negative` hold `n`, `walked_away`, `walk_rate` with its 95% interval, `kept_10h_rate`, `median_hours_after`, `active_now_rate`. `by_hours[]` repeats those per hours-at-review bucket with `gap` = negative minus positive walk rate. `baseline_at_critics_hours` is the positive walk rate re-weighted to the negative reviewers' mix of hours buckets; `excess_over_baseline` is the negative walk rate minus that.
 
 Sample row (pooled, 50–200 h): positive n 87,963, walk rate 0.0887; negative walk rate 0.3159.
+
+## Fields of `fans.json`
+
+Per game and pooled, reviews at least 30 days old. `recommended` / `not_recommended`: `n`, quantiles of hours played at review (`p10`, `p25`, `median`, `p75`, `p90`) and `curve`, the share of reviews in each band of `params.hour_edges`. `by_total_hours[]` groups recommended reviewers by total hours played (hours at review + hours since): `n`, `share`, `median_hours_at_review`, `median_total_hours`, `position_p25` / `position_median` / `position_p75` (hours at review divided by total hours), `reviewed_in_last_tenth`, and `curve` (share of the group in each tenth of their playtime).
+
+Sample row (pooled, 500 h+): n 25,321, median hours at review 222.6, position median 0.266.
+
+Quirk: total hours is as of the snapshot, so for players who are still playing the position is an upper bound.
 
 ## Quirks
 

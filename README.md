@@ -32,7 +32,7 @@ python3 build_dataset.py
 python3 label.py <appid>          # English; run_labeling_other.sh for other languages
 python3 sublabel.py               # design sub-reasons, Civilization VII
 python3 quotes.py && python3 audit_sample.py && python3 audit.py
-python3 analyze.py && python3 after_review.py && python3 cost.py && python3 build_site.py
+python3 analyze.py && python3 after_review.py && python3 fans.py && python3 cost.py && python3 build_site.py
 python3 make_media.py && python3 verify.py
 ```
 
