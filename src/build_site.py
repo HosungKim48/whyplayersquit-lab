@@ -485,7 +485,7 @@ def index_page(ov, games, audit, cost, models):
                     f"<div class='note' style='margin-top:10px'>Top complaint: {E((o['top_reason'] or '').lower())} ({pct(o['top_reason_share'])})</div></a>" for o in ov)
     body = f"""<div class="wrap">
 <h1>A negative review is a warning, not a goodbye</h1>
-<p class="lede">For six big-budget PC games, this lab measures who actually stopped playing after a negative review, when they gave up, and which complaints go with leaving — so a team can tell the complaints players voice while they stay from the ones that go with stopping.</p>
+<p class="lede">For Steam games, this lab measures who actually stopped playing after a negative review, when they gave up, and which complaints go with leaving — so a team can tell the complaints players voice while they stay from the ones that go with stopping.</p>
 <div class="kpis">
 <div class="kpi"><div class="l">Reviews analysed</div><b>{num(tot)}</b><div class="s">full history of 6 games, {nl} languages with 300+ reviews in a game</div></div>
 <div class="kpi"><div class="l">Outside English</div><b>{pct(1-eng/tot)}</b><div class="s">of all reviews</div></div>
