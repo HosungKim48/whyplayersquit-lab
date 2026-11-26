@@ -86,7 +86,7 @@ def page(title, body, ov, depth=0, desc="", current=None):
 <nav><a href="{up}index.html">Overview</a><a href="{up}quit.html">Why players quit</a><a href="{up}index.html#reports">Game reports</a><a href="{up}index.html#markets">Markets</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a></nav></div></div>
 <div class="switch"><div class="in"><span>Reports</span>{pills}</div></div>
 {body}
-<footer><div><b>Hosung Kim</b> · USC Marshall School of Business · built with an AI agent.<br>A free, public student research project built only from public Steam data. Not affiliated with Valve or with any studio or publisher named here.
+<footer><div>A free, public student research project built only from public Steam data, with an AI agent. Not affiliated with Valve or with any studio or publisher named here.
 Reviews describe only the players who chose to write one. Nothing on this site shows that one thing caused another. No raw review text or reviewer IDs are published.</div></footer>
 </body></html>"""
 
@@ -696,7 +696,7 @@ def case_study_page(o, ov):
 <div class="kicker">Case study · Monster Hunter Wilds</div>
 <h1>The review score that hid a market</h1>
 <p class="lede">Read in English, this game has a complaint problem. Read in every language, it has a market problem. Here is how I got from one to the other, and what I would do with it.</p>
-<div class="meta">Hosung Kim · analysis run with an AI agent · numbers from <a href="data/{E(o['slug'])}.json">the report data</a> · <a href="games/{E(o['slug'])}.html">full report</a></div>
+<div class="meta">Analysis run with an AI agent · numbers from <a href="data/{E(o['slug'])}.json">the report data</a> · <a href="games/{E(o['slug'])}.html">full report</a></div>
 
 <section><h2>The question</h2>
 <p>The first version of this project read English reviews only. On that view the game looked healthy enough: <b>{pct(en['negative_share'])}</b> of {num(en['reviews'])} English reviews were negative, and the dominant complaint was performance. The obvious advice was "keep patching performance".</p>
