@@ -26,7 +26,7 @@ def cell(m):
 
 
 def summarize(df):
-    m = df[df.days_since_review >= MATURE_DAYS].copy()
+    m = df[(df.days_since_review >= MATURE_DAYS) & df.hours_at_review.notna()].copy()   # a few old reviews (Frostpunk, 2018) have no playtime at review
     m["bucket"] = pd.cut(m.hours_at_review, [b[0] for b in BUCKETS] + [1e9], labels=[b[2] for b in BUCKETS], right=False)
     pos, neg = m[m.voted_up], m[~m.voted_up]
     rows = []; expected = 0.0; ok = True

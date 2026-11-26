@@ -1,0 +1,311 @@
+game,hours_at_review,verdict,reviews,walked_away,walk_rate,walk_lo,walk_hi,kept_10h_rate,median_hours_after,active_now_rate
+Sid Meier's Civilization VII,Under 2 h,recommended,567,125,0.2205,0.1883,0.2564,0.582,15.6,0.0741
+Sid Meier's Civilization VII,Under 2 h,not recommended,3861,2501,0.6478,0.6326,0.6627,0.208,0.0,0.0264
+Sid Meier's Civilization VII,2–10 h,recommended,4890,199,0.0407,0.0355,0.0466,0.799,39.9,0.1292
+Sid Meier's Civilization VII,2–10 h,not recommended,5382,1987,0.3692,0.3564,0.3822,0.4084,4.8,0.0472
+Sid Meier's Civilization VII,10–50 h,recommended,9216,358,0.0388,0.0351,0.043,0.856,59.3,0.1566
+Sid Meier's Civilization VII,10–50 h,not recommended,8219,2423,0.2948,0.285,0.3048,0.5021,10.1,0.0718
+Sid Meier's Civilization VII,50–200 h,recommended,4588,183,0.0399,0.0346,0.0459,0.893,102.4,0.2493
+Sid Meier's Civilization VII,50–200 h,not recommended,3696,876,0.237,0.2236,0.251,0.6255,26.5,0.148
+Sid Meier's Civilization VII,200 h+,recommended,1947,28,0.0144,0.01,0.0207,0.9558,256.2,0.5116
+Sid Meier's Civilization VII,200 h+,not recommended,1247,214,0.1716,0.1517,0.1935,0.745,80.3,0.3408
+Cities: Skylines II,Under 2 h,recommended,2348,265,0.1129,0.1007,0.1263,0.7606,46.9,0.1065
+Cities: Skylines II,Under 2 h,not recommended,5670,2608,0.46,0.447,0.473,0.3968,2.1,0.0578
+Cities: Skylines II,2–10 h,recommended,8705,353,0.0406,0.0366,0.0449,0.8353,57.5,0.1454
+Cities: Skylines II,2–10 h,not recommended,4869,1171,0.2405,0.2287,0.2527,0.5802,17.2,0.0791
+Cities: Skylines II,10–50 h,recommended,12892,524,0.0406,0.0374,0.0442,0.8483,63.1,0.1824
+Cities: Skylines II,10–50 h,not recommended,7836,1572,0.2006,0.1919,0.2096,0.6349,23.5,0.0962
+Cities: Skylines II,50–200 h,recommended,7969,285,0.0358,0.0319,0.0401,0.8858,91.8,0.2598
+Cities: Skylines II,50–200 h,not recommended,6809,1029,0.1511,0.1428,0.1598,0.7323,45.9,0.1689
+Cities: Skylines II,200 h+,recommended,3921,89,0.0227,0.0185,0.0278,0.9345,188.5,0.4807
+Cities: Skylines II,200 h+,not recommended,2945,302,0.1025,0.0921,0.114,0.8224,117.3,0.3419
+PAYDAY 3,Under 2 h,recommended,1385,232,0.1675,0.1488,0.1881,0.5986,14.6,0.0513
+PAYDAY 3,Under 2 h,not recommended,6101,2846,0.4665,0.454,0.479,0.2945,1.5,0.0241
+PAYDAY 3,2–10 h,recommended,6519,611,0.0937,0.0869,0.101,0.6164,15.7,0.0729
+PAYDAY 3,2–10 h,not recommended,8611,2439,0.2832,0.2738,0.2929,0.4444,7.3,0.0281
+PAYDAY 3,10–50 h,recommended,10005,818,0.0818,0.0765,0.0873,0.6957,22.9,0.1079
+PAYDAY 3,10–50 h,not recommended,8773,2308,0.2631,0.254,0.2724,0.5004,10.1,0.0522
+PAYDAY 3,50–200 h,recommended,3687,229,0.0621,0.0548,0.0704,0.757,33.0,0.2468
+PAYDAY 3,50–200 h,not recommended,2351,649,0.2761,0.2584,0.2945,0.4823,9.1,0.1331
+PAYDAY 3,200 h+,recommended,830,53,0.0639,0.0491,0.0826,0.8313,70.4,0.488
+PAYDAY 3,200 h+,not recommended,527,101,0.1917,0.1603,0.2274,0.6281,22.4,0.3036
+Dragon's Dogma 2,Under 2 h,recommended,1867,218,0.1168,0.103,0.1321,0.7686,45.3,0.0637
+Dragon's Dogma 2,Under 2 h,not recommended,6725,3788,0.5633,0.5514,0.5751,0.3182,0.2,0.0223
+Dragon's Dogma 2,2–10 h,recommended,11775,324,0.0275,0.0247,0.0306,0.8704,47.2,0.0695
+Dragon's Dogma 2,2–10 h,not recommended,8297,2164,0.2608,0.2515,0.2704,0.5748,17.6,0.0325
+Dragon's Dogma 2,10–50 h,recommended,19797,1391,0.0703,0.0668,0.0739,0.8023,38.5,0.0778
+Dragon's Dogma 2,10–50 h,not recommended,8679,2958,0.3408,0.3309,0.3509,0.4797,8.4,0.0363
+Dragon's Dogma 2,50–200 h,recommended,13567,2606,0.1921,0.1855,0.1988,0.6561,28.6,0.1509
+Dragon's Dogma 2,50–200 h,not recommended,3728,1473,0.3951,0.3795,0.4109,0.4343,4.8,0.0856
+Dragon's Dogma 2,200 h+,recommended,1487,162,0.1089,0.0941,0.1258,0.7962,89.2,0.4223
+Dragon's Dogma 2,200 h+,not recommended,251,55,0.2191,0.1724,0.2743,0.6494,42.1,0.3267
+Monster Hunter Wilds,Under 2 h,recommended,1647,147,0.0893,0.0764,0.104,0.813,60.8,0.0729
+Monster Hunter Wilds,Under 2 h,not recommended,5401,2201,0.4075,0.3945,0.4207,0.4958,9.2,0.0241
+Monster Hunter Wilds,2–10 h,recommended,17106,408,0.0239,0.0217,0.0262,0.8893,66.9,0.0714
+Monster Hunter Wilds,2–10 h,not recommended,12557,2156,0.1717,0.1652,0.1784,0.686,34.5,0.0312
+Monster Hunter Wilds,10–50 h,recommended,42938,1257,0.0293,0.0277,0.0309,0.8881,61.4,0.0761
+Monster Hunter Wilds,10–50 h,not recommended,23671,5453,0.2304,0.225,0.2358,0.6187,22.1,0.0369
+Monster Hunter Wilds,50–200 h,recommended,33141,2113,0.0638,0.0612,0.0664,0.8199,54.4,0.124
+Monster Hunter Wilds,50–200 h,not recommended,40094,11146,0.278,0.2736,0.2824,0.5397,13.7,0.0573
+Monster Hunter Wilds,200 h+,recommended,10368,518,0.05,0.0459,0.0543,0.8768,94.8,0.3076
+Monster Hunter Wilds,200 h+,not recommended,11995,1853,0.1545,0.1481,0.1611,0.7333,58.3,0.1787
+Starfield,Under 2 h,recommended,891,219,0.2458,0.2187,0.2751,0.5376,13.7,0.0213
+Starfield,Under 2 h,not recommended,2782,1983,0.7128,0.6957,0.7293,0.1733,0.0,0.0032
+Starfield,2–10 h,recommended,6657,520,0.0781,0.0719,0.0848,0.763,44.0,0.037
+Starfield,2–10 h,not recommended,6902,3687,0.5342,0.5224,0.5459,0.293,0.5,0.0059
+Starfield,10–50 h,recommended,27272,1216,0.0446,0.0422,0.0471,0.8556,55.3,0.0286
+Starfield,10–50 h,not recommended,15910,7567,0.4756,0.4679,0.4834,0.3629,1.6,0.0106
+Starfield,50–200 h,recommended,25011,2385,0.0954,0.0918,0.0991,0.8072,65.2,0.0433
+Starfield,50–200 h,not recommended,17506,8260,0.4718,0.4645,0.4792,0.3808,1.7,0.0143
+Starfield,200 h+,recommended,7353,554,0.0753,0.0695,0.0816,0.863,159.5,0.1489
+Starfield,200 h+,not recommended,3985,1290,0.3237,0.3094,0.3384,0.5646,22.0,0.0572
+Disco Elysium,Under 2 h,recommended,3359,1009,0.3004,0.2851,0.3161,0.3733,4.7,0.0077
+Disco Elysium,Under 2 h,not recommended,1390,1051,0.7561,0.7329,0.778,0.0813,0.0,0.0065
+Disco Elysium,2–10 h,recommended,16372,2805,0.1713,0.1656,0.1772,0.5591,13.0,0.0125
+Disco Elysium,2–10 h,not recommended,2471,1701,0.6884,0.6698,0.7063,0.1368,0.0,0.0045
+Disco Elysium,10–50 h,recommended,71713,29113,0.406,0.4024,0.4096,0.3707,3.4,0.0126
+Disco Elysium,10–50 h,not recommended,3735,2377,0.6364,0.6209,0.6517,0.1944,0.0,0.0083
+Disco Elysium,50–200 h,recommended,16001,7243,0.4527,0.445,0.4604,0.3473,1.9,0.0192
+Disco Elysium,50–200 h,not recommended,883,471,0.5334,0.5004,0.5661,0.2616,0.6,0.0317
+Disco Elysium,200 h+,recommended,349,117,0.3352,0.2877,0.3863,0.5387,14.8,0.0344
+Disco Elysium,200 h+,not recommended,36,14,0.3889,0.2478,0.5514,0.5,9.4,0.0833
+Against the Storm,Under 2 h,recommended,576,190,0.3299,0.2927,0.3693,0.441,5.8,0.0226
+Against the Storm,Under 2 h,not recommended,352,323,0.9176,0.8842,0.942,0.0341,0.0,0.0
+Against the Storm,2–10 h,recommended,5020,477,0.095,0.0872,0.1034,0.6865,24.0,0.0263
+Against the Storm,2–10 h,not recommended,442,315,0.7127,0.6688,0.7529,0.1538,0.0,0.0045
+Against the Storm,10–50 h,recommended,13356,1067,0.0799,0.0754,0.0846,0.7662,36.5,0.0383
+Against the Storm,10–50 h,not recommended,552,330,0.5978,0.5564,0.6379,0.2554,0.0,0.0109
+Against the Storm,50–200 h,recommended,9748,933,0.0957,0.09,0.1017,0.7947,52.0,0.0671
+Against the Storm,50–200 h,not recommended,289,115,0.3979,0.3432,0.4553,0.4913,9.0,0.045
+Against the Storm,200 h+,recommended,2512,238,0.0947,0.0839,0.1068,0.8356,97.0,0.1473
+Against the Storm,200 h+,not recommended,72,13,0.1806,0.1087,0.2848,0.75,68.1,0.1111
+DAVE THE DIVER,Under 2 h,recommended,3900,1096,0.281,0.2671,0.2953,0.4695,8.2,0.0141
+DAVE THE DIVER,Under 2 h,not recommended,570,467,0.8193,0.7856,0.8487,0.1,0.0,0.0053
+DAVE THE DIVER,2–10 h,recommended,37249,3933,0.1056,0.1025,0.1087,0.6407,17.9,0.0194
+DAVE THE DIVER,2–10 h,not recommended,981,564,0.5749,0.5438,0.6055,0.2477,0.3,0.0041
+DAVE THE DIVER,10–50 h,recommended,73880,16540,0.2239,0.2209,0.2269,0.5467,12.7,0.021
+DAVE THE DIVER,10–50 h,not recommended,2636,1343,0.5095,0.4904,0.5285,0.2932,0.8,0.0087
+DAVE THE DIVER,50–200 h,recommended,20041,6451,0.3219,0.3155,0.3284,0.4758,8.5,0.0382
+DAVE THE DIVER,50–200 h,not recommended,480,227,0.4729,0.4286,0.5176,0.35,1.6,0.0167
+DAVE THE DIVER,200 h+,recommended,592,118,0.1993,0.1691,0.2334,0.6537,34.4,0.0912
+DAVE THE DIVER,200 h+,not recommended,14,,,,,,,
+Lies of P,Under 2 h,recommended,1041,294,0.2824,0.2559,0.3105,0.4861,9.0,0.0163
+Lies of P,Under 2 h,not recommended,505,402,0.796,0.7587,0.8289,0.1149,0.0,0.002
+Lies of P,2–10 h,recommended,7438,582,0.0782,0.0724,0.0846,0.7355,25.6,0.0208
+Lies of P,2–10 h,not recommended,1049,468,0.4461,0.4163,0.4764,0.3403,2.0,0.0086
+Lies of P,10–50 h,recommended,29518,7001,0.2372,0.2324,0.2421,0.5843,15.4,0.0196
+Lies of P,10–50 h,not recommended,2659,1183,0.4449,0.4261,0.4639,0.3317,2.3,0.0128
+Lies of P,50–200 h,recommended,13991,4045,0.2891,0.2817,0.2967,0.5406,13.2,0.0339
+Lies of P,50–200 h,not recommended,521,240,0.4607,0.4183,0.5036,0.3282,2.0,0.0211
+Lies of P,200 h+,recommended,428,96,0.2243,0.1873,0.2662,0.6402,28.0,0.1355
+Lies of P,200 h+,not recommended,19,,,,,,,
+ARMORED CORE VI FIRES OF RUBICON,Under 2 h,recommended,2208,320,0.1449,0.1309,0.1602,0.6495,19.7,0.0136
+ARMORED CORE VI FIRES OF RUBICON,Under 2 h,not recommended,1225,810,0.6612,0.6343,0.6872,0.2082,0.0,0.0008
+ARMORED CORE VI FIRES OF RUBICON,2–10 h,recommended,12090,794,0.0657,0.0614,0.0702,0.7374,26.1,0.0213
+ARMORED CORE VI FIRES OF RUBICON,2–10 h,not recommended,1727,597,0.3457,0.3236,0.3684,0.3816,4.6,0.0052
+ARMORED CORE VI FIRES OF RUBICON,10–50 h,recommended,30928,5442,0.176,0.1718,0.1802,0.6146,16.9,0.0229
+ARMORED CORE VI FIRES OF RUBICON,10–50 h,not recommended,2162,700,0.3238,0.3044,0.3438,0.4519,7.2,0.0093
+ARMORED CORE VI FIRES OF RUBICON,50–200 h,recommended,14508,3078,0.2122,0.2056,0.2189,0.5598,13.9,0.0491
+ARMORED CORE VI FIRES OF RUBICON,50–200 h,not recommended,395,123,0.3114,0.2677,0.3587,0.4709,8.2,0.0405
+ARMORED CORE VI FIRES OF RUBICON,200 h+,recommended,1002,84,0.0838,0.0682,0.1026,0.8064,71.7,0.2315
+ARMORED CORE VI FIRES OF RUBICON,200 h+,not recommended,112,17,0.1518,0.097,0.2297,0.75,93.8,0.3393
+Hi-Fi RUSH,Under 2 h,recommended,2308,688,0.2981,0.2798,0.3171,0.3176,4.4,0.0039
+Hi-Fi RUSH,Under 2 h,not recommended,210,176,0.8381,0.7823,0.8818,0.0333,0.0,0.0
+Hi-Fi RUSH,2–10 h,recommended,8676,2338,0.2695,0.2602,0.2789,0.2762,5.1,0.005
+Hi-Fi RUSH,2–10 h,not recommended,329,244,0.7416,0.6917,0.786,0.0456,0.0,0.0
+Hi-Fi RUSH,10–50 h,recommended,14708,7247,0.4927,0.4846,0.5008,0.1928,1.1,0.0071
+Hi-Fi RUSH,10–50 h,not recommended,206,142,0.6893,0.6231,0.7486,0.0728,0.0,0.0049
+Hi-Fi RUSH,50–200 h,recommended,763,256,0.3355,0.3029,0.3698,0.3748,4.3,0.0406
+Hi-Fi RUSH,50–200 h,not recommended,3,,,,,,,
+Hi-Fi RUSH,200 h+,recommended,30,4,0.1333,0.0531,0.2968,0.7,25.6,0.0333
+Hi-Fi RUSH,200 h+,not recommended,0,,,,,,,
+DREDGE,Under 2 h,recommended,757,238,0.3144,0.2823,0.3483,0.3303,4.4,0.0172
+DREDGE,Under 2 h,not recommended,177,141,0.7966,0.7313,0.8493,0.0508,0.0,0.0
+DREDGE,2–10 h,recommended,13103,3490,0.2664,0.2589,0.274,0.3196,5.4,0.0114
+DREDGE,2–10 h,not recommended,844,651,0.7713,0.7418,0.7984,0.0628,0.0,0.0059
+DREDGE,10–50 h,recommended,29917,14635,0.4892,0.4835,0.4949,0.2183,1.2,0.0116
+DREDGE,10–50 h,not recommended,916,773,0.8439,0.8189,0.866,0.0579,0.0,0.0011
+DREDGE,50–200 h,recommended,786,359,0.4567,0.4222,0.4917,0.3359,1.7,0.0331
+DREDGE,50–200 h,not recommended,8,,,,,,,
+DREDGE,200 h+,recommended,36,10,0.2778,0.1585,0.4399,0.6111,46.2,0.1111
+DREDGE,200 h+,not recommended,3,,,,,,,
+Manor Lords,Under 2 h,recommended,3320,732,0.2205,0.2067,0.2349,0.5087,10.3,0.0307
+Manor Lords,Under 2 h,not recommended,1089,809,0.7429,0.7161,0.768,0.1102,0.0,0.0028
+Manor Lords,2–10 h,recommended,20978,2275,0.1084,0.1043,0.1127,0.6019,14.7,0.0409
+Manor Lords,2–10 h,not recommended,3659,1719,0.4698,0.4537,0.486,0.2482,1.6,0.0153
+Manor Lords,10–50 h,recommended,30550,3217,0.1053,0.1019,0.1088,0.6788,20.9,0.0687
+Manor Lords,10–50 h,not recommended,5109,2017,0.3948,0.3815,0.4083,0.3568,3.8,0.0346
+Manor Lords,50–200 h,recommended,8067,654,0.0811,0.0753,0.0872,0.8038,44.0,0.1563
+Manor Lords,50–200 h,not recommended,1447,383,0.2647,0.2426,0.288,0.5605,14.5,0.112
+Manor Lords,200 h+,recommended,1050,53,0.0505,0.0388,0.0654,0.9048,121.7,0.3562
+Manor Lords,200 h+,not recommended,218,25,0.1147,0.0789,0.1638,0.7798,75.3,0.3211
+Kingdom Come: Deliverance II,Under 2 h,recommended,1737,341,0.1963,0.1783,0.2157,0.7093,65.1,0.0576
+Kingdom Come: Deliverance II,Under 2 h,not recommended,679,493,0.7261,0.6913,0.7583,0.1841,0.0,0.0206
+Kingdom Come: Deliverance II,2–10 h,recommended,11889,744,0.0626,0.0584,0.0671,0.833,71.8,0.0537
+Kingdom Come: Deliverance II,2–10 h,not recommended,2220,1013,0.4563,0.4357,0.4771,0.3554,1.9,0.0194
+Kingdom Come: Deliverance II,10–50 h,recommended,37156,2230,0.06,0.0576,0.0625,0.8519,58.9,0.0561
+Kingdom Come: Deliverance II,10–50 h,not recommended,3289,1009,0.3068,0.2913,0.3228,0.516,11.1,0.035
+Kingdom Come: Deliverance II,50–200 h,recommended,71117,17800,0.2503,0.2471,0.2535,0.6207,25.1,0.0565
+Kingdom Come: Deliverance II,50–200 h,not recommended,2337,789,0.3376,0.3187,0.357,0.5032,10.2,0.0458
+Kingdom Come: Deliverance II,200 h+,recommended,9588,2361,0.2462,0.2377,0.255,0.6368,34.1,0.1212
+Kingdom Come: Deliverance II,200 h+,not recommended,330,91,0.2758,0.2303,0.3263,0.6273,36.0,0.1273
+Cult of the Lamb,Under 2 h,recommended,2567,548,0.2135,0.1981,0.2298,0.4831,9.4,0.014
+Cult of the Lamb,Under 2 h,not recommended,612,404,0.6601,0.6217,0.6966,0.1846,0.0,0.0033
+Cult of the Lamb,2–10 h,recommended,31092,3631,0.1168,0.1133,0.1204,0.567,12.5,0.0233
+Cult of the Lamb,2–10 h,not recommended,1469,793,0.5398,0.5143,0.5652,0.2117,0.5,0.0061
+Cult of the Lamb,10–50 h,recommended,59022,14075,0.2385,0.235,0.2419,0.4952,9.8,0.0281
+Cult of the Lamb,10–50 h,not recommended,2331,1361,0.5839,0.5637,0.6037,0.175,0.1,0.009
+Cult of the Lamb,50–200 h,recommended,11547,2504,0.2169,0.2094,0.2245,0.5963,17.1,0.0708
+Cult of the Lamb,50–200 h,not recommended,183,80,0.4372,0.3673,0.5096,0.3497,2.3,0.0546
+Cult of the Lamb,200 h+,recommended,517,82,0.1586,0.1297,0.1926,0.7253,41.4,0.1547
+Cult of the Lamb,200 h+,not recommended,7,,,,,,,
+Persona 3 Reload,Under 2 h,recommended,1250,147,0.1176,0.1009,0.1366,0.7568,54.1,0.0288
+Persona 3 Reload,Under 2 h,not recommended,140,62,0.4429,0.3632,0.5256,0.4071,1.7,0.0286
+Persona 3 Reload,2–10 h,recommended,5513,380,0.0689,0.0625,0.0759,0.7903,52.0,0.0553
+Persona 3 Reload,2–10 h,not recommended,264,105,0.3977,0.3406,0.4578,0.4167,4.6,0.0379
+Persona 3 Reload,10–50 h,recommended,10146,1099,0.1083,0.1024,0.1145,0.7616,39.6,0.0457
+Persona 3 Reload,10–50 h,not recommended,612,257,0.4199,0.3815,0.4594,0.4085,3.7,0.0147
+Persona 3 Reload,50–200 h,recommended,21780,9310,0.4275,0.4209,0.434,0.4014,3.2,0.0303
+Persona 3 Reload,50–200 h,not recommended,1012,594,0.587,0.5563,0.6169,0.2688,0.0,0.0168
+Persona 3 Reload,200 h+,recommended,1000,418,0.418,0.3878,0.4488,0.434,4.4,0.049
+Persona 3 Reload,200 h+,not recommended,47,23,0.4894,0.3528,0.6276,0.4255,2.3,0.0213
+Frostpunk 2,Under 2 h,recommended,491,214,0.4358,0.3926,0.48,0.2525,1.8,0.0224
+Frostpunk 2,Under 2 h,not recommended,1129,976,0.8645,0.8433,0.8832,0.0576,0.0,0.0053
+Frostpunk 2,2–10 h,recommended,3950,784,0.1985,0.1863,0.2112,0.4438,7.8,0.0294
+Frostpunk 2,2–10 h,not recommended,1719,1019,0.5928,0.5694,0.6158,0.1675,0.1,0.0093
+Frostpunk 2,10–50 h,recommended,8980,1761,0.1961,0.188,0.2044,0.5741,14.0,0.0511
+Frostpunk 2,10–50 h,not recommended,2044,956,0.4677,0.4462,0.4894,0.2979,1.5,0.0205
+Frostpunk 2,50–200 h,recommended,1736,197,0.1135,0.0994,0.1293,0.7684,37.4,0.1446
+Frostpunk 2,50–200 h,not recommended,372,97,0.2608,0.2187,0.3077,0.5511,14.7,0.0887
+Frostpunk 2,200 h+,recommended,143,9,0.0629,0.0335,0.1153,0.8531,82.6,0.3846
+Frostpunk 2,200 h+,not recommended,33,7,0.2121,0.1068,0.3775,0.6364,30.9,0.1212
+Dragon Age: The Veilguard,Under 2 h,recommended,617,118,0.1912,0.1622,0.2242,0.5851,16.2,0.0081
+Dragon Age: The Veilguard,Under 2 h,not recommended,1279,1065,0.8327,0.8112,0.8521,0.093,0.0,0.0063
+Dragon Age: The Veilguard,2–10 h,recommended,5237,261,0.0498,0.0443,0.0561,0.7827,43.6,0.016
+Dragon Age: The Veilguard,2–10 h,not recommended,2694,1573,0.5839,0.5652,0.6024,0.2249,0.0,0.0048
+Dragon Age: The Veilguard,10–50 h,recommended,8629,831,0.0963,0.0903,0.1027,0.7942,41.2,0.018
+Dragon Age: The Veilguard,10–50 h,not recommended,4651,2664,0.5728,0.5585,0.5869,0.2711,0.0,0.0062
+Dragon Age: The Veilguard,50–200 h,recommended,12638,5644,0.4466,0.4379,0.4553,0.4013,2.9,0.0217
+Dragon Age: The Veilguard,50–200 h,not recommended,4377,3101,0.7085,0.6948,0.7218,0.1636,0.0,0.0069
+Dragon Age: The Veilguard,200 h+,recommended,664,150,0.2259,0.1957,0.2592,0.6581,48.7,0.0798
+Dragon Age: The Veilguard,200 h+,not recommended,168,86,0.5119,0.4369,0.5864,0.3631,0.6,0.0357
+Kerbal Space Program 2,Under 2 h,recommended,1208,274,0.2268,0.2041,0.2513,0.4445,7.7,0.0108
+Kerbal Space Program 2,Under 2 h,not recommended,4457,2971,0.6666,0.6526,0.6803,0.1519,0.0,0.0018
+Kerbal Space Program 2,2–10 h,recommended,2862,239,0.0835,0.0739,0.0942,0.6286,17.3,0.0115
+Kerbal Space Program 2,2–10 h,not recommended,6686,4016,0.6007,0.5889,0.6123,0.2226,0.0,0.0016
+Kerbal Space Program 2,10–50 h,recommended,2406,228,0.0948,0.0837,0.1071,0.6978,23.8,0.0299
+Kerbal Space Program 2,10–50 h,not recommended,6918,5036,0.728,0.7173,0.7383,0.158,0.0,0.0052
+Kerbal Space Program 2,50–200 h,recommended,612,57,0.0931,0.0726,0.1188,0.7157,33.4,0.0588
+Kerbal Space Program 2,50–200 h,not recommended,2130,1512,0.7099,0.6902,0.7287,0.1601,0.0,0.0131
+Kerbal Space Program 2,200 h+,recommended,113,18,0.1593,0.1032,0.2378,0.6991,49.8,0.0796
+Kerbal Space Program 2,200 h+,not recommended,257,145,0.5642,0.5031,0.6234,0.2763,0.2,0.0272
+Suicide Squad: Kill the Justice League,Under 2 h,recommended,460,173,0.3761,0.333,0.4212,0.2913,2.3,0.0022
+Suicide Squad: Kill the Justice League,Under 2 h,not recommended,1371,1097,0.8001,0.7782,0.8205,0.078,0.0,0.0066
+Suicide Squad: Kill the Justice League,2–10 h,recommended,2485,342,0.1376,0.1246,0.1517,0.5123,10.2,0.0052
+Suicide Squad: Kill the Justice League,2–10 h,not recommended,1355,801,0.5911,0.5647,0.617,0.1801,0.2,0.0037
+Suicide Squad: Kill the Justice League,10–50 h,recommended,4163,941,0.226,0.2136,0.239,0.4694,8.8,0.0089
+Suicide Squad: Kill the Justice League,10–50 h,not recommended,1906,1166,0.6118,0.5897,0.6334,0.1773,0.0,0.0058
+Suicide Squad: Kill the Justice League,50–200 h,recommended,495,130,0.2626,0.2258,0.3031,0.5152,11.2,0.0242
+Suicide Squad: Kill the Justice League,50–200 h,not recommended,267,141,0.5281,0.4682,0.5871,0.2547,0.6,0.0075
+Suicide Squad: Kill the Justice League,200 h+,recommended,23,,,,,,,
+Suicide Squad: Kill the Justice League,200 h+,not recommended,11,,,,,,,
+Homeworld 3,Under 2 h,recommended,121,44,0.3636,0.2833,0.4523,0.2562,3.5,0.0
+Homeworld 3,Under 2 h,not recommended,365,316,0.8658,0.8269,0.8969,0.0466,0.0,0.0
+Homeworld 3,2–10 h,recommended,963,255,0.2648,0.2379,0.2936,0.2596,4.5,0.0187
+Homeworld 3,2–10 h,not recommended,1557,1024,0.6577,0.6337,0.6808,0.0642,0.0,0.0071
+Homeworld 3,10–50 h,recommended,930,286,0.3075,0.2787,0.3379,0.3301,4.3,0.0194
+Homeworld 3,10–50 h,not recommended,1355,799,0.5897,0.5633,0.6156,0.1579,0.1,0.0044
+Homeworld 3,50–200 h,recommended,56,10,0.1786,0.1,0.2984,0.5893,17.9,0.0536
+Homeworld 3,50–200 h,not recommended,56,23,0.4107,0.2917,0.5412,0.375,3.8,0.0
+Homeworld 3,200 h+,recommended,6,,,,,,,
+Homeworld 3,200 h+,not recommended,4,,,,,,,
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,Under 2 h,recommended,4301,817,0.19,0.1785,0.202,0.6099,22.8,0.0723
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,Under 2 h,not recommended,2790,1815,0.6505,0.6326,0.668,0.1982,0.0,0.0194
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,2–10 h,recommended,19346,1353,0.0699,0.0664,0.0736,0.7662,46.6,0.0956
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,2–10 h,not recommended,4327,1627,0.376,0.3617,0.3905,0.3739,3.6,0.0349
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,10–50 h,recommended,35567,1756,0.0494,0.0472,0.0517,0.841,54.2,0.1141
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,10–50 h,not recommended,6941,2129,0.3067,0.296,0.3177,0.4756,8.3,0.0428
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,50–200 h,recommended,22310,2995,0.1342,0.1298,0.1388,0.7574,49.4,0.1582
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,50–200 h,not recommended,4958,1532,0.309,0.2963,0.322,0.5161,11.5,0.0835
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,200 h+,recommended,3383,566,0.1673,0.1551,0.1803,0.7437,77.8,0.4023
+S.T.A.L.K.E.R. 2: Heart of Chornobyl,200 h+,not recommended,613,142,0.2316,0.2,0.2667,0.6411,33.0,0.2529
+Forspoken,Under 2 h,recommended,251,56,0.2231,0.176,0.2786,0.4622,7.8,0.008
+Forspoken,Under 2 h,not recommended,664,528,0.7952,0.7628,0.8241,0.1069,0.0,0.0
+Forspoken,2–10 h,recommended,1113,107,0.0961,0.0802,0.1149,0.6092,14.4,0.0081
+Forspoken,2–10 h,not recommended,633,358,0.5656,0.5267,0.6037,0.2054,0.2,0.0016
+Forspoken,10–50 h,recommended,1668,443,0.2656,0.2449,0.2873,0.4496,7.9,0.0054
+Forspoken,10–50 h,not recommended,530,314,0.5925,0.5501,0.6335,0.1736,0.0,0.0019
+Forspoken,50–200 h,recommended,439,208,0.4738,0.4275,0.5205,0.3007,1.8,0.0091
+Forspoken,50–200 h,not recommended,66,52,0.7879,0.6749,0.8692,0.1515,0.0,0.0
+Forspoken,200 h+,recommended,8,,,,,,,
+Forspoken,200 h+,not recommended,2,,,,,,,
+Avowed,Under 2 h,recommended,279,75,0.2688,0.2202,0.3237,0.4839,8.8,0.0143
+Avowed,Under 2 h,not recommended,508,433,0.8524,0.8189,0.8806,0.0807,0.0,0.0039
+Avowed,2–10 h,recommended,2068,150,0.0725,0.0621,0.0845,0.7166,23.7,0.0179
+Avowed,2–10 h,not recommended,690,453,0.6565,0.6203,0.691,0.1449,0.0,0.0072
+Avowed,10–50 h,recommended,4640,1104,0.2379,0.2259,0.2504,0.5879,15.7,0.0119
+Avowed,10–50 h,not recommended,1343,837,0.6232,0.597,0.6488,0.1914,0.0,0.0037
+Avowed,50–200 h,recommended,2406,1358,0.5644,0.5445,0.5841,0.2764,0.2,0.0137
+Avowed,50–200 h,not recommended,314,205,0.6529,0.5986,0.7034,0.1752,0.0,0.0032
+Avowed,200 h+,recommended,46,22,0.4783,0.3412,0.6186,0.4348,2.6,0.087
+Avowed,200 h+,not recommended,7,,,,,,,
+Darkest Dungeon II,Under 2 h,recommended,634,97,0.153,0.1271,0.1831,0.6703,25.3,0.0379
+Darkest Dungeon II,Under 2 h,not recommended,640,470,0.7344,0.6988,0.7671,0.1781,0.0,0.0094
+Darkest Dungeon II,2–10 h,recommended,3801,262,0.0689,0.0613,0.0774,0.7561,31.3,0.031
+Darkest Dungeon II,2–10 h,not recommended,1510,696,0.4609,0.4359,0.4861,0.3219,1.9,0.0086
+Darkest Dungeon II,10–50 h,recommended,7449,722,0.0969,0.0904,0.1039,0.7382,31.0,0.0416
+Darkest Dungeon II,10–50 h,not recommended,2439,977,0.4006,0.3813,0.4202,0.3899,3.9,0.0193
+Darkest Dungeon II,50–200 h,recommended,4970,603,0.1213,0.1125,0.1307,0.7408,38.0,0.0746
+Darkest Dungeon II,50–200 h,not recommended,1135,393,0.3463,0.3191,0.3744,0.4907,9.5,0.0414
+Darkest Dungeon II,200 h+,recommended,916,87,0.095,0.0776,0.1157,0.8188,93.8,0.2107
+Darkest Dungeon II,200 h+,not recommended,188,49,0.2606,0.2031,0.3277,0.5957,25.0,0.117
+Pacific Drive,Under 2 h,recommended,728,291,0.3997,0.3648,0.4357,0.3159,2.5,0.0151
+Pacific Drive,Under 2 h,not recommended,968,843,0.8709,0.8483,0.8905,0.0413,0.0,0.0031
+Pacific Drive,2–10 h,recommended,4330,824,0.1903,0.1789,0.2023,0.5222,11.1,0.0199
+Pacific Drive,2–10 h,not recommended,1341,937,0.6987,0.6736,0.7227,0.135,0.0,0.0037
+Pacific Drive,10–50 h,recommended,9518,2991,0.3142,0.305,0.3236,0.4442,7.2,0.0209
+Pacific Drive,10–50 h,not recommended,1011,651,0.6439,0.6139,0.6728,0.1869,0.0,0.004
+Pacific Drive,50–200 h,recommended,2752,1019,0.3703,0.3524,0.3885,0.4339,6.1,0.0371
+Pacific Drive,50–200 h,not recommended,155,94,0.6065,0.5279,0.6799,0.1935,0.0,0.0065
+Pacific Drive,200 h+,recommended,75,15,0.2,0.1251,0.3041,0.7067,41.8,0.24
+Pacific Drive,200 h+,not recommended,3,,,,,,,
+Sea of Stars,Under 2 h,recommended,350,97,0.2771,0.2329,0.3263,0.4314,6.2,0.0114
+Sea of Stars,Under 2 h,not recommended,151,135,0.894,0.8348,0.9337,0.053,0.0,0.0
+Sea of Stars,2–10 h,recommended,2091,262,0.1253,0.1118,0.1402,0.6059,17.8,0.0134
+Sea of Stars,2–10 h,not recommended,440,317,0.7205,0.6768,0.7603,0.1114,0.0,0.0023
+Sea of Stars,10–50 h,recommended,6100,2480,0.4066,0.3943,0.4189,0.3731,3.9,0.0085
+Sea of Stars,10–50 h,not recommended,787,624,0.7929,0.7632,0.8197,0.094,0.0,0.0
+Sea of Stars,50–200 h,recommended,1929,1073,0.5562,0.534,0.5783,0.2696,0.2,0.0145
+Sea of Stars,50–200 h,not recommended,85,68,0.8,0.7028,0.8712,0.0706,0.0,0.0118
+Sea of Stars,200 h+,recommended,17,,,,,,,
+Sea of Stars,200 h+,not recommended,1,,,,,,,
+Frostpunk,Under 2 h,recommended,2816,1142,0.4055,0.3875,0.4238,0.2969,2.4,0.0138
+Frostpunk,Under 2 h,not recommended,1589,1077,0.6778,0.6544,0.7003,0.1617,0.0,0.0025
+Frostpunk,2–10 h,recommended,27243,5486,0.2014,0.1967,0.2062,0.4625,8.6,0.0163
+Frostpunk,2–10 h,not recommended,2759,1361,0.4933,0.4747,0.5119,0.2447,1.1,0.0062
+Frostpunk,10–50 h,recommended,57188,9846,0.1722,0.1691,0.1753,0.594,15.1,0.0211
+Frostpunk,10–50 h,not recommended,3241,1173,0.3619,0.3456,0.3786,0.4125,5.7,0.0099
+Frostpunk,50–200 h,recommended,15689,2088,0.1331,0.1279,0.1385,0.7366,35.8,0.0505
+Frostpunk,50–200 h,not recommended,566,119,0.2102,0.1787,0.2457,0.6343,23.6,0.0353
+Frostpunk,200 h+,recommended,2107,219,0.1039,0.0916,0.1177,0.8253,88.5,0.1372
+Frostpunk,200 h+,not recommended,77,10,0.1299,0.0721,0.2228,0.7922,50.6,0.1169
+Split Fiction,Under 2 h,recommended,1274,178,0.1397,0.1218,0.1598,0.6782,14.5,0.0235
+Split Fiction,Under 2 h,not recommended,238,173,0.7269,0.667,0.7796,0.1681,0.0,0.0042
+Split Fiction,2–10 h,recommended,17598,919,0.0522,0.049,0.0556,0.6363,12.4,0.0185
+Split Fiction,2–10 h,not recommended,710,292,0.4113,0.3756,0.4478,0.3056,3.5,0.0141
+Split Fiction,10–50 h,recommended,54936,29520,0.5374,0.5332,0.5415,0.213,0.4,0.0151
+Split Fiction,10–50 h,not recommended,1167,778,0.6667,0.6391,0.6931,0.1028,0.0,0.0103
+Split Fiction,50–200 h,recommended,436,146,0.3349,0.2922,0.3804,0.422,5.8,0.0642
+Split Fiction,50–200 h,not recommended,4,,,,,,,
+Split Fiction,200 h+,recommended,36,1,0.0278,0.0049,0.1417,0.9167,274.8,0.3333
+Split Fiction,200 h+,not recommended,2,,,,,,,
+All 30 games,Under 2 h,recommended,45258,10385,0.2295,0.2256,0.2334,0.5333,12.0,0.0334
+All 30 games,Under 2 h,not recommended,53638,32964,0.6146,0.6104,0.6187,0.2458,0.0,0.0187
+All 30 games,2–10 h,recommended,318159,35108,0.1103,0.1093,0.1114,0.6413,18.1,0.0377
+All 30 games,2–10 h,not recommended,88494,36248,0.4096,0.4064,0.4129,0.3875,3.5,0.0226
+All 30 games,10–50 h,recommended,725188,160139,0.2208,0.2199,0.2218,0.5824,15.8,0.0399
+All 30 games,10–50 h,not recommended,131628,51877,0.3941,0.3915,0.3968,0.4228,4.8,0.0313
+All 30 games,50–200 h,recommended,342780,75962,0.2216,0.2202,0.223,0.6345,25.2,0.0775
+All 30 games,50–200 h,not recommended,96227,33801,0.3513,0.3483,0.3543,0.4833,8.6,0.0606
+All 30 games,200 h+,recommended,50547,6083,0.1203,0.1175,0.1232,0.7969,86.8,0.2492
+All 30 games,200 h+,not recommended,23174,4461,0.1925,0.1875,0.1976,0.6992,53.4,0.1905

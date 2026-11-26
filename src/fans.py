@@ -30,7 +30,7 @@ def timing(h):
 
 
 def summarize(df):
-    m = df[df.days_since_review >= MATURE_DAYS]
+    m = df[(df.days_since_review >= MATURE_DAYS) & df.hours_at_review.notna()]   # a few old reviews (Frostpunk, 2018) have no playtime at review
     pos, neg = m[m.voted_up], m[~m.voted_up]
     total = pos.hours_at_review + pos.hours_after_review
     position = (pos.hours_at_review / total.where(total > 0)).clip(0, 1)

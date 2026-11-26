@@ -20,6 +20,11 @@ Snapshot: 2026-11-24 (UTC). All data is public Steam data.
 | `docs/data/after_review.json`, `data/public/after_review_by_hours.csv` | Yes | Behaviour after the review for all reviews, recommended and not recommended, by game and by hours played at review (written by `src/after_review.py`; no text, no IDs). |
 | `docs/data/fans.json`, `data/public/fans_review_timing.csv` | Yes | When recommended reviews are written: hours played at review, and the point in the reviewer's whole playtime, by game and by total hours played (written by `src/fans.py`; no text, no IDs). |
 | `data/public/*.csv` | Yes | Same numbers as flat tables. |
+| `data/public/expansion_check.csv` | Yes | Every expansion candidate from `src/games.py`: Steam's own name, free or paid, lifetime review count, score, and kept / skipped / spare with the reason (written by `src/expand.py`). |
+| `data/public/expansion_games.json` | Yes | The 24 kept expansion games: app ID, slug, name, genre, start month, Steam review total and score at the check. |
+| `data/public/expansion_fetch.csv` | Yes | Per expansion game: unique reviews fetched, Steam lifetime total, coverage (fetched / total), whether every month finished, any error. |
+| `docs/data/after_review_all.json`, `data/public/after_review_by_hours_all.csv` | Yes | Same fields as `after_review.json` and its CSV, for all 30 games (six studied + 24 expansion) and pooled (`after_review.py --all`; no text, no IDs). |
+| `docs/data/fans_all.json`, `data/public/fans_review_timing_all.csv` | Yes | Same fields as `fans.json` and its CSV, for all 30 games and pooled (`fans.py --all`; no text, no IDs). |
 
 ## Row counts by stage
 
@@ -34,6 +39,40 @@ Snapshot: 2026-11-24 (UTC). All data is public Steam data.
 | **Total** | 563,675 | 551,315 | 551,228 | 311,106 | 240,122 | 246,612 | 233,580 | 232,712 |
 
 Source: `data/public/pipeline_row_counts.csv`.
+
+## Row counts, 24 expansion games
+
+Free numbers only: fetched and cleaned, never sent to a model. Snapshot: 2026-11-26 (UTC).
+
+| Game | Steam lifetime summary | API listing | Fetched, unique | English | Other languages | Negative | Coverage |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Disco Elysium | 119,627 | 116,978 | 116,972 | 57,344 | 59,628 | 8,574 | 97.8% |
+| Against the Storm | 33,813 | 33,180 | 33,178 | 19,005 | 14,173 | 1,722 | 98.1% |
+| DAVE THE DIVER | 145,577 | 141,839 | 141,832 | 50,707 | 91,125 | 4,735 | 97.4% |
+| Lies of P | 59,915 | 57,708 | 57,697 | 27,735 | 29,962 | 4,822 | 96.3% |
+| ARMORED CORE VI FIRES OF RUBICON | 67,482 | 66,583 | 66,581 | 40,746 | 25,835 | 5,642 | 98.7% |
+| Hi-Fi RUSH | 27,644 | 27,331 | 27,323 | 16,188 | 11,135 | 753 | 98.8% |
+| DREDGE | 48,742 | 47,093 | 47,091 | 32,242 | 14,849 | 1,966 | 96.6% |
+| Manor Lords | 78,735 | 76,288 | 76,284 | 40,140 | 36,144 | 11,623 | 96.9% |
+| Kingdom Come: Deliverance II | 149,428 | 142,715 | 142,708 | 67,012 | 75,696 | 9,088 | 95.5% |
+| Cult of the Lamb | 114,482 | 110,797 | 110,784 | 60,226 | 50,558 | 4,628 | 96.8% |
+| Persona 3 Reload | 46,357 | 42,731 | 42,728 | 23,075 | 19,653 | 2,125 | 92.2% |
+| Frostpunk 2 | 21,324 | 20,875 | 20,873 | 9,660 | 11,213 | 5,360 | 97.9% |
+| Dragon Age: The Veilguard | 41,709 | 41,124 | 41,122 | 29,073 | 12,049 | 13,244 | 98.6% |
+| Kerbal Space Program 2 | 28,037 | 27,714 | 27,712 | 22,187 | 5,525 | 20,492 | 98.8% |
+| Suicide Squad: Kill the Justice League | 12,883 | 12,603 | 12,601 | 7,680 | 4,921 | 4,927 | 97.8% |
+| Homeworld 3 | 5,472 | 5,425 | 5,425 | 3,154 | 2,271 | 3,344 | 99.1% |
+| S.T.A.L.K.E.R. 2: Heart of Chornobyl | 110,564 | 106,317 | 106,305 | 43,932 | 62,373 | 19,864 | 96.1% |
+| Forspoken | 5,421 | 5,386 | 5,386 | 3,192 | 2,194 | 1,901 | 99.4% |
+| Avowed | 12,882 | 12,387 | 12,386 | 9,579 | 2,807 | 2,882 | 96.1% |
+| Darkest Dungeon II | 24,695 | 23,876 | 23,872 | 11,895 | 11,977 | 5,947 | 96.7% |
+| Pacific Drive | 21,973 | 21,117 | 21,116 | 14,025 | 7,091 | 3,519 | 96.1% |
+| Sea of Stars | 12,357 | 12,068 | 12,068 | 6,650 | 5,418 | 1,485 | 97.7% |
+| Frostpunk | 115,751 | 114,103 | 114,095 | 38,985 | 75,110 | 8,301 | 98.6% |
+| Split Fiction | 79,805 | 76,956 | 76,949 | 23,332 | 53,617 | 2,152 | 96.4% |
+| **Total** | 1,384,675 | 1,343,194 | 1,343,088 | 657,764 | 685,324 | 149,096 | 97.0% |
+
+Coverage = fetched, unique / Steam lifetime summary. Source: `data/public/expansion_fetch.csv`, `data/raw/<appid>/state.json`.
 
 ## Columns of `reviews_<appid>.parquet` (local)
 
@@ -87,6 +126,8 @@ Quirk: total hours is as of the snapshot, so for players who are still playing t
 - **Endpoint.** The old `store.steampowered.com/appreviews/<appid>?json=1` address now redirects to the store home page. Steam's documentation points to `api.steampowered.com/IUserReviewsService/GetAppReviews/v1/`, which is what the fetcher uses.
 - **Default window.** Without a date range the new endpoint returns only about the last 30 days. A date range with a *future* end date is silently ignored. The fetcher therefore walks one calendar month at a time, ending at the snapshot time.
 - **Coverage gap of 1.0%–3.8%.** Steam's lifetime summary count is higher than what the month-by-month listing returns. The listing itself was fetched almost completely (1–6 reviews short per game). The cause of the gap is not documented.
+- **Expansion coverage of 92.2%–99.4%.** Same cause as above: for all 24 games the month-by-month listing was fetched almost completely (0–13 reviews short per game) and every game has an empty month before its first review, so the start months are not too late. 11 games fall under 97%; Persona 3 Reload is lowest at 92.2%.
+- **Missing playtime at review.** 23 Frostpunk reviews from 2018 have no `pt_review`. `after_review.py` and `fans.py` leave out reviews without it. No other game has any.
 - **`steam_purchase` is True on every row**, even with `purchase_type=all`, so Steam-key purchases cannot be separated.
 - **Free-to-play games** returned implausibly small totals from this endpoint (for example about 1,000 for a game with a very large player base), so they were left out.
 - **`pt_review` and edits.** It is not documented whether editing a review refreshes `pt_review`. Reports show the walk-away rate with and without edited reviews.

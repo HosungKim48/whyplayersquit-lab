@@ -1,0 +1,31 @@
+appid,expected_name,steam_name,is_free,total_reviews,score,decision,reason
+632470,Disco Elysium,Disco Elysium - The Final Cut,False,119627,Very Positive,keep,
+1336490,Against the Storm,Against the Storm,False,33813,Very Positive,keep,
+1868140,DAVE THE DIVER,DAVE THE DIVER,False,145577,Overwhelmingly Positive,keep,
+1627720,Lies of P,Lies of P,False,59915,Very Positive,keep,
+1888160,ARMORED CORE VI FIRES OF RUBICON,ARMORED CORE™ VI FIRES OF RUBICON™,False,67482,Very Positive,keep,
+1817230,Hi-Fi RUSH,Hi-Fi RUSH,False,27644,Overwhelmingly Positive,keep,
+1562430,DREDGE,DREDGE,False,48742,Overwhelmingly Positive,keep,
+1363080,Manor Lords,Manor Lords,False,78735,Very Positive,keep,
+1771300,Kingdom Come: Deliverance II,Kingdom Come: Deliverance II,False,149428,Very Positive,keep,
+1313140,Cult of the Lamb,Cult of the Lamb,False,114482,Overwhelmingly Positive,keep,
+2183900,"Warhammer 40,000: Space Marine 2","Warhammer 40,000: Space Marine 2",False,176266,Very Positive,skip,"more than 150,000 reviews"
+2161700,Persona 3 Reload,Persona 3 Reload,False,46357,Overwhelmingly Positive,keep,
+1601580,Frostpunk 2,Frostpunk 2,False,21324,Mostly Positive,keep,
+1845910,Dragon Age: The Veilguard,Dragon Age™: The Veilguard,False,41709,Mixed,keep,
+954850,Kerbal Space Program 2,Kerbal Space Program 2,False,28037,Mostly Negative,keep,
+1294810,Redfall,Redfall,False,2464,Mixed,skip,"fewer than 5,000 reviews"
+315210,Suicide Squad: Kill the Justice League,Suicide Squad: Kill the Justice League,False,12883,Mixed,keep,
+1840080,Homeworld 3,Homeworld 3,False,5472,Mostly Negative,keep,
+1937780,Total War: PHARAOH,Total War: PHARAOH,False,3644,Mixed,skip,"fewer than 5,000 reviews"
+1643320,S.T.A.L.K.E.R. 2: Heart of Chornobyl,S.T.A.L.K.E.R. 2: Heart of Chornobyl,False,110564,Very Positive,keep,
+1680880,Forspoken,Forspoken,False,5421,Mixed,keep,
+2457220,Avowed,Avowed,False,12882,Mostly Positive,keep,
+1940340,Darkest Dungeon II,Darkest Dungeon® II,False,24695,Mostly Positive,keep,
+2853730,Skull and Bones,Skull and Bones,False,4749,Mixed,skip,"fewer than 5,000 reviews"
+1458140,Pacific Drive,Pacific Drive,False,21973,Very Positive,keep,
+1244090,Sea of Stars,Sea of Stars: Sunset Edition,False,12357,Very Positive,keep,
+323190,Frostpunk,Frostpunk,False,115751,Very Positive,keep,
+2001120,Split Fiction,Split Fiction,False,79805,Overwhelmingly Positive,keep,
+534380,Dying Light 2,Dying Light 2 Stay Human: Reloaded Edition,False,167278,Mostly Positive,skip,"more than 150,000 reviews"
+646570,Slay the Spire,Slay the Spire,False,195199,Overwhelmingly Positive,skip,"more than 150,000 reviews"

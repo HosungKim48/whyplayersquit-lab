@@ -1,0 +1,218 @@
+[
+ {
+  "appid": 632470,
+  "slug": "disco-elysium",
+  "name": "Disco Elysium",
+  "genre": "Narrative RPG",
+  "release": "2019-09-01",
+  "steam_total_reviews": 119627,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1336490,
+  "slug": "against-the-storm",
+  "name": "Against the Storm",
+  "genre": "Roguelite city builder",
+  "release": "2022-09-01",
+  "steam_total_reviews": 33813,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1868140,
+  "slug": "dave-the-diver",
+  "name": "DAVE THE DIVER",
+  "genre": "Adventure / management",
+  "release": "2022-09-01",
+  "steam_total_reviews": 145577,
+  "steam_score": "Overwhelmingly Positive"
+ },
+ {
+  "appid": 1627720,
+  "slug": "lies-of-p",
+  "name": "Lies of P",
+  "genre": "Soulslike action RPG",
+  "release": "2023-08-01",
+  "steam_total_reviews": 59915,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1888160,
+  "slug": "armored-core-vi",
+  "name": "ARMORED CORE VI FIRES OF RUBICON",
+  "genre": "Mech action",
+  "release": "2023-07-01",
+  "steam_total_reviews": 67482,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1817230,
+  "slug": "hi-fi-rush",
+  "name": "Hi-Fi RUSH",
+  "genre": "Rhythm action",
+  "release": "2022-12-01",
+  "steam_total_reviews": 27644,
+  "steam_score": "Overwhelmingly Positive"
+ },
+ {
+  "appid": 1562430,
+  "slug": "dredge",
+  "name": "DREDGE",
+  "genre": "Fishing adventure",
+  "release": "2023-02-01",
+  "steam_total_reviews": 48742,
+  "steam_score": "Overwhelmingly Positive"
+ },
+ {
+  "appid": 1363080,
+  "slug": "manor-lords",
+  "name": "Manor Lords",
+  "genre": "City builder / strategy",
+  "release": "2024-03-01",
+  "steam_total_reviews": 78735,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1771300,
+  "slug": "kingdom-come-deliverance-ii",
+  "name": "Kingdom Come: Deliverance II",
+  "genre": "Open-world RPG",
+  "release": "2025-01-01",
+  "steam_total_reviews": 149428,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1313140,
+  "slug": "cult-of-the-lamb",
+  "name": "Cult of the Lamb",
+  "genre": "Roguelite / management",
+  "release": "2022-07-01",
+  "steam_total_reviews": 114482,
+  "steam_score": "Overwhelmingly Positive"
+ },
+ {
+  "appid": 2161700,
+  "slug": "persona-3-reload",
+  "name": "Persona 3 Reload",
+  "genre": "JRPG",
+  "release": "2024-01-01",
+  "steam_total_reviews": 46357,
+  "steam_score": "Overwhelmingly Positive"
+ },
+ {
+  "appid": 1601580,
+  "slug": "frostpunk-2",
+  "name": "Frostpunk 2",
+  "genre": "City builder / survival",
+  "release": "2024-08-01",
+  "steam_total_reviews": 21324,
+  "steam_score": "Mostly Positive"
+ },
+ {
+  "appid": 1845910,
+  "slug": "dragon-age-the-veilguard",
+  "name": "Dragon Age: The Veilguard",
+  "genre": "Action RPG",
+  "release": "2024-09-01",
+  "steam_total_reviews": 41709,
+  "steam_score": "Mixed"
+ },
+ {
+  "appid": 954850,
+  "slug": "kerbal-space-program-2",
+  "name": "Kerbal Space Program 2",
+  "genre": "Space simulation",
+  "release": "2023-01-01",
+  "steam_total_reviews": 28037,
+  "steam_score": "Mostly Negative"
+ },
+ {
+  "appid": 315210,
+  "slug": "suicide-squad-kill-the-justice-league",
+  "name": "Suicide Squad: Kill the Justice League",
+  "genre": "Co-op shooter (live service)",
+  "release": "2024-01-01",
+  "steam_total_reviews": 12883,
+  "steam_score": "Mixed"
+ },
+ {
+  "appid": 1840080,
+  "slug": "homeworld-3",
+  "name": "Homeworld 3",
+  "genre": "Real-time strategy",
+  "release": "2024-04-01",
+  "steam_total_reviews": 5472,
+  "steam_score": "Mostly Negative"
+ },
+ {
+  "appid": 1643320,
+  "slug": "stalker-2",
+  "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+  "genre": "Open-world shooter",
+  "release": "2024-10-01",
+  "steam_total_reviews": 110564,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1680880,
+  "slug": "forspoken",
+  "name": "Forspoken",
+  "genre": "Action RPG",
+  "release": "2022-12-01",
+  "steam_total_reviews": 5421,
+  "steam_score": "Mixed"
+ },
+ {
+  "appid": 2457220,
+  "slug": "avowed",
+  "name": "Avowed",
+  "genre": "First-person RPG",
+  "release": "2025-01-01",
+  "steam_total_reviews": 12882,
+  "steam_score": "Mostly Positive"
+ },
+ {
+  "appid": 1940340,
+  "slug": "darkest-dungeon-ii",
+  "name": "Darkest Dungeon II",
+  "genre": "Roguelite RPG",
+  "release": "2023-04-01",
+  "steam_total_reviews": 24695,
+  "steam_score": "Mostly Positive"
+ },
+ {
+  "appid": 1458140,
+  "slug": "pacific-drive",
+  "name": "Pacific Drive",
+  "genre": "Driving survival",
+  "release": "2024-01-01",
+  "steam_total_reviews": 21973,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 1244090,
+  "slug": "sea-of-stars",
+  "name": "Sea of Stars",
+  "genre": "Turn-based RPG",
+  "release": "2023-07-01",
+  "steam_total_reviews": 12357,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 323190,
+  "slug": "frostpunk",
+  "name": "Frostpunk",
+  "genre": "City builder / survival",
+  "release": "2018-03-01",
+  "steam_total_reviews": 115751,
+  "steam_score": "Very Positive"
+ },
+ {
+  "appid": 2001120,
+  "slug": "split-fiction",
+  "name": "Split Fiction",
+  "genre": "Co-op adventure",
+  "release": "2025-02-01",
+  "steam_total_reviews": 79805,
+  "steam_score": "Overwhelmingly Positive"
+ }
+]
