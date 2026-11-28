@@ -1,0 +1,2403 @@
+{
+ "families": [
+  "Shooters",
+  "RPGs",
+  "Strategy, builders & management",
+  "Action & adventure"
+ ],
+ "measures": [
+  {
+   "key": "negative_share",
+   "label": "Negative reviews",
+   "meaning": "share of all reviews that are not recommended"
+  },
+  {
+   "key": "critics_stopped",
+   "label": "Critics who stopped",
+   "meaning": "not-recommended reviewers who logged under 1 more hour"
+  },
+  {
+   "key": "fans_stopped",
+   "label": "Fans who stopped",
+   "meaning": "recommended reviewers who logged under 1 more hour"
+  },
+  {
+   "key": "fans_kept_10h",
+   "label": "Fans who played 10+ more hours",
+   "meaning": "recommended reviewers who logged 10 or more hours after reviewing"
+  },
+  {
+   "key": "fan_review_hours",
+   "label": "Hours played when fans review",
+   "meaning": "median hours played when a recommended review was written"
+  }
+ ],
+ "games": [
+  {
+   "slug": "civilization-vii",
+   "name": "Sid Meier's Civilization VII",
+   "genre": "4X strategy",
+   "family": "Strategy, builders & management",
+   "reviews": 44063,
+   "peers": [
+    "Cities: Skylines II",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.5132,
+     "rank": 27,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1524,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.3571,
+     "rank": 4,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5739,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0421,
+     "rank": 1,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1788,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.8527,
+     "rank": 28,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.5779,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 24.3,
+     "rank": 15,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 16.1,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "name": "Cities: Skylines II",
+   "genre": "City builder",
+   "family": "Strategy, builders & management",
+   "reviews": 64710,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.4373,
+     "rank": 25,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1524,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.2375,
+     "rank": 1,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5739,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0423,
+     "rank": 3,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1788,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.8572,
+     "rank": 29,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.5779,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 24.3,
+     "rank": 15,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 16.1,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "payday-3",
+   "name": "PAYDAY 3",
+   "genre": "Co-op shooter (live service)",
+   "family": "Shooters",
+   "reviews": 50359,
+   "peers": [
+    "Suicide Squad: Kill the Justice League",
+    "S.T.A.L.K.E.R. 2: Heart of Chornobyl"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.5293,
+     "rank": 28,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.289,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.3165,
+     "rank": 3,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5111,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0866,
+     "rank": 5,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1483,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.6817,
+     "rank": 21,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.6314,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 16.4,
+     "rank": 11,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 19.35,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "name": "Dragon's Dogma 2",
+   "genre": "Action RPG",
+   "family": "RPGs",
+   "reviews": 77177,
+   "peers": [
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.3608,
+     "rank": 22,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1779,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.3771,
+     "rank": 6,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5732,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0969,
+     "rank": 8,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2436,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.7764,
+     "rank": 25,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.576,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 25.3,
+     "rank": 17,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 32.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "name": "Monster Hunter Wilds",
+   "genre": "Action / co-op hunting",
+   "family": "Action & adventure",
+   "reviews": 200364,
+   "peers": [
+    "ARMORED CORE VI FIRES OF RUBICON",
+    "Hi-Fi RUSH",
+    "DREDGE",
+    "Pacific Drive",
+    "Split Fiction"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.4691,
+     "rank": 26,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.0417,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.2434,
+     "rank": 2,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.7263,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0422,
+     "rank": 2,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.3977,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.8645,
+     "rank": 30,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.3229,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 37.0,
+     "rank": 26,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 14.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "starfield",
+   "name": "Starfield",
+   "genre": "Single-player RPG",
+   "family": "RPGs",
+   "reviews": 114555,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.4121,
+     "rank": 24,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1779,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.484,
+     "rank": 12,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5732,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0728,
+     "rank": 4,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2436,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.825,
+     "rank": 27,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.576,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 47.7,
+     "rank": 28,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 29.75,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "disco-elysium",
+   "name": "Disco Elysium",
+   "genre": "Narrative RPG",
+   "family": "RPGs",
+   "reviews": 116972,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0733,
+     "rank": 10,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2409,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.6593,
+     "rank": 23,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.4929,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.3737,
+     "rank": 27,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2322,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.3965,
+     "rank": 5,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.599,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 27.3,
+     "rank": 21,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 32.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "against-the-storm",
+   "name": "Against the Storm",
+   "genre": "Roguelite city builder",
+   "family": "Strategy, builders & management",
+   "reviews": 33178,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0519,
+     "rank": 7,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2568,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.6421,
+     "rank": 19,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5563,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0931,
+     "rank": 7,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1788,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.7619,
+     "rank": 24,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.5779,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 34.7,
+     "rank": 25,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 16.1,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "dave-the-diver",
+   "name": "DAVE THE DIVER",
+   "genre": "Adventure / management",
+   "family": "Strategy, builders & management",
+   "reviews": 141832,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "Against the Storm",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0334,
+     "rank": 3,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2568,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.5563,
+     "rank": 15,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5739,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2074,
+     "rank": 17,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1133,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.5603,
+     "rank": 14,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.6294,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 19.1,
+     "rank": 13,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 16.1,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "lies-of-p",
+   "name": "Lies of P",
+   "genre": "Soulslike action RPG",
+   "family": "RPGs",
+   "reviews": 57697,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0836,
+     "rank": 11,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2409,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.4841,
+     "rank": 13,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5732,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2293,
+     "rank": 19,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2436,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.5926,
+     "rank": 16,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.5825,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 32.5,
+     "rank": 24,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 29.75,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "armored-core-vi",
+   "name": "ARMORED CORE VI FIRES OF RUBICON",
+   "genre": "Mech action",
+   "family": "Action & adventure",
+   "reviews": 66581,
+   "peers": [
+    "Monster Hunter Wilds",
+    "Hi-Fi RUSH",
+    "DREDGE",
+    "Pacific Drive",
+    "Split Fiction"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0847,
+     "rank": 12,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.0417,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.3998,
+     "rank": 8,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.7263,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.16,
+     "rank": 12,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.3977,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.6304,
+     "rank": 19,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.3229,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 27.1,
+     "rank": 20,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 14.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "hi-fi-rush",
+   "name": "Hi-Fi RUSH",
+   "genre": "Rhythm action",
+   "family": "Action & adventure",
+   "reviews": 27323,
+   "peers": [
+    "Monster Hunter Wilds",
+    "ARMORED CORE VI FIRES OF RUBICON",
+    "DREDGE",
+    "Pacific Drive",
+    "Split Fiction"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0276,
+     "rank": 1,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.0847,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.754,
+     "rank": 28,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.586,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.3977,
+     "rank": 28,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2954,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.2368,
+     "rank": 1,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.4577,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 11.2,
+     "rank": 3,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 22.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "dredge",
+   "name": "DREDGE",
+   "genre": "Fishing adventure",
+   "family": "Action & adventure",
+   "reviews": 47091,
+   "peers": [
+    "Monster Hunter Wilds",
+    "ARMORED CORE VI FIRES OF RUBICON",
+    "Hi-Fi RUSH",
+    "Pacific Drive",
+    "Split Fiction"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0417,
+     "rank": 4,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.0847,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.808,
+     "rank": 30,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.586,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.42,
+     "rank": 30,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2954,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.2524,
+     "rank": 2,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.4577,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 13.5,
+     "rank": 5,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 22.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "manor-lords",
+   "name": "Manor Lords",
+   "genre": "City builder / strategy",
+   "family": "Strategy, builders & management",
+   "reviews": 76284,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.1524,
+     "rank": 14,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2568,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.4299,
+     "rank": 9,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5739,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.1084,
+     "rank": 10,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1788,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.6642,
+     "rank": 20,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.5779,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 14.2,
+     "rank": 6,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 17.4,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "name": "Kingdom Come: Deliverance II",
+   "genre": "Open-world RPG",
+   "family": "RPGs",
+   "reviews": 142708,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0637,
+     "rank": 8,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2409,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.3834,
+     "rank": 7,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5732,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.1785,
+     "rank": 13,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2436,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.7076,
+     "rank": 22,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.576,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 68.3,
+     "rank": 30,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 29.75,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "name": "Cult of the Lamb",
+   "genre": "Roguelite / management",
+   "family": "Strategy, builders & management",
+   "reviews": 110784,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0418,
+     "rank": 5,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2568,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.5739,
+     "rank": 16,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5563,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.199,
+     "rank": 16,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1133,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.5285,
+     "rank": 10,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.6294,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 16.0,
+     "rank": 9,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 17.4,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "persona-3-reload",
+   "name": "Persona 3 Reload",
+   "genre": "JRPG",
+   "family": "RPGs",
+   "reviews": 42728,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0497,
+     "rank": 6,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2409,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.5017,
+     "rank": 14,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5643,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2861,
+     "rank": 22,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2322,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.5595,
+     "rank": 13,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.599,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 62.0,
+     "rank": 29,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 29.75,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "frostpunk-2",
+   "name": "Frostpunk 2",
+   "genre": "City builder / survival",
+   "family": "Strategy, builders & management",
+   "reviews": 20873,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Kerbal Space Program 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.2568,
+     "rank": 19,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1524,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.5767,
+     "rank": 17,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5563,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.1938,
+     "rank": 15,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1133,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.5548,
+     "rank": 12,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.6294,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 16.1,
+     "rank": 10,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 17.4,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "dragon-age-the-veilguard",
+   "name": "Dragon Age: The Veilguard",
+   "genre": "Action RPG",
+   "family": "RPGs",
+   "reviews": 41122,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.3221,
+     "rank": 20,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1779,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.6446,
+     "rank": 20,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.4929,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2521,
+     "rank": 21,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2322,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.6054,
+     "rank": 17,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.576,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 46.4,
+     "rank": 27,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 29.75,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "kerbal-space-program-2",
+   "name": "Kerbal Space Program 2",
+   "genre": "Space simulation",
+   "family": "Strategy, builders & management",
+   "reviews": 27712,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Homeworld 3",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.7395,
+     "rank": 30,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1524,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.669,
+     "rank": 25,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5563,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.1133,
+     "rank": 11,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1788,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.6294,
+     "rank": 18,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.5779,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 7.7,
+     "rank": 1,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 17.4,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "suicide-squad-kill-the-justice-league",
+   "name": "Suicide Squad: Kill the Justice League",
+   "genre": "Co-op shooter (live service)",
+   "family": "Shooters",
+   "reviews": 12601,
+   "peers": [
+    "PAYDAY 3",
+    "S.T.A.L.K.E.R. 2: Heart of Chornobyl"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.391,
+     "rank": 23,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.3581,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.653,
+     "rank": 22,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.3428,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2084,
+     "rank": 18,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.0874,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.4764,
+     "rank": 8,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.734,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 13.0,
+     "rank": 4,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 21.05,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "homeworld-3",
+   "name": "Homeworld 3",
+   "genre": "Real-time strategy",
+   "family": "Strategy, builders & management",
+   "reviews": 5425,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Frostpunk"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.6164,
+     "rank": 29,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1524,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.6485,
+     "rank": 21,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5563,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2866,
+     "rank": 23,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1133,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.302,
+     "rank": 3,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.6294,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 9.6,
+     "rank": 2,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 17.4,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "stalker-2",
+   "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "genre": "Open-world shooter",
+   "family": "Shooters",
+   "reviews": 106305,
+   "peers": [
+    "PAYDAY 3",
+    "Suicide Squad: Kill the Justice League"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.1869,
+     "rank": 16,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.4602,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.3691,
+     "rank": 5,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.4848,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0882,
+     "rank": 6,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1475,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.7864,
+     "rank": 26,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.579,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 25.7,
+     "rank": 18,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 14.7,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "forspoken",
+   "name": "Forspoken",
+   "genre": "Action RPG",
+   "family": "RPGs",
+   "reviews": 5386,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Avowed",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.353,
+     "rank": 21,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1779,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.6617,
+     "rank": 24,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.4929,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2351,
+     "rank": 20,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2407,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.4829,
+     "rank": 9,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.599,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 14.2,
+     "rank": 6,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 32.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "avowed",
+   "name": "Avowed",
+   "genre": "First-person RPG",
+   "family": "RPGs",
+   "reviews": 12386,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Darkest Dungeon II",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.2327,
+     "rank": 17,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1861,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.674,
+     "rank": 26,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.4929,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.287,
+     "rank": 24,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2322,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.5329,
+     "rank": 11,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.599,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 26.1,
+     "rank": 19,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 32.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "name": "Darkest Dungeon II",
+   "genre": "Roguelite RPG",
+   "family": "RPGs",
+   "reviews": 23872,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Sea of Stars"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.2491,
+     "rank": 18,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.1779,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.4372,
+     "rank": 10,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5732,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.0997,
+     "rank": 9,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2436,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.7445,
+     "rank": 23,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.576,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 27.6,
+     "rank": 22,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 32.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "pacific-drive",
+   "name": "Pacific Drive",
+   "genre": "Driving survival",
+   "family": "Action & adventure",
+   "reviews": 21116,
+   "peers": [
+    "Monster Hunter Wilds",
+    "ARMORED CORE VI FIRES OF RUBICON",
+    "Hi-Fi RUSH",
+    "DREDGE",
+    "Split Fiction"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.1667,
+     "rank": 15,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.0417,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.7263,
+     "rank": 27,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.586,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.2954,
+     "rank": 25,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.3977,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.4577,
+     "rank": 7,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.3229,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 22.2,
+     "rank": 14,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 14.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "sea-of-stars",
+   "name": "Sea of Stars",
+   "genre": "Turn-based RPG",
+   "family": "RPGs",
+   "reviews": 12068,
+   "peers": [
+    "Dragon's Dogma 2",
+    "Starfield",
+    "Disco Elysium",
+    "Lies of P",
+    "Kingdom Come: Deliverance II",
+    "Persona 3 Reload",
+    "Dragon Age: The Veilguard",
+    "Forspoken",
+    "Avowed",
+    "Darkest Dungeon II"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.1231,
+     "rank": 13,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2409,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.7821,
+     "rank": 29,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.4929,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.3734,
+     "rank": 26,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2322,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.4025,
+     "rank": 6,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.599,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 31.9,
+     "rank": 23,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 30.05,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "frostpunk",
+   "name": "Frostpunk",
+   "genre": "City builder / survival",
+   "family": "Strategy, builders & management",
+   "reviews": 114095,
+   "peers": [
+    "Sid Meier's Civilization VII",
+    "Cities: Skylines II",
+    "Against the Storm",
+    "DAVE THE DIVER",
+    "Manor Lords",
+    "Cult of the Lamb",
+    "Frostpunk 2",
+    "Kerbal Space Program 2",
+    "Homeworld 3"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.0728,
+     "rank": 9,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.2568,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.4543,
+     "rank": 11,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.5739,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.1788,
+     "rank": 14,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.1133,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.5779,
+     "rank": 15,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.6294,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 17.4,
+     "rank": 12,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 16.1,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  },
+  {
+   "slug": "split-fiction",
+   "name": "Split Fiction",
+   "genre": "Co-op adventure",
+   "family": "Action & adventure",
+   "reviews": 76949,
+   "peers": [
+    "Monster Hunter Wilds",
+    "ARMORED CORE VI FIRES OF RUBICON",
+    "Hi-Fi RUSH",
+    "DREDGE",
+    "Pacific Drive"
+   ],
+   "measures": [
+    {
+     "key": "negative_share",
+     "label": "Negative reviews",
+     "meaning": "share of all reviews that are not recommended",
+     "value": 0.028,
+     "rank": 2,
+     "of": 30,
+     "all_median": 0.1768,
+     "peer_median": 0.0847,
+     "all_min": 0.0276,
+     "all_max": 0.7395
+    },
+    {
+     "key": "critics_stopped",
+     "label": "Critics who stopped",
+     "meaning": "not-recommended reviewers who logged under 1 more hour",
+     "value": 0.586,
+     "rank": 18,
+     "of": 30,
+     "all_median": 0.5651,
+     "peer_median": 0.7263,
+     "all_min": 0.2375,
+     "all_max": 0.808
+    },
+    {
+     "key": "fans_stopped",
+     "label": "Fans who stopped",
+     "meaning": "recommended reviewers who logged under 1 more hour",
+     "value": 0.4142,
+     "rank": 29,
+     "of": 30,
+     "all_median": 0.1964,
+     "peer_median": 0.2954,
+     "all_min": 0.0421,
+     "all_max": 0.42
+    },
+    {
+     "key": "fans_kept_10h",
+     "label": "Fans who played 10+ more hours",
+     "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+     "value": 0.3229,
+     "rank": 4,
+     "of": 30,
+     "all_median": 0.5853,
+     "peer_median": 0.4577,
+     "all_min": 0.2368,
+     "all_max": 0.8645
+    },
+    {
+     "key": "fan_review_hours",
+     "label": "Hours played when fans review",
+     "meaning": "median hours played when a recommended review was written",
+     "value": 14.2,
+     "rank": 6,
+     "of": 30,
+     "all_median": 24.3,
+     "peer_median": 22.2,
+     "all_min": 7.7,
+     "all_max": 68.3
+    }
+   ]
+  }
+ ]
+}

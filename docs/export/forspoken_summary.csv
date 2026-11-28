@@ -1,0 +1,41 @@
+section,group,measure,value
+benchmark,Negative reviews,value,0.353
+benchmark,Negative reviews,rank,21
+benchmark,Negative reviews,peer_median,0.1779
+benchmark,Negative reviews,all_median,0.1768
+benchmark,Critics who stopped,value,0.6617
+benchmark,Critics who stopped,rank,24
+benchmark,Critics who stopped,peer_median,0.4929
+benchmark,Critics who stopped,all_median,0.5651
+benchmark,Fans who stopped,value,0.2351
+benchmark,Fans who stopped,rank,20
+benchmark,Fans who stopped,peer_median,0.2407
+benchmark,Fans who stopped,all_median,0.1964
+benchmark,Fans who played 10+ more hours,value,0.4829
+benchmark,Fans who played 10+ more hours,rank,9
+benchmark,Fans who played 10+ more hours,peer_median,0.599
+benchmark,Fans who played 10+ more hours,all_median,0.5853
+benchmark,Hours played when fans review,value,14.2
+benchmark,Hours played when fans review,rank,6
+benchmark,Hours played when fans review,peer_median,32.2
+benchmark,Hours played when fans review,all_median,24.3
+after_review,Under 2 h / recommended,reviews,251
+after_review,Under 2 h / recommended,stopped_rate,0.2231
+after_review,Under 2 h / not recommended,reviews,664
+after_review,Under 2 h / not recommended,stopped_rate,0.7952
+after_review,2–10 h / recommended,reviews,1113
+after_review,2–10 h / recommended,stopped_rate,0.0961
+after_review,2–10 h / not recommended,reviews,633
+after_review,2–10 h / not recommended,stopped_rate,0.5656
+after_review,10–50 h / recommended,reviews,1668
+after_review,10–50 h / recommended,stopped_rate,0.2656
+after_review,10–50 h / not recommended,reviews,530
+after_review,10–50 h / not recommended,stopped_rate,0.5925
+after_review,50–200 h / recommended,reviews,439
+after_review,50–200 h / recommended,stopped_rate,0.4738
+after_review,50–200 h / not recommended,reviews,66
+after_review,50–200 h / not recommended,stopped_rate,0.7879
+after_review,200 h+ / recommended,reviews,8
+after_review,200 h+ / recommended,stopped_rate,
+after_review,200 h+ / not recommended,reviews,2
+after_review,200 h+ / not recommended,stopped_rate,

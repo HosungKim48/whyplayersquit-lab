@@ -1,0 +1,41 @@
+section,group,measure,value
+benchmark,Negative reviews,value,0.0519
+benchmark,Negative reviews,rank,7
+benchmark,Negative reviews,peer_median,0.2568
+benchmark,Negative reviews,all_median,0.1768
+benchmark,Critics who stopped,value,0.6421
+benchmark,Critics who stopped,rank,19
+benchmark,Critics who stopped,peer_median,0.5563
+benchmark,Critics who stopped,all_median,0.5651
+benchmark,Fans who stopped,value,0.0931
+benchmark,Fans who stopped,rank,7
+benchmark,Fans who stopped,peer_median,0.1788
+benchmark,Fans who stopped,all_median,0.1964
+benchmark,Fans who played 10+ more hours,value,0.7619
+benchmark,Fans who played 10+ more hours,rank,24
+benchmark,Fans who played 10+ more hours,peer_median,0.5779
+benchmark,Fans who played 10+ more hours,all_median,0.5853
+benchmark,Hours played when fans review,value,34.7
+benchmark,Hours played when fans review,rank,25
+benchmark,Hours played when fans review,peer_median,16.1
+benchmark,Hours played when fans review,all_median,24.3
+after_review,Under 2 h / recommended,reviews,576
+after_review,Under 2 h / recommended,stopped_rate,0.3299
+after_review,Under 2 h / not recommended,reviews,352
+after_review,Under 2 h / not recommended,stopped_rate,0.9176
+after_review,2–10 h / recommended,reviews,5020
+after_review,2–10 h / recommended,stopped_rate,0.095
+after_review,2–10 h / not recommended,reviews,442
+after_review,2–10 h / not recommended,stopped_rate,0.7127
+after_review,10–50 h / recommended,reviews,13356
+after_review,10–50 h / recommended,stopped_rate,0.0799
+after_review,10–50 h / not recommended,reviews,552
+after_review,10–50 h / not recommended,stopped_rate,0.5978
+after_review,50–200 h / recommended,reviews,9748
+after_review,50–200 h / recommended,stopped_rate,0.0957
+after_review,50–200 h / not recommended,reviews,289
+after_review,50–200 h / not recommended,stopped_rate,0.3979
+after_review,200 h+ / recommended,reviews,2512
+after_review,200 h+ / recommended,stopped_rate,0.0947
+after_review,200 h+ / not recommended,reviews,72
+after_review,200 h+ / not recommended,stopped_rate,0.1806

@@ -1,0 +1,63 @@
+section,group,measure,value
+benchmark,Negative reviews,value,0.5132
+benchmark,Negative reviews,rank,27
+benchmark,Negative reviews,peer_median,0.1524
+benchmark,Negative reviews,all_median,0.1768
+benchmark,Critics who stopped,value,0.3571
+benchmark,Critics who stopped,rank,4
+benchmark,Critics who stopped,peer_median,0.5739
+benchmark,Critics who stopped,all_median,0.5651
+benchmark,Fans who stopped,value,0.0421
+benchmark,Fans who stopped,rank,1
+benchmark,Fans who stopped,peer_median,0.1788
+benchmark,Fans who stopped,all_median,0.1964
+benchmark,Fans who played 10+ more hours,value,0.8527
+benchmark,Fans who played 10+ more hours,rank,28
+benchmark,Fans who played 10+ more hours,peer_median,0.5779
+benchmark,Fans who played 10+ more hours,all_median,0.5853
+benchmark,Hours played when fans review,value,24.3
+benchmark,Hours played when fans review,rank,15
+benchmark,Hours played when fans review,peer_median,16.1
+benchmark,Hours played when fans review,all_median,24.3
+after_review,Under 2 h / recommended,reviews,567
+after_review,Under 2 h / recommended,stopped_rate,0.2205
+after_review,Under 2 h / not recommended,reviews,3861
+after_review,Under 2 h / not recommended,stopped_rate,0.6478
+after_review,2–10 h / recommended,reviews,4890
+after_review,2–10 h / recommended,stopped_rate,0.0407
+after_review,2–10 h / not recommended,reviews,5382
+after_review,2–10 h / not recommended,stopped_rate,0.3692
+after_review,10–50 h / recommended,reviews,9216
+after_review,10–50 h / recommended,stopped_rate,0.0388
+after_review,10–50 h / not recommended,reviews,8219
+after_review,10–50 h / not recommended,stopped_rate,0.2948
+after_review,50–200 h / recommended,reviews,4588
+after_review,50–200 h / recommended,stopped_rate,0.0399
+after_review,50–200 h / not recommended,reviews,3696
+after_review,50–200 h / not recommended,stopped_rate,0.237
+after_review,200 h+ / recommended,reviews,1947
+after_review,200 h+ / recommended,stopped_rate,0.0144
+after_review,200 h+ / not recommended,reviews,1247
+after_review,200 h+ / not recommended,stopped_rate,0.1716
+complaints,Gameplay & design choices,share,0.331
+complaints,Gameplay & design choices,stopped_rate,0.3739
+complaints,Not enough content,share,0.1477
+complaints,Not enough content,stopped_rate,0.314
+complaints,Interface & controls,share,0.1385
+complaints,Interface & controls,stopped_rate,0.3518
+complaints,Crashes & bugs,share,0.1162
+complaints,Crashes & bugs,stopped_rate,0.2404
+complaints,No clear reason,share,0.1152
+complaints,No clear reason,stopped_rate,0.4361
+complaints,Price & monetization,share,0.0781
+complaints,Price & monetization,stopped_rate,0.3952
+complaints,"Online, accounts & DRM",share,0.0266
+complaints,"Online, accounts & DRM",stopped_rate,0.338
+complaints,Performance,share,0.018
+complaints,Performance,stopped_rate,0.3514
+complaints,Post-launch support,share,0.0129
+complaints,Post-launch support,stopped_rate,0.3309
+complaints,Off-game topics,share,0.0103
+complaints,Off-game topics,stopped_rate,0.4292
+complaints,Story & writing,share,0.0056
+complaints,Story & writing,stopped_rate,0.4237

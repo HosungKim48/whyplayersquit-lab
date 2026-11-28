@@ -8,7 +8,7 @@
 
 ![Walkthrough of the site](docs/media/walkthrough.gif)
 
-Built with an AI agent (Claude). A free, public student research project, not affiliated with Valve or any studio or publisher.
+Built with an AI agent (Claude). An independent project, not affiliated with Valve or any studio or publisher.
 
 ## What is here
 
@@ -35,6 +35,28 @@ python3 quotes.py && python3 audit_sample.py && python3 audit.py
 python3 analyze.py && python3 after_review.py && python3 fans.py && python3 cost.py && python3 build_site.py
 python3 make_media.py && python3 verify.py
 ```
+
+## The weekly run (product workflow)
+
+```
+cd src
+./run_weekly.sh            # refresh from Steam, recompute, rebuild every page, verify
+./run_weekly.sh --offline  # same, without the Steam refresh
+./run_weekly.sh --send     # also post this week's alerts to the webhooks in src/webhooks.json
+```
+
+Free: no model calls. Nothing is sent or published unless you ask.
+
+| Script | What it does |
+|---|---|
+| `refresh.py` | Fetches the newest reviews (re-opens the last two months per game). Needs a computer that can reach Steam. |
+| `monitor.py` | Reviews per week, negative share, and flagged weeks → `docs/data/weekly.json` |
+| `benchmark.py` | Each game against similar games and all games → `docs/data/benchmark.json` |
+| `alerts.py` | Discord / Slack messages for flagged weeks → `docs/data/alerts.json`; sends only with `--send` |
+| `export.py` | Static JSON API and CSV files → `docs/api/v1/`, `docs/export/` |
+| `build_product.py` | Features, pricing, dashboards, API page. Prices live in `PLANS` at the top. |
+| `digest.py` | One ready-to-send HTML email per game → `docs/digest/` |
+| `verify_product.py` | Recounts the weekly numbers from the local tables and checks every page and link |
 
 ## Adding more games
 

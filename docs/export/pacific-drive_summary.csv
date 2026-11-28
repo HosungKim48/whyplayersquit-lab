@@ -1,0 +1,41 @@
+section,group,measure,value
+benchmark,Negative reviews,value,0.1667
+benchmark,Negative reviews,rank,15
+benchmark,Negative reviews,peer_median,0.0417
+benchmark,Negative reviews,all_median,0.1768
+benchmark,Critics who stopped,value,0.7263
+benchmark,Critics who stopped,rank,27
+benchmark,Critics who stopped,peer_median,0.586
+benchmark,Critics who stopped,all_median,0.5651
+benchmark,Fans who stopped,value,0.2954
+benchmark,Fans who stopped,rank,25
+benchmark,Fans who stopped,peer_median,0.3977
+benchmark,Fans who stopped,all_median,0.1964
+benchmark,Fans who played 10+ more hours,value,0.4577
+benchmark,Fans who played 10+ more hours,rank,7
+benchmark,Fans who played 10+ more hours,peer_median,0.3229
+benchmark,Fans who played 10+ more hours,all_median,0.5853
+benchmark,Hours played when fans review,value,22.2
+benchmark,Hours played when fans review,rank,14
+benchmark,Hours played when fans review,peer_median,14.2
+benchmark,Hours played when fans review,all_median,24.3
+after_review,Under 2 h / recommended,reviews,728
+after_review,Under 2 h / recommended,stopped_rate,0.3997
+after_review,Under 2 h / not recommended,reviews,968
+after_review,Under 2 h / not recommended,stopped_rate,0.8709
+after_review,2–10 h / recommended,reviews,4330
+after_review,2–10 h / recommended,stopped_rate,0.1903
+after_review,2–10 h / not recommended,reviews,1341
+after_review,2–10 h / not recommended,stopped_rate,0.6987
+after_review,10–50 h / recommended,reviews,9518
+after_review,10–50 h / recommended,stopped_rate,0.3142
+after_review,10–50 h / not recommended,reviews,1011
+after_review,10–50 h / not recommended,stopped_rate,0.6439
+after_review,50–200 h / recommended,reviews,2752
+after_review,50–200 h / recommended,stopped_rate,0.3703
+after_review,50–200 h / not recommended,reviews,155
+after_review,50–200 h / not recommended,stopped_rate,0.6065
+after_review,200 h+ / recommended,reviews,75
+after_review,200 h+ / recommended,stopped_rate,0.2
+after_review,200 h+ / not recommended,reviews,3
+after_review,200 h+ / not recommended,stopped_rate,

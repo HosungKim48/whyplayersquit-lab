@@ -1,0 +1,984 @@
+{
+ "slug": "payday-3",
+ "name": "PAYDAY 3",
+ "genre": "Co-op shooter (live service)",
+ "steam_appid": 1272080,
+ "snapshot": "2026-11-24",
+ "reviews": 50359,
+ "negative_share": 0.5293,
+ "after_review": {
+  "recommended": {
+   "n": 22426,
+   "walked_away": 1943,
+   "walk_rate": 0.0866,
+   "walk_lo": 0.083,
+   "walk_hi": 0.0904,
+   "kept_10h_rate": 0.6817,
+   "median_hours_after": 21.8,
+   "active_now_rate": 0.1311
+  },
+  "not_recommended": {
+   "n": 26363,
+   "walked_away": 8343,
+   "walk_rate": 0.3165,
+   "walk_lo": 0.3109,
+   "walk_hi": 0.3221,
+   "kept_10h_rate": 0.4354,
+   "median_hours_after": 6.7,
+   "active_now_rate": 0.0501
+  },
+  "by_hours_at_review": [
+   {
+    "bucket": "Under 2 h",
+    "positive": {
+     "n": 1385,
+     "walked_away": 232,
+     "walk_rate": 0.1675,
+     "walk_lo": 0.1488,
+     "walk_hi": 0.1881,
+     "kept_10h_rate": 0.5986,
+     "median_hours_after": 14.6,
+     "active_now_rate": 0.0513
+    },
+    "negative": {
+     "n": 6101,
+     "walked_away": 2846,
+     "walk_rate": 0.4665,
+     "walk_lo": 0.454,
+     "walk_hi": 0.479,
+     "kept_10h_rate": 0.2945,
+     "median_hours_after": 1.5,
+     "active_now_rate": 0.0241
+    },
+    "gap": 0.299
+   },
+   {
+    "bucket": "2\u201310 h",
+    "positive": {
+     "n": 6519,
+     "walked_away": 611,
+     "walk_rate": 0.0937,
+     "walk_lo": 0.0869,
+     "walk_hi": 0.101,
+     "kept_10h_rate": 0.6164,
+     "median_hours_after": 15.7,
+     "active_now_rate": 0.0729
+    },
+    "negative": {
+     "n": 8611,
+     "walked_away": 2439,
+     "walk_rate": 0.2832,
+     "walk_lo": 0.2738,
+     "walk_hi": 0.2929,
+     "kept_10h_rate": 0.4444,
+     "median_hours_after": 7.3,
+     "active_now_rate": 0.0281
+    },
+    "gap": 0.1895
+   },
+   {
+    "bucket": "10\u201350 h",
+    "positive": {
+     "n": 10005,
+     "walked_away": 818,
+     "walk_rate": 0.0818,
+     "walk_lo": 0.0765,
+     "walk_hi": 0.0873,
+     "kept_10h_rate": 0.6957,
+     "median_hours_after": 22.9,
+     "active_now_rate": 0.1079
+    },
+    "negative": {
+     "n": 8773,
+     "walked_away": 2308,
+     "walk_rate": 0.2631,
+     "walk_lo": 0.254,
+     "walk_hi": 0.2724,
+     "kept_10h_rate": 0.5004,
+     "median_hours_after": 10.1,
+     "active_now_rate": 0.0522
+    },
+    "gap": 0.1813
+   },
+   {
+    "bucket": "50\u2013200 h",
+    "positive": {
+     "n": 3687,
+     "walked_away": 229,
+     "walk_rate": 0.0621,
+     "walk_lo": 0.0548,
+     "walk_hi": 0.0704,
+     "kept_10h_rate": 0.757,
+     "median_hours_after": 33.0,
+     "active_now_rate": 0.2468
+    },
+    "negative": {
+     "n": 2351,
+     "walked_away": 649,
+     "walk_rate": 0.2761,
+     "walk_lo": 0.2584,
+     "walk_hi": 0.2945,
+     "kept_10h_rate": 0.4823,
+     "median_hours_after": 9.1,
+     "active_now_rate": 0.1331
+    },
+    "gap": 0.214
+   },
+   {
+    "bucket": "200 h+",
+    "positive": {
+     "n": 830,
+     "walked_away": 53,
+     "walk_rate": 0.0639,
+     "walk_lo": 0.0491,
+     "walk_hi": 0.0826,
+     "kept_10h_rate": 0.8313,
+     "median_hours_after": 70.4,
+     "active_now_rate": 0.488
+    },
+    "negative": {
+     "n": 527,
+     "walked_away": 101,
+     "walk_rate": 0.1917,
+     "walk_lo": 0.1603,
+     "walk_hi": 0.2274,
+     "kept_10h_rate": 0.6281,
+     "median_hours_after": 22.4,
+     "active_now_rate": 0.3036
+    },
+    "gap": 0.1278
+   }
+  ]
+ },
+ "review_timing": {
+  "recommended": {
+   "n": 22426,
+   "p25": 6.5,
+   "median": 16.4,
+   "p75": 39.5
+  },
+  "not_recommended": {
+   "n": 26363,
+   "p25": 2.3,
+   "median": 7.9,
+   "p75": 21.9
+  }
+ },
+ "benchmark": {
+  "peer_group": "Shooters",
+  "peers": [
+   "Suicide Squad: Kill the Justice League",
+   "S.T.A.L.K.E.R. 2: Heart of Chornobyl"
+  ],
+  "measures": [
+   {
+    "key": "negative_share",
+    "label": "Negative reviews",
+    "meaning": "share of all reviews that are not recommended",
+    "value": 0.5293,
+    "rank": 28,
+    "of": 30,
+    "all_median": 0.1768,
+    "peer_median": 0.289,
+    "all_min": 0.0276,
+    "all_max": 0.7395
+   },
+   {
+    "key": "critics_stopped",
+    "label": "Critics who stopped",
+    "meaning": "not-recommended reviewers who logged under 1 more hour",
+    "value": 0.3165,
+    "rank": 3,
+    "of": 30,
+    "all_median": 0.5651,
+    "peer_median": 0.5111,
+    "all_min": 0.2375,
+    "all_max": 0.808
+   },
+   {
+    "key": "fans_stopped",
+    "label": "Fans who stopped",
+    "meaning": "recommended reviewers who logged under 1 more hour",
+    "value": 0.0866,
+    "rank": 5,
+    "of": 30,
+    "all_median": 0.1964,
+    "peer_median": 0.1483,
+    "all_min": 0.0421,
+    "all_max": 0.42
+   },
+   {
+    "key": "fans_kept_10h",
+    "label": "Fans who played 10+ more hours",
+    "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+    "value": 0.6817,
+    "rank": 21,
+    "of": 30,
+    "all_median": 0.5853,
+    "peer_median": 0.6314,
+    "all_min": 0.2368,
+    "all_max": 0.8645
+   },
+   {
+    "key": "fan_review_hours",
+    "label": "Hours played when fans review",
+    "meaning": "median hours played when a recommended review was written",
+    "value": 16.4,
+    "rank": 11,
+    "of": 30,
+    "all_median": 24.3,
+    "peer_median": 19.35,
+    "all_min": 7.7,
+    "all_max": 68.3
+   }
+  ]
+ },
+ "complaints": [
+  {
+   "code": "ONLINE",
+   "label": "Online, accounts & DRM",
+   "share": 0.3744,
+   "stopped_rate": 0.222,
+   "against_game_average": "lower"
+  },
+  {
+   "code": "OTHER",
+   "label": "No clear reason",
+   "share": 0.1648,
+   "stopped_rate": 0.3896,
+   "against_game_average": "higher"
+  },
+  {
+   "code": "CONTENT",
+   "label": "Not enough content",
+   "share": 0.1241,
+   "stopped_rate": 0.3893,
+   "against_game_average": "higher"
+  },
+  {
+   "code": "DESIGN",
+   "label": "Gameplay & design choices",
+   "share": 0.0971,
+   "stopped_rate": 0.3594,
+   "against_game_average": "higher"
+  },
+  {
+   "code": "STAB",
+   "label": "Crashes & bugs",
+   "share": 0.0843,
+   "stopped_rate": 0.2723,
+   "against_game_average": "lower"
+  },
+  {
+   "code": "MONET",
+   "label": "Price & monetization",
+   "share": 0.0703,
+   "stopped_rate": 0.4067,
+   "against_game_average": "higher"
+  },
+  {
+   "code": "SUPPORT",
+   "label": "Post-launch support",
+   "share": 0.0405,
+   "stopped_rate": 0.33,
+   "against_game_average": "similar"
+  },
+  {
+   "code": "PERF",
+   "label": "Performance",
+   "share": 0.0263,
+   "stopped_rate": 0.3602,
+   "against_game_average": "higher"
+  },
+  {
+   "code": "UI",
+   "label": "Interface & controls",
+   "share": 0.0121,
+   "stopped_rate": 0.3423,
+   "against_game_average": "similar"
+  },
+  {
+   "code": "OFFGAME",
+   "label": "Off-game topics",
+   "share": 0.0044,
+   "stopped_rate": 0.3519,
+   "against_game_average": "similar"
+  },
+  {
+   "code": "STORY",
+   "label": "Story & writing",
+   "share": 0.0017,
+   "stopped_rate": 0.4286,
+   "against_game_average": "similar"
+  }
+ ],
+ "weekly": [
+  {
+   "week": "2025-11-24",
+   "reviews": 136,
+   "negative": 33,
+   "negative_share": 0.2426,
+   "usual_reviews": 46.0,
+   "usual_negative_share": 0.4224,
+   "flags": [
+    "volume",
+    "more_positive"
+   ]
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 105,
+   "negative": 40,
+   "negative_share": 0.381,
+   "usual_reviews": 46.0,
+   "usual_negative_share": 0.3696,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 56,
+   "negative": 21,
+   "negative_share": 0.375,
+   "usual_reviews": 46.0,
+   "usual_negative_share": 0.375,
+   "flags": []
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 52,
+   "negative": 21,
+   "negative_share": 0.4038,
+   "usual_reviews": 47.0,
+   "usual_negative_share": 0.3836,
+   "flags": []
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 75,
+   "negative": 18,
+   "negative_share": 0.24,
+   "usual_reviews": 47.5,
+   "usual_negative_share": 0.3711,
+   "flags": []
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 80,
+   "negative": 31,
+   "negative_share": 0.3875,
+   "usual_reviews": 54.0,
+   "usual_negative_share": 0.3437,
+   "flags": []
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 73,
+   "negative": 31,
+   "negative_share": 0.4247,
+   "usual_reviews": 65.5,
+   "usual_negative_share": 0.3492,
+   "flags": []
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 117,
+   "negative": 58,
+   "negative_share": 0.4957,
+   "usual_reviews": 74.0,
+   "usual_negative_share": 0.3452,
+   "flags": [
+    "more_negative"
+   ]
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 82,
+   "negative": 38,
+   "negative_share": 0.4634,
+   "usual_reviews": 77.5,
+   "usual_negative_share": 0.3646,
+   "flags": []
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 50,
+   "negative": 22,
+   "negative_share": 0.44,
+   "usual_reviews": 77.5,
+   "usual_negative_share": 0.4031,
+   "flags": []
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 47,
+   "negative": 20,
+   "negative_share": 0.4255,
+   "usual_reviews": 74.0,
+   "usual_negative_share": 0.4103,
+   "flags": []
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 40,
+   "negative": 18,
+   "negative_share": 0.45,
+   "usual_reviews": 74.0,
+   "usual_negative_share": 0.4149,
+   "flags": []
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 34,
+   "negative": 11,
+   "negative_share": 0.3235,
+   "usual_reviews": 74.0,
+   "usual_negative_share": 0.4184,
+   "flags": []
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 40,
+   "negative": 16,
+   "negative_share": 0.4,
+   "usual_reviews": 61.5,
+   "usual_negative_share": 0.4379,
+   "flags": []
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 54,
+   "negative": 22,
+   "negative_share": 0.4074,
+   "usual_reviews": 48.5,
+   "usual_negative_share": 0.4431,
+   "flags": []
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 51,
+   "negative": 21,
+   "negative_share": 0.4118,
+   "usual_reviews": 48.5,
+   "usual_negative_share": 0.4418,
+   "flags": []
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 71,
+   "negative": 35,
+   "negative_share": 0.493,
+   "usual_reviews": 48.5,
+   "usual_negative_share": 0.4221,
+   "flags": []
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 93,
+   "negative": 29,
+   "negative_share": 0.3118,
+   "usual_reviews": 48.5,
+   "usual_negative_share": 0.4264,
+   "flags": []
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 52,
+   "negative": 19,
+   "negative_share": 0.3654,
+   "usual_reviews": 49.0,
+   "usual_negative_share": 0.4,
+   "flags": []
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 37,
+   "negative": 14,
+   "negative_share": 0.3784,
+   "usual_reviews": 51.5,
+   "usual_negative_share": 0.3931,
+   "flags": []
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 39,
+   "negative": 11,
+   "negative_share": 0.2821,
+   "usual_reviews": 51.5,
+   "usual_negative_share": 0.3866,
+   "flags": []
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 57,
+   "negative": 14,
+   "negative_share": 0.2456,
+   "usual_reviews": 51.5,
+   "usual_negative_share": 0.3822,
+   "flags": []
+  },
+  {
+   "week": "2026-04-27",
+   "reviews": 27,
+   "negative": 7,
+   "negative_share": 0.2593,
+   "usual_reviews": 53.0,
+   "usual_negative_share": 0.3634,
+   "flags": []
+  },
+  {
+   "week": "2026-05-04",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 51.5,
+   "usual_negative_share": 0.3513,
+   "flags": []
+  },
+  {
+   "week": "2026-05-11",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 45.5,
+   "usual_negative_share": 0.3431,
+   "flags": []
+  },
+  {
+   "week": "2026-05-18",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 38.0,
+   "usual_negative_share": 0.3082,
+   "flags": []
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 78,
+   "negative": 24,
+   "negative_share": 0.3077,
+   "usual_reviews": 32.0,
+   "usual_negative_share": 0.3066,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 112,
+   "negative": 32,
+   "negative_share": 0.2857,
+   "usual_reviews": 32.0,
+   "usual_negative_share": 0.2941,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 87,
+   "negative": 35,
+   "negative_share": 0.4023,
+   "usual_reviews": 33.0,
+   "usual_negative_share": 0.2812,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-15",
+   "reviews": 58,
+   "negative": 21,
+   "negative_share": 0.3621,
+   "usual_reviews": 42.0,
+   "usual_negative_share": 0.3102,
+   "flags": []
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 128,
+   "negative": 46,
+   "negative_share": 0.3594,
+   "usual_reviews": 42.5,
+   "usual_negative_share": 0.3287,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 173,
+   "negative": 53,
+   "negative_share": 0.3064,
+   "usual_reviews": 68.0,
+   "usual_negative_share": 0.3413,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 182,
+   "negative": 50,
+   "negative_share": 0.2747,
+   "usual_reviews": 82.5,
+   "usual_negative_share": 0.3318,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-07-13",
+   "reviews": 95,
+   "negative": 25,
+   "negative_share": 0.2632,
+   "usual_reviews": 99.5,
+   "usual_negative_share": 0.3191,
+   "flags": []
+  },
+  {
+   "week": "2026-07-20",
+   "reviews": 93,
+   "negative": 30,
+   "negative_share": 0.3226,
+   "usual_reviews": 103.5,
+   "usual_negative_share": 0.3133,
+   "flags": []
+  },
+  {
+   "week": "2026-07-27",
+   "reviews": 65,
+   "negative": 12,
+   "negative_share": 0.1846,
+   "usual_reviews": 103.5,
+   "usual_negative_share": 0.3147,
+   "flags": []
+  },
+  {
+   "week": "2026-08-03",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 94.0,
+   "usual_negative_share": 0.3087,
+   "flags": []
+  },
+  {
+   "week": "2026-08-10",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 94.0,
+   "usual_negative_share": 0.2985,
+   "flags": []
+  },
+  {
+   "week": "2026-08-17",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 94.0,
+   "usual_negative_share": 0.2935,
+   "flags": []
+  },
+  {
+   "week": "2026-08-24",
+   "reviews": 78,
+   "negative": 28,
+   "negative_share": 0.359,
+   "usual_reviews": 79.0,
+   "usual_negative_share": 0.2796,
+   "flags": []
+  },
+  {
+   "week": "2026-08-31",
+   "reviews": 141,
+   "negative": 41,
+   "negative_share": 0.2908,
+   "usual_reviews": 71.5,
+   "usual_negative_share": 0.2827,
+   "flags": []
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 144,
+   "negative": 35,
+   "negative_share": 0.2431,
+   "usual_reviews": 71.5,
+   "usual_negative_share": 0.2881,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-09-14",
+   "reviews": 94,
+   "negative": 24,
+   "negative_share": 0.2553,
+   "usual_reviews": 71.5,
+   "usual_negative_share": 0.2802,
+   "flags": []
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 169,
+   "negative": 34,
+   "negative_share": 0.2012,
+   "usual_reviews": 71.5,
+   "usual_negative_share": 0.2682,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 36,
+   "negative": 2,
+   "negative_share": 0.0556,
+   "usual_reviews": 86.0,
+   "usual_negative_share": 0.2588,
+   "flags": [
+    "more_positive"
+   ]
+  },
+  {
+   "week": "2026-10-05",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 86.0,
+   "usual_negative_share": 0.2477,
+   "flags": []
+  },
+  {
+   "week": "2026-10-12",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 86.0,
+   "usual_negative_share": 0.2477,
+   "flags": []
+  },
+  {
+   "week": "2026-10-19",
+   "reviews": 7,
+   "negative": 1,
+   "negative_share": 0.1429,
+   "usual_reviews": 86.0,
+   "usual_negative_share": 0.2477,
+   "flags": []
+  },
+  {
+   "week": "2026-10-26",
+   "reviews": 64,
+   "negative": 19,
+   "negative_share": 0.2969,
+   "usual_reviews": 65.0,
+   "usual_negative_share": 0.2318,
+   "flags": []
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 384,
+   "negative": 97,
+   "negative_share": 0.2526,
+   "usual_reviews": 50.0,
+   "usual_negative_share": 0.2237,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 743,
+   "negative": 117,
+   "negative_share": 0.1575,
+   "usual_reviews": 50.0,
+   "usual_negative_share": 0.2347,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 233,
+   "negative": 37,
+   "negative_share": 0.1588,
+   "usual_reviews": 50.0,
+   "usual_negative_share": 0.1924,
+   "flags": [
+    "volume"
+   ]
+  }
+ ],
+ "flagged_weeks": [
+  {
+   "week": "2025-11-24",
+   "reviews": 136,
+   "negative": 33,
+   "negative_share": 0.2426,
+   "usual_reviews": 46.0,
+   "usual_negative_share": 0.4224,
+   "flags": [
+    "volume",
+    "more_positive"
+   ]
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 105,
+   "negative": 40,
+   "negative_share": 0.381,
+   "usual_reviews": 46.0,
+   "usual_negative_share": 0.3696,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 117,
+   "negative": 58,
+   "negative_share": 0.4957,
+   "usual_reviews": 74.0,
+   "usual_negative_share": 0.3452,
+   "flags": [
+    "more_negative"
+   ]
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 78,
+   "negative": 24,
+   "negative_share": 0.3077,
+   "usual_reviews": 32.0,
+   "usual_negative_share": 0.3066,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 112,
+   "negative": 32,
+   "negative_share": 0.2857,
+   "usual_reviews": 32.0,
+   "usual_negative_share": 0.2941,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 87,
+   "negative": 35,
+   "negative_share": 0.4023,
+   "usual_reviews": 33.0,
+   "usual_negative_share": 0.2812,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 128,
+   "negative": 46,
+   "negative_share": 0.3594,
+   "usual_reviews": 42.5,
+   "usual_negative_share": 0.3287,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 173,
+   "negative": 53,
+   "negative_share": 0.3064,
+   "usual_reviews": 68.0,
+   "usual_negative_share": 0.3413,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 182,
+   "negative": 50,
+   "negative_share": 0.2747,
+   "usual_reviews": 82.5,
+   "usual_negative_share": 0.3318,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 144,
+   "negative": 35,
+   "negative_share": 0.2431,
+   "usual_reviews": 71.5,
+   "usual_negative_share": 0.2881,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 169,
+   "negative": 34,
+   "negative_share": 0.2012,
+   "usual_reviews": 71.5,
+   "usual_negative_share": 0.2682,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 36,
+   "negative": 2,
+   "negative_share": 0.0556,
+   "usual_reviews": 86.0,
+   "usual_negative_share": 0.2588,
+   "flags": [
+    "more_positive"
+   ]
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 384,
+   "negative": 97,
+   "negative_share": 0.2526,
+   "usual_reviews": 50.0,
+   "usual_negative_share": 0.2237,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 743,
+   "negative": 117,
+   "negative_share": 0.1575,
+   "usual_reviews": 50.0,
+   "usual_negative_share": 0.2347,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 233,
+   "negative": 37,
+   "negative_share": 0.1588,
+   "usual_reviews": 50.0,
+   "usual_negative_share": 0.1924,
+   "flags": [
+    "volume"
+   ]
+  }
+ ]
+}

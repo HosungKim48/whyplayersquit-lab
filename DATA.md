@@ -136,3 +136,26 @@ Quirk: total hours is as of the snapshot, so for players who are still playing t
 - **One review was labeled twice** (Monster Hunter Wilds). `analyze.py` keeps one label per review ID.
 - **Language is not country.** A review's language is the closest public stand-in for market, and it is imperfect.
 - **Language parameter.** The endpoint silently falls back to English unless languages are passed as an array (`languages[0]=...`).
+
+## Product workflow files (added 2026-11-27)
+
+| File | Published? | What it is |
+|---|---|---|
+| `docs/data/weekly.json`, `data/public/weekly_by_game.csv` | Yes | Per game: 52 complete weeks (Monday to Sunday, UTC) of review counts and negative share, the "usual" week (the 8 weeks before), and flags. Written by `src/monitor.py`. |
+| `docs/data/benchmark.json`, `data/public/benchmark_by_game.csv` | Yes | Per game and measure: value, rank among all games (1 = lowest), median of all games, median of the peer group. Written by `src/benchmark.py`. |
+| `docs/data/alerts.json` | Yes | Every flagged week of the last year with its ready-made message. `latest` marks the newest complete week. |
+| `docs/api/v1/index.json`, `docs/api/v1/games/<slug>.json` | Yes | Everything for one game in one file. `complaints` is `null` for games without model labels. |
+| `docs/export/<slug>_weekly.csv`, `<slug>_summary.csv` | Yes | The same numbers as CSV. Summary is long format: section, group, measure, value. |
+| `docs/digest/<slug>.html` | Yes | The weekly email, as a web page. |
+| `src/webhooks.json` | No (gitignored) | Discord / Slack webhook addresses per game slug. Does not exist until you add it. |
+| `data/work/alerts_sent.json` | No | Which (game, week) alerts were already sent, so none is sent twice. |
+
+Quirks:
+- **Flags.** `volume`: 50+ reviews and at least 2 times the median of the 8 weeks before. `more_negative` / `more_positive`: negative share 15+ points from the share of the 8 weeks before, with 30+ reviews on both sides. Thresholds are constants at the top of `monitor.py`.
+- **Weeks with under 30 reviews** have a `negative_share` but the dashboard does not draw it on the line.
+- **Peer groups** are four broad families set by keywords in the genre label (`FAMILIES` in `benchmark.py`). Shooters has only 3 games, so its peer median rests on 2.
+- **Ranks cover the games on this site only**, not Steam.
+- **After a refresh**, reviews older than about two months keep the playtime seen at an earlier snapshot. A full fetch renews them.
+- **Snapshots differ by game** (2026-11-24 for the first six, 2026-11-26 for the rest); every game's latest complete week is the week of 2026-11-16.
+
+Sample row, `weekly_by_game.csv`: `PAYDAY 3,2026-11-16,233,37,0.1588,50.0,0.1924,volume`

@@ -1,0 +1,2615 @@
+{
+ "params": {
+  "weeks": 52,
+  "base_weeks": 8,
+  "volume_times": 2.0,
+  "volume_min": 50,
+  "share_points": 0.15,
+  "share_min": 30
+ },
+ "alerts": [
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-11-16",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": true,
+   "title": "Reviews turned more positive: Cities: Skylines II",
+   "text": "Week of 2026-11-16: 210 new reviews (a usual week: 116). 20% were negative (usual: 66%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-11-16",
+   "flags": [
+    "volume"
+   ],
+   "latest": true,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-11-16: 233 new reviews (a usual week: 50). 16% were negative (usual: 19%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "game": "Kingdom Come: Deliverance II",
+   "week": "2026-11-16",
+   "flags": [
+    "volume"
+   ],
+   "latest": true,
+   "title": "Review spike: Kingdom Come: Deliverance II",
+   "text": "Week of 2026-11-16: 670 new reviews (a usual week: 286). 17% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kingdom-come-deliverance-ii.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-11-16",
+   "flags": [
+    "volume"
+   ],
+   "latest": true,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-11-16: 154 new reviews (a usual week: 62). 10% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-11-09",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Cities: Skylines II",
+   "text": "Week of 2026-11-09: 184 new reviews (a usual week: 116). 27% were negative (usual: 65%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-11-09",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-11-09: 743 new reviews (a usual week: 50). 16% were negative (usual: 23%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-11-09",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-11-09: 59 new reviews (a usual week: 24). 25% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-11-09",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-11-09: 318 new reviews (a usual week: 62). 5% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-11-02",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Cities: Skylines II",
+   "text": "Week of 2026-11-02: 125 new reviews (a usual week: 122). 22% were negative (usual: 64%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-11-02",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-11-02: 384 new reviews (a usual week: 50). 25% were negative (usual: 22%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-11-02",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-11-02: 248 new reviews (a usual week: 112). 16% were negative (usual: 19%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "dredge",
+   "game": "DREDGE",
+   "week": "2026-11-02",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DREDGE",
+   "text": "Week of 2026-11-02: 142 new reviews (a usual week: 64). 4% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dredge.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-11-02",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-11-02: 74 new reviews (a usual week: 21). 26% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2026-11-02",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Darkest Dungeon II",
+   "text": "Week of 2026-11-02: 31 new reviews (a usual week: 17). 13% were negative (usual: 31%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-11-02",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-11-02: 66 new reviews (a usual week: 26). 23% were negative (usual: 17%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-11-02",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-11-02: 184 new reviews (a usual week: 60). 10% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-10-26",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Cities: Skylines II",
+   "text": "Week of 2026-10-26: 137 new reviews (a usual week: 128). 24% were negative (usual: 64%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-10-26",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-10-26: 327 new reviews (a usual week: 112). 17% were negative (usual: 23%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-10-26",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-10-26: 51 new reviews (a usual week: 26). 18% were negative (usual: 18%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-09-28",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Cities: Skylines II",
+   "text": "Week of 2026-09-28: 106 new reviews (a usual week: 146). 40% were negative (usual: 63%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-09-28",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: PAYDAY 3",
+   "text": "Week of 2026-09-28: 36 new reviews (a usual week: 86). 6% were negative (usual: 26%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-09-21",
+   "flags": [
+    "volume",
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Review spike: Cities: Skylines II",
+   "text": "Week of 2026-09-21: 1,158 new reviews (a usual week: 128). 86% were negative (usual: 25%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-09-21",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-09-21: 169 new reviews (a usual week: 72). 20% were negative (usual: 27%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-09-21",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-09-21: 564 new reviews (a usual week: 258). 28% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "lies-of-p",
+   "game": "Lies of P",
+   "week": "2026-09-21",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Lies of P",
+   "text": "Week of 2026-09-21: 216 new reviews (a usual week: 93). 15% were negative (usual: 14%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/lies-of-p.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-09-21",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Frostpunk 2",
+   "text": "Week of 2026-09-21: 48 new reviews (a usual week: 20). 46% were negative (usual: 31%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-09-21",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-09-21: 147 new reviews (a usual week: 61). 9% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2026-09-14: 244 new reviews (a usual week: 114). 41% were negative (usual: 48%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cities: Skylines II",
+   "text": "Week of 2026-09-14: 261 new reviews (a usual week: 128). 26% were negative (usual: 25%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-09-14: 195 new reviews (a usual week: 55). 21% were negative (usual: 25%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-09-14: 693 new reviews (a usual week: 258). 29% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "lies-of-p",
+   "game": "Lies of P",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Lies of P",
+   "text": "Week of 2026-09-14: 249 new reviews (a usual week: 93). 14% were negative (usual: 14%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/lies-of-p.html"
+  },
+  {
+   "slug": "stalker-2",
+   "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "text": "Week of 2026-09-14: 393 new reviews (a usual week: 181). 20% were negative (usual: 21%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/stalker-2.html"
+  },
+  {
+   "slug": "sea-of-stars",
+   "game": "Sea of Stars",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sea of Stars",
+   "text": "Week of 2026-09-14: 52 new reviews (a usual week: 19). 21% were negative (usual: 19%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/sea-of-stars.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-09-14",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-09-14: 124 new reviews (a usual week: 61). 7% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-09-07",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2026-09-07: 259 new reviews (a usual week: 108). 40% were negative (usual: 54%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-09-07",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-09-07: 144 new reviews (a usual week: 72). 24% were negative (usual: 29%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-09-07",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-09-07: 267 new reviews (a usual week: 55). 22% were negative (usual: 26%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-09-07",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-09-07: 539 new reviews (a usual week: 258). 24% were negative (usual: 32%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "stalker-2",
+   "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "week": "2026-09-07",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "text": "Week of 2026-09-07: 567 new reviews (a usual week: 181). 19% were negative (usual: 22%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/stalker-2.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-08-31",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-08-31: 394 new reviews (a usual week: 55). 27% were negative (usual: 24%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "dredge",
+   "game": "DREDGE",
+   "week": "2026-08-31",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DREDGE",
+   "text": "Week of 2026-08-31: 159 new reviews (a usual week: 77). 6% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dredge.html"
+  },
+  {
+   "slug": "manor-lords",
+   "game": "Manor Lords",
+   "week": "2026-08-31",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Manor Lords",
+   "text": "Week of 2026-08-31: 360 new reviews (a usual week: 170). 21% were negative (usual: 21%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/manor-lords.html"
+  },
+  {
+   "slug": "stalker-2",
+   "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "week": "2026-08-31",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "text": "Week of 2026-08-31: 672 new reviews (a usual week: 181). 20% were negative (usual: 24%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/stalker-2.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2026-08-31",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Darkest Dungeon II",
+   "text": "Week of 2026-08-31: 78 new reviews (a usual week: 34). 38% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-08-31",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-08-31: 73 new reviews (a usual week: 34). 21% were negative (usual: 19%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-08-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-08-24: 128 new reviews (a usual week: 55). 27% were negative (usual: 23%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "stalker-2",
+   "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "week": "2026-08-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "text": "Week of 2026-08-24: 510 new reviews (a usual week: 180). 26% were negative (usual: 22%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/stalker-2.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-07-27",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Frostpunk 2",
+   "text": "Week of 2026-07-27: 40 new reviews (a usual week: 58). 50% were negative (usual: 32%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "dragon-age-the-veilguard",
+   "game": "Dragon Age: The Veilguard",
+   "week": "2026-07-27",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Dragon Age: The Veilguard",
+   "text": "Week of 2026-07-27: 32 new reviews (a usual week: 54). 22% were negative (usual: 40%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragon-age-the-veilguard.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2026-07-20",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Avowed",
+   "text": "Week of 2026-07-20: 43 new reviews (a usual week: 52). 9% were negative (usual: 29%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "against-the-storm",
+   "game": "Against the Storm",
+   "week": "2026-07-13",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Against the Storm",
+   "text": "Week of 2026-07-13: 143 new reviews (a usual week: 47). 5% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/against-the-storm.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-07-13",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-07-13: 157 new reviews (a usual week: 72). 6% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-07-06: 182 new reviews (a usual week: 82). 27% were negative (usual: 33%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "against-the-storm",
+   "game": "Against the Storm",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Against the Storm",
+   "text": "Week of 2026-07-06: 134 new reviews (a usual week: 43). 7% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/against-the-storm.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2026-07-06: 1,047 new reviews (a usual week: 308). 8% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-07-06: 225 new reviews (a usual week: 62). 9% were negative (usual: 11%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2026-07-06: 63 new reviews (a usual week: 16). 6% were negative (usual: 12%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "persona-3-reload",
+   "game": "Persona 3 Reload",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Persona 3 Reload",
+   "text": "Week of 2026-07-06: 477 new reviews (a usual week: 188). 5% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/persona-3-reload.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Avowed",
+   "text": "Week of 2026-07-06: 81 new reviews (a usual week: 39). 33% were negative (usual: 28%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "split-fiction",
+   "game": "Split Fiction",
+   "week": "2026-07-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Split Fiction",
+   "text": "Week of 2026-07-06: 423 new reviews (a usual week: 180). 5% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/split-fiction.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-06-29: 173 new reviews (a usual week: 68). 31% were negative (usual: 34%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-06-29: 140 new reviews (a usual week: 42). 24% were negative (usual: 29%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-06-29: 641 new reviews (a usual week: 251). 32% were negative (usual: 34%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "against-the-storm",
+   "game": "Against the Storm",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Against the Storm",
+   "text": "Week of 2026-06-29: 59 new reviews (a usual week: 28). 8% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/against-the-storm.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2026-06-29: 1,320 new reviews (a usual week: 137). 6% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "lies-of-p",
+   "game": "Lies of P",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Lies of P",
+   "text": "Week of 2026-06-29: 212 new reviews (a usual week: 84). 9% were negative (usual: 12%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/lies-of-p.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-06-29: 235 new reviews (a usual week: 42). 12% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2026-06-29: 71 new reviews (a usual week: 8). 13% were negative (usual: 11%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "dredge",
+   "game": "DREDGE",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DREDGE",
+   "text": "Week of 2026-06-29: 202 new reviews (a usual week: 66). 6% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dredge.html"
+  },
+  {
+   "slug": "manor-lords",
+   "game": "Manor Lords",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Manor Lords",
+   "text": "Week of 2026-06-29: 209 new reviews (a usual week: 102). 21% were negative (usual: 26%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/manor-lords.html"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "game": "Kingdom Come: Deliverance II",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kingdom Come: Deliverance II",
+   "text": "Week of 2026-06-29: 830 new reviews (a usual week: 356). 13% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kingdom-come-deliverance-ii.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2026-06-29: 436 new reviews (a usual week: 115). 4% were negative (usual: 4%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "persona-3-reload",
+   "game": "Persona 3 Reload",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Persona 3 Reload",
+   "text": "Week of 2026-06-29: 414 new reviews (a usual week: 110). 2% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/persona-3-reload.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-06-29: 112 new reviews (a usual week: 21). 29% were negative (usual: 34%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "dragon-age-the-veilguard",
+   "game": "Dragon Age: The Veilguard",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon Age: The Veilguard",
+   "text": "Week of 2026-06-29: 67 new reviews (a usual week: 26). 33% were negative (usual: 40%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragon-age-the-veilguard.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Avowed",
+   "text": "Week of 2026-06-29: 60 new reviews (a usual week: 19). 28% were negative (usual: 28%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Darkest Dungeon II",
+   "text": "Week of 2026-06-29: 77 new reviews (a usual week: 35). 31% were negative (usual: 37%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-06-29: 98 new reviews (a usual week: 32). 16% were negative (usual: 20%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "sea-of-stars",
+   "game": "Sea of Stars",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sea of Stars",
+   "text": "Week of 2026-06-29: 60 new reviews (a usual week: 10). 17% were negative (usual: 20%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/sea-of-stars.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-06-29: 219 new reviews (a usual week: 99). 7% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "split-fiction",
+   "game": "Split Fiction",
+   "week": "2026-06-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Split Fiction",
+   "text": "Week of 2026-06-29: 382 new reviews (a usual week: 118). 3% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/split-fiction.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2026-06-22: 356 new reviews (a usual week: 82). 58% were negative (usual: 46%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "game": "Cities: Skylines II",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cities: Skylines II",
+   "text": "Week of 2026-06-22: 293 new reviews (a usual week: 112). 25% were negative (usual: 27%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cities-skylines-ii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-06-22: 128 new reviews (a usual week: 42). 36% were negative (usual: 33%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-06-22",
+   "flags": [
+    "volume",
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-06-22: 200 new reviews (a usual week: 42). 45% were negative (usual: 22%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-06-22: 517 new reviews (a usual week: 117). 33% were negative (usual: 35%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "starfield",
+   "game": "Starfield",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Starfield",
+   "text": "Week of 2026-06-22: 159 new reviews (a usual week: 68). 44% were negative (usual: 41%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/starfield.html"
+  },
+  {
+   "slug": "disco-elysium",
+   "game": "Disco Elysium",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Disco Elysium",
+   "text": "Week of 2026-06-22: 242 new reviews (a usual week: 84). 10% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/disco-elysium.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2026-06-22: 1,574 new reviews (a usual week: 116). 8% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "lies-of-p",
+   "game": "Lies of P",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Lies of P",
+   "text": "Week of 2026-06-22: 218 new reviews (a usual week: 69). 10% were negative (usual: 13%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/lies-of-p.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-06-22: 135 new reviews (a usual week: 28). 13% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2026-06-22: 67 new reviews (a usual week: 7). 10% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "dredge",
+   "game": "DREDGE",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DREDGE",
+   "text": "Week of 2026-06-22: 225 new reviews (a usual week: 65). 5% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dredge.html"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "game": "Kingdom Come: Deliverance II",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kingdom Come: Deliverance II",
+   "text": "Week of 2026-06-22: 601 new reviews (a usual week: 270). 8% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kingdom-come-deliverance-ii.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2026-06-22: 408 new reviews (a usual week: 86). 5% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "persona-3-reload",
+   "game": "Persona 3 Reload",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Persona 3 Reload",
+   "text": "Week of 2026-06-22: 272 new reviews (a usual week: 76). 6% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/persona-3-reload.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-06-22: 149 new reviews (a usual week: 20). 38% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "dragon-age-the-veilguard",
+   "game": "Dragon Age: The Veilguard",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon Age: The Veilguard",
+   "text": "Week of 2026-06-22: 56 new reviews (a usual week: 21). 48% were negative (usual: 37%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragon-age-the-veilguard.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-06-22: 74 new reviews (a usual week: 18). 18% were negative (usual: 20%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "sea-of-stars",
+   "game": "Sea of Stars",
+   "week": "2026-06-22",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: Sea of Stars",
+   "text": "Week of 2026-06-22: 68 new reviews (a usual week: 8). 9% were negative (usual: 24%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/sea-of-stars.html"
+  },
+  {
+   "slug": "split-fiction",
+   "game": "Split Fiction",
+   "week": "2026-06-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Split Fiction",
+   "text": "Week of 2026-06-22: 332 new reviews (a usual week: 109). 6% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/split-fiction.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2026-06-15: 121 new reviews (a usual week: 60). 51% were negative (usual: 46%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-06-15: 93 new reviews (a usual week: 42). 19% were negative (usual: 26%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-06-15: 688 new reviews (a usual week: 117). 35% were negative (usual: 36%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "disco-elysium",
+   "game": "Disco Elysium",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Disco Elysium",
+   "text": "Week of 2026-06-15: 210 new reviews (a usual week: 84). 9% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/disco-elysium.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2026-06-15: 1,437 new reviews (a usual week: 116). 7% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "lies-of-p",
+   "game": "Lies of P",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Lies of P",
+   "text": "Week of 2026-06-15: 248 new reviews (a usual week: 69). 14% were negative (usual: 11%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/lies-of-p.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-06-15: 78 new reviews (a usual week: 28). 8% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "dredge",
+   "game": "DREDGE",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DREDGE",
+   "text": "Week of 2026-06-15: 206 new reviews (a usual week: 65). 6% were negative (usual: 4%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dredge.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2026-06-15: 414 new reviews (a usual week: 86). 5% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "persona-3-reload",
+   "game": "Persona 3 Reload",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Persona 3 Reload",
+   "text": "Week of 2026-06-15: 237 new reviews (a usual week: 76). 5% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/persona-3-reload.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-06-15: 63 new reviews (a usual week: 20). 32% were negative (usual: 25%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "dragon-age-the-veilguard",
+   "game": "Dragon Age: The Veilguard",
+   "week": "2026-06-15",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Dragon Age: The Veilguard",
+   "text": "Week of 2026-06-15: 43 new reviews (a usual week: 21). 49% were negative (usual: 33%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragon-age-the-veilguard.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2026-06-15",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Darkest Dungeon II",
+   "text": "Week of 2026-06-15: 43 new reviews (a usual week: 30). 51% were negative (usual: 31%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-06-15: 120 new reviews (a usual week: 18). 25% were negative (usual: 16%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "sea-of-stars",
+   "game": "Sea of Stars",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sea of Stars",
+   "text": "Week of 2026-06-15: 67 new reviews (a usual week: 8). 19% were negative (usual: 24%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/sea-of-stars.html"
+  },
+  {
+   "slug": "split-fiction",
+   "game": "Split Fiction",
+   "week": "2026-06-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Split Fiction",
+   "text": "Week of 2026-06-15: 258 new reviews (a usual week: 109). 3% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/split-fiction.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2026-06-08: 182 new reviews (a usual week: 60). 44% were negative (usual: 48%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-06-08: 87 new reviews (a usual week: 33). 40% were negative (usual: 28%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "game": "Dragon's Dogma 2",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Dragon's Dogma 2",
+   "text": "Week of 2026-06-08: 236 new reviews (a usual week: 40). 18% were negative (usual: 31%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragons-dogma-2.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-06-08: 827 new reviews (a usual week: 117). 32% were negative (usual: 38%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "disco-elysium",
+   "game": "Disco Elysium",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Disco Elysium",
+   "text": "Week of 2026-06-08: 228 new reviews (a usual week: 84). 7% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/disco-elysium.html"
+  },
+  {
+   "slug": "against-the-storm",
+   "game": "Against the Storm",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Against the Storm",
+   "text": "Week of 2026-06-08: 50 new reviews (a usual week: 21). 8% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/against-the-storm.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2026-06-08: 402 new reviews (a usual week: 116). 6% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "lies-of-p",
+   "game": "Lies of P",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Lies of P",
+   "text": "Week of 2026-06-08: 185 new reviews (a usual week: 69). 16% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/lies-of-p.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-06-08: 59 new reviews (a usual week: 28). 12% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "manor-lords",
+   "game": "Manor Lords",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Manor Lords",
+   "text": "Week of 2026-06-08: 206 new reviews (a usual week: 90). 23% were negative (usual: 24%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/manor-lords.html"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "game": "Kingdom Come: Deliverance II",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kingdom Come: Deliverance II",
+   "text": "Week of 2026-06-08: 559 new reviews (a usual week: 270). 8% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kingdom-come-deliverance-ii.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2026-06-08: 297 new reviews (a usual week: 86). 4% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "persona-3-reload",
+   "game": "Persona 3 Reload",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Persona 3 Reload",
+   "text": "Week of 2026-06-08: 203 new reviews (a usual week: 76). 5% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/persona-3-reload.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-06-08: 54 new reviews (a usual week: 20). 28% were negative (usual: 25%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "dragon-age-the-veilguard",
+   "game": "Dragon Age: The Veilguard",
+   "week": "2026-06-08",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Dragon Age: The Veilguard",
+   "text": "Week of 2026-06-08: 32 new reviews (a usual week: 21). 50% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dragon-age-the-veilguard.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Avowed",
+   "text": "Week of 2026-06-08: 55 new reviews (a usual week: 16). 31% were negative (usual: 24%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-06-08: 83 new reviews (a usual week: 18). 13% were negative (usual: 17%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "sea-of-stars",
+   "game": "Sea of Stars",
+   "week": "2026-06-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sea of Stars",
+   "text": "Week of 2026-06-08: 105 new reviews (a usual week: 8). 29% were negative (usual: 14%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/sea-of-stars.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2026-06-01: 250 new reviews (a usual week: 60). 40% were negative (usual: 52%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-06-01: 112 new reviews (a usual week: 32). 29% were negative (usual: 29%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-06-01: 411 new reviews (a usual week: 117). 34% were negative (usual: 36%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "disco-elysium",
+   "game": "Disco Elysium",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Disco Elysium",
+   "text": "Week of 2026-06-01: 241 new reviews (a usual week: 84). 8% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/disco-elysium.html"
+  },
+  {
+   "slug": "against-the-storm",
+   "game": "Against the Storm",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Against the Storm",
+   "text": "Week of 2026-06-01: 52 new reviews (a usual week: 21). 8% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/against-the-storm.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-06-01: 66 new reviews (a usual week: 28). 8% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "manor-lords",
+   "game": "Manor Lords",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Manor Lords",
+   "text": "Week of 2026-06-01: 183 new reviews (a usual week: 90). 28% were negative (usual: 23%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/manor-lords.html"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "game": "Kingdom Come: Deliverance II",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kingdom Come: Deliverance II",
+   "text": "Week of 2026-06-01: 631 new reviews (a usual week: 270). 11% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kingdom-come-deliverance-ii.html"
+  },
+  {
+   "slug": "persona-3-reload",
+   "game": "Persona 3 Reload",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Persona 3 Reload",
+   "text": "Week of 2026-06-01: 173 new reviews (a usual week: 76). 8% were negative (usual: 4%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/persona-3-reload.html"
+  },
+  {
+   "slug": "stalker-2",
+   "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "text": "Week of 2026-06-01: 203 new reviews (a usual week: 93). 20% were negative (usual: 19%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/stalker-2.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Darkest Dungeon II",
+   "text": "Week of 2026-06-01: 90 new reviews (a usual week: 30). 29% were negative (usual: 31%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2026-06-01: 53 new reviews (a usual week: 18). 25% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-06-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-06-01: 284 new reviews (a usual week: 86). 9% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-05-25",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2026-05-25: 194 new reviews (a usual week: 60). 49% were negative (usual: 52%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-05-25",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2026-05-25: 78 new reviews (a usual week: 32). 31% were negative (usual: 31%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-05-25",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Monster Hunter Wilds",
+   "text": "Week of 2026-05-25: 91 new reviews (a usual week: 229). 51% were negative (usual: 34%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "kerbal-space-program-2",
+   "game": "Kerbal Space Program 2",
+   "week": "2026-04-20",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kerbal Space Program 2",
+   "text": "Week of 2026-04-20: 75 new reviews (a usual week: 31). 73% were negative (usual: 80%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kerbal-space-program-2.html"
+  },
+  {
+   "slug": "starfield",
+   "game": "Starfield",
+   "week": "2026-04-13",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Starfield",
+   "text": "Week of 2026-04-13: 319 new reviews (a usual week: 136). 37% were negative (usual: 34%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/starfield.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-04-13",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-04-13: 122 new reviews (a usual week: 51). 26% were negative (usual: 29%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "kerbal-space-program-2",
+   "game": "Kerbal Space Program 2",
+   "week": "2026-04-13",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kerbal Space Program 2",
+   "text": "Week of 2026-04-13: 83 new reviews (a usual week: 27). 82% were negative (usual: 79%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kerbal-space-program-2.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-04-13",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-04-13: 412 new reviews (a usual week: 122). 9% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "starfield",
+   "game": "Starfield",
+   "week": "2026-04-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Starfield",
+   "text": "Week of 2026-04-06: 667 new reviews (a usual week: 111). 32% were negative (usual: 35%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/starfield.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2026-04-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2026-04-06: 140 new reviews (a usual week: 48). 36% were negative (usual: 27%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "kerbal-space-program-2",
+   "game": "Kerbal Space Program 2",
+   "week": "2026-04-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kerbal Space Program 2",
+   "text": "Week of 2026-04-06: 101 new reviews (a usual week: 27). 83% were negative (usual: 77%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kerbal-space-program-2.html"
+  },
+  {
+   "slug": "frostpunk",
+   "game": "Frostpunk",
+   "week": "2026-04-06",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk",
+   "text": "Week of 2026-04-06: 498 new reviews (a usual week: 122). 9% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2026-03-30",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Avowed",
+   "text": "Week of 2026-03-30: 49 new reviews (a usual week: 50). 8% were negative (usual: 24%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "starfield",
+   "game": "Starfield",
+   "week": "2026-03-23",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Starfield",
+   "text": "Week of 2026-03-23: 156 new reviews (a usual week: 88). 19% were negative (usual: 40%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/starfield.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2026-03-23",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2026-03-23: 64 new reviews (a usual week: 28). 9% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "starfield",
+   "game": "Starfield",
+   "week": "2026-03-16",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Starfield",
+   "text": "Week of 2026-03-16: 182 new reviews (a usual week: 88). 40% were negative (usual: 41%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/starfield.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2026-02-23",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Darkest Dungeon II",
+   "text": "Week of 2026-02-23: 41 new reviews (a usual week: 74). 10% were negative (usual: 29%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-02-16",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2026-02-16: 1,264 new reviews (a usual week: 624). 26% were negative (usual: 37%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-02-02",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Monster Hunter Wilds",
+   "text": "Week of 2026-02-02: 374 new reviews (a usual week: 766). 27% were negative (usual: 45%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2026-02-02",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2026-02-02: 1,124 new reviews (a usual week: 516). 3% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2026-01-26",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Monster Hunter Wilds",
+   "text": "Week of 2026-01-26: 796 new reviews (a usual week: 624). 21% were negative (usual: 48%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2026-01-26",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2026-01-26: 1,522 new reviews (a usual week: 466). 4% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2026-01-19",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Sid Meier's Civilization VII",
+   "text": "Week of 2026-01-19: 113 new reviews (a usual week: 170). 57% were negative (usual: 40%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2026-01-19",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2026-01-19: 964 new reviews (a usual week: 398). 4% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2026-01-12",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: PAYDAY 3",
+   "text": "Week of 2026-01-12: 117 new reviews (a usual week: 74). 50% were negative (usual: 35%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2026-01-05",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2026-01-05: 209 new reviews (a usual week: 79). 7% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2026-01-05",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Avowed",
+   "text": "Week of 2026-01-05: 117 new reviews (a usual week: 56). 28% were negative (usual: 22%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2025-12-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2025-12-29: 945 new reviews (a usual week: 464). 41% were negative (usual: 41%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2025-12-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2025-12-29: 261 new reviews (a usual week: 68). 7% were negative (usual: 9%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2025-12-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2025-12-29: 97 new reviews (a usual week: 25). 9% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "game": "Cult of the Lamb",
+   "week": "2025-12-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Cult of the Lamb",
+   "text": "Week of 2025-12-29: 599 new reviews (a usual week: 269). 2% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/cult-of-the-lamb.html"
+  },
+  {
+   "slug": "persona-3-reload",
+   "game": "Persona 3 Reload",
+   "week": "2025-12-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Persona 3 Reload",
+   "text": "Week of 2025-12-29: 338 new reviews (a usual week: 162). 5% were negative (usual: 4%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/persona-3-reload.html"
+  },
+  {
+   "slug": "suicide-squad-kill-the-justice-league",
+   "game": "Suicide Squad: Kill the Justice League",
+   "week": "2025-12-29",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Suicide Squad: Kill the Justice League",
+   "text": "Week of 2025-12-29: 49 new reviews (a usual week: 35). 29% were negative (usual: 48%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/suicide-squad-kill-the-justice-league.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2025-12-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Avowed",
+   "text": "Week of 2025-12-29: 162 new reviews (a usual week: 46). 24% were negative (usual: 23%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "split-fiction",
+   "game": "Split Fiction",
+   "week": "2025-12-29",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Split Fiction",
+   "text": "Week of 2025-12-29: 728 new reviews (a usual week: 324). 6% were negative (usual: 2%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/split-fiction.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2025-12-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2025-12-22: 1,089 new reviews (a usual week: 464). 46% were negative (usual: 42%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2025-12-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2025-12-22: 509 new reviews (a usual week: 222). 6% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "armored-core-vi",
+   "game": "ARMORED CORE VI FIRES OF RUBICON",
+   "week": "2025-12-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: ARMORED CORE VI FIRES OF RUBICON",
+   "text": "Week of 2025-12-22: 242 new reviews (a usual week: 68). 11% were negative (usual: 8%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/armored-core-vi.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2025-12-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2025-12-22: 120 new reviews (a usual week: 20). 5% were negative (usual: 6%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "kerbal-space-program-2",
+   "game": "Kerbal Space Program 2",
+   "week": "2025-12-22",
+   "flags": [
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Reviews turned more positive: Kerbal Space Program 2",
+   "text": "Week of 2025-12-22: 40 new reviews (a usual week: 43). 68% were negative (usual: 89%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kerbal-space-program-2.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2025-12-22",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Avowed",
+   "text": "Week of 2025-12-22: 115 new reviews (a usual week: 33). 21% were negative (usual: 25%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2025-12-15",
+   "flags": [
+    "volume",
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2025-12-15: 1,616 new reviews (a usual week: 464). 58% were negative (usual: 39%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2025-12-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2025-12-15: 109 new reviews (a usual week: 18). 5% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2025-12-15",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2025-12-15: 148 new reviews (a usual week: 64). 34% were negative (usual: 30%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2025-12-15",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Darkest Dungeon II",
+   "text": "Week of 2025-12-15: 65 new reviews (a usual week: 59). 45% were negative (usual: 19%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2025-12-08",
+   "flags": [
+    "more_negative"
+   ],
+   "latest": false,
+   "title": "Reviews turned more negative: Monster Hunter Wilds",
+   "text": "Week of 2025-12-08: 458 new reviews (a usual week: 505). 58% were negative (usual: 39%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "game": "Hi-Fi RUSH",
+   "week": "2025-12-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Hi-Fi RUSH",
+   "text": "Week of 2025-12-08: 65 new reviews (a usual week: 17). 11% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/hi-fi-rush.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2025-12-08",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2025-12-08: 179 new reviews (a usual week: 56). 40% were negative (usual: 27%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2025-12-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2025-12-01: 105 new reviews (a usual week: 46). 38% were negative (usual: 37%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "against-the-storm",
+   "game": "Against the Storm",
+   "week": "2025-12-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Against the Storm",
+   "text": "Week of 2025-12-01: 118 new reviews (a usual week: 58). 4% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/against-the-storm.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2025-12-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2025-12-01: 489 new reviews (a usual week: 186). 4% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "game": "Kingdom Come: Deliverance II",
+   "week": "2025-12-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kingdom Come: Deliverance II",
+   "text": "Week of 2025-12-01: 1,589 new reviews (a usual week: 715). 3% were negative (usual: 3%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kingdom-come-deliverance-ii.html"
+  },
+  {
+   "slug": "split-fiction",
+   "game": "Split Fiction",
+   "week": "2025-12-01",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Split Fiction",
+   "text": "Week of 2025-12-01: 737 new reviews (a usual week: 252). 3% were negative (usual: 1%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/split-fiction.html"
+  },
+  {
+   "slug": "civilization-vii",
+   "game": "Sid Meier's Civilization VII",
+   "week": "2025-11-24",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: Sid Meier's Civilization VII",
+   "text": "Week of 2025-11-24: 453 new reviews (a usual week: 188). 28% were negative (usual: 48%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/civilization-vii.html"
+  },
+  {
+   "slug": "payday-3",
+   "game": "PAYDAY 3",
+   "week": "2025-11-24",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: PAYDAY 3",
+   "text": "Week of 2025-11-24: 136 new reviews (a usual week: 46). 24% were negative (usual: 42%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/payday-3.html"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "game": "Monster Hunter Wilds",
+   "week": "2025-11-24",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: Monster Hunter Wilds",
+   "text": "Week of 2025-11-24: 2,364 new reviews (a usual week: 548). 20% were negative (usual: 65%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/monster-hunter-wilds.html"
+  },
+  {
+   "slug": "against-the-storm",
+   "game": "Against the Storm",
+   "week": "2025-11-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Against the Storm",
+   "text": "Week of 2025-11-24: 284 new reviews (a usual week: 56). 4% were negative (usual: 5%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/against-the-storm.html"
+  },
+  {
+   "slug": "dave-the-diver",
+   "game": "DAVE THE DIVER",
+   "week": "2025-11-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: DAVE THE DIVER",
+   "text": "Week of 2025-11-24: 1,619 new reviews (a usual week: 186). 2% were negative (usual: 4%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/dave-the-diver.html"
+  },
+  {
+   "slug": "lies-of-p",
+   "game": "Lies of P",
+   "week": "2025-11-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Lies of P",
+   "text": "Week of 2025-11-24: 791 new reviews (a usual week: 194). 3% were negative (usual: 10%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/lies-of-p.html"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "game": "Kingdom Come: Deliverance II",
+   "week": "2025-11-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Kingdom Come: Deliverance II",
+   "text": "Week of 2025-11-24: 13,234 new reviews (a usual week: 672). 1% were negative (usual: 7%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/kingdom-come-deliverance-ii.html"
+  },
+  {
+   "slug": "frostpunk-2",
+   "game": "Frostpunk 2",
+   "week": "2025-11-24",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: Frostpunk 2",
+   "text": "Week of 2025-11-24: 130 new reviews (a usual week: 58). 8% were negative (usual: 33%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/frostpunk-2.html"
+  },
+  {
+   "slug": "stalker-2",
+   "game": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "week": "2025-11-24",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "text": "Week of 2025-11-24: 1,750 new reviews (a usual week: 345). 8% were negative (usual: 34%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/stalker-2.html"
+  },
+  {
+   "slug": "avowed",
+   "game": "Avowed",
+   "week": "2025-11-24",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: Avowed",
+   "text": "Week of 2025-11-24: 140 new reviews (a usual week: 29). 9% were negative (usual: 36%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/avowed.html"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "game": "Darkest Dungeon II",
+   "week": "2025-11-24",
+   "flags": [
+    "volume",
+    "more_positive"
+   ],
+   "latest": false,
+   "title": "Review spike: Darkest Dungeon II",
+   "text": "Week of 2025-11-24: 169 new reviews (a usual week: 62). 7% were negative (usual: 26%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/darkest-dungeon-ii.html"
+  },
+  {
+   "slug": "pacific-drive",
+   "game": "Pacific Drive",
+   "week": "2025-11-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Pacific Drive",
+   "text": "Week of 2025-11-24: 265 new reviews (a usual week: 68). 12% were negative (usual: 18%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/pacific-drive.html"
+  },
+  {
+   "slug": "sea-of-stars",
+   "game": "Sea of Stars",
+   "week": "2025-11-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Sea of Stars",
+   "text": "Week of 2025-11-24: 90 new reviews (a usual week: 23). 6% were negative (usual: 12%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/sea-of-stars.html"
+  },
+  {
+   "slug": "split-fiction",
+   "game": "Split Fiction",
+   "week": "2025-11-24",
+   "flags": [
+    "volume"
+   ],
+   "latest": false,
+   "title": "Review spike: Split Fiction",
+   "text": "Week of 2025-11-24: 5,510 new reviews (a usual week: 252). 1% were negative (usual: 4%).",
+   "link": "https://hosungkim48.github.io/whyplayersquit-lab/dash/split-fiction.html"
+  }
+ ]
+}

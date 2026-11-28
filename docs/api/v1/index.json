@@ -1,0 +1,276 @@
+{
+ "version": "v1",
+ "note": "Read-only static files. Numbers only: no review text, no reviewer or review IDs.",
+ "games": [
+  {
+   "slug": "civilization-vii",
+   "name": "Sid Meier's Civilization VII",
+   "genre": "4X strategy",
+   "snapshot": "2026-11-24",
+   "reviews": 44063,
+   "has_complaints": true,
+   "url": "games/civilization-vii.json"
+  },
+  {
+   "slug": "cities-skylines-ii",
+   "name": "Cities: Skylines II",
+   "genre": "City builder",
+   "snapshot": "2026-11-24",
+   "reviews": 64710,
+   "has_complaints": true,
+   "url": "games/cities-skylines-ii.json"
+  },
+  {
+   "slug": "payday-3",
+   "name": "PAYDAY 3",
+   "genre": "Co-op shooter (live service)",
+   "snapshot": "2026-11-24",
+   "reviews": 50359,
+   "has_complaints": true,
+   "url": "games/payday-3.json"
+  },
+  {
+   "slug": "dragons-dogma-2",
+   "name": "Dragon's Dogma 2",
+   "genre": "Action RPG",
+   "snapshot": "2026-11-24",
+   "reviews": 77177,
+   "has_complaints": true,
+   "url": "games/dragons-dogma-2.json"
+  },
+  {
+   "slug": "monster-hunter-wilds",
+   "name": "Monster Hunter Wilds",
+   "genre": "Action / co-op hunting",
+   "snapshot": "2026-11-24",
+   "reviews": 200364,
+   "has_complaints": true,
+   "url": "games/monster-hunter-wilds.json"
+  },
+  {
+   "slug": "starfield",
+   "name": "Starfield",
+   "genre": "Single-player RPG",
+   "snapshot": "2026-11-24",
+   "reviews": 114555,
+   "has_complaints": true,
+   "url": "games/starfield.json"
+  },
+  {
+   "slug": "disco-elysium",
+   "name": "Disco Elysium",
+   "genre": "Narrative RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 116972,
+   "has_complaints": false,
+   "url": "games/disco-elysium.json"
+  },
+  {
+   "slug": "against-the-storm",
+   "name": "Against the Storm",
+   "genre": "Roguelite city builder",
+   "snapshot": "2026-11-26",
+   "reviews": 33178,
+   "has_complaints": false,
+   "url": "games/against-the-storm.json"
+  },
+  {
+   "slug": "dave-the-diver",
+   "name": "DAVE THE DIVER",
+   "genre": "Adventure / management",
+   "snapshot": "2026-11-26",
+   "reviews": 141832,
+   "has_complaints": false,
+   "url": "games/dave-the-diver.json"
+  },
+  {
+   "slug": "lies-of-p",
+   "name": "Lies of P",
+   "genre": "Soulslike action RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 57697,
+   "has_complaints": false,
+   "url": "games/lies-of-p.json"
+  },
+  {
+   "slug": "armored-core-vi",
+   "name": "ARMORED CORE VI FIRES OF RUBICON",
+   "genre": "Mech action",
+   "snapshot": "2026-11-26",
+   "reviews": 66581,
+   "has_complaints": false,
+   "url": "games/armored-core-vi.json"
+  },
+  {
+   "slug": "hi-fi-rush",
+   "name": "Hi-Fi RUSH",
+   "genre": "Rhythm action",
+   "snapshot": "2026-11-26",
+   "reviews": 27323,
+   "has_complaints": false,
+   "url": "games/hi-fi-rush.json"
+  },
+  {
+   "slug": "dredge",
+   "name": "DREDGE",
+   "genre": "Fishing adventure",
+   "snapshot": "2026-11-26",
+   "reviews": 47091,
+   "has_complaints": false,
+   "url": "games/dredge.json"
+  },
+  {
+   "slug": "manor-lords",
+   "name": "Manor Lords",
+   "genre": "City builder / strategy",
+   "snapshot": "2026-11-26",
+   "reviews": 76284,
+   "has_complaints": false,
+   "url": "games/manor-lords.json"
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "name": "Kingdom Come: Deliverance II",
+   "genre": "Open-world RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 142708,
+   "has_complaints": false,
+   "url": "games/kingdom-come-deliverance-ii.json"
+  },
+  {
+   "slug": "cult-of-the-lamb",
+   "name": "Cult of the Lamb",
+   "genre": "Roguelite / management",
+   "snapshot": "2026-11-26",
+   "reviews": 110784,
+   "has_complaints": false,
+   "url": "games/cult-of-the-lamb.json"
+  },
+  {
+   "slug": "persona-3-reload",
+   "name": "Persona 3 Reload",
+   "genre": "JRPG",
+   "snapshot": "2026-11-26",
+   "reviews": 42728,
+   "has_complaints": false,
+   "url": "games/persona-3-reload.json"
+  },
+  {
+   "slug": "frostpunk-2",
+   "name": "Frostpunk 2",
+   "genre": "City builder / survival",
+   "snapshot": "2026-11-26",
+   "reviews": 20873,
+   "has_complaints": false,
+   "url": "games/frostpunk-2.json"
+  },
+  {
+   "slug": "dragon-age-the-veilguard",
+   "name": "Dragon Age: The Veilguard",
+   "genre": "Action RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 41122,
+   "has_complaints": false,
+   "url": "games/dragon-age-the-veilguard.json"
+  },
+  {
+   "slug": "kerbal-space-program-2",
+   "name": "Kerbal Space Program 2",
+   "genre": "Space simulation",
+   "snapshot": "2026-11-26",
+   "reviews": 27712,
+   "has_complaints": false,
+   "url": "games/kerbal-space-program-2.json"
+  },
+  {
+   "slug": "suicide-squad-kill-the-justice-league",
+   "name": "Suicide Squad: Kill the Justice League",
+   "genre": "Co-op shooter (live service)",
+   "snapshot": "2026-11-26",
+   "reviews": 12601,
+   "has_complaints": false,
+   "url": "games/suicide-squad-kill-the-justice-league.json"
+  },
+  {
+   "slug": "homeworld-3",
+   "name": "Homeworld 3",
+   "genre": "Real-time strategy",
+   "snapshot": "2026-11-26",
+   "reviews": 5425,
+   "has_complaints": false,
+   "url": "games/homeworld-3.json"
+  },
+  {
+   "slug": "stalker-2",
+   "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+   "genre": "Open-world shooter",
+   "snapshot": "2026-11-26",
+   "reviews": 106305,
+   "has_complaints": false,
+   "url": "games/stalker-2.json"
+  },
+  {
+   "slug": "forspoken",
+   "name": "Forspoken",
+   "genre": "Action RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 5386,
+   "has_complaints": false,
+   "url": "games/forspoken.json"
+  },
+  {
+   "slug": "avowed",
+   "name": "Avowed",
+   "genre": "First-person RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 12386,
+   "has_complaints": false,
+   "url": "games/avowed.json"
+  },
+  {
+   "slug": "darkest-dungeon-ii",
+   "name": "Darkest Dungeon II",
+   "genre": "Roguelite RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 23872,
+   "has_complaints": false,
+   "url": "games/darkest-dungeon-ii.json"
+  },
+  {
+   "slug": "pacific-drive",
+   "name": "Pacific Drive",
+   "genre": "Driving survival",
+   "snapshot": "2026-11-26",
+   "reviews": 21116,
+   "has_complaints": false,
+   "url": "games/pacific-drive.json"
+  },
+  {
+   "slug": "sea-of-stars",
+   "name": "Sea of Stars",
+   "genre": "Turn-based RPG",
+   "snapshot": "2026-11-26",
+   "reviews": 12068,
+   "has_complaints": false,
+   "url": "games/sea-of-stars.json"
+  },
+  {
+   "slug": "frostpunk",
+   "name": "Frostpunk",
+   "genre": "City builder / survival",
+   "snapshot": "2026-11-26",
+   "reviews": 114095,
+   "has_complaints": false,
+   "url": "games/frostpunk.json"
+  },
+  {
+   "slug": "split-fiction",
+   "name": "Split Fiction",
+   "genre": "Co-op adventure",
+   "snapshot": "2026-11-26",
+   "reviews": 76949,
+   "has_complaints": false,
+   "url": "games/split-fiction.json"
+  }
+ ]
+}

@@ -1,0 +1,768 @@
+{
+ "slug": "kerbal-space-program-2",
+ "name": "Kerbal Space Program 2",
+ "genre": "Space simulation",
+ "steam_appid": 954850,
+ "snapshot": "2026-11-26",
+ "reviews": 27712,
+ "negative_share": 0.7395,
+ "after_review": {
+  "recommended": {
+   "n": 7201,
+   "walked_away": 816,
+   "walk_rate": 0.1133,
+   "walk_lo": 0.1062,
+   "walk_hi": 0.1208,
+   "kept_10h_rate": 0.6294,
+   "median_hours_after": 17.7,
+   "active_now_rate": 0.0226
+  },
+  "not_recommended": {
+   "n": 20448,
+   "walked_away": 13680,
+   "walk_rate": 0.669,
+   "walk_lo": 0.6625,
+   "walk_hi": 0.6754,
+   "kept_10h_rate": 0.1795,
+   "median_hours_after": 0.0,
+   "active_now_rate": 0.0044
+  },
+  "by_hours_at_review": [
+   {
+    "bucket": "Under 2 h",
+    "positive": {
+     "n": 1208,
+     "walked_away": 274,
+     "walk_rate": 0.2268,
+     "walk_lo": 0.2041,
+     "walk_hi": 0.2513,
+     "kept_10h_rate": 0.4445,
+     "median_hours_after": 7.7,
+     "active_now_rate": 0.0108
+    },
+    "negative": {
+     "n": 4457,
+     "walked_away": 2971,
+     "walk_rate": 0.6666,
+     "walk_lo": 0.6526,
+     "walk_hi": 0.6803,
+     "kept_10h_rate": 0.1519,
+     "median_hours_after": 0.0,
+     "active_now_rate": 0.0018
+    },
+    "gap": 0.4398
+   },
+   {
+    "bucket": "2\u201310 h",
+    "positive": {
+     "n": 2862,
+     "walked_away": 239,
+     "walk_rate": 0.0835,
+     "walk_lo": 0.0739,
+     "walk_hi": 0.0942,
+     "kept_10h_rate": 0.6286,
+     "median_hours_after": 17.3,
+     "active_now_rate": 0.0115
+    },
+    "negative": {
+     "n": 6686,
+     "walked_away": 4016,
+     "walk_rate": 0.6007,
+     "walk_lo": 0.5889,
+     "walk_hi": 0.6123,
+     "kept_10h_rate": 0.2226,
+     "median_hours_after": 0.0,
+     "active_now_rate": 0.0016
+    },
+    "gap": 0.5172
+   },
+   {
+    "bucket": "10\u201350 h",
+    "positive": {
+     "n": 2406,
+     "walked_away": 228,
+     "walk_rate": 0.0948,
+     "walk_lo": 0.0837,
+     "walk_hi": 0.1071,
+     "kept_10h_rate": 0.6978,
+     "median_hours_after": 23.8,
+     "active_now_rate": 0.0299
+    },
+    "negative": {
+     "n": 6918,
+     "walked_away": 5036,
+     "walk_rate": 0.728,
+     "walk_lo": 0.7173,
+     "walk_hi": 0.7383,
+     "kept_10h_rate": 0.158,
+     "median_hours_after": 0.0,
+     "active_now_rate": 0.0052
+    },
+    "gap": 0.6332
+   },
+   {
+    "bucket": "50\u2013200 h",
+    "positive": {
+     "n": 612,
+     "walked_away": 57,
+     "walk_rate": 0.0931,
+     "walk_lo": 0.0726,
+     "walk_hi": 0.1188,
+     "kept_10h_rate": 0.7157,
+     "median_hours_after": 33.4,
+     "active_now_rate": 0.0588
+    },
+    "negative": {
+     "n": 2130,
+     "walked_away": 1512,
+     "walk_rate": 0.7099,
+     "walk_lo": 0.6902,
+     "walk_hi": 0.7287,
+     "kept_10h_rate": 0.1601,
+     "median_hours_after": 0.0,
+     "active_now_rate": 0.0131
+    },
+    "gap": 0.6168
+   },
+   {
+    "bucket": "200 h+",
+    "positive": {
+     "n": 113,
+     "walked_away": 18,
+     "walk_rate": 0.1593,
+     "walk_lo": 0.1032,
+     "walk_hi": 0.2378,
+     "kept_10h_rate": 0.6991,
+     "median_hours_after": 49.8,
+     "active_now_rate": 0.0796
+    },
+    "negative": {
+     "n": 257,
+     "walked_away": 145,
+     "walk_rate": 0.5642,
+     "walk_lo": 0.5031,
+     "walk_hi": 0.6234,
+     "kept_10h_rate": 0.2763,
+     "median_hours_after": 0.2,
+     "active_now_rate": 0.0272
+    },
+    "gap": 0.4049
+   }
+  ]
+ },
+ "review_timing": {
+  "recommended": {
+   "n": 7201,
+   "p25": 3.3,
+   "median": 7.7,
+   "p75": 20.7
+  },
+  "not_recommended": {
+   "n": 20448,
+   "p25": 2.5,
+   "median": 8.3,
+   "p75": 24.3
+  }
+ },
+ "benchmark": {
+  "peer_group": "Strategy, builders & management",
+  "peers": [
+   "Sid Meier's Civilization VII",
+   "Cities: Skylines II",
+   "Against the Storm",
+   "DAVE THE DIVER",
+   "Manor Lords",
+   "Cult of the Lamb",
+   "Frostpunk 2",
+   "Homeworld 3",
+   "Frostpunk"
+  ],
+  "measures": [
+   {
+    "key": "negative_share",
+    "label": "Negative reviews",
+    "meaning": "share of all reviews that are not recommended",
+    "value": 0.7395,
+    "rank": 30,
+    "of": 30,
+    "all_median": 0.1768,
+    "peer_median": 0.1524,
+    "all_min": 0.0276,
+    "all_max": 0.7395
+   },
+   {
+    "key": "critics_stopped",
+    "label": "Critics who stopped",
+    "meaning": "not-recommended reviewers who logged under 1 more hour",
+    "value": 0.669,
+    "rank": 25,
+    "of": 30,
+    "all_median": 0.5651,
+    "peer_median": 0.5563,
+    "all_min": 0.2375,
+    "all_max": 0.808
+   },
+   {
+    "key": "fans_stopped",
+    "label": "Fans who stopped",
+    "meaning": "recommended reviewers who logged under 1 more hour",
+    "value": 0.1133,
+    "rank": 11,
+    "of": 30,
+    "all_median": 0.1964,
+    "peer_median": 0.1788,
+    "all_min": 0.0421,
+    "all_max": 0.42
+   },
+   {
+    "key": "fans_kept_10h",
+    "label": "Fans who played 10+ more hours",
+    "meaning": "recommended reviewers who logged 10 or more hours after reviewing",
+    "value": 0.6294,
+    "rank": 18,
+    "of": 30,
+    "all_median": 0.5853,
+    "peer_median": 0.5779,
+    "all_min": 0.2368,
+    "all_max": 0.8645
+   },
+   {
+    "key": "fan_review_hours",
+    "label": "Hours played when fans review",
+    "meaning": "median hours played when a recommended review was written",
+    "value": 7.7,
+    "rank": 1,
+    "of": 30,
+    "all_median": 24.3,
+    "peer_median": 17.4,
+    "all_min": 7.7,
+    "all_max": 68.3
+   }
+  ]
+ },
+ "complaints": null,
+ "weekly": [
+  {
+   "week": "2025-11-24",
+   "reviews": 44,
+   "negative": 36,
+   "negative_share": 0.8182,
+   "usual_reviews": 34.0,
+   "usual_negative_share": 0.8927,
+   "flags": []
+  },
+  {
+   "week": "2025-12-01",
+   "reviews": 26,
+   "negative": 26,
+   "negative_share": 1.0,
+   "usual_reviews": 38.5,
+   "usual_negative_share": 0.8893,
+   "flags": []
+  },
+  {
+   "week": "2025-12-08",
+   "reviews": 24,
+   "negative": 21,
+   "negative_share": 0.875,
+   "usual_reviews": 35.5,
+   "usual_negative_share": 0.8935,
+   "flags": []
+  },
+  {
+   "week": "2025-12-15",
+   "reviews": 42,
+   "negative": 37,
+   "negative_share": 0.881,
+   "usual_reviews": 35.0,
+   "usual_negative_share": 0.8924,
+   "flags": []
+  },
+  {
+   "week": "2025-12-22",
+   "reviews": 40,
+   "negative": 27,
+   "negative_share": 0.675,
+   "usual_reviews": 43.0,
+   "usual_negative_share": 0.8893,
+   "flags": [
+    "more_positive"
+   ]
+  },
+  {
+   "week": "2025-12-29",
+   "reviews": 27,
+   "negative": 21,
+   "negative_share": 0.7778,
+   "usual_reviews": 43.0,
+   "usual_negative_share": 0.8677,
+   "flags": []
+  },
+  {
+   "week": "2026-01-05",
+   "reviews": 38,
+   "negative": 34,
+   "negative_share": 0.8947,
+   "usual_reviews": 41.0,
+   "usual_negative_share": 0.8627,
+   "flags": []
+  },
+  {
+   "week": "2026-01-12",
+   "reviews": 26,
+   "negative": 22,
+   "negative_share": 0.8462,
+   "usual_reviews": 39.0,
+   "usual_negative_share": 0.8522,
+   "flags": []
+  },
+  {
+   "week": "2026-01-19",
+   "reviews": 51,
+   "negative": 41,
+   "negative_share": 0.8039,
+   "usual_reviews": 32.5,
+   "usual_negative_share": 0.839,
+   "flags": []
+  },
+  {
+   "week": "2026-01-26",
+   "reviews": 25,
+   "negative": 19,
+   "negative_share": 0.76,
+   "usual_reviews": 32.5,
+   "usual_negative_share": 0.8358,
+   "flags": []
+  },
+  {
+   "week": "2026-02-02",
+   "reviews": 41,
+   "negative": 30,
+   "negative_share": 0.7317,
+   "usual_reviews": 32.5,
+   "usual_negative_share": 0.8132,
+   "flags": []
+  },
+  {
+   "week": "2026-02-09",
+   "reviews": 33,
+   "negative": 26,
+   "negative_share": 0.7879,
+   "usual_reviews": 39.0,
+   "usual_negative_share": 0.7966,
+   "flags": []
+  },
+  {
+   "week": "2026-02-16",
+   "reviews": 17,
+   "negative": 10,
+   "negative_share": 0.5882,
+   "usual_reviews": 35.5,
+   "usual_negative_share": 0.7829,
+   "flags": []
+  },
+  {
+   "week": "2026-02-23",
+   "reviews": 22,
+   "negative": 16,
+   "negative_share": 0.7273,
+   "usual_reviews": 30.0,
+   "usual_negative_share": 0.7868,
+   "flags": []
+  },
+  {
+   "week": "2026-03-02",
+   "reviews": 27,
+   "negative": 23,
+   "negative_share": 0.8519,
+   "usual_reviews": 29.5,
+   "usual_negative_share": 0.7826,
+   "flags": []
+  },
+  {
+   "week": "2026-03-09",
+   "reviews": 27,
+   "negative": 20,
+   "negative_share": 0.7407,
+   "usual_reviews": 26.5,
+   "usual_negative_share": 0.7727,
+   "flags": []
+  },
+  {
+   "week": "2026-03-16",
+   "reviews": 23,
+   "negative": 18,
+   "negative_share": 0.7826,
+   "usual_reviews": 27.0,
+   "usual_negative_share": 0.7613,
+   "flags": []
+  },
+  {
+   "week": "2026-03-23",
+   "reviews": 35,
+   "negative": 29,
+   "negative_share": 0.8286,
+   "usual_reviews": 26.0,
+   "usual_negative_share": 0.7535,
+   "flags": []
+  },
+  {
+   "week": "2026-03-30",
+   "reviews": 49,
+   "negative": 37,
+   "negative_share": 0.7551,
+   "usual_reviews": 27.0,
+   "usual_negative_share": 0.7644,
+   "flags": []
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 101,
+   "negative": 84,
+   "negative_share": 0.8317,
+   "usual_reviews": 27.0,
+   "usual_negative_share": 0.7682,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 83,
+   "negative": 68,
+   "negative_share": 0.8193,
+   "usual_reviews": 27.0,
+   "usual_negative_share": 0.7874,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 75,
+   "negative": 55,
+   "negative_share": 0.7333,
+   "usual_reviews": 31.0,
+   "usual_negative_share": 0.8038,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-04-27",
+   "reviews": 29,
+   "negative": 18,
+   "negative_share": 0.6207,
+   "usual_reviews": 42.0,
+   "usual_negative_share": 0.7952,
+   "flags": []
+  },
+  {
+   "week": "2026-05-04",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 42.0,
+   "usual_negative_share": 0.7796,
+   "flags": []
+  },
+  {
+   "week": "2026-05-11",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 42.0,
+   "usual_negative_share": 0.7823,
+   "flags": []
+  },
+  {
+   "week": "2026-05-18",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 42.0,
+   "usual_negative_share": 0.7823,
+   "flags": []
+  },
+  {
+   "week": "2026-05-25",
+   "reviews": 9,
+   "negative": 5,
+   "negative_share": 0.5556,
+   "usual_reviews": 39.0,
+   "usual_negative_share": 0.7774,
+   "flags": []
+  },
+  {
+   "week": "2026-06-01",
+   "reviews": 22,
+   "negative": 14,
+   "negative_share": 0.6364,
+   "usual_reviews": 19.0,
+   "usual_negative_share": 0.7744,
+   "flags": []
+  },
+  {
+   "week": "2026-06-08",
+   "reviews": 30,
+   "negative": 23,
+   "negative_share": 0.7667,
+   "usual_reviews": 15.5,
+   "usual_negative_share": 0.7339,
+   "flags": []
+  },
+  {
+   "week": "2026-06-15",
+   "reviews": 19,
+   "negative": 14,
+   "negative_share": 0.7368,
+   "usual_reviews": 15.5,
+   "usual_negative_share": 0.697,
+   "flags": []
+  },
+  {
+   "week": "2026-06-22",
+   "reviews": 25,
+   "negative": 21,
+   "negative_share": 0.84,
+   "usual_reviews": 14.0,
+   "usual_negative_share": 0.6789,
+   "flags": []
+  },
+  {
+   "week": "2026-06-29",
+   "reviews": 32,
+   "negative": 22,
+   "negative_share": 0.6875,
+   "usual_reviews": 14.0,
+   "usual_negative_share": 0.7333,
+   "flags": []
+  },
+  {
+   "week": "2026-07-06",
+   "reviews": 18,
+   "negative": 13,
+   "negative_share": 0.7222,
+   "usual_reviews": 20.5,
+   "usual_negative_share": 0.7226,
+   "flags": []
+  },
+  {
+   "week": "2026-07-13",
+   "reviews": 13,
+   "negative": 7,
+   "negative_share": 0.5385,
+   "usual_reviews": 20.5,
+   "usual_negative_share": 0.7226,
+   "flags": []
+  },
+  {
+   "week": "2026-07-20",
+   "reviews": 12,
+   "negative": 10,
+   "negative_share": 0.8333,
+   "usual_reviews": 20.5,
+   "usual_negative_share": 0.7083,
+   "flags": []
+  },
+  {
+   "week": "2026-07-27",
+   "reviews": 11,
+   "negative": 9,
+   "negative_share": 0.8182,
+   "usual_reviews": 20.5,
+   "usual_negative_share": 0.7251,
+   "flags": []
+  },
+  {
+   "week": "2026-08-03",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 18.5,
+   "usual_negative_share": 0.7438,
+   "flags": []
+  },
+  {
+   "week": "2026-08-10",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 15.5,
+   "usual_negative_share": 0.7385,
+   "flags": []
+  },
+  {
+   "week": "2026-08-17",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 12.5,
+   "usual_negative_share": 0.7387,
+   "flags": []
+  },
+  {
+   "week": "2026-08-24",
+   "reviews": 9,
+   "negative": 6,
+   "negative_share": 0.6667,
+   "usual_reviews": 11.5,
+   "usual_negative_share": 0.7093,
+   "flags": []
+  },
+  {
+   "week": "2026-08-31",
+   "reviews": 15,
+   "negative": 11,
+   "negative_share": 0.7333,
+   "usual_reviews": 10.0,
+   "usual_negative_share": 0.7143,
+   "flags": []
+  },
+  {
+   "week": "2026-09-07",
+   "reviews": 9,
+   "negative": 6,
+   "negative_share": 0.6667,
+   "usual_reviews": 10.0,
+   "usual_negative_share": 0.7167,
+   "flags": []
+  },
+  {
+   "week": "2026-09-14",
+   "reviews": 18,
+   "negative": 17,
+   "negative_share": 0.9444,
+   "usual_reviews": 9.0,
+   "usual_negative_share": 0.75,
+   "flags": []
+  },
+  {
+   "week": "2026-09-21",
+   "reviews": 15,
+   "negative": 14,
+   "negative_share": 0.9333,
+   "usual_reviews": 9.0,
+   "usual_negative_share": 0.7903,
+   "flags": []
+  },
+  {
+   "week": "2026-09-28",
+   "reviews": 7,
+   "negative": 7,
+   "negative_share": 1.0,
+   "usual_reviews": 9.0,
+   "usual_negative_share": 0.8182,
+   "flags": []
+  },
+  {
+   "week": "2026-10-05",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 9.0,
+   "usual_negative_share": 0.8356,
+   "flags": []
+  },
+  {
+   "week": "2026-10-12",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 9.0,
+   "usual_negative_share": 0.8356,
+   "flags": []
+  },
+  {
+   "week": "2026-10-19",
+   "reviews": 0,
+   "negative": 0,
+   "negative_share": null,
+   "usual_reviews": 9.0,
+   "usual_negative_share": 0.8356,
+   "flags": []
+  },
+  {
+   "week": "2026-10-26",
+   "reviews": 15,
+   "negative": 10,
+   "negative_share": 0.6667,
+   "usual_reviews": 8.0,
+   "usual_negative_share": 0.8594,
+   "flags": []
+  },
+  {
+   "week": "2026-11-02",
+   "reviews": 14,
+   "negative": 7,
+   "negative_share": 0.5,
+   "usual_reviews": 8.0,
+   "usual_negative_share": 0.8438,
+   "flags": []
+  },
+  {
+   "week": "2026-11-09",
+   "reviews": 12,
+   "negative": 9,
+   "negative_share": 0.75,
+   "usual_reviews": 10.5,
+   "usual_negative_share": 0.7971,
+   "flags": []
+  },
+  {
+   "week": "2026-11-16",
+   "reviews": 17,
+   "negative": 13,
+   "negative_share": 0.7647,
+   "usual_reviews": 9.5,
+   "usual_negative_share": 0.746,
+   "flags": []
+  }
+ ],
+ "flagged_weeks": [
+  {
+   "week": "2025-12-22",
+   "reviews": 40,
+   "negative": 27,
+   "negative_share": 0.675,
+   "usual_reviews": 43.0,
+   "usual_negative_share": 0.8893,
+   "flags": [
+    "more_positive"
+   ]
+  },
+  {
+   "week": "2026-04-06",
+   "reviews": 101,
+   "negative": 84,
+   "negative_share": 0.8317,
+   "usual_reviews": 27.0,
+   "usual_negative_share": 0.7682,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-04-13",
+   "reviews": 83,
+   "negative": 68,
+   "negative_share": 0.8193,
+   "usual_reviews": 27.0,
+   "usual_negative_share": 0.7874,
+   "flags": [
+    "volume"
+   ]
+  },
+  {
+   "week": "2026-04-20",
+   "reviews": 75,
+   "negative": 55,
+   "negative_share": 0.7333,
+   "usual_reviews": 31.0,
+   "usual_negative_share": 0.8038,
+   "flags": [
+    "volume"
+   ]
+  }
+ ]
+}

@@ -130,10 +130,10 @@ def page(title, body, ov, depth=0, desc="", current=None):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
 <div class="top"><div class="in"><a class="brand" href="{up}index.html"><svg viewBox="0 0 28 20" aria-hidden="true"><polyline points="1,14 7,14 10,4 14,18 18,8 21,14 27,14" fill="none" stroke="#5a9cec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Player Signals</a>
-<nav><a href="{up}index.html#games">Reports</a><a href="{up}quit.html">Why players quit</a><a href="{up}fans.html">When fans review</a><a href="{up}data.html">The numbers</a><a href="{up}case-study.html">Case study</a><a href="{up}method.html">Method &amp; limits</a><a href="{REPO}">Code &amp; data</a><a class="cta" href="{up}index.html#request">Request a report</a></nav></div></div>
+<nav><a href="{up}features.html">Features</a><a href="{up}dashboards.html">Dashboards</a><a href="{up}pricing.html">Pricing</a><a href="{up}quit.html">Why players quit</a><a href="{up}fans.html">When fans review</a><a href="{up}method.html">Method &amp; limits</a><a class="cta" href="{up}index.html#request">Request a report</a></nav></div></div>
 <div class="switch"><div class="in"><span>Reports</span>{pills}</div></div>
 {body}
-<footer><div>A free, public student research project built only from public Steam data, with an AI agent. Not affiliated with Valve or with any studio or publisher named here.
+<footer><div><p style="margin:0 0 8px"><a href="{up}data.html">The numbers</a> · <a href="{up}case-study.html">Case study</a> · <a href="{up}api.html">API &amp; export</a> · <a href="{REPO}">Code &amp; data</a></p>An independent project built only from public Steam data, with an AI agent. Not affiliated with Valve or with any studio or publisher named here.
 Reviews describe only the players who chose to write one. Nothing on this site shows that one thing caused another. No raw review text or reviewer IDs are published.</div></footer>
 </body></html>"""
 
@@ -556,6 +556,9 @@ def overview_page_body(ov, ar):
 <div class="fb" id="reqfb" role="status" hidden>If your email app did not open, write to {CONTACT}.</div>
 </form></div></section>
 <section class="more">
+<a class="mcard lift" href="dashboards.html"><b>Dashboards</b><span>One page per game: this week's reviews, how it compares with similar games, and the files to download.</span></a>
+<a class="mcard lift" href="features.html"><b>Features</b><span>What gets analyzed, and the four ways it reaches your team.</span></a>
+<a class="mcard lift" href="pricing.html"><b>Pricing</b><span>Free demos, two monthly plans, and custom reports.</span></a>
 <a class="mcard lift" href="quit.html"><b>Why players quit</b><span>Which complaints go with players actually leaving, and which come from players who stay.</span></a>
 <a class="mcard lift" href="fans.html"><b>When fans review</b><span>When happy players speak up: in hours played, and as a point in their whole time with the game.</span></a>
 <a class="mcard lift" href="data.html"><b>The numbers</b><span>Want the full tables? Every game, every stage of play, every language.</span></a>
